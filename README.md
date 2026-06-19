@@ -20,7 +20,7 @@
 
 | 项目 | 状态 | 说明 |
 | --- | --- | --- |
-| TDA01 | 测试中 | 已发布 beta0.2.1 |
+| TDA01 | 测试中 | 已发布 beta0.2.2 |
 | TDA02 | 测试中 | 已发布 beta0.1 |
 | TDA03 | 制作 / 核对中 | 仍需继续逐条核对和实机反馈 |
 | 其他作品 | 计划中 | 等 TDA 工作稳定后再展开 |
@@ -31,7 +31,7 @@
 
 | 项目 | 最新版本 | 下载页面 | 直接下载 |
 | --- | --- | --- | --- |
-| TDA01 | beta0.2.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.1/MuvLuv_TDA01_CN_Patch_beta0.2.1.zip) |
+| TDA01 | beta0.2.2 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) |
 | TDA02 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) |
 | TDA03 | 制作 / 核对中 | 暂无 | 暂无 |
 
