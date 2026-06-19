@@ -17,8 +17,8 @@
 - speaker_name_body: 0
 - control_damage: 0
 - text_id_not_found: 0
-- needs_user: 1
+- needs_user: 0
 
 ## Issue Rows
 
-- 1445 `game_t01444` needs_user
+- none

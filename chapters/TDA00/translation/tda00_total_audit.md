@@ -28,7 +28,7 @@
 - speaker_mismatch: 0
 - ruby_ref_mismatch: 0
 - traditional_or_jp_kanji_residual heuristic: 0
-- user_decisions_needed rows: 2
+- user_decisions_needed rows: 0
 
 ## Notes
 
