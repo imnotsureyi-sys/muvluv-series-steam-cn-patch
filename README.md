@@ -29,9 +29,11 @@
 
 正式面向玩家的 zip 补丁不要直接放进 Git 仓库本体，建议放在 GitHub Releases 和百度网盘镜像。
 
-当前本地测试包位于：
+当前发布/测试包状态：
 
-- `dist/MuvLuv_TDA02_CN_Patch_beta0.1.zip`
+- TDA01：已进入 `beta0.2.x` 测试阶段，zip 包通过 GitHub Releases / 百度网盘发布，不提交进 Git。
+- TDA02：测试中，仍需继续实机反馈和复查。
+- TDA03：制作 / 核对中，仍需继续逐条核对和实机反馈。
 
 ## 项目结构
 
@@ -51,12 +53,46 @@
 - JP 原文槽为空时，不能直接判定游戏一定不显示，必须核对实际显示槽 / egpack。
 - 修改后要同步源 CSV、repack、当前游戏缓存和需要发布的压缩包。
 - 每次发布前必须做残留扫描和显示文本审计。
+- 如果 `git status` 显示已有未提交修改，先停下来确认，不要覆盖、不要 `reset`、不要丢弃他人或其他对话的改动。
 
 更多规则见：
 
 - `handoff/SHARED_RULES.md`
 - `handoff/PROJECT_FILES.md`
 - `handoff/TOOLS_AND_CHECKS.md`
+
+## 分支工作流
+
+本项目使用一个总库、三个章节分支：
+
+- `main`：总库说明、发布流程、最终合并、打包和 Release。
+- `chapter/tda01`：TDA01 专用修改分支。
+- `chapter/tda02`：TDA02 专用修改分支。
+- `chapter/tda03`：TDA03 专用修改分支。
+
+同一个本地目录不要让多个对话同时写文件。最好一次只让一个章节对话实际修改；其他对话可以先分析截图、列问题。
+
+章节对话开始前必须先执行：
+
+```powershell
+git status --short
+```
+
+如果工作区干净，再切到对应分支：
+
+```powershell
+git switch chapter/tda01
+git pull origin chapter/tda01
+```
+
+TDA02 / TDA03 分别替换成 `chapter/tda02`、`chapter/tda03`。
+
+章节对话修完后提交到自己的章节分支，不要直接推 `main`。回到总库对话后，再由总库对话合并、打包、发布。
+
+完整交接模板见：
+
+- `handoff/PROMPTS_FOR_NEW_THREADS.md`
+- `handoff/BRANCH_WORKFLOW.md`
 
 ## 致谢
 
