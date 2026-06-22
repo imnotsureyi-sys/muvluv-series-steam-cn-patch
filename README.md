@@ -1,109 +1,85 @@
 # Muv-Luv Series Steam 版简体中文补丁
 
-这是一个非官方、非商业的 Muv-Luv Series Steam 版简体中文补丁总项目。
+这是一个非官方、非商业的 Muv-Luv Series Steam 版简体中文补丁总库。
 
-当前目标是把各章节 / 各作品的汉化补丁、术语表、检查工具、发布说明集中管理，方便测试、回滚、发布和收集反馈。
+当前已经整理并发布 `Muv-Luv Unlimited: THE DAY AFTER` TDA00/TDA01/TDA02/TDA03 四个章节的测试版补丁。补丁不包含游戏本体，不提供破解，不修改 exe，不修改 Steam 原始 `pack.bin`，也不操作存档；安装脚本只写入本地用户缓存目录。
+
+## 下载
+
+| 章节 | 当前版本 | GitHub Release | 直接下载 |
+| --- | --- | --- | --- |
+| TDA00 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) |
+| TDA01 | beta0.2.2 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) |
+| TDA02 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) |
+| TDA03 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1/MuvLuv_TDA03_CN_Patch_beta0.1.zip) |
+
+如果 GitHub 下载较慢，可以等待网盘镜像。历史版本见 [Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases)。
 
 ## 当前范围
 
-计划纳入：
+已发布测试版：
 
 - Muv-Luv Unlimited: THE DAY AFTER TDA00
 - Muv-Luv Unlimited: THE DAY AFTER TDA01
 - Muv-Luv Unlimited: THE DAY AFTER TDA02
 - Muv-Luv Unlimited: THE DAY AFTER TDA03
+
+计划纳入：
+
 - Muv-Luv photonflowers
 - Muv-Luv photonmelodies
 - 帝都燃烧篇
 
-## 当前状态
+## 汉化范围
 
-| 项目 | 状态 | 说明 |
-| --- | --- | --- |
-| TDA01 | 测试中 | 已发布 beta0.2.2 |
-| TDA02 | 测试中 | 已发布 beta0.1 |
-| TDA03 | 制作 / 核对中 | 仍需继续逐条核对和实机反馈 |
-| 其他作品 | 计划中 | 等 TDA 工作稳定后再展开 |
+当前 TDA00-03 补丁覆盖：
 
-## 下载
+- 剧本文本简体中文化。
+- UI 文本、设置界面、章节名等可见内容汉化。
+- 视频 / 开场演出字幕图片汉化。
+- 角色语音切换界面名字图汉化。
+- 简体中文字体补丁。
+- 一键安装脚本与手动安装说明。
 
-正式面向玩家的 zip 补丁放在 GitHub Releases 和百度网盘镜像，不直接提交进 Git 仓库本体。
+## 当前质量说明
 
-| 项目 | 最新版本 | 下载页面 | 直接下载 |
-| --- | --- | --- | --- |
-| TDA01 | beta0.2.2 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) |
-| TDA02 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) |
-| TDA03 | 制作 / 核对中 | 暂无 | 暂无 |
+- TDA01-03 已经过较多人工核对、实机游玩和截图反馈修正，当前未发现明显的中文语义不通顺、字幕缺失、台词错位、重复台词或 Text ID Not Found 类硬性问题。
+- TDA00 使用了更完善的工作流：先冻结 JP baseline，再按日文原文槽、speaker、ruby、XML 调用顺序进行翻译和审计；目前已粗略过一遍，但实机反馈还少于 TDA01-03。
+- 制作者本人不懂日语，所有版本仍未经过完整日中人工校对，可能仍有错译、语病、术语不一致、说话人错位、缺字、空字幕或其他显示问题。
 
-历史版本见 [Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases)。
+发现问题时，欢迎带截图、章节位置、前后台词上下文反馈。
 
-## 项目结构
-
-- `handoff/`：给新对话接手使用的规则、路径、章节上下文。
-- `chapters/`：每个章节 / 作品的状态、已知问题、发布记录。
-- `release-notes/`：每次发布用的说明文本。
-- `outputs/tda_text/*_deepseek_full.csv`：当前修正源 CSV。
-- `outputs/glossary/`：术语表和专有名词表。
-- `work/`：审计、打包、核对脚本。
-- `tools/`：egpack / fpd / 字体相关辅助工具。
+反馈群：273626767
 
 ## 工作原则
 
 - 只以日文原文字幕 / 日文 speaker 原文为依据。
 - 不使用英文槽作为翻译依据。
 - 不恢复英文兜底写回。
-- JP 原文槽为空时，不能直接判定游戏一定不显示，必须核对实际显示槽 / egpack。
-- 修改后要同步源 CSV、repack、当前游戏缓存和需要发布的压缩包。
-- 每次发布前必须做残留扫描和显示文本审计。
-- 如果 `git status` 显示已有未提交修改，先停下来确认，不要覆盖、不要 `reset`、不要丢弃他人或其他对话的改动。
+- JP 原文槽为空时，不直接判断游戏一定不显示，必须核对实际显示槽 / egpack。
+- 修改后同步源 CSV、repack、当前游戏缓存和发布包。
+- 每次发布前检查压缩包完整性、空文本、Text ID Not Found、异常重复、术语一致性和显示槽对齐。
 
-更多规则见：
+## 项目结构
 
-- `handoff/SHARED_RULES.md`
-- `handoff/PROJECT_FILES.md`
-- `handoff/TOOLS_AND_CHECKS.md`
-
-## 分支工作流
-
-本项目使用一个总库、三个章节分支：
-
-- `main`：总库说明、发布流程、最终合并、打包和 Release。
-- `chapter/tda01`：TDA01 专用修改分支。
-- `chapter/tda02`：TDA02 专用修改分支。
-- `chapter/tda03`：TDA03 专用修改分支。
-
-同一个本地目录不要让多个对话同时写文件。最好一次只让一个章节对话实际修改；其他对话可以先分析截图、列问题。
-
-章节对话开始前必须先执行：
-
-```powershell
-git status --short
-```
-
-如果工作区干净，再切到对应分支：
-
-```powershell
-git switch chapter/tda01
-git pull origin chapter/tda01
-```
-
-TDA02 / TDA03 分别替换成 `chapter/tda02`、`chapter/tda03`。
-
-章节对话修完后提交到自己的章节分支，不要直接推 `main`。回到总库对话后，再由总库对话合并、打包、发布。
-
-完整交接模板见：
-
-- `handoff/PROMPTS_FOR_NEW_THREADS.md`
-- `handoff/BRANCH_WORKFLOW.md`
+- `chapters/`：各章节状态、发布包整理、核对资料。
+- `release-notes/`：每次 GitHub Release 使用的说明文本。
+- `outputs/tda_text/`：当前修正源 CSV。
+- `outputs/glossary/`：术语表和专有名词表。
+- `docs/`：从零制作补丁的流程、AGES 引擎汉化思路总结、版本与提交规范。
+- `handoff/`：给章节对话接手使用的规则、路径、上下文。
+- `work/`：审计、打包、核对脚本。
 
 ## 致谢
 
-特别感谢“主任保护协会”提供 AGES 引擎汉化思路，并允许在发布时注明感谢。
+特别感谢“主任保护协会”提供 AGES 引擎的汉化思路，并允许发布时注明感谢。
 
-也感谢所有提供截图、术语建议、错字反馈和实机测试的玩家。
+特别感谢群友子冰对 TDA01 提供反馈。
+
+感谢所有参与测试、截图反馈和术语讨论的玩家。
 
 ## 免责声明
 
-本项目不包含游戏本体，不提供破解，不修改 exe，不修改 Steam 原始游戏文件，不操作存档。
+本项目为非官方、非商业同人补丁。不包含游戏本体，不提供破解，不修改 exe，不修改 Steam 原始游戏文件，不操作存档。
 
-制作者本人不懂日语，当前版本未经过完整日中人工校对，可能仍存在错译、错字、术语不统一、说话人错位、空字幕、缺字或 Text ID Not Found 类问题。欢迎带截图和上下文反馈。
+请支持正版游戏。本补丁仅供已购买 Steam 正版的玩家测试交流使用。
