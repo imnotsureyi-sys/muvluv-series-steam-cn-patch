@@ -1,0 +1,58 @@
+{
+  "csv_paths": {
+    "description": "TDA00-03 ParaTranz CSV 路径",
+    "type": "list",
+    "hint": "每个 CSV 应为三列：key, JP, CN。key 形如 TDA02|xxx.egpack|game_t00000。",
+    "default": [
+      "C:/Users/Administrator/Desktop/TDA00_03_PARATRANZ_import_csv/TDA00_PARATRANZ_utf8bom_2026.6.23.csv",
+      "C:/Users/Administrator/Desktop/TDA00_03_PARATRANZ_import_csv/TDA01_PARATRANZ_utf8bom_2026.6.23.csv",
+      "C:/Users/Administrator/Desktop/TDA00_03_PARATRANZ_import_csv/TDA02_PARATRANZ_utf8bom_2026.6.23.csv",
+      "C:/Users/Administrator/Desktop/TDA00_03_PARATRANZ_import_csv/TDA03_PARATRANZ_utf8bom_2026.6.23.csv"
+    ]
+  },
+  "glossary_paths": {
+    "description": "术语表 CSV 路径",
+    "type": "list",
+    "hint": "可选。用于在回复里附带相关术语，不用于替代 JP 判断。",
+    "default": [
+      "C:/Users/Administrator/Desktop/TDA00_03_PARATRANZ_import_csv/muvluv_lunatranslator_full_glossary.csv",
+      "C:/Users/Administrator/Documents/Muv-LuvSeries汉化/outputs/glossary/muvluv_jp_cn_terms.csv"
+    ]
+  },
+  "vision_provider_id": {
+    "description": "图片文字识别模型",
+    "type": "string",
+    "hint": "留空时使用当前 AstrBot 配置的默认图片描述模型。",
+    "default": ""
+  },
+  "max_matches": {
+    "description": "最多返回候选条数",
+    "type": "int",
+    "hint": "定位到多条时只显示前几条。",
+    "default": 5
+  },
+  "auto_trigger_enabled": {
+    "description": "自动识别群友翻译反馈",
+    "type": "bool",
+    "hint": "开启后，图片或文字消息里出现“这里好像有问题、翻译错了、这句不对”等反馈语气时会自动定位，不需要 /反馈。",
+    "default": true
+  },
+  "enable_llm_review": {
+    "description": "启用基于 JP 的模型判定",
+    "type": "bool",
+    "hint": "开启后，定位到唯一条目时会让当前对话模型判断是否建议修改并给出建议 CN。",
+    "default": true
+  },
+  "queue_filename": {
+    "description": "反馈队列文件名",
+    "type": "string",
+    "hint": "保存在 AstrBot plugin_data/astrbot_plugin_muvluv_feedback 下。",
+    "default": "feedback_queue.csv"
+  },
+  "resolution_filename": {
+    "description": "已处理反馈记录表文件名",
+    "type": "string",
+    "hint": "命中 key + 文件 + JP/CN 后，机器人会返回已处理过及具体内容。",
+    "default": "feedback_resolution_table.csv"
+  }
+}
