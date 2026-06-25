@@ -1,41 +1,40 @@
-# Patch Source Rules
+# 补丁源表规则
 
-## Source Tables
+## 源表位置
 
-Current TDA00-03 source tables live in `patch-sources/`.
+TDA00-03 当前源表放在 `patch-sources/`。
 
-Each source table should preserve:
+每个源表应保留：
 
-- stable row order
-- game text id
-- source package/container
-- scene locator
-- Japanese speaker field
-- Japanese source text
-- current Chinese text
-- review/audit metadata
+- 稳定行顺序
+- 游戏文本 ID
+- 来源包或容器
+- 场景定位信息
+- 日文说话人字段
+- 日文原文
+- 当前中文文本
 
-## Editing Rules
+内部审计列不放在公开源表中。
 
-- Edit only the intended chapter table.
-- Keep row count and stable locators aligned.
-- Preserve control codes, ruby/display markers, and line-break markers.
-- Do not remove a line only because the JP text looks empty; confirm the actual
-  display slot first.
+## 修改规则
 
-## Required QA After Edits
+- 只修改目标章节的源表。
+- 保持行数和稳定定位字段对齐。
+- 保留控制符、ruby/显示标记和换行标记。
+- 不因为 JP 文本看起来为空就删除台词，必须先确认实际显示槽。
 
-After edits, check at minimum:
+## 修改后 QA
+
+修改后至少检查：
 
 - Text ID Not Found
-- empty `cn_text`
-- row/order mismatch
-- abnormal duplicate text
-- mojibake/encoding damage
-- English sentence residue
-- Japanese/kana residue where it should not remain
-- control-code damage
-- speaker/name/rank consistency
+- 空 `cn_text`
+- 行顺序或定位错位
+- 异常重复文本
+- 乱码或编码损坏
+- 英文整句残留
+- 不该残留的日文/假名
+- 控制符损坏
+- 说话人/人名/军衔一致性
 
-Release packages should be distributed through GitHub Releases, not committed
-as zip files.
+完整补丁包和 payload 应通过 GitHub 发布页分发，不提交到仓库树。

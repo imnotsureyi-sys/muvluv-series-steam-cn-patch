@@ -1,14 +1,11 @@
-# Standards
+# 公开规范
 
-This directory keeps the public rules needed to understand or reproduce the
-patch workflow.
+这里保存理解和复现补丁流程所需的公开规则。
 
-It intentionally does not include internal Codex handoff prompts, local commit
-procedures, old research notes, or one-off audit scripts. Those stay local.
+本目录不包含 Codex 内部交接提示词、本地提交流程、旧研究笔记或一次性审计脚本；这些内容只保存在本地。
 
-## Files
+## 文件
 
-- `TRANSLATION_RULES.md`: translation and review rules.
-- `PATCH_SOURCE_RULES.md`: how patch source tables should be edited and
-  audited.
-- `PUBLIC_REPOSITORY_SCOPE.md`: what belongs in this public GitHub repository.
+- `TRANSLATION_RULES.md`：翻译和反馈判定规则。
+- `PATCH_SOURCE_RULES.md`：补丁源表的修改和审计规则。
+- `PUBLIC_REPOSITORY_SCOPE.md`：公开 GitHub 仓库应该放什么、不应该放什么。

@@ -6,12 +6,12 @@
 
 ## 下载
 
-| 章节 | 当前版本 | GitHub Release | 直接下载 |
+| 章节 | 当前版本 | 发布页 | 直接下载 |
 | --- | --- | --- | --- |
-| TDA00 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) |
-| TDA01 | beta0.2.2 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) |
-| TDA02 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) |
-| TDA03 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1/MuvLuv_TDA03_CN_Patch_beta0.1.zip) |
+| TDA00 | beta0.1 | [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) | [下载](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) |
+| TDA01 | beta0.2.2 | [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) | [下载](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) |
+| TDA02 | beta0.1 | [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) | [下载](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) |
+| TDA03 | beta0.1 | [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1) | [下载](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1/MuvLuv_TDA03_CN_Patch_beta0.1.zip) |
 
 如果 GitHub 下载较慢，可以等待网盘镜像。历史版本见 [Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases)。
 
@@ -65,10 +65,12 @@
 这个 GitHub 仓库只保留必要公开资料：
 
 - `patch-sources/`：TDA00-03 当前补丁源 CSV。
-- `tools/`：制作补丁用的可复用程序工具。
+- `tools/`：制作补丁用的可复用程序工具，包括 egpack/FPD 和 RIO/CRsa 相关工具。
 - `glossary/`：Muv-Luv 共通 JP-CN 术语总表。
 - `standards/`：翻译、补丁源文件和公开仓库范围规范。
 - `chapters/`：各章节/工作流的简短状态卡片。
+
+完整补丁目录、`payload/`、安装脚本和 zip 包属于发布资产，通过 GitHub 发布页或网盘镜像分发，不提交到仓库树。
 
 内部 Codex 交接、ATE 参考分析、提交规则、一次性审计脚本、旧中间输出、完整游戏资源和测试 repack 只保存在本地，不随 GitHub 公开仓库发布。
 

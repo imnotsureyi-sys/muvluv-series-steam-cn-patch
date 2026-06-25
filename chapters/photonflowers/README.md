@@ -1,38 +1,34 @@
 # photonflowers
 
-## Status
+## 状态
 
-- Branch: `chapter/photonflowers`
-- Current public version: not released
-- Release: none
-- Native rows: 5,510
-- Patch state: extraction and audit stage
+- 分支：`chapter/photonflowers`
+- 当前公开版本：未发布
+- 发布页：无
+- native 行数：5,510
+- 补丁状态：提取/审计阶段
 
-## Scope
+## 范围
 
-This workstream covers native `Muv-Luv photonflowers` Steam resources.
+该工作流对应 Steam 版 `Muv-Luv photonflowers` 的 native 资源。
 
-The current work is resource/text extraction and audit. It is not a released
-translation patch.
+当前阶段是资源/文本提取和审计，还不是公开汉化补丁。
 
-## Current Evidence
+## 当前证据
 
-- Native RIO/CRsa extraction is available.
-- The v5 native table has 5,510 rows:
-  - 5,322 high-confidence rows.
-  - 188 recovered short JP rows from the wide audit layer.
-- Bilibili text is used only as an audit/alignment reference and must not be
-  imported as translation.
+- 已可提取 native RIO/CRsa 文本。
+- v5 native 表共有 5,510 行：
+  - 5,322 行高置信 native 文本。
+  - 188 行来自 wide 审计层的短 JP 恢复文本。
+- Bilibili 文本只作为审计/对齐参考，不能直接导入为翻译。
 
-## Maintenance Focus
+## 维护重点
 
-- Keep native JP text, stable IDs, scene locators, and control codes intact.
-- Do not use English fallback, old Chinese fallback, or fuzzy matching.
-- Before translation or writeback work, confirm the row source layer and audit
-  confidence.
+- 保留 native JP 文本、stable_id、scene locator 和控制符。
+- 不使用英文兜底、旧中文兜底或模糊匹配。
+- 翻译或写回前必须确认行来源层级和审计置信度。
 
-## Related Files
+## 相关说明
 
-- Worktree: `C:\Users\Administrator\.codex\worktrees\4d5b\Muv-LuvSeries汉化`
-- Extraction notes and intermediate tables are local-only until a public patch
-  source table is ready.
+- 本地工作区：`C:\Users\Administrator\.codex\worktrees\4d5b\Muv-LuvSeries汉化`
+- 提取说明和中间表暂时只保存在本地，等形成公开补丁源表后再放入 GitHub。

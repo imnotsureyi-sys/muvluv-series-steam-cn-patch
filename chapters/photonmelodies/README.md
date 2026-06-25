@@ -1,37 +1,32 @@
 # photonmelodies
 
-## Status
+## 状态
 
-- Branch: `chapter/photonmelodies`
-- Current public version: not released
-- Release: none
-- Native rows: 40,541
-- Patch state: translation/writeback workflow stage
+- 分支：`chapter/photonmelodies`
+- 当前公开版本：未发布
+- 发布页：无
+- native 行数：40,541
+- 补丁状态：翻译/写回流程阶段
 
-## Scope
+## 范围
 
-This workstream covers native `Muv-Luv photonmelodies` Steam resources.
+该工作流对应 Steam 版 `Muv-Luv photonmelodies` 的 native 资源。
 
-The current workflow has already proven RIO/CRsa extraction, JP text worklist
-generation, Chinese writeback testing, and byte-patch package generation. It is
-not yet a public release.
+当前已经跑通 RIO/CRsa 提取、JP 文本工作表生成、中文写回测试和 byte patch 补丁包生成，但还不是公开发布版。
 
-## Current Evidence
+## 当前证据
 
-- A native worklist exists in the local chapter worktree.
-- Every retained native row should have stable locator fields such as chapter,
-  csv_row, stable_id, egpack, scene, and jp_text.
-- Writeback work must preserve control codes and locate rows by stable ID and
-  payload offset.
+- 本地章节工作区中已有 native 工作表。
+- 保留的 native 行应具备 chapter、csv_row、stable_id、egpack、scene、jp_text 等稳定定位字段。
+- 写回时必须保留控制符，并通过 stable_id 与 payload offset 定位原文槽。
 
-## Maintenance Focus
+## 维护重点
 
-- Continue translation and QA from JP source text only.
-- Keep generated repack/test outputs out of Git history.
-- Publish only byte patches or release packages, never complete RIO resources.
+- 只从 JP 原文继续翻译和 QA。
+- 生成的 repack/test 输出不得进入 Git 历史。
+- 对外只发布 byte patch 或发布包，不发布完整 RIO 资源。
 
-## Related Files
+## 相关说明
 
-- Worktree: `C:\Users\Administrator\.codex\worktrees\babb\Muv-LuvSeries汉化`
-- Extraction notes, writeback tests, and intermediate tables are local-only
-  until a public patch source table is ready.
+- 本地工作区：`C:\Users\Administrator\.codex\worktrees\babb\Muv-LuvSeries汉化`
+- 提取说明、写回测试和中间表暂时只保存在本地，等形成公开补丁源表后再放入 GitHub。

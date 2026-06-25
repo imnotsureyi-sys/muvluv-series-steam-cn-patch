@@ -1,36 +1,31 @@
 # TDA00
 
-## Status
+## 状态
 
-- Branch: `chapter/tda00`
-- Current public version: `tda00-beta0.1`
-- Release: <https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1>
-- Source rows: 3,713
-- Patch state: released test patch
+- 分支：`chapter/tda00`
+- 当前公开版本：`tda00-beta0.1`
+- 发布页：<https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1>
+- 源表行数：3,713
+- 补丁状态：已发布测试补丁
 
-## Scope
+## 范围
 
-TDA00 covers `Muv-Luv Unlimited: THE DAY AFTER episode:00`.
+TDA00 对应 `Muv-Luv Unlimited: THE DAY AFTER episode:00`。
 
-The beta0.1 patch includes simplified Chinese script text, UI-related text and
-image assets, video/opening subtitle assets, a font payload, and install
-scripts.
+beta0.1 补丁包含简体中文剧本文本、UI 相关文本和图片资源、视频/开场字幕资源、中文字体和安装脚本。
 
-## Quality Notes
+## 质量说明
 
-- Built from a frozen JP baseline with call-order, speaker, ruby, and display
-  slot checks.
-- Release audit did not find hard failures such as empty CN rows, Text ID Not
-  Found, order mismatch, control-code damage, or English sentence fallback.
-- TDA00 has less player feedback than TDA01-03, so semantic and wording issues
-  may still remain.
+- 使用冻结后的 JP baseline 制作，并检查调用顺序、说话人、ruby 和显示槽。
+- 发布审计未发现空中文、Text ID Not Found、顺序错位、控制符损坏或英文整句兜底等硬性问题。
+- TDA00 的实机反馈少于 TDA01-03，仍可能存在语义和措辞问题。
 
-## Maintenance Focus
+## 维护重点
 
-- Collect real playthrough feedback with screenshots and surrounding context.
-- Keep fixes grounded in the JP source text.
-- Send subtitle/body changes to the TDA00 chapter workflow, not `main`.
+- 收集带截图和上下文的实机反馈。
+- 所有修订以 JP 原文为依据。
+- 字幕正文修改交给 TDA00 章节工作流处理，不在 `main` 直接改。
 
-## Related Files
+## 相关文件
 
-- Patch source: `patch-sources/tda00_jp_cn_compare.csv`
+- 补丁源表：`patch-sources/tda00_jp_cn_compare.csv`

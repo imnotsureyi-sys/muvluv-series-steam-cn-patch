@@ -1,42 +1,40 @@
-# Translation Rules
+# 翻译规则
 
-## Source Priority
+## 依据优先级
 
-1. Use Japanese source text as the translation basis.
-2. Use Japanese speaker/source metadata to resolve voice, rank, name, and role.
-3. Use the shared JP-CN glossary for confirmed terminology.
-4. Use surrounding JP context when a line is ambiguous.
+1. 以日文原文作为翻译依据。
+2. 用日文说话人和来源字段判断语气、军衔、人名和身份。
+3. 使用共通 JP-CN 术语表中的确认译名。
+4. 台词含义不明时，结合前后 JP 上下文判断。
 
-English slots are not translation source material.
+英文槽不是翻译依据。
 
-## Forbidden Fallbacks
+## 禁止兜底
 
-- Do not translate from English slots.
-- Do not restore English fallback text.
-- Do not use old Chinese fallback text.
-- Do not use fuzzy matching to silently assign a line to a different source.
+- 不从英文槽翻译。
+- 不恢复英文兜底文本。
+- 不使用旧中文兜底文本。
+- 不用模糊匹配把一条台词静默套到另一个来源上。
 
-## Terminology
+## 术语
 
-- Confirmed terms should be added to `glossary/muvluv_jp_cn_terms.csv`.
-- Chapter-specific discoveries should be reviewed before becoming global terms.
-- Do not rewrite another chapter's body text just to force terminology
-  consistency; make a clear issue for that chapter instead.
+- 已确认术语写入 `glossary/muvluv_jp_cn_terms.csv`。
+- 章节中发现的新术语先复核，再决定是否进入总表。
+- 不为了统一术语直接改其他章节正文；应先为对应章节形成明确问题。
 
-## Feedback Handling
+## 反馈处理
 
-Player feedback should include a screenshot, chapter, scene/context, and the
-visible Chinese line when possible.
+玩家反馈尽量包含截图、章节、场景/上下文和可见中文台词。
 
-For each feedback item, locate:
+每条反馈应先定位：
 
-- chapter
-- CSV row
+- 章节
+- CSV 行
 - id
 - egpack
 - scene
 - speaker_jp
 - jp_text
-- current cn_text
+- 当前 cn_text
 
-Only then decide whether a Chinese line should be changed.
+定位后再判断是否需要修改中文。

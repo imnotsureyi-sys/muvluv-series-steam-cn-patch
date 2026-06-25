@@ -1,28 +1,26 @@
-# Public Repository Scope
+# 公开仓库范围
 
-The public GitHub repository should contain only the assets needed by users,
-testers, and contributors.
+公开 GitHub 仓库只放用户、测试者和贡献者真正需要的资料。
 
-## Keep Public
+## 公开保留
 
-- Root `README.md` with download links and feedback instructions.
-- `patch-sources/`: current TDA00-03 JP-CN patch source tables.
-- `tools/`: small reusable extraction/repack/font-check tools.
-- `glossary/`: shared JP-CN terminology.
-- `standards/`: public translation, source-table, and repository-scope rules.
-- `chapters/`: short chapter/workstream status cards.
+- 根目录 `README.md`：下载链接和反馈说明。
+- `patch-sources/`：TDA00-03 当前 JP-CN 补丁源表。
+- `tools/`：可复用的提取、写回、差分、字体检查工具。
+- `glossary/`：共通 JP-CN 术语表。
+- `standards/`：翻译、源表和公开仓库范围规范。
+- `chapters/`：章节/工作流状态卡片。
 
-## Keep Local
+## 本地保留
 
-- Internal Codex handoff prompts.
-- Local branch/worktree procedures.
-- Commit-message templates and release-operation notes.
-- ATE/reference patch research notes.
-- One-off audit scripts and generated reports.
-- Old AI translation batches and intermediate output tables.
-- Full game resources, RIO/egpack repack output, caches, and test installs.
+- Codex 内部交接提示词。
+- 本地分支和工作区操作流程。
+- 提交模板和发布操作笔记。
+- ATE/参考补丁研究笔记。
+- 一次性审计脚本和生成报告。
+- 旧 AI 翻译批次和中间输出表。
+- 完整游戏资源、RIO/egpack 重打包输出、缓存和测试安装目录。
 
-## Release Assets
+## 发布资产
 
-Patch zip files belong on GitHub Releases. They should not be committed to the
-repository tree.
+补丁 zip、`payload/`、安装脚本和完整补丁目录属于发布资产，应放在 GitHub 发布页或网盘镜像中，不提交到仓库树。

@@ -1,35 +1,32 @@
 # TDA02
 
-## Status
+## 状态
 
-- Branch: `chapter/tda02`
-- Current public version: `tda02-beta0.1`
-- Release: <https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1>
-- Source rows: 6,589
-- Patch state: released test patch
+- 分支：`chapter/tda02`
+- 当前公开版本：`tda02-beta0.1`
+- 发布页：<https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1>
+- 源表行数：6,589
+- 补丁状态：已发布测试补丁
 
-## Scope
+## 范围
 
-TDA02 covers `Muv-Luv Unlimited: THE DAY AFTER episode:02`.
+TDA02 对应 `Muv-Luv Unlimited: THE DAY AFTER episode:02`。
 
-The beta0.1 patch includes simplified Chinese script text, UI text/assets,
-video/opening subtitle assets, a font payload, and install scripts.
+beta0.1 补丁包含简体中文剧本文本、UI 文本/资源、视频/开场字幕资源、中文字体和安装脚本。
 
-## Quality Notes
+## 质量说明
 
-- beta0.1 includes fixes for rank/name issues, line displacement, terminology
-  consistency, and several feedback-driven wording problems.
-- Release checks did not find hard failures such as Text ID Not Found, obvious
-  missing subtitles, or severe displacement.
-- This is still a test patch and may contain semantic or wording issues.
+- beta0.1 已修正军衔/人名、台词错位、术语统一和多处反馈驱动的措辞问题。
+- 发布检查未发现 Text ID Not Found、明显缺字幕或严重错位等硬性问题。
+- 当前仍是测试补丁，可能还存在语义或措辞问题。
 
-## Maintenance Focus
+## 维护重点
 
-- Continue feedback-driven semantic review against JP source text.
-- Watch for speaker/rank consistency and military terminology.
-- Send subtitle/body changes to the TDA02 chapter workflow, not `main`.
+- 继续按 JP 原文处理实机反馈。
+- 重点关注说话人/军衔一致性和军事术语。
+- 字幕正文修改交给 TDA02 章节工作流处理，不在 `main` 直接改。
 
-## Related Files
+## 相关文件
 
-- Patch source: `patch-sources/tda02_jp_cn_compare.csv`
+- 补丁源表：`patch-sources/tda02_jp_cn_compare.csv`
 

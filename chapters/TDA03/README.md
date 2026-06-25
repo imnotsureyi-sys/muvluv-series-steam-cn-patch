@@ -1,35 +1,32 @@
 # TDA03
 
-## Status
+## 状态
 
-- Branch: `chapter/tda03`
-- Current public version: `tda03-beta0.1`
-- Release: <https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1>
-- Source rows: 6,913
-- Patch state: released test patch
+- 分支：`chapter/tda03`
+- 当前公开版本：`tda03-beta0.1`
+- 发布页：<https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1>
+- 源表行数：6,913
+- 补丁状态：已发布测试补丁
 
-## Scope
+## 范围
 
-TDA03 covers `Muv-Luv Unlimited: THE DAY AFTER episode:03`.
+TDA03 对应 `Muv-Luv Unlimited: THE DAY AFTER episode:03`。
 
-The beta0.1 patch includes simplified Chinese script text, UI text/assets,
-video/opening subtitle assets, a font payload, and install scripts.
+beta0.1 补丁包含简体中文剧本文本、UI 文本/资源、视频/开场字幕资源、中文字体和安装脚本。
 
-## Quality Notes
+## 质量说明
 
-- beta0.1 includes multiple feedback fixes around terminology, speaker display,
-  bracket/newline handling, JFK HIVE, orbital drop troops, and related wording.
-- Release checks did not find hard failures such as Text ID Not Found, obvious
-  missing subtitles, or severe displacement.
-- TDA03 is long, so semantic review and playthrough feedback remain important.
+- beta0.1 已合入多轮实机反馈，涉及术语、说话人显示、括号换行、JFK HIVE、轨道降下兵等问题。
+- 发布检查未发现 Text ID Not Found、明显缺字幕或严重错位等硬性问题。
+- TDA03 内容较长，语义复核和实机反馈仍然重要。
 
-## Maintenance Focus
+## 维护重点
 
-- Continue JP-based semantic review and real-play feedback triage.
-- Watch for terminology consistency across TDA01-03.
-- Send subtitle/body changes to the TDA03 chapter workflow, not `main`.
+- 继续按 JP 原文做语义复核和反馈分流。
+- 关注 TDA01-03 之间的术语一致性。
+- 字幕正文修改交给 TDA03 章节工作流处理，不在 `main` 直接改。
 
-## Related Files
+## 相关文件
 
-- Patch source: `patch-sources/tda03_jp_cn_compare.csv`
+- 补丁源表：`patch-sources/tda03_jp_cn_compare.csv`
 
