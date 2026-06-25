@@ -2,13 +2,15 @@
 
 main 总库维护 Muv-Luv 世界观共通术语。
 
-当前正式术语表仍保存在：
+当前公开术语表保存在：
 
 ```text
-outputs/glossary/muvluv_lunatranslator_full_glossary.csv
-outputs/glossary/muvluv_lunatranslator_proper_nouns.tsv
-outputs/glossary/muvluv_world_glossary_sources.md
+glossary/muvluv_jp_cn_terms.csv
 ```
+
+`muvluv_jp_cn_terms.csv` 是面向章节翻译和校对使用的纯日文-中文两列表，只保留 `jp,cn` 两列，不收录英文源项。
+
+旧 LunaTranslator 表、ParaTranz 辅助导入表、来源笔记和中间整理表只作为本地内部资料保存，不放在公开 GitHub 主分支。
 
 ## 使用规则
 

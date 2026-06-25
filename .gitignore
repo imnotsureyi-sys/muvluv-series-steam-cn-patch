@@ -47,3 +47,6 @@ __pycache__/
 
 # Generated release archives should be attached to GitHub Releases, not committed
 *.zip
+
+# Local-only project memory and internal Codex workflow notes
+local-internal/

@@ -62,13 +62,15 @@
 
 ## 项目结构
 
-- `chapters/`：各章节状态、发布包整理、核对资料。
-- `release-notes/`：每次 GitHub Release 使用的说明文本。
-- `outputs/tda_text/`：当前修正源 CSV。
-- `outputs/glossary/`：术语表和专有名词表。
-- `docs/`：从零制作补丁的流程、AGES 引擎汉化思路总结、版本与提交规范。
-- `handoff/`：给章节对话接手使用的规则、路径、上下文。
-- `work/`：审计、打包、核对脚本。
+这个 GitHub 仓库只保留必要公开资料：
+
+- `patch-sources/`：TDA00-03 当前补丁源 CSV。
+- `tools/`：制作补丁用的可复用程序工具。
+- `glossary/`：Muv-Luv 共通 JP-CN 术语总表。
+- `standards/`：翻译、补丁源文件和公开仓库范围规范。
+- `chapters/`：各章节/工作流的简短状态卡片。
+
+内部 Codex 交接、ATE 参考分析、提交规则、一次性审计脚本、旧中间输出、完整游戏资源和测试 repack 只保存在本地，不随 GitHub 公开仓库发布。
 
 ## 致谢
 

@@ -1,16 +1,34 @@
 # TDA01
 
-TDA01 已在另一个对话继续迭代。
+## Status
 
-接手前必须先确认该对话的最新成果是否已经同步到本项目，避免用旧文件覆盖新修正。
+- Branch: `chapter/tda01`
+- Current public version: `tda01-beta0.2.2`
+- Release: <https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2>
+- Source rows: 8,565
+- Patch state: released test patch
 
-当前项目可见：
+## Scope
 
-- 源 CSV：`outputs/tda_text/tda01_deepseek_full.csv`
-- 候选 repack：`outputs/repack_tda01_xmlsafe_20260618_beta02fix_candidate`
-- 旧包：`dist/MuvLuv_TDA01_CN_Patch_beta0.1.zip`
+TDA01 covers `Muv-Luv Unlimited: THE DAY AFTER episode:01`.
 
-详细交接见：
+The beta0.2.2 patch includes simplified Chinese script text, UI text/assets,
+video/opening subtitle assets, a font payload, and install scripts.
 
-- `handoff/TDA01_CONTEXT.md`
+## Quality Notes
+
+- TDA01 has received more player feedback than TDA00.
+- beta0.2.2 includes multiple real-play feedback fixes.
+- Release checks did not find hard failures such as Text ID Not Found, empty
+  subtitles, obvious line displacement, or abnormal repeated text.
+
+## Maintenance Focus
+
+- Continue semantic review against JP source text.
+- Treat screenshots and context reports as the preferred feedback format.
+- Send subtitle/body changes to the TDA01 chapter workflow, not `main`.
+
+## Related Files
+
+- Patch source: `patch-sources/tda01_jp_cn_compare.csv`
 
