@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import difflib
 import os
 import re
 import time
@@ -128,7 +129,38 @@ class TranslationIndex:
                 existing = results.get(row.key)
                 if existing is None or score > existing.score:
                     results[row.key] = MatchResult(row, score, fragment, field)
+
+        self._add_fuzzy_long_matches(fragments, results)
         return sorted(results.values(), key=lambda item: item.score, reverse=True)[:limit]
+
+    def _add_fuzzy_long_matches(
+        self,
+        fragments: list[str],
+        results: dict[str, MatchResult],
+    ) -> None:
+        fuzzy_fragments: list[tuple[str, str]] = []
+        seen: set[str] = set()
+        for fragment in sorted(fragments, key=lambda item: len(normalize_text(item)), reverse=True):
+            norm = normalize_text(fragment)
+            if len(norm) < 12 or norm in seen:
+                continue
+            seen.add(norm)
+            fuzzy_fragments.append((fragment, norm))
+            if len(fuzzy_fragments) >= 6:
+                break
+
+        for fragment, norm in fuzzy_fragments:
+            query_chars = set(norm)
+            for row in self.rows:
+                candidate, field, ratio = best_fuzzy_row_match(norm, row, query_chars)
+                if ratio < 0.82:
+                    continue
+                score = int(300000 + ratio * 10000 + min(len(norm), 120) * 20)
+                if ratio >= 0.94:
+                    score += 50000
+                existing = results.get(row.key)
+                if existing is None or score > existing.score:
+                    results[row.key] = MatchResult(row, score, fragment, field or candidate)
 
     def search_short_exact(self, text: str, limit: int = 5) -> list[MatchResult]:
         results: dict[str, MatchResult] = {}
@@ -2150,6 +2182,79 @@ def extract_short_search_norms(text: str) -> list[str]:
         seen.add(norm)
         norms.append(norm)
     return sorted(norms, key=len)
+
+
+def best_fuzzy_row_match(
+    query_norm: str,
+    row: TranslationRow,
+    query_chars: set[str] | None = None,
+) -> tuple[str, str, float]:
+    best_candidate = ""
+    best_field = ""
+    best_ratio = 0.0
+    query_chars = query_chars or set(query_norm)
+    for candidate, field in (
+        (row.cn_norm, "CN_FUZZY"),
+        (row.jp_norm, "JP_FUZZY"),
+        (normalize_text(clean_game_text(row.cn_text)), "CN_CLEAN_FUZZY"),
+    ):
+        if len(candidate) < 8:
+            continue
+        if not passes_fuzzy_prefilter(query_norm, candidate, query_chars):
+            continue
+        ratio = containment_similarity(query_norm, candidate)
+        if ratio > best_ratio:
+            best_candidate = candidate
+            best_field = field
+            best_ratio = ratio
+    return best_candidate, best_field, best_ratio
+
+
+def passes_fuzzy_prefilter(query_norm: str, candidate: str, query_chars: set[str]) -> bool:
+    if not query_norm or not candidate:
+        return False
+    candidate_chars = set(candidate)
+    overlap = len(query_chars & candidate_chars)
+    min_unique = min(len(query_chars), len(candidate_chars))
+    if overlap < max(5, int(min_unique * 0.45)):
+        return False
+
+    query_bigrams = text_bigrams(query_norm)
+    candidate_bigrams = text_bigrams(candidate)
+    if not query_bigrams or not candidate_bigrams:
+        return True
+    bigram_overlap = len(query_bigrams & candidate_bigrams)
+    return bigram_overlap >= max(3, int(min(len(query_bigrams), len(candidate_bigrams)) * 0.25))
+
+
+def text_bigrams(text: str) -> set[str]:
+    return {text[index : index + 2] for index in range(max(0, len(text) - 1))}
+
+
+def containment_similarity(left: str, right: str) -> float:
+    left = str(left or "")
+    right = str(right or "")
+    if not left or not right:
+        return 0.0
+    if left in right or right in left:
+        return min(len(left), len(right)) / max(len(left), len(right))
+
+    shorter, longer = (left, right) if len(left) <= len(right) else (right, left)
+    if len(shorter) <= 3:
+        return difflib.SequenceMatcher(None, left, right).ratio()
+
+    window = len(shorter)
+    best = difflib.SequenceMatcher(None, shorter, longer[:window]).ratio()
+    max_start = max(0, len(longer) - window)
+    step = max(1, window // 6)
+    for start in range(step, max_start + 1, step):
+        ratio = difflib.SequenceMatcher(None, shorter, longer[start : start + window]).ratio()
+        if ratio > best:
+            best = ratio
+    if max_start and max_start % step:
+        ratio = difflib.SequenceMatcher(None, shorter, longer[max_start : max_start + window]).ratio()
+        best = max(best, ratio)
+    return best
 
 
 def normalize_text(text: str) -> str:
