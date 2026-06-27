@@ -507,8 +507,10 @@ class MuvLuvFeedbackPlugin(Star):
 
         for unit in feedback_units:
             matches = self.index.search(unit, self._int("max_matches", 5))
-            if not matches and allow_short_exact:
-                matches = self.index.search_short_exact(unit, self._int("max_matches", 5))
+            if allow_short_exact:
+                short_matches = self.index.search_short_exact(unit, self._int("max_matches", 5))
+                if short_matches and (not matches or short_matches[0].score > matches[0].score):
+                    matches = short_matches
             if not matches and last_match:
                 matches = self.index.search_near(last_match.row, unit, window=3)
             if not matches and unit in context_matches:
@@ -641,8 +643,10 @@ class MuvLuvFeedbackPlugin(Star):
         last_match: MatchResult | None = None
         for unit in units:
             matches = self.index.search(unit, self._int("max_matches", 5))
-            if not matches and allow_short_exact:
-                matches = self.index.search_short_exact(unit, self._int("max_matches", 5))
+            if allow_short_exact:
+                short_matches = self.index.search_short_exact(unit, self._int("max_matches", 5))
+                if short_matches and (not matches or short_matches[0].score > matches[0].score):
+                    matches = short_matches
             if not matches and last_match:
                 matches = self.index.search_near(last_match.row, unit, window=3)
             if not matches:
@@ -1784,6 +1788,17 @@ FOCUS_STOP_WORDS = (
     "这段",
     "这个",
     "位置",
+    "原文",
+    "日文",
+    "是什么",
+    "是啥",
+    "什么意思",
+    "检查一下",
+    "检查",
+    "需不需要修正",
+    "需要修正",
+    "要不要修正",
+    "修正",
 )
 
 FOCUS_STOP_NORMS: set[str] = set()
@@ -2100,6 +2115,7 @@ def extract_focus_norms(raw_text: str) -> list[str]:
     text = strip_feedback_command(raw_text)
     text = re.sub(r"@\S+", " ", text)
     quoted = re.findall(r"[「『“\"]([^」』”\"]{2,120})[」』”\"]", text)
+    explicit = extract_explicit_focus_phrases(text)
 
     cleaned = text
     for word in FOCUS_STOP_WORDS:
@@ -2114,15 +2130,50 @@ def extract_focus_norms(raw_text: str) -> list[str]:
 
     norms: list[str] = []
     seen = set()
-    for fragment in quoted + runs:
+    stop_norms = FOCUS_STOP_NORMS or {normalize_text(word) for word in FOCUS_STOP_WORDS}
+    for fragment in explicit + quoted + runs:
         norm = normalize_text(fragment)
         if len(norm) < 2 or norm in seen:
             continue
-        if norm in FOCUS_STOP_NORMS:
+        if norm in stop_norms:
             continue
         seen.add(norm)
         norms.append(norm)
     return sorted(norms, key=len, reverse=True)
+
+
+def extract_explicit_focus_phrases(text: str) -> list[str]:
+    value = str(text or "")
+    term = r"[\u3040-\u30ff\u3400-\u9fffA-Za-z0-9ー・]{1,24}"
+    prefix = r"(?:这里|这句|这个|这处|这边|图里|图片里|截图里)?"
+    patterns = [
+        rf"{prefix}\s*({term})\s*的?(?:JP|jp|日文|原文)",
+        rf"{prefix}\s*({term})\s*(?:是什么意思|什么意思|是啥意思|对吗|對嗎|需不需要|需要不需要|要不要|该不该|應不應該|应不应该|通顺吗|自然吗)",
+        rf"(?:把|将)\s*({term})\s*(?:改成|改为|改作|译成|譯成)",
+        rf"(?:改成|改为|改作|译成|譯成)\s*({term})",
+    ]
+    found: list[str] = []
+    for pattern in patterns:
+        for match in re.finditer(pattern, value, flags=re.I):
+            candidate = clean_focus_candidate(match.group(1))
+            if candidate:
+                found.append(candidate)
+    return found
+
+
+def clean_focus_candidate(text: str) -> str:
+    value = str(text or "").strip()
+    value = re.sub(r"^(?:这里|这句|这个|这处|这边|图里|图片里|截图里)+", "", value)
+    value = re.sub(r"(?:的|地|得)$", "", value)
+    value = value.strip(" \t-:：，。！？!?、;；（）()[]【】「」『』“”\"'")
+    if is_meta_focus_candidate(value):
+        return ""
+    return value
+
+
+def is_meta_focus_candidate(text: str) -> bool:
+    norm = normalize_text(text)
+    return bool(norm and any(word in norm for word in ("检查", "修正", "需要", "看看", "帮我", "你看")))
 
 
 def extract_dialogue_units(text: str, include_plain: bool = False) -> list[str]:
@@ -2191,11 +2242,11 @@ def extract_short_search_norms(text: str) -> list[str]:
     norms: list[str] = []
     seen = set()
     for fragment in fragments:
-        norm = normalize_text(fragment)
-        if len(norm) < 2 or norm in seen:
-            continue
-        seen.add(norm)
-        norms.append(norm)
+        for norm in short_search_norm_variants(normalize_text(fragment)):
+            if len(norm) < 2 or norm in seen:
+                continue
+            seen.add(norm)
+            norms.append(norm)
     return sorted(norms, key=len)
 
 
@@ -2276,8 +2327,17 @@ def normalize_text(text: str) -> str:
     text = str(text or "")
     text = text.replace("\\w", "")
     text = re.sub(r"[「」『』“”\"'’‘【】\[\]（）()〈〉《》]", "", text)
-    text = re.sub(r"[\s　,，.。!！?？:：;；、~～…—\-・/／\\]+", "", text)
+    text = re.sub(r"[\s　,，.。!！?？:：;；、~～…—―－–─━\-・/／\\]+", "", text)
     return text.lower()
+
+
+def short_search_norm_variants(norm: str) -> list[str]:
+    value = str(norm or "")
+    variants = [value]
+    stripped = re.sub(r"^[一]+(?=[\u3400-\u9fff\u3040-\u30ff]{2,8}$)", "", value)
+    if stripped and stripped != value:
+        variants.append(stripped)
+    return variants
 
 
 def clean_game_text(text: str) -> str:
