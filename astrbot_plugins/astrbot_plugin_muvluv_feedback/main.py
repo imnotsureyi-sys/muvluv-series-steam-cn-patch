@@ -603,7 +603,12 @@ class MuvLuvFeedbackPlugin(Star):
         for unit, match in located:
             resolution = self._find_resolution_record(match.row)
             if resolution:
-                reviews[match.row.key] = format_resolution_review(resolution)
+                if is_approximate_version_match(unit, match):
+                    reviews[match.row.key] = format_approximate_resolution_review(unit, match, resolution)
+                else:
+                    reviews[match.row.key] = format_resolution_review(resolution)
+            elif is_approximate_version_match(unit, match):
+                reviews[match.row.key] = format_approximate_match_review(unit, match)
             else:
                 pending.append((unit, match))
 
@@ -912,8 +917,9 @@ class MuvLuvFeedbackPlugin(Star):
         focused_by_text: bool = False,
     ) -> str:
         row = match.row
+        approximate = is_approximate_version_match(raw_feedback, match)
         parts = [
-            "定位到了。",
+            "匹配到相似句子。" if approximate else "定位到了。",
             f"章节：{row.chapter}",
             f"id：{row.row_id}",
             f"ParaTranz ID：{row.paratranz_id or '未知'}",
@@ -926,6 +932,13 @@ class MuvLuvFeedbackPlugin(Star):
             "",
             f"当前CN：\n{clean_game_text(row.cn_text)}",
         ]
+        if approximate:
+            parts.extend(
+                [
+                    "",
+                    "定位状态：相似匹配，截图/OCR 文本与本地当前 CN 不完全一致，疑似已在本地修过或来自不同版本。先不按精确命中自动修改。",
+                ]
+            )
         if image_text:
             if image_unit_count:
                 parts.extend(["", f"图片OCR：已识别 {image_unit_count} 条台词。"])
@@ -978,6 +991,8 @@ class MuvLuvFeedbackPlugin(Star):
                     f"当前CN：{clean_game_text(row.cn_text)}",
                 ]
             )
+            if is_approximate_version_match(unit, match):
+                lines.append("定位状态：相似匹配，截图/OCR 文本与本地当前 CN 不完全一致，疑似已在本地修过或来自不同版本。")
             if review:
                 lines.append(format_review_for_reply(review))
 
@@ -2495,4 +2510,77 @@ def format_resolution_review(record: dict[str, str]) -> str:
         f"答复：{reply}\n"
         f"交给：{handoff}"
         f"{suffix}"
+    )
+
+
+def is_approximate_version_match(raw_feedback: str, match: MatchResult) -> bool:
+    if "FUZZY" not in str(match.matched_field or "").upper():
+        return False
+
+    row = match.row
+    matched_norm = normalize_text(match.matched_text)
+    if len(matched_norm) < 8:
+        matched_norm = normalize_text(raw_feedback)
+    exact_haystacks = [
+        row.cn_norm,
+        row.jp_norm,
+        normalize_text(clean_game_text(row.cn_text)),
+        normalize_text(clean_game_text(row.jp_text)),
+    ]
+    return not any(
+        matched_norm in haystack or haystack in matched_norm
+        for haystack in exact_haystacks
+        if haystack and matched_norm
+    )
+
+
+def format_approximate_resolution_review(
+    unit: str,
+    match: MatchResult,
+    record: dict[str, str],
+) -> str:
+    old_cn = str(record.get("old_cn", "")).strip()
+    new_cn = str(record.get("new_cn", "")).strip()
+    reason = str(record.get("reason", "")).strip() or "反馈记录表已有对应处理记录。"
+    handoff = str(record.get("handoff_target", "")).strip() or "无需处理"
+    paratranz_id = str(record.get("paratranz_id", "")).strip()
+    change_note = ""
+    if old_cn and new_cn and normalize_text(old_cn) != normalize_text(new_cn):
+        change_note = f"反馈记录显示这条已从“{clean_game_text(old_cn)}”改为“{clean_game_text(new_cn)}”。"
+    else:
+        change_note = "反馈记录显示这条已有处理记录。"
+
+    reply = (
+        "图里这句和本地当前译文不是完全一致，我只匹配到高度相似的同一句，先按疑似已更改处理。"
+        f"{change_note}"
+    )
+    extra = f"\nParaTranz：{paratranz_id}" if paratranz_id else ""
+    return (
+        "意图：version_mismatch\n"
+        "判定：疑似已更改\n"
+        "动作：already_processed\n"
+        f"理由：{reason}\n"
+        f"建议CN：{new_cn or '无'}\n"
+        f"答复：{reply}\n"
+        f"交给：{handoff}"
+        f"{extra}\n"
+        "本地处理：相似匹配未当作精确定位；已按历史记录提示疑似已更改。"
+    )
+
+
+def format_approximate_match_review(unit: str, match: MatchResult) -> str:
+    row = match.row
+    reply = (
+        "图里这句和本地当前译文不是完全一致，我只匹配到高度相似的本地句子。"
+        "这可能是截图来自旧包、OCR/转写有差异，或本地表已经改过；先不按精确命中自动修改。"
+    )
+    return (
+        "意图：version_mismatch\n"
+        "判定：疑似相似句\n"
+        "动作：locate_only\n"
+        "理由：截图/OCR 文本与本地当前 CN 不完全一致，不能把近似匹配当成精确 id 直接判定。\n"
+        "建议CN：无\n"
+        f"答复：{reply}\n"
+        f"交给：{row.chapter}\n"
+        "本地处理：相似匹配未当作精确定位；未生成修改任务。"
     )
