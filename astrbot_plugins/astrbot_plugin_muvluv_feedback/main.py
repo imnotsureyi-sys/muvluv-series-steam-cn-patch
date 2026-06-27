@@ -119,6 +119,26 @@ class TranslationIndex:
                     results[row.key] = MatchResult(row, score, fragment, field)
         return sorted(results.values(), key=lambda item: item.score, reverse=True)[:limit]
 
+    def search_short_exact(self, text: str, limit: int = 5) -> list[MatchResult]:
+        results: dict[str, MatchResult] = {}
+        for norm in extract_short_search_norms(text):
+            if len(norm) < 2 or len(norm) > 8:
+                continue
+            for row in self.rows:
+                field = ""
+                if norm == row.cn_norm:
+                    field = "CN_SHORT_EXACT"
+                    score = 600000 + len(norm) * 10
+                elif norm == row.jp_norm:
+                    field = "JP_SHORT_EXACT"
+                    score = 590000 + len(norm) * 10
+                else:
+                    continue
+                existing = results.get(row.key)
+                if existing is None or score > existing.score:
+                    results[row.key] = MatchResult(row, score, text, field)
+        return sorted(results.values(), key=lambda item: item.score, reverse=True)[:limit]
+
     def search_near(self, anchor: TranslationRow, text: str, window: int = 3) -> list[MatchResult]:
         position = self.row_positions.get(anchor.key)
         if position is None:
@@ -425,7 +445,11 @@ class MuvLuvFeedbackPlugin(Star):
             return "请发截图或贴出当前中文台词。信息不足时我不会猜。"
 
         all_feedback_units = extract_feedback_units(raw_text, image_text)
-        context_matches = self._resolve_context_matches(all_feedback_units)
+        allow_short_exact = bool(image_text)
+        context_matches = self._resolve_context_matches(
+            all_feedback_units,
+            allow_short_exact=allow_short_exact,
+        )
         feedback_units = select_focused_units_by_rows(
             raw_text,
             all_feedback_units,
@@ -440,6 +464,8 @@ class MuvLuvFeedbackPlugin(Star):
 
         for unit in feedback_units:
             matches = self.index.search(unit, self._int("max_matches", 5))
+            if not matches and allow_short_exact:
+                matches = self.index.search_short_exact(unit, self._int("max_matches", 5))
             if not matches and last_match:
                 matches = self.index.search_near(last_match.row, unit, window=3)
             if not matches and unit in context_matches:
@@ -549,11 +575,17 @@ class MuvLuvFeedbackPlugin(Star):
         reviews.update(batch_reviews)
         return reviews
 
-    def _resolve_context_matches(self, units: list[str]) -> dict[str, MatchResult]:
+    def _resolve_context_matches(
+        self,
+        units: list[str],
+        allow_short_exact: bool = False,
+    ) -> dict[str, MatchResult]:
         resolved: dict[str, MatchResult] = {}
         last_match: MatchResult | None = None
         for unit in units:
             matches = self.index.search(unit, self._int("max_matches", 5))
+            if not matches and allow_short_exact:
+                matches = self.index.search_short_exact(unit, self._int("max_matches", 5))
             if not matches and last_match:
                 matches = self.index.search_near(last_match.row, unit, window=3)
             if not matches:
