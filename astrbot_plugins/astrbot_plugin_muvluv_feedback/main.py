@@ -484,7 +484,7 @@ class MuvLuvFeedbackPlugin(Star):
             located.append((unit, match))
             last_match = match
 
-        reviews = await self._review_located_items(event, located)
+        reviews = await self._review_located_items(event, located, combined_text)
         for unit, match in located:
             review = reviews.get(match.row.key, "")
             decision, suggested_cn, reason = parse_review_fields(review)
@@ -554,6 +554,7 @@ class MuvLuvFeedbackPlugin(Star):
         self,
         event: AstrMessageEvent,
         located: list[tuple[str, MatchResult]],
+        full_feedback: str = "",
     ) -> dict[str, str]:
         reviews: dict[str, str] = {}
         pending: list[tuple[str, MatchResult]] = []
@@ -568,10 +569,19 @@ class MuvLuvFeedbackPlugin(Star):
             return reviews
         if len(pending) == 1:
             unit, match = pending[0]
-            reviews[match.row.key] = await self._review_with_llm(event, unit, match)
+            reviews[match.row.key] = await self._review_with_llm(
+                event,
+                unit,
+                match,
+                full_feedback=full_feedback,
+            )
             return reviews
 
-        batch_reviews = await self._review_many_with_llm(event, pending)
+        batch_reviews = await self._review_many_with_llm(
+            event,
+            pending,
+            full_feedback=full_feedback,
+        )
         reviews.update(batch_reviews)
         return reviews
 
@@ -712,6 +722,7 @@ class MuvLuvFeedbackPlugin(Star):
         event: AstrMessageEvent,
         raw_feedback: str,
         match: MatchResult,
+        full_feedback: str = "",
     ) -> str:
         provider_id = self._get_review_provider_id(event)
         if not provider_id:
@@ -727,12 +738,15 @@ class MuvLuvFeedbackPlugin(Star):
             "你是 Muv-Luv 汉化翻译反馈判定助手。原始语义必须只基于 JP 原文和日文上下文判断，不使用英文兜底。\n"
             "你需要结合发言人性格、说话语气、人物关系、故事梗概、当前场景和前后文来判断当前 CN 是否合适。\n"
             "不要因为中文和 JP 字面不逐字对应就轻易判错；只有语义、语气、人物称谓、术语或上下文确实不合适时才建议修改。\n"
+            "必须优先回应群友反馈文字里的具体疑点；如果群友问“某个词/地名/比喻能不能形容人、是否通顺、是否更合适”，理由必须正面回答这个疑点，不能只解释 JP 大意。\n"
+            "当 JP 语义基本正确但当前 CN 的中文表达生硬、误导、过度概括或没有回应截图外文字疑点时，可以判定为需要修改并给出更自然的 CN。\n"
             "请输出简洁结论，格式必须包含以下四行：\n"
             "判定：需要修改/不需要修改/疑问/定位不足\n"
             "理由：...\n"
             "建议CN：如果不需要修改则写“无”\n"
             "交给：TDA00/TDA01/TDA02/TDA03/术语表/无需处理\n\n"
             f"群友反馈或截图 OCR：\n{raw_feedback}\n\n"
+            f"用户完整反馈（含文字说明和OCR）：\n{full_feedback or raw_feedback}\n\n"
             f"定位：{row.key}\n"
             f"ParaTranz ID：{row.paratranz_id or '未知'}\n"
             f"发言人：{row.speaker_jp or '旁白/未知'}\n"
@@ -758,6 +772,7 @@ class MuvLuvFeedbackPlugin(Star):
         self,
         event: AstrMessageEvent,
         located: list[tuple[str, MatchResult]],
+        full_feedback: str = "",
     ) -> dict[str, str]:
         provider_id = self._get_review_provider_id(event)
         if not provider_id:
@@ -792,12 +807,15 @@ class MuvLuvFeedbackPlugin(Star):
         prompt = (
             "你是 Muv-Luv 汉化翻译反馈判定助手。原始语义必须只基于 JP 原文和日文上下文判断，不使用英文兜底。\n"
             "你需要结合发言人性格、说话语气、人物关系、故事梗概、当前场景和前后文来判断当前 CN 是否合适。\n"
+            "必须优先回应群友完整反馈文字里的具体疑点；如果群友问“某个词/地名/比喻能不能形容人、是否通顺、是否更合适”，理由必须正面回答这个疑点，不能只解释 JP 大意。\n"
+            "当 JP 语义基本正确但当前 CN 的中文表达生硬、误导、过度概括或没有回应截图外文字疑点时，可以判定为需要修改并给出更自然的 CN。\n"
             "下面有多条已定位台词，请逐条判定。每条必须严格按格式输出：\n"
             "### ITEM 序号\n"
             "判定：需要修改/不需要修改/疑问/定位不足\n"
             "理由：...\n"
             "建议CN：如果不需要修改则写“无”\n"
             "交给：TDA00/TDA01/TDA02/TDA03/术语表/无需处理\n\n"
+            f"用户完整反馈（含文字说明和OCR）：\n{full_feedback}\n\n"
             + "\n\n".join(item_blocks)
         )
         try:
@@ -2174,6 +2192,8 @@ def resolution_record_matches(record: dict[str, str], row: TranslationRow) -> bo
         return False
 
     status = str(record.get("status", "")).strip().lower()
+    if status in {"无需处理", "不需要修改", "无需修改"}:
+        return False
     if status and status not in {
         "done",
         "applied",
