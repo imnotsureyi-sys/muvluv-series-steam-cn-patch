@@ -22,7 +22,7 @@
 | --- | --- | --- |
 | TDA01 | 测试中 | 已发布 beta0.2.2 |
 | TDA02 | 测试中 | 已发布 beta0.1 |
-| TDA03 | 制作 / 核对中 | 仍需继续逐条核对和实机反馈 |
+| TDA03 | 测试中 | 已发布 beta0.1.6，修复旧包成就映射问题 |
 | 其他作品 | 计划中 | 等 TDA 工作稳定后再展开 |
 
 ## 下载
@@ -33,7 +33,7 @@
 | --- | --- | --- | --- |
 | TDA01 | beta0.2.2 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) |
 | TDA02 | beta0.1 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) |
-| TDA03 | 制作 / 核对中 | 暂无 | 暂无 |
+| TDA03 | beta0.1.6 | [Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) | [zip](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) |
 
 历史版本见 [Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases)。
 
