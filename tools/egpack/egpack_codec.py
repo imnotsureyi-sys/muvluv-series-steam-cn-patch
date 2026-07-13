@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
+from collections.abc import Sequence
 from pathlib import Path
 import re
 import zlib
@@ -32,6 +33,10 @@ class EgpackFormatError(ValueError):
     pass
 
 
+class EgpackChangeError(ValueError):
+    pass
+
+
 @dataclass(frozen=True)
 class EgpackField:
     slot: str
@@ -56,6 +61,15 @@ class EgpackDocument:
     data: bytes
     declared_size: int
     records: tuple[EgpackRecord, ...]
+
+
+@dataclass(frozen=True)
+class EgpackChange:
+    relative_path: str
+    text_id: str
+    slot: str
+    expected_text: str
+    replacement_text: str
 
 
 def _fail(source: str, message: str) -> EgpackFormatError:
@@ -157,6 +171,58 @@ def parse_egpack_bytes(data: bytes, source: str = "<memory>") -> EgpackDocument:
 
 def parse_egpack(path: Path) -> EgpackDocument:
     return parse_egpack_bytes(path.read_bytes(), source=str(path))
+
+
+def apply_changes(
+    data: bytes,
+    changes: Sequence[EgpackChange],
+    source: str = "<memory>",
+) -> bytes:
+    if not changes:
+        return data
+
+    document = parse_egpack_bytes(data, source=source)
+    records = {record.text_id: record for record in document.records}
+    replacements: list[tuple[int, int, bytes]] = []
+    seen_targets: set[tuple[str, str]] = set()
+
+    for change in changes:
+        target = (change.text_id, change.slot)
+        if target in seen_targets:
+            raise EgpackChangeError(f"{source}: duplicate change target {change.text_id}/{change.slot}")
+        seen_targets.add(target)
+
+        if change.slot not in LANGUAGE_SLOTS:
+            raise EgpackChangeError(f"{source}: unknown slot {change.slot!r}")
+        record = records.get(change.text_id)
+        if record is None:
+            raise EgpackChangeError(f"{source}: missing id {change.text_id!r}")
+        field = record.slots[change.slot]
+        if field.text != change.expected_text:
+            raise EgpackChangeError(
+                f"{source}: expected_text mismatch for {change.text_id}/{change.slot}: "
+                f"expected {change.expected_text!r}, actual {field.text!r}"
+            )
+        if "\0" in change.replacement_text:
+            raise EgpackChangeError(
+                f"{source}: replacement_text for {change.text_id}/{change.slot} contains NUL"
+            )
+
+        replacements.append(
+            (
+                field.value_offset,
+                field.value_offset + field.value_length,
+                change.replacement_text.encode("utf-8"),
+            )
+        )
+
+    rebuilt = data
+    for start, end, replacement in sorted(replacements, reverse=True):
+        rebuilt = rebuilt[:start] + replacement + rebuilt[end:]
+    rebuilt = rebuilt[:8] + len(rebuilt).to_bytes(4, "little") + rebuilt[12:]
+
+    parse_egpack_bytes(rebuilt, source=f"{source} (rebuilt)")
+    return rebuilt
 
 
 def classify_resource(path: str, text_id: str) -> str:
