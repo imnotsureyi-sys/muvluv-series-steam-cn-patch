@@ -5,6 +5,11 @@ import csv
 from collections import defaultdict
 from collections.abc import Sequence
 from pathlib import Path, PurePosixPath
+import sys
+
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 try:
     from tools.egpack.egpack_codec import EgpackChange, EgpackChangeError, apply_changes
@@ -93,7 +98,7 @@ def repack(input_path: Path, changes_path: Path, output_dir: Path) -> tuple[int,
     for change in changes:
         by_file[change.relative_path].append(change)
 
-    changed_slots = 0
+    prepared: list[tuple[Path, bytes, int]] = []
     for relative_path, file_changes in sorted(by_file.items()):
         source = _resolve_under(source_root, relative_path)
         if input_path.is_file() and source != input_path:
@@ -110,10 +115,14 @@ def repack(input_path: Path, changes_path: Path, output_dir: Path) -> tuple[int,
             raise EgpackChangeError(f"output file already exists: {destination}")
 
         patched = apply_changes(source.read_bytes(), file_changes, source=str(source))
+        prepared.append((destination, patched, len(file_changes)))
+
+    changed_slots = 0
+    for destination, patched, slot_count in prepared:
         destination.parent.mkdir(parents=True, exist_ok=True)
         with destination.open("xb") as stream:
             stream.write(patched)
-        changed_slots += len(file_changes)
+        changed_slots += slot_count
 
     return len(by_file), changed_slots
 

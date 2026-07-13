@@ -5,12 +5,18 @@ import csv
 import hashlib
 from collections.abc import Iterator, Sequence
 from pathlib import Path
+import sys
+
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 try:
     from tools.egpack.egpack_codec import (
         LANGUAGE_SLOTS,
         classify_resource,
         extract_control_codes,
+        has_manual_newline,
         is_control_only,
         parse_egpack,
     )
@@ -19,6 +25,7 @@ except ModuleNotFoundError:  # Direct script execution from tools/egpack.
         LANGUAGE_SLOTS,
         classify_resource,
         extract_control_codes,
+        has_manual_newline,
         is_control_only,
         parse_egpack,
     )
@@ -41,6 +48,7 @@ MANIFEST_COLUMNS = (
     "value_sha256",
     "is_empty",
     "is_control_only",
+    "has_manual_newline",
     "control_codes",
     "text",
 )
@@ -86,6 +94,7 @@ def manifest_rows(input_path: Path) -> Iterator[dict[str, str | int | bool]]:
                     "value_sha256": hashlib.sha256(raw).hexdigest(),
                     "is_empty": field.value_length == 0,
                     "is_control_only": is_control_only(field.text),
+                    "has_manual_newline": has_manual_newline(field.text),
                     "control_codes": "|".join(extract_control_codes(field.text)),
                     "text": field.text,
                 }

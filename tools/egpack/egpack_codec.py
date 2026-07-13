@@ -26,7 +26,9 @@ FIELD_KEYS = {
     for field in FIELD_ORDER
 }
 KEY_FIELDS = {key: field for field, key in FIELD_KEYS.items()}
-CONTROL_RE = re.compile(r"\\[A-Za-z]+")
+CONTROL_RE = re.compile(r"\\[pwfnr]")
+EMPTY_TABLE_PAYLOAD = b"\0\0\0\0\xc0\x85\x85"
+MANUAL_NEWLINE_TOKENS = (r"\n", r"\r", "\n", "\r")
 
 
 class EgpackFormatError(ValueError):
@@ -87,8 +89,7 @@ def _scan_fields(data: bytes, source: str) -> list[EgpackField]:
         key = data[offset + 1 : offset + 5]
         slot = KEY_FIELDS.get(key)
         if slot is None:
-            offset += 1
-            continue
+            raise _fail(source, f"unknown field key {key.hex()} at offset 0x{offset:X}")
 
         value_offset = offset + 6
         value_end = data.find(b"\0", value_offset)
@@ -127,7 +128,16 @@ def parse_egpack_bytes(data: bytes, source: str = "<memory>") -> EgpackDocument:
 
     fields = _scan_fields(data, source)
     width = len(FIELD_ORDER)
-    if not fields or len(fields) % width:
+    if not fields:
+        if data[12:] == EMPTY_TABLE_PAYLOAD:
+            return EgpackDocument(
+                source=source,
+                data=data,
+                declared_size=declared_size,
+                records=(),
+            )
+        raise _fail(source, "field count is zero but the file is not a verified empty table")
+    if len(fields) % width:
         raise _fail(source, f"field count {len(fields)} is not divisible by {width}")
 
     records: list[EgpackRecord] = []
@@ -207,6 +217,10 @@ def apply_changes(
             raise EgpackChangeError(
                 f"{source}: replacement_text for {change.text_id}/{change.slot} contains NUL"
             )
+        if has_manual_newline(change.replacement_text):
+            raise EgpackChangeError(
+                f"{source}: replacement_text for {change.text_id}/{change.slot} contains a manual newline"
+            )
 
         replacements.append(
             (
@@ -244,6 +258,10 @@ def classify_resource(path: str, text_id: str) -> str:
 
 def extract_control_codes(text: str) -> tuple[str, ...]:
     return tuple(match.group(0) for match in CONTROL_RE.finditer(text))
+
+
+def has_manual_newline(text: str) -> bool:
+    return any(token in text for token in MANUAL_NEWLINE_TOKENS)
 
 
 def is_control_only(text: str) -> bool:

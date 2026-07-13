@@ -10,7 +10,7 @@ from tools.egpack.egpack_codec import (
     parse_egpack_bytes,
 )
 
-from .fixtures import FIELD_ORDER, build_egpack, encode_field, finalize_egpack
+from .fixtures import EMPTY_EGPACK, FIELD_ORDER, build_egpack, encode_field, finalize_egpack
 
 
 class EgpackCodecTests(unittest.TestCase):
@@ -49,6 +49,12 @@ class EgpackCodecTests(unittest.TestCase):
         self.assertEqual(data[jp.field_offset], 0x87)
         self.assertEqual(len(document.records[0].slots), 10)
 
+    def test_accepts_verified_empty_table_encoding(self) -> None:
+        document = parse_egpack_bytes(EMPTY_EGPACK, source="empty.egpack")
+
+        self.assertEqual(document.declared_size, len(EMPTY_EGPACK))
+        self.assertEqual(document.records, ())
+
     def test_classifies_all_known_resource_kinds(self) -> None:
         self.assertEqual(classify_resource("scene.egpack", "game_t00000"), "scene")
         self.assertEqual(classify_resource("scene.egpack", "game_t00000_ruby"), "ruby")
@@ -60,6 +66,7 @@ class EgpackCodecTests(unittest.TestCase):
     def test_control_helpers_distinguish_empty_control_and_visible_text(self) -> None:
         self.assertEqual(extract_control_codes("\\f"), ("\\f",))
         self.assertEqual(extract_control_codes("「待て」\\w…\\p"), ("\\w", "\\p"))
+        self.assertEqual(extract_control_codes(r"manual\nline\p"), (r"\n", r"\p"))
         self.assertTrue(is_control_only("\\f"))
         self.assertTrue(is_control_only("\\w　\\p"))
         self.assertFalse(is_control_only(""))
@@ -100,6 +107,15 @@ class EgpackCodecTests(unittest.TestCase):
 
         with self.assertRaisesRegex(EgpackFormatError, "field count|layout"):
             parse_egpack_bytes(finalize_egpack(body), source="duplicate-field.egpack")
+
+    def test_rejects_unknown_field_key(self) -> None:
+        body = b"".join(
+            encode_field(slot, "game_t00000" if slot == "id" else "")
+            for slot in FIELD_ORDER
+        ) + b"\x87\x01\x02\x03\x04\xa6unknown\0"
+
+        with self.assertRaisesRegex(EgpackFormatError, "unknown field key"):
+            parse_egpack_bytes(finalize_egpack(body), source="unknown-field.egpack")
 
 
 if __name__ == "__main__":

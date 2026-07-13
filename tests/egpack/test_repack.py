@@ -64,6 +64,16 @@ class EgpackRepackTests(unittest.TestCase):
 
         self.assertEqual(parse_egpack_bytes(patched).records[0].slots["jp"].text, "")
 
+    def test_rejects_manual_newlines_in_replacement_text(self) -> None:
+        for replacement in (r"Chinese\ntext", r"Chinese\rtext", "Chinese\ntext", "Chinese\rtext"):
+            with self.subTest(replacement=repr(replacement)):
+                with self.assertRaisesRegex(EgpackChangeError, "manual newline"):
+                    apply_changes(
+                        self.original,
+                        [self.change(replacement=replacement)],
+                        source="scene.egpack",
+                    )
+
     def test_no_changes_is_byte_identical(self) -> None:
         self.assertEqual(apply_changes(self.original, [], source="scene.egpack"), self.original)
 
@@ -152,6 +162,44 @@ class EgpackRepackTests(unittest.TestCase):
                 main([str(source), "--changes", str(changes_path), "--output-dir", str(output_root)])
             with self.assertRaisesRegex(EgpackChangeError, "overlap"):
                 main([str(source), "--changes", str(changes_path), "--output-dir", str(root)])
+
+    def test_cli_validates_all_files_before_writing_any_output(self) -> None:
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp)
+            source_root = root / "source"
+            output_root = root / "output"
+            changes_path = root / "changes.csv"
+            source_root.mkdir()
+            (source_root / "a.egpack").write_bytes(self.original)
+            (source_root / "b.egpack").write_bytes(self.original)
+            with changes_path.open("w", encoding="utf-8-sig", newline="") as stream:
+                writer = csv.DictWriter(stream, fieldnames=CHANGE_COLUMNS)
+                writer.writeheader()
+                writer.writerow({
+                    "relative_path": "a.egpack",
+                    "id": "game_t00000",
+                    "slot": "jp",
+                    "expected_text": "日本語",
+                    "replacement_text": "中文",
+                })
+                writer.writerow({
+                    "relative_path": "b.egpack",
+                    "id": "game_t00000",
+                    "slot": "jp",
+                    "expected_text": "错误原文",
+                    "replacement_text": "中文",
+                })
+
+            with self.assertRaisesRegex(EgpackChangeError, "expected_text"):
+                main([
+                    str(source_root),
+                    "--changes",
+                    str(changes_path),
+                    "--output-dir",
+                    str(output_root),
+                ])
+
+            self.assertFalse((output_root / "a.egpack").exists())
 
     def _write_changes(self, path: Path, relative_path: str) -> None:
         with path.open("w", encoding="utf-8-sig", newline="") as stream:

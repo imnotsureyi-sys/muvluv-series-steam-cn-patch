@@ -62,6 +62,20 @@ class EgpackManifestTests(unittest.TestCase):
         self.assertEqual(row["file_size"], len(data))
         self.assertEqual(row["declared_size"], len(data))
 
+    def test_manifest_marks_manual_newlines_for_audit(self) -> None:
+        data = build_egpack([{"id": "game_t00000", "jp": r"manual\nline\p"}])
+        with tempfile.TemporaryDirectory() as temp:
+            source = Path(temp) / "scene.egpack"
+            source.write_bytes(data)
+
+            row = next(
+                row for row in manifest_rows(source)
+                if row["id"] == "game_t00000" and row["slot"] == "jp"
+            )
+
+        self.assertIn("has_manual_newline", row)
+        self.assertTrue(row["has_manual_newline"])
+
     def test_cli_writes_utf8_bom_csv_with_approved_columns(self) -> None:
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)

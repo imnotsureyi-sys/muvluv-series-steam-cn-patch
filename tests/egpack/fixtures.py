@@ -22,6 +22,7 @@ HEADER = (
     b"EPK\0\x03\x02\x40\0\0\0\0\0"
     b"\0de\0en\0es\0fr\0id\0it\0jp\0pt\0pt_br\0zh_hans\0zh_hant\0"
 )
+EMPTY_EGPACK = b"EPK\0\x03\x02\x10\0\x13\0\0\0\0\0\0\0\xc0\x85\x85"
 
 
 def field_key(slot: str) -> bytes:
