@@ -45,4 +45,3 @@ def build_egpack(records: list[dict[str, str | bytes]]) -> bytes:
         for slot in FIELD_ORDER
     )
     return finalize_egpack(body)
-
