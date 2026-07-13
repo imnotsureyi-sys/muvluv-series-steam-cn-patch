@@ -95,7 +95,7 @@ def parse_pack(pack_path: pathlib.Path, keys: list[int], key_offset: int = 0) ->
 
 def main() -> int:
     if len(sys.argv) < 3:
-        print("usage: python tools/egpack/probe_fpd.py <Scrambler.cs> <pack.bin> [filter]")
+        print("usage: python tools/fpd/probe_fpd.py <Scrambler.cs> <pack.bin> [filter]")
         return 2
 
     scrambler = pathlib.Path(sys.argv[1])

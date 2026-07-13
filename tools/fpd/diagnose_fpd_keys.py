@@ -8,7 +8,7 @@ from probe_fpd import ENTRY_SIZE, HEADER_SIZE, load_base_keys, make_keys, xor_by
 
 def main() -> int:
     if len(sys.argv) < 3:
-        print("usage: python tools/egpack/diagnose_fpd_keys.py <Scrambler.cs> <pack.bin>")
+        print("usage: python tools/fpd/diagnose_fpd_keys.py <Scrambler.cs> <pack.bin>")
         return 2
 
     scrambler = pathlib.Path(sys.argv[1])

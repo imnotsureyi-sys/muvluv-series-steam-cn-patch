@@ -14,7 +14,7 @@ def safe_path(base: pathlib.Path, name: str) -> pathlib.Path:
 
 def main() -> int:
     if len(sys.argv) < 5:
-        print("usage: python tools/egpack/extract_fpd_filtered.py <Scrambler.cs> <pack.bin> <out-dir> <filter>")
+        print("usage: python tools/fpd/extract_fpd_filtered.py <Scrambler.cs> <pack.bin> <out-dir> <filter>")
         return 2
 
     scrambler = pathlib.Path(sys.argv[1])
