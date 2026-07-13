@@ -105,6 +105,7 @@ value_length
 value_sha256
 is_empty
 is_control_only
+has_manual_newline
 control_codes
 text
 ```
@@ -113,6 +114,7 @@ text
 - `control_codes` 按出现顺序记录受支持的反斜杠控制符。
 - `is_empty` 只表示值长度为零。
 - `is_control_only` 表示去掉控制符和空白后没有可见文本。
+- `has_manual_newline` 标记字面 `\n`、`\r` 或真实 CR/LF，供中文换行审计直接筛选。
 - `relative_path` 是相对输入根目录的路径，用于避免同名 EGPACK 冲突。
 - CSV 中的偏移只用于审计，写回时必须重新解析目标文件。
 
@@ -132,8 +134,9 @@ relative_path,id,slot,expected_text,replacement_text
 2. 要求 `expected_text` 与原槽完全一致。
 3. 只替换目标值字节并更新偏移 `8..11` 的声明长度。
 4. 按文件内偏移逆序应用同一文件的多个修改。
-5. 拒绝重复修改、未知槽、缺失 ID、期望值不一致和输入/输出路径重合。
-6. 始终写入新的输出目录，不原地覆盖输入文件。
+5. 拒绝 `replacement_text` 中的字面 `\n`、`\r` 和真实 CR/LF；中文由引擎自动换行。
+6. 拒绝重复修改、未知槽、缺失 ID、期望值不一致和输入/输出路径重合。
+7. 始终写入新的输出目录，不原地覆盖输入文件。
 
 ## 验证
 
@@ -154,6 +157,7 @@ relative_path,id,slot,expected_text,replacement_text
 - 10 个语言槽及空槽完整导出。
 - 正文、ruby、speaker、staffroll 和 `staff90000` 分类。
 - 普通文本、空文本、`\f`、多个控制符和 UTF-8 中文。
+- 手动换行审计，以及中文替换值中的 `\n`、`\r`、CR、LF 拒绝。
 - 更长、更短和空字符串替换。
 - `expected_text` 不匹配、重复目标、非法 UTF-8 和损坏长度失败。
 - 无操作字节完全一致。
@@ -169,7 +173,7 @@ relative_path,id,slot,expected_text,replacement_text
 | TDA02 | 6310 | 17 | 111 | 280 |
 | TDA03 | 6913 | 24 | 133 | 232 |
 
-ATE 只作为本地兼容性探测对象。发现不同布局时必须给出确定诊断，不以猜测方式继续，也不承诺第一版写回 ATE。
+主任保护协会 ATE V2 是已实机可用的参考补丁，也是本地兼容性探测对象。部分成品文件使用引擎可容忍的旧声明长度、附加键、重复字段或重排字段；发现这些差异时必须给出确定诊断，不把未支持表述为补丁错误，也不承诺第一版写回 ATE。
 
 GitHub Actions 在 Windows 和 Linux 上运行合成测试。README 和格式说明全部使用中文，示例只引用合成文件名。
 

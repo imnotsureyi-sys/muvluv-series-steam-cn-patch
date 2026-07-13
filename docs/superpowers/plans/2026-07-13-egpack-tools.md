@@ -13,7 +13,7 @@
 - Do not modify TDA00-03 subtitle bodies, public chapter CSVs, release payloads, or existing Releases.
 - Do not use English fallback, old Chinese fallback, or fuzzy matching.
 - Never overwrite source EGPACK files.
-- Preserve `\p`, `\w`, `\f`, empty slots, and every unmodified byte.
+- Preserve source control codes in extraction and every unmodified byte; reject manual newline markers in Chinese replacement text.
 - Do not commit game resources, real manifests, private paths, or legacy script archives.
 - Stage only explicit files; never run `git add -A`.
 
@@ -33,6 +33,7 @@
 - Produces: `parse_egpack(path: Path) -> EgpackDocument`
 - Produces: `classify_resource(path: str, text_id: str) -> str`
 - Produces: `extract_control_codes(text: str) -> tuple[str, ...]`
+- Produces: `has_manual_newline(text: str) -> bool`
 - Produces: `is_control_only(text: str) -> bool`
 
 - [ ] **Step 1: Add a synthetic EGPACK builder**
@@ -152,7 +153,7 @@ git commit -m "feat: parse EGPACK language slots exactly"
 
 - [ ] **Step 1: Write manifest tests**
 
-Test that two records create exactly 20 rows, empty slots remain present, paths use `/`, offsets point at the real value bytes, hashes match the value bytes, and `\f` is marked `is_control_only=true` rather than empty.
+Test that two records create exactly 20 rows, empty slots remain present, paths use `/`, offsets point at the real value bytes, hashes match the value bytes, `\f` is marked `is_control_only=true` rather than empty, and manual newlines are explicitly flagged.
 
 - [ ] **Step 2: Run tests and verify RED**
 
@@ -205,7 +206,7 @@ git commit -m "feat: export complete EGPACK slot manifests"
 
 - [ ] **Step 1: Write failing writeback tests**
 
-Cover longer Chinese, shorter Chinese, an intentional empty replacement, multiple changes in one file, duplicate target rejection, expected-text mismatch, unknown slot, missing ID, and input/output overlap.
+Cover longer Chinese, shorter Chinese, an intentional empty replacement, multiple changes in one file, manual-newline rejection, duplicate target rejection, expected-text mismatch, unknown slot, missing ID, and input/output overlap.
 
 The core byte assertion is:
 
@@ -353,7 +354,7 @@ Include commands for manifest extraction, changes CSV, repacking, and verificati
 
 - [ ] **Step 2: Document the verified binary schema**
 
-Include magic, declared-size offset, CRC32 table, field marker shape, exact-vs-heuristic distinction, control-only records, and the fact that ATE variants are diagnostic-only in version 1.
+Include magic, declared-size offset, CRC32 table, field marker shape, exact-vs-heuristic distinction, control-only records, Chinese auto-wrapping rules, and the fact that the working ATE reference uses variants that are diagnostic-only in version 1.
 
 - [ ] **Step 3: Add cross-platform CI**
 
@@ -409,7 +410,7 @@ Also require 10 manifest rows per record and exact retention of TDA02's 41 and T
 
 - [ ] **Step 3: Probe latest patch EGPACKs and ATE**
 
-Confirm TDA00-03 parse successfully. For ATE, record supported files and deterministic structural errors for unsupported variants; do not weaken validation to force success.
+Confirm TDA00-03 parse successfully. For the working ATE V2 reference, record deterministic differences in declared length, added keys, duplicate fields, and reordered fields; do not weaken TDA validation to force a shared layout and do not describe unsupported variants as an invalid patch.
 
 - [ ] **Step 4: Exercise a local one-line copy-only patch**
 
