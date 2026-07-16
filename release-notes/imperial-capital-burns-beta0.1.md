@@ -19,6 +19,8 @@
 2. Windows 双击 `install.bat`。安装器会验证 Steam 原始 `pack.bin`、补丁清单及已有文件冲突，再写入 `%LOCALAPPDATA%\ancr\tm\data`。
 3. Steam Deck 请阅读压缩包内的 `STEAM_DECK_MANUAL.txt`，按说明手动复制 loose overlay 文件。
 
+压缩包根目录直接包含 `payload/`、`install.bat` 和 `STEAM_DECK_MANUAL.txt`。2026-07-16 已重新封装附件，移除多余的外层目录，修复 Windows Explorer 解压日期地点卡时的路径过长错误；汉化资源内容未改变。
+
 补丁不会改写 Steam 游戏目录中的 `obb/pack.bin`，也不会修改 exe 或存档。卸载时运行 `uninstall.ps1`；脚本只删除哈希仍与本补丁一致的文件。
 
 ## 测试状态
