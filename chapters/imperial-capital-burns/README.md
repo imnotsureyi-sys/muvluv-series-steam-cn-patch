@@ -16,7 +16,7 @@
 - 角色卡：`11_name00–35_ja.webp` 与 `11_name_non_ja.webp` 共 37 张，以 JP 卡片为姓名依据，使用 TDA 字体在原 224×96 透明槽中重绘中文姓名。
 - 播片文字条：制作 JP 脚本实际调用的 74 个 `add_telop_*`，保持原 1280×720 透明画布、原锚点和显示位置。
 - 日期地点卡：61 张日文原卡及其 61 张兼容槽均已制作中文版本，保持原画布、字号和文字中心位置，使用 `SourceHanSansSC-Bold.otf`。
-- 字体：正文、选项与 Common 使用 `SourceHanSansSC.otf` 常规字重，speaker 与 HUD 使用 `SourceHanSansSC-Bold.otf`；保留 TDA 的 `.smash` 运行时字体路线，不使用 ATE 字体。
+- 字体：配置与 TDA00-03 完全一致，正文、选项、Common、speaker 与 HUD 全部使用 `SourceHanSansSC-Bold.otf`，不使用 ATE 字体。
 - 开局提示：沿用 TDA00-03 的中文非商业补丁提示图。
 - 安装路线：FPD loose overlay，不改写、不重封 `pack.bin`；提供 Windows 一键安装及 Steam Deck 手动替换说明。
 
