@@ -2,6 +2,13 @@
 
 本文件记录公开发布版本的主要变化。完整下载请见 [Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases)。
 
+## 帝都燃烧篇 beta0.1
+
+- 发布帝都燃烧篇初始测试版。
+- 覆盖正文、speaker、选项、菜单与系统 UI、图片文字条、角色名卡、日期地点卡及中文字体。
+- 提供 Windows 一键安装、卸载脚本与 Steam Deck 手动替换说明。
+- 公开 5,564 条 JP-CN 正文源表和 185 项本章术语表。
+
 ## TDA03 beta0.1.6
 
 - 发布 TDA03 当前测试版。
