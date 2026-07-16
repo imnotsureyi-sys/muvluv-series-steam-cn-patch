@@ -1,8 +1,8 @@
 # 补丁源表
 
-这里保存 TDA00-03 当前补丁使用的 JP-CN 源表。
+这里保存 TDA00-03 与帝都燃烧篇当前补丁使用的 JP-CN 源表。
 
-这些 CSV 是已发布 TDA 测试补丁的公开源表。表中保留 JP 原文、当前 CN 文本，以及工具写回和反馈定位所需的字段。
+这些 CSV 是已发布测试补丁的公开源表。表中保留 JP 原文、当前 CN 文本，以及工具写回和反馈定位所需的字段。
 
 ## 文件
 
@@ -12,6 +12,8 @@
 | `tda01_jp_cn_compare.csv` | TDA01 | 8,565 | `tda01-beta0.2.2` 当前 JP-CN 源表 |
 | `tda02_jp_cn_compare.csv` | TDA02 | 6,589 | `tda02-beta0.1` 当前 JP-CN 源表 |
 | `tda03_jp_cn_compare.csv` | TDA03 | 6,913 | `tda03-beta0.1` 当前 JP-CN 源表 |
+| `imperial_capital_burns_jp_cn_compare.csv` | 帝都燃烧篇 | 5,564 | `imperial-capital-burns-beta0.1` 当前 JP-CN 正文源表 |
+| `imperial_capital_burns_terminology_jp_cn.csv` | 帝都燃烧篇 | 185 | 本章专有术语、统一译名与审定依据 |
 
 ## 字段
 
@@ -26,6 +28,8 @@
 - `cn_text`：当前简体中文文本。
 
 `review_status`、`audit_flags` 等内部审计列不放在公开源表中。
+
+帝都燃烧篇术语表另保留 `jp`、`cn`、`occurrences` 与 `basis` 四列，用于核对本章统一译名；内部候选、问题单和审核过程列不公开。
 
 ## 规则
 
