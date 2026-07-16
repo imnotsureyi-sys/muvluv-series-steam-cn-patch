@@ -6,9 +6,9 @@
 
 - 发布帝都燃烧篇初始测试版。
 - 覆盖正文、speaker、选项、菜单与系统 UI、图片文字条、角色名卡、日期地点卡及中文字体。
-- 提供 Windows 一键安装、卸载脚本与 Steam Deck 手动替换说明。
+- 提供与 TDA00-03 相同的 Windows 一键复制安装和 Steam Deck 手动安装说明。
 - 公开 5,564 条 JP-CN 正文源表和 185 项本章术语表。
-- 重新封装 beta0.1 压缩包，去掉多余顶层目录，修复 Windows Explorer 解压日期地点卡时的路径过长错误；补丁内容不变。
+- 按 TDA00-03 的四项结构重新封装 beta0.1，去掉预览、开发清单、PowerShell/卸载脚本、`.smash`、备用字体和多余顶层目录，并修复 Windows Explorer 的路径过长问题。
 
 ## TDA03 beta0.1.6
 

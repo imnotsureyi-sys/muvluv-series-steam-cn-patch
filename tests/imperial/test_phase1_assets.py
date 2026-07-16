@@ -440,28 +440,16 @@ class InstallerTargetTests(unittest.TestCase):
             params["Speaker"],
         )
 
-    def test_tda_font_payload_includes_complete_root_and_runtime_font_trees(self):
+    def test_tda_font_payload_uses_only_the_required_root_font_files(self):
         self.assertEqual(
             {
                 "Font.cfg",
                 "Font_en.cfg",
-                "Font_ja.cfg",
-                "Font_jp.cfg",
                 "Font_zh_hans.cfg",
-                "Font_zh_hant.cfg",
-                "msyhbd.ttc",
-                "NotoSansSC-VF.ttf",
-                "simhei.ttf",
                 "SourceHanSansSC-Bold.otf",
                 "SourceHanSansSC.otf",
-                "SourceHanSerifCN-Medium-6.otf",
-                "SourceHanSerif-SemiBold.ttc",
             },
             set(build_phase1.FONT_HASHES),
-        )
-        self.assertEqual(
-            {"Font.cfg", "MPLUS1p-Medium.ttf", "prohibited.xml"},
-            set(build_phase1.SMASH_FONT_HASHES),
         )
 
     def test_written_font_configs_are_hash_locked(self):
@@ -489,7 +477,7 @@ class InstallerTargetTests(unittest.TestCase):
         parser = build_phase1.create_parser()
         options = {action.dest for action in parser._actions}
         self.assertNotIn("egpack_root", options)
-        self.assertIn("tda_smash_font_root", options)
+        self.assertNotIn("tda_smash_font_root", options)
         self.assertIn("telop_reference_root", options)
         self.assertIn("location_date_card_root", options)
         self.assertIn("tda_boot_root", options)
@@ -499,39 +487,21 @@ class InstallerTargetTests(unittest.TestCase):
             output = Path(td)
             build_phase1.write_installers(output)
 
-            install = (output / "install.ps1").read_text(encoding="utf-8-sig")
             install_bat = (output / "install.bat").read_text(encoding="ascii")
-            uninstall = (output / "uninstall.ps1").read_text(encoding="utf-8-sig")
+            readme = (output / "README.txt").read_text(encoding="utf-8-sig")
+            deck = (output / "SteamDeck手动安装.txt").read_text(encoding="utf-8-sig")
 
-            expected = 'Join-Path $env:LOCALAPPDATA "ancr\\tm\\data"'
-            self.assertIn(expected, install)
-            self.assertIn(expected, uninstall)
-            self.assertIn(
-                'Get-Content -LiteralPath (Join-Path $PSScriptRoot "payload-manifest.json") -Raw -Encoding UTF8',
-                install,
-            )
-            self.assertIn('Get-FileHash -LiteralPath $Source -Algorithm SHA256', install)
-            self.assertIn('$SourceInfo.Length -ne [int64]$Item.size', install)
-            self.assertIn('清单外文件', install)
-            self.assertIn('Get-PSDrive -PSProvider FileSystem', install)
-            self.assertIn('SteamLibrary\\steamapps\\common', install)
-            self.assertIn('Get-ChildItem -LiteralPath $PayloadRoot -Recurse -File -Force', install)
-            self.assertIn('$AllowedPrevious[$Property.Name]', install)
-            self.assertIn('$Existing -notin $Previous', install)
             self.assertEqual(
-                {
-                    "root/assets/data/gui/textures/boot/00_note000_ja.webp",
-                    "root/assets/data/gui/textures/boot/00_v_note000_ja.webp",
-                },
-                set(build_phase1.KNOWN_PREVIOUS_HASHES),
+                {"install.bat", "README.txt", "SteamDeck手动安装.txt"},
+                {path.name for path in output.iterdir()},
             )
-            self.assertIn(
-                'Get-Content -LiteralPath (Join-Path $PSScriptRoot "payload-manifest.json") -Raw -Encoding UTF8',
-                uninstall,
-            )
-            self.assertNotIn("Join-Path $GameDir ($Item.path", install)
-            self.assertIn('powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%~dp0install.ps1"', install_bat)
-            self.assertNotIn("robocopy", install_bat.lower())
+            self.assertIn(r'%LOCALAPPDATA%\ancr\tm\data', install_bat)
+            self.assertIn(r'robocopy "%~dp0payload" "%TARGET%" /E', install_bat)
+            self.assertIn("只把其中的 root 目录复制", readme)
+            self.assertIn("compatdata/2630300", deck)
+            self.assertIn("复制里面的 root 目录", deck)
+            self.assertNotIn(".smash", deck)
+            self.assertNotIn("cp -a", deck)
 
 
 if __name__ == "__main__":

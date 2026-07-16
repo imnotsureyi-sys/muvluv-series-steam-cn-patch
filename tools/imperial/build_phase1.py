@@ -36,33 +36,17 @@ FONT_HASHES = {
     "SourceHanSansSC.otf": "F1D8611151880C6C336AABEAC4640EF434FA13CBFBF1FFE82D0A71B2A5637256",
     "Font.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
     "Font_en.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
-    "Font_ja.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
-    "Font_jp.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
     "Font_zh_hans.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
-    "Font_zh_hant.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
-    "msyhbd.ttc": "4508821B3DFFE01F0EF5E5326A3E60DF705A44633858811F67B6982DCE3F6EE6",
-    "NotoSansSC-VF.ttf": "763146584CF0710223441356B4395E279021B0806C196614377A7A0174AE074A",
-    "simhei.ttf": "9B1959DB3B3ABEB7EFDAEC26EDF7DFE871A6039DE8D614AF7248575207BE629E",
-    "SourceHanSerifCN-Medium-6.otf": "C8009023D5233D982F6C84007E898496069E880167959643FCBA5630B0742134",
-    "SourceHanSerif-SemiBold.ttc": "D14D82A9BC745C250141A88FFB879ECA1D8CB4D3B8FCD75D5DC096BA8E383593",
 }
 FONT_CONFIG_NAMES = (
     "Font.cfg",
     "Font_en.cfg",
-    "Font_ja.cfg",
-    "Font_jp.cfg",
     "Font_zh_hans.cfg",
-    "Font_zh_hant.cfg",
 )
 FONT_BINARY_HASHES = {
     name: expected
     for name, expected in FONT_HASHES.items()
     if name not in FONT_CONFIG_NAMES
-}
-SMASH_FONT_HASHES = {
-    "Font.cfg": "87C31D8CF53A665D448E2B303A756BF4027018FBE0880682D88641F85F3CD3CE",
-    "MPLUS1p-Medium.ttf": "7527ECD194645E6E17A387F3AD063929B882369A80886A1D626B3F4E10AB03B7",
-    "prohibited.xml": "FA1CF39E5E15262CF952A203B27DB261049A1FEBC9FEBD1111B926C330B9EF6B",
 }
 KNOWN_PREVIOUS_HASHES = {
     "root/assets/data/gui/textures/boot/00_note000_ja.webp": [
@@ -758,6 +742,45 @@ def create_location_date_preview(
 
 
 def write_installers(output: Path) -> None:
+    """Write the same minimal distribution shell used by the TDA patches."""
+    install_bat = r'''@echo off
+setlocal
+set "TARGET=%LOCALAPPDATA%\ancr\tm\data"
+robocopy "%~dp0payload" "%TARGET%" /E
+if %ERRORLEVEL% LEQ 7 exit /b 0
+exit /b %ERRORLEVEL%
+'''
+    readme = """《The Imperial Capital Burns / 帝都燃烧篇》简体中文补丁 beta0.1
+
+Windows 安装：
+1. 完全退出游戏并解压补丁。
+2. 双击 install.bat。
+3. 脚本会把 payload 内的 root 目录复制到 %LOCALAPPDATA%\\ancr\\tm\\data，并自动合并覆盖。
+
+Windows 手动安装：
+打开 payload 文件夹，只把其中的 root 目录复制到 %LOCALAPPDATA%\\ancr\\tm\\data，选择合并并覆盖。
+不要把 payload 文件夹本身套进 data，也不要修改 Steam 游戏目录中的 obb\\pack.bin。
+
+Steam Deck：见 SteamDeck手动安装.txt。
+翻译依据：仅 JP 原文，不使用 EN 文本、旧中文或模糊匹配兜底。
+"""
+    steam_deck = """《帝都燃烧篇》Steam Deck 手动安装说明
+
+1. 进入 Steam Deck 桌面模式，并完全退出游戏。
+2. 至少启动过一次游戏后，在文件管理器中开启“显示隐藏文件”。
+3. 打开补丁的 payload 文件夹，复制里面的 root 目录。
+4. 打开下面的 data 目录，把 root 粘贴进去，选择合并目录并覆盖同名文件：
+   /home/deck/.local/share/Steam/steamapps/compatdata/2630300/pfx/drive_c/users/steamuser/AppData/Local/ancr/tm/data/
+5. 如果游戏装在 microSD 卡或其他 Steam 库，就进入该库的 steamapps/compatdata/2630300，再按后面的相同路径找到 AppData/Local/ancr/tm/data/。
+6. 复制完成后直接启动游戏。
+
+注意：复制的是 payload 里面的 root，不是把 payload 整个套进 data。不要修改 Steam 游戏目录中的 obb/pack.bin。
+"""
+    (output / "install.bat").write_text(install_bat, encoding="ascii", newline="\r\n")
+    (output / "README.txt").write_text(readme, encoding="utf-8-sig")
+    (output / "SteamDeck手动安装.txt").write_text(steam_deck, encoding="utf-8-sig")
+    return
+
     install = r'''param(
     [string]$GameDir = ""
 )
@@ -854,23 +877,15 @@ Steam Deck：见 STEAM_DECK_MANUAL.txt。
 """
     steam_deck = """《帝都燃烧篇》Steam Deck 手动安装说明
 
-1. 先运行一次游戏，确认能进入标题界面，然后完全退出游戏。
-2. 找到 Proton 前缀内的覆盖目录。内置存储的常见位置：
-   普通 Steam：~/.local/share/Steam/steamapps/compatdata/2630300/pfx/drive_c/users/steamuser/AppData/Local/ancr/tm/data
-   Flatpak Steam：~/.var/app/com.valvesoftware.Steam/.local/share/Steam/steamapps/compatdata/2630300/pfx/drive_c/users/steamuser/AppData/Local/ancr/tm/data
-   microSD 或自定义库可在 Konsole 中查找：
-   find ~/.local/share/Steam ~/.var/app/com.valvesoftware.Steam /run/media/deck -type d -path '*/steamapps/compatdata/2630300/pfx/drive_c/users/steamuser/AppData/Local/ancr/tm/data' 2>/dev/null
-3. 将找到的完整目录保存为 TARGET，例如：
-   TARGET="$HOME/.local/share/Steam/steamapps/compatdata/2630300/pfx/drive_c/users/steamuser/AppData/Local/ancr/tm/data"
-4. 备份该 data 目录中与本补丁 payload 同路径的已有松散文件。
-5. 在补丁解压目录中执行：
-   mkdir -p "$TARGET"
-   cp -a payload/.smash payload/root "$TARGET/"
-   注意：.smash 是隐藏目录，图形文件管理器中需要开启“显示隐藏文件”。
-6. 也可以在文件管理器中将 payload/.smash 和 payload/root 完整复制到 TARGET，选择“合并目录并覆盖同名文件”。
-7. 不要把 payload 复制进 Steam 游戏安装目录；不要替换或修改 obb/pack.bin。
+1. 进入 Steam Deck 桌面模式，先完全退出游戏。
+2. 在文件管理器中开启“显示隐藏文件”。
+3. 打开补丁的 payload 文件夹，里面有 .smash 和 root 两个目录。
+4. 把 .smash 和 root 直接复制到下面的 data 目录，选择“合并目录并覆盖同名文件”：
+   ~/.local/share/Steam/steamapps/compatdata/2630300/pfx/drive_c/users/steamuser/AppData/Local/ancr/tm/data
+5. 如果游戏安装在 microSD 或其他 Steam 库，就进入该库的 steamapps/compatdata/2630300，再按相同路径找到 AppData/Local/ancr/tm/data。
+6. 复制完成后直接启动游戏。
 
-手动校验：payload-manifest.json 记录了每个补丁文件的相对路径、大小和 SHA-256。Windows 双击安装器会自动执行这些检查；Steam Deck 手动安装时可用 sha256sum 复核。
+注意：复制的是 payload 里面的 .smash 和 root，不是把 payload 整个套进 data。不要修改 Steam 游戏目录里的 obb/pack.bin。
 """
     (output / "install.ps1").write_text(install, encoding="utf-8-sig")
     (output / "install.bat").write_text(install_bat, encoding="ascii", newline="\r\n")
@@ -997,7 +1012,6 @@ def validate(
         + len(telop_rows) * 2
         + len(location_date_rows) * 2
         + len(FONT_HASHES)
-        + len(SMASH_FONT_HASHES)
         + 1
         + len(telop_position_files)
     )
@@ -1059,12 +1073,6 @@ def validate(
     for name in FONT_CONFIG_NAMES:
         if (payload / "gui" / "font" / name).read_text(encoding="utf-8") != expected_config:
             raise RuntimeError(f"Imperial font-role config validation failed: {name}")
-    smash_font = output / "payload" / ".smash" / "gui" / "font"
-    for name, expected in SMASH_FONT_HASHES.items():
-        if sha256(smash_font / name) != expected:
-            raise RuntimeError(f"TDA runtime font validation failed: {name}")
-
-
 def create_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--repo", required=True, type=Path)
@@ -1072,7 +1080,6 @@ def create_parser() -> argparse.ArgumentParser:
     parser.add_argument("--data-spec-gui-root", required=True, type=Path)
     parser.add_argument("--uistring-dec", required=True, type=Path)
     parser.add_argument("--tda-font-root", required=True, type=Path)
-    parser.add_argument("--tda-smash-font-root", required=True, type=Path)
     parser.add_argument("--tda-boot-root", required=True, type=Path)
     parser.add_argument("--fsnr-main", required=True, type=Path)
     parser.add_argument("--jp-script-root", required=True, type=Path)
@@ -1105,11 +1112,6 @@ def main() -> int:
     payload_font_root = payload_data / "gui" / "font"
     copy_fonts(args.tda_font_root, payload_font_root)
     write_font_configs(payload_font_root)
-    copy_fonts(
-        args.tda_smash_font_root,
-        args.output / "payload" / ".smash" / "gui" / "font",
-        SMASH_FONT_HASHES,
-    )
     font_path = args.tda_font_root / "SourceHanSansSC-Bold.otf"
     character_name_rows = read_tsv(phase / "character_name_cards_ja_zh.tsv")
     render_character_name_rows(
@@ -1248,7 +1250,6 @@ def main() -> int:
         args.output / "preview" / "location-date-card-contact-sheet.png",
     )
     shutil.rmtree(work)
-    write_manifest(args.output)
     write_installers(args.output)
     print(f"built {args.output}")
     print(f"payload files: {len(list((args.output / 'payload').rglob('*.*')))}")
