@@ -404,7 +404,7 @@ class ImageSlotTests(unittest.TestCase):
 
 
 class InstallerTargetTests(unittest.TestCase):
-    def test_font_config_uses_regular_body_and_bold_speaker_roles(self):
+    def test_font_config_matches_tda_all_bold_roles(self):
         root = ET.fromstring(build_phase1.font_config_text())
         params = {
             item.findtext("Label"): {
@@ -417,27 +417,35 @@ class InstallerTargetTests(unittest.TestCase):
 
         self.assertEqual(
             {
-                "family": "Source Han Sans SC",
-                "bold": "false",
-                "file": "SourceHanSansSC.otf",
+                "family": "beatfont1",
+                "bold": "true",
+                "file": "SourceHanSansSC-Bold.otf",
             },
             params["Common"],
         )
         self.assertEqual(
             {
-                "family": "Source Han Sans SC",
-                "bold": "false",
-                "file": "SourceHanSansSC.otf",
+                "family": "message",
+                "bold": "true",
+                "file": "SourceHanSansSC-Bold.otf",
             },
             params["Message"],
         )
         self.assertEqual(
             {
-                "family": "Source Han Sans SC",
+                "family": "speaker",
                 "bold": "true",
                 "file": "SourceHanSansSC-Bold.otf",
             },
             params["Speaker"],
+        )
+        self.assertEqual(
+            {
+                "family": "hud",
+                "bold": "true",
+                "file": "SourceHanSansSC-Bold.otf",
+            },
+            params["Hud"],
         )
 
     def test_tda_font_payload_uses_only_the_required_root_font_files(self):
@@ -449,7 +457,7 @@ class InstallerTargetTests(unittest.TestCase):
                 "SourceHanSansSC-Bold.otf",
                 "SourceHanSansSC.otf",
             },
-            set(build_phase1.FONT_HASHES),
+            set(build_phase1.FONT_HASHES) | set(build_phase1.FONT_CONFIG_NAMES),
         )
 
     def test_written_font_configs_are_hash_locked(self):
@@ -462,7 +470,7 @@ class InstallerTargetTests(unittest.TestCase):
             }
 
         self.assertEqual(
-            {"51A9E79A17C09BD77192B368BC23ABE2067D984AC807BFA928CC251ACDD70D23"},
+            {"72F473093286D0DFC08085BBD85403D35F275B3CFC248102B26B534451D889BC"},
             hashes,
         )
 

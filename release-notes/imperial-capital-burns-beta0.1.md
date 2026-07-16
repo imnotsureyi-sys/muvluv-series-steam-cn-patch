@@ -7,7 +7,7 @@
 - 完整正文、旁白、speaker 与选项文本。
 - 主菜单、设置、系统提示、章节选择等可见 UI。
 - 角色名卡、播片文字条、日期地点卡及开局提示图。
-- 沿用 TDA00-03 字体路线：正文、选项与 Common 使用 `SourceHanSansSC.otf` 常规字重，speaker 使用粗体；日期地点卡使用 `SourceHanSansSC-Bold.otf` 重绘。
+- 字体配置与 TDA00-03 完全一致：正文、选项、Common、speaker 与 HUD 全部使用 `SourceHanSansSC-Bold.otf`；日期地点卡同样使用该字体重绘。
 - 与 TDA00-03 相同的精简 Windows 一键复制安装。
 - Steam Deck 手动替换说明。
 

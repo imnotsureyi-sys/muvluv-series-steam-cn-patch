@@ -34,20 +34,13 @@ PACK_SHA256 = "1D749713C01AE4E825A82FA2E75BF232303B1510708BBC9B7B98275315F7344F"
 FONT_HASHES = {
     "SourceHanSansSC-Bold.otf": "DF560F379D55A0C9859ADD605DD67E0721955FDE3CD76C41C5F8D6CBA7823D41",
     "SourceHanSansSC.otf": "F1D8611151880C6C336AABEAC4640EF434FA13CBFBF1FFE82D0A71B2A5637256",
-    "Font.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
-    "Font_en.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
-    "Font_zh_hans.cfg": "8F57946E48267F568B995B13B1F11E05225046424B3FFAAB13611EF28146EB17",
 }
 FONT_CONFIG_NAMES = (
     "Font.cfg",
     "Font_en.cfg",
     "Font_zh_hans.cfg",
 )
-FONT_BINARY_HASHES = {
-    name: expected
-    for name, expected in FONT_HASHES.items()
-    if name not in FONT_CONFIG_NAMES
-}
+FONT_BINARY_HASHES = FONT_HASHES
 KNOWN_PREVIOUS_HASHES = {
     "root/assets/data/gui/textures/boot/00_note000_ja.webp": [
         "7B2761FE085D2B8C348FB3B12D8C7425343F20FDE96A07658E3C6688942DF83F"
@@ -93,26 +86,26 @@ def font_config_text() -> str:
   <FontParamList>
     <FontParam>
       <Label>Common</Label>
-      <FamilyName>Source Han Sans SC</FamilyName>
-      <Bold>false</Bold>
-      <File>SourceHanSansSC.otf</File>
+      <FamilyName>beatfont1</FamilyName>
+      <Bold>true</Bold>
+      <File>SourceHanSansSC-Bold.otf</File>
     </FontParam>
     <FontParam>
       <Label>Message</Label>
-      <FamilyName>Source Han Sans SC</FamilyName>
-      <Bold>false</Bold>
-      <File>SourceHanSansSC.otf</File>
+      <FamilyName>message</FamilyName>
+      <Bold>true</Bold>
+      <File>SourceHanSansSC-Bold.otf</File>
       <LineBreak>1.05</LineBreak>
     </FontParam>
     <FontParam>
       <Label>Speaker</Label>
-      <FamilyName>Source Han Sans SC</FamilyName>
+      <FamilyName>speaker</FamilyName>
       <Bold>true</Bold>
       <File>SourceHanSansSC-Bold.otf</File>
     </FontParam>
     <FontParam>
       <Label>Hud</Label>
-      <FamilyName>Source Han Sans SC</FamilyName>
+      <FamilyName>hud</FamilyName>
       <Bold>true</Bold>
       <File>SourceHanSansSC-Bold.otf</File>
     </FontParam>
@@ -1012,6 +1005,7 @@ def validate(
         + len(telop_rows) * 2
         + len(location_date_rows) * 2
         + len(FONT_HASHES)
+        + len(FONT_CONFIG_NAMES)
         + 1
         + len(telop_position_files)
     )
