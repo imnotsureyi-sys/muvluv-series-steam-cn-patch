@@ -3,16 +3,39 @@
 ## 状态
 
 - 分支：`chapter/photonflowers`
-- 当前公开版本：未发布
+- 当前公开版本：EX 七篇第二遍审核源表
 - 发布页：无
 - native 行数：5,510
-- 补丁状态：提取/审计阶段
+- 补丁状态：EX 七篇第二遍审核完成；尚未写回或实机验证
 
 ## 范围
 
 该工作流对应 Steam 版 `Muv-Luv photonflowers` 的 native 资源。
 
 当前阶段是资源/文本提取和审计，还不是公开汉化补丁。
+
+## photonflowers EX 公开源表
+
+- [`patch-sources/photonflowers_ex_jp_cn_compare.csv`](../../patch-sources/photonflowers_ex_jp_cn_compare.csv)：EX 七篇共 6,931 行的第二遍审核 JP-CN 全文对照表。
+- [`patch-sources/photonflowers_ex_terminology_jp_cn.csv`](../../patch-sources/photonflowers_ex_terminology_jp_cn.csv)：88 项篇内专名、固定表达、人物称谓与用户审定译名。
+
+公开正文表只保留连续阅读顺序、`stable_id`、RIO、scene、日文说话人、JP 原文和当前 CN 文本；控制字符转写为 `<01>`、`<03>`、`<05>`、`<0A>` 等可见标记。内部批次、审核状态、问题单和证据定位不公开。
+
+《桜の花が咲くまえに》的 2,209 条既有中文受保护：第二遍审核未直接修改这些旧译；其中发现的 221 条实质问题仍保留原 CN，等待用户以后逐项或按组批准。其余六篇及第一遍新译已经完成第二遍审核，当前非保护开放问题为 0。
+
+### EX 七篇
+
+1. 《樱花盛开之前》
+2. 《和小武在一起！》
+3. 《小武哥的尾巴》
+4. 《白银同学，等一下！！》
+5. 《白银……在吃吗？》
+6. 《其名小武》
+7. 《吾名冥夜》
+
+### 署名
+
+汉化整理与审核：Yi Shen（[`imnotsureyi-sys`](https://github.com/imnotsureyi-sys)）与 OpenAI Codex。
 
 ## 当前证据
 
