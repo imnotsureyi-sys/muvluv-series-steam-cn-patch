@@ -15,11 +15,12 @@
 | `imperial_capital_burns_jp_cn_compare.csv` | 帝都燃烧篇 | 5,564 | `imperial-capital-burns-beta0.1` 当前 JP-CN 正文源表 |
 | `imperial_capital_burns_terminology_jp_cn.csv` | 帝都燃烧篇 | 185 | 本章专有术语、统一译名与审定依据 |
 | `photonmelodies_shard_of_spacetime_jp_cn_compare.csv` | 时空的欠片 | 36,176 | 第二遍全文审核后的 JP-CN 正文源表 |
-| `photonmelodies_shard_of_spacetime_terminology_jp_cn.csv` | 时空的欠片 | 137 | 本篇专名、固定表达、人物称谓与审定依据 |
+| `photonmelodies_shard_of_spacetime_terminology_jp_cn.csv` | 时空的欠片 | 417 | 已确认或须结合语境使用的本篇专名、固定表达、人物称谓与审定依据 |
+| `photonmelodies_shard_of_spacetime_terminology_baseline_jp_cn.csv` | 时空的欠片 | 2,321 | 全量术语基线：确认项、语境型项目、候选项及定位证据 |
 
 ## 字段
 
-当前公开源表只保留这些核心列：
+当前公开正文源表只保留这些核心列：
 
 - `call_order`：稳定调用/显示顺序。
 - `id`：游戏文本 ID。
@@ -31,7 +32,9 @@
 
 `review_status`、`audit_flags` 等内部审计列不放在公开源表中。
 
-帝都燃烧篇术语表另保留 `jp`、`cn`、`occurrences` 与 `basis` 四列，用于核对本章统一译名；内部候选、问题单和审核过程列不公开。
+正式术语表保留 `jp`、`cn`、`occurrences` 与 `basis` 四列，用于核对已确认译名和须结合语境使用的映射。
+
+《时空的欠片》术语基线另保留 `status`、类别、正文/说话人命中数、对齐数、首次出现位置、来源与依据。`confirmed` 表示可作为固定映射使用，`contextual` 表示译法成立但仍须结合句子判断，`candidate` 只表示正文中需要关注的候选词，不等于已经审定，也不会自动进入正式术语表。
 
 ## 规则
 
