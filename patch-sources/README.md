@@ -1,8 +1,8 @@
 # 补丁源表
 
-这里保存 TDA00-03 与帝都燃烧篇当前补丁使用的 JP-CN 源表。
+这里保存 TDA00-03、帝都燃烧篇与 photonmelodies《时空的欠片》的 JP-CN 源表。
 
-这些 CSV 是已发布测试补丁的公开源表。表中保留 JP 原文、当前 CN 文本，以及工具写回和反馈定位所需的字段。
+这些 CSV 是已发布测试补丁或已完成全文审核章节的公开源表。表中保留 JP 原文、当前 CN 文本，以及工具写回和反馈定位所需的字段。
 
 ## 文件
 
@@ -14,6 +14,8 @@
 | `tda03_jp_cn_compare.csv` | TDA03 | 6,913 | `tda03-beta0.1` 当前 JP-CN 源表 |
 | `imperial_capital_burns_jp_cn_compare.csv` | 帝都燃烧篇 | 5,564 | `imperial-capital-burns-beta0.1` 当前 JP-CN 正文源表 |
 | `imperial_capital_burns_terminology_jp_cn.csv` | 帝都燃烧篇 | 185 | 本章专有术语、统一译名与审定依据 |
+| `photonmelodies_shard_of_spacetime_jp_cn_compare.csv` | 时空的欠片 | 36,176 | 第二遍全文审核后的 JP-CN 正文源表 |
+| `photonmelodies_shard_of_spacetime_terminology_jp_cn.csv` | 时空的欠片 | 137 | 本篇专名、固定表达、人物称谓与审定依据 |
 
 ## 字段
 
@@ -21,7 +23,7 @@
 
 - `call_order`：稳定调用/显示顺序。
 - `id`：游戏文本 ID。
-- `egpack`：来源包或容器。
+- `egpack` / `rio_file`：来源包、RIO 文件或其他资源容器。
 - `scene`：场景或脚本定位信息。
 - `speaker_jp`：日文说话人字段。
 - `jp_text`：日文原文。
