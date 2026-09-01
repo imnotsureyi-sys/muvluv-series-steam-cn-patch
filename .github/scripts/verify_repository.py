@@ -42,32 +42,34 @@ TEXT_SUFFIXES = {
 }
 ALLOWED_EXTENSIONLESS = {".gitattributes", ".gitignore", "LICENSE"}
 REQUIRED = {
-    "README.md", "README.zh-CN.md", "CONTRIBUTING.md", "ROADMAP.md",
-    "LICENSE", "NOTICE.md", "THIRD_PARTY.md", "localization/README.md",
-    "age2/README.md", "rugp/README.md", "age2/requirements.txt",
-    "rugp/requirements.txt", "rugp/runtime/README.md",
+    "README.md", "docs/en/README.md", "docs/project/CONTRIBUTING.md",
+    "docs/project/ROADMAP.md", "LICENSE", "docs/legal/NOTICE.md",
+    "docs/legal/THIRD_PARTY.md", "localization/README.md",
+    "AGE2/README.md", "rUGP/README.md", "AGE2/requirements.txt",
+    "rUGP/requirements.txt", "rUGP/runtime/README.md",
     "localization/requirements.txt",
-    "docs/player-guide.md", "docs/player-guide.zh-CN.md", "docs/README.md",
-    "docs/repository-architecture.md", "docs/research-index.md",
-    "docs/release-index.json",
+    "docs/player/README.md", "docs/en/player-guide.md", "docs/README.md",
+    "docs/research/repository-architecture.md", "docs/research/README.md",
+    "docs/en/research-index.md",
+    "docs/player/release-index.json",
     ".github/scripts/tests/test_verify_repository.py",
     ".github/scripts/tests/test_public_cli_help.py",
     "localization/new-locale.md",
     "localization/tools/verify_steam_depot_manifest.py",
-    "age2/tools/text/build_review_ledger.py",
-    "age2/docs/postmortems/loose-overlay-boundary.md",
-    "age2/docs/postmortems/structural-empty-records.md",
-    "age2/docs/postmortems/font-glyph-substitution-retired.md",
-    "age2/docs/postmortems/public-snapshot-release-alignment.md",
-    "age2/evidence/text-review-ledger-v1/pending.csv",
-    "age2/evidence/text-review-ledger-v1/manifest.json",
-    "age2/games/imperial-capital-burns/images/copy/source-image-lock.v2.json",
-    "rugp/tools/images/decode_record.py",
-    "rugp/packaging/steam_locale_preflight.py",
-    "rugp/docs/postmortems/ici-resize-metadata.md",
-    "rugp/docs/postmortems/image-transport-runtime.md",
-    "rugp/evidence/photon-image-routes-v1/routes_1490.v1.json",
-    "rugp/evidence/photon-reviewed-text-v1/manifest.json",
+    "AGE2/tools/text/build_review_ledger.py",
+    "AGE2/docs/postmortems/loose-overlay-boundary.md",
+    "AGE2/docs/postmortems/structural-empty-records.md",
+    "AGE2/docs/postmortems/font-glyph-substitution-retired.md",
+    "AGE2/docs/postmortems/public-snapshot-release-alignment.md",
+    "AGE2/evidence/text-review-ledger-v1/pending.csv",
+    "AGE2/evidence/text-review-ledger-v1/manifest.json",
+    "AGE2/games/imperial-capital-burns/images/copy/source-image-lock.v2.json",
+    "rUGP/tools/images/decode_record.py",
+    "rUGP/packaging/steam_locale_preflight.py",
+    "rUGP/docs/postmortems/ici-resize-metadata.md",
+    "rUGP/docs/postmortems/image-transport-runtime.md",
+    "rUGP/evidence/photon-image-routes-v1/routes_1490.v1.json",
+    "rUGP/evidence/photon-reviewed-text-v1/manifest.json",
 }
 ABSOLUTE_WORKSTATION_PATH = re.compile(
     r"(?i)(?:[a-z]:[\\/](?:users|steam|steamlibrary|chromedownloads)[\\/]"
@@ -75,7 +77,7 @@ ABSOLUTE_WORKSTATION_PATH = re.compile(
 )
 ABSOLUTE_PATH_EXCEPTIONS = {
     # Deliberately malicious input used to prove the package path guard.
-    "rugp/tests/packaging/test_build_photon_cn_beta01.py",
+    "rUGP/tests/packaging/test_build_photon_cn_beta01.py",
 }
 MARKDOWN_LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
 HTML_COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
@@ -189,7 +191,7 @@ def secret_marker_labels(text: str) -> list[str]:
 
 
 def check_release_index(errors: list[str]) -> None:
-    relative = "docs/release-index.json"
+    relative = "docs/player/release-index.json"
     path = ROOT / relative
     if not path.is_file():
         return
@@ -212,7 +214,7 @@ def check_release_index(errors: list[str]) -> None:
         findings = distribution_review.get("blocking_findings")
         if not isinstance(findings, list) or set(findings) != EXPECTED_DISTRIBUTION_FINDINGS:
             fail(errors, f"{relative}: distribution review findings differ from the audited set")
-        if distribution_review.get("policy") != "docs/asset-and-release-policy.md":
+        if distribution_review.get("policy") != "docs/project/asset-and-release-policy.md":
             fail(errors, f"{relative}: distribution review policy link is invalid")
     packages = document.get("player_packages")
     obsolete_releases = document.get("obsolete_releases")
@@ -230,7 +232,7 @@ def check_release_index(errors: list[str]) -> None:
     urls: set[str] = set()
     readme_links = [
         markdown_link_targets((ROOT / name).read_text(encoding="utf-8-sig"))
-        for name in ("README.md", "README.zh-CN.md")
+        for name in ("README.md", "docs/en/README.md")
     ]
     for index, package in enumerate(packages):
         label = f"{relative}: player_packages[{index}]"
@@ -435,12 +437,12 @@ def main() -> int:
             fail(errors, f"workstation-specific absolute path in public text: {relative}")
         for label in secret_marker_labels(text):
             fail(errors, f"possible {label} in public text: {relative}")
-        if relative.startswith("age2/") and re.search(
-            r"(?m)^\s*(?:from\s+rugp\b|import\s+rugp\b)", text
+        if relative.startswith("AGE2/") and re.search(
+            r"(?m)^\s*(?:from\s+rUGP\b|import\s+rUGP\b)", text
         ):
             fail(errors, f"AGE2 imports rUGP: {relative}")
-        if relative.startswith("rugp/") and re.search(
-            r"(?m)^\s*(?:from\s+age2\b|import\s+age2\b)", text
+        if relative.startswith("rUGP/") and re.search(
+            r"(?m)^\s*(?:from\s+AGE2\b|import\s+AGE2\b)", text
         ):
             fail(errors, f"rUGP imports AGE2: {relative}")
         if suffix == ".md":

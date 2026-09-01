@@ -18,7 +18,7 @@
 /.git.disabled-by-codex-*/
 
 # Superseded local research trees. Their durable public content lives under
-# age2/, rugp/, localization/, and docs/; do not delete local working data.
+# AGE2/, rUGP/, localization/, and docs/; do not delete local working data.
 /chapters/
 /glossary/
 /patch-sources/

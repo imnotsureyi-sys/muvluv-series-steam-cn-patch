@@ -62,7 +62,7 @@ class RepositoryPolicyHelperTests(unittest.TestCase):
         ):
             with self.subTest(relative=relative):
                 self.assertTrue(MODULE.is_forbidden_public_path(relative))
-        self.assertFalse(MODULE.is_forbidden_public_path("rugp/tools/README.md"))
+        self.assertFalse(MODULE.is_forbidden_public_path("rUGP/tools/README.md"))
 
     def test_high_confidence_secret_markers_are_detected(self) -> None:
         samples = {

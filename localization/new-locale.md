@@ -9,7 +9,7 @@ This repository contains reusable localization components, but it does **not** y
 | AGE2 | TDA00–03 and Imperial Capital Burns | EGPACK/FPD helpers, strict local-source/table joins for supported TDA layouts, shared QA rules, selected game builders and release notes | Establish a legal source baseline; adapt the table join to the game's schema; supply language-specific images/fonts; validate loose-overlay behavior and build-specific paths |
 | rUGP / AGES | Photon Flowers and Photon Melodies | Read-only ICI/RIO catalogue and conservative CRsa extractor, narrow tested CRsa/RUO record primitives, selected Cr6Ti/CRip007/CRip008 codecs, guarded runtime components, stable public translation manifests, tests | Run the catalogue/text extraction against a legally owned supported build; bind the new translation to stable IDs/hashes; prove a safe writer and RUO/runtime route for each resource; perform real-game text/image/font QA |
 
-Read the relevant workflow before creating files: [AGE2](../age2/docs/workflow.md) or [rUGP](../rugp/docs/workflow.md). The current reproducibility boundary is summarized in the [research index](../docs/research-index.md).
+Read the relevant workflow before creating files: [AGE2](../AGE2/docs/workflow.md) or [rUGP](../rUGP/docs/workflow.md). The current reproducibility boundary is summarized in the [research index](../docs/research/README.md).
 
 ## 2. Create a language identity
 
@@ -25,7 +25,7 @@ Do not overwrite `zh-Hans.csv`, Chinese image masters, or Chinese release metada
 
 ## 3. Freeze the legal source baseline
 
-Record the storefront, game version/build, executable and container hashes, extraction tool/version, and the exact files used to derive stable identities. Do not commit original proprietary archives, official text dumps, decrypted records, or redistributable-unknown game assets. The public-source boundary is described in [asset and release policy](../docs/asset-and-release-policy.md) and each engine's provenance document.
+Record the storefront, game version/build, executable and container hashes, extraction tool/version, and the exact files used to derive stable identities. Do not commit original proprietary archives, official text dumps, decrypted records, or redistributable-unknown game assets. The public-source boundary is described in [asset and release policy](../docs/project/asset-and-release-policy.md) and each engine's provenance document.
 
 If a clear-name Steam depot manifest for the installed build is already
 available to you, the read-only verifier can bind selected local files to its
@@ -56,7 +56,7 @@ engine-neutral exporter removes the existing localized-text column and creates
 blank `target_text` cells instead:
 
 ```powershell
-python -m localization.tools.create_locale_template rugp/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text --keep-column call_order --keep-column rio_file --keep-column scene
+python -m localization.tools.create_locale_template rUGP/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text --keep-column call_order --keep-column rio_file --keep-column scene
 ```
 
 CSV and TSV schemas vary across AGE2, rUGP review sources and runtime contracts,
@@ -99,7 +99,7 @@ reviewed target text into the engine-specific writer schema as a separate step.
 
 Follow the [image workflow](image-workflow.md): preserve source identity, create a reviewed textless layer where lawful, render localized typography deterministically, and record hashes and allowed-change masks. Publish only assets whose redistribution status has been reviewed.
 
-For rUGP, first obtain an exact volume/offset/extent from the [ICI catalogue](../rugp/tools/catalog/README.md), then use the [read-only record decoder](../rugp/formats/images/README.md) to create a review PNG for a supported Cr6Ti/CRip007/CRip008 profile. Do not scan for magic bytes or treat a successfully decoded PNG as proof that the same extent can hold a localized re-encode.
+For rUGP, first obtain an exact volume/offset/extent from the [ICI catalogue](../rUGP/tools/catalog/README.md), then use the [read-only record decoder](../rUGP/formats/images/README.md) to create a review PNG for a supported Cr6Ti/CRip007/CRip008 profile. Do not scan for magic bytes or treat a successfully decoded PNG as proof that the same extent can hold a localized re-encode.
 
 An image-edit model is optional. If one is used for difficult text removal, preserve the request/template revision, model as observed, input/mask/output hashes, and review result. Do not publish API keys or raw failed/scratch batches. Ordinary text translation does not require publishing prompts.
 

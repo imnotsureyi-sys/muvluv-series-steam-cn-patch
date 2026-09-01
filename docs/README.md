@@ -1,59 +1,46 @@
-# Documentation hub
+# 文档中心
 
-[Repository home](../README.md) · [简体中文首页](../README.zh-CN.md)
+[返回中文首页](../README.md) · [English documentation](en/README.md)
 
-This directory has three entry points. Choose the one that matches what you
-are trying to do; a published beta, a reproducible research artifact and a
-complete end-to-end patch builder are not the same thing.
+这里不存放汉化资产本身，而是按读者用途收纳说明。台词、术语、图片文案和工具仍在各自的引擎或本地化目录中。
 
-## Players
+## 玩家
 
-Start with the [English player guide](player-guide.md) or the
-[简体中文玩家指南](player-guide.zh-CN.md). They lead to the exact historical
-AGE2 release ZIPs and explain installation, SHA-256 checks, compatibility,
-rollback and bug reports. Do not download GitHub's repository source ZIP as a
-patch. Photon Flowers / Photon Melodies do not yet have a player-ready package.
+- [安装、卸载与排错](player/README.md)
+- [机器可读的版本、文件名与 SHA-256 索引](player/release-index.json)
+- [GitHub Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases)
 
-The machine-readable [release index](release-index.json) preserves the exact
-asset name, byte count, SHA-256, install target and known historical caveats
-for every currently listed player package.
+## 本地化制作者
 
-## Localization teams
+- [通用本地化工作区](../localization/README.md)：文本、术语、图片、字体与审核
+- [制作新语言版本](../localization/new-locale.md)
+- [AGE2 工作流](../AGE2/docs/workflow.md)
+- [rUGP 工作流](../rUGP/docs/workflow.md)
 
-Begin with the [new-locale guide](../localization/new-locale.md), then use the
-engine-neutral [localization workflow](../localization/README.md). It covers
-stable source identity, translation/review tables, terminology, font coverage,
-image authoring and tests. Continue through either the independent
-[AGE2 workflow](../age2/docs/workflow.md) or
-[legacy rUGP workflow](../rugp/docs/workflow.md); their formats and builders
-must not be mixed.
+## 逆向与技术研究
 
-Before publishing, read the [release process](release-process.md) and
-[asset/release policy](asset-and-release-policy.md). A production build still
-requires legally obtained game inputs, approved redistributable fonts/assets
-and in-game QA; synthetic tests cannot supply those inputs.
+- [研究索引](research/README.md)：结论、证据、工具与尚未解决的边界
+- [参考项目与前人工作](research/references.md)
+- [仓库与引擎边界](research/repository-architecture.md)
+- [AGE2 问题复盘](../AGE2/docs/postmortems/README.md)
+- [rUGP 问题复盘](../rUGP/docs/postmortems/README.md)
 
-## rUGP/AGE researchers
+## 项目维护
 
-Use the [research index](research-index.md) as the claim-and-evidence map. It
-links format code, fixtures, tests, provenance boundaries, prior art and the
-[rUGP postmortems](../rugp/docs/postmortems/README.md), including failed
-hypotheses and the 8311, CRsa, RUO, Cr6Ti, CRip007/008, font and shared/common
-image investigations, plus the ICI-resize and image-transport/runtime failure
-chains. The [repository architecture](repository-architecture.md)
-explains why durable tools, evidence and postmortems are public while extracted
-games, temporary probes and rejected/generated scratch output stay outside
-Git.
+- [参与贡献](project/CONTRIBUTING.md)
+- [发布流程](project/release-process.md)
+- [内容与发布政策](project/asset-and-release-policy.md)
+- [路线图](project/ROADMAP.md)
+- [变更记录](project/CHANGELOG.md)
 
-The code documents only behavior demonstrated for the stated game/build and
-fixture. It is not a universal one-click rUGP unpacker/repacker, and a reader
-that can decode one record kind does not imply a complete writer for it.
+## 法律与第三方
 
-## Reference and project policy
+- [法律说明](legal/NOTICE.md)
+- [第三方代码与归属](legal/THIRD_PARTY.md)
+- [MIT License](../LICENSE)
 
-- [References and prior art](references.md)
-- [Repository architecture](repository-architecture.md)
-- [Release process](release-process.md)
-- [Asset and release policy](asset-and-release-policy.md)
-- [Contribution guide](../CONTRIBUTING.md)
-- [Roadmap](../ROADMAP.md) and [changelog](../CHANGELOG.md)
+## English
+
+- [Project overview](en/README.md)
+- [Player guide](en/player-guide.md)
+- [Research index](en/research-index.md)

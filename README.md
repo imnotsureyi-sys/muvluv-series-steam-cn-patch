@@ -1,92 +1,70 @@
-# Muv-Luv community localization patches and tooling
+# Muv-Luv 系列 Steam 中文补丁
 
-[简体中文](README.zh-CN.md) · [Player downloads](#player-downloads) · [Documentation hub](docs/README.md) · [Player guide](docs/player-guide.md) · [Start another locale](localization/new-locale.md) · [Research index](docs/research-index.md) · [Contributing](CONTRIBUTING.md)
+[English](docs/en/README.md) · [玩家指南](docs/player/README.md) · [本地化制作](localization/README.md) · [逆向研究](docs/research/README.md)
 
-This is an unofficial, non-commercial localization project for selected Steam releases in the Muv-Luv series. It currently publishes Simplified Chinese **test patches** and preserves reusable AGE2 and legacy rUGP research for other localization teams.
+这是一个非官方、非商业的 Muv-Luv 系列本地化项目。仓库同时保存两类成果：给玩家使用的简体中文测试补丁，以及让其他语言团队能够复用的文本、术语、图片流程、字体检查、格式工具和逆向记录。
 
-You need a legally purchased copy of each game. This repository does not contain the games, cracks, complete original archives, or Steam's original `pack.bin` files.
+使用补丁必须拥有对应游戏正版。本仓库不提供游戏本体、破解、完整原始资源或 Steam 原始 `pack.bin`。
 
-## Choose your path
+## 从这里开始
 
-| I want to… | Start here | What is available now |
+| 你的目的 | 入口 |
+| --- | --- |
+| 下载、安装或卸载中文补丁 | [玩家指南](docs/player/README.md) |
+| 制作韩语、俄语等其他语言版本 | [本地化工作区](localization/README.md)与[新语言指南](localization/new-locale.md) |
+| 查看 AGE2 的 FPD、EGPACK、WebP 与松散覆盖 | [AGE2](AGE2/README.md) |
+| 查看 rUGP 的 ICI、RIO、RUO、CRsa、图片与运行时 | [rUGP](rUGP/README.md) |
+| 了解 8311、CRip008、字体、shared/common 图片等问题怎样解决 | [逆向研究索引](docs/research/README.md) |
+
+## 玩家下载
+
+以下是迁移时保留的历史测试包。它们可以识别和安装，但早于现行发布标准，目前仍在补做字体许可、官方 UI 兜底资源、版本哈希与安全回滚审计，因此暂不标记为“推荐下载”。安装前务必阅读[玩家指南](docs/player/README.md)并备份对应游戏的 LocalAppData 覆盖目录；不要把 GitHub 的源码 ZIP 当作补丁。
+
+| 游戏 | 当前保留版本 | 下载 |
 | --- | --- | --- |
-| Install and play a Chinese patch | [Player downloads](#player-downloads), then the [player guide](docs/player-guide.md) | Five historical AGE2 beta packages; Photon has no player installer yet |
-| Build Korean, Russian, or another locale | [New-locale guide](localization/new-locale.md), then choose [AGE2](age2/README.md) or [legacy rUGP](rugp/README.md) | Reusable formats and workflow, with important end-to-end gaps recorded below |
-| Study rUGP/AGES or AGE2 reverse engineering | [Research index](docs/research-index.md) and [rUGP postmortems](rugp/docs/postmortems/README.md) | Code, tests, evidence and failed hypotheses; not a universal one-click unpacker/repacker |
+| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
+| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
+| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
+| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
+| 帝都燃烧篇 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
 
-## Player downloads
+Photon Flowers 与 Photon Melodies 目前只有制作资产、格式代码和候选运行时，**还没有玩家安装包**。
 
-These are prerelease/test packages. Download the ZIP for the exact game; do **not** use GitHub's repository source ZIP as a patch.
+## 汉化内容放在哪里
 
-**Current distribution status:** these historical packages are technically installable, but the index marks them “not recommended / not distribution-approved” while bundled font notices and copied official UI fallbacks are remediated. The direct links below identify the existing historical Releases accurately. Players who require today's release gate should wait for rebuilt packages; anyone still testing must read the limitations and back up first.
-
-**Compatibility prerequisite:** none of these five historical packages preserves an exact Steam build/depot identity or original `pack.bin` hash. Every current Steam build is therefore “not pre-verified,” not confirmed compatible. Back up that game's own LocalAppData overlay before installation; a successful copy is not a version check.
-
-| Game | Direct Windows ZIP | Release notes and checksum |
+| 内容 | 位置 | 当前公开状态 |
 | --- | --- | --- |
-| THE DAY AFTER episode:00 | [TDA00 beta0.1 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) | [Release page](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) · [SHA-256](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1_SHA256SUMS.txt) |
-| THE DAY AFTER episode:01 | [TDA01 beta0.2.2 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) | [Release page](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) · [SHA-256](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2_SHA256SUMS.txt) |
-| THE DAY AFTER episode:02 | [TDA02 beta0.1 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) | [Release page](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) · [SHA-256](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1_SHA256SUMS.txt) |
-| THE DAY AFTER episode:03 | [TDA03 beta0.1.6 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) | [Release page](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) · SHA-256 `4B6CA4A531E9D07315E84DC2E02D7D8008C9B78EA4466172B45CAD1CEBA5C67D` |
-| The Imperial Capital Burns | [beta0.1 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) | [Release page](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) · [SHA-256](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1_SHA256SUMS.txt) |
+| 正文、选项、说话人、UI 文本 | 各游戏的 `translations/`：[AGE2 游戏](AGE2/games/) · [Photon Flowers](rUGP/games/photonflowers/) · [Photon Melodies](rUGP/games/photonmelodies/) | 已公开可维护表；按游戏和语言分开保存 |
+| 共用术语 | [Muv-Luv 总术语表](localization/glossaries/muv-luv.ja-zh-Hans.csv)与[术语维护规则](localization/standards/terminology.md) | 已公开；帝都燃烧篇另有[作内术语表](AGE2/games/imperial-capital-burns/translations/terminology.ja-zh-Hans.csv) |
+| 图片文字与排版 | [帝都燃烧篇图片文案表](AGE2/games/imperial-capital-burns/images/copy/) · [Photon 1,490 图身份清单](rUGP/evidence/photon-images-v6/) · [通用图片流程](localization/image-workflow.md) | 文案、尺寸、哈希、路由和工具已公开；图片二进制仍在权利清理中 |
+| 字体 | [字形覆盖检查](localization/tools/font_coverage.py) · [rUGP 字体问题复盘](rUGP/docs/postmortems/font-runtime.md) · [AGE2 旧方案复盘](AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 方法、代码和故障经验已公开；字体文件须先确认再分发许可 |
+| 构建与格式工具 | [AGE2 tools](AGE2/tools/) · [rUGP formats](rUGP/formats/) · [rUGP runtime](rUGP/runtime/) · [通用工具](localization/tools/) | 源码和合成测试已公开；生产构建仍需合法游戏输入与实机 QA |
 
-Use only the versions in this table. `tda01-beta0.1`, `tda01-beta0.2`, `tda01-beta0.2.1`, and `tda03-beta0.1` are superseded and no longer recommended. TDA01 beta0.2 has 603 invisible dialogue slots; TDA03 beta0.1 was later found to carry TDA02's UI/achievement mapping.
+这里刻意区分“可编辑的汉化资产”和“游戏原始资源”。无字底、成品图和字体只有在来源、修改关系与许可证都可说明时才会进入 Git；临时生成批次、失败图、解包原件和未审计字体不会混进主线。
 
-Close the game, extract the entire ZIP, read its `README.txt`, and run `install.bat`. The exact LocalAppData paths, checksum command, rollback limits and reporting instructions are in the [player guide](docs/player-guide.md). Exact asset identities and historical package facts are also preserved in the [machine-readable release index](docs/release-index.json).
+## 两套互不混用的引擎体系
 
-Photon Flowers and Photon Melodies currently have source, format code, runtime code and image evidence, but **no player-ready patch**. The [1,490-image Photon Release](rugp/evidence/photon-images-v6/README.md) completed technical/localization identity review, not distribution clearance, and is not an installer; 19 images are byte-identical to official sources and still require redistribution remediation.
+| 目录 | 游戏 | 主要补丁路线 |
+| --- | --- | --- |
+| [`AGE2/`](AGE2/README.md) | TDA00–03、帝都燃烧篇 | 从 FPD/`pack.bin` 定位资源，处理 EGPACK、WebP、UI 字符串，以 LocalAppData 松散文件覆盖 |
+| [`rUGP/`](rUGP/README.md) | Photon Flowers、Photon Melodies | 从 ICI 定位 RIO 对象，处理 CRsa、Cr6Ti、CRip007/008、RUO；必要时使用严格绑定版本的运行时 |
 
-### Historical beta limitation
+两套引擎的代码、测试、打包与事故记录完全分开。只有翻译规范、术语、图片制作和字体覆盖等引擎无关内容放在 [`localization/`](localization/README.md)。
 
-The five packages above predate the repository's current release gate. They do not consistently contain an install manifest, input-version hash gate, uniform rollback tool, or bundled font-license notice. Their font-license bundling and redistribution boundary for copied official UI fallbacks are also under renewed audit, so they must not be represented as new packages that pass today's policy. The machine-readable index records this as `pending-remediation`; until replacement packages remove restricted originals and carry the required font notices, the direct links are accurate pointers to historical Releases, not a compliance endorsement. TDA03 beta0.1.6 lacks a separate checksum attachment, so its GitHub-recorded asset digest is written directly above. Package READMEs remain useful for their installation layout, but the current central player guide overrides unsafe historical rollback advice: in particular, do **not** follow TDA01 beta0.2.2's instruction to delete the whole `...\tda01\data` directory. Never delete `data\user` or save/progress data.
-
-## What can actually be reproduced today
-
-| Scope | Public player result | Public maintained inputs | Rebuild status from a legal clean game |
-| --- | --- | --- | --- |
-| TDA00–03 (AGE2) | Chinese beta packages published | Dialogue tables, a strict local-source-to-EGPACK join, and shared FPD/EGPACK/UI helpers | **Partial:** historical Release alignment remains under audit, and no complete per-game image/font/build manifest or final-package command exists |
-| The Imperial Capital Burns (AGE2) | Chinese beta package published | Text tables, image copy/layout tables, initial inventory and a phase-one builder | **Partial:** historical Release alignment remains under audit; `build_phase1.py` does not reproduce the later full dialogue package by itself, and external FSNr/font inputs remain required |
-| Photon Flowers / Photon Melodies (legacy rUGP) | No player package | [57,547 reviewed dialogue rows](rugp/evidence/photon-reviewed-text-v1/README.md), separate 69/151-row exact runtime contracts, a read-only ICI/RIO catalogue and CRsa extractor, a 1,490-image V6 authority and route closure, codecs, runtime source and package builder | **Partial:** no complete clean-install → every payload binding → final approved builder-root pipeline exists yet |
-
-Synthetic Python tests work from a clean source checkout after installing the pinned requirements; native Photon runtime builds additionally require Zig 0.16.0. Production patch reproduction still requires legally obtained game inputs, exact hashes, redistribution-compatible fonts/assets, and manual in-game QA. See the [research index](docs/research-index.md) for the boundary of each claim.
-
-## Two independent engine families
-
-| Area | Games in this repository | Patch model | Start here |
-| --- | --- | --- | --- |
-| AGE2 | TDA00–03, The Imperial Capital Burns | FPD inspection, EGPACK/WebP localization, loose-file overlay | [`age2/`](age2/README.md) |
-| legacy rUGP/AGES | Photon Flowers, Photon Melodies | ICI/RIO/RUO records plus a version-pinned runtime where static replacement is insufficient | [`rugp/`](rugp/README.md) |
-
-The repository uses **AGE2** as its label for the newer FPD/EGPACK-based ports and **legacy rUGP** for the older RIO family. The two implementations do not import each other. Engine-neutral translation, terminology, review and image-authoring practices live under [`localization/`](localization/README.md).
-
-## Repository map
+## 仓库层级
 
 ```text
-localization/  translation/review policy, glossary, image workflow and new-locale guide
-age2/          AGE2 game tables, FPD/EGPACK tools and synthetic tests
-rugp/          rUGP codecs, runtime, packaging, evidence, tests and postmortems
-docs/          player, research, architecture, rights and release documentation
-.github/       CI and contribution templates
+AGE2/          AGE2 游戏资产、格式工具、测试和专项记录
+rUGP/          rUGP 游戏资产、编解码器、运行时、打包和逆向证据
+localization/  翻译、术语、图片、字体与新语言通用工作流
+docs/          玩家、研究、项目维护、法律与英文文档
+.github/       自动测试、Issue 与贡献模板
 ```
 
-For the intended boundaries between these directories, current priorities and
-notable repository changes, see the [repository architecture](docs/repository-architecture.md),
-[roadmap](ROADMAP.md), and [changelog](CHANGELOG.md).
+更细的导航见[文档中心](docs/README.md)。路线图、贡献规范、发布规则和第三方来源都收在 `docs/` 下，不再占满仓库首页。
 
-Extracted games, private audit roots, model scratch output, local caches, generated DLLs, patch ZIPs and rejected image candidates are intentionally absent from Git history.
+## 反馈与许可
 
-## Tests, feedback and safety
+[提交程序/安装问题](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml) · [提交译文修正](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml) · [参与贡献](docs/project/CONTRIBUTING.md)
 
-Development checks are documented in [CONTRIBUTING.md](CONTRIBUTING.md). Passing synthetic tests exercises the covered parser/writer branches; it does not replace a clean install, rollback test or full-route game test.
-
-For a patch/runtime problem, [open a bug report](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml). For a translation correction, [open a source-backed translation report](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml).
-
-AGE2 patches are loose files under a per-user LocalAppData tree. Steam verification does **not** remove those files; follow the [rollback instructions](docs/player-guide.md#restore-and-rollback) before using Steam verification to repair Steam-managed originals.
-
-## Credits, license and rights
-
-The project builds on documented ideas and independently verified behavior from the visual-novel tooling community. See [Third-party software](THIRD_PARTY.md), [research references](docs/references.md), and the [research index](docs/research-index.md) for the difference between prior art and this project's PF/PM-specific work.
-
-Special thanks to 主任保护协会 for sharing practical AGES localization experience, to 子冰 for TDA01 testing feedback, and to everyone who supplied screenshots, terminology review and full-route testing.
-
-Original project code is licensed under the [MIT License](LICENSE). That license does **not** grant rights to Muv-Luv game content, translations, fonts, derived images, release payloads, or third-party components. See [NOTICE](NOTICE.md) and the [asset and release policy](docs/asset-and-release-policy.md).
+自写代码采用 [MIT License](LICENSE)。MIT 不自动覆盖游戏内容、翻译文本、字体、衍生图片、发布包或第三方组件；详见[内容与发布政策](docs/project/asset-and-release-policy.md)、[第三方来源](docs/legal/THIRD_PARTY.md)与[法律说明](docs/legal/NOTICE.md)。

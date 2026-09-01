@@ -136,7 +136,7 @@ the translated column explicitly when a table does not use a recognized field:
 ```powershell
 python -m localization.tools.font_coverage `
   work/TargetFont.ttf `
-  age2/games/tda00/translations/ja-zh-Hans.csv `
+  AGE2/games/tda00/translations/ja-zh-Hans.csv `
   --column cn_text `
   --output work/font-coverage.json
 ```

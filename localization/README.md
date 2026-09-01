@@ -1,35 +1,50 @@
-# Engine-neutral localization workflow
+# 通用本地化工作区
 
-This directory contains work that remains valid regardless of whether the target is AGE2 or legacy rUGP. It must not contain archive parsers, hook code, game binaries, or engine-specific package builders.
+[返回首页](../README.md) · [制作新语言](new-locale.md) · [图片流程](image-workflow.md) · [翻译规范](standards/translation.md) · [术语规范](standards/terminology.md)
 
-## Workflow
+这里放不依赖具体引擎的本地化方法：翻译、术语、审核、图片制作、字体覆盖和新语言模板。FPD/EGPACK 工具属于 [AGE2](../AGE2/README.md)，RIO/RUO/Hook 属于 [rUGP](../rUGP/README.md)，不会混进本目录。
 
-1. **Freeze source authority.** Identify the exact game build, source-language slot, resource ID/path, and source hash.
-2. **Export a stable table.** Keep identity and control-code fields separate from editable translation text.
-3. **Translate from the source.** Glossary and scene context may assist; English, OCR, old patches, or machine output must not silently replace the Japanese authority.
-4. **Review in layers.** Linguistic review, terminology review, structural validation, layout/image review, then in-game review.
-5. **Build through the engine path.** Use either `age2/` or `rugp/`; never improvise a cross-engine packer.
-6. **Publish a manifest-bound package.** State supported input hashes, output hashes, source commit, font licenses, and known limitations.
+## 最重要的内容在哪里
 
-## Contents
+| 内容 | 共用部分 | 游戏专属部分 |
+| --- | --- | --- |
+| 正文与 UI 文本 | [翻译规范](standards/translation.md)、[源数据规范](standards/source-data.md) | [AGE2 games](../AGE2/games/) · [rUGP games](../rUGP/games/) 下各自的 `translations/` |
+| 术语 | [Muv-Luv 总术语表](glossaries/muv-luv.ja-zh-Hans.csv)、[维护规则](standards/terminology.md) | 只有确属单作的词才放进该游戏目录；例如[帝都燃烧篇术语](../AGE2/games/imperial-capital-burns/translations/terminology.ja-zh-Hans.csv) |
+| 图片 | [无字底、确定性排字与 QA 流程](image-workflow.md)、[`tools/images/`](tools/images/) | [帝都图片文案](../AGE2/games/imperial-capital-burns/images/copy/) · [Photon 图片身份与路由](../rUGP/evidence/photon-images-v6/) |
+| 字体 | [字形覆盖工具](tools/font_coverage.py) | 引擎实际选字和运行时问题分别记录在 [AGE2](../AGE2/docs/postmortems/font-glyph-substitution-retired.md) 与 [rUGP](../rUGP/docs/postmortems/font-runtime.md) |
+| 审核与反馈 | [审核规范](standards/review.md) | 各引擎的质量门与实机清单 |
 
-- [`glossaries/`](glossaries/): shared Muv-Luv terminology.
-- [`standards/translation.md`](standards/translation.md): translation principles.
-- [`standards/terminology.md`](standards/terminology.md): terminology change process.
-- [`standards/source-data.md`](standards/source-data.md): stable source-table rules.
-- [`standards/review.md`](standards/review.md): review and feedback rules.
-- [`image-workflow.md`](image-workflow.md): textless-background, deterministic typography, AI-edit and image QA workflow.
-- [`tools/images/`](tools/images/): deterministic textless-background and localized-text builders, plus single-image and grouped-image consistency checks.
-- [`tools/font_coverage.py`](tools/font_coverage.py): a cmap glyph-coverage gate; it does not prove runtime font selection, metrics, wrapping, or clipping.
-- [`tools/verify_steam_depot_manifest.py`](tools/verify_steam_depot_manifest.py): read-only content matching for selected local files against a clear-name Steam depot manifest; it does not authenticate Steam signatures or contact Steam.
-- [`new-locale.md`](new-locale.md): engine choice, locale identity, source boundary, build manifests and release gates for a new target language.
-- [`tools/create_locale_template.py`](tools/create_locale_template.py): fail-closed CSV/TSV exporter that removes the existing translation and creates a blank, manifest-bound work table for another locale.
+仓库目前公开的是可维护文本表、图片文案/身份/哈希、确定性工具与技术结论。成品图、无字底和字体二进制只有在权利与许可证可以说明时才进入 Git；未审计的本地批次不会冒充正式资产。
 
-## Dependencies and tests
+## 标准流程
 
-Run commands from the repository root with Python 3.12. For only the
-engine-neutral workflow, install its pinned dependencies and run its complete
-synthetic test suite:
+1. **锁定原文身份：**记录游戏版本、原语言槽、资源 ID/路径与源哈希。
+2. **导出稳定工作表：**身份、控制符和译文分列，不能只靠行号。
+3. **依据原文翻译：**英语槽、OCR、旧补丁或机器输出只能辅助，不能悄悄代替日文依据。
+4. **分层审核：**语义、术语、结构、图片/排版，最后才是实机路线。
+5. **走正确引擎：**AGE2 与 rUGP 使用各自的写回、运行时和打包链。
+6. **按清单发布：**声明支持的输入哈希、输出哈希、源码提交、字体许可和已知限制。
+
+## 目录
+
+- [`glossaries/`](glossaries/)：跨游戏共用术语。
+- [`standards/`](standards/)：翻译、术语、原始数据与审核规范。
+- [`tools/`](tools/)：新语言表、字体覆盖、图片制作与校验工具。
+- [`tests/`](tests/)：不依赖游戏资源的合成测试。
+- [`image-workflow.md`](image-workflow.md)：无字底、Image API 辅助、确定性排字与图片 QA。
+- [`new-locale.md`](new-locale.md)：为 `ko`、`ru` 等新语言建立独立身份和工作表。
+
+## 开始制作其他语言
+
+使用 BCP 47 风格标识，如 `ko`、`ru`、`zh-Hans`。新语言必须新建文件或语言列，不能覆盖日文依据或现有中文。模板工具只保留稳定 ID、源哈希和明确选择的上下文，并把目标译文置空：
+
+```powershell
+python -m localization.tools.create_locale_template rUGP/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text
+```
+
+完整要求见[新语言指南](new-locale.md)。
+
+## 测试
 
 ```powershell
 python -m pip install -r localization/requirements.txt
@@ -37,31 +52,8 @@ python -m unittest discover -s localization/tests -p "test_*.py" -v
 python -m compileall -q localization
 ```
 
-Before a pull request, install the repository-wide pinned set and run the full
-quality gate documented in [`CONTRIBUTING.md`](../CONTRIBUTING.md):
+整仓检查见[贡献指南](../docs/project/CONTRIBUTING.md)。
 
-```powershell
-python -m pip install -r requirements-dev.txt
-python -m unittest discover -s age2/tests -p "test_*.py" -v
-python -m unittest discover -s rugp/tests -p "test_*.py" -v
-python -m unittest discover -s localization/tests -p "test_*.py" -v
-python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
-python -m compileall -q age2 rugp localization .github/scripts
-python .github/scripts/verify_repository.py
-```
+## English summary
 
-These tests use copyright-safe fixtures. Passing them does not validate a
-particular installed game build, a font license, a final package or in-game
-layout.
-
-## Starting another locale
-
-Use a BCP 47-style identifier such as `ko`, `ru`, or `zh-Hans`. Create a new locale column/file without replacing the source text or the existing locale. A new language may reuse verified format code, but it needs independent translation authority, font coverage, layout QA, runtime/package manifest, and player testing. Follow the [new-language guide](new-locale.md); it also records the current AGE2 and rUGP end-to-end gaps.
-
-Do not begin by copying Chinese into a Russian, Korean, or other target column.
-Use the template exporter to retain explicitly selected stable IDs, source hashes
-and non-prose context while replacing the existing localized-text column with
-blank `target_text` cells. The generated sidecar labels the result as a working
-template, not an AGE2/rUGP writer input. Official Japanese must still be
-reconstructed from a legally obtained game and verified against the retained
-source hash.
+This directory contains engine-neutral localization policy and tooling: source identity, translation/review tables, terminology, image authoring, font coverage and new-locale templates. Engine codecs and package builders remain under `AGE2/` or `rUGP/`. International teams should start with the [new-locale guide](new-locale.md).

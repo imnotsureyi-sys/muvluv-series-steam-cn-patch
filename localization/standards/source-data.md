@@ -4,7 +4,7 @@
 
 ## 位置与语言边界
 
-公开翻译表按引擎与游戏归档：`age2/games/<game>/translations/` 或 `rugp/games/<game>/translations/`。不同游戏和目标语言必须拥有独立文件与发布身份；新语言流程见 [`../new-locale.md`](../new-locale.md)。
+公开翻译表按引擎与游戏归档：`AGE2/games/<game>/translations/` 或 `rUGP/games/<game>/translations/`。不同游戏和目标语言必须拥有独立文件与发布身份；新语言流程见 [`../new-locale.md`](../new-locale.md)。
 
 所有表都应能持久定位到原资源，通常需要：
 
@@ -23,7 +23,7 @@
 - rUGP 的两张 69/151 行运行时表保存偏移、容量、控制与绑定合约；四张共 57,547 行的审校表只保存稳定身份、RIO/scene、源字段哈希和译文，仍需另行绑定到安全写入路线。两类表都不公开完整日文台词；合法持有者应从受支持的本地游戏版本重新验证身份。
 - 英文槽、旧翻译和模糊匹配可以用于发现问题，但不能替代 JP 原文成为翻译含义的权威来源。
 
-因此，“所有公开表都必须包含 `speaker_jp` / `jp_text`”并不是仓库规则。能否公开源文本取决于游戏、来源和 [`../../docs/asset-and-release-policy.md`](../../docs/asset-and-release-policy.md)。
+因此，“所有公开表都必须包含 `speaker_jp` / `jp_text`”并不是仓库规则。能否公开源文本取决于游戏、来源和[内容与发布政策](../../docs/project/asset-and-release-policy.md)。
 
 ## 修改规则
 
@@ -41,7 +41,7 @@
 
 ## 修改后 QA
 
-修改后至少检查以下内容；资源写回和打包的完整要求见 [`AGE2`](../../age2/docs/quality.md) 或 [`rUGP`](../../rugp/docs/quality.md) 质检文档：
+修改后至少检查以下内容；资源写回和打包的完整要求见 [`AGE2`](../../AGE2/docs/quality.md) 或 [`rUGP`](../../rUGP/docs/quality.md) 质检文档：
 
 - 稳定 ID、源哈希、记录数量和顺序是否与声明版本一致；
 - 必填目标文本是否为空，是否存在重复、乱码或编码损坏；

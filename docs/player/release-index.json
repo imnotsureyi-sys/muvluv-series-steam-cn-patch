@@ -1,0 +1,219 @@
+{
+  "schema": "muvluv-community-release-index/v1",
+  "audited_date": "2026-09-01",
+  "repository": "imnotsureyi-sys/muvluv-series-steam-cn-patch",
+  "scope": "current-listed-player-packages-and-research-assets",
+  "central_player_guide": "docs/player/README.md",
+  "distribution_review": {
+    "status": "pending-remediation",
+    "blocking_findings": [
+      "historical-player-zips-bundle-font-files-without-license-notices",
+      "some-historical-player-zips-bundle-byte-identical-official-ui-fallbacks",
+      "photon-images-v6-includes-19-byte-identical-official-source-images"
+    ],
+    "policy": "docs/project/asset-and-release-policy.md"
+  },
+  "player_packages": [
+    {
+      "game_id": "tda00",
+      "title": "THE DAY AFTER episode:00",
+      "engine": "age2",
+      "locale": "zh-Hans",
+      "status": "historical-prerelease-rights-review-pending",
+      "player_installable": true,
+      "recommended_for_download": false,
+      "distribution_approved": false,
+      "release_tag": "tda00-beta0.1",
+      "asset_name": "MuvLuv_TDA00_CN_Patch_beta0.1.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip",
+      "asset_sha256": "97442B708E21C4BB53B43F2E4FC0C698715EBEC0FB7E0CBC697995AF8477CD66",
+      "asset_bytes": 16672909,
+      "checksum_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1_SHA256SUMS.txt",
+      "package_root": "TDA00_CN_text_EN_UI_test_patch_latest",
+      "installer_target": "%LOCALAPPDATA%\\ancr\\tda00\\data",
+      "overlay_root": "%LOCALAPPDATA%\\ancr\\tda00\\data\\root",
+      "archive_entry_count": 108,
+      "font_files": 1,
+      "font_license_notice_present": false,
+      "en_named_image_members": 9,
+      "historical_caveats": [
+        "single-wrapper-directory",
+        "no-installed-file-manifest",
+        "no-input-build-hash-gate",
+        "no-uninstaller",
+        "bundled-font-without-license-notice",
+        "official-English-UI-fallback-declared-in-package-readme"
+      ]
+    },
+    {
+      "game_id": "tda01",
+      "title": "THE DAY AFTER episode:01",
+      "engine": "age2",
+      "locale": "zh-Hans",
+      "status": "historical-prerelease-rights-review-pending",
+      "player_installable": true,
+      "recommended_for_download": false,
+      "distribution_approved": false,
+      "release_tag": "tda01-beta0.2.2",
+      "asset_name": "MuvLuv_TDA01_CN_Patch_beta0.2.2.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip",
+      "asset_sha256": "2EFF3A56DAEC384E500A24D3BD875D7E7BB6A632371A04536DA6832547F2DF57",
+      "asset_bytes": 17275483,
+      "checksum_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2_SHA256SUMS.txt",
+      "package_root": ".",
+      "installer_target": "%LOCALAPPDATA%\\ancr\\tda01\\data",
+      "overlay_root": "%LOCALAPPDATA%\\ancr\\tda01\\data\\root",
+      "archive_entry_count": 119,
+      "font_files": 1,
+      "font_license_notice_present": false,
+      "en_named_image_members": 18,
+      "historical_caveats": [
+        "no-installed-file-manifest",
+        "no-input-build-hash-gate",
+        "no-uninstaller",
+        "bundled-font-without-license-notice",
+        "official-English-UI-fallback-declared-in-package-readme",
+        "package-readme-unsafe-whole-data-directory-rollback-superseded-by-central-guide"
+      ]
+    },
+    {
+      "game_id": "tda02",
+      "title": "THE DAY AFTER episode:02",
+      "engine": "age2",
+      "locale": "zh-Hans",
+      "status": "historical-prerelease-rights-review-pending",
+      "player_installable": true,
+      "recommended_for_download": false,
+      "distribution_approved": false,
+      "release_tag": "tda02-beta0.1",
+      "asset_name": "MuvLuv_TDA02_CN_Patch_beta0.1.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip",
+      "asset_sha256": "D9426AA8E2FD548D9834BEF6A8779F09C5D8013333563D389B00AF2FC0FE56A6",
+      "asset_bytes": 17531074,
+      "checksum_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1_SHA256SUMS.txt",
+      "package_root": ".",
+      "installer_target": "%LOCALAPPDATA%\\ancr\\tda02\\data",
+      "overlay_root": "%LOCALAPPDATA%\\ancr\\tda02\\data\\root",
+      "archive_entry_count": 238,
+      "font_files": 1,
+      "font_license_notice_present": false,
+      "en_named_image_members": 19,
+      "historical_caveats": [
+        "no-installed-file-manifest",
+        "no-input-build-hash-gate",
+        "no-uninstaller",
+        "bundled-font-without-license-notice",
+        "official-English-UI-fallback-declared-in-package-readme"
+      ]
+    },
+    {
+      "game_id": "tda03",
+      "title": "THE DAY AFTER episode:03",
+      "engine": "age2",
+      "locale": "zh-Hans",
+      "status": "historical-prerelease-rights-review-pending",
+      "player_installable": true,
+      "recommended_for_download": false,
+      "distribution_approved": false,
+      "release_tag": "tda03-beta0.1.6",
+      "asset_name": "MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip",
+      "asset_sha256": "4B6CA4A531E9D07315E84DC2E02D7D8008C9B78EA4466172B45CAD1CEBA5C67D",
+      "asset_bytes": 18634133,
+      "checksum_url": null,
+      "package_root": ".",
+      "installer_target": "%LOCALAPPDATA%\\ancr\\tda03\\data",
+      "overlay_root": "%LOCALAPPDATA%\\ancr\\tda03\\data\\root",
+      "archive_entry_count": 276,
+      "font_files": 1,
+      "font_license_notice_present": false,
+      "en_named_image_members": 17,
+      "historical_caveats": [
+        "no-installed-file-manifest",
+        "no-input-build-hash-gate",
+        "no-uninstaller",
+        "bundled-font-without-license-notice",
+        "installer-replaces-entire-game-specific-overlay-root",
+        "fix-report-contains-absolute-builder-path-metadata-not-used-by-installer",
+        "no-separate-checksum-attachment"
+      ]
+    },
+    {
+      "game_id": "imperial-capital-burns",
+      "title": "The Imperial Capital Burns",
+      "engine": "age2",
+      "locale": "zh-Hans",
+      "status": "historical-prerelease-rights-review-pending",
+      "player_installable": true,
+      "recommended_for_download": false,
+      "distribution_approved": false,
+      "release_tag": "imperial-capital-burns-beta0.1",
+      "asset_name": "MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip",
+      "asset_sha256": "C94C10179A2E152D5BB891191374847C307F389BB226FB5B23EFEBF9FB0B6232",
+      "asset_bytes": 36698371,
+      "checksum_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1_SHA256SUMS.txt",
+      "package_root": ".",
+      "installer_target": "%LOCALAPPDATA%\\ancr\\tm\\data",
+      "overlay_root": "%LOCALAPPDATA%\\ancr\\tm\\data\\root",
+      "archive_entry_count": 526,
+      "font_files": 2,
+      "font_license_notice_present": false,
+      "en_named_image_members": 135,
+      "historical_caveats": [
+        "no-installed-file-manifest",
+        "no-input-build-hash-gate",
+        "no-uninstaller",
+        "bundled-fonts-without-license-notice",
+        "official-English-UI-files-copied-byte-for-byte-under-ja-paths-rights-review-pending"
+      ]
+    }
+  ],
+  "obsolete_releases": [
+    {
+      "game_id": "tda01",
+      "release_tag": "tda01-beta0.1",
+      "replacement_tag": "tda01-beta0.2.2",
+      "reason": "superseded-by-later-text-and-stability-fixes"
+    },
+    {
+      "game_id": "tda01",
+      "release_tag": "tda01-beta0.2",
+      "replacement_tag": "tda01-beta0.2.2",
+      "reason": "known-603-invisible-dialogue-slots"
+    },
+    {
+      "game_id": "tda01",
+      "release_tag": "tda01-beta0.2.1",
+      "replacement_tag": "tda01-beta0.2.2",
+      "reason": "superseded-by-later-player-feedback-fixes"
+    },
+    {
+      "game_id": "tda03",
+      "release_tag": "tda03-beta0.1",
+      "replacement_tag": "tda03-beta0.1.6",
+      "reason": "superseded-after-wrong-tda02-ui-and-achievement-map-was-found"
+    }
+  ],
+  "research_assets": [
+    {
+      "asset_id": "photon-images-v6",
+      "title": "Photon Flowers / Photon Melodies reviewed localized images",
+      "engine": "rugp",
+      "locale": "zh-Hans",
+      "status": "reviewed-research-asset-rights-review-pending",
+      "player_installable": false,
+      "recommended_for_download": false,
+      "distribution_approved": false,
+      "release_tag": "photon-images-1490-20260824-v6",
+      "asset_name": "MuvLuv_Photon_PF_PM_CN_Images_1490_20260824_v6.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/photon-images-1490-20260824-v6/MuvLuv_Photon_PF_PM_CN_Images_1490_20260824_v6.zip",
+      "asset_sha256": "B11D0D322CF3081D0788BA60BB3D94C2014BD57B32852DC053B0D158128E97D8",
+      "asset_bytes": 77316999,
+      "reviewed_images": 1490,
+      "manifest_name": "manifest-v6.json",
+      "manifest_sha256": "428ED401E27ED5A61FD8F8738B381884D8277981140B5A7133DB469ADFCB98F0",
+      "warning": "Reviewed image authority only; not a game patch or installer. Nineteen PNGs are byte-identical to official source images and require redistribution remediation."
+    }
+  ]
+}

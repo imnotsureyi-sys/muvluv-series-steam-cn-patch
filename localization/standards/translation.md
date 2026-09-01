@@ -6,7 +6,7 @@
 
 - [`terminology.md`](terminology.md)
 - [`review.md`](review.md)
-- 引擎技术质检：[`../../age2/docs/quality.md`](../../age2/docs/quality.md) 或 [`../../rugp/docs/quality.md`](../../rugp/docs/quality.md)
+- 引擎技术质检：[`../../AGE2/docs/quality.md`](../../AGE2/docs/quality.md) 或 [`../../rUGP/docs/quality.md`](../../rUGP/docs/quality.md)
 
 ## 1. 适用范围
 
