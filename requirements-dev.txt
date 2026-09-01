@@ -1,0 +1,3 @@
+-r age2/requirements.txt
+-r rugp/requirements.txt
+-r localization/requirements.txt

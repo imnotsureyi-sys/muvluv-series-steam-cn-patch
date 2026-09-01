@@ -1,0 +1,4 @@
+LIBRARY Ages3ResT
+EXPORTS
+    PluginThisLibrary @1
+    PluginThisLibrary_Ages3Res @2

@@ -1,0 +1,51 @@
+{
+  "schema": "photon-runtime-sealed-generated-provenance/v1",
+  "classification": "sealed_reviewed_configuration",
+  "public_regeneration_available": false,
+  "claim": "The checked-in headers are hash-locked inputs to the reproducible runtime compile; they are not reproducible from the public repository.",
+  "reason": "Their original generator inputs include rights-sensitive or local runtime/image authority manifests that are not published as a complete generation contract.",
+  "headers": {
+    "photon_combined_pf.generated.h": {
+      "bytes": 895,
+      "sha256": "9E6BCD1603FA42AADDD52A76C7485B8EBF2C4BB206D24E580735707C3D6C33E9",
+      "role": "PF executable/private-DLL/font identities and runtime authorization template",
+      "sealed_source_manifest_sha256": null
+    },
+    "photon_combined_pm.generated.h": {
+      "bytes": 895,
+      "sha256": "1D60AFC1DC1580324EDE35BB8344808145EB7D2B36381AC904AF22A1EA25BF15",
+      "role": "PM executable/private-DLL/font identities and runtime authorization template",
+      "sealed_source_manifest_sha256": null
+    },
+    "photon_v6_pf_exact_rgba_table.generated.h": {
+      "bytes": 502705,
+      "sha256": "37ABF817897F6D4575051F92A2045BF2F4130164052BAD96D333D9F3F769581E",
+      "role": "PF exact-RGBA sidecar identity and geometry table; contains no image bytes",
+      "sealed_source_manifest_sha256": "81A2A9BB9B0469D961557410664673DF461522621074BF37AB6F8544459711DC"
+    },
+    "photon_v6_pm_exact_rgba_table.generated.h": {
+      "bytes": 685061,
+      "sha256": "714778A2556D0319563C68C9D07738E407EC828D7EEA3C0AD2ADA25F070B0011",
+      "role": "PM exact-RGBA sidecar identity and geometry table; contains no image bytes",
+      "sealed_source_manifest_sha256": "81A2A9BB9B0469D961557410664673DF461522621074BF37AB6F8544459711DC"
+    },
+    "photon_v6_pm_special40_table.generated.h": {
+      "bytes": 14359,
+      "sha256": "BB1F3545C1A6AF0ABFFA3C3447A4B9255923C84A2D3D68998CBED381E0AA9A01",
+      "role": "PM special Cr6 payload identity table; contains no payload bytes",
+      "sealed_source_manifest_sha256": "D5AAA4A408E77AD184502AA0DE29B739CF6E560C3CBCEB4F055055D2646086F1"
+    },
+    "photon_v6_special57_table.generated.h": {
+      "bytes": 38420,
+      "sha256": "300A85017886EF7C443ABEDD0A7E778CCC5878143AEE936495A61DF9849E0B96",
+      "role": "PF/PM special sidecar route identity and geometry table; contains no image bytes",
+      "sealed_source_manifest_sha256": null
+    }
+  },
+  "known_gaps": [
+    "No public deterministic generator is currently maintained for these six headers.",
+    "The sealed source manifests named by the exact-RGBA and PM-special40 headers are not public files.",
+    "The special57 and combined headers do not embed a source-manifest hash.",
+    "A clean clone can verify and compile these exact reviewed header bytes, but cannot independently regenerate their contents."
+  ]
+}

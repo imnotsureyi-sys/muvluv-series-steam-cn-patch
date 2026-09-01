@@ -1,0 +1,55 @@
+name: Quality
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python / ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Test AGE2
+        run: python -m unittest discover -s age2/tests -p "test_*.py" -v
+      - name: Test rUGP
+        run: python -m unittest discover -s rugp/tests -p "test_*.py" -v
+      - name: Test localization workflow
+        run: python -m unittest discover -s localization/tests -p "test_*.py" -v
+      - name: Test repository policy helpers
+        run: python -m unittest discover -s .github/scripts/tests -p "test_*.py" -v
+      - name: Compile Python sources
+        run: python -m compileall -q age2 rugp localization .github/scripts
+      - name: Verify repository policy
+        run: python .github/scripts/verify_repository.py
+
+  photon-runtime:
+    name: Photon runtime / Zig 0.16.0
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+      - uses: mlugg/setup-zig@d1434d08867e3ee9daa34448df10607b98908d29 # v2
+        with:
+          version: 0.16.0
+      - name: Build and verify PF/PM production code
+        shell: pwsh
+        run: |
+          $zig = (Get-Command zig).Source
+          python rugp/runtime/build.py --game pf --zig $zig --output "$env:RUNNER_TEMP/pf/Ages3ResT.dll" --authorize-pinned-build --verify-release-code
+          python rugp/runtime/build.py --game pm --zig $zig --output "$env:RUNNER_TEMP/pm/Ages3ResT.dll" --authorize-pinned-build --verify-release-code

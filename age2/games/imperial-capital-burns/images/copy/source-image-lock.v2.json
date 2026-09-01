@@ -1,0 +1,659 @@
+{
+  "schema": "age2-imperial-source-image-lock/v2",
+  "original_pack_sha256": "1D749713C01AE4E825A82FA2E75BF232303B1510708BBC9B7B98275315F7344F",
+  "algorithm": "SHA-256",
+  "namespaces": {
+    "data/gui/textures": {
+      "manifest": "ui.ja-zh-Hans.tsv",
+      "manifest_sha256": "31AF463D4747AAED511FF4DD5E61C054875D1D3256F5E4D3F4C59C7D4DE5F291",
+      "entries": [
+        {
+          "source_en": "backlog/15_title000_en.webp",
+          "target_ja": "backlog/15_title000_ja.webp",
+          "source_sha256": "C581E90675726C24D8EE27E58BC2BB3F6FC7CFCB7AE11F86FF8416572BA0B27A"
+        },
+        {
+          "source_en": "common/11_back000_en.webp",
+          "target_ja": "common/11_back000_ja.webp",
+          "source_sha256": "71A6A712CFAD9CA24180491F7400A78976AF987A8E477010EE708DE801CA7444"
+        },
+        {
+          "source_en": "common/d_title000_en.webp",
+          "target_ja": "common/d_title000_ja.webp",
+          "source_sha256": "6B15811A22EFF0B4B7E0EA62CAB33583E4B4DB14F8C1E89F19E7C3B0C488B7DA"
+        },
+        {
+          "source_en": "common/d_title010_en.webp",
+          "target_ja": "common/d_title010_ja.webp",
+          "source_sha256": "51CAB040C2D9374115F1A3F6721D158C0F003E25E9C974B2BEB327271E27165A"
+        },
+        {
+          "source_en": "common/next_fnt010_en.webp",
+          "target_ja": "common/next_fnt010_ja.webp",
+          "source_sha256": "9C94278C9C8ED041CCFDB95A576C5C29C54E859480F04DD42A54979663119A15"
+        },
+        {
+          "source_en": "control/14_btn020_en.webp",
+          "target_ja": "control/14_btn020_ja.webp",
+          "source_sha256": "015A74D3069D18425B2AC8EBE37A38759E5EA2D78B8CDBE4BFF82B2D36922225"
+        },
+        {
+          "source_en": "control/14_btn021_en.webp",
+          "target_ja": "control/14_btn021_ja.webp",
+          "source_sha256": "60D706DE5D45CC72B7D106D2AE31886A96B57175BD4E2F947833131C74389105"
+        },
+        {
+          "source_en": "control/14_btn030_en.webp",
+          "target_ja": "control/14_btn030_ja.webp",
+          "source_sha256": "FD9CD4F4C89C564D0E6CFC9AC83A70CE60E9FA1BCDAFAB69A63ACD878D4A0BEE"
+        },
+        {
+          "source_en": "control/14_btn031_en.webp",
+          "target_ja": "control/14_btn031_ja.webp",
+          "source_sha256": "298AD3AE9C7BA02FDC2FA5EA81CE442D6CA161BCFCA4A31ED41C0D3EE6FC3C65"
+        },
+        {
+          "source_en": "control/14_btn050_en.webp",
+          "target_ja": "control/14_btn050_ja.webp",
+          "source_sha256": "488A17060C604211063763AE532A219E3DE13856520B316C0C2494F4C0A29F01"
+        },
+        {
+          "source_en": "control/14_btn051_en.webp",
+          "target_ja": "control/14_btn051_ja.webp",
+          "source_sha256": "D063265CFEF710A59C14C25BE3851265347349DF62CE6824DABB29B794938924"
+        },
+        {
+          "source_en": "control/14_title000_en.webp",
+          "target_ja": "control/14_title000_ja.webp",
+          "source_sha256": "2FA7407B329A85B256478092E77DE79398E90C8887E33FEEE2D861FF78A8B43E"
+        },
+        {
+          "source_en": "gallery/09_thumb000_en.webp",
+          "target_ja": "gallery/09_thumb000_ja.webp",
+          "source_sha256": "65ED62CD6BD2D3781E16F869C0C1D04C27AAF49256F13F0E1C755FEF4584EDCF"
+        },
+        {
+          "source_en": "gallery/09_title000_en.webp",
+          "target_ja": "gallery/09_title000_ja.webp",
+          "source_sha256": "DFEED376989CE4E1E8EE7EA6C5DBCAF77910B1FE9C3743D947B16AAF7DD79052"
+        },
+        {
+          "source_en": "load/04_nod000_en.webp",
+          "target_ja": "load/04_nod000_ja.webp",
+          "source_sha256": "886E91E1DE67C29CCF75438C17E644771B7E42DC1278BD59744F7EB515C1B488"
+        },
+        {
+          "source_en": "load/04_title000_en.webp",
+          "target_ja": "load/04_title000_ja.webp",
+          "source_sha256": "8AD49B0C1381C7182E507851C2E1B06C1209F3C2DAB33324638B24BB09C410C2"
+        },
+        {
+          "source_en": "main/13_bt020_en.webp",
+          "target_ja": "main/13_bt020_ja.webp",
+          "source_sha256": "7D7282CC4CEC551CD0E25E218507E4B6A5A21D280DA8D3A5EDA596280425D3C2"
+        },
+        {
+          "source_en": "main/13_bt021_en.webp",
+          "target_ja": "main/13_bt021_ja.webp",
+          "source_sha256": "EFBB68835C8F8EFDC711E5A7AFE6243DB4C4B0E64246171AC72F6771732FA69C"
+        },
+        {
+          "source_en": "main/13_bt030_en.webp",
+          "target_ja": "main/13_bt030_ja.webp",
+          "source_sha256": "5FD357B72BE5A09A3C471EB70990691024E1FEDB2CEADAECBC5B67E1AE6924CF"
+        },
+        {
+          "source_en": "main/13_bt031_en.webp",
+          "target_ja": "main/13_bt031_ja.webp",
+          "source_sha256": "FB16407258C37F7464F670DC75122943DEFEC2D73FA218F7006AD96FA0C26C0E"
+        },
+        {
+          "source_en": "main/13_bt040_en.webp",
+          "target_ja": "main/13_bt040_ja.webp",
+          "source_sha256": "5E129069B2691C8858D580832894FEEC75172F514CFD66F6674CD9C566068DEB"
+        },
+        {
+          "source_en": "main/13_bt041_en.webp",
+          "target_ja": "main/13_bt041_ja.webp",
+          "source_sha256": "121D69E5F83B747C145D3096009419EEBDAEE0F3A2604C344690CD2B3916602D"
+        },
+        {
+          "source_en": "main/13_bt050_en.webp",
+          "target_ja": "main/13_bt050_ja.webp",
+          "source_sha256": "A23CEEBC1C55DA13B9990FA56F1D54B40111CCA4552890C673E528E90AA7BD07"
+        },
+        {
+          "source_en": "main/13_bt051_en.webp",
+          "target_ja": "main/13_bt051_ja.webp",
+          "source_sha256": "097956D1592522F1149FED497FB592C1C416CFEA1138625CB987387C2461F2B2"
+        },
+        {
+          "source_en": "main/13_title000_en.webp",
+          "target_ja": "main/13_title000_ja.webp",
+          "source_sha256": "FDA14097994511EDA3B4C2AC5093B7CA5412398CEA849656158A2D31B923A11B"
+        },
+        {
+          "source_en": "manual/12_bg000_pc_en.webp",
+          "target_ja": "manual/12_bg000_pc_ja.webp",
+          "source_sha256": "D318759711D106E02EBA6DF69EFA63FFC256EFF882A32EA47BEA104F73E5D6A1"
+        },
+        {
+          "source_en": "manual/12_bg000_sp_en.webp",
+          "target_ja": "manual/12_bg000_sp_ja.webp",
+          "source_sha256": "166697267F0256824E2463651DCAFA65F5B11382BF58C89E218FFED2E712FAD2"
+        },
+        {
+          "source_en": "option/11_title000_en.webp",
+          "target_ja": "option/11_title000_ja.webp",
+          "source_sha256": "7C77E529FB0E986DFC45A2D0282F41240F489A56DA03C6018453007A8B1C6F76"
+        },
+        {
+          "source_en": "option/11_title001_en.webp",
+          "target_ja": "option/11_title001_ja.webp",
+          "source_sha256": "37F38C56535B5F552B97BD456972F389CB9ABD656619CFE4BD19BBFCF4B3AD04"
+        },
+        {
+          "source_en": "save/06_thumb000_en.webp",
+          "target_ja": "save/06_thumb000_ja.webp",
+          "source_sha256": "886E91E1DE67C29CCF75438C17E644771B7E42DC1278BD59744F7EB515C1B488"
+        },
+        {
+          "source_en": "save/06_title000_en.webp",
+          "target_ja": "save/06_title000_ja.webp",
+          "source_sha256": "640F160C920775FB60E3918B351EF7B7781091607ED55930D1C4DE9B9A26E252"
+        },
+        {
+          "source_en": "title/01_bt000_en.webp",
+          "target_ja": "title/01_bt000_ja.webp",
+          "source_sha256": "F9E27C4BA10D0AA6B719A8A1AE8102420366858113B5C18E10FC3FC409186A28"
+        },
+        {
+          "source_en": "title/01_bt001_en.webp",
+          "target_ja": "title/01_bt001_ja.webp",
+          "source_sha256": "7260FAA4C0F6EABF4F9FB06D4E567CBEB38113028083C6544868D34CD7A561DD"
+        },
+        {
+          "source_en": "title/01_bt010_en.webp",
+          "target_ja": "title/01_bt010_ja.webp",
+          "source_sha256": "7E32479655AD0FAE399AC2DAF2F78F4D8C3807DE43E80AEC3796A7A063727A04"
+        },
+        {
+          "source_en": "title/01_bt011_en.webp",
+          "target_ja": "title/01_bt011_ja.webp",
+          "source_sha256": "79BA8A0D4379CA145099F3C7766BED62626EB59686AD73DF3191A61ACCE19CFF"
+        },
+        {
+          "source_en": "title/01_bt020_en.webp",
+          "target_ja": "title/01_bt020_ja.webp",
+          "source_sha256": "8073BAFC9BE2A3C4AE4CDE486AB0E94644056D62E0B7DE246CF38BEF705CFE13"
+        },
+        {
+          "source_en": "title/01_bt021_en.webp",
+          "target_ja": "title/01_bt021_ja.webp",
+          "source_sha256": "5AF3DB93D7DD14E5BD4BE9552DDD83A6B25A19659746F4E13C72E0626BFD1029"
+        },
+        {
+          "source_en": "title/01_bt030_en.webp",
+          "target_ja": "title/01_bt030_ja.webp",
+          "source_sha256": "CC246BC5D2D41D785D9C26853393A55E4FAA0263A15E17F85B90AAC2D5FC5527"
+        },
+        {
+          "source_en": "title/01_bt031_en.webp",
+          "target_ja": "title/01_bt031_ja.webp",
+          "source_sha256": "3FBD12530D54302D4A41CE0541BC685AE3E8CB3FCBD6E1E98FC66DA1666FC754"
+        },
+        {
+          "source_en": "title/01_bt040_en.webp",
+          "target_ja": "title/01_bt040_ja.webp",
+          "source_sha256": "B2DDA0C3D79B2E85D31554F40F39A88202F9DFED4AB855AFE56627D466702FC5"
+        },
+        {
+          "source_en": "title/01_bt041_en.webp",
+          "target_ja": "title/01_bt041_ja.webp",
+          "source_sha256": "8ABEE921F149FD08D13635FC13B9775B78C27500CCA161147E36A8FB0A3AD5C9"
+        },
+        {
+          "source_en": "title/01_lic000_en.webp",
+          "target_ja": "title/01_lic000_ja.webp",
+          "source_sha256": "97B614FFA8A77C2F2B0C1BBCF078D5595544AFCB4C54F700B1A3946F5AD98790"
+        }
+      ]
+    },
+    "data_spec/gui/textures": {
+      "manifest": "schema.tsv",
+      "manifest_sha256": "BD77531403C2AB6B9B1FEEB10804988C396C1606D72C14535F2CEB1011C32AEE",
+      "entries": [
+        {
+          "source_en": "backlog/15_title000_en.webp",
+          "target_ja": "backlog/15_title000_ja.webp",
+          "source_sha256": "DB7ED9454E57454C6BA84293C50BAA12A97D65335C482B4DE33958320FD3A881"
+        },
+        {
+          "source_en": "chapter/16_title000_en.webp",
+          "target_ja": "chapter/16_title000_ja.webp",
+          "source_sha256": "BA4948FD5A6B800F6E3F15E348D29D600A849E96513F431A13CB71894C7A8428"
+        },
+        {
+          "source_en": "clearlist/21_ex_c01_01_en.webp",
+          "target_ja": "clearlist/21_ex_c01_01_ja.webp",
+          "source_sha256": "AD853858CAF0BCB9040A099DB2BE2D8682264402C8625A31363EBA0D37DD258F"
+        },
+        {
+          "source_en": "clearlist/21_ex_c02_01_en.webp",
+          "target_ja": "clearlist/21_ex_c02_01_ja.webp",
+          "source_sha256": "46CC3038447816CB4D1183EE33C56CAB2ABD8963568A4647BAAF488D6A0EEB9B"
+        },
+        {
+          "source_en": "clearlist/21_ex_chiz01_en.webp",
+          "target_ja": "clearlist/21_ex_chiz01_ja.webp",
+          "source_sha256": "BC169E4B1DF991B93F9B1FF5F4558A4F4107EB4CFC0B638FF7F1DC6FD1F29465"
+        },
+        {
+          "source_en": "clearlist/21_ex_kei01_en.webp",
+          "target_ja": "clearlist/21_ex_kei01_ja.webp",
+          "source_sha256": "7B94803B0F973F85FD73F9D358246772FE9EAF08CFDE2BCE855D1B0855F0B1E0"
+        },
+        {
+          "source_en": "clearlist/21_ex_meiy01_en.webp",
+          "target_ja": "clearlist/21_ex_meiy01_ja.webp",
+          "source_sha256": "11A1362DBA4AADA6F35CF329FA61EFD3FF62098286ADE29941F6033B428836AE"
+        },
+        {
+          "source_en": "clearlist/21_ex_miki01_en.webp",
+          "target_ja": "clearlist/21_ex_miki01_ja.webp",
+          "source_sha256": "4E70CA43F3F69EFB991DD9889F81CE56E9A1417974333BEEF74BFC205CC2251B"
+        },
+        {
+          "source_en": "clearlist/21_ex_sumi01_en.webp",
+          "target_ja": "clearlist/21_ex_sumi01_ja.webp",
+          "source_sha256": "DDF38266FB6580D2DA542ABE1969BD47300FB3C4AEEBBB1E0F4BB10A1DF3FF1D"
+        },
+        {
+          "source_en": "clearlist/21_title000_en.webp",
+          "target_ja": "clearlist/21_title000_ja.webp",
+          "source_sha256": "189E91A9D4F84994C260BC1C59B8D6276BEDB8B13F2F10704EC287D07B5B44C3"
+        },
+        {
+          "source_en": "clearlist/21_un_chiz01_en.webp",
+          "target_ja": "clearlist/21_un_chiz01_ja.webp",
+          "source_sha256": "830554432BA0CAE758DF97964673EE0A6441A42D0F327576FDA9F12932FF6C49"
+        },
+        {
+          "source_en": "clearlist/21_un_chiz02_en.webp",
+          "target_ja": "clearlist/21_un_chiz02_ja.webp",
+          "source_sha256": "298507ADA3793AE26051053A91BDE7F56EC3725428693C3CE24CCE7B9C39B444"
+        },
+        {
+          "source_en": "clearlist/21_un_chiz03_en.webp",
+          "target_ja": "clearlist/21_un_chiz03_ja.webp",
+          "source_sha256": "9EB5DA9CCB61E153B3F200DCC2E236E36CD07AC9E9AA021F9B4B4D1152AF4DE7"
+        },
+        {
+          "source_en": "clearlist/21_un_kei01_en.webp",
+          "target_ja": "clearlist/21_un_kei01_ja.webp",
+          "source_sha256": "25AE7BC880FB7547CC3EAFC2D22C376379F85D5A0AF225365B3D58109EDA72C9"
+        },
+        {
+          "source_en": "clearlist/21_un_kei02_en.webp",
+          "target_ja": "clearlist/21_un_kei02_ja.webp",
+          "source_sha256": "786A01A1EE19C4355719F099B2AF5DDCDB5DA032F269BC79A4727BB1861DEBA7"
+        },
+        {
+          "source_en": "clearlist/21_un_kei03_en.webp",
+          "target_ja": "clearlist/21_un_kei03_ja.webp",
+          "source_sha256": "01A4E4521585F352DA2C1F9DDF029A70B5B85E7BE8EDD71951E1440B5C1C0143"
+        },
+        {
+          "source_en": "clearlist/21_un_meiy01_en.webp",
+          "target_ja": "clearlist/21_un_meiy01_ja.webp",
+          "source_sha256": "188AD9DA7D01CFD2BE47B9AFEEEB7814BEA8F3AC9E340FE19130ACC1E21F47C7"
+        },
+        {
+          "source_en": "clearlist/21_un_meiy02_en.webp",
+          "target_ja": "clearlist/21_un_meiy02_ja.webp",
+          "source_sha256": "83A73127761960C5799581105A996C2DF7EAA824A058BC120F6B0B8027A0A1F0"
+        },
+        {
+          "source_en": "clearlist/21_un_meiy03_en.webp",
+          "target_ja": "clearlist/21_un_meiy03_ja.webp",
+          "source_sha256": "5D5E262928F92A2E9938F6326825128F8FBE09725E2D71F3FFCE7CB6ED720E6A"
+        },
+        {
+          "source_en": "clearlist/21_un_miki01_en.webp",
+          "target_ja": "clearlist/21_un_miki01_ja.webp",
+          "source_sha256": "3F49BE1D64B63A0BD66A7AF6D92C42178BE5738670B76D7EC61ABCC7F66176AB"
+        },
+        {
+          "source_en": "clearlist/21_un_miki02_en.webp",
+          "target_ja": "clearlist/21_un_miki02_ja.webp",
+          "source_sha256": "AEF8BFFD5F67FD8AD4625DB493D8F901B8FA79D483044D744DEC263FF710F765"
+        },
+        {
+          "source_en": "clearlist/21_un_miki03_en.webp",
+          "target_ja": "clearlist/21_un_miki03_ja.webp",
+          "source_sha256": "B4412C9804F8CAB62EFCBDEEA86B10562B7DA12D8931E53318CF0E58E09759E3"
+        },
+        {
+          "source_en": "clearlist/21_un_miko01_en.webp",
+          "target_ja": "clearlist/21_un_miko01_ja.webp",
+          "source_sha256": "FB41474B8B1BB7DEF82ECBA53F897A90723AFF9425948E6CAB62D8E0477D062D"
+        },
+        {
+          "source_en": "clearlist/21_un_miko02_en.webp",
+          "target_ja": "clearlist/21_un_miko02_ja.webp",
+          "source_sha256": "03E5D662D82E0DD7DDEE43523625EBADD3B76608E723A2B9976F8568431227BC"
+        },
+        {
+          "source_en": "clearlist/21_un_miko03_en.webp",
+          "target_ja": "clearlist/21_un_miko03_ja.webp",
+          "source_sha256": "DAED7239613C1982D52BBE9FDC63DEB0F246E66C0FF9953EDDABCDDBD1C63E26"
+        },
+        {
+          "source_en": "clearlist/21_un_yuko01_en.webp",
+          "target_ja": "clearlist/21_un_yuko01_ja.webp",
+          "source_sha256": "271EA9DF8DC5867B6FED17608B37D21C29A40C01BE7B82C99A5BDBF26A267332"
+        },
+        {
+          "source_en": "common/11_back000_en.webp",
+          "target_ja": "common/11_back000_ja.webp",
+          "source_sha256": "0B2A962AE7ECB075CF01E9A4CC5DCBBF9A96AF92566DA2012A0F63A2DAB8BA62"
+        },
+        {
+          "source_en": "control/14_btn020_en.webp",
+          "target_ja": "control/14_btn020_ja.webp",
+          "source_sha256": "647F3D0F874656EC890429411D3F7BE8E1E735AB7C2291D0616E5617DA0291EB"
+        },
+        {
+          "source_en": "control/14_btn021_en.webp",
+          "target_ja": "control/14_btn021_ja.webp",
+          "source_sha256": "0064D2CC734078328AB28CC9407AB4E3AD2E0EB26F303386BEFF901101E3C2DE"
+        },
+        {
+          "source_en": "control/14_btn030_en.webp",
+          "target_ja": "control/14_btn030_ja.webp",
+          "source_sha256": "6EBECEE1FE1691343B7D67FE0DCA93DB4DAB819E11F649CC5755299F909D9CA3"
+        },
+        {
+          "source_en": "control/14_btn031_en.webp",
+          "target_ja": "control/14_btn031_ja.webp",
+          "source_sha256": "5997587EEF8751004872FB464CDC4E708CDA4015CEA7D7054F8628CD471E80EF"
+        },
+        {
+          "source_en": "control/14_btn050_en.webp",
+          "target_ja": "control/14_btn050_ja.webp",
+          "source_sha256": "488A17060C604211063763AE532A219E3DE13856520B316C0C2494F4C0A29F01"
+        },
+        {
+          "source_en": "control/14_btn051_en.webp",
+          "target_ja": "control/14_btn051_ja.webp",
+          "source_sha256": "D063265CFEF710A59C14C25BE3851265347349DF62CE6824DABB29B794938924"
+        },
+        {
+          "source_en": "control/14_title000_en.webp",
+          "target_ja": "control/14_title000_ja.webp",
+          "source_sha256": "F59ECEBE369A9C7AC0941531D37313A4ED6A80E0664212303B945522DB477A6E"
+        },
+        {
+          "source_en": "gallery/09_chr_bt00_en.webp",
+          "target_ja": "gallery/09_chr_bt00_ja.webp",
+          "source_sha256": "8DD5ABBAEE1FF5830C68C7888DDC5A180D9E477C4B1D17C7723CC395943E9DE8"
+        },
+        {
+          "source_en": "gallery/09_chr_bt01_en.webp",
+          "target_ja": "gallery/09_chr_bt01_ja.webp",
+          "source_sha256": "306A90FB2FAFBC8C2F44FC8E81E241E9037BA3CF4A17EF764F855D07FBFC8ACC"
+        },
+        {
+          "source_en": "gallery/09_chr_bt02_en.webp",
+          "target_ja": "gallery/09_chr_bt02_ja.webp",
+          "source_sha256": "083EFC9FF8A721C37D4E0C3C73D7EFD02C8010EA49514D4777528BE9728CF8E4"
+        },
+        {
+          "source_en": "gallery/09_chr_bt03_en.webp",
+          "target_ja": "gallery/09_chr_bt03_ja.webp",
+          "source_sha256": "A92FA472D1344945EB8EFBB86AA4A1A719BA245A63B07063B23714FEFE2F583A"
+        },
+        {
+          "source_en": "gallery/09_chr_bt04_en.webp",
+          "target_ja": "gallery/09_chr_bt04_ja.webp",
+          "source_sha256": "8E24E4C8B0F74EA51D88738E83C79C4F77AD7C231EB9DD7862748A2BD9FA714E"
+        },
+        {
+          "source_en": "gallery/09_chr_bt05_en.webp",
+          "target_ja": "gallery/09_chr_bt05_ja.webp",
+          "source_sha256": "DBB524A0311C12D9184A1EF9E629403D4FA8C83806B62EACF721EB58E47B9449"
+        },
+        {
+          "source_en": "gallery/09_chr_bt06_en.webp",
+          "target_ja": "gallery/09_chr_bt06_ja.webp",
+          "source_sha256": "4698C4DFEE772A27D82950DEB910C0507C518EEB8AB3F62BA8FC4E7D2A52C36F"
+        },
+        {
+          "source_en": "gallery/09_chr_bt07_en.webp",
+          "target_ja": "gallery/09_chr_bt07_ja.webp",
+          "source_sha256": "8357A1465252EBFEEBE2B02AF9AD1779C0CA6CBE047630806A7481A8493EBD59"
+        },
+        {
+          "source_en": "gallery/09_title000_en.webp",
+          "target_ja": "gallery/09_title000_ja.webp",
+          "source_sha256": "5F2AF9F9E288DDCC7950121E051129F68C4329A92EA53596D4101E5CA825E10B"
+        },
+        {
+          "source_en": "Jukebox/16_title000_en.webp",
+          "target_ja": "Jukebox/16_title000_ja.webp",
+          "source_sha256": "0B06B4FC635A2B29E7240838F2783C4C13509C5C2942A9E08F0240CD0C070FB0"
+        },
+        {
+          "source_en": "load/04_title000_en.webp",
+          "target_ja": "load/04_title000_ja.webp",
+          "source_sha256": "7B366E7FC8C2F9BE93AECF554460573434D938873CE8B9A1CE5F5211C4084860"
+        },
+        {
+          "source_en": "main/13_bt020_en.webp",
+          "target_ja": "main/13_bt020_ja.webp",
+          "source_sha256": "00C40F0469BFEFF0B92051E6E62CFBFB9B827519D32959FDA4AD3F1A20FC4873"
+        },
+        {
+          "source_en": "main/13_bt021_en.webp",
+          "target_ja": "main/13_bt021_ja.webp",
+          "source_sha256": "EFBB68835C8F8EFDC711E5A7AFE6243DB4C4B0E64246171AC72F6771732FA69C"
+        },
+        {
+          "source_en": "main/13_bt030_en.webp",
+          "target_ja": "main/13_bt030_ja.webp",
+          "source_sha256": "3FC439D2BEF6CC084C8E1A0D31A07518A3B177BB5973A2495045D8FF6E03E200"
+        },
+        {
+          "source_en": "main/13_bt031_en.webp",
+          "target_ja": "main/13_bt031_ja.webp",
+          "source_sha256": "4CC3487BAB7E115E8F044B0EFFA22FBD7561033DBC0126E2A591034B3D4A2D6E"
+        },
+        {
+          "source_en": "main/13_bt040_en.webp",
+          "target_ja": "main/13_bt040_ja.webp",
+          "source_sha256": "48DFE1A3DA542A6A36421AF186EDB1153CE510C043304A36DA1D5D1F535F7CB6"
+        },
+        {
+          "source_en": "main/13_bt041_en.webp",
+          "target_ja": "main/13_bt041_ja.webp",
+          "source_sha256": "94567CCBAFFE504AB026CC5F490692FB877893CECCCD713A3643B385800F619E"
+        },
+        {
+          "source_en": "main/13_bt050_en.webp",
+          "target_ja": "main/13_bt050_ja.webp",
+          "source_sha256": "705180E8ADC1A73163693CBB859EAB5E0CFDC2D774B78C18B8B23757BE96E89E"
+        },
+        {
+          "source_en": "main/13_bt051_en.webp",
+          "target_ja": "main/13_bt051_ja.webp",
+          "source_sha256": "B000AB58AE177DAC38F4D5B60CCFCDD8E5FEAAFE0D64A0AE3FE3AFFA8629D100"
+        },
+        {
+          "source_en": "main/13_bt060_en.webp",
+          "target_ja": "main/13_bt060_ja.webp",
+          "source_sha256": "046ECECB653ED3F05214B296262D6726C845303385C65664F6D601635AD7B632"
+        },
+        {
+          "source_en": "main/13_bt061_en.webp",
+          "target_ja": "main/13_bt061_ja.webp",
+          "source_sha256": "40F30ED06CF67EC52337E21BD3632B1D2FF0B86C2EF6F1930A4FF4D8A68E7160"
+        },
+        {
+          "source_en": "main/13_title000_en.webp",
+          "target_ja": "main/13_title000_ja.webp",
+          "source_sha256": "43576688951E650E49183F20B0F9A5EE3797DAB7FED77E5891118834312C7250"
+        },
+        {
+          "source_en": "manual/12_bg000_pc_en.webp",
+          "target_ja": "manual/12_bg000_pc_ja.webp",
+          "source_sha256": "C767968A5E4B70CA0129AE0F426427402E58864A983D2D27459D130B6A4353C8"
+        },
+        {
+          "source_en": "manual/12_bg000_sp_en.webp",
+          "target_ja": "manual/12_bg000_sp_ja.webp",
+          "source_sha256": "EBFB6AA748FD302B92EF7463DCB5F1A19BB91EEC9671828EFEC07A6B0235D83A"
+        },
+        {
+          "source_en": "option/11_title000_en.webp",
+          "target_ja": "option/11_title000_ja.webp",
+          "source_sha256": "7EBFA3B9010211B0330435E2024E42D69F542A9D4897B34C2FCBE4E2DB41AF43"
+        },
+        {
+          "source_en": "option/11_title001_en.webp",
+          "target_ja": "option/11_title001_ja.webp",
+          "source_sha256": "57A7E13257A4582CF2967195F294E46BFF506B7536407014C1214155ACEA6473"
+        },
+        {
+          "source_en": "save/06_title000_en.webp",
+          "target_ja": "save/06_title000_ja.webp",
+          "source_sha256": "ACAF98E2D6BA6B2D3DD68EA9C2386E467A059009BD46007E0E0CF9094485BCE2"
+        },
+        {
+          "source_en": "theater/22_title000_en.webp",
+          "target_ja": "theater/22_title000_ja.webp",
+          "source_sha256": "0420C44AD436F1DDA4BDEBCE3DF31878BFACD500A92645A16209352083BD3CB6"
+        },
+        {
+          "source_en": "title/01_bg000_en.webp",
+          "target_ja": "title/01_bg000_ja.webp",
+          "source_sha256": "00847D51CCE3A0856BAF96E86B1831444B72B54417E696B797E820AC273282F9"
+        },
+        {
+          "source_en": "title/01_bt000_en.webp",
+          "target_ja": "title/01_bt000_ja.webp",
+          "source_sha256": "DE0C43582808EFDF8B28846B2A18293F83C8C19E8A6CB6C08A0C3156A078D0A0"
+        },
+        {
+          "source_en": "title/01_bt001_en.webp",
+          "target_ja": "title/01_bt001_ja.webp",
+          "source_sha256": "7260FAA4C0F6EABF4F9FB06D4E567CBEB38113028083C6544868D34CD7A561DD"
+        },
+        {
+          "source_en": "title/01_bt010_en.webp",
+          "target_ja": "title/01_bt010_ja.webp",
+          "source_sha256": "1DA77FCF78C8F0DBC052FADFC642CB88A2ED6E2B1E60E49508FF800B8C845562"
+        },
+        {
+          "source_en": "title/01_bt011_en.webp",
+          "target_ja": "title/01_bt011_ja.webp",
+          "source_sha256": "79BA8A0D4379CA145099F3C7766BED62626EB59686AD73DF3191A61ACCE19CFF"
+        },
+        {
+          "source_en": "title/01_bt020_en.webp",
+          "target_ja": "title/01_bt020_ja.webp",
+          "source_sha256": "C769718EEC31857BD7D3CEDF586C98FB92EB2A661B85D9476B74E1608AFD3BA7"
+        },
+        {
+          "source_en": "title/01_bt021_en.webp",
+          "target_ja": "title/01_bt021_ja.webp",
+          "source_sha256": "F6082F79ECCDED9BE951EC72B02D463729835D4F635ECE7B1ED1055A6A8CD18D"
+        },
+        {
+          "source_en": "title/01_bt030_en.webp",
+          "target_ja": "title/01_bt030_ja.webp",
+          "source_sha256": "0C1756569E638C1B5E5E13EEBBC50405D906FC95E0CE9C495B51EB115E7E2D8B"
+        },
+        {
+          "source_en": "title/01_bt031_en.webp",
+          "target_ja": "title/01_bt031_ja.webp",
+          "source_sha256": "3FBD12530D54302D4A41CE0541BC685AE3E8CB3FCBD6E1E98FC66DA1666FC754"
+        },
+        {
+          "source_en": "title/01_bt040_en.webp",
+          "target_ja": "title/01_bt040_ja.webp",
+          "source_sha256": "5DF86EE0681A172BC0225532CAD1BED38FA80AD136BC10E6D6DEE1C146487A2F"
+        },
+        {
+          "source_en": "title/01_bt041_en.webp",
+          "target_ja": "title/01_bt041_ja.webp",
+          "source_sha256": "8ABEE921F149FD08D13635FC13B9775B78C27500CCA161147E36A8FB0A3AD5C9"
+        },
+        {
+          "source_en": "title/01_bt050_en.webp",
+          "target_ja": "title/01_bt050_ja.webp",
+          "source_sha256": "74177A2E55AEE002E5D494C163741E6B212E1E40FC0BD2ACDE8DC2FEEDEA5A62"
+        },
+        {
+          "source_en": "title/01_bt051_en.webp",
+          "target_ja": "title/01_bt051_ja.webp",
+          "source_sha256": "15BDF9E82830DB68BD0610266CF8B2C156D99FD6DAB7ED05C794DB11586CB699"
+        },
+        {
+          "source_en": "title/01_bt060_en.webp",
+          "target_ja": "title/01_bt060_ja.webp",
+          "source_sha256": "AEF51AD35A2FDDFDA771C97AF552F2113A034FCC90CE9584A60D826D2409C9DA"
+        },
+        {
+          "source_en": "title/01_bt061_en.webp",
+          "target_ja": "title/01_bt061_ja.webp",
+          "source_sha256": "74F21B5196158A1DA8F3CC355B0862C80C202F416693ABE8E1F7B49BEA949319"
+        },
+        {
+          "source_en": "title/01_bt070_en.webp",
+          "target_ja": "title/01_bt070_ja.webp",
+          "source_sha256": "737976C1202D0F47A787E2A04FB7CBCAF5823184409B315AF88D16BCB1E20799"
+        },
+        {
+          "source_en": "title/01_bt071_en.webp",
+          "target_ja": "title/01_bt071_ja.webp",
+          "source_sha256": "F77B971D596EE3E1ACC55E76C8BA6DE5FB7F4C7DCB790647CE20D3AC3FFBA3F2"
+        },
+        {
+          "source_en": "title/01_bt080_en.webp",
+          "target_ja": "title/01_bt080_ja.webp",
+          "source_sha256": "ADD943FF92428B50B3C078436E01A9C31876E783D353618EE3B3B1009E3A8C1B"
+        },
+        {
+          "source_en": "title/01_bt081_en.webp",
+          "target_ja": "title/01_bt081_ja.webp",
+          "source_sha256": "EA9F6FC7D1CD5F759A8BD416E4649AF099364359B9EEFAC77E508B0D47CE38F9"
+        },
+        {
+          "source_en": "title/01_bt090_en.webp",
+          "target_ja": "title/01_bt090_ja.webp",
+          "source_sha256": "84850C970640FFF1354E45625D01A817DF4C38444E53446754D023C2DF5CFCF7"
+        },
+        {
+          "source_en": "title/01_bt091_en.webp",
+          "target_ja": "title/01_bt091_ja.webp",
+          "source_sha256": "6C493E9D9DE4BB54A07EDFF835897C5ADD816B35136EC65B7F84BACD74F14647"
+        },
+        {
+          "source_en": "title/01_bt100_en.webp",
+          "target_ja": "title/01_bt100_ja.webp",
+          "source_sha256": "44577B7ABAD922E4B15E59BE34726B3F54C29110FD4D8815EE61342A5D91FB0D"
+        },
+        {
+          "source_en": "title/01_bt101_en.webp",
+          "target_ja": "title/01_bt101_ja.webp",
+          "source_sha256": "FF6EF5B7C2C4AD47A9B287D7BD93A1ED71AF7C3F1CAFBAA0F5E68C2FB566C11F"
+        },
+        {
+          "source_en": "title/01_v_bg000_en.webp",
+          "target_ja": "title/01_v_bg000_ja.webp",
+          "source_sha256": "39B5CA9DC519D33AF7497C3A71220F42A9B3F473C4597F259A32EF3576B08572"
+        }
+      ]
+    }
+  }
+}

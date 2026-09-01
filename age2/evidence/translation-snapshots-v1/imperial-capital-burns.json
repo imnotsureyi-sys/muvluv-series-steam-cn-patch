@@ -1,0 +1,28 @@
+{
+  "bulk_official_dialogue_included": false,
+  "output_bytes": 1772510,
+  "output_columns": [
+    "call_order",
+    "id",
+    "egpack",
+    "scene",
+    "speaker_jp",
+    "source_text_sha256",
+    "record_kind",
+    "cn_text"
+  ],
+  "output_sha256": "CD92A7C9BBA0F0EB1CF5DAEE5906133AE04D71458D378B5084EFF6BC33B9E5FA",
+  "record_kinds": {
+    "structural_empty": 0,
+    "text": 5564
+  },
+  "removed_source_columns": [
+    "jp_text"
+  ],
+  "retained_limited_source_context": [
+    "speaker_jp"
+  ],
+  "rows": 5564,
+  "source_bytes": 1978763,
+  "source_sha256": "AF4E480E691D3F616DE7CE42F9B8AFE15595739E4460B94FC7F353BDE25930B9"
+}

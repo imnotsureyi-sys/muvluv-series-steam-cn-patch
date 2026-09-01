@@ -1,0 +1,52 @@
+{
+  "columns": [
+    "stable_id",
+    "rio_file",
+    "block_offset",
+    "payload_offset",
+    "text_offset",
+    "writer_mode",
+    "delimiter",
+    "source_field_sha256",
+    "source_identity_sha256",
+    "translation_text",
+    "runtime_text",
+    "inline_controls",
+    "allow_control_change",
+    "control_delta_reason",
+    "runtime_binding",
+    "native_capacity_units",
+    "replacement_units",
+    "padding_codepoint",
+    "padding_units",
+    "translation_source"
+  ],
+  "games": {
+    "photonflowers": {
+      "bytes": 28757,
+      "path": "rugp/games/photonflowers/translations/zh-Hans.csv",
+      "rows": 69,
+      "sha256": "714FC82990784F5F414FA2A2A466A887056507B85B1986181E8A02F48B6C9548"
+    },
+    "photonmelodies": {
+      "bytes": 63963,
+      "path": "rugp/games/photonmelodies/translations/zh-Hans.csv",
+      "rows": 151,
+      "sha256": "F1A69217A4D8B06E8071393567C18C2A9685D675A4B54F35F261C0AAE3B70742"
+    }
+  },
+  "locale": "zh-Hans",
+  "official_source_text_included": false,
+  "policy": {
+    "runtime_text": "exact text consumed by the production writer; may intentionally differ",
+    "source_reconstruction": "extract official source text from a legally obtained game and match by stable_id plus hashes",
+    "translation_text": "human-facing localized authority"
+  },
+  "schema": "muvluv-photon-portable-text-sources/v1",
+  "source_audit": {
+    "bytes": 370075,
+    "logical_name": "photon-native-cstring-target-audit.production-safe.v1",
+    "sha256": "4F873D945AB0CAAFE0DBD3B529735042015DBBE1D71E93EA139B3F9BBDE6D1C6"
+  },
+  "status": "portable_from_sealed_production_audit"
+}

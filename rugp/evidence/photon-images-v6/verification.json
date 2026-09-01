@@ -1,0 +1,13 @@
+{
+  "schema": "muvluv-photon-image-github-backup-independent-verification/v1",
+  "status": "PASS",
+  "zip_sha256": "B11D0D322CF3081D0788BA60BB3D94C2014BD57B32852DC053B0D158128E97D8",
+  "zip_bytes": 77316999,
+  "zip_member_count": 1736,
+  "localized_png_count": 1490,
+  "native_record_count": 243,
+  "exact_formal_png_sha_matches": 1247,
+  "runtime_decoded_rgba_matches": 243,
+  "formal_authority_sha256": "19009AFB9C38822FB9057D8FAEEF2C9370CED2EFA1E090199A081682EF89447D",
+  "review_jpeg_used_as_source": false
+}

@@ -1,0 +1,82 @@
+/*
+ * Photonmelodies binding of the common native Cr6Ti hook engine.
+ *
+ * Every constant below is pinned to the official PM PE.  The common engine
+ * verifies the PE timestamp/SizeOfImage, relocated security-cookie operand,
+ * all three retail vtable entries, and the exact five-byte native decoder
+ * callsite before it suspends peer threads or mutates process memory.
+ */
+#include "photon_v6_pm_native_runtime.h"
+
+#define PHOTON_V6_PF_NATIVE_RUNTIME_H
+#define PhotonV6PfNativeStatus PhotonV6PmNativeStatus
+
+#define photon_v6_pf_hook_load_abi photon_v6_pm_hook_load_abi
+#define photon_v6_pf_hook_load_counted photon_v6_pm_hook_load_counted
+#define photon_v6_pf_hook_load_end photon_v6_pm_hook_load_end
+#define photon_v6_pf_hook_surface_abi photon_v6_pm_hook_surface_abi
+#define photon_v6_pf_hook_surface_counted photon_v6_pm_hook_surface_counted
+#define photon_v6_pf_hook_surface_end photon_v6_pm_hook_surface_end
+#define photon_v6_pf_hook_rect_abi photon_v6_pm_hook_rect_abi
+#define photon_v6_pf_hook_rect_counted photon_v6_pm_hook_rect_counted
+#define photon_v6_pf_hook_rect_end photon_v6_pm_hook_rect_end
+#define photon_v6_pf_hook_decode_abi photon_v6_pm_hook_decode_abi
+#define photon_v6_pf_hook_decode_counted photon_v6_pm_hook_decode_counted
+#define photon_v6_pf_hook_decode_end photon_v6_pm_hook_decode_end
+#define photon_v6_pf_hook_alt_decode_abi photon_v6_pm_hook_alt_decode_abi
+#define photon_v6_pf_hook_alt_decode_counted photon_v6_pm_hook_alt_decode_counted
+#define photon_v6_pf_hook_alt_decode_end photon_v6_pm_hook_alt_decode_end
+#define photon_v6_pf_hook_crip008_decode_abi photon_v6_pm_hook_crip008_decode_abi
+#define photon_v6_pf_hook_crip008_decode_counted photon_v6_pm_hook_crip008_decode_counted
+#define photon_v6_pf_hook_crip008_decode_end photon_v6_pm_hook_crip008_decode_end
+#define photon_v6_pf_hook_inflight photon_v6_pm_hook_inflight
+#define photon_v6_pf_real_decode_raw photon_v6_pm_real_decode_raw
+#define photon_v6_pf_real_alt_decode_raw photon_v6_pm_real_alt_decode_raw
+#define photon_v6_pf_real_crip008_decode_raw photon_v6_pm_real_crip008_decode_raw
+#define photon_v6_pf_hook_load_impl photon_v6_pm_hook_load_impl
+#define photon_v6_pf_hook_surface_impl photon_v6_pm_hook_surface_impl
+#define photon_v6_pf_hook_rect_impl photon_v6_pm_hook_rect_impl
+#define photon_v6_pf_decode_prepare photon_v6_pm_decode_prepare
+#define photon_v6_pf_decode_commit photon_v6_pm_decode_commit
+#define photon_v6_pf_decode_apply photon_v6_pm_decode_apply
+#define photon_v6_pf_alt_decode_prepare photon_v6_pm_alt_decode_prepare
+#define photon_v6_pf_crip008_decode_prepare photon_v6_pm_crip008_decode_prepare
+#define photon_v6_pf_crip008_decode_commit photon_v6_pm_crip008_decode_commit
+#define photon_v6_pf_native_runtime_init photon_v6_pm_native_runtime_init
+#define photon_v6_pf_native_runtime_shutdown photon_v6_pm_native_runtime_shutdown
+#define photon_v6_pf_native_runtime_query photon_v6_pm_native_runtime_query
+
+#define PHOTON_NATIVE_TIMESTAMP UINT32_C(0x5D319898)
+#define PHOTON_NATIVE_SIZE_OF_IMAGE UINT32_C(0x00386000)
+#define PHOTON_NATIVE_CR6_LOAD_SLOT_RVA UINT32_C(0x0023C334)
+#define PHOTON_NATIVE_CR6_LOAD_RVA UINT32_C(0x0017FB30)
+#define PHOTON_NATIVE_CR6_SURFACE_SLOT_RVA UINT32_C(0x0023C300)
+#define PHOTON_NATIVE_CR6_SURFACE_RVA UINT32_C(0x001801E0)
+#define PHOTON_NATIVE_CR6_RECT_SLOT_RVA UINT32_C(0x0023C308)
+#define PHOTON_NATIVE_CR6_RECT_RVA UINT32_C(0x001803F0)
+#define PHOTON_NATIVE_CR6_DECODE_CALLSITE_RVA UINT32_C(0x00180CEE)
+#define PHOTON_NATIVE_CR6_DECODE_RVA UINT32_C(0x0017EB80)
+#define PHOTON_NATIVE_HAS_CR6_ALT_EXACT_OVERLAY 1
+#define PHOTON_NATIVE_CR6_ALT_DECODE_CALLSITE0_RVA UINT32_C(0x0018093C)
+#define PHOTON_NATIVE_CR6_ALT_DECODE_CALLSITE1_RVA UINT32_C(0x00180A29)
+#define PHOTON_NATIVE_CR6_ALT_DECODE_RVA UINT32_C(0x0017E450)
+#define PHOTON_NATIVE_SECURITY_COOKIE_RVA UINT32_C(0x0026F014)
+#define PHOTON_NATIVE_ROUTE_GAME PHOTON_V6_ROUTE_GAME_PM
+#define PHOTON_NATIVE_SPECIAL_TARGET_COUNT UINT32_C(39)
+#define PHOTON_NATIVE_SPECIAL_VALID_TARGET_COUNT UINT32_C(39)
+#define PHOTON_NATIVE_SPECIAL_SIDECAR_GAME PHOTON_V6_SPECIAL57_GAME_PM
+#define PHOTON_NATIVE_SELECTOR_EXPECTED_HOOK_COUNT UINT32_C(1)
+
+#if defined(PHOTON_V6_PM_SELECTOR_ADAPTER) && PHOTON_V6_PM_SELECTOR_ADAPTER
+#define PHOTON_NATIVE_HAS_CRIP008_EXACT_OVERLAY 1
+#define PHOTON_NATIVE_CRIP008_ORDINARY_TABLE 0
+#define PHOTON_NATIVE_EXPECTED_HOOK_COUNT UINT32_C(7)
+#define PHOTON_NATIVE_CRIP008_DECODE_CALLSITE_RVA UINT32_C(0x0017B460)
+#define PHOTON_NATIVE_CRIP008_DECODE_RVA UINT32_C(0x0017B490)
+#define PHOTON_NATIVE_CRIP008_PAYLOAD_BYTES UINT32_C(11953)
+#define PHOTON_NATIVE_CRIP008_PAYLOAD_FNV1A64 UINT64_C(0xDB6996887D84269A)
+#define PHOTON_NATIVE_CRIP008_WIDTH UINT32_C(800)
+#define PHOTON_NATIVE_CRIP008_HEIGHT UINT32_C(257)
+#endif
+
+#include "photon_v6_pf_native_runtime.c"

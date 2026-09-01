@@ -1,0 +1,57 @@
+{
+  "contains_source_or_translation_text": false,
+  "output_bytes": 67970,
+  "output_columns": [
+    "game",
+    "call_order",
+    "id",
+    "egpack",
+    "scene",
+    "source_text_sha256",
+    "audit_categories",
+    "review_status"
+  ],
+  "output_sha256": "79F9CD0EFB117B0997DC9E4C9486099A263E2C1644C55C52047972B661C6AB47",
+  "private_audit_inputs": {
+    "quote": {
+      "bytes": 151515,
+      "rows": 325,
+      "sha256": "D0E198008ADC5762876E81F9121F39DBFD49B341B0EA9C0835CFF2D518897742"
+    },
+    "symbol": {
+      "bytes": 83146,
+      "rows": 210,
+      "sha256": "B4555C3EC08501CC8FC50432F34978AB411844E919A7A79A493E1A84889C8A98"
+    }
+  },
+  "rows": 246,
+  "rows_by_game": {
+    "TDA00": 72,
+    "TDA01": 67,
+    "TDA02": 77,
+    "TDA03": 30
+  },
+  "schema": "age2-text-free-review-ledger/1",
+  "translation_inputs": {
+    "TDA00": {
+      "bytes": 738721,
+      "rows": 3713,
+      "sha256": "88428AC57E90BEC5E78868E045504C3888E33CCAC95FE8DDE6DE34123A12096E"
+    },
+    "TDA01": {
+      "bytes": 2223527,
+      "rows": 8565,
+      "sha256": "31A27F6DF000E8DC38416A2140A8722722EFA7FFE2C3E7D918812394E8B6417D"
+    },
+    "TDA02": {
+      "bytes": 1980939,
+      "rows": 6589,
+      "sha256": "97A329533574CCBB2B1C37752F44D3D7B685F26E547754EEA812F2DE54C70E1C"
+    },
+    "TDA03": {
+      "bytes": 1728956,
+      "rows": 6913,
+      "sha256": "3FC09545D34B746D448060B0B36B4D55C6E73151CC55A996E7D5759A57187623"
+    }
+  }
+}

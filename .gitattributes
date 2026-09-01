@@ -1,0 +1,8 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+
+# These runtime-bound CSVs contain meaningful CRLF controls inside quoted
+# fields.  Preserve their exact bytes; generic line-ending normalization would
+# silently change dialogue data and invalidate the public manifest hashes.
+rugp/games/photonflowers/translations/zh-Hans.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+rugp/games/photonmelodies/translations/zh-Hans.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

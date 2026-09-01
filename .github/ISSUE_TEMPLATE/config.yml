@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Download current patches
+    url: https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases
+    about: Read the release-specific install notes before reporting a problem.

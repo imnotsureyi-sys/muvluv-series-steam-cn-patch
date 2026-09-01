@@ -1,0 +1,78 @@
+# Repository deliverables are source, manifests, and tests. Generated game
+# resources and release archives stay outside the Git tree.
+
+# Local workspaces, generated outputs, review portals, and release staging
+/output/
+/outputs/
+/archive/
+/work/
+/dist/
+/release/
+/release_v*/
+/workspace_full_copy_*/
+/review/
+/work_archive_*/
+
+# Local-only research notes and Codex handoffs
+/local-internal/
+/.git.disabled-by-codex-*/
+
+# Superseded local research trees. Their durable public content lives under
+# age2/, rugp/, localization/, and docs/; do not delete local working data.
+/chapters/
+/glossary/
+/patch-sources/
+/release-notes/
+/screenshots/
+/standards/
+/tests/
+/tools/
+/docs/*_DRAFT.md
+
+# Python, Node, browser, and image-generation environments/caches
+/.imagegen-venv/
+/.venv-imagegen/
+/.venv*/
+/.playwright-cli/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+*.py[cod]
+node_modules/
+
+# Downloaded compilers/SDKs and generated native build trees
+**/toolchains/
+**/build/
+**/bin/
+**/obj/
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Repacked game data, caches, logs, temporary and editor files
+*.log
+*.tmp
+*.temp
+*.bak
+*.backup
+*.backup-*
+*.orig
+*.rej
+~$*
+.DS_Store
+Thumbs.db
+
+# Generated release archives belong on GitHub Releases
+*.zip
+*.7z
+*.rar
+*.iso
+
+# Game/font binaries are release payloads unless a narrowly documented fixture
+# explicitly overrides this rule in a deeper .gitignore.
+*.dll
+*.exe
+*.otf
+*.ttf

@@ -1,0 +1,35 @@
+name: Translation correction
+description: Propose a source-backed wording, terminology, speaker, or context correction.
+title: "[Translation] "
+labels: [translation]
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game, chapter, and scene
+    validations:
+      required: true
+  - type: input
+    id: identity
+    attributes:
+      label: Stable ID or nearby line
+      description: Use the public table's ID/row identity when available.
+  - type: textarea
+    id: source
+    attributes:
+      label: Japanese source and context
+      description: Include speaker and surrounding lines; do not attach bulk script dumps.
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current translation
+    validations:
+      required: true
+  - type: textarea
+    id: proposed
+    attributes:
+      label: Proposed translation and reasoning
+    validations:
+      required: true

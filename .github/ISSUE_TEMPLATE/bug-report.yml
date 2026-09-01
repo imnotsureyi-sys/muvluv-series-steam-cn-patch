@@ -1,0 +1,54 @@
+name: Patch or runtime bug
+description: Report a reproducible install, text, image, font, startup, or achievement problem.
+title: "[Bug] "
+labels: [bug]
+body:
+  - type: dropdown
+    id: game
+    attributes:
+      label: Game
+      options:
+        - TDA00
+        - TDA01
+        - TDA02
+        - TDA03
+        - The Imperial Capital Burns
+        - Photon Flowers (development source only)
+        - Photon Melodies (development source only)
+    validations:
+      required: true
+  - type: input
+    id: release
+    attributes:
+      label: Patch release tag or source commit
+      placeholder: tda01-beta0.2.2 or a full commit SHA for Photon development builds
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the exact error, visible text, scene/date/route, and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction steps
+      description: State whether the game was clean, which other mods were installed, and whether Steam verification changed the result.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots and context
+      description: Attach a full screenshot and the surrounding dialogue where possible. Do not upload game archives.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I own the corresponding game and did not attach copyrighted game archives.
+          required: true
+        - label: I used the release package, not the repository source ZIP.
+          required: true

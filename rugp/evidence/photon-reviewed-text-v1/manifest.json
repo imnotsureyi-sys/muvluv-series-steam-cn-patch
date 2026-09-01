@@ -1,0 +1,136 @@
+{
+  "schema": "muvluv-photon-reviewed-text/v1",
+  "status": "reviewed_translation_source_not_runtime_binding",
+  "locale": "zh-Hans",
+  "records": 57547,
+  "official_source_text_included": false,
+  "source_columns": [
+    "call_order",
+    "id",
+    "rio_file",
+    "scene",
+    "speaker_jp",
+    "jp_text",
+    "cn_text"
+  ],
+  "public_columns": [
+    "call_order",
+    "stable_id",
+    "rio_file",
+    "scene",
+    "source_text_sha256",
+    "translated_text"
+  ],
+  "omitted_source_fields": [
+    "speaker_jp",
+    "jp_text"
+  ],
+  "generator": "rugp/tools/text/export_reviewed_translation.py",
+  "hash_contract": {
+    "algorithm": "SHA-256",
+    "representation": "upper-case hexadecimal",
+    "source_text_input": "exact UTF-8 encoding of the parsed jp_text field; no Unicode, control-code, or embedded-newline normalization",
+    "source_file_input": "exact sealed private CSV bytes before platform line-ending conversion",
+    "public_file_input": "complete deterministic UTF-8 public CSV bytes"
+  },
+  "datasets": {
+    "photonflowers-alternative": {
+      "game": "photonflowers",
+      "work": "alternative",
+      "source": {
+        "availability": "private-sealed-input-not-in-public-git",
+        "public_git_locator_included": false,
+        "bytes": 2080459,
+        "sha256": "E8379CA3A3109AB71C1143FCE0660356AFDC13EA329D3621C0B6CF65B83354DB",
+        "rows": 6033
+      },
+      "public": {
+        "path": "rugp/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv",
+        "bytes": 1666683,
+        "sha256": "F2AFC90C8DD09E48D96D88655E8A1B32C2D85AD5B8F25305B57EE83E7798D5FC",
+        "rows": 6033
+      }
+    },
+    "photonflowers-extra": {
+      "game": "photonflowers",
+      "work": "extra",
+      "source": {
+        "availability": "private-sealed-input-not-in-public-git",
+        "public_git_locator_included": false,
+        "bytes": 1887968,
+        "sha256": "695DBC3FFBCFCDA089E216D797E922F36F985847BB5C17088DD29846B10C462C",
+        "rows": 6931
+      },
+      "public": {
+        "path": "rugp/games/photonflowers/translations/reviewed/extra.zh-Hans.csv",
+        "bytes": 1649213,
+        "sha256": "D1A6E2195A430CE8F8E2A064BA087E2F41AB57285E2F1AD85EEEF8CC90BC8AB0",
+        "rows": 6931
+      }
+    },
+    "photonmelodies-adoration-resurrection": {
+      "game": "photonmelodies",
+      "work": "adoration-resurrection",
+      "source": {
+        "availability": "private-sealed-input-not-in-public-git",
+        "public_git_locator_included": false,
+        "bytes": 3124256,
+        "sha256": "3A148AEC9F86D1D1C88C183CDBAFDCF3EC88E4549C05AD3E0B79EAF47986A5EE",
+        "rows": 8407
+      },
+      "public": {
+        "path": "rugp/games/photonmelodies/translations/reviewed/adoration-resurrection.zh-Hans.csv",
+        "bytes": 2468009,
+        "sha256": "794E10E5EFC5716AA2F58B0E06856B9E4F651EE63EE5554D27B1583D4DA6D128",
+        "rows": 8407
+      }
+    },
+    "photonmelodies-shard-of-spacetime": {
+      "game": "photonmelodies",
+      "work": "shard-of-spacetime",
+      "source": {
+        "availability": "private-sealed-input-not-in-public-git",
+        "public_git_locator_included": false,
+        "bytes": 11374564,
+        "sha256": "B3628BBE3238A1736C1D146B675881333DD3A1F958ECB722D20452572CA62736",
+        "rows": 36176
+      },
+      "public": {
+        "layout": "rio-file-shards/v1",
+        "directory": "rugp/games/photonmelodies/translations/reviewed/shard-of-spacetime",
+        "bytes": 9801647,
+        "sha256": "94FD1CB65C8E9356D9F0B0320C3A310C793BAA82CE920E70C346052339FDA5ED",
+        "rows": 36176,
+        "shards": [
+          {
+            "path": "rugp/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.002.zh-Hans.csv",
+            "rio_file": "photonmelodies11.rio.002",
+            "rows": 771,
+            "call_order_first": 1,
+            "call_order_last": 771,
+            "bytes": 209706,
+            "sha256": "BEF98CE48F6B4CBE761EDD146D082C106E46C6957E93E1E320B6B6B18AAB145B"
+          },
+          {
+            "path": "rugp/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.003.zh-Hans.csv",
+            "rio_file": "photonmelodies11.rio.003",
+            "rows": 4850,
+            "call_order_first": 772,
+            "call_order_last": 5621,
+            "bytes": 1316042,
+            "sha256": "FAEAFDD1F0E07CDC08B9508E50C07F4A8FF279AD0E396056A768FD3C06A810CE"
+          },
+          {
+            "path": "rugp/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.004.zh-Hans.csv",
+            "rio_file": "photonmelodies11.rio.004",
+            "rows": 30555,
+            "call_order_first": 5622,
+            "call_order_last": 36176,
+            "bytes": 8276041,
+            "sha256": "78B30525CC58FFF99C444EB05C95C0DAB49BC75171E9B86F3791236F2CCE3C92"
+          }
+        ]
+      }
+    }
+  }
+}
