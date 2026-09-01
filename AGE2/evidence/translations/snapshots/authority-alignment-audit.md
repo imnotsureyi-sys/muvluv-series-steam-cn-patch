@@ -43,6 +43,6 @@ Until that procedure is complete, the tables are valuable maintained
 translation snapshots, not a claim that a clean clone can reproduce the five
 historical beta ZIPs byte for byte.
 
-The separate [text-free review ledger](../text-review-ledger-v1/README.md)
+The separate [text-free review ledger](../review-ledger/README.md)
 demonstrates the required publication pattern for symbol/quotation findings.
 It does not resolve or replace this wider historical-Release alignment audit.

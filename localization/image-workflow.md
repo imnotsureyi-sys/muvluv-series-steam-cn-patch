@@ -1,4 +1,15 @@
-# Localized image workflow
+# 图片本地化工作流 / Localized image workflow
+
+[返回本地化入口](README.md) · [AGE2 五作 WebP 总览](../AGE2/games/README.md) · [Photon 1,490 图](../rUGP/evidence/photon/images/README.md) · [字体政策](fonts/README.md)
+
+本项目的公开图片范围不只有 PF/PM 的 1,490 项：TDA00–03 与帝都燃烧篇五个历史
+Release 另有 730 个 WebP 路径，均已建立逐项路径、尺寸、模式和 SHA-256 清单。730
+是 ZIP 成员数，不是独立翻译图数量；实际去重、语言槽、官方 fallback 和权利状态必须
+分别判断。
+
+中文制作原则是：先固定源图身份与允许修改区域，再得到无字底，最后使用锁定字体做
+确定性排字。GPT Image 2 只用于难以重建的无字底区域，不能让模型直接决定中文文案、
+字体、排版或最终像素权威。下文保留英文细则，方便其他语言团队直接复用。
 
 The objective is to replace readable text while preserving every unrelated pixel, alpha edge, state, and layout relationship as closely as the source permits.
 
@@ -61,6 +72,25 @@ python -m pip install -r requirements-dev.txt
 The maintained commands are under `localization/tools/images/`. They work on
 ordinary PNG inputs and never read a game archive directly. Extract/decode the
 legal local source with the appropriate AGE2 or rUGP tool first.
+
+### 0. Inventory a historical patch ZIP
+
+For an already published AGE2 patch, build a deterministic image-only
+inventory without extracting or committing the binary WebP files:
+
+```powershell
+python -m localization.tools.images.inventory_release_images `
+  work/patch.zip `
+  AGE2/games/<game>/images/release-inventory.json `
+  --game-id <game> --engine AGE2 --release-tag <tag> `
+  --source-url <release-asset-url> `
+  --expect-zip-sha256 <SHA256>
+```
+
+The result records archive/payload paths, dimensions, mode, byte count,
+content hash and filename locale hint. It is evidence of historical package
+contents, not proof that every member was newly localized or separately
+redistributable.
 
 ### 1. Build a textless layer
 

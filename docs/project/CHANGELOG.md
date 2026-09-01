@@ -1,8 +1,16 @@
-# Changelog
+# 变更记录 / Changelog
 
 This file records repository and public-patch changes. Downloadable packages and their checksums remain attached to [GitHub Releases](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases).
 
 ## Unreleased — repository architecture
+
+- 建立中文优先的四类入口：玩家、AGE2 研究者、rUGP 研究者和其他语言本地化制作者。
+- 为七部游戏加入统一 `project.toml`，明确引擎、Steam App ID、文本、图片与字体权威。
+- 从五个 AGE2 历史 Release 机械生成 730 个 WebP 路径的可复核清单；PF/PM 继续分别索引 636/854 项共用 Photon 图片权威。
+- 公开“剧情与术语 → 第一次翻译 → 第二次 `keep/revise/question` 审核 → 技术写回 → 实机与玩家反馈”的完整工作流。
+- 新增贡献者与具体致谢页，记录人类维护责任、OpenAI Codex 的受监督辅助，以及主任保护协会、GARbro、AFHook、rugptools 与 FatePackageManager 的准确贡献边界。
+- 将活动证据目录改为稳定语义路径，版本留在 schema、Git 历史和 Release tag 中。
+- 规定新表的规范字段，同时保留已有哈希封存表的历史表头，避免为表面统一破坏来源证明。
 
 - Split the unrelated AGE2 and legacy rUGP implementations into independent top-level systems.
 - Promoted stable translation tables, format libraries, runtime source, packaging code, tests, and release evidence; removed one-off workstation probes from the public tool surface.

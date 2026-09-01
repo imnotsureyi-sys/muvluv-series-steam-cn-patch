@@ -1,20 +1,26 @@
 # Muv-Luv Series Steam Community Localization
 
-[简体中文](../../README.md) · [Player guide](player-guide.md) · [Build another locale](../../localization/new-locale.md) · [Research index](research-index.md)
+[简体中文](../../README.md) · [Player guide](player-guide.md) · [Contributors and acknowledgments](../project/CONTRIBUTORS.md) · [Documentation index](../README.md)
 
 This is an unofficial, non-commercial localization project for selected Steam Muv-Luv titles. It preserves Simplified Chinese test patches and reusable text, terminology, image, font, format and reverse-engineering work for other language teams.
 
 You must own the matching game. This repository does not provide the games, cracks, complete original assets or an original Steam `pack.bin`.
 
-## Start here
+## Choose an entry point
 
-| Goal | Entry |
-| --- | --- |
-| Install or remove a Chinese patch | [Player guide](player-guide.md) |
-| Build Korean, Russian or another locale | [Localization workspace](../../localization/README.md) and [new-locale guide](../../localization/new-locale.md) |
-| Work with FPD, EGPACK, WebP and loose overlays | [AGE2](../../AGE2/README.md) |
-| Work with ICI, RIO, RUO, CRsa, image records and the runtime | [rUGP](../../rUGP/README.md) |
-| Review evidence and solved/failed investigations | [Research index](research-index.md) |
+GitHub automatically presents the repository README and license as tabs; it
+does not support arbitrary extra README tabs. These four maintained pages are
+the stable entry points for different audiences:
+
+| Audience | Entry | Contents |
+| --- | --- | --- |
+| Players installing or removing the Chinese patch | **[Player guide](player-guide.md)** | Downloads, verification, installation, removal, compatibility and reporting |
+| AGE2 / TDA / Imperial Capital Burns researchers | **[AGE2](../../AGE2/README.md)** | FPD, EGPACK, WebP, fonts, loose overlays, per-game assets and tests |
+| rUGP / AGES / Photon researchers | **[rUGP](../../rUGP/README.md)** | ICI, RIO, CRsa, RUO, Cr6Ti, CRip, Hook, error 8311 and runtime behavior |
+| Korean, Russian and other localization teams | **[Localization workspace](../../localization/README.md)** | Two-pass translation, terminology, images, fonts, new-locale setup, QA and player feedback |
+
+For investigations organized by problem and evidence, use the
+[research index](research-index.md).
 
 ## Player downloads
 
@@ -36,11 +42,20 @@ Photon Flowers and Photon Melodies do not yet have player-ready installers.
 | --- | --- |
 | Dialogue, choices, speakers and UI strings | Per-game `translations/` under [AGE2 games](../../AGE2/games/), [Photon Flowers](../../rUGP/games/photonflowers/) and [Photon Melodies](../../rUGP/games/photonmelodies/) |
 | Shared terminology | [Muv-Luv glossary](../../localization/glossaries/muv-luv.ja-zh-Hans.csv) and [terminology policy](../../localization/standards/terminology.md) |
-| Image copy, layout and identity | [Imperial image-copy tables](../../AGE2/games/imperial-capital-burns/images/copy/), [Photon image authority](../../rUGP/evidence/photon-images-v6/) and the [image workflow](../../localization/image-workflow.md) |
-| Fonts | [Coverage tool](../../localization/tools/font_coverage.py), [rUGP runtime postmortem](../../rUGP/docs/postmortems/font-runtime.md) and [AGE2 retired-workaround record](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) |
+| Image copy, layout and identity | [730 WebP paths across TDA00–03 and Imperial Capital Burns](../../AGE2/games/README.md), [Imperial image-copy tables](../../AGE2/games/imperial-capital-burns/images/copy/), [1,490 Photon entries](../../rUGP/evidence/photon/images/) and the [image workflow](../../localization/image-workflow.md) |
+| Fonts | [Font asset and licensing policy](../../localization/fonts/README.md), [coverage tool](../../localization/tools/font_coverage.py), [rUGP runtime postmortem](../../rUGP/docs/postmortems/font-runtime.md) and [AGE2 retired-workaround record](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) |
+| Translation and review | [Complete workflow](../../localization/workflow.md), [first-pass standard](../../localization/standards/translation.md) and [independent review standard](../../localization/standards/review.md) |
 | Engine tooling | [AGE2 tools](../../AGE2/tools/), [rUGP formats](../../rUGP/formats/), [rUGP runtime](../../rUGP/runtime/) and [shared localization tools](../../localization/tools/) |
 
 Editable tables, image identity/copy/layout data, deterministic tooling and technical conclusions are public. Image and font binaries enter Git only after their provenance and redistribution terms are clear; extracted originals, failed batches and unreviewed fonts stay outside the public tree.
+
+The maintained localization loop is: understand the story and establish
+terminology; create the first translation by complete scene; independently
+review each row as `keep`, `revise` or `question`; resolve open questions;
+perform engine-specific writeback and automated/in-game QA; and feed player
+reports back into the maintained source. It is documented in the
+[complete workflow](../../localization/workflow.md) so another language team
+can reuse the method without copying the Chinese wording.
 
 ## Repository layers
 
@@ -54,8 +69,8 @@ docs/          player, research, project, legal and English documentation
 
 AGE2 and rUGP are independent implementations and must not import each other.
 
-## License and contribution
+## License, contribution and acknowledgments
 
-[Contributing](../project/CONTRIBUTING.md) · [Asset and release policy](../project/asset-and-release-policy.md) · [Third-party work](../legal/THIRD_PARTY.md) · [Notices](../legal/NOTICE.md)
+[Contributing](../project/CONTRIBUTING.md) · [Contributors and acknowledgments](../project/CONTRIBUTORS.md) · [Asset and release policy](../project/asset-and-release-policy.md) · [Third-party work](../legal/THIRD_PARTY.md) · [Notices](../legal/NOTICE.md)
 
 Original project code is under the [MIT License](../../LICENSE). That license does not grant rights to game content, translations, fonts, derived images, release payloads or third-party components.

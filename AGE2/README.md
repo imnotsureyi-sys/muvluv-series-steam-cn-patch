@@ -1,6 +1,6 @@
 # AGE2：TDA 与帝都燃烧篇
 
-[返回首页](../README.md) · [游戏与汉化资产](games/) · [工具](tools/) · [工作流](docs/workflow.md) · [问题复盘](docs/postmortems/README.md) · [测试](tests/)
+[返回首页](../README.md) · [游戏与汉化资产](games/README.md) · [工具](tools/) · [工作流](docs/workflow.md) · [问题复盘](docs/postmortems/README.md) · [测试](tests/)
 
 这里负责较新的 AGE2 移植体系，与 [rUGP](../rUGP/README.md) 完全独立。当前涉及 THE DAY AFTER episode:00–03 与 The Imperial Capital Burns／帝都燃烧篇。
 
@@ -22,15 +22,17 @@ FPD 与 EGPACK 是两层不同格式：先从 `pack.bin` 的 FPD 目录找到文
 
 ## 游戏与核心汉化资产
 
-| 游戏 | 文本与术语 | 图片文案 | 历史补丁 |
+| 游戏 | 文本与术语 | 历史 Release 图片 | 历史补丁 |
 | --- | --- | --- | --- |
-| TDA00 | [`games/tda00/translations/`](games/tda00/translations/) | 尚未形成独立公开图片资产集 | beta0.1 |
-| TDA01 | [`games/tda01/translations/`](games/tda01/translations/) | 尚未形成独立公开图片资产集 | beta0.2.2 |
-| TDA02 | [`games/tda02/translations/`](games/tda02/translations/) | 尚未形成独立公开图片资产集 | beta0.1 |
-| TDA03 | [`games/tda03/translations/`](games/tda03/translations/) | 尚未形成独立公开图片资产集 | beta0.1.6 |
-| 帝都燃烧篇 | [正文、选项、说话人、UI 与术语](games/imperial-capital-burns/translations/) | [图片文字、排版与来源锁](games/imperial-capital-burns/images/copy/) | beta0.1 |
+| TDA00 | [`games/tda00/translations/`](games/tda00/translations/) | [70 个 WebP 路径](games/tda00/images/) | beta0.1 |
+| TDA01 | [`games/tda01/translations/`](games/tda01/translations/) | [93 个 WebP 路径](games/tda01/images/) | beta0.2.2 |
+| TDA02 | [`games/tda02/translations/`](games/tda02/translations/) | [100 个 WebP 路径](games/tda02/images/) | beta0.1 |
+| TDA03 | [`games/tda03/translations/`](games/tda03/translations/) | [152 个 WebP 路径](games/tda03/images/) | beta0.1.6 |
+| 帝都燃烧篇 | [正文、选项、说话人、UI](games/imperial-capital-burns/translations/)与[作内术语](games/imperial-capital-burns/terminology/ja-zh-Hans.csv) | [315 个 WebP 路径及可维护文案](games/imperial-capital-burns/images/) | beta0.1 |
 
-这些表是当前可维护的公开快照，不代表能够逐字节重建历史 Release。公开表、旧分支与实际发布载荷之间的差异保留在[对齐审计](evidence/translation-snapshots-v1/authority-alignment-audit.md)中。
+这些表和图片清单是当前可维护的公开快照，不代表能够逐字节重建历史 Release。WebP
+数量表示 ZIP 中实际存在的路径，不等于全部为独立翻译图；公开表、旧分支与实际发布载荷
+之间的差异保留在[对齐审计](evidence/translations/snapshots/authority-alignment-audit.md)中。
 
 ## 工具按层分开
 
@@ -55,4 +57,7 @@ python -m unittest discover -s AGE2/tests -p "test_*.py" -v
 
 ## English summary
 
-This directory contains the AGE2-specific game assets, FPD/EGPACK tooling, loose-overlay workflow, tests, evidence and postmortems for TDA00–03 and The Imperial Capital Burns. It is technically independent from `rUGP/`. Start with the [workflow](docs/workflow.md) and select a game under [`games/`](games/).
+This directory contains AGE2-specific text plus inventories for all 730 WebP
+paths found across the five historical releases, FPD/EGPACK tooling, the
+loose-overlay workflow, tests, evidence and postmortems. It is independent
+from `rUGP/`; start with the [game index](games/README.md).

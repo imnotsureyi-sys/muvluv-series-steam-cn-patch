@@ -1,6 +1,6 @@
 # rUGP：Photon Flowers 与 Photon Melodies
 
-[返回首页](../README.md) · [游戏与汉化资产](games/) · [格式](formats/) · [运行时](runtime/) · [打包](packaging/) · [逆向复盘](docs/postmortems/README.md) · [测试](tests/)
+[返回首页](../README.md) · [游戏与汉化资产](games/README.md) · [格式](formats/) · [运行时](runtime/) · [打包](packaging/) · [逆向复盘](docs/postmortems/README.md) · [测试](tests/)
 
 这里负责旧 rUGP／AGES 资源体系，与 [AGE2](../AGE2/README.md) 完全独立。当前目标是 Muv-Luv photonflowers（PF）和 photonmelodies（PM）。
 
@@ -26,10 +26,13 @@ ICI 只告诉我们对象在哪里、是什么类型；找到 RIO 中的对象�
 
 | 游戏 | 已审校文本 | 精确运行时绑定表 | 图片资产状态 | 玩家包 |
 | --- | --- | --- | --- | --- |
-| [Photon Flowers](games/photonflowers/) | [12,964 行](games/photonflowers/translations/reviewed/) | [69 行](games/photonflowers/translations/zh-Hans.csv) | 纳入跨两作的 1,490 图清单 | 尚未发布 |
-| [Photon Melodies](games/photonmelodies/) | [44,583 行](games/photonmelodies/translations/reviewed/) | [151 行](games/photonmelodies/translations/zh-Hans.csv) | 纳入跨两作的 1,490 图清单 | 尚未发布 |
+| [Photon Flowers](games/photonflowers/) | [12,964 行](games/photonflowers/translations/reviewed/) | [69 行](games/photonflowers/translations/zh-Hans.csv) | [636 项](games/photonflowers/images/) | 尚未发布 |
+| [Photon Melodies](games/photonmelodies/) | [44,583 行](games/photonmelodies/translations/reviewed/) | [151 行](games/photonmelodies/translations/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | 尚未发布 |
 
-图片的稳定身份、源/成品哈希、格式、尺寸与路由保存在 [`evidence/photon-images-v6/`](evidence/photon-images-v6/) 和 [`evidence/photon-image-routes-v1/`](evidence/photon-image-routes-v1/)；编解码器在 [`formats/images/`](formats/images/)。图片二进制目前没有进入 Git 主线，因为其中仍有官方原件与衍生内容的再分发边界需要清理。
+图片的稳定身份、源/成品哈希、格式、尺寸与路由统一保存在
+[`evidence/photon/`](evidence/photon/README.md)；编解码器在 [`formats/images/`](formats/images/)。
+图片二进制位于单独的历史研究资产 Release，当前仍有 19 张与官方来源字节相同的项目
+需要整改，因此不能当作已批准分发的玩家包。
 
 字体文件也没有直接进入源码树。可复现的字体选择、覆盖检查、GDI 路由与失败经验记录在[字体运行时复盘](docs/postmortems/font-runtime.md)及 [`runtime/`](runtime/)；发布时仍须附可再分发字体及其许可证。
 

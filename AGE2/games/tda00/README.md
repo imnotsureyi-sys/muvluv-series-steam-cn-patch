@@ -1,16 +1,24 @@
 # THE DAY AFTER episode:00
 
-- Player release: [TDA00 beta0.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1)
-- Locale: Simplified Chinese (`zh-Hans`)
-- Portable maintained snapshot: [`translations/ja-zh-Hans.csv`](translations/ja-zh-Hans.csv), 3,713 data rows
+[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1)
 
-The patch uses the frozen Japanese EGPACK fields as authority and includes localized dialogue, UI/image/video text, fonts, and installer assets in the Release package. Speaker, ruby, XML call order, control sequences, and visible slot selection were audited separately from prose review.
+- Steam App ID：`1407100`
+- 目标语言：简体中文（`zh-Hans`）
+- 当前玩家包：历史测试版 beta0.1
+- 可维护文本：3,713 行
+- 历史 Release 图片：70 个 WebP 路径、59 份唯一内容
 
-The complete official Japanese strings are not mirrored: each row keeps a
-source-field SHA-256 and is joined to a legal local extraction with
-[`build_changes.py`](../../tools/egpack/build_changes.py). This is maintained
-source data, not a ready-to-install payload. The cross-branch/Release
-alignment audit is still open; see
-[`authority-alignment-audit.md`](../../evidence/translation-snapshots-v1/authority-alignment-audit.md).
-TDA00 has less full-route player feedback than TDA01–03; corrections should
-include a screenshot and surrounding Japanese context.
+`translations/ja-zh-Hans.csv` 保存稳定身份、场景、记录类型、日文源字段 SHA-256 与
+中文译文，不批量镜像完整官方日文。贡献者需要从自己合法拥有的游戏提取准确 EGPACK，
+再由 [`build_changes.py`](../../tools/egpack/build_changes.py) 按哈希连接。
+
+历史玩家包还包含 UI／视频文字、图片和字体，但当前公开源表尚不能逐字节重建该 ZIP；
+跨旧分支、公开快照与 Release 的对齐仍在[审计](../../evidence/translations/snapshots/authority-alignment-audit.md)。TDA00 的完整路线反馈少于后续作品，修正时应附日文上下文、
+截图和调用场景。
+
+## English summary
+
+The maintained 3,713-row table stores localized text plus stable identity and
+Japanese source hashes. The historical beta contains 70 WebP paths, inventoried
+under `images/`, but the public source is not yet a byte-identical rebuild of
+that release.

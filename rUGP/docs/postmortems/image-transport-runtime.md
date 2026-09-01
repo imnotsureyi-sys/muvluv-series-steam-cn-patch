@@ -46,4 +46,4 @@ The Hook is therefore not a blind external image loader. It is version- and iden
 
 ## Remaining boundary
 
-The public route closure proves semantic ownership for all 1,490 reviewed images, and the V6 bundle binds reviewed localized authorities. It does not claim that all 1,490 currently have a public clean-install-to-runtime transport. Oversized children, a small set of capacity/parent cases and full-game visual coverage remain release gates. See the [route evidence](../../evidence/photon-image-routes-v1/README.md), [image evidence](../../evidence/photon-images-v6/README.md) and [packaging boundary](../../packaging/README.md).
+The public route closure proves semantic ownership for all 1,490 reviewed images, and the V6 bundle binds reviewed localized authorities. It does not claim that all 1,490 currently have a public clean-install-to-runtime transport. Oversized children, a small set of capacity/parent cases and full-game visual coverage remain release gates. See the [route evidence](../../evidence/photon/routes/README.md), [image evidence](../../evidence/photon/images/README.md) and [packaging boundary](../../packaging/README.md).

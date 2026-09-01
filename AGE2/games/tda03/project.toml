@@ -1,0 +1,11 @@
+schema_version = 1
+game_id = "tda03"
+display_name = "[TDA03] Muv-Luv Unlimited: THE DAY AFTER - Episode 03 REMASTERED"
+engine = "AGE2"
+steam_app_id = 789830
+target_locales = ["zh-Hans"]
+development_status = "historical-test-release"
+player_release_tag = "tda03-beta0.1.6"
+translation_authorities = ["translations/ja-zh-Hans.csv"]
+image_authority = "images/release-inventory.json"
+font_policy = "../../../localization/fonts/README.md"

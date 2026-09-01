@@ -108,8 +108,9 @@ class RouteClosureTests(unittest.TestCase):
                 root
                 / "rUGP"
                 / "evidence"
-                / "photon-image-routes-v1"
-                / "routes_1490.v1.json"
+                / "photon"
+                / "routes"
+                / "routes.json"
             ).read_text(encoding="utf-8")
         )
         images = json.loads(
@@ -117,7 +118,8 @@ class RouteClosureTests(unittest.TestCase):
                 root
                 / "rUGP"
                 / "evidence"
-                / "photon-images-v6"
+                / "photon"
+                / "images"
                 / "manifest.json"
             ).read_text(encoding="utf-8")
         )

@@ -1,4 +1,10 @@
-# Starting a new language
+# 制作新语言 / Starting a new language
+
+[中文完整工作流](workflow.md) · [Image workflow](image-workflow.md) · [Font policy](fonts/README.md)
+
+本页保留英文作为韩语、俄语等国际团队的直接入口。可复用的核心不是复制中文表，而是
+先理解剧情并建立目标语言术语，完成第一轮翻译，再独立作出 `keep/revise/question`
+审核，解决问题后进入引擎绑定、实机 QA 和玩家反馈闭环。
 
 This repository contains reusable localization components, but it does **not** yet provide a one-command, end-to-end pipeline from every clean game installation to a finished patch. Treat the existing Simplified Chinese work as an implemented language target and a set of proven components—not as a universal template whose text files can simply be renamed.
 
@@ -89,11 +95,16 @@ reviewed target text into the engine-specific writer schema as a separate step.
 
 ## 4. Translate and review
 
-1. Create a locale-specific glossary; the current Chinese file is [`muv-luv.ja-zh-Hans.csv`](glossaries/muv-luv.ja-zh-Hans.csv).
-2. Work in stable scene/resource order and preserve identity fields.
-3. Follow the target-neutral parts of [translation](standards/translation.md), [terminology](standards/terminology.md), [review](standards/review.md), and [source-data](standards/source-data.md).
-4. Define language-specific punctuation, typography, honorific, line-breaking, and naming rules in a locale document. The Chinese style decisions are examples, not requirements for Korean, Russian, or another target.
-5. Keep unresolved meanings and technical constraints visible; do not silently use an English slot or an old fan translation as source authority.
+Follow the complete [two-pass workflow](workflow.md), adapting language-specific
+style rules rather than Chinese prose conventions:
+
+1. Read complete scenes, establish character relationships and create a locale-specific glossary before bulk translation; the current Chinese file is [`muv-luv.ja-zh-Hans.csv`](glossaries/muv-luv.ja-zh-Hans.csv).
+2. Produce a first translation in stable scene/resource order while preserving identity and source-hash fields. Mark uncertainty instead of guessing.
+3. In a separate pass, reread the Japanese and decide every candidate as `keep`, `revise` or `question`. This is not Chinese-only polishing.
+4. Resolve questions using later context, voice, screenshots, established setting terms and actual resource use; then re-freeze terminology and repeated expressions.
+5. Follow the target-neutral parts of [translation](standards/translation.md), [terminology](standards/terminology.md), [review](standards/review.md), and [source-data](standards/source-data.md).
+6. Define target-language punctuation, typography, honorific, line-breaking and naming rules. Korean, Russian and other targets need their own font and layout gates.
+7. Feed reproducible player reports back into the maintained table and rerun review/build/QA. Never patch only a generated archive.
 
 ## 5. Localize images and fonts
 

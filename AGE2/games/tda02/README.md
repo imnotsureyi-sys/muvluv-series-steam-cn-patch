@@ -1,14 +1,22 @@
 # THE DAY AFTER episode:02
 
-- Player release: [TDA02 beta0.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1)
-- Locale: Simplified Chinese (`zh-Hans`)
-- Portable maintained snapshot: [`translations/ja-zh-Hans.csv`](translations/ja-zh-Hans.csv), 6,589 data rows
+[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [文本](translations/ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1)
 
-The release covers dialogue, visible UI, subtitle/name images, fonts, and installer assets. Existing review work includes rank/name consistency, alignment fixes, and military terminology.
+- Steam App ID：`1342410`
+- 目标语言：简体中文（`zh-Hans`）
+- 当前玩家包：历史测试版 beta0.1
+- 可维护文本：6,589 行
+- 历史 Release 图片：100 个 WebP 路径、80 份唯一内容
 
-The CSV keeps the localized text and Japanese source-field SHA-256; exact
-official text comes from the contributor's legal extraction through
-[`build_changes.py`](../../tools/egpack/build_changes.py). Generated resources
-live in the Release package. Cross-branch/Release alignment remains open, so
-changes must retain stable identity and controls and be tested in the calling
-scene.
+文本表保存中文译文、稳定 ID 与日文源字段 SHA-256；完整官方日文由贡献者从合法游戏
+提取后按哈希连接。历史测试包括正文、可见 UI、字幕/姓名图片、字体和安装载荷，但当前
+公开源尚未完成对历史 ZIP 的逐字节重建。
+
+军衔、人名、对齐和军事术语的修改必须回到可维护表，并按 TDA02 的实际场景验证；不能
+从文件名相同推定 TDA01 或 TDA03 的资源映射可直接复用。
+
+## English summary
+
+TDA02 exposes a 6,589-row translation authority and a 100-WebP historical
+release inventory. Exact source strings come from a legal local extraction,
+and all image/UI mappings remain game-specific.

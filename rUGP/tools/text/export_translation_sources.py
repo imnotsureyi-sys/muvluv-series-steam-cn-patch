@@ -226,7 +226,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument(
         "--manifest",
         type=Path,
-        default=Path("rUGP/evidence/photon-text-v1/manifest.json"),
+        default=Path("rUGP/evidence/photon/text/runtime/manifest.json"),
     )
     parser.add_argument(
         "--source-label",

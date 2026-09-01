@@ -1,0 +1,15 @@
+schema_version = 1
+game_id = "photonflowers"
+display_name = "Muv-Luv photonflowers*"
+engine = "rUGP"
+steam_app_id = 889700
+target_locales = ["zh-Hans"]
+development_status = "development-no-player-package"
+translation_authorities = [
+  "translations/reviewed/alternative.zh-Hans.csv",
+  "translations/reviewed/extra.zh-Hans.csv",
+  "translations/zh-Hans.csv",
+]
+image_authority = "../../evidence/photon/images/manifest.json"
+image_filter = "PF"
+font_policy = "../../../localization/fonts/README.md"

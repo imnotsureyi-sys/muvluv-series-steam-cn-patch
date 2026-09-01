@@ -15,7 +15,7 @@ overwrite is never the default.
 `rio_file` boundaries and proves that the shards reconstruct the input bytes.
 The 36,176-row Shard of Spacetime authority uses this layout so individual Git
 files remain reviewable. Exact commands and source identities are in the
-[reviewed-text evidence](../../evidence/photon-reviewed-text-v1/README.md).
+[reviewed-text evidence](../../evidence/photon/text/reviewed/README.md).
 
 ## Read-only CRsa extraction
 

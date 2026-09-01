@@ -15,7 +15,7 @@ from rUGP.tools.text.export_reviewed_translation import (
 
 
 ROOT = Path(__file__).resolve().parents[3]
-MANIFEST = ROOT / "rUGP/evidence/photon-reviewed-text-v1/manifest.json"
+MANIFEST = ROOT / "rUGP/evidence/photon/text/reviewed/manifest.json"
 EXPECTED_SOURCE_FACTS = {
     "photonflowers-alternative": (
         2080459, "E8379CA3A3109AB71C1143FCE0660356AFDC13EA329D3621C0B6CF65B83354DB", 6033

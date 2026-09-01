@@ -8,7 +8,7 @@ import unittest
 
 
 ROOT = Path(__file__).resolve().parents[3]
-MANIFEST = ROOT / "rUGP/evidence/photon-text-v1/manifest.json"
+MANIFEST = ROOT / "rUGP/evidence/photon/text/runtime/manifest.json"
 
 
 class PhotonPublicTextManifestTests(unittest.TestCase):

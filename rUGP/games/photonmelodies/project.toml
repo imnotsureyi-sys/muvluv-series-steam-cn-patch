@@ -1,0 +1,17 @@
+schema_version = 1
+game_id = "photonmelodies"
+display_name = "Muv-Luv photonmelodies♮"
+engine = "rUGP"
+steam_app_id = 889710
+target_locales = ["zh-Hans"]
+development_status = "development-no-player-package"
+translation_authorities = [
+  "translations/reviewed/adoration-resurrection.zh-Hans.csv",
+  "translations/reviewed/shard-of-spacetime/photonmelodies11.rio.002.zh-Hans.csv",
+  "translations/reviewed/shard-of-spacetime/photonmelodies11.rio.003.zh-Hans.csv",
+  "translations/reviewed/shard-of-spacetime/photonmelodies11.rio.004.zh-Hans.csv",
+  "translations/zh-Hans.csv",
+]
+image_authority = "../../evidence/photon/images/manifest.json"
+image_filter = "PM"
+font_policy = "../../../localization/fonts/README.md"

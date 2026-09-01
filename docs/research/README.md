@@ -1,6 +1,6 @@
 # 逆向研究与攻克记录
 
-[返回首页](../../README.md) · [English](../en/research-index.md) · [参考项目](references.md) · [仓库边界](repository-architecture.md)
+[返回首页](../../README.md) · [English](../en/research-index.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
 
 这里不是“最后成功代码”的目录列表，而是结论—证据—限制的索引。每篇复盘尽量保留：最初现象、错误假设、实验方法、根因、最终方案、回归测试，以及仍不能证明的部分。
 
@@ -39,7 +39,7 @@ ICI 目录元数据
 | [CRip007](../../rUGP/docs/postmortems/crip007.md) | 已审查灰度路线通过保持头部契约并使用 8 位通道，避免抗锯齿量化损失 | 编解码器与独立回读测试 |
 | [CRip008](../../rUGP/docs/postmortems/crip008.md) | 从样本与原生行为重建了头部、MSB 整数流、绘制矩形、预测器及 kind 特有透明度 | [图片格式](../../rUGP/formats/images/)与 kind 2/3 测试 |
 | [字体运行时](../../rUGP/docs/postmortems/font-runtime.md) | 字体文件覆盖、家族选择、注册、GDI 请求和图片内文字是不同层，必须分别验证 | [运行时源码](../../rUGP/runtime/)与可复现构建测试 |
-| [42 个 shared/common 图片](../../rUGP/docs/postmortems/shared-common-images.md) | 1,448 个 translation peer 与 42 个 common endpoint 使用不同语义路由，不能简单覆盖同一槽 | [1,490 图清单](../../rUGP/evidence/photon-images-v6/)与[路由闭环](../../rUGP/evidence/photon-image-routes-v1/) |
+| [42 个 shared/common 图片](../../rUGP/docs/postmortems/shared-common-images.md) | 1,448 个 translation peer 与 42 个 common endpoint 使用不同语义路由，不能简单覆盖同一槽 | [1,490 图清单](../../rUGP/evidence/photon/images/)与[路由闭环](../../rUGP/evidence/photon/routes/) |
 | [ICI 尺寸元数据](../../rUGP/docs/postmortems/ici-resize-metadata.md) | 改尺寸涉及两个 `CInstallSource` 大小、bitmap 增长和未知包装位；只改一处会留下不一致 | 差分记录和独立静态解码；候选未获实机批准 |
 | [图片传输与运行时](../../rUGP/docs/postmortems/image-transport-runtime.md) | 像素正确、语义端点正确、物理 extent/parent 正确和最终解码表面正确是四道独立门 | 路由闭环、容量普查、单对象探针与受保护运行时 |
 
@@ -54,7 +54,7 @@ ICI 目录元数据
 | [松散覆盖边界](../../AGE2/docs/postmortems/loose-overlay-boundary.md) | 补丁保持 `root/...` 相对路径写入 LocalAppData，游戏优先于 `pack.bin` 读取；Steam 验证不会清理这一层 | [AGE2 工作流](../../AGE2/docs/workflow.md) |
 | [结构性空槽](../../AGE2/docs/postmortems/structural-empty-records.md) | 一部分空记录是引擎结构，不是漏译；必须以源身份和字段类型判断，不能按“空白数量”盲补 | 文本导出器与审计表 |
 | [失败的字形替换](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 用近似字或字形偷换掩盖缺字会破坏文本权威，现已改为真实字体覆盖门 | [字体检查](../../localization/tools/font_coverage.py) |
-| [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [对齐审计](../../AGE2/evidence/translation-snapshots-v1/authority-alignment-audit.md) |
+| [公开快照与发布包对齐](../../AGE2/docs/postmortems/public-snapshot-release-alignment.md) | 可维护表、旧分支和历史 ZIP 不是天然同一权威，必须逐作以哈希和载荷审计对齐 | [对齐审计](../../AGE2/evidence/translations/snapshots/authority-alignment-audit.md) |
 | [TDA03 UI/成就映射](../../AGE2/docs/postmortems/tda03-achievement-uistring.md) | 早期包误用 TDA02 映射；逐作身份验证与实机成就检查必须成为发布门 | 专项复盘与测试 |
 
 ## 证据等级

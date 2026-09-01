@@ -123,7 +123,9 @@ class ReviewLedgerTests(unittest.TestCase):
 
     def test_published_ledger_is_text_free_and_matches_manifest(self) -> None:
         root = Path(__file__).resolve().parents[3]
-        evidence = root / "AGE2" / "evidence" / "text-review-ledger-v1"
+        evidence = (
+            root / "AGE2" / "evidence" / "translations" / "review-ledger"
+        )
         payload = (evidence / "pending.csv").read_bytes()
         manifest = json.loads((evidence / "manifest.json").read_text(encoding="utf-8"))
         rows = list(csv.DictReader(payload.decode("utf-8-sig").splitlines()))

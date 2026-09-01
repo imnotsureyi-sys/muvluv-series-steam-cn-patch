@@ -1,0 +1,18 @@
+schema_version = 1
+game_id = "imperial-capital-burns"
+display_name = "The Imperial Capital Burns - Muv-Luv Alternative Total Eclipse"
+engine = "AGE2"
+steam_app_id = 2630300
+target_locales = ["zh-Hans"]
+development_status = "historical-test-release"
+player_release_tag = "imperial-capital-burns-beta0.1"
+translation_authorities = [
+  "translations/main.ja-zh-Hans.csv",
+  "translations/speakers.ja-zh-Hans.csv",
+  "translations/choices.ja-zh-Hans.csv",
+  "translations/ui-strings.ja-zh-Hans.tsv",
+]
+terminology_authority = "terminology/ja-zh-Hans.csv"
+image_authority = "images/release-inventory.json"
+image_copy_authority = "images/copy/source-image-lock.v2.json"
+font_policy = "../../../localization/fonts/README.md"

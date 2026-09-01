@@ -97,7 +97,7 @@
       "archive_entry_count": 238,
       "font_files": 1,
       "font_license_notice_present": false,
-      "en_named_image_members": 19,
+      "en_named_image_members": 18,
       "historical_caveats": [
         "no-installed-file-manifest",
         "no-input-build-hash-gate",
@@ -159,7 +159,7 @@
       "archive_entry_count": 526,
       "font_files": 2,
       "font_license_notice_present": false,
-      "en_named_image_members": 135,
+      "en_named_image_members": 74,
       "historical_caveats": [
         "no-installed-file-manifest",
         "no-input-build-hash-gate",

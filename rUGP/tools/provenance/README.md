@@ -59,7 +59,7 @@ python rUGP/tools/provenance/audit_photon_locale_bindings.py `
   --canonical-root "<private-canonical-source-root>" `
   --candidate-snapshot "<private-snapshot-directory>" `
   --vertical-evidence-root "<optional-private-evidence-root>" `
-  --route-closure rUGP/evidence/photon-image-routes-v1/routes_1490.v1.json `
+  --route-closure rUGP/evidence/photon/routes/routes.json `
   --output "<new-metadata-only-audit-directory>" `
   --expected-state-sha256 "<PINNED_SHA256>" `
   --expected-classification-sha256 "<PINNED_SHA256>" `

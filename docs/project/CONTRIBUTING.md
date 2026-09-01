@@ -1,4 +1,10 @@
-# Contributing
+# 参与贡献
+
+[返回首页](../../README.md) · [贡献者与致谢](CONTRIBUTORS.md) · [完整本地化工作流](../../localization/workflow.md)
+
+> English contributors can use the concise summaries in each major README and
+> open an Issue or Pull Request in English. The Chinese rules below are the
+> current project authority.
 
 Contributions for Simplified Chinese or another locale are welcome. The project accepts durable source, reproducible tools, tests, documentation, and evidence-backed corrections; it does not accept extracted game dumps or unexplained generated output.
 

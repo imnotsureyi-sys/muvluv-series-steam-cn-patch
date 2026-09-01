@@ -1,6 +1,6 @@
 # 通用本地化工作区
 
-[返回首页](../README.md) · [制作新语言](new-locale.md) · [图片流程](image-workflow.md) · [翻译规范](standards/translation.md) · [术语规范](standards/terminology.md)
+[返回首页](../README.md) · **[完整工作流](workflow.md)** · [制作新语言](new-locale.md) · [表字段约定](standards/table-schemas.md) · [图片流程](image-workflow.md) · [字体](fonts/README.md)
 
 这里放不依赖具体引擎的本地化方法：翻译、术语、审核、图片制作、字体覆盖和新语言模板。FPD/EGPACK 工具属于 [AGE2](../AGE2/README.md)，RIO/RUO/Hook 属于 [rUGP](../rUGP/README.md)，不会混进本目录。
 
@@ -8,26 +8,30 @@
 
 | 内容 | 共用部分 | 游戏专属部分 |
 | --- | --- | --- |
-| 正文与 UI 文本 | [翻译规范](standards/translation.md)、[源数据规范](standards/source-data.md) | [AGE2 games](../AGE2/games/) · [rUGP games](../rUGP/games/) 下各自的 `translations/` |
-| 术语 | [Muv-Luv 总术语表](glossaries/muv-luv.ja-zh-Hans.csv)、[维护规则](standards/terminology.md) | 只有确属单作的词才放进该游戏目录；例如[帝都燃烧篇术语](../AGE2/games/imperial-capital-burns/translations/terminology.ja-zh-Hans.csv) |
-| 图片 | [无字底、确定性排字与 QA 流程](image-workflow.md)、[`tools/images/`](tools/images/) | [帝都图片文案](../AGE2/games/imperial-capital-burns/images/copy/) · [Photon 图片身份与路由](../rUGP/evidence/photon-images-v6/) |
-| 字体 | [字形覆盖工具](tools/font_coverage.py) | 引擎实际选字和运行时问题分别记录在 [AGE2](../AGE2/docs/postmortems/font-glyph-substitution-retired.md) 与 [rUGP](../rUGP/docs/postmortems/font-runtime.md) |
+| 正文与 UI 文本 | [完整流程](workflow.md)、[初译规则](standards/translation.md)、[第二轮独立审核](standards/review.md)、[源数据规范](standards/source-data.md) | [AGE2 games](../AGE2/games/) · [rUGP games](../rUGP/games/) 下各自的 `translations/` |
+| 术语 | [Muv-Luv 总术语表](glossaries/muv-luv.ja-zh-Hans.csv)、[维护规则](standards/terminology.md) | 只有确属单作的词才放进该游戏目录；例如[帝都燃烧篇术语](../AGE2/games/imperial-capital-burns/terminology/ja-zh-Hans.csv) |
+| 图片 | [无字底、确定性排字与 QA 流程](image-workflow.md)、[`tools/images/`](tools/images/) | [五部 AGE2 WebP 清单](../AGE2/games/README.md) · [帝都图片文案](../AGE2/games/imperial-capital-burns/images/) · [Photon 图片身份与路由](../rUGP/evidence/photon/README.md) |
+| 字体 | [字体来源与发布规则](fonts/README.md)、[字形覆盖工具](tools/font_coverage.py) | 引擎实际选字和运行时问题分别记录在 [AGE2](../AGE2/docs/postmortems/font-glyph-substitution-retired.md) 与 [rUGP](../rUGP/docs/postmortems/font-runtime.md) |
 | 审核与反馈 | [审核规范](standards/review.md) | 各引擎的质量门与实机清单 |
 
 仓库目前公开的是可维护文本表、图片文案/身份/哈希、确定性工具与技术结论。成品图、无字底和字体二进制只有在权利与许可证可以说明时才进入 Git；未审计的本地批次不会冒充正式资产。
 
-## 标准流程
+## 本项目实际采用的两轮流程
 
-1. **锁定原文身份：**记录游戏版本、原语言槽、资源 ID/路径与源哈希。
-2. **导出稳定工作表：**身份、控制符和译文分列，不能只靠行号。
-3. **依据原文翻译：**英语槽、OCR、旧补丁或机器输出只能辅助，不能悄悄代替日文依据。
-4. **分层审核：**语义、术语、结构、图片/排版，最后才是实机路线。
-5. **走正确引擎：**AGE2 与 rUGP 使用各自的写回、运行时和打包链。
-6. **按清单发布：**声明支持的输入哈希、输出哈希、源码提交、字体许可和已知限制。
+1. **合法提取并锁定身份：**记录版本、语言槽、资源 ID/路径与源哈希。
+2. **先理解剧情并建立术语：**按 scene 阅读人物关系和前后文，冻结本章术语，不随机抽行翻译。
+3. **第一次翻译：**按完整剧情段生成候选译文；疑点标为 `question`，不能硬猜。
+4. **第二次独立审核：**重新阅读日文，逐句决定 `keep`、`revise` 或 `question`，不能只润色中文。
+5. **解决问题并再次冻结术语：**用后文、语音、截图、设定和实际调用补证据。
+6. **走正确引擎：**AGE2 与 rUGP 分别完成写回、格式验证、图片和字体检查。
+7. **实机与玩家反馈：**按路线复现，反馈回到可维护源表后重跑测试和发布，而不是只修生成文件。
+
+每一阶段的输入、输出、状态和完成门详见[完整工作流](workflow.md)。
 
 ## 目录
 
 - [`glossaries/`](glossaries/)：跨游戏共用术语。
+- [`fonts/`](fonts/)：字体来源、许可证、覆盖与发布规则。
 - [`standards/`](standards/)：翻译、术语、原始数据与审核规范。
 - [`tools/`](tools/)：新语言表、字体覆盖、图片制作与校验工具。
 - [`tests/`](tests/)：不依赖游戏资源的合成测试。
@@ -56,4 +60,9 @@ python -m compileall -q localization
 
 ## English summary
 
-This directory contains engine-neutral localization policy and tooling: source identity, translation/review tables, terminology, image authoring, font coverage and new-locale templates. Engine codecs and package builders remain under `AGE2/` or `rUGP/`. International teams should start with the [new-locale guide](new-locale.md).
+This directory contains the engine-neutral two-pass workflow: establish story
+context and terminology, produce a first translation, independently review
+each row as `keep`/`revise`/`question`, resolve questions, bind through the
+correct engine, and feed in-game/player findings back into maintained source.
+International teams should start with the [workflow](workflow.md) and
+[new-locale guide](new-locale.md).

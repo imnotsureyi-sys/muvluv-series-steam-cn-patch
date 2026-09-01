@@ -1,20 +1,24 @@
 # Muv-Luv 系列 Steam 中文补丁
 
-[English](docs/en/README.md) · [玩家指南](docs/player/README.md) · [本地化制作](localization/README.md) · [逆向研究](docs/research/README.md)
+[English](docs/en/README.md) · [贡献者与致谢](docs/project/CONTRIBUTORS.md) · [文档中心](docs/README.md)
 
 这是一个非官方、非商业的 Muv-Luv 系列本地化项目。仓库同时保存两类成果：给玩家使用的简体中文测试补丁，以及让其他语言团队能够复用的文本、术语、图片流程、字体检查、格式工具和逆向记录。
 
 使用补丁必须拥有对应游戏正版。本仓库不提供游戏本体、破解、完整原始资源或 Steam 原始 `pack.bin`。
 
-## 从这里开始
+## 选择你的入口
 
-| 你的目的 | 入口 |
-| --- | --- |
-| 下载、安装或卸载中文补丁 | [玩家指南](docs/player/README.md) |
-| 制作韩语、俄语等其他语言版本 | [本地化工作区](localization/README.md)与[新语言指南](localization/new-locale.md) |
-| 查看 AGE2 的 FPD、EGPACK、WebP 与松散覆盖 | [AGE2](AGE2/README.md) |
-| 查看 rUGP 的 ICI、RIO、RUO、CRsa、图片与运行时 | [rUGP](rUGP/README.md) |
-| 了解 8311、CRip008、字体、shared/common 图片等问题怎样解决 | [逆向研究索引](docs/research/README.md) |
+GitHub 顶部只能自动显示仓库 README 与许可证，不能增加自定义 README 标签。因此本项目
+把四类读者做成独立页面，并在首页提供固定入口：
+
+| 你是谁 | 入口 | 这里有什么 |
+| --- | --- | --- |
+| 只想下载安装中文补丁的玩家 | **[玩家指南](docs/player/README.md)** | 下载、校验、安装、卸载、兼容范围和反馈方式 |
+| AGE2／TDA／帝都研究者 | **[AGE2 入口](AGE2/README.md)** | FPD、EGPACK、WebP、字体、松散覆盖、逐作资产和测试 |
+| rUGP／AGES／Photon 研究者 | **[rUGP 入口](rUGP/README.md)** | ICI、RIO、CRsa、RUO、Cr6Ti、CRip、Hook、8311 与实机运行时 |
+| 韩语、俄语等其他语言制作者 | **[国际本地化入口](localization/README.md)** | 两轮翻译、术语、图片、字体、新语言模板、QA 与玩家反馈闭环 |
+
+想按“问题是怎样攻克的”阅读，可进入[逆向研究索引](docs/research/README.md)。
 
 ## 玩家下载
 
@@ -35,9 +39,10 @@ Photon Flowers 与 Photon Melodies 目前只有制作资产、格式代码和候
 | 内容 | 位置 | 当前公开状态 |
 | --- | --- | --- |
 | 正文、选项、说话人、UI 文本 | 各游戏的 `translations/`：[AGE2 游戏](AGE2/games/) · [Photon Flowers](rUGP/games/photonflowers/) · [Photon Melodies](rUGP/games/photonmelodies/) | 已公开可维护表；按游戏和语言分开保存 |
-| 共用术语 | [Muv-Luv 总术语表](localization/glossaries/muv-luv.ja-zh-Hans.csv)与[术语维护规则](localization/standards/terminology.md) | 已公开；帝都燃烧篇另有[作内术语表](AGE2/games/imperial-capital-burns/translations/terminology.ja-zh-Hans.csv) |
-| 图片文字与排版 | [帝都燃烧篇图片文案表](AGE2/games/imperial-capital-burns/images/copy/) · [Photon 1,490 图身份清单](rUGP/evidence/photon-images-v6/) · [通用图片流程](localization/image-workflow.md) | 文案、尺寸、哈希、路由和工具已公开；图片二进制仍在权利清理中 |
-| 字体 | [字形覆盖检查](localization/tools/font_coverage.py) · [rUGP 字体问题复盘](rUGP/docs/postmortems/font-runtime.md) · [AGE2 旧方案复盘](AGE2/docs/postmortems/font-glyph-substitution-retired.md) | 方法、代码和故障经验已公开；字体文件须先确认再分发许可 |
+| 共用术语 | [Muv-Luv 总术语表](localization/glossaries/muv-luv.ja-zh-Hans.csv)与[术语维护规则](localization/standards/terminology.md) | 已公开；帝都燃烧篇另有[作内术语表](AGE2/games/imperial-capital-burns/terminology/ja-zh-Hans.csv) |
+| 图片文字、排版与身份 | [TDA00–03／帝都 WebP 总览](AGE2/games/README.md) · [帝都图片文案](AGE2/games/imperial-capital-burns/images/) · [PF/PM 1,490 图](rUGP/evidence/photon/images/) · [通用图片流程](localization/image-workflow.md) | 五个 AGE2 历史包共建立 730 个 WebP 路径清单；Photon 建立 1,490 项权威与路由。二进制由历史/研究 Release 承载，分发权利仍按政策审计 |
+| 字体 | [字体资产与许可](localization/fonts/README.md) · [字形覆盖检查](localization/tools/font_coverage.py) · [rUGP 字体复盘](rUGP/docs/postmortems/font-runtime.md) | 方法、代码、来源要求和故障经验已公开；字体文件必须与许可证、来源和哈希一起发布 |
+| 翻译与审核流程 | [完整工作流](localization/workflow.md) · [初译](localization/standards/translation.md) · [第二轮独立审核](localization/standards/review.md) | 剧情理解与术语 → 第一次翻译 → `keep/revise/question` → 技术写回 → 实机与玩家反馈闭环 |
 | 构建与格式工具 | [AGE2 tools](AGE2/tools/) · [rUGP formats](rUGP/formats/) · [rUGP runtime](rUGP/runtime/) · [通用工具](localization/tools/) | 源码和合成测试已公开；生产构建仍需合法游戏输入与实机 QA |
 
 这里刻意区分“可编辑的汉化资产”和“游戏原始资源”。无字底、成品图和字体只有在来源、修改关系与许可证都可说明时才会进入 Git；临时生成批次、失败图、解包原件和未审计字体不会混进主线。
@@ -56,7 +61,7 @@ Photon Flowers 与 Photon Melodies 目前只有制作资产、格式代码和候
 ```text
 AGE2/          AGE2 游戏资产、格式工具、测试和专项记录
 rUGP/          rUGP 游戏资产、编解码器、运行时、打包和逆向证据
-localization/  翻译、术语、图片、字体与新语言通用工作流
+localization/  两轮翻译、术语、图片、字体与新语言通用工作流
 docs/          玩家、研究、项目维护、法律与英文文档
 .github/       自动测试、Issue 与贡献模板
 ```
@@ -65,6 +70,6 @@ docs/          玩家、研究、项目维护、法律与英文文档
 
 ## 反馈与许可
 
-[提交程序/安装问题](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml) · [提交译文修正](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml) · [参与贡献](docs/project/CONTRIBUTING.md)
+[提交程序/安装问题](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml) · [提交译文修正](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml) · [参与贡献](docs/project/CONTRIBUTING.md) · [贡献者与致谢](docs/project/CONTRIBUTORS.md)
 
 自写代码采用 [MIT License](LICENSE)。MIT 不自动覆盖游戏内容、翻译文本、字体、衍生图片、发布包或第三方组件；详见[内容与发布政策](docs/project/asset-and-release-policy.md)、[第三方来源](docs/legal/THIRD_PARTY.md)与[法律说明](docs/legal/NOTICE.md)。

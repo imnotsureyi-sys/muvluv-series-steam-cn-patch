@@ -1,27 +1,51 @@
-# Research references and adopted lessons
+# 研究参考与采用的经验
 
-References are selected by the problem they solve, not by star count alone. Stars below are intentionally omitted because they change; upstream repository and license state should be rechecked before any code reuse.
+[返回研究索引](README.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [第三方许可证](../legal/THIRD_PARTY.md)
 
-## rUGP and AGES formats
+参考对象按它解决的问题选择，而不是只看 star 数。star 会变化，因此这里固定上游项目、
+用途和许可证边界，具体代码复用则在第三方说明中固定提交与哈希。
 
-- [GARbro](https://github.com/morkt/GARbro): demonstrated that archive navigation and individual format handlers should remain separate. Its MIT-licensed rUGP object-directory reader is the declared source of the maintained Python port in `rUGP/tools/catalog/rio_inventory.py`; GARbro is still not a Photon repacker.
-- [AFHook](https://github.com/eplightning/afhook): demonstrated the editor/runtime split for an AGES/rUGP patch. It is the closest conceptual predecessor to the Photon hook route.
-- [rugptools](https://github.com/osmium76/rugptools): preserves useful rUGP and alterdec terminology/behavior. Because the repository-wide license boundary is unclear, this project studies observable behavior and does not copy its source.
-- alterdec/RioX material referenced by the above projects: historical confirmation for resource decoding concepts, not a complete modern build/release workflow.
+## rUGP／AGES
 
-## AGE2 packages
+- [GARbro](https://github.com/morkt/GARbro)：证明目录导航与具体对象格式处理应分层；其
+  RIO/ICI 读取实现是本项目 Python 目录工具的明确来源，但 GARbro 不是 Photon 重封器。
+- [AFHook](https://github.com/eplightning/afhook)：展示“补丁制作端 + 游戏内运行时”的
+  AGES/rUGP 结构，是 Photon Hook 路线最接近的公开先例。
+- [rugptools](https://github.com/osmium76/rugptools)：保存 rUGP、alterdec 等历史术语和
+  行为参考；许可证边界不够清晰，因此只研究行为，不复制代码。
+- alterdec／RioX 相关历史资料：证明部分资源解码概念早有先例，但不提供现代 PF/PM 的
+  完整制作、测试和发布流程。
 
-- [FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager): the principal public reference for FPD v2 (`pack.bin`) structure, key scheduling, extraction, and work-in-progress repacking. Our AGE2 FPD reader requires its `Scrambler.cs` as an explicit input and adds strict range/path/hash checks for this workflow.
+## AGE2／FPD
 
-## Mature patch structures
+- [FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager)：FPD v2
+  `pack.bin` 结构、密钥调度、提取与实验性重封的主要公开参考。
+- [主任保护协会的 ATE 补丁](https://www.moyu.moe/patch/5461/resource)：本项目最初
+  AGE2/AGES 汉化与 LocalAppData 覆盖路线的实践启发之一；只致谢思路，不复制受限制的
+  补丁内容。
 
-- [thcrap](https://github.com/thpatch/thcrap): layered locales, patch data separate from runtime, version checks, update/config boundaries.
-- [07th-Mod python-patcher](https://github.com/07th-mod/python-patcher): player-first installation with developer implementation kept behind it.
-- [Committee of Zero SGHD Patch](https://github.com/CommitteeOfZero/sghd-patch): visible separation of patch content, installer, launcher, and generated assets.
-- [Tsukihimates](https://github.com/Tsukihimates/Tsukihime-Translation): practical `script/`, `images/`, system strings, and tools separation; also a reminder that a clear repository structure does not by itself settle asset rights.
-- [VNTranslationTools](https://github.com/arcusmaximus/VNTranslationTools): explicit extraction/insertion boundary and reusable format tooling.
-- [Kuriimu2](https://github.com/FanTranslatorsInternational/Kuriimu2): plugin boundaries between archives, images, text, and fonts.
+## 成熟补丁仓库
 
-## What was not copied
+- [thcrap](https://github.com/thpatch/thcrap)：分层语言、补丁数据与运行时分离、版本检查。
+- [07th-Mod python-patcher](https://github.com/07th-mod/python-patcher)：玩家优先安装入口，
+  开发实现留在后层。
+- [Committee of Zero SGHD Patch](https://github.com/CommitteeOfZero/sghd-patch)：补丁内容、
+  安装器、启动器和生成资产的可见边界。
+- [Tsukihimates](https://github.com/Tsukihimates/Tsukihime-Translation)：`script/`、
+  `images/`、系统字符串和工具的实际归档方式；同时提醒清晰结构不自动解决资产权利。
+- [VNTranslationTools](https://github.com/arcusmaximus/VNTranslationTools)：明确的提取/
+  写回边界与可复用格式工具。
+- [Kuriimu2](https://github.com/FanTranslatorsInternational/Kuriimu2)：archive、image、text、
+  font 插件边界。
 
-No upstream game's translation or image assets were imported. The direct GARbro port is isolated, attributed, and carries its complete MIT notice; no code was copied from a repository without a sufficiently clear compatible license. General workflow ideas—hash gating, manifests, layered languages, player/developer separation—are not treated as a substitute for independently testing this repository's target games.
+## 本项目没有照搬什么
+
+没有导入其他项目的游戏译文或图片。GARbro 的直接移植被隔离、注明并保留 MIT 声明；
+许可证不清楚的仓库不复制源码。哈希门、manifest、语言层、玩家/开发者分离等通用做法
+仍必须由本项目对目标游戏重新测试，不能用“别人也这样做”代替证据。
+
+## English summary
+
+References are selected by the problem they solve. GARbro, AFHook, rugptools,
+FatePackageManager and mature patch repositories inform narrowly documented
+boundaries; only explicitly attributed compatible code is copied.

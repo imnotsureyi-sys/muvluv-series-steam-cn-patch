@@ -80,7 +80,8 @@ class PublishedAge2TranslationTests(unittest.TestCase):
                         ROOT
                         / "AGE2"
                         / "evidence"
-                        / "translation-snapshots-v1"
+                        / "translations"
+                        / "snapshots"
                         / f"{name}.json"
                     ).read_text(encoding="utf-8")
                 )

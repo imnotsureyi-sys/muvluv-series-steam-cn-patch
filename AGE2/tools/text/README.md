@@ -100,7 +100,7 @@ cannot reconstruct official Japanese text, and success here is not an
 end-to-end release proof.
 
 Unresolved symbol and quotation findings use the separate
-[text-free review ledger](../../evidence/text-review-ledger-v1/README.md). Its
+[text-free review ledger](../../evidence/translations/review-ledger/README.md). Its
 generator binds private audit rows back to these public identities/hashes and
 publishes no source or translated line text.
 

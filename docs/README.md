@@ -13,6 +13,7 @@
 ## 本地化制作者
 
 - [通用本地化工作区](../localization/README.md)：文本、术语、图片、字体与审核
+- [第一次翻译—第二次审核—玩家反馈完整流程](../localization/workflow.md)
 - [制作新语言版本](../localization/new-locale.md)
 - [AGE2 工作流](../AGE2/docs/workflow.md)
 - [rUGP 工作流](../rUGP/docs/workflow.md)
@@ -28,6 +29,7 @@
 ## 项目维护
 
 - [参与贡献](project/CONTRIBUTING.md)
+- [贡献者与致谢](project/CONTRIBUTORS.md)
 - [发布流程](project/release-process.md)
 - [内容与发布政策](project/asset-and-release-policy.md)
 - [路线图](project/ROADMAP.md)
