@@ -1,6 +1,23 @@
-# Player install, rollback and troubleshooting guide
+# Player download, installation, rollback, and troubleshooting guide
 
-[简体中文](../player/README.md) · [Player downloads](README.md#player-downloads) · [Report a bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
+[English overview](README.md) · [简体中文](../player/README.md) · [Research and localization](research-index.md) · [Report a bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
+
+## Player downloads
+
+These historical test packages were retained during migration. Font-license,
+official-UI-fallback, input-version, and rollback remediation remains, so they
+are **not currently recommended releases**. Do not use GitHub's source ZIP or
+the 1,490-image Photon research bundle as a game patch.
+
+| Game | Preserved version | Download |
+| --- | --- | --- |
+| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
+| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
+| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
+| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
+| The Imperial Capital Burns | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
+
+Photon Flowers and Photon Melodies do not yet have player installers.
 
 ## Before you install
 
@@ -8,14 +25,14 @@ The current player packages are historical AGE2 prerelease/test patches. They in
 
 These beta packages predate the repository's current release gate. They do not consistently include an install manifest, input-version hash check, uninstall tool or bundled font-license notice. An `install.bat` completing successfully proves that files were copied; it does not prove that an updated or repacked game is compatible.
 
-Use only the current historical versions listed on the repository home page. Do not install the superseded `tda01-beta0.1`, `tda01-beta0.2`, `tda01-beta0.2.1`, or `tda03-beta0.1`: `tda01-beta0.2` introduced 603 invisible dialogue slots, while `tda03-beta0.1` carried TDA02's UI/achievement mapping.
+Use only the current historical versions listed on this page. Do not install the superseded `tda01-beta0.1`, `tda01-beta0.2`, `tda01-beta0.2.1`, or `tda03-beta0.1`: `tda01-beta0.2` introduced 603 invisible dialogue slots, while `tda03-beta0.1` carried TDA02's UI/achievement mapping.
 
 The historical builds also did not freeze and re-verify the Steam/in-game language selection used for every title. Surviving test machines contain both Japanese and English settings, so no uniform requirement can be inferred. Do not overwrite another title or language slot just to “make the patch appear.” If the game still shows Japanese or English, report the Steam language plus `UserConfig.language` and `MountedConfig.language` from that title's appmanifest; this guide will not guess a value before per-title retesting.
 
 ## Install on Windows
 
 1. Purchase and install the matching Steam game. Launch it once if its per-user directory has not been created, then close it completely.
-2. Download the exact game's ZIP from the [player download table](README.md#player-downloads). Do not use GitHub's repository source ZIP.
+2. Download the exact game's ZIP from the [table on this page](#player-downloads). Do not use GitHub's repository source ZIP.
 3. When a checksum file is published, download it too and verify the ZIP before opening it.
 4. Extract the entire ZIP to a short writable path. Do not run `install.bat` from inside a compressed-folder preview.
 5. If you already have another patch or manually edited loose files, make a recoverable backup of that game's exact `data\root` directory first.

@@ -1,8 +1,19 @@
 # 逆向研究与攻克记录
 
-[返回首页](../../README.md) · [English](../en/research-index.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
+[返回首页](../../README.md) · [English](../en/research-index.md) · **[资产地图](asset-map.md)** · [多语言工作流](../../localization/workflow.md) · [参考项目](references.md) · [贡献者与致谢](../project/CONTRIBUTORS.md) · [仓库边界](repository-architecture.md)
 
 这里不是“最后成功代码”的目录列表，而是结论—证据—限制的索引。每篇复盘尽量保留：最初现象、错误假设、实验方法、根因、最终方案、回归测试，以及仍不能证明的部分。
+
+## 先按目标进入
+
+| 目标 | 入口 |
+| --- | --- |
+| 查找公开的中文文本、术语、图片身份和字体资料 | [文本、术语、图片与字体资产地图](asset-map.md) |
+| 为韩语、俄语等建立新语言 | [完整工作流](../../localization/workflow.md) · [新语言指南](../../localization/new-locale.md) |
+| 研究 TDA／帝都的 `pack.bin`、EGPACK、WebP 与松散覆盖 | [AGE2](../../AGE2/README.md) |
+| 研究 Photon 的 ICI、RIO、CRsa、RUO、Cr6Ti、CRip 与 Hook | [rUGP](../../rUGP/README.md) |
+| 了解 8311、字体、图片异色/撕裂/回退等问题怎样攻克 | [rUGP 复盘索引](../../rUGP/docs/postmortems/README.md) |
+| 查看我们从前人项目学了什么、又改进了什么 | [参考项目比较](references.md) |
 
 ## 哪些来自前人，哪些是本项目完成的
 

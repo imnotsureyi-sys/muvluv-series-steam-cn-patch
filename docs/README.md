@@ -14,7 +14,9 @@
 
 - [通用本地化工作区](../localization/README.md)：文本、术语、图片、字体与审核
 - [第一次翻译—第二次审核—玩家反馈完整流程](../localization/workflow.md)
+- [Complete English localization workflow](../localization/workflow.en.md)
 - [制作新语言版本](../localization/new-locale.md)
+- [文本、术语、图片与字体资产地图](research/asset-map.md)
 - [AGE2 工作流](../AGE2/docs/workflow.md)
 - [rUGP 工作流](../rUGP/docs/workflow.md)
 
@@ -46,3 +48,4 @@
 - [Project overview](en/README.md)
 - [Player guide](en/player-guide.md)
 - [Research index](en/research-index.md)
+- [Asset map](en/asset-map.md)

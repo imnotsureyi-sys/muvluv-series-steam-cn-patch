@@ -1,6 +1,6 @@
 # 从初译到玩家反馈的完整本地化工作流
 
-[返回本地化工作区](README.md) · [初译规则](standards/translation.md) · [独立审核](standards/review.md) · [术语规则](standards/terminology.md) · [源数据规则](standards/source-data.md)
+[English](workflow.en.md) · [返回本地化工作区](README.md) · [初译规则](standards/translation.md) · [独立审核](standards/review.md) · [术语规则](standards/terminology.md) · [源数据规则](standards/source-data.md)
 
 这套流程来自本项目实际完成 TDA、帝都燃烧篇和 Photon 文本时形成的方法。核心不是
 “让 AI 把整张表翻译一遍”，而是把剧情理解、术语冻结、第一次翻译、第二次独立审核、

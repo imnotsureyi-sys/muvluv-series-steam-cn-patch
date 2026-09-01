@@ -1,6 +1,6 @@
 # 参与贡献
 
-[返回首页](../../README.md) · [贡献者与致谢](CONTRIBUTORS.md) · [完整本地化工作流](../../localization/workflow.md)
+[返回首页](../../README.md) · [贡献者与致谢](CONTRIBUTORS.md) · [完整本地化工作流](../../localization/workflow.md) · [资产地图](../research/asset-map.md)
 
 > English contributors can use the concise summaries in each major README and
 > open an Issue or Pull Request in English. The Chinese rules below are the
@@ -16,6 +16,10 @@ Contributions for Simplified Chinese or another locale are welcome. The project 
 4. A game-specific translation, manifest, or release note belongs under that engine's `games/<game>/` directory.
 
 AGE2 must not import rUGP code and rUGP must not import AGE2 code. Cross-engine code proposed at the repository root will be rejected unless it is truly engine-neutral human-workflow tooling.
+
+完整官方文本、原始图片和游戏容器不进入 `localization/` 或其他公开目录。具体游戏的
+译文、图片文案、资源身份和源哈希跟随该游戏；跨引擎的方法、共用术语和通用 QA 工具
+才进入 `localization/`。详见[资产地图](../research/asset-map.md)。
 
 ## Locale and source-data rules
 

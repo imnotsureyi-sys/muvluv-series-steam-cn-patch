@@ -1,76 +1,79 @@
+<p align="right">
+  <a href="../../README.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E9%98%85%E8%AF%BB-C62828?style=for-the-badge"></a>
+  <a href="README.md"><img alt="English" src="https://img.shields.io/badge/English-Current-2F81F7?style=for-the-badge"></a>
+</p>
+
 # Muv-Luv Series Steam Community Localization
 
-[简体中文](../../README.md) · [Player guide](player-guide.md) · [Contributors and acknowledgments](../project/CONTRIBUTORS.md) · [Documentation index](../README.md)
+This is an unofficial, non-commercial localization project for selected Steam
+Muv-Luv titles. It preserves Simplified Chinese test patches and publishes the
+translation, terminology, image, font, format-tooling, and reverse-engineering
+work needed by other language teams.
 
-This is an unofficial, non-commercial localization project for selected Steam Muv-Luv titles. It preserves Simplified Chinese test patches and reusable text, terminology, image, font, format and reverse-engineering work for other language teams.
+You must own the matching game. This repository does not provide the games,
+cracks, complete original assets, or an original Steam `pack.bin`.
 
-You must own the matching game. This repository does not provide the games, cracks, complete original assets or an original Steam `pack.bin`.
+## Choose one entry
 
-## Choose an entry point
-
-GitHub automatically presents the repository README and license as tabs; it
-does not support arbitrary extra README tabs. These four maintained pages are
-the stable entry points for different audiences:
-
-| Audience | Entry | Contents |
-| --- | --- | --- |
-| Players installing or removing the Chinese patch | **[Player guide](player-guide.md)** | Downloads, verification, installation, removal, compatibility and reporting |
-| AGE2 / TDA / Imperial Capital Burns researchers | **[AGE2](../../AGE2/README.md)** | FPD, EGPACK, WebP, fonts, loose overlays, per-game assets and tests |
-| rUGP / AGES / Photon researchers | **[rUGP](../../rUGP/README.md)** | ICI, RIO, CRsa, RUO, Cr6Ti, CRip, Hook, error 8311 and runtime behavior |
-| Korean, Russian and other localization teams | **[Localization workspace](../../localization/README.md)** | Two-pass translation, terminology, images, fonts, new-locale setup, QA and player feedback |
-
-For investigations organized by problem and evidence, use the
-[research index](research-index.md).
-
-## Player downloads
-
-These historical prereleases were preserved during the repository migration. They predate the current release gate and remain under font-license, official-fallback-resource, input-version and rollback remediation, so they are not currently marked as recommended downloads. Read the [player guide](player-guide.md) and back up the exact LocalAppData overlay first. Do not use GitHub's source-code ZIP as a patch.
-
-| Game | Preserved version | Download |
-| --- | --- | --- |
-| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
-| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
-| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
-| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
-| The Imperial Capital Burns | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
-
-Photon Flowers and Photon Melodies do not yet have player-ready installers.
-
-## Where the localization assets live
-
-| Asset | Location |
+| **Players** | **Localizers and researchers** |
 | --- | --- |
-| Dialogue, choices, speakers and UI strings | Per-game `translations/` under [AGE2 games](../../AGE2/games/), [Photon Flowers](../../rUGP/games/photonflowers/) and [Photon Melodies](../../rUGP/games/photonmelodies/) |
-| Shared terminology | [Muv-Luv glossary](../../localization/glossaries/muv-luv.ja-zh-Hans.csv) and [terminology policy](../../localization/standards/terminology.md) |
-| Image copy, layout and identity | [730 WebP paths across TDA00–03 and Imperial Capital Burns](../../AGE2/games/README.md), [Imperial image-copy tables](../../AGE2/games/imperial-capital-burns/images/copy/), [1,490 Photon entries](../../rUGP/evidence/photon/images/) and the [image workflow](../../localization/image-workflow.md) |
-| Fonts | [Font asset and licensing policy](../../localization/fonts/README.md), [coverage tool](../../localization/tools/font_coverage.py), [rUGP runtime postmortem](../../rUGP/docs/postmortems/font-runtime.md) and [AGE2 retired-workaround record](../../AGE2/docs/postmortems/font-glyph-substitution-retired.md) |
-| Translation and review | [Complete workflow](../../localization/workflow.md), [first-pass standard](../../localization/standards/translation.md) and [independent review standard](../../localization/standards/review.md) |
-| Engine tooling | [AGE2 tools](../../AGE2/tools/), [rUGP formats](../../rUGP/formats/), [rUGP runtime](../../rUGP/runtime/) and [shared localization tools](../../localization/tools/) |
+| **[Download, install, restore, and troubleshoot](player-guide.md)** | **[Texts, images, fonts, tools, and research](research-index.md)** |
+| Only the package status, links, and safety information players need. | The asset map, multilingual workflow, AGE2, rUGP, and incident records. |
 
-Editable tables, image identity/copy/layout data, deterministic tooling and technical conclusions are public. Image and font binaries enter Git only after their provenance and redistribution terms are clear; extracted originals, failed batches and unreviewed fonts stay outside the public tree.
+## Current status
 
-The maintained localization loop is: understand the story and establish
-terminology; create the first translation by complete scene; independently
-review each row as `keep`, `revise` or `question`; resolve open questions;
-perform engine-specific writeback and automated/in-game QA; and feed player
-reports back into the maintained source. It is documented in the
-[complete workflow](../../localization/workflow.md) so another language team
-can reuse the method without copying the Chinese wording.
+| Scope | Player status | Public production/research material |
+| --- | --- | --- |
+| TDA00–03 and The Imperial Capital Burns | Historical AGE2 test packages are preserved; version, font-license, official-fallback, and rollback remediation remains | Maintained text, inventories for 730 historical WebP paths, Imperial image copy, FPD/EGPACK tools, and loose-overlay findings |
+| photonflowers and photonmelodies | No player installer yet | Maintained text, a 1,490-image PF/PM authority and route map, ICI/RIO/CRsa/RUO/Cr6Ti/CRip tools, guarded runtime components, and postmortems |
 
-## Repository layers
+The historical packages are identifiable and installable, but they are not
+marked recommended until the present release gate is satisfied. Follow the
+[player guide](player-guide.md). The 1,490-image Photon Release is a research and
+localization asset, not an installer.
 
-```text
-AGE2/          AGE2 game assets, format tools, tests and incident records
-rUGP/          rUGP game assets, codecs, runtime, packaging and evidence
-localization/  engine-neutral translation, terminology, image and font workflow
-docs/          player, research, project, legal and English documentation
-.github/       CI and contribution templates
-```
+## Repository map
 
-AGE2 and rUGP are independent implementations and must not import each other.
+| Directory | Responsibility |
+| --- | --- |
+| [`localization/`](../../localization/README.md) | Engine-neutral two-pass translation, terminology, image production, font checks, and new-locale workflow |
+| [`AGE2/`](../../AGE2/README.md) | TDA/Imperial game-bound text and image identities, FPD, EGPACK, WebP, loose overlays, tests, and postmortems |
+| [`rUGP/`](../../rUGP/README.md) | Photon game-bound text and image identities, ICI, RIO, CRsa, RUO, Cr6Ti, CRip, runtime, and postmortems |
+| [`docs/`](../README.md) | Player, research, maintenance, legal, and English documentation |
 
-## License, contribution and acknowledgments
+See the **[text, terminology, image, and font asset map](asset-map.md)** for
+actual counts and placement rules. Engine-neutral methods live in
+`localization/`; anything bound to a game resource ID, locale slot, path, or
+codec lives under that game's `AGE2/games/` or `rUGP/games/` directory. Complete
+official source assets are extracted locally from a contributor's lawful copy
+and are never committed.
 
-[Contributing](../project/CONTRIBUTING.md) · [Contributors and acknowledgments](../project/CONTRIBUTORS.md) · [Asset and release policy](../project/asset-and-release-policy.md) · [Third-party work](../legal/THIRD_PARTY.md) · [Notices](../legal/NOTICE.md)
+## Localization workflow
 
-Original project code is under the [MIT License](../../LICENSE). That license does not grant rights to game content, translations, fonts, derived images, release payloads or third-party components.
+The maintained process is: establish story context and terminology; produce a
+first translation; independently classify every row as
+`keep`/`revise`/`question`; resolve questions; bind through the correct engine;
+run in-game QA; and feed player reports back into maintained source.
+
+- [Complete English workflow](../../localization/workflow.en.md)
+- [Start Korean, Russian, or another locale](../../localization/new-locale.md)
+- [Localized image and Image 2 workflow](../../localization/image-workflow.md)
+- [Chinese workflow](../../localization/workflow.md)
+
+## Credits and participation
+
+The project thanks 主任保护协会 for the original AGES localization approach
+that started this patch-making effort. GARbro, AFHook, rugptools,
+FatePackageManager, and mature patch projects supplied narrowly attributed
+technical precedents. See [contributors and acknowledgments](../project/CONTRIBUTORS.md)
+and the [reference comparison](../research/references.md).
+
+[Report a patch/runtime problem](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
+· [Suggest a translation correction](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml)
+· [Contribute](../project/CONTRIBUTING.md)
+
+Original code is under the [MIT License](../../LICENSE). MIT does not
+automatically license game content, translation text, fonts, derivative images,
+release packages, or third-party components. See the
+[asset and release policy](../project/asset-and-release-policy.md),
+[third-party notices](../legal/THIRD_PARTY.md), and [legal notice](../legal/NOTICE.md).

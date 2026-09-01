@@ -1,6 +1,6 @@
 # 制作新语言 / Starting a new language
 
-[中文完整工作流](workflow.md) · [Image workflow](image-workflow.md) · [Font policy](fonts/README.md)
+[Complete English workflow](workflow.en.md) · [中文完整工作流](workflow.md) · [Image workflow](image-workflow.md) · [Font policy](fonts/README.md)
 
 本页保留英文作为韩语、俄语等国际团队的直接入口。可复用的核心不是复制中文表，而是
 先理解剧情并建立目标语言术语，完成第一轮翻译，再独立作出 `keep/revise/question`
@@ -95,7 +95,7 @@ reviewed target text into the engine-specific writer schema as a separate step.
 
 ## 4. Translate and review
 
-Follow the complete [two-pass workflow](workflow.md), adapting language-specific
+Follow the complete [English two-pass workflow](workflow.en.md), adapting language-specific
 style rules rather than Chinese prose conventions:
 
 1. Read complete scenes, establish character relationships and create a locale-specific glossary before bulk translation; the current Chinese file is [`muv-luv.ja-zh-Hans.csv`](glossaries/muv-luv.ja-zh-Hans.csv).

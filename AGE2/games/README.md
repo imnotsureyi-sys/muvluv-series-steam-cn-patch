@@ -1,6 +1,6 @@
 # AGE2 游戏项目
 
-[返回 AGE2](../README.md) · [玩家指南](../../docs/player/README.md) · [通用本地化工作流](../../localization/workflow.md)
+[返回 AGE2](../README.md) · [玩家指南](../../docs/player/README.md) · [完整资产地图](../../docs/research/asset-map.md) · [通用本地化工作流](../../localization/workflow.md)
 
 每个目录是一部独立游戏。`project.toml` 记录 Steam App ID、开发状态以及文本、图片和
 字体权威入口；`translations/` 保存可维护译文；`images/` 保存图片文案或 Release

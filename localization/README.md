@@ -1,6 +1,6 @@
 # 通用本地化工作区
 
-[返回首页](../README.md) · **[完整工作流](workflow.md)** · [制作新语言](new-locale.md) · [表字段约定](standards/table-schemas.md) · [图片流程](image-workflow.md) · [字体](fonts/README.md)
+[返回首页](../README.md) · **[中文完整工作流](workflow.md)** · **[English workflow](workflow.en.md)** · [制作新语言](new-locale.md) · [资产地图](../docs/research/asset-map.md) · [图片流程](image-workflow.md) · [字体](fonts/README.md)
 
 这里放不依赖具体引擎的本地化方法：翻译、术语、审核、图片制作、字体覆盖和新语言模板。FPD/EGPACK 工具属于 [AGE2](../AGE2/README.md)，RIO/RUO/Hook 属于 [rUGP](../rUGP/README.md)，不会混进本目录。
 
@@ -64,5 +64,5 @@ This directory contains the engine-neutral two-pass workflow: establish story
 context and terminology, produce a first translation, independently review
 each row as `keep`/`revise`/`question`, resolve questions, bind through the
 correct engine, and feed in-game/player findings back into maintained source.
-International teams should start with the [workflow](workflow.md) and
-[new-locale guide](new-locale.md).
+International teams should start with the [complete English workflow](workflow.en.md),
+[new-locale guide](new-locale.md), and [English asset map](../docs/en/asset-map.md).

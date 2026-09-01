@@ -15,27 +15,32 @@
 
 | 工具 | 贡献范围 | 责任边界 |
 | --- | --- | --- |
-| [OpenAI Codex](https://developers.openai.com/codex/) | 在维护者指挥下协助仓库架构、代码实现、格式分析、测试、文档、清单生成、故障复盘与重复性检查 | 不是独立维护者，不代替日文理解、实机验证、版权判断或发布批准；所有结果由人类维护者审核并负责 |
+| [OpenAI Codex](https://github.com/codex) | 在维护者指挥下协助仓库架构、代码实现、格式分析、测试、文档、清单生成、故障复盘与重复性检查 | 不是独立维护者，不代替日文理解、实机验证、版权判断或发布批准；所有结果由人类维护者审核并负责 |
 | OpenAI 图像模型／GPT Image 系列 | 在部分图片工作中辅助生成无字底或候选视觉修改 | 仅是图片制作的一步；文案、布局、身份、像素检查和最终入包仍须人工审核，具体可复现边界见[图片工作流](../../localization/image-workflow.md) |
 
-GitHub 的贡献图由提交作者以及可验证的 `Co-authored-by` 身份生成。GitHub 要求共同作者
-邮箱关联到其真实账号；Codex 没有一个可以由本项目冒用的个人 GitHub 邮箱，因此本项目
-不会伪造账号或邮箱。AI 辅助通过本页和提交中的 `Assisted-by: OpenAI Codex` 说明记录；
-真实人类共同作者则使用其本人确认的 GitHub 邮箱。参见
+GitHub 已为 OpenAI Codex 提供可识别的 [`@codex`](https://github.com/codex) 身份。由
+Codex 实质参与且经维护者审核的提交使用：
+
+```text
+Co-authored-by: Codex <codex@openai.com>
+```
+
+这会把共同作者连接到真实 Codex 账号，使提交页和 Contributors 正确显示，而提交作者与
+最终责任仍属于人类维护者。仅做轻微查询或没有形成提交内容时不机械添加署名。格式遵循
 [GitHub 共同作者说明](https://docs.github.com/en/pull-requests/how-tos/commit-changes/creating-a-commit-with-multiple-authors)。
 
 ## 最初的汉化思路
 
-> **致谢主任保护协会提供了 AGES 引擎的汉化思路。**
+> **致谢“主任保护协会”提供了 AGES 引擎的汉化思路，并感谢他让我们开始了汉化补丁制作之路。**
 
 本项目发起者最初在研究 TDA 汉化时参考了主任保护协会公开发布的
-[Steam 版 Muv-Luv Alternative Total Eclipse 汉化补丁](https://www.moyu.moe/patch/5461/resource)，
-并保存了对方允许发布本项目独立完成的 TDA 汉化、同时希望在发布时加入上述致谢的沟通
-记录。
+[Steam 版 Muv-Luv Alternative Total Eclipse 汉化补丁](https://www.moyu.moe/patch/5461/resource)。
+这份补丁让我们第一次看见 AGES 游戏可以怎样走向中文化，也由此开启了后来 TDA、帝都
+燃烧篇与 Photon 系列的制作和研究。感谢对方分享这条起点，并在沟通中允许我们发布独立
+完成的 TDA 汉化成果。
 
-该致谢只说明“汉化路线与思路”的来源。本仓库没有把对方补丁文件、译文、字体、图片或
-代码作为可自由拆解的素材；链接页面明确限制拆解、二次修改和移植，因此我们只链接原始
-发布页并尊重其条款。
+为尊重原发布者的劳动和发布条款，本仓库只说明所受启发并链接原始发布页，不把对方的
+补丁文件、译文、字体、图片或代码当作可拆解、二次修改或移植的素材。
 
 ## rUGP／AGES 技术前人
 
@@ -81,8 +86,9 @@ shared/common 端点和 PF/PM 1,490 图闭环均由本项目针对自己的样�
 
 ## English summary
 
-Yi Shen (`imnotsureyi-sys`) is the human maintainer and final reviewer. OpenAI
-Codex is credited for supervised AI-assisted engineering, research, tests and
-documentation without inventing a GitHub identity. The project also explicitly
-credits 主任保护协会 for the original AGES localization approach and the
-listed upstream tools for their narrowly described technical precedents.
+Yi Shen (`imnotsureyi-sys`) is the human maintainer and final reviewer. Material
+OpenAI Codex work is disclosed with the GitHub-recognized
+`Co-authored-by: Codex <codex@openai.com>` trailer. The project warmly thanks
+主任保护协会 for the AGES localization approach that began this patch-making
+journey, and credits the listed upstream tools for their narrowly described
+technical precedents.

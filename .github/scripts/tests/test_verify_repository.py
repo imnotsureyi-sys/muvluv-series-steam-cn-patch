@@ -14,6 +14,10 @@ SPEC.loader.exec_module(MODULE)
 
 
 class RepositoryPolicyHelperTests(unittest.TestCase):
+    def test_html_language_button_targets_are_visible_to_link_checks(self) -> None:
+        text = '<a href="docs/en/README.md"><img src="https://example.invalid/badge.svg"></a>'
+        self.assertEqual(MODULE.HTML_HREF.findall(text), ["docs/en/README.md"])
+
     def test_only_visible_markdown_links_count_as_release_links(self) -> None:
         visible = "[download](https://example.invalid/patch.zip)"
         hidden = (

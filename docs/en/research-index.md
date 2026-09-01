@@ -1,6 +1,6 @@
 # Reverse-engineering and reproducibility index
 
-[Repository README](../../README.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [legacy rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
+[English overview](README.md) · **[Asset map](asset-map.md)** · [English localization workflow](../../localization/workflow.en.md) · [AGE2](../../AGE2/README.md) · [AGE2 postmortems](../../AGE2/docs/postmortems/README.md) · [rUGP](../../rUGP/README.md) · [rUGP postmortems](../../rUGP/docs/postmortems/README.md) · [Prior work](../research/references.md)
 
 This index separates three different claims:
 

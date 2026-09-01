@@ -50,7 +50,8 @@ REQUIRED = {
     "localization/requirements.txt",
     "docs/player/README.md", "docs/en/player-guide.md", "docs/README.md",
     "docs/research/repository-architecture.md", "docs/research/README.md",
-    "docs/en/research-index.md",
+    "docs/research/asset-map.md", "docs/en/research-index.md",
+    "docs/en/asset-map.md", "localization/workflow.en.md",
     "docs/player/release-index.json",
     "docs/project/CONTRIBUTORS.md",
     ".github/scripts/tests/test_verify_repository.py",
@@ -93,6 +94,7 @@ ABSOLUTE_PATH_EXCEPTIONS = {
     "rUGP/tests/packaging/test_build_photon_cn_beta01.py",
 }
 MARKDOWN_LINK = re.compile(r"(?<!!)\[[^\]]+\]\(([^)]+)\)")
+HTML_HREF = re.compile(r"\bhref=[\"']([^\"']+)[\"']", re.IGNORECASE)
 HTML_COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
 FENCED_CODE = re.compile(
     r"^```.*?^```[ \t]*$|^~~~.*?^~~~[ \t]*$", re.MULTILINE | re.DOTALL
@@ -161,7 +163,7 @@ def fail(errors: list[str], message: str) -> None:
 
 
 def check_links(path: Path, relative: str, text: str, errors: list[str]) -> None:
-    for raw in MARKDOWN_LINK.findall(text):
+    for raw in [*MARKDOWN_LINK.findall(text), *HTML_HREF.findall(text)]:
         target = raw.strip().split(maxsplit=1)[0].strip("<>")
         if not target or target.startswith(("#", "http://", "https://", "mailto:")):
             continue
@@ -243,9 +245,9 @@ def check_release_index(errors: list[str]) -> None:
     game_ids: set[str] = set()
     tags: set[str] = set()
     urls: set[str] = set()
-    readme_links = [
+    player_guide_links = [
         markdown_link_targets((ROOT / name).read_text(encoding="utf-8-sig"))
-        for name in ("README.md", "docs/en/README.md")
+        for name in ("docs/player/README.md", "docs/en/player-guide.md")
     ]
     for index, package in enumerate(packages):
         label = f"{relative}: player_packages[{index}]"
@@ -305,8 +307,8 @@ def check_release_index(errors: list[str]) -> None:
             fail(errors, f"{label}: invalid LocalAppData overlay_root")
         if not isinstance(caveats, list) or not caveats:
             fail(errors, f"{label}: historical caveats are missing")
-        if isinstance(url, str) and not all(url in links for links in readme_links):
-            fail(errors, f"{label}: direct asset URL is not a Markdown link in both root READMEs")
+        if isinstance(url, str) and not all(url in links for links in player_guide_links):
+            fail(errors, f"{label}: direct asset URL is not a Markdown link in both player guides")
 
     if game_ids != EXPECTED_PLAYER_GAMES:
         fail(

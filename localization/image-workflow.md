@@ -1,6 +1,6 @@
 # 图片本地化工作流 / Localized image workflow
 
-[返回本地化入口](README.md) · [AGE2 五作 WebP 总览](../AGE2/games/README.md) · [Photon 1,490 图](../rUGP/evidence/photon/images/README.md) · [字体政策](fonts/README.md)
+[返回本地化入口](README.md) · [完整资产地图](../docs/research/asset-map.md) · [AGE2 五作 WebP 总览](../AGE2/games/README.md) · [Photon 1,490 图](../rUGP/evidence/photon/images/README.md) · [字体政策](fonts/README.md)
 
 本项目的公开图片范围不只有 PF/PM 的 1,490 项：TDA00–03 与帝都燃烧篇五个历史
 Release 另有 730 个 WebP 路径，均已建立逐项路径、尺寸、模式和 SHA-256 清单。730

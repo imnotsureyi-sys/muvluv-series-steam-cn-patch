@@ -1,6 +1,22 @@
-# 玩家安装、卸载与排错指南
+# 玩家下载、安装、卸载与排错指南
 
-[English](../en/player-guide.md) · [玩家下载](../../README.md#玩家下载) · [提交 Bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
+[返回首页](../../README.md) · [English](../en/player-guide.md) · [研究与制作入口](../research/README.md) · [提交 Bug](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
+
+## 玩家下载
+
+以下是迁移时保留的历史测试包。它们仍在补做字体许可、官方 UI 兜底资源、输入版本与
+回滚审计，因而**目前不是推荐版本**。不要把 GitHub 的源码 ZIP 或 Photon 1,490 图
+研究包当作游戏补丁。
+
+| 游戏 | 当前保留版本 | 下载 |
+| --- | --- | --- |
+| THE DAY AFTER episode:00 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
+| THE DAY AFTER episode:01 | beta0.2.2 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
+| THE DAY AFTER episode:02 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
+| THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
+| 帝都燃烧篇 | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
+
+Photon Flowers 与 Photon Melodies 目前没有玩家安装包。
 
 ## 安装前先知道
 
@@ -8,14 +24,14 @@
 
 这些 beta 早于本仓库现在的发布门槛，尚未统一包含安装清单、输入版本哈希检查、卸载器或随字体附带的许可证说明。`install.bat` 成功只代表文件复制完成，不代表经过更新或被其他补丁修改的游戏一定兼容。
 
-只使用首页下载表列出的最新历史版本。不要安装已被取代的 `tda01-beta0.1`、`tda01-beta0.2`、`tda01-beta0.2.1` 或 `tda03-beta0.1`；`tda01-beta0.2` 会产生 603 个不可见正文槽，`tda03-beta0.1` 误用了 TDA02 的 UI/成就映射。
+只使用本页下载表列出的最新历史版本。不要安装已被取代的 `tda01-beta0.1`、`tda01-beta0.2`、`tda01-beta0.2.1` 或 `tda03-beta0.1`；`tda01-beta0.2` 会产生 603 个不可见正文槽，`tda03-beta0.1` 误用了 TDA02 的 UI/成就映射。
 
 历史构建也没有冻结并复核逐作安装时的 Steam/游戏语言槽设置；不同测试机留下过日语与英语配置，不能据此推导一个统一要求。不要为了“试出汉化”盲目覆盖另一作或另一语言的文件。如果补丁安装后仍显示日文/英文，请在反馈中附上该作 Steam 属性里的语言，以及 `appmanifest` 的 `UserConfig.language` / `MountedConfig.language`；在逐作重新实测前，本指南不会猜一个语言值。
 
 ## Windows 安装
 
 1. 在 Steam 购买并安装对应游戏。若用户目录尚未生成，可先启动一次，再完全退出游戏。
-2. 从[玩家下载表](../../README.md#玩家下载)获取该作准确的 ZIP；不要使用 GitHub 仓库源码 ZIP。
+2. 从[本页玩家下载表](#玩家下载)获取该作准确的 ZIP；不要使用 GitHub 仓库源码 ZIP。
 3. 发布页有校验文件时一并下载，并在打开 ZIP 前校验。
 4. 把整个 ZIP 解压到路径较短且可写的位置；不要直接在压缩包预览窗口中运行 `install.bat`。
 5. 若已经安装其他补丁或手动修改过松散文件，先备份该作准确的 `data\root` 目录，确保可以恢复。
