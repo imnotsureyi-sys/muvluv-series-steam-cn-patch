@@ -86,6 +86,8 @@ def append_translations(payload: bytes, pool_base: int, entries: list[dict]) -> 
 
 
 def build(spec: dict, source: Path, base_ruo: Path, output: Path) -> dict:
+    if spec.get('status') == 'superseded':
+        raise ValueError('increment superseded; use its reviewed native-field replacement')
     source, base_ruo, output = source.resolve(), base_ruo.resolve(), output.resolve()
     if output.exists() or output in (source, base_ruo):
         raise ValueError('output must be a new file distinct from inputs')

@@ -219,11 +219,12 @@ def _validate_utf16_slot(raw: bytes, label: str) -> None:
 
 
 def _direct_prefix_size(data: bytes, offset: int, end: int) -> int:
-    if data[offset : offset + 8] == b"\x01\x00\x00\x00\x01\x00\x00\x00":
-        return 8
+    # U+0010 is an in-string formatting escape. Keep its historical visible
+    # anchor, but never cross a NUL to look for text. The native receiver
+    # (PF 0x50BFB7) stops at the first NUL. In particular, 01 00 00 00
+    # 01 00 00 00 is two control-only slots, not a wrapper around the next
+    # dialogue. Treating it as a wrapper steals that dialogue's identity.
     if data[offset : offset + 2] == b"\x10\x00":
-        return 2
-    if data[offset : offset + 2] == b"\x00\x00" and offset + 2 < end:
         return 2
     return 0
 
@@ -284,11 +285,6 @@ def parse_direct_pool(
             declared_units=declared_units,
             index=command.source_index,
         )
-        # Adjacent indices prove this NUL is the complete empty source,
-        # rather than the optional NUL wrapper used by longer native slots.
-        if (command.translation_index == command.source_index + 1
-                and payload[source.offset:source.offset + 2] == b"\x00\x00"):
-            source = DirectSlot(source.index, source.offset, 0, b"\x00\x00", "")
         translation = extract_direct_slot(
             payload,
             base=base,

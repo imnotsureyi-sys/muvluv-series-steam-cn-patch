@@ -18,6 +18,10 @@ def body(offset):
 
 
 class DisplayIncrementTests(unittest.TestCase):
+    def test_rejects_superseded_partial_manifest_before_reading_inputs(self):
+        with self.assertRaisesRegex(ValueError, 'superseded'):
+            build({'status': 'superseded'}, Path('missing.rio'), Path('missing.ruo'), Path('candidate.ruo'))
+
     def setUp(self):
         commands=CVM_MSG3_DECLARATION+body(4)+struct.pack('<H',0x802b)+body(8)
         pool='\x00\x05\x00\x05Go!\x00'.encode('utf-16le')

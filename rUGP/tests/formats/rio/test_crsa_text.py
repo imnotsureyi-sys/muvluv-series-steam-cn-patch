@@ -48,6 +48,34 @@ def vm_body(
 
 
 class CrsaTextParserTests(unittest.TestCase):
+    def test_control_pairs_do_not_steal_the_following_dialogue_identity(self):
+        source, translation = '次の台詞。\x01', '下一句对白。\x01'
+        control_pair = pair('\x01', '\x01')
+        pool = b'\0\0' + control_pair + pair(source, translation)
+        source_index = 1 + len(control_pair) // 2
+        translation_index = source_index + len(source) + 1
+        commands = (CVM_MSG3_DECLARATION + vm_body(4, 1, 3)
+                    + b'\x2b\x80' + vm_body(48, source_index, translation_index))
+        base = 160
+        payload = commands + b'\xa5' * (base - 4 - len(commands)) + struct.pack('<I', len(pool)//2) + pool
+        exact = [s for s in extract_text_slots(payload).slots if s.evidence == 'cvmmsg3_exact_reference']
+        self.assertEqual(len(exact), 1)
+        self.assertEqual(exact[0].payload_offset, base + source_index * 2)
+        self.assertEqual(exact[0].source_text, source)
+        self.assertEqual(exact[0].existing_translation_text, translation)
+        self.assertGreater(exact[0].identity_end, exact[0].source_end)
+
+    def test_empty_source_at_pool_zero_does_not_alias_the_first_dialogue(self):
+        from rUGP.formats.rio.crsa_vm_pool import parse_direct_pool
+        pool = b'\0\0' + pair('別の原文。\x01', 'Existing\x01') + '另一个译文。\x01\0'.encode('utf-16le')
+        display_index = len(pool)//2 - len('另一个译文。\x01\0')
+        command = CVM_MSG3_DECLARATION + vm_body(4, 0, display_index)
+        base = 96
+        payload = command + b'\xa5' * (base-4-len(command)) + struct.pack('<I',len(pool)//2) + pool
+        source, display = parse_direct_pool(payload, find_vm_message_commands(payload), base).command_slots[0]
+        self.assertEqual((source.offset, source.raw, source.text), (base, b'\0\0', ''))
+        self.assertEqual(display.text, '另一个译文。\x01')
+
     def test_exact_vm_reference_keeps_translation_with_control_or_empty_source(self):
         for source in ('\x05', ''):
             for translation in ('\x05【Officer】「Go!」', '继续。', '…', '🚀'):

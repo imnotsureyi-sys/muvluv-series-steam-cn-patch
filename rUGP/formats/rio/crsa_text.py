@@ -634,10 +634,6 @@ def scan_inline_unicode_records(payload: bytes) -> list[InlineUnicodeRecord]:
 def _canonical_native_offset(payload: bytes, reference_offset: int) -> int:
     if payload[reference_offset : reference_offset + 2] == b"\x10\x00":
         return reference_offset + 2
-    if payload[reference_offset : reference_offset + 8] == b"\x01\x00\x00\x00\x01\x00\x00\x00":
-        return reference_offset + 8
-    if payload[reference_offset : reference_offset + 2] == b"\x00\x00":
-        return reference_offset + 2
     return reference_offset
 
 

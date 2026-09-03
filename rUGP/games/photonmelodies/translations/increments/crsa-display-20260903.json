@@ -18,9 +18,9 @@
       "translation_offset": 25952,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "F66FBBC1EBF5A9D24AFCAB5B85F7E29E6F8A907EB12CC839549537B203A124F5",
-      "target_text": "<05>再往前一点点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>再往前走一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0021",
@@ -30,9 +30,9 @@
       "translation_offset": 26008,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "2750E4C8532AEC33DDDC7DCC37F69BEEDADF822EAFCD6A7C4254C08F29481A8C",
-      "target_text": "<05>再往前一小步。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往前走一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0022",
@@ -43,8 +43,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "FA2EEE5FE389B8E1CEE5E99F6BBA7E754AA0784C378F16C468255C4354C7CF72",
       "target_text": "<05>继续往前走。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0023",
@@ -54,9 +54,9 @@
       "translation_offset": 26110,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "A57FBD953E4F987B10268E43AB9691078F29A30A0C8E2BFEA2CF471CB4D3955C",
-      "target_text": "<05>请继续前进。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts",
+      "target_text": "<05>请继续往前走。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger.",
       "historical_coordinate_collision": {
         "preserved_stable_id": "pm:static:photonmelodies11.rio.004:0871742696:00026104",
         "source_text_sha256": "A43FEFCD8DC5802E012C5270FC4778770619CA785EDA8D75050DB94073E7A4A5",
@@ -72,8 +72,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "8A325EFFE08C80DEF20526C5739ABFF8451FDE4DF94326244D6C29F06A0123DC",
       "target_text": "<05>再往右一点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0025",
@@ -83,9 +83,9 @@
       "translation_offset": 26202,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "212F16A81B97E3A0A2753F369CE0EE7A77EED452BEAB1EEB3778E74F381470A2",
-      "target_text": "<05>请再往右一些。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往右一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0026",
@@ -95,9 +95,9 @@
       "translation_offset": 26248,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "F66FBBC1EBF5A9D24AFCAB5B85F7E29E6F8A907EB12CC839549537B203A124F5",
-      "target_text": "<05>再往前一点点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>再往前走一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0027",
@@ -107,9 +107,9 @@
       "translation_offset": 26304,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "2750E4C8532AEC33DDDC7DCC37F69BEEDADF822EAFCD6A7C4254C08F29481A8C",
-      "target_text": "<05>再往前一小步。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往前走一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0028",
@@ -120,8 +120,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "FA2EEE5FE389B8E1CEE5E99F6BBA7E754AA0784C378F16C468255C4354C7CF72",
       "target_text": "<05>继续往前走。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0029",
@@ -131,9 +131,9 @@
       "translation_offset": 26406,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "A57FBD953E4F987B10268E43AB9691078F29A30A0C8E2BFEA2CF471CB4D3955C",
-      "target_text": "<05>请继续前进。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请继续往前走。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0030",
@@ -144,8 +144,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "5FE2C6D27BC3470E7373C072C02A284EE16B6B476301F21B9E3FE777DBFA11AF",
       "target_text": "<05>再往左一点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger.",
       "historical_coordinate_collision": {
         "preserved_stable_id": "pm:static:photonmelodies11.rio.004:0871742696:00026444",
         "source_text_sha256": "57128112B5195F26679BF6BCC9E0F1AF922F5E752551C7B9D37B37C4E1A5D350",
@@ -160,9 +160,9 @@
       "translation_offset": 26496,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "B2010EFB682B1A8EDD688F5C81828321FA261403028723755611A63C5B3C8075",
-      "target_text": "<05>请再往左一些。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往左一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0032",
@@ -173,8 +173,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "6B5850371A61A043F21A47C8D8A9BA3E7A762EFD7A1531F395DC206474A6C463",
       "target_text": "<05>不对，在你后面。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0033",
@@ -184,9 +184,9 @@
       "translation_offset": 26580,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "BF469BD683CF338E3E65B8268481BE2964410A29AFA11F000DC38E1C36FA77D2",
-      "target_text": "<05>西瓜在您后面。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>西瓜在您后面哦。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0034",
@@ -197,8 +197,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "8A325EFFE08C80DEF20526C5739ABFF8451FDE4DF94326244D6C29F06A0123DC",
       "target_text": "<05>再往右一点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0035",
@@ -208,9 +208,9 @@
       "translation_offset": 26696,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "212F16A81B97E3A0A2753F369CE0EE7A77EED452BEAB1EEB3778E74F381470A2",
-      "target_text": "<05>请再往右一些。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往右一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0036",
@@ -221,8 +221,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "6B5850371A61A043F21A47C8D8A9BA3E7A762EFD7A1531F395DC206474A6C463",
       "target_text": "<05>不对，在你后面。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0037",
@@ -232,9 +232,9 @@
       "translation_offset": 26782,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "BF469BD683CF338E3E65B8268481BE2964410A29AFA11F000DC38E1C36FA77D2",
-      "target_text": "<05>西瓜在您后面。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>西瓜在您后面哦。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0038",
@@ -245,8 +245,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "5FE2C6D27BC3470E7373C072C02A284EE16B6B476301F21B9E3FE777DBFA11AF",
       "target_text": "<05>再往左一点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0039",
@@ -256,9 +256,9 @@
       "translation_offset": 26896,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "B2010EFB682B1A8EDD688F5C81828321FA261403028723755611A63C5B3C8075",
-      "target_text": "<05>请再往左一些。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往左一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0040",
@@ -268,9 +268,9 @@
       "translation_offset": 26940,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "F66FBBC1EBF5A9D24AFCAB5B85F7E29E6F8A907EB12CC839549537B203A124F5",
-      "target_text": "<05>再往前一点点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>再往前走一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0041",
@@ -280,9 +280,9 @@
       "translation_offset": 26996,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "2750E4C8532AEC33DDDC7DCC37F69BEEDADF822EAFCD6A7C4254C08F29481A8C",
-      "target_text": "<05>再往前一小步。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往前走一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0042",
@@ -293,8 +293,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "FA2EEE5FE389B8E1CEE5E99F6BBA7E754AA0784C378F16C468255C4354C7CF72",
       "target_text": "<05>继续往前走。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0043",
@@ -304,9 +304,9 @@
       "translation_offset": 27098,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "A57FBD953E4F987B10268E43AB9691078F29A30A0C8E2BFEA2CF471CB4D3955C",
-      "target_text": "<05>请继续前进。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请继续往前走。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0044",
@@ -317,8 +317,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "6B5850371A61A043F21A47C8D8A9BA3E7A762EFD7A1531F395DC206474A6C463",
       "target_text": "<05>不对，在你后面。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0045",
@@ -328,9 +328,9 @@
       "translation_offset": 27182,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "BF469BD683CF338E3E65B8268481BE2964410A29AFA11F000DC38E1C36FA77D2",
-      "target_text": "<05>西瓜在您后面。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>西瓜在您后面哦。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0046",
@@ -341,8 +341,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "5FE2C6D27BC3470E7373C072C02A284EE16B6B476301F21B9E3FE777DBFA11AF",
       "target_text": "<05>再往左一点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0047",
@@ -352,9 +352,9 @@
       "translation_offset": 27296,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "B2010EFB682B1A8EDD688F5C81828321FA261403028723755611A63C5B3C8075",
-      "target_text": "<05>请再往左一些。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往左一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0048",
@@ -365,8 +365,8 @@
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "8A325EFFE08C80DEF20526C5739ABFF8451FDE4DF94326244D6C29F06A0123DC",
       "target_text": "<05>再往右一点。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0049",
@@ -376,9 +376,9 @@
       "translation_offset": 27388,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "212F16A81B97E3A0A2753F369CE0EE7A77EED452BEAB1EEB3778E74F381470A2",
-      "target_text": "<05>请再往右一些。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>请再往右一点。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0050",
@@ -388,9 +388,9 @@
       "translation_offset": 27434,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "502AB650EBA20D6CB590360D88E12867D23BE4218BF3D87110A99DB869611EA7",
-      "target_text": "<05>就在你正前方！",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>就是那里！",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0051",
@@ -400,9 +400,9 @@
       "translation_offset": 27488,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "687AFE0274DA1B41BC4448F8F9BD1674C703630402AD53B979052CCE43902D4C",
-      "target_text": "<05>就在那儿！",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>就在那里。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0052",
@@ -412,9 +412,9 @@
       "translation_offset": 27532,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "C31D65E1555B4C5B75CE21A8C3CDC6DCC6B21EA5D82594A26A8E7C3CBD2DA67C",
-      "target_text": "<05>唔，看来时间到了。真可惜。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>唔……时间到了啊，真可惜。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0053",
@@ -424,9 +424,9 @@
       "translation_offset": 27642,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "C8C5128A3C9A260284135502C770E38ECDC429F49A1EA4173AECBC73213E7790",
-      "target_text": "<05>哎呀……恐怕时间已经到了。下次再试试吧。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>……时间到了，真遗憾呢。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0055",
@@ -436,9 +436,9 @@
       "translation_offset": 27774,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "343084B09D6D8DADBA0A3A77DAE7BF8A3E2F8FAD41D3EFACD5378CDDA3C563E0",
-      "target_text": "<05>打中了！我就知道你能做到。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>干得漂亮！真不愧是你！",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     },
     {
       "stable_id": "pm:display:photonmelodies11.rio.004:0871742696:cvmmsg3-0056",
@@ -448,11 +448,13 @@
       "translation_offset": 27852,
       "source_slot_sha256": "12188C411F9D4254CF4DB735D947BCBFA77CC2697AF91BC05971D9462A775859",
       "display_slot_sha256": "E82E2A9764955303AA5A2A73395E0FE36BBEF48FE6C10F6954D5A0F35B49F197",
-      "target_text": "<05>太好了！武大人，您真厉害。",
-      "status": "translated_candidate",
-      "evidence": "cvmmsg3_exact_reference; control-only source; directional minigame prompts"
+      "target_text": "<05>太精彩了！您的身手真是了得。",
+      "status": "superseded",
+      "evidence": "Superseded by the Japanese-voice-bound native increment; see its review ledger."
     }
   ],
   "identity_policy": "New display-command namespace: existing reviewed IDs refer to older payload coordinates. All original rows remain unchanged.",
-  "source_logical_byte_offset": 6809716952
+  "source_logical_byte_offset": 6809716952,
+  "status": "superseded",
+  "superseded_by": "crsa-native-20260904.json"
 }
