@@ -1,6 +1,8 @@
-# 独立审核规则
+# 06 · 独立审核规则
 
-本文规定候选 CN 完成后的语义和中文质量审核。审核与初译是两个阶段；初译规则见 [`translation.md`](translation.md)。
+[规则顺序](README.md) · 上一步：[05 初译](05-translation.md) · 下一步：[解决疑点与技术写回](../workflow.md#4-解决-question-并再次冻结术语)
+
+本文规定候选 CN 完成后的语义和中文质量审核。审核与初译是两个阶段；初译规则见 [`05-translation.md`](05-translation.md)。
 
 ## 1. 审核边界
 
@@ -93,7 +95,7 @@
 4. 审核摘要：范围、总行数和三类结论数量。
 5. 交接起点：下一批从哪个 `csv_row`、`scene`、`id / stable_id` 继续。
 
-逐批理由、临时决策和个人工作便签默认不加入公开补丁源表；能够长期解释发布状态、可复现且由测试约束的 `review_status` / `audit_flags` 可以按 [`source-data.md`](source-data.md) 的政策提升为公开字段。
+逐批理由、临时决策和个人工作便签默认不加入公开补丁源表；能够长期解释发布状态、可复现且由测试约束的 `review_status` / `audit_flags` 可以按 [`02-source-data.md`](02-source-data.md) 的政策提升为公开字段。
 
 ## 9. 章节审核完成标准
 

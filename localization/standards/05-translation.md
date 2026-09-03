@@ -1,11 +1,13 @@
-# 简体中文初译规则
+# 05 · 简体中文初译规则
+
+[规则顺序](README.md) · 上一步：[04 术语](04-terminology.md) · 下一步：[06 独立审核](06-review.md)
 
 本文规定当前 `zh-Hans` 目标从 JP 原文产出第一版中文候选译文的流程。新语言可以复用“按稳定身份定位、先翻译后独立审核、技术写回另行验证”的框架，但必须另行定义该语言的标点、排版、称谓和专名规则；不能把这里的中文表达规则直接当成通用语言标准。参见 [`../new-locale.md`](../new-locale.md)。
 
 术语确认、独立审核、资源写回和技术质检分别见：
 
-- [`terminology.md`](terminology.md)
-- [`review.md`](review.md)
+- [`04-terminology.md`](04-terminology.md)
+- [`06-review.md`](06-review.md)
 - 引擎技术质检：[`../../AGE2/docs/quality.md`](../../AGE2/docs/quality.md) 或 [`../../rUGP/docs/quality.md`](../../rUGP/docs/quality.md)
 
 ## 1. 适用范围
@@ -30,7 +32,7 @@
 开始正文初译前，应完成：
 
 1. 确认章节、route、scene 顺序和文本来源。
-2. 按 [`terminology.md`](terminology.md) 扫描全章专有名词。
+2. 按 [`04-terminology.md`](04-terminology.md) 扫描全章专有名词。
 3. 对照 [`../glossaries/muv-luv.ja-zh-Hans.csv`](../glossaries/muv-luv.ja-zh-Hans.csv)，确认本章术语基线。
 4. 将未确认术语列入问题清单；高频或关键术语未定时，不批量推进相关文本。
 5. 记录本章主要人物关系、称谓和语气基准。
@@ -103,7 +105,7 @@
 1. 候选译文：当前批次的完整 CN 候选。
 2. 定位信息：`csv_row`、`id / stable_id`、`scene`、`speaker_jp`、`jp_text`。
 3. 问题清单：拿不准的术语、称谓、剧情理解和特殊表达。
-4. 新术语候选：交给 [`terminology.md`](terminology.md) 处理。
+4. 新术语候选：交给 [`04-terminology.md`](04-terminology.md) 处理。
 5. 交接摘要：本批范围、总行数和下一批起点。
 
 初译状态只使用：
@@ -125,7 +127,7 @@
 5. 原文功能性符号是否有明显遗漏。
 6. 是否把不确定内容如实列为 `question`。
 
-译者自检不能代替 [`review.md`](review.md) 规定的独立审核。
+译者自检不能代替 [`06-review.md`](06-review.md) 规定的独立审核。
 
 ## 11. 初译完成标准
 

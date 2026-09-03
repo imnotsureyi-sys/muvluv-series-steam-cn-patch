@@ -1,4 +1,6 @@
-# 单个游戏项目清单
+# 01 · 单个游戏项目清单
+
+[规则顺序](README.md) · 下一步：[02 源数据](02-source-data.md)
 
 每个受支持游戏在 `AGE2/games/<game>/` 或 `rUGP/games/<game>/` 下保存一个
 `project.toml`。它是面向人和自动检查的入口，不替代翻译表、图片清单、构建脚本或

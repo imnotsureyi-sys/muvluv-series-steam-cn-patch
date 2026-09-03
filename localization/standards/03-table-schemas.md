@@ -1,6 +1,8 @@
-# 翻译与图片表字段约定
+# 03 · 翻译与图片表字段约定
 
-[返回本地化工作区](../README.md) · [源数据规范](source-data.md) · [单个游戏项目清单](game-project.md)
+[规则顺序](README.md) · 上一步：[02 源数据](02-source-data.md) · 下一步：[04 术语](04-terminology.md)
+
+[返回本地化工作区](../README.md) · [源数据规范](02-source-data.md) · [单个游戏项目清单](01-game-project.md)
 
 本仓库有多代已经由 manifest 和 SHA-256 锁定的表。为了“看起来统一”直接重命名历史
 表头，会改变整份 CSV 字节、破坏公开证据并让旧工具失配。因此采用两层规则：

@@ -22,4 +22,4 @@
 3. 有可靠出处且经项目审核采用的目标语言惯用译名。
 4. 根据专名类别作出的音译、意译或保留拉丁字母决定。
 
-存在歧义时保留为候选或 `question`，并记录依据；不要静默猜测。完整流程见 [`../standards/terminology.md`](../standards/terminology.md)。
+存在歧义时保留为候选或 `question`，并记录依据；不要静默猜测。完整流程见 [`../standards/04-terminology.md`](../standards/04-terminology.md)。
