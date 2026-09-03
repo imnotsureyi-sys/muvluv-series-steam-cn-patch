@@ -22,6 +22,7 @@ from .crsa_vm_pool import (
     CvmPoolError,
     VmMessageCommand,
     find_vm_message_commands,
+    infer_direct_pool_base,
     infer_pool_base,
     parse_direct_pool,
 )
@@ -644,6 +645,8 @@ def derive_pool_base_from_source_offsets(
     payload: bytes,
     commands: Sequence[VmMessageCommand],
     source_offsets: Iterable[int],
+    *,
+    include_translation_anchors: bool = False,
 ) -> int:
     """Fallback pool inference anchored by independently discovered sources."""
 
@@ -656,10 +659,12 @@ def derive_pool_base_from_source_offsets(
     candidates: set[int] = set()
     for command in referenced[:32]:
         for native_offset in sorted(native)[:64]:
-            for prefix_size in (0, 2, 8):
-                base = native_offset - command.source_index * 2 - prefix_size
-                if 4 <= base < len(payload):
-                    candidates.add(base)
+            indices = (command.source_index, command.translation_index) if include_translation_anchors else (command.source_index,)
+            for index in indices:
+                for prefix_size in (0, 2, 8):
+                    base = native_offset - index * 2 - prefix_size
+                    if 4 <= base < len(payload):
+                        candidates.add(base)
     scored: list[tuple[int, int]] = []
     for base in candidates:
         try:
@@ -667,8 +672,10 @@ def derive_pool_base_from_source_offsets(
         except CvmPoolError:
             continue
         matched = sum(
-            _canonical_native_offset(payload, source.offset) in native
-            for source, _translation in layout.command_slots
+            (_canonical_native_offset(payload, source.offset) in native
+             or (include_translation_anchors
+                 and _canonical_native_offset(payload, translation.offset) in native))
+            for source, translation in layout.command_slots
         )
         scored.append((matched, base))
     if not scored:
@@ -800,7 +807,10 @@ def extract_text_slots(
             )
 
     for record in scan_inline_unicode_records(payload):
-        if not record.source_text:
+        if not record.source_text and not (
+            record.has_translation_delimiter
+            and any(c.isprintable() and not c.isspace() for c in record.translation_text)
+        ):
             continue
         if not (
             record.has_translation_delimiter
@@ -845,6 +855,22 @@ def extract_text_slots(
                 vm_pool_base = infer_pool_base(payload, vm_commands)
             except CvmPoolError as error:
                 structural_error = error
+                try:
+                    vm_pool_base = infer_direct_pool_base(payload, vm_commands)
+                except CvmPoolError as direct_error:
+                    structural_error = CvmPoolError(f"{error}; direct={direct_error}")
+                    if candidates:
+                        # In a localized archive the independent readable
+                        # anchor can be the Chinese display, not the source.
+                        try:
+                            vm_pool_base = derive_pool_base_from_source_offsets(
+                                payload, vm_commands, candidates,
+                                include_translation_anchors=True,
+                            )
+                        except CvmPoolError as display_error:
+                            structural_error = CvmPoolError(
+                                f"{structural_error}; display_anchors={display_error}"
+                            )
         if vm_pool_base is None:
             warnings.append(
                 "cvmmsg3_pool_unresolved:"
@@ -858,9 +884,12 @@ def extract_text_slots(
                 warnings.append(f"cvmmsg3_pool_parse_failed:{error}")
             else:
                 for source, translation in layout.command_slots:
-                    if not source.text or not any(
-                        ord(character) >= 0x20 for character in source.text
-                    ):
+                    # The VM can render the translation even when the source
+                    # is empty or only U+0005 (PF's training-scene opening).
+                    # Keep the source anchor/identity; never promote loose
+                    # display-looking bytes without this exact reference.
+                    if not (_visible_characters(source.text)
+                            or any(c.isprintable() and not c.isspace() for c in translation.text)):
                         continue
                     source_start = source.offset + source.prefix_size
                     translation_start = translation.offset + translation.prefix_size

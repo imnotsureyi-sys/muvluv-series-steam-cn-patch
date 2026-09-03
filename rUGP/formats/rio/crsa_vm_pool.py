@@ -266,6 +266,8 @@ def parse_direct_pool(
 ) -> DirectPoolLayout:
     if base < 4 or base > len(payload):
         raise CvmPoolError("pool base is outside the payload")
+    if commands and max(command.end_offset for command in commands) > base - 4:
+        raise CvmPoolError("pool overlaps the CVMMsg3 command stream")
     declared_units = struct.unpack_from("<I", payload, base - 4)[0]
     end = base + declared_units * 2
     if end > len(payload):
@@ -282,6 +284,11 @@ def parse_direct_pool(
             declared_units=declared_units,
             index=command.source_index,
         )
+        # Adjacent indices prove this NUL is the complete empty source,
+        # rather than the optional NUL wrapper used by longer native slots.
+        if (command.translation_index == command.source_index + 1
+                and payload[source.offset:source.offset + 2] == b"\x00\x00"):
+            source = DirectSlot(source.index, source.offset, 0, b"\x00\x00", "")
         translation = extract_direct_slot(
             payload,
             base=base,
@@ -302,6 +309,8 @@ def parse_pool(payload: bytes, commands: tuple[VmMessageCommand, ...], base: int
         raise CvmPoolError("payload has no CVMMsg3 commands")
     if base < 4 or base > len(payload):
         raise CvmPoolError("pool base is outside the payload")
+    if max(command.end_offset for command in commands) > base - 4:
+        raise CvmPoolError("pool overlaps the CVMMsg3 command stream")
     declared_units = struct.unpack_from("<I", payload, base - 4)[0]
     end = base + declared_units * 2
     if end > len(payload):
@@ -359,6 +368,31 @@ def parse_pool(payload: bytes, commands: tuple[VmMessageCommand, ...], base: int
         prefix_raw=prefix_raw,
         pairs=tuple(pairs),
     )
+
+
+def infer_direct_pool_base(payload: bytes, commands: tuple[VmMessageCommand, ...]) -> int:
+    """Locate a unique direct-reference pool after the complete message stream.
+
+    Unlike contiguous-pair inference, direct references allow auxiliary strings,
+    aliases and preserved old translations between the referenced slots.
+    """
+    text_commands = tuple(c for c in commands if (c.source_index, c.translation_index) != (0, 0))
+    if not text_commands:
+        raise CvmPoolError("cannot infer a pool without text commands")
+    minimum = max(c.translation_index for c in text_commands) + 1
+    candidates = []
+    for base in range(max(c.end_offset for c in commands) + 4, len(payload)):
+        units = struct.unpack_from('<I', payload, base - 4)[0]
+        if units < minimum or base + units * 2 > len(payload):
+            continue
+        try:
+            parse_direct_pool(payload, commands, base)
+        except CvmPoolError:
+            continue
+        candidates.append(base)
+    if len(candidates) != 1:
+        raise CvmPoolError(f"expected one direct CVMMsg3 pool base, found {candidates[:20]}")
+    return candidates[0]
 
 
 def infer_pool_base(payload: bytes, commands: tuple[VmMessageCommand, ...]) -> int:

@@ -1,0 +1,1111 @@
+{
+  "schema": "photon-crsa-display-gap-audit/v1",
+  "baseline_commit": "daae3d398525ca7d20dd34e0c6592c0cd14ea3f7",
+  "games": {
+    "pf": {
+      "volumes": [
+        {
+          "name": "photonflowers11.rio",
+          "bytes": 2147465920,
+          "sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+          "signatures": 114,
+          "valid_crsa": 114,
+          "record_failures": [],
+          "payload_failures": []
+        },
+        {
+          "name": "photonflowers11.rio.002",
+          "bytes": 1684696824,
+          "sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+          "signatures": 87,
+          "valid_crsa": 87,
+          "record_failures": [],
+          "payload_failures": []
+        }
+      ],
+      "summary": {
+        "blocks": 201,
+        "slots": 13798,
+        "vm_commands": 13163,
+        "vm_pairs": 13163,
+        "zero_index_commands": 0,
+        "nul_candidates": 640222,
+        "marked_byte_candidates": 28368,
+        "counted_records": 1921,
+        "counted_markers": 1923,
+        "malformed_counted_markers": 2,
+        "cached_command_candidates": 0,
+        "warnings": 0,
+        "counted_do_not_translate": 1570,
+        "counted_pending": 1,
+        "vm_do_not_translate": 207,
+        "vm_confirmed_display": 4,
+        "unreferenced_pool_strings": 9
+      },
+      "declarations": [
+        {
+          "name": "CMsgSelBox",
+          "schema": 17,
+          "count": 81
+        },
+        {
+          "name": "CVmGenericMsg",
+          "schema": 21,
+          "count": 167
+        },
+        {
+          "name": "CVmMsg3",
+          "schema": 21,
+          "count": 47
+        }
+      ],
+      "extraction_changes": [
+        {
+          "block": "photonflowers11.rio.002.0413194600",
+          "added": 4,
+          "changed": 0,
+          "removed": 0,
+          "old_pool": 191596,
+          "new_pool": 191596
+        }
+      ],
+      "candidate_decisions": {
+        "do_not_translate": 1777,
+        "pending": 10,
+        "confirmed_display": 4
+      },
+      "unowned_byte_probe_decisions": {
+        "pending": 27749,
+        "do_not_translate": 619
+      },
+      "increment_spec": "rUGP/games/photonflowers/translations/increments/crsa-display-20260903.json",
+      "increment_spec_file_sha256": "EC77B52A18D8FC39B206B03B698CBCC4D8AEFF233F6C42717D0C4399C835BA86",
+      "candidate_sha256": "805C35B3A76D8577921F8C2379C7CC31F7287BADEE76A979083DC57207D0E66A",
+      "candidate_bytes": 2899212,
+      "candidate_routes": 25,
+      "base_ruo_sha256": "AB347B81928A745CE70128F0A6842FC6F93E591635235C734D749E5B0EB49B0A",
+      "validation": {
+        "identity_reencode": true,
+        "strict_all_checksums": true,
+        "compatible_plaintext_readback": true,
+        "all_vm_commands_reparsed": true,
+        "only_target_translation_indices_changed": true,
+        "original_pool_preserved": true,
+        "all_source_slots_preserved": true,
+        "unrelated_display_slots_preserved": true,
+        "object_suffix_preserved": true,
+        "all_inherited_routes_preserved": true,
+        "inherited_routes": 24,
+        "runtime_tested": false,
+        "installed": false
+      }
+    },
+    "pm": {
+      "volumes": [
+        {
+          "name": "photonmelodies11.rio",
+          "bytes": 1913545000,
+          "sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+          "signatures": 47,
+          "valid_crsa": 47,
+          "record_failures": [],
+          "payload_failures": []
+        },
+        {
+          "name": "photonmelodies11.rio.002",
+          "bytes": 1903007556,
+          "sha256": "8A995CAB6A8075A291BB2340E9772FA219A41643635527B2EDEFC6FDA5639EAF",
+          "signatures": 71,
+          "valid_crsa": 71,
+          "record_failures": [],
+          "payload_failures": []
+        },
+        {
+          "name": "photonmelodies11.rio.003",
+          "bytes": 2121421700,
+          "sha256": "D75F15E0AE1ECF310AE42E1D8D6E48BCDA15E2D440C923A7F19622E52A394B78",
+          "signatures": 59,
+          "valid_crsa": 59,
+          "record_failures": [],
+          "payload_failures": []
+        },
+        {
+          "name": "photonmelodies11.rio.004",
+          "bytes": 1883168284,
+          "sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74",
+          "signatures": 88,
+          "valid_crsa": 88,
+          "record_failures": [],
+          "payload_failures": []
+        }
+      ],
+      "summary": {
+        "blocks": 265,
+        "slots": 48330,
+        "vm_commands": 44848,
+        "vm_pairs": 44605,
+        "zero_index_commands": 243,
+        "nul_candidates": 1475095,
+        "marked_byte_candidates": 78799,
+        "counted_records": 3033,
+        "counted_markers": 3046,
+        "malformed_counted_markers": 13,
+        "cached_command_candidates": 0,
+        "warnings": 0,
+        "counted_do_not_translate": 2836,
+        "unreferenced_pool_strings": 75,
+        "vm_do_not_translate": 52,
+        "counted_pending": 4,
+        "vm_confirmed_display": 36
+      },
+      "declarations": [
+        {
+          "name": "CMsgSelBox",
+          "schema": 17,
+          "count": 143
+        },
+        {
+          "name": "CVmGenericMsg",
+          "schema": 21,
+          "count": 219
+        },
+        {
+          "name": "CVmMsg3",
+          "schema": 21,
+          "count": 98
+        }
+      ],
+      "extraction_changes": [
+        {
+          "block": "photonmelodies11.rio.004.0655753292",
+          "added": 783,
+          "changed": 43,
+          "removed": 727,
+          "old_pool": 99386,
+          "new_pool": 103408
+        },
+        {
+          "block": "photonmelodies11.rio.004.0871742696",
+          "added": 36,
+          "changed": 0,
+          "removed": 0,
+          "old_pool": 24098,
+          "new_pool": 24098
+        },
+        {
+          "block": "photonmelodies11.rio.004.0920089932",
+          "added": 1,
+          "changed": 0,
+          "removed": 0,
+          "old_pool": null,
+          "new_pool": 689
+        },
+        {
+          "block": "photonmelodies11.rio.004.1239716184",
+          "added": 1,
+          "changed": 0,
+          "removed": 0,
+          "old_pool": null,
+          "new_pool": 1014
+        }
+      ],
+      "candidate_decisions": {
+        "do_not_translate": 2892,
+        "pending": 75,
+        "confirmed_display": 36
+      },
+      "unowned_byte_probe_decisions": {
+        "pending": 78238,
+        "do_not_translate": 561
+      },
+      "increment_spec": "rUGP/games/photonmelodies/translations/increments/crsa-display-20260903.json",
+      "increment_spec_file_sha256": "8F9AD8E558F11AED548E28B067D00D78F88E24E550F2EC983AEEEBA5D5F6D3BD",
+      "candidate_sha256": "1C73DE3324661FD03DE80776E86C52578D94E17735E1E32E8BB5437A6DE5993E",
+      "candidate_bytes": 34220,
+      "candidate_routes": 1,
+      "base_ruo_sha256": "DF3F619804A92FDB4057192DC43DD748EA778ADC52BC498CE80524C014B81119",
+      "validation": {
+        "identity_reencode": true,
+        "strict_all_checksums": true,
+        "compatible_plaintext_readback": true,
+        "all_vm_commands_reparsed": true,
+        "only_target_translation_indices_changed": true,
+        "original_pool_preserved": true,
+        "all_source_slots_preserved": true,
+        "unrelated_display_slots_preserved": true,
+        "object_suffix_preserved": true,
+        "all_inherited_routes_preserved": true,
+        "inherited_routes": 0,
+        "runtime_tested": false,
+        "installed": false
+      }
+    }
+  },
+  "extracted": true,
+  "translated": 40,
+  "built": true,
+  "runtime_tested": false,
+  "installed": false,
+  "reviewed_authority": {
+    "rows": 57547,
+    "files": [
+      {
+        "file": "rUGP/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv",
+        "rows": 6033,
+        "sha256": "F2AFC90C8DD09E48D96D88655E8A1B32C2D85AD5B8F25305B57EE83E7798D5FC",
+        "unchanged_from_HEAD_and_main": true
+      },
+      {
+        "file": "rUGP/games/photonflowers/translations/reviewed/extra.zh-Hans.csv",
+        "rows": 6931,
+        "sha256": "D1A6E2195A430CE8F8E2A064BA087E2F41AB57285E2F1AD85EEEF8CC90BC8AB0",
+        "unchanged_from_HEAD_and_main": true
+      },
+      {
+        "file": "rUGP/games/photonmelodies/translations/reviewed/adoration-resurrection.zh-Hans.csv",
+        "rows": 8407,
+        "sha256": "794E10E5EFC5716AA2F58B0E06856B9E4F651EE63EE5554D27B1583D4DA6D128",
+        "unchanged_from_HEAD_and_main": true
+      },
+      {
+        "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.002.zh-Hans.csv",
+        "rows": 771,
+        "sha256": "BEF98CE48F6B4CBE761EDD146D082C106E46C6957E93E1E320B6B6B18AAB145B",
+        "unchanged_from_HEAD_and_main": true
+      },
+      {
+        "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.003.zh-Hans.csv",
+        "rows": 4850,
+        "sha256": "FAEAFDD1F0E07CDC08B9508E50C07F4A8FF279AD0E396056A768FD3C06A810CE",
+        "unchanged_from_HEAD_and_main": true
+      },
+      {
+        "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.004.zh-Hans.csv",
+        "rows": 30555,
+        "sha256": "78B30525CC58FFF99C444EB05C95C0DAB49BC75171E9B86F3791236F2CCE3C92",
+        "unchanged_from_HEAD_and_main": true
+      }
+    ]
+  },
+  "pf_u0006_preserved": {
+    "raw_key": "0xA3272C48",
+    "logical_offset": "0xAF05DC",
+    "bytes": 69484,
+    "sha256": "197C20343A36E9AB1619DB2879DB370B2419A15B6C16345C0B3EE99C84FD8F5F",
+    "route_and_payload_exact": true
+  },
+  "live_volumes_match_frozen": [
+    {
+      "game": "pf",
+      "name": "photonflowers11.rio",
+      "sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+      "matches_frozen": true
+    },
+    {
+      "game": "pf",
+      "name": "photonflowers11.rio.002",
+      "sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio",
+      "sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio.002",
+      "sha256": "8A995CAB6A8075A291BB2340E9772FA219A41643635527B2EDEFC6FDA5639EAF",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio.003",
+      "sha256": "D75F15E0AE1ECF310AE42E1D8D6E48BCDA15E2D440C923A7F19622E52A394B78",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio.004",
+      "sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74",
+      "matches_frozen": true
+    }
+  ],
+  "limitations": [
+    "Static coverage of all checksum-valid six-byte CRsa signatures in six named volumes; not a gameplay reachability proof.",
+    "CVMMsg3, counted Unicode fields and both-parity marked NUL candidates inspected; complete Ocean cache replay and generic-message display ownership not implemented.",
+    "85 unreferenced/owner-unconfirmed fields remain pending; no guesses written back. Raw binary pattern probes are retained separately, not counted as established dialogue.",
+    "PM active RUO was absent at snapshot; PM candidate is a one-route increment against that state. If another RUO is restored, merge/rebuild against it before installation.",
+    "No runtime game test and no installation in this task."
+  ],
+  "pending_fields": [
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.0014809024",
+      "kind": "unowned_counted",
+      "reason": "counted field has no proven display owner; no writeback",
+      "offset": 3386,
+      "text_sha256": "D8450BAD3A79FF716C089AF2D9CBD4F50CAC084C2748A3509310D0746409460A"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.002.1263207112",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 65390,
+      "text_sha256": "DFB0C700EDFD9C7274CE6CDDCEB155EF47183DF365C9A08C7950DBC9D5338096"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.002.1263207112",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 76986,
+      "text_sha256": "A2BA58D4EFD395CEBAF70CCEF332E25D1DFCE23AA9B2B9529F76041C2209B8E9"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.002.1377793936",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 229885,
+      "text_sha256": "0D512C920CA1B3790FCD89DA57A749A5570440E3035FB2BD40BF52C1EC6D627F"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.002.1377793936",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 230899,
+      "text_sha256": "F7C5CF249A67A8848B981796FE8872B111EB0F53AF0AE327CFB19FD7C73F9C87"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.002.1377793936",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 233991,
+      "text_sha256": "F7C5CF249A67A8848B981796FE8872B111EB0F53AF0AE327CFB19FD7C73F9C87"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.0488271272",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 230294,
+      "text_sha256": "62D945004B9827D58188BA1166468B9D9F870BDC5C6F10CF7C60A0962C98B580"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.0488271272",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 233200,
+      "text_sha256": "75CC78EE2219DFE725D6765E86F9E32390591CC59E312D86C44D87D9B18CB235"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.0488271272",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 236580,
+      "text_sha256": "8D395848DBEB5064035AF084BD829C42369CBACD7F3FA0D07B3DEC05196E77CA"
+    },
+    {
+      "game": "pf",
+      "block": "photonflowers11.rio.0488838928",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 152403,
+      "text_sha256": "1979D768D8A6AC47C37943A87DCEEBBE082F008CBDBC0E62CE319098CFE3B2BC"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 223428,
+      "text_sha256": "3590CA065AF6BB66879A4F6EBBFD5F5DAE87CAB7087A6201A19F80D44F06E2A8"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 224294,
+      "text_sha256": "8438E477EBCABF960424F8EA4A516887A38371A1E57CA224035E02E1C3D840C3"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 224974,
+      "text_sha256": "4A699D1E2549F615182701A998AAF210EC834C41F458911A10D54E63D8C60B62"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 225880,
+      "text_sha256": "E5C93982B047F7C5B1D2B13C57264B9CD3C0B56229348F952DC94C4BDB45F380"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 253802,
+      "text_sha256": "04839227DF3C0C7017450F1F122A9D9624ED0606C824FB5334F70B6E99AC5602"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 253862,
+      "text_sha256": "3409EFD3629BED0FB9153401351C4A81514BBF94FD25DE10DAE8564EEA3E6DF1"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 278846,
+      "text_sha256": "395DEFA5B3EF8AEE26CD755B84D701C87BF104D94E9664FE0995FD8561DDF2FB"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 278880,
+      "text_sha256": "395DEFA5B3EF8AEE26CD755B84D701C87BF104D94E9664FE0995FD8561DDF2FB"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 288464,
+      "text_sha256": "33ACAF874687E8B3DD01AC20B475D0347752BF79B1A7C8514E0F8DF30B65A6F0"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 288560,
+      "text_sha256": "0DD8D2CC6E5B5784D17657AA23CBA49473C5B8C7F6DAFDE7A53D8F2AECEE64B6"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 351598,
+      "text_sha256": "9B46571EE6BE7A7279E96E84008735947D6872542F31E764C91C69AEA4E593B5"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 351758,
+      "text_sha256": "0F98DAE5150C101C2A253B5E6AC990A034DA56AB2E20152E1010A1F495DBFBBD"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 351946,
+      "text_sha256": "94B9850F8B1D639FC668AB407DE4CB05F4B4C449173EAA7471D14D921FCF4796"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 352034,
+      "text_sha256": "6DC866AA1B4D104BF824BA0F208A60800181D66D88FBE437538E2E2121C18262"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 352180,
+      "text_sha256": "7D5B11B67624A6553AE8412BB9B7410134162595ADE752FD86CC11F74F258F76"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1214091360",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 352314,
+      "text_sha256": "6C20EFE27A15B143B51ADB004FA2B7519A92FEC9EF55DFBBDC2C0EDB74A592FD"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.002.1665565448",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 70017,
+      "text_sha256": "AA46130647E1BFE626D3087C6FF16907E14E44AE0E73FED68962501B6E9D441A"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.003.1347879948",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 97895,
+      "text_sha256": "8AF74816F00F0865F82215EF82C8054C03338D2C66A985533DEE75E5B290F6F9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.003.1519248208",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 61968,
+      "text_sha256": "17C78A05CEB54AFBC899F0AB3E064C491A8526C5E8AE995E9BC0D022B878AD16"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.003.1519248208",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 63618,
+      "text_sha256": "DA62C1413EEC48699292C8332FC47C3D83D352CCC5E40D546B8096B3F757AE9C"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 112328,
+      "text_sha256": "83685153620737F97005A54BCA30A1FC3FEADC5ADCA53445E567C37C070C5111"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 122290,
+      "text_sha256": "0303BAB9A48374517F5F11EF8F77C21B498FDF71F412932A3990AA841547E625"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 125812,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 126278,
+      "text_sha256": "B2D09B8E0E9104CAA061E80ED6CB8A3F05EE7674D7974E05AF58356E0B6F3D2F"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 126682,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 126748,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 126814,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 127578,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 128630,
+      "text_sha256": "6F046A56606B48047362A32A9FBF807EF567A902DA72F1B3AFA4557FE3643E19"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 129110,
+      "text_sha256": "D9F024152722C59CE977CFF0A2AF3D37B73CA56360C4D98C036514A4CC416EB2"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 129144,
+      "text_sha256": "B04262EFE5F957D9A29F258F951E4255FDB51CA4E1515CC9C72FE04F40D3AE48"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 130344,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 132460,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 133892,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 134102,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 134562,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 145154,
+      "text_sha256": "9F96CF8BC103DE771598C8CD6E41B984F7F70DB5FB2C33FB7D49FFFBF64BE746"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 148640,
+      "text_sha256": "6F046A56606B48047362A32A9FBF807EF567A902DA72F1B3AFA4557FE3643E19"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 153350,
+      "text_sha256": "6F046A56606B48047362A32A9FBF807EF567A902DA72F1B3AFA4557FE3643E19"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 155394,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 155460,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 157954,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 158962,
+      "text_sha256": "B2D09B8E0E9104CAA061E80ED6CB8A3F05EE7674D7974E05AF58356E0B6F3D2F"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 165300,
+      "text_sha256": "6F046A56606B48047362A32A9FBF807EF567A902DA72F1B3AFA4557FE3643E19"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 180584,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 180894,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 184700,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 184930,
+      "text_sha256": "09A4E9131153BEF0C1754A2A6491B9C921C0EAA499255CDBE7366D6E705AE9ED"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 185136,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 186736,
+      "text_sha256": "9F96CF8BC103DE771598C8CD6E41B984F7F70DB5FB2C33FB7D49FFFBF64BE746"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 187078,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 190300,
+      "text_sha256": "2DA21F774F2BE6772DE99D4CF5155FED4C5FC41CBF783DD68161D18BE2605C6F"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 195160,
+      "text_sha256": "09A4E9131153BEF0C1754A2A6491B9C921C0EAA499255CDBE7366D6E705AE9ED"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 195232,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 195730,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 196156,
+      "text_sha256": "09A4E9131153BEF0C1754A2A6491B9C921C0EAA499255CDBE7366D6E705AE9ED"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 196940,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 197578,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 207360,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 207792,
+      "text_sha256": "83685153620737F97005A54BCA30A1FC3FEADC5ADCA53445E567C37C070C5111"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 223356,
+      "text_sha256": "40E7DC4FE304C7EC42211FF4C646CC2A352B29F0E53D08F7574BEB088FD3F44D"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 224636,
+      "text_sha256": "6F046A56606B48047362A32A9FBF807EF567A902DA72F1B3AFA4557FE3643E19"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 226156,
+      "text_sha256": "A76C6444DC1A20C2E9808323EF27CBEFB5F64F0B989F038710AF521ADF2A72D4"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 227398,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 230976,
+      "text_sha256": "B2D09B8E0E9104CAA061E80ED6CB8A3F05EE7674D7974E05AF58356E0B6F3D2F"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 231276,
+      "text_sha256": "6F046A56606B48047362A32A9FBF807EF567A902DA72F1B3AFA4557FE3643E19"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 231598,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 233622,
+      "text_sha256": "84A0C6D4111994E4201186A11BFFADB789C0D49A905D11168C703CCE261C3258"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 237380,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 240914,
+      "text_sha256": "2A06EAEBDFA1CF14522694EBB1D40E1756E6E9D75A55C0140E15E213D61DCB03"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 242576,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.0655753292",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 248070,
+      "text_sha256": "F79B21A425C1AD0E4122486FBABFC1F0F2DEFD243FAFEEEA1B16213C9693A6C9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.1009504344",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 85831,
+      "text_sha256": "B1FF20ECFADEDD63900C799FC79822DE143E44B54F5B8C5ABC6D076F561B7668"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.1212336624",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 26086,
+      "text_sha256": "A2BA58D4EFD395CEBAF70CCEF332E25D1DFCE23AA9B2B9529F76041C2209B8E9"
+    },
+    {
+      "game": "pm",
+      "block": "photonmelodies11.rio.004.1699608664",
+      "kind": "unreferenced_pool_string",
+      "reason": "no exact message reference; may be auxiliary or preserved old pool data",
+      "offset": 49435,
+      "text_sha256": "7D501FAEB306AFD160E8D9BF8B1B7569EBDD884FC3D276EB6BFFFF95AE49866B"
+    }
+  ],
+  "overlay_comparison": [
+    {
+      "mode": "PF-current",
+      "sha256": "AB347B81928A745CE70128F0A6842FC6F93E591635235C734D749E5B0EB49B0A",
+      "routes": 24,
+      "crsa": 22,
+      "initial_unseeded_warnings": 0,
+      "remaining_warnings": 0,
+      "source_anchor_resolutions": []
+    },
+    {
+      "mode": "PF-frozen",
+      "sha256": "65FBEE862DA1A47BB74EDCBE6F987D5395D796200F22CCC144DD4C679B77CF7A",
+      "routes": 46,
+      "crsa": 25,
+      "initial_unseeded_warnings": 0,
+      "remaining_warnings": 0,
+      "source_anchor_resolutions": []
+    },
+    {
+      "mode": "PM-frozen",
+      "sha256": "A46BC92D39EEF9FFE16E24613F9D5B6BA2DDC23859B291837ABE960B37A6D332",
+      "routes": 97,
+      "crsa": 50,
+      "initial_unseeded_warnings": 2,
+      "remaining_warnings": 0,
+      "source_anchor_resolutions": [
+        {
+          "key": "0x92cdb20",
+          "baseline_block": "photonmelodies11.rio.004@920089932",
+          "pool_base": 689,
+          "source_offsets": [
+            691
+          ],
+          "command_stream_and_pre_pool_bytes_exact": true,
+          "source_slot_bytes_exact": true,
+          "resolved_slots": 1,
+          "method": "source anchors from independently resolved current raw record; no translation guess"
+        },
+        {
+          "key": "0xdf02223",
+          "baseline_block": "photonmelodies11.rio.004@1239716184",
+          "pool_base": 1014,
+          "source_offsets": [
+            1016
+          ],
+          "command_stream_and_pre_pool_bytes_exact": true,
+          "source_slot_bytes_exact": true,
+          "resolved_slots": 1,
+          "method": "source anchors from independently resolved current raw record; no translation guess"
+        }
+      ]
+    }
+  ],
+  "tests": {
+    "passed": 27,
+    "command": "python -m unittest rUGP.tests.formats.rio.test_crsa_text rUGP.tests.formats.rio.test_crsa_vm_pool rUGP.tests.text.test_extract_crsa_text rUGP.tests.text.test_build_crsa_display_increment rUGP.tests.text.test_audit_crsa_display_gaps"
+  },
+  "final_live_state": [
+    {
+      "game": "PF",
+      "ici_matches_frozen": true,
+      "ruo_present": true,
+      "ruo_sha256": "AB347B81928A745CE70128F0A6842FC6F93E591635235C734D749E5B0EB49B0A"
+    },
+    {
+      "game": "PM",
+      "ici_matches_frozen": true,
+      "ruo_present": false
+    }
+  ],
+  "reviewed_source_reconciliation": {
+    "recovered_or_corrected_rows_hash_matched": 800,
+    "retired_false_slots_matching_reviewed_ids": 0,
+    "coordinate_collisions_with_different_source_hashes": 2,
+    "collision_policy": "Original reviewed rows retained; new PM display-command identities used."
+  },
+  "parser_files": [
+    {
+      "path": "rUGP/formats/rio/crsa_text.py",
+      "sha256": "D6D394B3D1DAC594FC8311C47AAED861A8AC2D7C22461D5470B4450D2096F2B8"
+    },
+    {
+      "path": "rUGP/formats/rio/crsa_vm_pool.py",
+      "sha256": "B59F13BEA8298BC8455291BDC97E620F47F4DAB40B89F374C788A9671ABE275D"
+    }
+  ]
+}

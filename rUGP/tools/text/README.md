@@ -124,3 +124,24 @@ python -m unittest rUGP.tests.text.test_extract_crsa_text -v
 ```
 
 No real RIO or official Japanese script is stored in the test tree.
+
+## CRsa display-gap audit and incremental candidates
+
+`audit_crsa_display_gaps` scans every six-byte CRsa signature in all explicitly
+bound volumes, independently of ICI membership. It records invalid signatures,
+decoded payload identities, both UTF-16 parities, counted fields, exact CVMMsg3
+references, unsupported cached-command shapes and class declarations. Its
+outputs contain retail text and must stay in an ignored local directory.
+
+`summarize_crsa_display_audit` re-evaluates that cache after parser changes and
+exports a per-candidate decision ledger. A byte-pattern hit or unreferenced pool
+string is not an authorized translation. It does not prove full Ocean cache
+replay or gameplay reachability.
+
+`build_crsa_display_increment` accepts a hash-bound JSON increment and produces
+a new cumulative candidate RUO. It appends display strings, changes only selected
+translation indices, preserves the original source/pool/suffix and inherited
+routes, and checks the encrypted record and RUO readback. It never installs.
+Use a current, reconciled base; a frozen overlay must not silently replace newer
+routes. Existing reviewed IDs describe their original payload generation: do
+not join them to new extraction coordinates without matching source hashes.

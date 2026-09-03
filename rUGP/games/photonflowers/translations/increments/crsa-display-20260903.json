@@ -1,0 +1,62 @@
+{
+  "schema": "photon-crsa-display-increment/v1",
+  "game": "pf",
+  "volume": "photonflowers11.rio.002",
+  "block_offset": 413194600,
+  "source_raw_key": "0xC9238FDB",
+  "unit_size": 4,
+  "pool_base": 191596,
+  "effective_record_sha256": "50E2B87ED87BA64B7AC8A302A09A74278A3772277B820DF3379A0179DA272868",
+  "base_ruo_sha256": "AB347B81928A745CE70128F0A6842FC6F93E591635235C734D749E5B0EB49B0A",
+  "entries": [
+    {
+      "stable_id": "pf:static:photonflowers11.rio.002:413194600:00191598",
+      "command_order": 1,
+      "command_offset": 456,
+      "source_offset": 191598,
+      "translation_offset": 191602,
+      "source_slot_sha256": "2594B6A92EBFB1C3312DEB7D01C015FB95E9FBE9BD7BC6B527AF07813EC7B910",
+      "display_slot_sha256": "D7428599C5F57745D5F655778E473829F269BAC3997D0C1D594902FCE4027EE4",
+      "target_text": "<05>【美知留】「哈啊……哈啊……哈啊……哈啊……」",
+      "status": "translated_candidate",
+      "evidence": "cvmmsg3_exact_reference; user-confirmed display regression"
+    },
+    {
+      "stable_id": "pf:static:photonflowers11.rio.002:413194600:00191700",
+      "command_order": 2,
+      "command_offset": 524,
+      "source_offset": 191700,
+      "translation_offset": 191704,
+      "source_slot_sha256": "2594B6A92EBFB1C3312DEB7D01C015FB95E9FBE9BD7BC6B527AF07813EC7B910",
+      "display_slot_sha256": "033513D8C2D70270EEC4F0C40C4B27C0A2021F17E4291D2F9715DC9B2E01FFA4",
+      "target_text": "<05>【神宫司教官】「——怎么了，伊隅？他妈的想歇口气吗！？你的速度慢下来了！」",
+      "status": "translated_candidate",
+      "evidence": "cvmmsg3_exact_reference; user-confirmed display regression"
+    },
+    {
+      "stable_id": "pf:static:photonflowers11.rio.002:413194600:00191900",
+      "command_order": 3,
+      "command_offset": 840,
+      "source_offset": 191900,
+      "translation_offset": 191904,
+      "source_slot_sha256": "2594B6A92EBFB1C3312DEB7D01C015FB95E9FBE9BD7BC6B527AF07813EC7B910",
+      "display_slot_sha256": "409A6E995048B1E33C27189071B8ED3E20E4EF42F869AF2C28A74EF9EA313D93",
+      "target_text": "<05>【神宫司教官】「——是脑袋太沉了吗！？装了一肚子学问，连腿都迈不动了！？」",
+      "status": "translated_candidate",
+      "evidence": "cvmmsg3_exact_reference; user-confirmed display regression"
+    },
+    {
+      "stable_id": "pf:static:photonflowers11.rio.002:413194600:00192104",
+      "command_order": 4,
+      "command_offset": 1076,
+      "source_offset": 192104,
+      "translation_offset": 192108,
+      "source_slot_sha256": "2594B6A92EBFB1C3312DEB7D01C015FB95E9FBE9BD7BC6B527AF07813EC7B910",
+      "display_slot_sha256": "B8D5B9A2B6AEF32C0D0B75388AA479D07D9FC2218065341B4770261F15BC8C69",
+      "target_text": "<05>【美知留】「——不、不是……教官……！」",
+      "status": "translated_candidate",
+      "evidence": "cvmmsg3_exact_reference; user-confirmed display regression"
+    }
+  ],
+  "source_logical_byte_offset": 2560660520
+}

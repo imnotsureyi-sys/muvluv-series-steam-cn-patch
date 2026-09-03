@@ -48,6 +48,69 @@ def vm_body(
 
 
 class CrsaTextParserTests(unittest.TestCase):
+    def test_exact_vm_reference_keeps_translation_with_control_or_empty_source(self):
+        for source in ('\x05', ''):
+            for translation in ('\x05【Officer】「Go!」', '继续。', '…', '🚀'):
+                with self.subTest(source=source, translation=translation):
+                    pool = b'\x00\x00' + pair(source, translation)
+                    command = CVM_MSG3_DECLARATION + vm_body(4, 1, 2 + len(source))
+                    payload = command + b'\xa5' * (92 - len(command)) + struct.pack('<I', len(pool)//2) + pool
+                    report = extract_text_slots(payload)
+                    exact = [s for s in report.slots if s.evidence == 'cvmmsg3_exact_reference']
+                    self.assertEqual(len(exact), 1)
+                    self.assertEqual(exact[0].payload_offset, 98)
+                    self.assertEqual(exact[0].source_text, source)
+                    self.assertEqual(exact[0].existing_translation_text, translation)
+                    self.assertEqual(payload[exact[0].identity_start:exact[0].identity_end], pair(source, translation))
+
+    def test_control_only_vm_pair_is_not_translation_work(self):
+        for translation in ('\x05', ' \n\t', '\u2060'):
+            pool = b'\x00\x00' + pair('\x05', translation)
+            command = CVM_MSG3_DECLARATION + vm_body(4, 1, 3)
+            payload = command + b'\xa5' * (92-len(command)) + struct.pack('<I',len(pool)//2) + pool
+            self.assertEqual(extract_text_slots(payload).slots, ())
+        self.assertEqual(extract_text_slots(b'\xff\xff' + pair('\x05', '\x05【Officer】「Go!」')).slots, ())
+
+    def test_counted_translation_with_empty_source_keeps_source_anchor(self):
+        text = '\\|Continue'
+        payload = UNICODE_MARKER + bytes((len(text),)) + text.encode('utf-16le')
+        slot, = extract_text_slots(payload).slots
+        self.assertEqual(slot.source_text, '')
+        self.assertEqual(slot.source_end, slot.payload_offset)
+        self.assertEqual(slot.translation_offset, slot.payload_offset + 4)
+        self.assertEqual(slot.existing_translation_text, 'Continue')
+
+    def test_direct_pool_fallback_handles_gaps_and_rejects_command_overlap(self):
+        from rUGP.formats.rio.crsa_vm_pool import CvmPoolError, infer_direct_pool_base, parse_direct_pool
+        # A translated pool with a non-string trailer defeats contiguous-pair
+        # inference. Direct references still locate each source/display field.
+        pool = b'\x00\x00' + pair('JP\x01', '中文\x01') + b'\xff\xff'
+        command = CVM_MSG3_DECLARATION + vm_body(4, 1, 5)
+        payload = command + b'\xa5' * (92-len(command)) + struct.pack('<I',len(pool)//2) + pool
+        commands = find_vm_message_commands(payload)
+        self.assertEqual(infer_direct_pool_base(payload,commands),96)
+        with self.assertRaisesRegex(CvmPoolError,'overlaps'):
+            parse_direct_pool(payload,commands,20)
+        report = extract_text_slots(payload)
+        self.assertEqual(report.vm_pool_base,96)
+        self.assertEqual(report.warnings,())
+        exact = [s for s in report.slots if s.evidence=='cvmmsg3_exact_reference']
+        self.assertEqual(exact[0].source_text,'JP\x01')
+        self.assertEqual(exact[0].existing_translation_text,'中文\x01')
+
+    def test_localized_display_anchor_disambiguates_multiple_structural_pools(self):
+        from rUGP.formats.rio.crsa_vm_pool import find_vm_message_commands
+        # Two superficially valid pool headers, only one bound to an
+        # independently discovered display string. This is a source-offset
+        # identity correction, not a new translation.
+        command = CVM_MSG3_DECLARATION + vm_body(4, 1, 5)
+        first = b'\x00\x00' + pair('ab\x01','cd\x01')
+        second = b'\x00\x00' + pair('JP\x01','中文\x01')
+        payload = command + b'\xa5'*(92-len(command)) + struct.pack('<I',len(first)//2)+first
+        payload += b'\xa5'*(196-len(payload)) + struct.pack('<I',len(second)//2)+second
+        commands = find_vm_message_commands(payload)
+        self.assertEqual(derive_pool_base_from_source_offsets(payload,commands,[210],include_translation_anchors=True),200)
+
     def test_unseeded_structural_pair_recovers_source_and_translation(self) -> None:
         source = "起立\x01"
         translation = "Stand up.\x01"
