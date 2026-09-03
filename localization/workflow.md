@@ -1,6 +1,6 @@
 # 从初译到玩家反馈的完整本地化工作流
 
-[English](workflow.en.md) · [返回本地化工作区](README.md) · [初译规则](standards/translation.md) · [独立审核](standards/review.md) · [术语规则](standards/terminology.md) · [源数据规则](standards/source-data.md)
+[English](workflow.en.md) · [返回本地化工作区](README.md) · [规则顺序](standards/README.md) · [源数据规则](standards/02-source-data.md) · [术语规则](standards/04-terminology.md) · [初译规则](standards/05-translation.md) · [独立审核](standards/06-review.md)
 
 这套流程来自本项目实际完成 TDA、帝都燃烧篇和 Photon 文本时形成的方法。核心不是
 “让 AI 把整张表翻译一遍”，而是把剧情理解、术语冻结、第一次翻译、第二次独立审核、
@@ -34,6 +34,11 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 成功不等于游戏运行成功；游戏能启动也不等于全文、图片和字体已经通过。
 
 ## 0. 冻结合法输入与稳定身份
+
+开工先依次核对 [01 项目清单](standards/01-game-project.md)、
+[02 源数据](standards/02-source-data.md)和 [03 表字段](standards/03-table-schemas.md)，
+确认本次使用的游戏、引擎、权威文件及字段映射。后续第 1—3 步分别应用 04 术语、
+05 初译、06 独立审核；详细对应见[规范入口](standards/README.md)。
 
 1. 从自己合法拥有的游戏安装中提取源数据。
 2. 记录游戏版本、Steam App ID、资源路径、对象 ID／偏移和源文件 SHA-256。
@@ -75,7 +80,7 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 | `status` | `translated`、`question` 或 `blocked` |
 
 这一轮的任务是准确理解日文并写出自然中文，不做技术写回。英语槽、旧中文、OCR 和机器
-翻译只能用于发现问题，不能取代日文原文。详细规则见[初译规则](standards/translation.md)。
+翻译只能用于发现问题，不能取代日文原文。详细规则见[初译规则](standards/05-translation.md)。
 
 输出：候选译文、术语增量、问题清单、批次范围和下一批起点。
 
@@ -93,7 +98,7 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 第一次翻译的状态。
 
 输出：逐句结论、修改前后文本、修改理由、尚未解决的问题和审核统计。完整标准见
-[独立审核规则](standards/review.md)。
+[独立审核规则](standards/06-review.md)。
 
 ## 4. 解决 `question` 并再次冻结术语
 

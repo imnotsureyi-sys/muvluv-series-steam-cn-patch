@@ -2,7 +2,7 @@
 
 [中文](workflow.md) · [Localization workspace](README.md) ·
 [Start a new language](new-locale.md) · [Asset map](../docs/en/asset-map.md) ·
-[Image workflow](image-workflow.md)
+[Image workflow](image-workflow.md) · [Ordered standards](standards/README.md)
 
 This is the process developed while working on the TDA, The Imperial Capital
 Burns, and Photon texts. Its core is not “ask an AI to translate a whole

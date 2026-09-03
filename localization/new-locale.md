@@ -102,7 +102,7 @@ style rules rather than Chinese prose conventions:
 2. Produce a first translation in stable scene/resource order while preserving identity and source-hash fields. Mark uncertainty instead of guessing.
 3. In a separate pass, reread the Japanese and decide every candidate as `keep`, `revise` or `question`. This is not Chinese-only polishing.
 4. Resolve questions using later context, voice, screenshots, established setting terms and actual resource use; then re-freeze terminology and repeated expressions.
-5. Follow the target-neutral parts of [translation](standards/translation.md), [terminology](standards/terminology.md), [review](standards/review.md), and [source-data](standards/source-data.md).
+5. Follow the [ordered standards](standards/README.md): project and source preparation (01–03), story context and terminology (04), first translation (05), then independent review (06). Reuse the target-neutral rules and define expression rules for the new language.
 6. Define target-language punctuation, typography, honorific, line-breaking and naming rules. Korean, Russian and other targets need their own font and layout gates.
 7. Feed reproducible player reports back into the maintained table and rerun review/build/QA. Never patch only a generated archive.
 

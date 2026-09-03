@@ -59,7 +59,7 @@ REQUIRED = {
     "localization/new-locale.md",
     "localization/workflow.md",
     "localization/fonts/README.md",
-    "localization/standards/game-project.md",
+    "localization/standards/01-game-project.md",
     "localization/tools/verify_steam_depot_manifest.py",
     "AGE2/tools/text/build_review_ledger.py",
     "AGE2/docs/postmortems/loose-overlay-boundary.md",
