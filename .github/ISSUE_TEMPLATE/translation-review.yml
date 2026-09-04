@@ -1,35 +1,35 @@
-name: Translation correction
-description: Propose a source-backed wording, terminology, speaker, or context correction.
+name: 翻译修正 / Translation correction
+description: 根据日文原文与上下文提交措辞、术语或说话人修正。Propose a source-backed translation correction.
 title: "[Translation] "
 labels: [translation]
 body:
   - type: input
     id: game
     attributes:
-      label: Game, chapter, and scene
+      label: 游戏、章节与场景 / Game, chapter and scene
     validations:
       required: true
   - type: input
     id: identity
     attributes:
-      label: Stable ID or nearby line
-      description: Use the public table's ID/row identity when available.
+      label: 稳定 ID 或附近台词 / Stable ID or nearby line
+      description: 如果公开表中存在 ID，请尽量提供；否则附上可定位的前后台词。Use a stable ID when available, or provide nearby dialogue.
   - type: textarea
     id: source
     attributes:
-      label: Japanese source and context
-      description: Include speaker and surrounding lines; do not attach bulk script dumps.
+      label: 日文原文与上下文 / Japanese source and context
+      description: 请提供说话人和必要的前后台词；不要上传大批量脚本。Include the speaker and surrounding lines; do not upload bulk script dumps.
     validations:
       required: true
   - type: textarea
     id: current
     attributes:
-      label: Current translation
+      label: 当前译文 / Current translation
     validations:
       required: true
   - type: textarea
     id: proposed
     attributes:
-      label: Proposed translation and reasoning
+      label: 建议译文与理由 / Proposed translation and reasoning
     validations:
       required: true

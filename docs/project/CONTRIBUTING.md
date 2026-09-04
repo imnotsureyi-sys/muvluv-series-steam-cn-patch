@@ -69,3 +69,17 @@ Native Photon runtime changes also require Zig 0.16.0 and both pinned PF/PM buil
 ## Pull requests
 
 Explain the affected game, engine, resource identity, before/after behavior, test evidence, and whether any new redistribution rights are required. Keep generated releases outside the commit. A correction to translation text should include enough Japanese context and scene identity for another reviewer to reproduce the decision.
+
+## Commit authorship
+
+Credit every person or tool that materially produced the committed change. When OpenAI Codex
+contributes code, documentation, analysis embodied in repository files, or other substantive work,
+append the project-standard trailer to the commit message:
+
+```text
+Co-authored-by: Codex <codex@openai.com>
+```
+
+Do not add this trailer for a lookup or discussion that produced no committed work. The human
+maintainer remains responsible for reviewing and merging the result; the full attribution policy is
+documented in [Contributors and acknowledgements](CONTRIBUTORS.md#ai-辅助贡献).

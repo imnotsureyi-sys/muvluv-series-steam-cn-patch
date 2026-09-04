@@ -12,6 +12,7 @@
 
 ## Verification
 
+- [ ] If Codex materially contributed to this commit, its commit message includes `Co-authored-by: Codex <codex@openai.com>`.
 - [ ] AGE2 tests pass when AGE2/shared workflow changed.
 - [ ] rUGP tests pass when rUGP/shared workflow changed.
 - [ ] Localization workflow tests pass when engine-neutral text/image/font tooling changed.
