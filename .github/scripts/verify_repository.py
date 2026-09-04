@@ -49,6 +49,7 @@ REQUIRED = {
     "rUGP/requirements.txt", "rUGP/runtime/README.md",
     "localization/requirements.txt",
     "docs/player/README.md", "docs/en/player-guide.md", "docs/README.md",
+    ".github/CONTRIBUTING.md",
     "docs/research/repository-architecture.md", "docs/research/README.md",
     "docs/research/asset-map.md", "docs/en/research-index.md",
     "docs/en/asset-map.md", "localization/workflow.en.md",
