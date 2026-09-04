@@ -1,5 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Download current patches
-    url: https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases
-    about: Read the release-specific install notes before reporting a problem.
+  - name: 玩家下载与安装指南 / Player download guide
+    url: https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/blob/main/docs/player/README.md
+    about: 先确认当前可用版本、安装方法和已知限制。Check current versions, installation steps and known limitations.
