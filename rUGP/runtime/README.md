@@ -26,19 +26,23 @@ CodeView `RSDS` GUID. The CodeView signature, PDB age/path, executable code, and
 runtime data are preserved. Normalization is idempotent and the release does not
 ship a matching PDB.
 
-The reviewed historical-to-normalized identities are:
+The reviewed historical-to-normalized Beta0.1 identities are:
 
 - PF historical raw: `E886F746F937B53C712AB931BFB36889FEC5ADE7B426893EFE1E1EF44415C8DD`
   -> normalized: `01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA`
 - PM historical raw: `84C20D878CD440950D55585A5B6D9575138CD043F157DC46D7A19F548AAE2C40`
   -> normalized: `73F5EC68A374042096CB4C900210F22537E5706E49B7EA9A8F249C583039E2CD`
 
-For both reviewed games, applying this normalization to the historical raw DLL
-produces bytes identical to the clean-clone normalized build. The packaging
-assembler therefore accepts exactly either named identity for `Ages3ResT.dll`
-and records which one it copied. This does not turn the runtime builder into a
-complete source-to-player-release pipeline; packaging still requires the other
-sealed and approved authorities described in `../packaging/README.md`.
+Applying the normalization to either historical raw DLL produces its listed
+historical normalized identity. The currently approved reproducible outputs are
+PF `01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA`
+and PM `D92DBE093421A2E898A6E6915EC2C527F945C2FF1DD1B95C151AE55BB58941F7`.
+The latter is the reviewed PM tutorial-timer route, closed zero-second cue,
+and selector repair. The
+packaging assembler accepts only its named hash-locked identities and records
+which one it copied. This does not turn the runtime builder into a complete
+source-to-player-release pipeline; packaging still requires the other sealed
+and approved authorities described in `../packaging/README.md`.
 
 Generated headers are [sealed reviewed configuration](generated/README.md),
 not publicly regenerable source. Updating their identities requires repeating

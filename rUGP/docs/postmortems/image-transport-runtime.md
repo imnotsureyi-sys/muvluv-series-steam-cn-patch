@@ -23,6 +23,55 @@ The directory and parent audit separated semantic routing from transport:
 
 Controlled one-record probes then separated the routes. A native translation-slot replacement for the PM “Voice Skip” label displayed and remained interactive. Other tested RUO parent/leaf arrangements either blanked the child, triggered 8311 through an unrelated bad text container, or left the official English child selected. Later full batches exposed parent/state and decoded-surface timing that a single successful child could not prove.
 
+## PM watermelon tutorial follow-up
+
+The tutorial timer exposed two distinct failures behind the same Japanese-looking
+screen. The first captured Options screen had Japanese image language selected
+while Chinese text language remained selected. After changing image language to
+Translation, the selected physical payload changed, but the official Translation
+bitmap itself still contained the Japanese `残り時間` label. Visual language alone
+therefore could not identify which locale field AGES had loaded.
+
+An identity audit separated the timer routes. All eleven dynamic counters from
+300 through 0 seconds were already bound to their official Translation-field
+payloads in the ordinary exact-RGBA table. The twelve full tutorial frames were
+absent; they resolve to eleven unique Translation-field physical payloads because
+two logical frames share one payload. The fix preserves the existing 39 PM
+special identities and appends only those eleven full-frame identities. Each
+sidecar starts from the decoded Translation-field frame and changes the reviewed
+timer band, so unrelated pixels and the dimmed `SOUND ONLY` state stay intact.
+
+The zero-second frame needs a separate layer rule because the narrow source
+cue crosses the longer Chinese timer label. Copying a broad yellow colour key
+also copied glyph shadows and covered Chinese strokes, while reusing only the
+visible source pixels left gaps and uneven thickness. The final materialization
+removes the reviewed source fragments with a 1,733-pixel yellow-only repair mask
+and the matching localized 300-second background. It restores the original
+Chinese glyph pixels, then renders one closed 4-pixel ellipse at 8x
+supersampling. The ellipse has 1,498 core pixels, one connected component, an
+enclosed interior, and zero visible-support overlap with the text. The other ten
+unique tutorial sidecars and their duplicate remain byte-identical.
+
+The PM image-language setter had a second fault. Its callsite still matched, but
+the stored parent-stack fingerprint did not match the current executable. A trace
+of three real Options actions established command `0x237`, the VM/CInt identities,
+and parent RVAs `0x43132`, `0x42409`, `0x122EB8`, and `0x12D327`. Loading directly
+from the saved tutorial position produced no setter action at all. The selector
+now accepts the corrected stack, verifies same-value actions, and can establish
+Translation from one of the eleven complete payload identities while state is
+unknown and no surface or write lease is active. Japanese-field payloads remain
+unauthorized. The route ledger records the exact identities, sidecar hashes, and
+local runtime artifact hashes in
+[`pm-watermelon-timer-runtime-routes-20260904.json`](../../evidence/photon/images/pm-watermelon-timer-runtime-routes-20260904.json).
+
+The corrected build was replayed from `Altered Fable` save slot No.50 on
+2026-09-05. The remaining tutorial frames advanced through the zero-second
+explanation and Chinese choice into the live minigame without 831/8311, blank
+frames, torn overlays, or font/layout corruption. The accepted 300-second,
+zero-second, choice, and live-minigame screenshots are named in the image
+evidence README and hash-locked in the route ledger; the retail captures remain
+local under the repository's public-file boundary.
+
 ## Why the project moved to a hybrid design
 
 The stable rule is chosen per authenticated endpoint:

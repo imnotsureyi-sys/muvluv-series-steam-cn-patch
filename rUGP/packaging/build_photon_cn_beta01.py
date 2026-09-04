@@ -44,9 +44,10 @@ MERGE_GAP = BLOCK_SIZE
 COPY_SIZE = 8 * 1024 * 1024
 
 RUNTIME_DLL_TARGET = "Ages3ResT.dll"
-RUNTIME_DLL_IDENTITY_POLICY = "photon-runtime-dll-controlled-identity/v1"
+RUNTIME_DLL_IDENTITY_POLICY = "photon-runtime-dll-controlled-identity/v2"
 # Applying rUGP/runtime/build.py's declared PE/PDB normalization to each
-# historical raw DLL produces the corresponding normalized identity exactly.
+# historical raw DLL produces its clean-clone identity exactly. Later approved
+# normalized builds are listed separately and remain exact-hash gated.
 RUNTIME_DLL_IDENTITIES: dict[str, dict[str, dict[str, int | str]]] = {
     "PF": {
         "historical_raw_beta01": {
@@ -66,6 +67,10 @@ RUNTIME_DLL_IDENTITIES: dict[str, dict[str, dict[str, int | str]]] = {
         "clean_clone_normalized": {
             "bytes": 582144,
             "sha256": "73F5EC68A374042096CB4C900210F22537E5706E49B7EA9A8F249C583039E2CD",
+        },
+        "timer_route_fix_normalized": {
+            "bytes": 587776,
+            "sha256": "D92DBE093421A2E898A6E6915EC2C527F945C2FF1DD1B95C151AE55BB58941F7",
         },
     },
 }
@@ -193,9 +198,9 @@ def select_runtime_dll_identity(path: Path, game: str) -> dict[str, Any]:
     """Select one exact, reviewed identity for the game's runtime proxy DLL.
 
     This is deliberately narrower than the normal fixed-file verifier.  Only
-    ``Ages3ResT.dll`` has two accepted representations: the historical Beta0.1
-    binary and the byte-reproducible clean-clone output whose PE/PDB provenance
-    fields were normalized by ``rUGP/runtime/build.py``.
+    ``Ages3ResT.dll`` has a small named set of accepted representations: the
+    historical Beta0.1 binary, its byte-reproducible normalized clean clone,
+    and any later hash-locked normalized runtime approved for that game.
     """
 
     need(game in RUNTIME_DLL_IDENTITIES, f"no runtime DLL identity policy for {game}")
