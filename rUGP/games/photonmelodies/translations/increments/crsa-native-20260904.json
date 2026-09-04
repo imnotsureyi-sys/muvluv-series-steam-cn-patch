@@ -110,7 +110,7 @@
           "source_message_index": 11292,
           "display_message_index": 11394,
           "action": "set_display_annotation",
-          "review_status": "keep",
+          "review_status": "revise",
           "annotation_sources": [
             {
               "language": 1,
@@ -122,7 +122,7 @@
             }
           ],
           "display_annotation_index": 22222,
-          "target_text": "Entschuldigen Sie bitte:请原谅我;erschreckt habe:吓到您了;Ich wusste nicht, dass hier jemand ist.:我不知道这里有人。"
+          "target_text": "bitte:请原谅我;erschreckt habe:吓到您了;jemand ist.:我不知道这里有人。"
         },
         {
           "stable_id": "pm:native:photonmelodies11.rio.002:1214091360:480:chinese-annotation",

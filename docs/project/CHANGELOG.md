@@ -4,6 +4,7 @@ This file records repository and public-patch changes. Downloadable packages and
 
 ## Unreleased — repository architecture
 
+- 完成 PF／PM 全量 CRsa 漏项复核：补译并写回 40 处对白／提示，逐项审校 265 个批注字段，保持 260 个兵装名参数不变；加入哈希锁定的 PM 固定长度分卷构建器，并记录 PF／PM 实机字体、排版和 831／8311 验收。
 - 将仓库首页收束为普通玩家与研究/本地化制作者两个独立入口，下载细节完整下沉到玩家 README，并加入可见的中英文切换按钮。
 - 新增中英文文本/术语/图片/字体资产地图，明确 `localization/`、各游戏目录、本仓库 Releases 与本地忽略工作区的边界，并同时索引五作 730 个 AGE2 WebP 路径与 PF/PM 1,490 项图片权威。
 - 新增完整英文两轮本地化工作流，使韩语、俄语等团队不必依赖中文摘要即可复现剧情/术语、初译、`keep/revise/question`、写回、QA 与玩家反馈闭环。
@@ -18,6 +19,7 @@ This file records repository and public-patch changes. Downloadable packages and
 - 规定新表的规范字段，同时保留已有哈希封存表的历史表头，避免为表面统一破坏来源证明。
 
 - Split the unrelated AGE2 and legacy rUGP implementations into independent top-level systems.
+- Completed the PF/PM CRsa omission review: wrote 40 dialogue/prompt fields, reviewed 265 annotation fields, preserved all 260 armament-name parameters, added hash-locked fixed-extent PM volume staging, and recorded PF/PM runtime layout and 831/8311 checks.
 - Promoted stable translation tables, format libraries, runtime source, packaging code, tests, and release evidence; removed one-off workstation probes from the public tool surface.
 - Added English and Chinese player/developer entry points, rights boundaries, provenance guidance, and reusable image-localization documentation.
 - Added direct player-package links, exact LocalAppData destinations, checksum instructions and explicit rollback/Steam Verify boundaries for all five historical AGE2 betas.

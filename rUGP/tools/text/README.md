@@ -195,9 +195,11 @@ records 565 candidate field occurrences, including the first-round 40. The
 maintainer-scoped work comprises 40 dialogue/prompt fields plus 265 annotation
 fields; 260 armament-name parameters remain byte-identical and are excluded from
 omission counts and write actions. The superseded 40-item manifests are rejected
-by their old builder. `build_crsa_native_increment` accepts only reviewed,
-hash-bound PF/PM manifests. Its writer uses fixed native or zero-filled pool
-storage first; a non-empty orphan slot or pool extension must be named explicitly
-in the entry and is checked during full native readback. The reviewed manifests
-and writeback contract are documented in the
+by their old builder. `build_crsa_native_increment` builds the reviewed PF
+cumulative RUO. `build_crsa_native_volume_patch` stages the reviewed fixed-extent
+PM records in new copies of the affected clean volumes; it rejects inherited RUOs,
+record growth and changes outside the selected record extents. The shared writer
+uses fixed native or zero-filled pool storage first; a non-empty orphan slot or
+pool extension must be named explicitly in the entry and is checked during full
+native readback. The reviewed manifests and writeback contract are documented in the
 [2026-09-04 increment record](../../docs/postmortems/crsa-native-increment-20260904.md).

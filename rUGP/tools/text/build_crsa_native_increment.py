@@ -1,7 +1,9 @@
-"""Build a reviewed native-field CRsa increment as a cumulative candidate RUO.
+"""Build a reviewed PF native-field CRsa increment as a cumulative candidate RUO.
 
 Inputs are pinned by whole-volume, inherited-RUO, record and field hashes.
 The command never installs candidates, changes DLLs or overwrites an input.
+PM uses fixed-extent volume staging because redirects into its later archive
+volumes fail at runtime; use ``build_crsa_native_volume_patch`` for PM.
 """
 from __future__ import annotations
 
@@ -27,7 +29,9 @@ def hash_file(path: Path) -> str:
 def build(spec: dict, source_dir: Path, output: Path, base_ruo: Path | None = None) -> dict:
     if spec.get("schema") != "photon-crsa-native-increment/v1":
         raise ValueError("unsupported native increment schema")
-    if spec["unit_size"] != 4 or spec["game"] not in ("pf", "pm"):
+    if spec.get("game") == "pm":
+        raise ValueError("PM native increments require fixed-extent volume staging")
+    if spec["unit_size"] != 4 or spec["game"] != "pf":
         raise ValueError("unsupported Photon layout")
     source_dir, output = source_dir.resolve(), output.resolve()
     if output.exists() or output.with_suffix(output.suffix + ".json").exists():

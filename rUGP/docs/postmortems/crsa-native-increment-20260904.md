@@ -45,16 +45,32 @@ PF 清单包含 7 个 CRsa、169 个动作；PM 清单包含 46 个 CRsa、268 �
 
 写回器默认拒绝扩展文本池；非空闲槽复用和追加都必须有清单中的显式存储合同。
 PM 的 46 个记录全部保持池长度、后缀位置和记录长度不变。PF 只有两个记录追加，
-合计增加 150 个 UTF-16 代码单元；其余五个记录不扩池。构建器逐条检查所有非目标
-池字节、命令、CString、声音引用、后缀内容及继承 RUO 路由。严格 CRsa 解码和
-独立兼容解码都必须得到完全相同的明文。生成的 RUO 和游戏二进制是本地／Release
-产物，不进入 Git。
+其中 11 个批注动作合计增加 150 个 UTF-16 代码单元；其余五个记录不扩池。构建器
+逐条检查所有非目标池字节、命令、CString、声音引用、后缀内容及继承 RUO 路由。
+严格 CRsa 解码和独立兼容解码都必须得到完全相同的明文。生成的 PF RUO、PM 分卷
+副本和游戏二进制是本地／Release 产物，不进入 Git。
+
+## PM 的 831 运输问题
+
+最初把 PM 原生增量生成为独立 `.ruo1`。对后续分卷中的 CRsa 做**内容完全相同**的
+身份重编码，也会在实机读取该记录时触发 `InternalError(831): Abnormal termination`；
+因此这次错误不能归因于中文、字段内容、记录长度或校验和。随后在完整备份、原卷哈希
+门和进程关闭检查下，把同一记录写回原分卷的相同物理范围，游戏通过了原报错位置。
+46 个固定长度记录用同一路线写回后，也能进入 Adoration 批注场景和 Altered Fable
+打西瓜小游戏，未出现 831 或 8311。验收结束后，所有原卷均按整卷 SHA-256 恢复。
+
+据此，PM 本轮原生 CRsa 的生产运输固定为：从干净原卷生成新的固定长度分卷副本，
+只改清单指定的记录范围，再由发布构建生成带安装／回滚哈希门的区段补丁。公共工具
+[`build_crsa_native_volume_patch.py`](../../tools/text/build_crsa_native_volume_patch.py)
+拒绝覆盖输入、继承 RUO、记录增长、范围重叠和任何非目标字节变化。PF 仍使用一个
+累计 RUO，因为它的两个记录含有显式审核过的追加写入。这一 **831 分卷重定向问题**
+与 [`8311` 的 counted CString 内嵌 NUL](error-8311.md)是两个不同故障。
 
 ```powershell
-python -m rUGP.tools.text.build_crsa_native_increment `
+python -m rUGP.tools.text.build_crsa_native_volume_patch `
   --spec rUGP/games/photonmelodies/translations/increments/crsa-native-20260904.json `
-  --source-dir "<PM game directory>" `
-  --output "<work directory>/pm-native-v3-fixed.ruo"
+  --source-dir "<clean PM game directory>" `
+  --output-dir "<new work directory>/pm-native-fixed-volumes"
 
 python -m rUGP.tools.text.build_crsa_native_increment `
   --spec rUGP/games/photonflowers/translations/increments/crsa-native-20260904.json `
@@ -87,10 +103,35 @@ GPOS、名称和许可表都没有变化。结果从 4,715 个字形增加为 4,
 [`rebind_photon_font.py`](../../tools/runtime/rebind_photon_font.py)更新；该工具只允许
 修改唯一的 64 字节 ASCII 哈希，并证明宿主 DLL 的可执行代码和其余字节不变。
 
-## 验证边界
+## 实机抽样和证据
 
 静态检查覆盖 305 个审校字段、53 个 CRsa、437 个写回动作和 260 个排除参数；
-所有批注键都必须能在其正文中找到，全部命令、声音引用、继承路由和非目标池字节
-都要回读一致。实机抽样还需分别确认对白／提示及批注的正文显示、回看显示、字体、
-换行和布局，并记录 PM 是否出现 831／8311。只有这一步通过后，才能将候选标为
-可提交状态；解析回读不能代替实机验收。
+所有批注键都能在其正文中找到，全部命令、声音引用、继承路由和非目标池字节均回读
+一致。2026-09-04 又完成下列实机抽样：
+
+- PF Confessions 回看同时显示本轮四句训练场漏译对白；中文字体、长句换行、说话者
+  标签和滚动区域正常；
+- PF Rain Dancers 回看显示 `雨之舞者`／`雨舞中队`、`首席女伶`／`突击前卫` 两组
+  小字绑定，字号、基线和行距正常；
+- PM Adoration 的德语句首次试验暴露了长分句键只命中中间一项；改成正文内唯一短键
+  `bitte`、`erschreckt habe`、`jemand ist.` 后，三项中文小字在回看中全部正确显示；
+- PM Altered Fable 打西瓜小游戏直接显示了前进、向右、身后和向左四类本轮漏译提示，
+  没有英文回退、缺字、越界、遮挡或异常换行；小游戏提示不进入普通回看，因此在实际
+  控制界面取证；
+- PM 以固定长度分卷写回进入上述两个场景，整个抽样没有出现 831 或 8311。
+
+截图含零售游戏画面，不进入 Git；下列文件名和 SHA-256 固定本次本地证据：
+
+| 实机证据 | SHA-256 |
+| --- | --- |
+| `pf-confessions-missing-dialogue-backlog-20260904.jpg` | `4A710B4DE5750788490C7F6CB29831138DA6A83A3F34FF358A2197ECDD99EB70` |
+| `pf-rain-dancers-annotation-backlog-20260904.jpg` | `27B00C8BB90B8284B3574DB2CA9CADF371902DFE618E8D418DDAB59CD5E346D9` |
+| `pm-adoration-annotation-backlog-20260904.jpg` | `46AB73DE97D287E84D32C5BE5E586BD055C87EAD759CE2EBFBD147596C5240C8` |
+| `pm-watermelon-missing-prompt-forward-20260904.jpg` | `32E9C4264C3208EA16AB2BBAA2E1BC16FC5B04C65303872876EA0FA3861DCE8E` |
+| `pm-watermelon-missing-prompt-right-20260904.jpg` | `17D010EAFA417F19806730F3F95575BE494AF3C4668BAA2040F4C31FB8433269` |
+| `pm-watermelon-missing-prompt-behind-20260904.jpg` | `CFF8CF1D0102CA04312FC51DD7132FA0D2A54CBFFDF943142FD5353D0DDA572B` |
+| `pm-watermelon-missing-prompt-left-20260904.jpg` | `8B0208B624F1BA634A23F88C27DE1F37C61B1174C75F34AD94FEF5C33668A0E1` |
+
+这组抽样验证了两种游戏、两类字段和 PM 特殊小游戏表面的真实显示；它不冒充对 305
+个字段逐一走完所有剧情分支。全量字段身份和写回正确性由哈希清单及解析回读覆盖，
+实机抽样负责证明代表性表面的字体、排版和运输行为。

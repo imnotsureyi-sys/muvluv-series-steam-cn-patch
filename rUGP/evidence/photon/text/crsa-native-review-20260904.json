@@ -32,8 +32,8 @@
     "exclusion_reason": "Maintainer-scoped CVmCall armament-name parameters remain byte-identical and are not counted as localization omissions."
   },
   "review_status_counts": {
-    "keep": 287,
-    "revise": 18
+    "keep": 286,
+    "revise": 19
   },
   "annotation_decisions": {
     "localized_annotation": 157,
@@ -2696,10 +2696,10 @@
       "field_sha256": "DF5B5D28E03F37A6E148FFE3F602F030809A00BAD76C78BDD54C78D4B2A41220",
       "first_round_status": "translated",
       "first_round_target": "Entschuldigen Sie bitte:请原谅我;erschreckt habe:吓到您了;Ich wusste nicht, dass hier jemand ist.:我不知道这里有人。",
-      "target_text": "Entschuldigen Sie bitte:请原谅我;erschreckt habe:吓到您了;Ich wusste nicht, dass hier jemand ist.:我不知道这里有人。",
+      "target_text": "bitte:请原谅我;erschreckt habe:吓到您了;jemand ist.:我不知道这里有人。",
       "status": "reviewed",
-      "review_status": "keep",
-      "review_reason": "按日文槽德语原句补中文：请原谅吓到您、原先不知道有人；不用英文槽的增写。",
+      "review_status": "revise",
+      "review_reason": "按日文槽德语原句补中文：请原谅吓到您、原先不知道有人；实机回看证明完整分句键只显示中间一项，改用句内唯一短键后三项小字均能正确绑定和显示。",
       "write_actions": [
         "pm:native:photonmelodies11.rio.002:1214091360:475:chinese-annotation"
       ],

@@ -99,6 +99,13 @@ class NativeIncrementTests(unittest.TestCase):
             build(self.spec, self.root, self.output, self.base)
         self.assertEqual(b'existing candidate', self.output.read_bytes())
 
+    def test_rejects_pm_specs_in_favor_of_volume_staging(self):
+        changed = deepcopy(self.spec)
+        changed['game'] = 'pm'
+        with self.assertRaisesRegex(ValueError, 'fixed-extent volume staging'):
+            build(changed, self.root, self.output, self.base)
+        self.assertFalse(self.output.exists())
+
 
 if __name__ == '__main__':
     unittest.main()
