@@ -1,0 +1,374 @@
+{
+  "schema": "photon-crsa-native-text-audit/v3",
+  "date": "2026-09-03",
+  "prior_partial_candidate_commit": "34716961cb3bb4b3a5bc5cc3675696239895b7fb",
+  "scope": "All CRsa payload fields in six scanned RIO volumes, plus current PF CRsa overrides. Static analysis.",
+  "game_files_modified": false,
+  "reviewed_files_modified": false,
+  "new_fields_written_back": false,
+  "runtime_tested": false,
+  "scope_updated_at": "2026-09-04",
+  "candidate_field_occurrences": 565,
+  "scoped_translation_and_annotation_fields": 305,
+  "previous_increment_occurrences": 40,
+  "newly_catalogued_candidate_field_occurrences": 525,
+  "scoped_display_prose_review_queue": 59,
+  "excluded_weapon_parameter_occurrences": 260,
+  "weapon_parameter_write_actions": 0,
+  "weapon_parameter_exclusion_reason": "Maintainer-confirmed scope: preserve the original parameter bytes; exclude these fields from omission counts and patch operations.",
+  "weapon_unique_labels": 4,
+  "display_annotations": 20,
+  "display_annotation_prose_fields": 19,
+  "display_annotation_format_fields": 1,
+  "source_language_annotations": 245,
+  "unreferenced_old_pool_cells": 767,
+  "reviewed_foreign_language_candidates": 21,
+  "title_metadata_fields": 2,
+  "current_annotation_binding_counts": {
+    "adjacent_to_owned_message_stale_index": 263,
+    "exact_native_reference": 2
+  },
+  "reviewed_rows": 57547,
+  "reviewed_source_hashes_matched": 57547,
+  "native_serialization": {
+    "header_and_pool": "PF CRsa::Serialize load at 0x43EF60; pool 0x43F5C0; suffix 0x43F710.",
+    "message_fields": "PF CVmMsg3::Serialize 0x4BC780; each language has primary, annotation and directive indices.",
+    "message_render": "PF CVmMsg3::Run 0x4BCA90; primary NUL termination 0x50BFB7; annotation path 0x4BD388 to 0x4B3080.",
+    "weapon_label": "PF handler 0x4612E0 copies OM_TWF_SetArm+0x0C to CTWFRemainderBox arm name+0x22C.",
+    "geometry": "PF CAgesModelTsT::Serialize 0x46DE00 and CBuffer::Serialize 0x5BE000; buffer bytes are geometry, not CStrings.",
+    "easing": "MFC CMN_Time_2G::Serialize at PF 0x52CDA0, shared archive object cache."
+  },
+  "weapon_parameter_binding_proofs": [
+    {
+      "game": "pf",
+      "callee_raw_key": "C634C9DC",
+      "rio_file": "photonflowers11.rio.002",
+      "block_offset": 216383852,
+      "payload_sha256": "A43880821A206EBB46F3CD7A14A815BA4E6D091BF9298F97581FB1D3C54A3350",
+      "stream_command": 18,
+      "operation": "OM_TWF_SetArm",
+      "field": "兵装名",
+      "field_offset": 12,
+      "argument_ordinal": 2,
+      "receiver": "CTWFRemainderBox"
+    },
+    {
+      "game": "pf",
+      "callee_raw_key": "C634F69E",
+      "rio_file": "photonflowers11.rio.002",
+      "block_offset": 216429684,
+      "payload_sha256": "A43B4A08D54946D125D883950D17200C12493A6D1AEBB1A9055D2DB90D82A128",
+      "stream_command": 18,
+      "operation": "OM_TWF_SetArm",
+      "field": "兵装名",
+      "field_offset": 12,
+      "argument_ordinal": 2,
+      "receiver": "CTWFRemainderBox"
+    },
+    {
+      "game": "pm",
+      "callee_raw_key": "F9367126",
+      "rio_file": "photonmelodies11.rio.003",
+      "block_offset": 1970282728,
+      "payload_sha256": "2BE302B341087A6A5356D0C1A07878DC76407634778FFC0713C851B4DD00DD25",
+      "stream_command": 18,
+      "operation": "OM_TWF_SetArm",
+      "field": "兵装名",
+      "field_offset": 12,
+      "argument_ordinal": 2,
+      "receiver": "CTWFRemainderBox"
+    },
+    {
+      "game": "pm",
+      "callee_raw_key": "F936A58F",
+      "rio_file": "photonmelodies11.rio.003",
+      "block_offset": 1970336396,
+      "payload_sha256": "D87A20174F27834D13FD3214E5BB84F0047997DFD83536CDE0C7FFF72469D787",
+      "stream_command": 18,
+      "operation": "OM_TWF_SetArm",
+      "field": "兵装名",
+      "field_offset": 12,
+      "argument_ordinal": 2,
+      "receiver": "CTWFRemainderBox"
+    }
+  ],
+  "legacy_pending_resolutions": {
+    "owned_native_CString": 1,
+    "annotation_field": 20,
+    "owned_message_cell": 13,
+    "unreferenced_original_pool_residue": 51
+  },
+  "legacy_marker_counts": {
+    "pf": {
+      "raw_marker": 1923,
+      "real_CString": 1921,
+      "coincidental_malformed_marker_in_non_CString_field": 2
+    },
+    "pm": {
+      "raw_marker": 3046,
+      "real_CString": 2998,
+      "coincidental_malformed_marker_in_non_CString_field": 13,
+      "coincidental_valid_marker_in_non_CString_field": 35
+    }
+  },
+  "legacy_probe_coverage": {
+    "pf": {
+      "fully_parsed_command_stream": 28352,
+      "header": 8,
+      "crosses_structural_boundaries": 1,
+      "fully_parsed_suffix_or_zero_padding": 7
+    },
+    "pm": {
+      "fully_parsed_command_stream": 78736,
+      "header": 6,
+      "pool_cell_or_interior": 41,
+      "fully_parsed_suffix_or_zero_padding": 16
+    }
+  },
+  "original_volume_hashes": [
+    {
+      "game": "pf",
+      "name": "photonflowers11.rio",
+      "sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+      "matches_frozen": true
+    },
+    {
+      "game": "pf",
+      "name": "photonflowers11.rio.002",
+      "sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio",
+      "sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio.002",
+      "sha256": "8A995CAB6A8075A291BB2340E9772FA219A41643635527B2EDEFC6FDA5639EAF",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio.003",
+      "sha256": "D75F15E0AE1ECF310AE42E1D8D6E48BCDA15E2D440C923A7F19622E52A394B78",
+      "matches_frozen": true
+    },
+    {
+      "game": "pm",
+      "name": "photonmelodies11.rio.004",
+      "sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74",
+      "matches_frozen": true
+    }
+  ],
+  "final_live_hash_check_at": "2026-09-03 07:26:28 UTC",
+  "final_live_volumes_unchanged": true,
+  "pf_u0006_unchanged": {
+    "raw_key": "0xA3272C48",
+    "logical_offset": "0xAF05DC",
+    "bytes": 69484,
+    "sha256": "197C20343A36E9AB1619DB2879DB370B2419A15B6C16345C0B3EE99C84FD8F5F",
+    "route_and_payload_exact": true
+  },
+  "tests": {
+    "passed": 43,
+    "scope": "Synthetic parser, index identity, field ownership, classifier, incomplete-refresh guard and existing writer regressions."
+  },
+  "current_overlay_state": {
+    "pf": {
+      "exists": true,
+      "sha256": "ab347b81928a745ce70128f0a6842fc6f93e591635235c734d749e5b0eb49b0a",
+      "bytes": 2530224,
+      "routes": 24,
+      "crsa_routes": 22
+    },
+    "pm": {
+      "exists": false,
+      "routes": 0,
+      "crsa_routes": 0
+    }
+  },
+  "games": {
+    "pf": {
+      "base_blocks": 201,
+      "current_overlay_blocks": 22,
+      "complete_native_blocks": 223,
+      "totals": {
+        "commands": 87397,
+        "message_commands": 13163,
+        "payload_bytes": 6541040,
+        "pool_units": 1360892,
+        "pool_cells": 381091,
+        "nonempty_pool_cells": 26437,
+        "primary_references": 26326,
+        "auxiliary_references": 111,
+        "annotations": 111,
+        "unreferenced_pool_cells": 0,
+        "cstrings": 1921,
+        "nonempty_cstrings": 600,
+        "suffix_references": 8011,
+        "crsa_resource_references": 1383
+      },
+      "current_categories": {
+        "empty_inline_field": 1321,
+        "existing_chinese_inline": 15,
+        "font_identifier": 3,
+        "game_title_metadata": 1,
+        "existing_bilingual_inline": 54,
+        "reviewed_message": 12952,
+        "script_identifier_or_number": 162,
+        "control_or_empty_message": 207,
+        "missed_control_source_display": 4,
+        "source_language_annotation": 102,
+        "excluded_weapon_parameter": 246,
+        "missed_display_annotation": 9,
+        "setting_key_or_value": 15,
+        "formatting_inline": 1,
+        "format_or_resource_identifier": 79,
+        "save_slot_template": 24
+      },
+      "executable": {
+        "executable_name": "Muv-Luv_PF.exe",
+        "executable_sha256": "7ad7399624aa9c35ced57b39d68a02f8bd20b188ba4649f43ff9419845da5b08",
+        "executable_bytes": 3172352
+      },
+      "schema_sha256": "6225A3B40D21374EDD29BC8757563416E6B134F248D3E1E5FEE2E7E8AD8C249E",
+      "reviewed_rows": 12964,
+      "reviewed_source_hashes_matched": 12964,
+      "reviewed_files": [
+        {
+          "file": "rUGP/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv",
+          "rows": 6033,
+          "sha256": "F2AFC90C8DD09E48D96D88655E8A1B32C2D85AD5B8F25305B57EE83E7798D5FC"
+        },
+        {
+          "file": "rUGP/games/photonflowers/translations/reviewed/extra.zh-Hans.csv",
+          "rows": 6931,
+          "sha256": "D1A6E2195A430CE8F8E2A064BA087E2F41AB57285E2F1AD85EEEF8CC90BC8AB0"
+        }
+      ],
+      "unmatched_reviewed_ids": [],
+      "native_heuristic_message_boundary_differences": [],
+      "unmapped_crsa_references": []
+    },
+    "pm": {
+      "base_blocks": 265,
+      "current_overlay_blocks": 0,
+      "complete_native_blocks": 265,
+      "totals": {
+        "commands": 186832,
+        "message_commands": 44848,
+        "payload_bytes": 17623456,
+        "pool_units": 4661159,
+        "pool_cells": 2077993,
+        "nonempty_pool_cells": 90130,
+        "primary_references": 89696,
+        "auxiliary_references": 154,
+        "annotations": 154,
+        "unreferenced_pool_cells": 767,
+        "cstrings": 2998,
+        "nonempty_cstrings": 657,
+        "suffix_references": 20458,
+        "crsa_resource_references": 2123
+      },
+      "current_categories": {
+        "empty_inline_field": 2341,
+        "existing_chinese_inline": 11,
+        "setting_key_or_value": 32,
+        "script_identifier_or_number": 359,
+        "existing_bilingual_inline": 139,
+        "reviewed_message": 44510,
+        "control_or_empty_message": 301,
+        "source_language_annotation": 143,
+        "missed_display_annotation": 10,
+        "excluded_weapon_parameter": 14,
+        "existing_chinese_unreviewed_message": 1,
+        "unreferenced_pool_cell": 767,
+        "missed_control_source_display": 36,
+        "display_annotation_format_marker": 1,
+        "font_identifier": 3,
+        "game_title_metadata": 1,
+        "formatting_inline": 1,
+        "format_or_resource_identifier": 79,
+        "save_slot_template": 18
+      },
+      "executable": {
+        "executable_name": "Muv-Luv_PM.exe",
+        "executable_sha256": "8e442f263feed7b79e5ccb83c3f26b12cc12e1953fb4a262b4bb74017d6e26b8",
+        "executable_bytes": 3198464
+      },
+      "schema_sha256": "6225A3B40D21374EDD29BC8757563416E6B134F248D3E1E5FEE2E7E8AD8C249E",
+      "reviewed_rows": 44583,
+      "reviewed_source_hashes_matched": 44583,
+      "reviewed_files": [
+        {
+          "file": "rUGP/games/photonmelodies/translations/reviewed/adoration-resurrection.zh-Hans.csv",
+          "rows": 8407,
+          "sha256": "794E10E5EFC5716AA2F58B0E06856B9E4F651EE63EE5554D27B1583D4DA6D128"
+        },
+        {
+          "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.002.zh-Hans.csv",
+          "rows": 771,
+          "sha256": "BEF98CE48F6B4CBE761EDD146D082C106E46C6957E93E1E320B6B6B18AAB145B"
+        },
+        {
+          "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.003.zh-Hans.csv",
+          "rows": 4850,
+          "sha256": "FAEAFDD1F0E07CDC08B9508E50C07F4A8FF279AD0E396056A768FD3C06A810CE"
+        },
+        {
+          "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.004.zh-Hans.csv",
+          "rows": 30555,
+          "sha256": "78B30525CC58FFF99C444EB05C95C0DAB49BC75171E9B86F3791236F2CCE3C92"
+        }
+      ],
+      "unmatched_reviewed_ids": [],
+      "native_heuristic_message_boundary_differences": [],
+      "unmapped_crsa_references": []
+    }
+  },
+  "local_artifacts": {
+    "all-annotations.csv": {
+      "rows": 265,
+      "sha256": "A19FE7AF68F18C285CB828E3617271903C99F35DD12FCE11C8D89B392F144084",
+      "bytes": 139897
+    },
+    "all-missed-fields.csv": {
+      "historical_candidate_inventory_only": true,
+      "excluded_weapon_parameter_rows": 260,
+      "rows": 565,
+      "sha256": "95D6BBAA4F9E17BA364B9668A9DB4A4538E89ABC1EF7E5687C574581F86F2EC6",
+      "bytes": 231458
+    },
+    "missing-current-text.csv": {
+      "historical_candidate_inventory_only": true,
+      "excluded_weapon_parameter_rows": 260,
+      "rows": 319,
+      "sha256": "B9C5DC9B7541856052D3525852D80B868E3DDD86FEAEB7F7F2289D4C0745ADCD",
+      "bytes": 102372
+    },
+    "reviewed-foreign-language.csv": {
+      "rows": 21,
+      "sha256": "C5B79F1F9DA1987F47DC5E5AFA0500629246F1E9A4DA03DCD461A23FD4A9D043",
+      "bytes": 11162
+    },
+    "title-metadata.csv": {
+      "rows": 2,
+      "sha256": "B433731F691904C2977E06A7091479D2A34EBBE6EA15822684B42A6797953BAB",
+      "bytes": 914
+    },
+    "unreferenced-pool-cells.csv": {
+      "rows": 767,
+      "sha256": "FAFF9FCED79DEC1CBFE479E880DB0A646EA233BA317986DF84F910B93303A7E3",
+      "bytes": 226195
+    },
+    "weapon-labels.csv": {
+      "excluded_from_omission_counts_and_writeback": true,
+      "rows": 260,
+      "sha256": "88C0C834446CF02788A3CC666CA8BAE377F1633167C8ED2F8DD7ED97D2C80653",
+      "bytes": 76368
+    }
+  }
+}

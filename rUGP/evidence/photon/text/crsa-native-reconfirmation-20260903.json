@@ -1,0 +1,216 @@
+{
+  "schema": "photon-crsa-independent-reconfirmation/v2",
+  "checked_at": "2026-09-03T08:24:30.199128+00:00",
+  "conclusion": "No additional unextracted native text fields found in the current pinned PF/PM CRsa payloads.",
+  "scope_updated_at": "2026-09-04",
+  "previously_catalogued_candidate_fields": 565,
+  "scoped_translation_and_annotation_fields": 305,
+  "excluded_weapon_parameter_occurrences": 260,
+  "additional_unextracted_fields": 0,
+  "reviewed_records": 57547,
+  "game_files_modified": false,
+  "reviewed_files_modified": false,
+  "runtime_paths_exercised": false,
+  "games": {
+    "pf": {
+      "original_crsa": 201,
+      "current_records_traced": 223,
+      "active_volumes": [
+        "photonflowers11.rio",
+        "photonflowers11.rio.002"
+      ],
+      "active_overlays": [
+        "photonflowers11.rio.ruo1"
+      ],
+      "broad_two_byte_tag_hits": 38508,
+      "additional_valid_headers": 0,
+      "all_original_volumes_hash_matched": true,
+      "original_volume_hashes": [
+        {
+          "name": "photonflowers11.rio",
+          "sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F"
+        },
+        {
+          "name": "photonflowers11.rio.002",
+          "sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22"
+        }
+      ],
+      "review_hash_multiplicity_shortfalls": 0,
+      "ambiguous_review_hash_assignment_fields": 0,
+      "current_inline_strings": 600,
+      "excluded_call_argument_groups": 4,
+      "excluded_call_argument_occurrences": 193,
+      "excluded_call_destinations": [
+        "OM_AccessWrite.キー",
+        "OM_AccessWrite.値",
+        "OM_AccessGetValue.キー",
+        "OM_AccessGetValue.初期値"
+      ],
+      "raw_scalar_fields": [
+        {
+          "name": "_CVmVar64",
+          "flags": "0x9b000000",
+          "serialized_bytes": 21,
+          "scalar_type": "_VCOLOR",
+          "scalar_bytes": 4,
+          "occurrences": 1
+        },
+        {
+          "name": "_CVmVar64",
+          "flags": "0x9b000000",
+          "serialized_bytes": 20,
+          "scalar_type": "_float",
+          "scalar_bytes": 4,
+          "occurrences": 3
+        }
+      ],
+      "language_record_array_sizes": {
+        "2": 18545
+      },
+      "reviewed_language_fragment_messages": 322,
+      "reviewed_mixed_latin_passages": 15,
+      "reviewed_kana_passages": 0,
+      "foreign_speaker_label_variants": 22,
+      "foreign_speaker_label_occurrences": 110,
+      "foreign_speaker_categories": {
+        "missed_control_source_display": 4,
+        "reviewed_message": 106
+      },
+      "reviewed_display_differences": {
+        "current_chinese_wording_revision": 15,
+        "speaker_wrapper_restored": 8
+      }
+    },
+    "pm": {
+      "original_crsa": 265,
+      "current_records_traced": 265,
+      "active_volumes": [
+        "photonmelodies11.rio",
+        "photonmelodies11.rio.002",
+        "photonmelodies11.rio.003",
+        "photonmelodies11.rio.004"
+      ],
+      "active_overlays": [],
+      "broad_two_byte_tag_hits": 66699,
+      "additional_valid_headers": 0,
+      "all_original_volumes_hash_matched": true,
+      "original_volume_hashes": [
+        {
+          "name": "photonmelodies11.rio",
+          "sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3"
+        },
+        {
+          "name": "photonmelodies11.rio.002",
+          "sha256": "8A995CAB6A8075A291BB2340E9772FA219A41643635527B2EDEFC6FDA5639EAF"
+        },
+        {
+          "name": "photonmelodies11.rio.003",
+          "sha256": "D75F15E0AE1ECF310AE42E1D8D6E48BCDA15E2D440C923A7F19622E52A394B78"
+        },
+        {
+          "name": "photonmelodies11.rio.004",
+          "sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74"
+        }
+      ],
+      "review_hash_multiplicity_shortfalls": 0,
+      "ambiguous_review_hash_assignment_fields": 0,
+      "current_inline_strings": 657,
+      "excluded_call_argument_groups": 4,
+      "excluded_call_argument_occurrences": 344,
+      "excluded_call_destinations": [
+        "OM_AccessWrite.キー",
+        "OM_AccessWrite.値",
+        "OM_AccessGetValue.キー",
+        "OM_AccessGetValue.初期値"
+      ],
+      "raw_scalar_fields": [
+        {
+          "name": "_CVmVar64",
+          "flags": "0x9b000000",
+          "serialized_bytes": 21,
+          "scalar_type": "_VCOLOR",
+          "scalar_bytes": 4,
+          "occurrences": 16
+        },
+        {
+          "name": "_CVmVar64",
+          "flags": "0x9b000000",
+          "serialized_bytes": 20,
+          "scalar_type": "_float",
+          "scalar_bytes": 4,
+          "occurrences": 50
+        }
+      ],
+      "language_record_array_sizes": {
+        "2": 44848
+      },
+      "reviewed_language_fragment_messages": 817,
+      "reviewed_mixed_latin_passages": 32,
+      "reviewed_kana_passages": 10,
+      "foreign_speaker_label_variants": 7,
+      "foreign_speaker_label_occurrences": 36,
+      "foreign_speaker_categories": {
+        "reviewed_message": 36
+      },
+      "reviewed_display_differences": {
+        "removed_numeric_prefix_on_u0010_source": 298,
+        "current_chinese_wording_revision": 2,
+        "punctuation_or_repetition_difference": 25,
+        "line_break_escape_representation": 26
+      }
+    }
+  },
+  "artifacts": {
+    "comprehensive-review.csv": {
+      "rows": 2473,
+      "bytes": 1593141,
+      "sha256": "EE5C7F761D374D7CCD7E33FD217843626213E487AF0E3CC0E2A1EC10ADEFED27"
+    },
+    "reviewed-display-differences.csv": {
+      "rows": 374,
+      "bytes": 355721,
+      "sha256": "6F8171FD9EA2954FFEE1489A214DE3BA2FB8798D3D71CCAC8DB5A66442FCA847"
+    },
+    "reviewed-language-fragments.csv": {
+      "rows": 1139,
+      "bytes": 995455,
+      "sha256": "9F994C7492B3BFA489F3D8DBB346CC700272514E5FCC0E7296C89BD2561E2133"
+    },
+    "reviewed-mixed-passages.csv": {
+      "rows": 57,
+      "bytes": 46528,
+      "sha256": "2E1010B80312C58D90DD5BF693CC13A207F71882BCAE90D4022BE4394CEDE1DD"
+    },
+    "archive-boundaries.json": {
+      "bytes": 3786,
+      "sha256": "51A12C97770444480296C426822BA65E0C0D64951889358F048EF684E88722A5"
+    },
+    "text-classification.json": {
+      "bytes": 22047,
+      "sha256": "2AEFA4450AB19269C12E61B05FB3DFA10A4F5BD252D8F6EBABB8BBE8DC328638"
+    },
+    "structure-trace.json": {
+      "bytes": 13888,
+      "sha256": "AA1FA00167F841F3D23556BE2533C9A65D468B1BE99F2C3C3902EC36328C4B50"
+    },
+    "source-multiplicity-assignments.json": {
+      "bytes": 127,
+      "sha256": "AC46E8653BF63442D6A2828198011E1C6DECC6C0DEDBE9DFBE533B61F20F687E"
+    },
+    "speaker-labels.json": {
+      "bytes": 16920,
+      "sha256": "ACAA8324983015F4ABEBF993C37F80C000058D3940441F7027DEA600709F4754"
+    }
+  },
+  "reviewed_language_fragment_messages": 1139,
+  "reviewed_mixed_passages": 57,
+  "reviewed_display_difference_records": 374,
+  "comprehensive_review_records": 2473,
+  "comprehensive_review_categories": {
+    "previously_catalogued_candidate_field": 565,
+    "unreferenced_old_pool_cell": 767,
+    "title_metadata": 2,
+    "already_reviewed_language_fragment": 1139
+  },
+  "interpretation": "2473 is the historical combined review inventory. The 565 candidate fields comprise 40 dialogue/prompt fields, 265 annotation fields and 260 weapon parameters. The confirmed localization scope is 305 fields; all 260 weapon parameters are excluded from omission counts and writeback."
+}

@@ -29,7 +29,14 @@ An independent census of all 151 official counted CStrings found zero with an em
 
 `U+0000` is legal as the terminal delimiter outside the counted value. It is not a safe padding character *inside* a length-counted CString. The serializer's static structure remains valid, but the AGES runtime rejects the value.
 
-The failure was therefore **not** caused by Chinese text, record location, RIO/RUO transport, CRsa encryption, checksum drift, record growth, or missing parent closure. Those hypotheses were useful but were falsified by the M/N controls.
+Within this controlled 8311 experiment, the failure was therefore **not** caused
+by Chinese text, the held-constant record/RUO route, CRsa encryption, checksum
+drift, record growth, or missing parent closure. Those hypotheses were useful but
+were falsified by the M/N controls. A later, separate PM experiment found
+`InternalError(831)` for an identity CRsa redirect into a later split volume;
+that transport boundary is recorded in the
+[native-field increment](crsa-native-increment-20260904.md) and does not change
+the embedded-NUL cause proved here for 8311.
 
 ## Production rule
 

@@ -39,7 +39,11 @@ archive ID. The manager retains one final RUO archive index while the redirect
 map is global; every entry is resolved against that last archive. Independent
 RUO files are therefore not safely stackable.
 
-- PF/PM originally have no RUO: deploy one cumulative `base.rio.ruo1`.
+- PF originally has no RUO: deploy one cumulative `base.rio.ruo1`.
+- PM native CRsa records in later split volumes are not deployed through RUO.
+  A byte-identical redirect reproduced `InternalError(831)`, while the same
+  record in its original fixed extent passed; use the hash-gated volume staging
+  route documented in the [native-field increment](crsa-native-increment-20260904.md).
 - Titles that already ship an official RUO: preserve its data region and
   redirects, append localized records, replace duplicate source keys, then
   write one combined footer.
@@ -54,4 +58,5 @@ records.
 This proves replacement of existing object identities. Adding/removing paths
 or changing directory topology still requires a directory/root strategy. A
 valid RUO file also does not prove that every replacement record is a valid
-CRsa/Cr6Ti/CRip object; codec round-trip and in-game QA remain separate gates.
+CRsa/Cr6Ti/CRip object or that a particular split-volume route accepts the
+redirect; codec round-trip and in-game QA remain separate gates.

@@ -27,7 +27,7 @@
  *
  * PM's exact CInt image-language setter is instruction-for-instruction
  * equivalent to PF's authenticated setter path.  This adapter hooks only that
- * setter and binds the 39 Cr6Ti exceptional endpoints by complete physical
+ * setter and binds the 50 Cr6Ti exceptional endpoints by complete physical
  * identity (length + FNV-1a + SHA-256).  State 0 is Japanese official and can
  * never authorize a sidecar; state 1 is Translation.  Unknown state, a torn
  * transition, a stale object generation, or any identity disagreement fails
@@ -285,6 +285,14 @@ static int target_exact(uint32_t bytes, uint64_t hash,
         digest, 32) == 0 ? index : -1;
 }
 
+static int target_is_translation_witness(uint32_t target_index) {
+    uint32_t first = PHOTON_V6_PM_TRANSLATION_WITNESS_FIRST_INDEX;
+    uint32_t count = PHOTON_V6_PM_TRANSLATION_WITNESS_COUNT;
+    return target_index >= first && target_index - first < count &&
+        photon_v6_pm_special_cr6_targets[target_index].stable_identity ==
+            target_index + 1U;
+}
+
 static int selector_semantics_enabled(void) {
     return InterlockedCompareExchange(&initialized, 0, 0) != 0 &&
         !InterlockedCompareExchange(&shutting_down, 0, 0) &&
@@ -295,7 +303,7 @@ static int selector_semantics_enabled(void) {
 
 static int exact_action_stack(void) {
     static const DWORD expected[] = {
-        0x000C5A98, 0x00042F72, 0x00042249, 0x00122F38, 0x0012D377
+        0x00043132, 0x00042409, 0x00122EB8, 0x0012D327
     };
     void *frames[32];
     USHORT count = CaptureStackBackTrace(1, 32, frames, NULL);
@@ -358,6 +366,40 @@ static int lease_census_exact_locked(void) {
                &special_write_lease_count, 0, 0) &&
         ordinary + special == InterlockedCompareExchange(
                &translation_write_leases, 0, 0);
+}
+
+/* The addendum witnesses are complete physical identities of official
+ * Translation endpoints and are absent from the Japanese branch.  A cold
+ * save-load can therefore establish Translation state from one such payload
+ * without guessing a persisted setting or authorizing any Japanese bytes. */
+static int bootstrap_translation_from_witness(uint32_t target_index) {
+    int committed = 0, conflict = 0;
+    if (!target_is_translation_witness(target_index)) return 0;
+    AcquireSRWLockExclusive(&state_lock);
+    if (!InterlockedCompareExchange(&shutting_down, 0, 0) &&
+        !InterlockedCompareExchange(&fatal_latch, 0, 0) &&
+        !InterlockedCompareExchange(&semantic_gate_disabled, 0, 0) &&
+        !InterlockedCompareExchange(&lifecycle_admission_revoked, 0, 0) &&
+        !InterlockedCompareExchange(&language_transition_inflight, 0, 0) &&
+        InterlockedCompareExchange(&language_state, 0, 0) ==
+            PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN &&
+        lease_census_exact_locked() &&
+        InterlockedCompareExchange(&translation_write_leases, 0, 0) == 0 &&
+        active_surface_count_locked() == 0) {
+        clear_runtime_identity_locked();
+        InterlockedExchange(&language_state,
+            PHOTON_V6_PF_SELECTOR_LANGUAGE_TRANSLATION);
+        InterlockedIncrement(&language_state_sequence);
+        MemoryBarrier();
+        telemetry_increment(&language_bootstrap_exact_events);
+        committed = 1;
+    } else if (InterlockedCompareExchange(&language_state, 0, 0) ==
+                   PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN) {
+        conflict = 1;
+    }
+    ReleaseSRWLockExclusive(&state_lock);
+    if (conflict) telemetry_increment(&language_bootstrap_conflict_rejects);
+    return committed;
 }
 
 static int begin_language_transition(LONG expected_previous, int bootstrap) {
@@ -439,7 +481,9 @@ hook_cint_setter_dispatch(void *self, uint32_t value, uintptr_t vm_this) {
     uint32_t cint_vtable, cint_owner, cint_meta, cint_type, previous, stored;
     uint16_t vm_opcode;
     void *known_this, *known_owner;
-    int bootstrap_exact, action_exact, bootstrap_candidate, action_candidate;
+    LONG observed_language;
+    int bootstrap_exact, action_exact, bootstrap_candidate;
+    int action_bind_candidate, action_candidate, action_same_value;
     int known_anomaly, transition_started = 0;
     uintptr_t result;
     if (!selector_semantics_enabled()) return real_cint_setter(self, value);
@@ -475,34 +519,57 @@ hook_cint_setter_dispatch(void *self, uint32_t value, uintptr_t vm_this) {
         (void *volatile *)&language_cint_this, NULL, NULL);
     known_owner = InterlockedCompareExchangePointer(
         (void *volatile *)&language_cint_owner, NULL, NULL);
-    bootstrap_candidate = !known_this && bootstrap_exact && value <= 1 &&
-        InterlockedCompareExchange(&language_state, 0, 0) ==
+    observed_language = InterlockedCompareExchange(&language_state, 0, 0);
+    bootstrap_candidate = !known_this && !known_owner && bootstrap_exact &&
+        value <= 1 && observed_language ==
             PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN;
+    action_bind_candidate = !known_this && !known_owner && action_exact &&
+        previous <= 1 && value <= 1 &&
+        (observed_language == PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN ||
+         observed_language == (LONG)previous);
     action_candidate = known_this == self && known_owner &&
         known_owner == (void *)(uintptr_t)cint_owner && action_exact &&
         previous <= 1 && value <= 1 && previous != value &&
-        InterlockedCompareExchange(&language_state, 0, 0) == (LONG)previous;
-    known_anomaly = known_this && !action_candidate &&
+        observed_language == (LONG)previous;
+    action_same_value = known_this == self && known_owner &&
+        known_owner == (void *)(uintptr_t)cint_owner && action_exact &&
+        previous <= 1 && value == previous &&
+        observed_language == (LONG)previous;
+    known_anomaly = (known_this || known_owner) && !action_candidate &&
+        !action_same_value &&
         (known_this == self || (action_exact && vm_command == 0x237));
     if (bootstrap_candidate)
         transition_started = begin_language_transition(
             PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN, 1);
+    else if (action_bind_candidate)
+        transition_started = begin_language_transition(observed_language, 1);
     else if (action_candidate)
         transition_started = begin_language_transition((LONG)previous, 0);
     else if (known_anomaly)
         transition_started = begin_language_transition(
             InterlockedCompareExchange(&language_state, 0, 0), 0);
-    if ((bootstrap_candidate || action_candidate || known_anomaly) &&
+    if ((bootstrap_candidate || action_bind_candidate || action_candidate ||
+         known_anomaly) &&
         !transition_started) return relevant_setter_failure(previous);
     result = real_cint_setter(self, value);
     stored = safe_u32(self, 0x10);
+    if (action_same_value) {
+        if (stored != value) return relevant_setter_failure(previous);
+        telemetry_increment(&language_setter_exact_events);
+    }
     if (transition_started) {
+        int identity_bootstrap = bootstrap_candidate || action_bind_candidate;
         int exact = stored == value && value <= 1 && !known_anomaly &&
             ((bootstrap_candidate && !known_this) ||
+             (action_bind_candidate && !known_this && !known_owner &&
+              (observed_language ==
+                   PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN ||
+               observed_language == (LONG)previous)) ||
              (action_candidate && known_this == self &&
               known_owner == (void *)(uintptr_t)cint_owner));
         if (!finish_language_transition((LONG)value, exact,
-                bootstrap_candidate, self, (void *)(uintptr_t)cint_owner))
+                identity_bootstrap, self,
+                (void *)(uintptr_t)cint_owner))
             return relevant_setter_failure(previous);
     }
     return result;
@@ -840,6 +907,10 @@ int __attribute__((cdecl)) photon_v6_pf_selector_adapter_note_load(
         InterlockedDecrement(&hook_inflight);
         return 0;
     }
+    if (InterlockedCompareExchange(&language_state, 0, 0) ==
+            PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN &&
+        target_is_translation_witness((uint32_t)exact))
+        (void)bootstrap_translation_from_witness((uint32_t)exact);
     memset(&binding, 0, sizeof(binding));
     bind_object(cr6_object, (const BYTE *)payload, payload_bytes, hash,
                 digest, (uint32_t)exact, &binding);
@@ -1184,7 +1255,7 @@ int __attribute__((cdecl)) photon_v6_pf_selector_adapter_init(
         return -1;
     main_base = verified_main_base;
     if (!verify_image(main_base) ||
-        PHOTON_V6_PM_SPECIAL_CR6_TARGET_COUNT != 39) {
+        PHOTON_V6_PM_SPECIAL_CR6_TARGET_COUNT != 50) {
         main_base = NULL;
         InterlockedExchange(&initializing, 0);
         return -2;

@@ -30,14 +30,14 @@
       "sealed_source_manifest_sha256": "81A2A9BB9B0469D961557410664673DF461522621074BF37AB6F8544459711DC"
     },
     "photon_v6_pm_special40_table.generated.h": {
-      "bytes": 14359,
-      "sha256": "BB1F3545C1A6AF0ABFFA3C3447A4B9255923C84A2D3D68998CBED381E0AA9A01",
+      "bytes": 18919,
+      "sha256": "096BF1E01EBC341A2DC227A4B9AFA774856E19AAF85E5F57F7B453AE5B6ADAFD",
       "role": "PM special Cr6 payload identity table; contains no payload bytes",
       "sealed_source_manifest_sha256": "D5AAA4A408E77AD184502AA0DE29B739CF6E560C3CBCEB4F055055D2646086F1"
     },
     "photon_v6_special57_table.generated.h": {
-      "bytes": 38420,
-      "sha256": "300A85017886EF7C443ABEDD0A7E778CCC5878143AEE936495A61DF9849E0B96",
+      "bytes": 46157,
+      "sha256": "B8E0FFD3204C5244430B9BA559AC3C7720F400E0977C4BD236A7864799FC4772",
       "role": "PF/PM special sidecar route identity and geometry table; contains no image bytes",
       "sealed_source_manifest_sha256": null
     }
