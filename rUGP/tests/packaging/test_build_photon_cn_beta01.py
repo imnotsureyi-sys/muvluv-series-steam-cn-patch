@@ -48,10 +48,21 @@ class PhotonPackageBuilderTests(unittest.TestCase):
                 identities["clean_clone_normalized"]["sha256"],
                 runtime_builder.GAMES[runtime_game]["release_normalized_sha256"],
             )
+        self.assertEqual(
+            builder.RUNTIME_DLL_IDENTITIES["PF"]["clean_clone_normalized"]["sha256"],
+            runtime_builder.GAMES["pf"]["approved_normalized_sha256"],
+        )
+        self.assertEqual(
+            builder.RUNTIME_DLL_IDENTITIES["PM"]["timer_route_fix_normalized"][
+                "sha256"
+            ],
+            runtime_builder.GAMES["pm"]["approved_normalized_sha256"],
+        )
 
-    def test_runtime_dll_accepts_exactly_two_controlled_identities(self) -> None:
+    def test_runtime_dll_accepts_only_the_named_controlled_identities(self) -> None:
         historical = b"historical-runtime"
         normalized = b"normalized-runtime"
+        fixed = b"timer-route-fixed"
         identities = {
             "TEST": {
                 "historical_raw_beta01": {
@@ -62,6 +73,10 @@ class PhotonPackageBuilderTests(unittest.TestCase):
                     "bytes": len(normalized),
                     "sha256": hashlib.sha256(normalized).hexdigest().upper(),
                 },
+                "timer_route_fix_normalized": {
+                    "bytes": len(fixed),
+                    "sha256": hashlib.sha256(fixed).hexdigest().upper(),
+                },
             }
         }
         with tempfile.TemporaryDirectory() as temporary:
@@ -70,6 +85,7 @@ class PhotonPackageBuilderTests(unittest.TestCase):
                 for expected, content in (
                     ("historical_raw_beta01", historical),
                     ("clean_clone_normalized", normalized),
+                    ("timer_route_fix_normalized", fixed),
                 ):
                     source.write_bytes(content)
                     selected = builder.select_runtime_dll_identity(source, "TEST")
@@ -80,7 +96,7 @@ class PhotonPackageBuilderTests(unittest.TestCase):
                         hashlib.sha256(content).hexdigest().upper(),
                     )
 
-                unknown = b"unknown-runtime-xx"
+                unknown = b"x" * len(historical)
                 self.assertEqual(len(unknown), len(historical))
                 source.write_bytes(unknown)
                 with self.assertRaisesRegex(

@@ -1,0 +1,738 @@
+{
+  "schema": "photon-pm-watermelon-timer-runtime-routes/v2",
+  "review_date": "2026-09-04",
+  "game": "PM",
+  "scope": {
+    "logical_routes": 23,
+    "unique_physical_routes": 22,
+    "dynamic_timer_layers": 11,
+    "embedded_tutorial_frames": 12,
+    "unique_embedded_tutorial_payloads": 11,
+    "repointed_existing_special_targets": 0,
+    "appended_special_targets": 11,
+    "pm_special_target_count_before": 39,
+    "pm_special_target_count_after": 50,
+    "combined_special_sidecar_count_before": 57,
+    "combined_special_sidecar_count_after": 68
+  },
+  "finding": "The reviewed Chinese timer graphics already existed. The dynamic 300-to-0 Translation targets were present in the ordinary exact-RGBA table, while twelve tutorial frames (eleven unique Translation-slot physical payloads) were absent. The PM image-language setter hook also used a stale stack fingerprint, and loading the saved tutorial position did not invoke that setter, so the selector remained UNKNOWN and correctly failed closed.",
+  "route_model": {
+    "translation_slot": "The runtime authenticates the official Translation-field physical payload and replaces it with the Chinese sidecar. The official bitmap can still visibly contain Japanese text.",
+    "japanese_slot": "The Japanese-field payload is a different physical identity and is never authorized by these Translation witnesses.",
+    "cold_save_bootstrap": "An exact length+FNV-1a+SHA-256 match against one of the eleven Translation-only tutorial payloads may change UNKNOWN to Translation only while the lifecycle is clean and no surface or write lease is active.",
+    "live_language_change": "Command 0x237 is accepted only with the observed VM/CInt identities and the corrected main-module parent stack; same-value actions are verified without being treated as fatal anomalies."
+  },
+  "source_authority": {
+    "patched_pm_rio": {
+      "bytes": 1913545000,
+      "sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3"
+    },
+    "localized_image_release": {
+      "tag": "photon-images-1490-20260824-v6",
+      "url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/photon-images-1490-20260824-v6",
+      "zip": "MuvLuv_Photon_PF_PM_CN_Images_1490_20260824_v6.zip",
+      "zip_bytes": 77316999,
+      "zip_sha256": "B11D0D322CF3081D0788BA60BB3D94C2014BD57B32852DC053B0D158128E97D8",
+      "reused_pm_ordinals": [
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664
+      ]
+    }
+  },
+  "embedded_frame_materialization": {
+    "base": "decoded official Translation-field target payload",
+    "output": "opaque RGBA PNG, 1024x600",
+    "timer_band": "the reviewed Chinese timer layer was composited into the corresponding official Translation frame with a feathered repaired mask",
+    "zero_second_cue": {
+      "method": "the reviewed source fragments are removed with a yellow-only repair mask and the matching localized 300-second background; the original Chinese glyph pixels are restored before one closed 4-pixel ellipse is rendered at 8x supersampling",
+      "zero_source_asset_id": "pm:rio000:0x651a84bc",
+      "clean_reference_asset_id": "pm:rio000:0x651ec27c",
+      "source_ring_core_pixels": 758,
+      "repair_mask_pixels": 1733,
+      "repair_mask_bbox": [
+        673,
+        119,
+        767,
+        174
+      ],
+      "ellipse_bbox": [
+        570,
+        121,
+        766,
+        172
+      ],
+      "supersample": 8,
+      "line_width_pixels": 4,
+      "ring_core_pixels": 1498,
+      "ring_visible_support_pixels": 1986,
+      "localized_glyph_support_pixels": 2144,
+      "visible_ring_glyph_overlap_pixels": 0,
+      "connected_components": 1,
+      "has_enclosed_hole": true,
+      "changed_pixels_from_pre_ring_composite": 3430,
+      "changed_bbox": [
+        567,
+        118,
+        768,
+        174
+      ]
+    },
+    "sound_only_cue": "the observed dimmed SOUND ONLY state is preserved",
+    "review_contact_sheets": [
+      {
+        "file": "translation-tutorial-contact-sheet.png",
+        "bytes": 889234,
+        "sha256": "AD61DC219F4212474A8521BA5B3F6ECDAEB2452C934C5E607F6A691C5BC38469"
+      },
+      {
+        "file": "translation-tutorial-timer-crops.png",
+        "bytes": 220880,
+        "sha256": "D2D73FDE482BC5D5D9A80EC351A16710FAC0D289209ECBFB051375A082E33FF7"
+      }
+    ],
+    "redistribution_status": "derived sidecars remain outside Git pending a separately reviewed image addendum release"
+  },
+  "runtime_evidence": {
+    "status": "corrected runtime accepted in live PM save-slot replay; no 831/8311 observed",
+    "options_japanese_image_chinese_text": {
+      "file": "options-screen.png",
+      "bytes": 565622,
+      "sha256": "4EBF9EE67B3ACDF54F20A0E0DB98652964A1C8814EB537CC004186CD0E96CA99",
+      "observation": "Japanese image language selected while Chinese text language remained selected"
+    },
+    "options_translation_selected": {
+      "file": "options-after-select-cn.png",
+      "bytes": 565511,
+      "sha256": "D0AADD6DDB54C662A3878E7575F9C68EE71B50D193F9ACEC2787D819E2722CC0",
+      "observation": "Translation image language selected"
+    },
+    "translation_target_without_overlay": {
+      "file": "after-select-cn-next-frame-real2.png",
+      "bytes": 409636,
+      "sha256": "F1162DC70A53DDD08A73C776AF0DBCF380C22D0906682C66AB8FCDFB8AAE9C48",
+      "observation": "the Translation-field tutorial frame still visibly contains the Japanese timer because its Chinese sidecar route was missing or failed closed"
+    },
+    "setter_trace": {
+      "file": "pm-setter-c5-jp-cn-switch.bin",
+      "bytes": 43680,
+      "sha256": "BBFEA694A65DAF84C27FE80E990FE333727A08A3E0A23BD15AF07CD831FBC3B9",
+      "record_bytes": 156,
+      "command": "0x237",
+      "events": 3,
+      "values_and_previous": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "vm_vtable_rva": "0x00230D30",
+      "vm_exec_rva": "0x000C50D0",
+      "cint_vtable_rva": "0x002424E0",
+      "cint_type": "0x16000000",
+      "parent_stack_rvas": [
+        "0x00043132",
+        "0x00042409",
+        "0x00122EB8",
+        "0x0012D327"
+      ],
+      "old_stack_matches": 0
+    },
+    "all_calls_control": {
+      "file": "pm-setter-allcalls-jp-switch.bin",
+      "bytes": 25000,
+      "sha256": "6E24A8496EF4984E4A2738EA3E19FF87C322BC75CABAB3E7295F8A6C1699725A",
+      "purpose": "control capture used to isolate the command 0x237 language object from unrelated CInt calls"
+    },
+    "fresh_saved_position": {
+      "setter_events_before_options": 0,
+      "observation": "loading directly into the tutorial did not call the image-language setter, requiring exact Translation-payload witness bootstrap"
+    },
+    "acceptance_flow": {
+      "date": "2026-09-05",
+      "save_slot": "Altered Fable No.50",
+      "steps": [
+        "loaded the saved watermelon tutorial position",
+        "traversed the remaining embedded tutorial frames through the zero-second explanation",
+        "accepted the Chinese choice and entered the live minigame"
+      ],
+      "observation": "all transitions completed without InternalError(831), InternalError(8311), blank frames, torn overlays, or font/layout corruption"
+    },
+    "after_fix_samples": [
+      {
+        "file": "pm-watermelon-timer-300-live-20260905.png",
+        "bytes": 505512,
+        "sha256": "5630827956D168334D04E2A61A51785578E27FEF534001564397548F11F0EBEA",
+        "observation": "tutorial 300-second frame: Chinese timer and prompt display normally"
+      },
+      {
+        "file": "pm-watermelon-timer-0-closed-ring-live-20260905.png",
+        "bytes": 530329,
+        "sha256": "098E877BF03627C8DEC02E6AF327E50572B34BC4051DEE3DA977C9D38BEB1D06",
+        "observation": "tutorial zero-second frame: one complete closed, visually uniform yellow ellipse encloses the full Chinese timer; no Chinese glyph is erased or covered"
+      },
+      {
+        "file": "pm-watermelon-tutorial-choice-live-20260905.png",
+        "bytes": 500266,
+        "sha256": "A50ADD3BFFB4E410A54CB35C439CC064BFD7387D366E1D8FF54433A0A5F51181",
+        "observation": "post-explanation choice: both Chinese options render and remain selectable"
+      },
+      {
+        "file": "pm-watermelon-gameplay-300-live-20260905.png",
+        "bytes": 266382,
+        "sha256": "675FD88A2205FFE21ABB0F4F7AFC95537EE5C185612D983C5CFD0CB12243053E",
+        "observation": "live minigame: dynamic 300-second Chinese timer and bottom prompt render normally"
+      }
+    ]
+  },
+  "routes": [
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x6551721c",
+      "target_asset_id": "pm:rio000:0x00b267bc",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10910,
+      "payload_fnv1a64": "C8DEC219EB260768",
+      "payload_sha256": "E70289F1C48521AB806F62371EBBEC8F30F2F9CD11E14EF5A48858B7CE0F4E07",
+      "ordinary_table_indices": [
+        399
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010910_C8DEC219EB260768.png",
+      "sidecar_png_bytes": 19186,
+      "sidecar_png_sha256": "805ADAC380171BD5F2307D0B1FD09BF027AFC4B68772C408C8E459D0A0E1F06D",
+      "sidecar_rgba_sha256": "802E547CA73EA7D983020AF8EC33470C7BF305A8FDA619476DAB46E5FBC2EB32",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10910:C8DEC219EB260768:E70289F1C48521AB806F62371EBBEC8F30F2F9CD11E14EF5A48858B7CE0F4E07"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x65518a88",
+      "target_asset_id": "pm:rio000:0x00b29290",
+      "timer": "270",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10718,
+      "payload_fnv1a64": "472244A8C0E4232C",
+      "payload_sha256": "2846BF9CAC136E9C279BC44F424690946E0EB817C0CCDDC81D979B7467DFE680",
+      "ordinary_table_indices": [
+        390
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010718_472244A8C0E4232C.png",
+      "sidecar_png_bytes": 19521,
+      "sidecar_png_sha256": "97475D32CB4158D48DBA1146E3196A43212B4703B6AAEB180F9E2B61CBFEA564",
+      "sidecar_rgba_sha256": "1D9A53BEA56903DB87F88C909C8B355B613BA590546EA86917A627CF3E012F71",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10718:472244A8C0E4232C:2846BF9CAC136E9C279BC44F424690946E0EB817C0CCDDC81D979B7467DFE680"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x6551a28c",
+      "target_asset_id": "pm:rio000:0x00b2bc9c",
+      "timer": "240",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10800,
+      "payload_fnv1a64": "D57E72DC133718EA",
+      "payload_sha256": "5D56637D59390F48C35E02D4459FC194CF53BE541C93BB7A7D9194C2632BF39B",
+      "ordinary_table_indices": [
+        394
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010800_D57E72DC133718EA.png",
+      "sidecar_png_bytes": 19603,
+      "sidecar_png_sha256": "E64FA7D203AF5DBC997E6EF173D87137A434F8797DBDC47BD10550717A9E5D7F",
+      "sidecar_rgba_sha256": "455A09E0A1D8AB9E2C50868632C94009F3DB2549376F8795CC2BAD4FAF2BEE9E",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10800:D57E72DC133718EA:5D56637D59390F48C35E02D4459FC194CF53BE541C93BB7A7D9194C2632BF39B"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x6551bb04",
+      "target_asset_id": "pm:rio000:0x00b2e6fc",
+      "timer": "210",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10474,
+      "payload_fnv1a64": "50ACFDED78CC7DA7",
+      "payload_sha256": "5DF3E585AD9D56A14F3AA9722C10FE868B0FF42AA33A300C1402D28F71F8D162",
+      "ordinary_table_indices": [
+        381
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010474_50ACFDED78CC7DA7.png",
+      "sidecar_png_bytes": 19356,
+      "sidecar_png_sha256": "E0D25011CB32E2CF771B4561C626FCAA509D290D051D4919A59CD73E6B45B559",
+      "sidecar_rgba_sha256": "AE9F425C0625A0263855F461D963D207FD1559E463FB860F1E7775811ED740E6",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10474:50ACFDED78CC7DA7:5DF3E585AD9D56A14F3AA9722C10FE868B0FF42AA33A300C1402D28F71F8D162"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x6551d308",
+      "target_asset_id": "pm:rio000:0x00b31014",
+      "timer": "180",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10540,
+      "payload_fnv1a64": "7500A9DB58B20789",
+      "payload_sha256": "3E497EB014B2CD1910AC316816BD6ED5347BB9C09BAF4655B4CF96914D3087A6",
+      "ordinary_table_indices": [
+        386
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010540_7500A9DB58B20789.png",
+      "sidecar_png_bytes": 19567,
+      "sidecar_png_sha256": "1F910AFC46D9E85BE0356694DC4C6525AEBDE02E2DF242FD92F64778BBD869F0",
+      "sidecar_rgba_sha256": "212750C5BC24AF232074E4B83F041A49E8C7D01B3689B88828B6B8EF87432355",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10540:7500A9DB58B20789:3E497EB014B2CD1910AC316816BD6ED5347BB9C09BAF4655B4CF96914D3087A6"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x6551eb64",
+      "target_asset_id": "pm:rio000:0x00b33970",
+      "timer": "150",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10508,
+      "payload_fnv1a64": "321A7E270E18F9FC",
+      "payload_sha256": "6CBE5FCB5943BDEE428259238B45E43EF94CD568DD95AC19BB446FB6D6890980",
+      "ordinary_table_indices": [
+        385
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010508_321A7E270E18F9FC.png",
+      "sidecar_png_bytes": 19310,
+      "sidecar_png_sha256": "AC98599E39D0529CA081451E7BB6F5F241B6CB9CAD4A09987FC91D19B4C2A666",
+      "sidecar_rgba_sha256": "3A40721F47C7002E5621BB6662FF955A8AD333F8887F6F61865BDC1B4F54E410",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10508:321A7E270E18F9FC:6CBE5FCB5943BDEE428259238B45E43EF94CD568DD95AC19BB446FB6D6890980"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x6552031c",
+      "target_asset_id": "pm:rio000:0x00b362ac",
+      "timer": "120",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10468,
+      "payload_fnv1a64": "2CF5E07988419E19",
+      "payload_sha256": "35BE300BA2E44C3A90FB294E73592C80B92F2111EE6CBA5440A0CCE7BBD74465",
+      "ordinary_table_indices": [
+        380
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010468_2CF5E07988419E19.png",
+      "sidecar_png_bytes": 19349,
+      "sidecar_png_sha256": "DBC14F8DEFF9E3770BC831D9C68EFCAEB79808A7610E91448ECDA9B04811C0F3",
+      "sidecar_rgba_sha256": "4C304D931F78A4416CA045F4C77AD769C15F7C4DCFD962A0033A7AF5BFB9CB39",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10468:2CF5E07988419E19:35BE300BA2E44C3A90FB294E73592C80B92F2111EE6CBA5440A0CCE7BBD74465"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x65521b28",
+      "target_asset_id": "pm:rio000:0x00b38bc0",
+      "timer": "90",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10338,
+      "payload_fnv1a64": "9BB90AC65ABE7794",
+      "payload_sha256": "00C24B28C6DDEDF37915E9A775C1F4E87CD387C0F7342D413539F17B68EE3F9D",
+      "ordinary_table_indices": [
+        373
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010338_9BB90AC65ABE7794.png",
+      "sidecar_png_bytes": 19233,
+      "sidecar_png_sha256": "B3CD63322C1B359A53748E81375F6A72461334EA50B16B6663AD847048A45412",
+      "sidecar_rgba_sha256": "2561B6D3DCB34ABA4785BF1F9A02CAC99D7966D55DF7FB03EA5951E9AF8F666C",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10338:9BB90AC65ABE7794:00C24B28C6DDEDF37915E9A775C1F4E87CD387C0F7342D413539F17B68EE3F9D"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x65523330",
+      "target_asset_id": "pm:rio000:0x00b3b450",
+      "timer": "60",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10316,
+      "payload_fnv1a64": "C5FF5A67E88475C2",
+      "payload_sha256": "1CE669F5E18677CA7CB6CB6B1D0CBEB170D8F4782B7605A0204E85C1DC132859",
+      "ordinary_table_indices": [
+        372
+      ],
+      "selected_transport": "ordinary_exact_rgba",
+      "sidecar": "sidecars/PM/0000010316_C5FF5A67E88475C2.png",
+      "sidecar_png_bytes": 19230,
+      "sidecar_png_sha256": "A424FB7799B38F6C970480F53C727B9BA261CAE05FE37F22C612F929990E2BB5",
+      "sidecar_rgba_sha256": "939A0EC57B9FB0812615E2172443E2B2AD82636F80BD2D01F264F8D4101ECB7D",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10316:C5FF5A67E88475C2:1CE669F5E18677CA7CB6CB6B1D0CBEB170D8F4782B7605A0204E85C1DC132859"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x65524b40",
+      "target_asset_id": "pm:rio000:0x00b3dccc",
+      "timer": "30",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 10234,
+      "payload_fnv1a64": "B14D1BFCBC07B90C",
+      "payload_sha256": "D4F17CDA64B488A348F3BADDD4E75FD27F78EBF4594B8283BC5C9A99FC4AF930",
+      "ordinary_table_indices": [
+        368
+      ],
+      "selected_transport": "special57_context_gated",
+      "sidecar": "sidecars/PM/0000010234_B14D1BFCBC07B90C.png",
+      "sidecar_png_bytes": 19161,
+      "sidecar_png_sha256": "C426E14C26A53D878C7D0384AEE7D810C317EEDE08A08FD786426ACF7FB992A5",
+      "sidecar_rgba_sha256": "2BCD90776975FB1A5D1D3C5B878CE7E5F7E3847804682C31FF9FB069EE50A86E",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:10234:B14D1BFCBC07B90C:D4F17CDA64B488A348F3BADDD4E75FD27F78EBF4594B8283BC5C9A99FC4AF930",
+      "existing_special_target_stable_id": 4,
+      "special_sidecar": "payload/PM/pm_rio000_65524b40.png"
+    },
+    {
+      "kind": "dynamic_timer_layer",
+      "source_asset_id": "pm:rio000:0x65526374",
+      "target_asset_id": "pm:rio000:0x00b404f4",
+      "timer": "0",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 9038,
+      "payload_fnv1a64": "1FB029A4EF55765F",
+      "payload_sha256": "E8C3FBF809EB82F5B2CE95141C79864D3D09335D06B29151B991980EEFD9F689",
+      "ordinary_table_indices": [
+        319
+      ],
+      "selected_transport": "special57_context_gated",
+      "sidecar": "sidecars/PM/0000009038_1FB029A4EF55765F.png",
+      "sidecar_png_bytes": 18549,
+      "sidecar_png_sha256": "5CE61962C3CD9F1A344B6BD01508D11A236FBD6054DA0489B08938649BBB2D6B",
+      "sidecar_rgba_sha256": "76B922A566C67EEA593688ED3CFF5184667A20629612F0262263B1B2D41BA838",
+      "size": [
+        412,
+        55
+      ],
+      "context_identity_key": "PM_CR6:9038:1FB029A4EF55765F:E8C3FBF809EB82F5B2CE95141C79864D3D09335D06B29151B991980EEFD9F689",
+      "existing_special_target_stable_id": 5,
+      "special_sidecar": "payload/PM/pm_rio000_65526374.png"
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x651a84bc",
+      "target_asset_id": "pm:rio000:0x007c6cc4",
+      "timer": "0",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 272948,
+      "payload_fnv1a64": "7A9A5B91648545EA",
+      "payload_sha256": "DFD28470393E5CCE607688D6A7528979C12A7FCF50C4288799097CD047EE312E",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_651a84bc.png",
+      "sidecar_png_bytes": 375299,
+      "sidecar_png_sha256": "B4890D1DE0E86953D9FF558CB85440FE0B37D5B49AA70C9BF201378FFB905882",
+      "sidecar_rgba_sha256": "5E294E9A22786FE750FDA6D3786CEA17FE367959C95897A95C0739A35A174D21",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:272948:7A9A5B91648545EA:DFD28470393E5CCE607688D6A7528979C12A7FCF50C4288799097CD047EE312E",
+      "appended_special_target_stable_id": 40
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x651ec27c",
+      "target_asset_id": "pm:rio000:0x00809738",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 282716,
+      "payload_fnv1a64": "67D609B9104CC6AD",
+      "payload_sha256": "30681D26E198712C3742D4CEEB164448058296F453B67CB630F7E5B4F4706949",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_651ec27c.png",
+      "sidecar_png_bytes": 382290,
+      "sidecar_png_sha256": "E4B9EAB21698999E7ADF74065B4633C531C5853B394E434683F04F47AF7BB703",
+      "sidecar_rgba_sha256": "BBEEA8655FC940B6FF26F5193D4E467A16968BB101866EC6086F8112B41944D6",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:282716:67D609B9104CC6AD:30681D26E198712C3742D4CEEB164448058296F453B67CB630F7E5B4F4706949",
+      "appended_special_target_stable_id": 41
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x65232578",
+      "target_asset_id": "pm:rio000:0x0084e7c4",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 272056,
+      "payload_fnv1a64": "63C6931E025F48B8",
+      "payload_sha256": "58416D48A7C802F0F0DD44BFBFEA0CE50F78FBBF90A1B7FB8C3D52340C301F37",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_65232578.png",
+      "sidecar_png_bytes": 370404,
+      "sidecar_png_sha256": "B3C31E3CA900057BE6B25F90A4A3DE148DA3947B9EB3B04DC5CEC95B1D613FD7",
+      "sidecar_rgba_sha256": "3FCE6167B7F78AA362199CB515AD36EA1A2F2BE77BBD5A881DF99627A8A040AC",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:272056:63C6931E025F48B8:58416D48A7C802F0F0DD44BFBFEA0CE50F78FBBF90A1B7FB8C3D52340C301F37",
+      "appended_special_target_stable_id": 42
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x65275f70",
+      "target_asset_id": "pm:rio000:0x00890eac",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 272240,
+      "payload_fnv1a64": "2E784AC82A473ABE",
+      "payload_sha256": "3F701704A3640B2B324B586D1218353A601304963D239E9F22EC99E080C18F6F",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_65275f70.png",
+      "sidecar_png_bytes": 370420,
+      "sidecar_png_sha256": "A51A53B4CA1C0A1088E5029AA63A30E3BFCE514F5C899027ECE804399E08089A",
+      "sidecar_rgba_sha256": "6E320B4BD9D8C4F7A2E0EF98835EB7439C393F708B531BD7E93207FA07A187B8",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:272240:2E784AC82A473ABE:3F701704A3640B2B324B586D1218353A601304963D239E9F22EC99E080C18F6F",
+      "appended_special_target_stable_id": 43
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x652b99c8",
+      "target_asset_id": "pm:rio000:0x008d364c",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 272396,
+      "payload_fnv1a64": "43820D5038276882",
+      "payload_sha256": "71AD4C9B69B5008A9E677C4CBFB5A000AEB88F2FA422FAB67B900711791A5C8F",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_652b99c8.png",
+      "sidecar_png_bytes": 370485,
+      "sidecar_png_sha256": "CC8E1A525DC7E3BD7BC0950BDFAA203231F34EA85C85F493C06DA8659F3CE8B0",
+      "sidecar_rgba_sha256": "531B21FCD186AD5F860FA2639021485835D17A77B4D43B4971FBFB1F6EF5086E",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:272396:43820D5038276882:71AD4C9B69B5008A9E677C4CBFB5A000AEB88F2FA422FAB67B900711791A5C8F",
+      "appended_special_target_stable_id": 44
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x652fd4a0",
+      "target_asset_id": "pm:rio000:0x00915e88",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 272208,
+      "payload_fnv1a64": "0B13B3EF0AAA66B2",
+      "payload_sha256": "B422AFA8B5F9EFE3F7F8E73CD33BE96256906A37C9B087D3C76BEFFCAFA3C056",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_652fd4a0.png",
+      "sidecar_png_bytes": 370318,
+      "sidecar_png_sha256": "CD8CF2D91068377D9B2333839F592A572997047FF18F0C01498CA51EA4418CC5",
+      "sidecar_rgba_sha256": "8906AF033CDC40072327882B52E52A0D7A055E9EE00F0E71CE104F776E17BE33",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:272208:0B13B3EF0AAA66B2:B422AFA8B5F9EFE3F7F8E73CD33BE96256906A37C9B087D3C76BEFFCAFA3C056",
+      "appended_special_target_stable_id": 45
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x65340ef8",
+      "target_asset_id": "pm:rio000:0x00958608",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 272372,
+      "payload_fnv1a64": "9EF9264DE28F6920",
+      "payload_sha256": "05AB9C2172F4AEA2DE041A2EF9E684D7A551152F8D98EBFB3FDF058D5C487E50",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_65340ef8.png",
+      "sidecar_png_bytes": 370378,
+      "sidecar_png_sha256": "A56A46E7F1EDD848EEB42078BE0A63B2AAFB28C8B2646662AEB71B865B535AC8",
+      "sidecar_rgba_sha256": "4D61A9A53CFF8FE09B19087A509F0D9371821F05EE3E883E98F6778CE52C4CFF",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:272372:9EF9264DE28F6920:05AB9C2172F4AEA2DE041A2EF9E684D7A551152F8D98EBFB3FDF058D5C487E50",
+      "appended_special_target_stable_id": 46
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x653849f4",
+      "target_asset_id": "pm:rio000:0x0099ae2c",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 271950,
+      "payload_fnv1a64": "18CFD55353249959",
+      "payload_sha256": "05CB3CF049E19DC8DDD440F04F3981ACFFF933BDC3685AA4972567A3E3AA4C3E",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_653849f4.png",
+      "sidecar_png_bytes": 369957,
+      "sidecar_png_sha256": "5F4BF7DD66A905CB001854E4E5667723208E7EDFE4782C1F70EB9EE0583AB132",
+      "sidecar_rgba_sha256": "36DAC7614D4EE8BD189D4EA2BE2E774CE5AC6B5B5647168591A9B17BD7AE946D",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:271950:18CFD55353249959:05CB3CF049E19DC8DDD440F04F3981ACFFF933BDC3685AA4972567A3E3AA4C3E",
+      "appended_special_target_stable_id": 47
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x653c8380",
+      "target_asset_id": "pm:rio000:0x009dd4a8",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 272310,
+      "payload_fnv1a64": "8A5B53831C8E01DC",
+      "payload_sha256": "69545DD8063A128D51AE0BBF5081095CE0623349F77446A18960F8DCFFCA3756",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_653c8380.png",
+      "sidecar_png_bytes": 370776,
+      "sidecar_png_sha256": "CC9A6CADC0E59854AFF996A0036A91AE298027840159551C3F1FA17B5A816801",
+      "sidecar_rgba_sha256": "3D04250388991B65BD8C1A58765711A7545CCD8B47CD8C0B5C70577AB2D323D3",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:272310:8A5B53831C8E01DC:69545DD8063A128D51AE0BBF5081095CE0623349F77446A18960F8DCFFCA3756",
+      "appended_special_target_stable_id": 48
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x6540be30",
+      "target_asset_id": "pm:rio000:0x00a1fc8c",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 270632,
+      "payload_fnv1a64": "37EBDF336C8978DE",
+      "payload_sha256": "F39FFBD49647FFCA608CEACE3C6DD0185447CB07B2130DEC8ADBE41D6CEC4F94",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_6540be30.png",
+      "sidecar_png_bytes": 367878,
+      "sidecar_png_sha256": "45D91A1C7A735B895BE53ED06737739F80EA23433896E3613EFC7EC61AE0E4F6",
+      "sidecar_rgba_sha256": "53BE6A953338B326901B8F54FE2730115AF5DEA02923993A2D99FA3D9C31C7CA",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:270632:37EBDF336C8978DE:F39FFBD49647FFCA608CEACE3C6DD0185447CB07B2130DEC8ADBE41D6CEC4F94",
+      "appended_special_target_stable_id": 49
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x6544f288",
+      "target_asset_id": "pm:rio000:0x00a61de4",
+      "timer": "300_dimmed",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 250322,
+      "payload_fnv1a64": "853757842300FB14",
+      "payload_sha256": "49FF7EAF1D1C0005202528B781171DAA5C0F3641FFC65B42435A54B378B040DD",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_6544f288.png",
+      "sidecar_png_bytes": 344976,
+      "sidecar_png_sha256": "B6FF5C535AD306CF01FDB69A55D8061C6C2E36C861BE8D0BAA80488E3069A0AE",
+      "sidecar_rgba_sha256": "17DA749E04CC335F0FA3481FCD415C8111190E1647A6B9FBCC64DB16A56511D2",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:250322:853757842300FB14:49FF7EAF1D1C0005202528B781171DAA5C0F3641FFC65B42435A54B378B040DD",
+      "appended_special_target_stable_id": 50
+    },
+    {
+      "kind": "embedded_tutorial_frame",
+      "source_asset_id": "pm:rio000:0x6548db58",
+      "target_asset_id": "pm:rio000:0x00a9efe4",
+      "timer": "300",
+      "route_authority": "official_pm_raw_locale_table_source_then_translation_field",
+      "semantic_peer_proven": true,
+      "payload_bytes": 270632,
+      "payload_fnv1a64": "37EBDF336C8978DE",
+      "payload_sha256": "F39FFBD49647FFCA608CEACE3C6DD0185447CB07B2130DEC8ADBE41D6CEC4F94",
+      "selected_transport": "special57_context_gated",
+      "sidecar": "payload/PM/pm_rio000_6540be30.png",
+      "sidecar_png_bytes": 367878,
+      "sidecar_png_sha256": "45D91A1C7A735B895BE53ED06737739F80EA23433896E3613EFC7EC61AE0E4F6",
+      "sidecar_rgba_sha256": "53BE6A953338B326901B8F54FE2730115AF5DEA02923993A2D99FA3D9C31C7CA",
+      "size": [
+        1024,
+        600
+      ],
+      "context_identity_key": "PM_CR6:270632:37EBDF336C8978DE:F39FFBD49647FFCA608CEACE3C6DD0185447CB07B2130DEC8ADBE41D6CEC4F94",
+      "duplicate_physical_identity_of": "pm:rio000:0x6540be30"
+    }
+  ]
+}

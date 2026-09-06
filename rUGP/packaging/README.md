@@ -4,20 +4,20 @@
 
 Required inputs are a sealed clean archive root, sealed runtime inputs, stock fixed-file root, and independently approved final PF/PM roots. The builder verifies exact archive/fixed-file identities, creates block deltas, binds every member in a manifest, rejects absolute paths, fixes ZIP timestamps, and refuses unexpected content.
 
-One fixed file has a deliberately narrow two-identity policy. For
-`Ages3ResT.dll` only, the approved final root may contain either the historical
-Beta0.1 raw DLL or the clean-clone DLL produced by `../runtime/build.py` after
-its PE/PDB provenance normalization:
+One fixed file has a deliberately narrow named-identity policy. For
+`Ages3ResT.dll` only, the approved final root may contain a listed historical
+Beta0.1 DLL or a reviewed normalized DLL produced by `../runtime/build.py`:
 
 - PF: historical `E886F746F937B53C712AB931BFB36889FEC5ADE7B426893EFE1E1EF44415C8DD`
   or normalized `01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA`
 - PM: historical `84C20D878CD440950D55585A5B6D9575138CD043F157DC46D7A19F548AAE2C40`
-  or normalized `73F5EC68A374042096CB4C900210F22537E5706E49B7EA9A8F249C583039E2CD`
+  or historical normalized `73F5EC68A374042096CB4C900210F22537E5706E49B7EA9A8F249C583039E2CD`
+  or tutorial-timer fix normalized `D92DBE093421A2E898A6E6915EC2C527F945C2FF1DD1B95C151AE55BB58941F7`
 
-The package manifest records `historical_raw_beta01` or
-`clean_clone_normalized`, together with the actual byte count and SHA-256.
-Unknown DLLs still fail closed. Every other archive, executable, DLL, font,
-sidecar, and fixed file retains its existing single exact identity check.
+The package manifest records the selected named identity together with the
+actual byte count and SHA-256. Unknown DLLs still fail closed. Every other
+archive, executable, DLL, font, sidecar, and fixed file retains its existing
+single exact identity check.
 
 ```powershell
 python rUGP/packaging/build_photon_cn_beta01.py `

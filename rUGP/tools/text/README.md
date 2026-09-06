@@ -124,3 +124,82 @@ python -m unittest rUGP.tests.text.test_extract_crsa_text -v
 ```
 
 No real RIO or official Japanese script is stored in the test tree.
+
+## CRsa display-gap audit and incremental candidates
+
+`audit_crsa_display_gaps` scans every six-byte CRsa signature in all explicitly
+bound volumes, independently of ICI membership. It records invalid signatures,
+decoded payload identities, both UTF-16 parities, counted fields, exact CVMMsg3
+references, unsupported cached-command shapes and class declarations. Its
+outputs contain retail text and must stay in an ignored local directory.
+
+`summarize_crsa_display_audit` re-evaluates that cache after parser changes and
+exports a per-candidate decision ledger. A byte-pattern hit or unreferenced pool
+string is not an authorized translation. It does not prove full Ocean cache
+replay or gameplay reachability.
+
+`build_crsa_display_increment` accepts a hash-bound JSON increment and produces
+a new cumulative candidate RUO. It appends display strings, changes only selected
+translation indices, preserves the original source/pool/suffix and inherited
+routes, and checks the encrypted record and RUO readback. It never installs.
+Use a current, reconciled base; a frozen overlay must not silently replace newer
+routes. Existing reviewed IDs describe their original payload generation: do
+not join them to new extraction coordinates without matching source hashes.
+
+## Complete native-field audit for the pinned PF/PM builds
+
+`audit_crsa_native_text` sequentially parses every command, native operation,
+shared object cache, CString, pool cell and trailing reference. It consumes the
+decrypted `.plain` files and `census.json` from the full-volume display-gap scan,
+checks their exact block set, lengths and hashes, and uses the executable-bound
+PF/PM descriptor catalog in `crsa_vm_schema.json`. Unknown classes, versions,
+field types, invalid primary references or unexplained nonzero suffix bytes
+fail the audit without resynchronizing to a later readable string.
+
+```powershell
+python -X utf8 -m rUGP.tools.text.audit_crsa_native_text `
+  --game pf `
+  --cache "X:\Work\crsa-gap\pf-before" `
+  --overlay-cache "X:\Work\crsa-deep\pf-effective" `
+  --overlay-manifest "X:\Work\crsa-deep\current-overlays.json" `
+  --output "X:\Work\crsa-complete\PF"
+
+python -X utf8 -m rUGP.tools.text.audit_crsa_native_text `
+  --game pm `
+  --cache "X:\Work\crsa-gap\pm-before" `
+  --output "X:\Work\crsa-complete\PM"
+```
+
+The optional overlay cache must contain the current effective CRsa records and
+their hash-bound manifest; a frozen overlay is not a substitute for current
+routes. Use a dedicated generated-output directory. The auditor refreshes its
+own ledgers on rerun and first marks `audit.json` incomplete, so a failed refresh
+cannot leave an older complete result next to partially rewritten output.
+
+`all-native-text.jsonl` preserves the original strings, including empty and
+control fields. CSV ledgers distinguish current display-review candidates,
+source-language annotations, inline fields, previously reviewed foreign text,
+and unreferenced old pool cells. Every message language's primary, annotation
+and directive fields are accounted for. Adjacent annotation recovery retains
+the stale native index, its actual target, and body-key matching evidence; it
+does not silently repair bindings or prove runtime reachability.
+
+All generated ledgers contain retail text and belong in ignored local storage.
+The default reviewed inputs are the six maintained PF/PM CSVs. Their identities
+are checked against genuine source fields in the same block using the original
+UTF-8/control-escaping hash contracts. New audit `field_id` values do not replace
+existing stable IDs. The tool changes neither reviewed files nor game files.
+
+The [2026-09-03 complete audit](../../docs/postmortems/crsa-native-text-20260903.md)
+records 565 candidate field occurrences, including the first-round 40. The
+maintainer-scoped work comprises 40 dialogue/prompt fields plus 265 annotation
+fields; 260 armament-name parameters remain byte-identical and are excluded from
+omission counts and write actions. The superseded 40-item manifests are rejected
+by their old builder. `build_crsa_native_increment` builds the reviewed PF
+cumulative RUO. `build_crsa_native_volume_patch` stages the reviewed fixed-extent
+PM records in new copies of the affected clean volumes; it rejects inherited RUOs,
+record growth and changes outside the selected record extents. The shared writer
+uses fixed native or zero-filled pool storage first; a non-empty orphan slot or
+pool extension must be named explicitly in the entry and is checked during full
+native readback. The reviewed manifests and writeback contract are documented in the
+[2026-09-04 increment record](../../docs/postmortems/crsa-native-increment-20260904.md).

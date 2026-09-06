@@ -62,6 +62,9 @@ GAMES = {
         "release_normalized_sha256": (
             "01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA"
         ),
+        "approved_normalized_sha256": (
+            "01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA"
+        ),
     },
     "pm": {
         "defines": (
@@ -79,6 +82,9 @@ GAMES = {
         ),
         "release_normalized_sha256": (
             "73F5EC68A374042096CB4C900210F22537E5706E49B7EA9A8F249C583039E2CD"
+        ),
+        "approved_normalized_sha256": (
+            "D92DBE093421A2E898A6E6915EC2C527F945C2FF1DD1B95C151AE55BB58941F7"
         ),
     },
 }
@@ -373,10 +379,10 @@ def build(
             raise BuildError("Zig executable changed during compilation")
 
         digest = sha256_bytes(second_bytes)
-        expected = str(GAMES[game]["release_normalized_sha256"])
+        expected = str(GAMES[game]["approved_normalized_sha256"])
         if verify_release_code and (not authorized or digest != expected):
             raise BuildError(
-                "historical release-code verification requires an authorized build; "
+                "approved release-code verification requires an authorized build; "
                 f"expected {expected}, got {digest}"
             )
         published_by_this_build = False
@@ -436,6 +442,13 @@ def build(
         "historical_release": {
             "raw_sha256": GAMES[game]["release_sha256"],
             "normalized_sha256": GAMES[game]["release_normalized_sha256"],
+            "normalized_code_verified": (
+                verify_release_code
+                and digest == GAMES[game]["release_normalized_sha256"]
+            ),
+        },
+        "approved_release": {
+            "normalized_sha256": GAMES[game]["approved_normalized_sha256"],
             "normalized_code_verified": verify_release_code,
         },
         "inputs": manifest_inputs,
@@ -459,8 +472,8 @@ def main() -> int:
         "--verify-release-code",
         action="store_true",
         help=(
-            "require the normalized Beta0.1 DLL hash; the historical raw hash "
-            "contains path-dependent PE/PDB provenance"
+            "require the currently approved normalized DLL hash; historical "
+            "raw builds contain path-dependent PE/PDB provenance"
         ),
     )
     args = parser.parse_args()

@@ -1,0 +1,3745 @@
+{
+  "schema": "photon-crsa-native-increment/v1",
+  "game": "pf",
+  "unit_size": 4,
+  "date": "2026-09-04",
+  "base_ruo_sha256": "AB347B81928A745CE70128F0A6842FC6F93E591635235C734D749E5B0EB49B0A",
+  "volumes": [
+    {
+      "name": "photonflowers11.rio",
+      "bytes": 2147465920,
+      "sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+      "logical_offset": 0
+    },
+    {
+      "name": "photonflowers11.rio.002",
+      "bytes": 1684696824,
+      "sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+      "logical_offset": 2147465920
+    }
+  ],
+  "glossary_sha256": "8426F8C72531C13D058A2AEBDAE996F66A47EE5427D03205B88DCAE8185A685F",
+  "review_ledger": "crsa-native-review-20260904.json",
+  "blocks": [
+    {
+      "volume": "photonflowers11.rio",
+      "block_offset": 488271272,
+      "source_raw_key": "0xAA42063B",
+      "effective_record_sha256": "0BF53A33BD321767B4A48864AA366DD4ADCBB546962DE7EDF5DF274DF73CFB24",
+      "payload_sha256": "B580CA81FC2812D07F760C63E31199A423570938926FDB94D61AE7D329D84F02",
+      "entries": [
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:97:0:annotation:222592:repair",
+          "command_order": 97,
+          "command_target": 5216,
+          "status": "reviewed",
+          "source_message_sha256": "310CEF863F5208F65F75D8478790E3570D4CF94047A0666BF68914F7FC897A39",
+          "display_message_sha256": "0AE39EC57154B1A17AA66BF29DA6B9203B5BD979C11693063B6B0596AA9964AC",
+          "source_message_index": 758,
+          "display_message_index": 820,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "0AA2D2776EB881FBBA6ADCF74793F366E25CCDB1BAF4CF7D9F5668CBF9F5559F",
+            "native_index": 1717,
+            "cell_offset": 222592,
+            "index_field_offset": 4316,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:104:0:annotation:223028:repair",
+          "command_order": 104,
+          "command_target": 5632,
+          "status": "reviewed",
+          "source_message_sha256": "8E91D3EEEBC5AB27A09361BDF38275603E6779E15950F2BDF6EBEEAC09C7B51B",
+          "display_message_sha256": "43C8A927A138A1CDE8F0ADE90AA43511AFB85A836B4CC72F981FEFC233B95DB5",
+          "source_message_index": 999,
+          "display_message_index": 1083,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "8FBDACF7065A143172F17C13D37373824AD63E3E59192C1DD508D82B77425FC7",
+            "native_index": 2183,
+            "cell_offset": 223028,
+            "index_field_offset": 4591,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:117:0:annotation:224124:repair",
+          "command_order": 117,
+          "command_target": 6332,
+          "status": "reviewed",
+          "source_message_sha256": "10842DE86388A7F18A904F14984BB821B355FF5C03833A640E0F2CC20D6F019D",
+          "display_message_sha256": "300538AFCFFBB27B16756EFDB46FAF0C0E9F3971E662A932F26BF49F1762EA87",
+          "source_message_index": 1510,
+          "display_message_index": 1587,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "B25884A71C1F580470D7301AEC828AA056F183C037D19C0C0FA82BFA8DAA1DC9",
+            "native_index": 3275,
+            "cell_offset": 224124,
+            "index_field_offset": 5127,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:119:0:annotation:224414:repair",
+          "command_order": 119,
+          "command_target": 6432,
+          "status": "reviewed",
+          "source_message_sha256": "116D3887FA71DB64B1ADF47A380B7F818B5DA5497E56A280C06CE069154C35DE",
+          "display_message_sha256": "19AADBF541EC0114937142B36B93438592CF08532EC3739163957BA1CF20532F",
+          "source_message_index": 1696,
+          "display_message_index": 1768,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "1154629A2523513A23371E539C5429FF68A3236AA5B7634E37DC66C33C1850E4",
+            "native_index": 3625,
+            "cell_offset": 224414,
+            "index_field_offset": 5207,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:129:0:annotation:224942:repair",
+          "command_order": 129,
+          "command_target": 7000,
+          "status": "reviewed",
+          "source_message_sha256": "52BCE693B95FC550999F9C5672C4BBC42E52E2AEC88789B821A44C623F663C6A",
+          "display_message_sha256": "CCA175865C9346E7123629E8EC72DA0EA5C4680D50B5BD0135964E8740FE2BD9",
+          "source_message_index": 1970,
+          "display_message_index": 2003,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "5D0F989B5638A09557E919A75FB0C684B451A0D5B85A0C10AE74952D84A10B1E",
+            "native_index": 4042,
+            "cell_offset": 224942,
+            "index_field_offset": 5623,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:258:0:annotation:227628:repair",
+          "command_order": 258,
+          "command_target": 14184,
+          "status": "reviewed",
+          "source_message_sha256": "0DFEA81D2D42B4E1CC1028019783D30DF6E650A8335636E7527F33279BCB2C27",
+          "display_message_sha256": "6DB76641B9486709C9914B86F7700F1A55AD2FA715A3644710FEAE93DC806827",
+          "source_message_index": 3290,
+          "display_message_index": 3349,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "39B4DAABD47890D56A366A20D0EF0BC7A3E23607AEF6F8968E8EC5E6B63BB338",
+            "native_index": 6667,
+            "cell_offset": 227628,
+            "index_field_offset": 11252,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:273:0:annotation:228084:repair",
+          "command_order": 273,
+          "command_target": 15024,
+          "status": "reviewed",
+          "source_message_sha256": "7AD0705A668B0D859F098D2CD03B90EF114E78F848CEC2DBE8B10D100D4EB37B",
+          "display_message_sha256": "9499A73700A634A9E34ADAFF84B6DBD6A746F56185F0E4F47AD690041C7A1700",
+          "source_message_index": 3518,
+          "display_message_index": 3568,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "5B216FB9A37107E7CDF006928BD8C0306A5B5596963BDC67C4E0FCEDFDCEE695",
+            "native_index": 7106,
+            "cell_offset": 228084,
+            "index_field_offset": 11914,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:332:0:annotation:229680:repair",
+          "command_order": 332,
+          "command_target": 18008,
+          "status": "reviewed",
+          "source_message_sha256": "98B161E6A231B08CDA3FB63B2409B34511E18546B1F4A6E04A0949F0635F3CD4",
+          "display_message_sha256": "CC195FCD17E930A8380D2ABCAB15F6E2A651E595AE98236FBE9B1BC9F738D796",
+          "source_message_index": 4318,
+          "display_message_index": 4426,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "1E7CABE6A76B22D8C321CBA07F5A5B0C42CBD61ACCAA2255EC1968FC899C4333",
+            "native_index": 8484,
+            "cell_offset": 229680,
+            "index_field_offset": 14492,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:358:0:annotation:230838:repair",
+          "command_order": 358,
+          "command_target": 19368,
+          "status": "reviewed",
+          "source_message_sha256": "B45ED57B6E56895C7DB0A3EBDBCE6B936BF80D454430C316416C5DAF66D3E886",
+          "display_message_sha256": "E8A389D3936A67DF4E72450C1AA2D1B1A56DB31D9164A29009BBF20A47C7CED5",
+          "source_message_index": 4889,
+          "display_message_index": 4940,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "8D181EB1A73AC7C5CB95B026E1E2194F0B606F38DCDF8A3E4048ADF5878E1D54",
+            "native_index": 9450,
+            "cell_offset": 230838,
+            "index_field_offset": 15535,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:360:0:annotation:231254:repair",
+          "command_order": 360,
+          "command_target": 19456,
+          "status": "reviewed",
+          "source_message_sha256": "D05D34A0EF86999720BD2D5D08AFC13FDC3C85C36A26563ECEBBDCEA59FB1D11",
+          "display_message_sha256": "77831FA03585EF735813DADB1180EA729C8907E87E0FF54B694C15546025A2C1",
+          "source_message_index": 5095,
+          "display_message_index": 5149,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "B3CF864C9BD872A5466F00AE2A13D1A1AAC2FA2C46069A420C71155114473F65",
+            "native_index": 9799,
+            "cell_offset": 231254,
+            "index_field_offset": 15615,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:368:0:annotation:231424:repair",
+          "command_order": 368,
+          "command_target": 19852,
+          "status": "reviewed",
+          "source_message_sha256": "7429171532BF332F58ECA3165428A9F49F6D029A6D7C290562D2C9CBB598F3BC",
+          "display_message_sha256": "08B6F2C15EE71CB8353A15CFD6600C2D5AFCB9B7D5C529635BE2EA7E4429D631",
+          "source_message_index": 5183,
+          "display_message_index": 5241,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "6180B25FC73B411357324AC0DBDC66394882508A749DFD28FE521A48E23A67BC",
+            "native_index": 10046,
+            "cell_offset": 231424,
+            "index_field_offset": 15912,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:401:0:annotation:232592:repair",
+          "command_order": 401,
+          "command_target": 21672,
+          "status": "reviewed",
+          "source_message_sha256": "5527592AC378EC104E77556396941774953786558FEE985AE4B5A8F4A2055054",
+          "display_message_sha256": "DA7392409E7586B733A38A7A7108EC67CFF7A34E824B18F19F2E7DFC3A382221",
+          "source_message_index": 5765,
+          "display_message_index": 5838,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "649942E788C42FD933CB5A5906527E4D9C816B87D3EF604159ECE837AC2FFA54",
+            "native_index": 11175,
+            "cell_offset": 232592,
+            "index_field_offset": 17241,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:404:0:annotation:233074:repair",
+          "command_order": 404,
+          "command_target": 21816,
+          "status": "reviewed",
+          "source_message_sha256": "21F08C8DE721CBAEB8FE563B3C826D7904A0418358EA4968668271A3DB527B27",
+          "display_message_sha256": "954B87A7AC099FB4603BA73F83012584BFDD94CE3C3DA251A52A2C0AE8E2ED4A",
+          "source_message_index": 6005,
+          "display_message_index": 6080,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "470EE98F624A898EAFB875B7A21B20BA8E59A6790AD78EA5A3286102F9111C73",
+            "native_index": 11653,
+            "cell_offset": 233074,
+            "index_field_offset": 17361,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:413:0:annotation:233328:repair",
+          "command_order": 413,
+          "command_target": 22312,
+          "status": "reviewed",
+          "source_message_sha256": "055B0C20623DE7557A079ECDC7861BB4EBEAABBE60A008A3926369F33DB89705",
+          "display_message_sha256": "6FCBD2564E7BAE0550AC801AE994DABCBE816FD200C2E89A6417894C593921A3",
+          "source_message_index": 6137,
+          "display_message_index": 6196,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "7D8C1BA878F7880A670BD36CC3966B3333ECC1FF59F82A4B763A39087DED4986",
+            "native_index": 11860,
+            "cell_offset": 233328,
+            "index_field_offset": 17711,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:420:0:annotation:233532:repair",
+          "command_order": 420,
+          "command_target": 22648,
+          "status": "reviewed",
+          "source_message_sha256": "A8A33F574F2DABBBC7E09DCA4994BF599D9EBB6EFD44CDC405D1DF35BE0D73FD",
+          "display_message_sha256": "70F9EAA259CFC337ADB1D3417EF091D5949144B8AE799C0097198DEEA27FA721",
+          "source_message_index": 6235,
+          "display_message_index": 6297,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "13A5717A993129B82AEF14298032CE4881BF5A32359F26BF4F35E764B22571D4",
+            "native_index": 12115,
+            "cell_offset": 233532,
+            "index_field_offset": 17989,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:421:0:annotation:233774:repair",
+          "command_order": 421,
+          "command_target": 22692,
+          "status": "reviewed",
+          "source_message_sha256": "9BC41B11DD22806EF03920134253CD5F4A57472E89C007E581DCA9EC61CDE5E7",
+          "display_message_sha256": "1346A9761B06526B38B6411F90BED1074590DA20CAB11F6E947EBA6124C11AAF",
+          "source_message_index": 6335,
+          "display_message_index": 6417,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4C44E256F2996D7D133D2311422A00542EE9128E07FEED022C6EBB23C1092137",
+            "native_index": 12321,
+            "cell_offset": 233774,
+            "index_field_offset": 18039,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:422:0:annotation:234056:repair",
+          "command_order": 422,
+          "command_target": 22736,
+          "status": "reviewed",
+          "source_message_sha256": "07558FE238DCDC5E0433AA6451FFB21A9832FFAD3274017FEE5410B6367CF3AF",
+          "display_message_sha256": "FC01F5EDCC70DD6DBADE6840EEB8F1572897517ECBEC46E09352A10F91BBF0A9",
+          "source_message_index": 6479,
+          "display_message_index": 6568,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "073F77ACCF164B8BA4621A1F95288D7BDCC522E6125ADE4EF7881756E7901BEB",
+            "native_index": 12663,
+            "cell_offset": 234056,
+            "index_field_offset": 18079,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:478:0:annotation:235300:repair",
+          "command_order": 478,
+          "command_target": 25768,
+          "status": "reviewed",
+          "source_message_sha256": "B4D045782CA75A826BB8156C90D6E7876B30975E98FAC2B9C6C9F87EB3E170F4",
+          "display_message_sha256": "BDA4C8CC203A395C24813A6B45B0C76C491A93ECA2F7EAA5C6C88419DA76686D",
+          "source_message_index": 7112,
+          "display_message_index": 7180,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "A6B7A24BF48F90D1E6723B7340A7FFED460F66C24ABEF70A228EB8B75CBAFE4F",
+            "native_index": 14118,
+            "cell_offset": 235300,
+            "index_field_offset": 20398,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:488:0:annotation:236056:repair",
+          "command_order": 488,
+          "command_target": 26312,
+          "status": "reviewed",
+          "source_message_sha256": "D8B0F824976846AF004FBABAB76B34EDF197654B3A2E0BCFFB8167A1D6D7EEE3",
+          "display_message_sha256": "303D9E62CF021D76A991DA73EC925D4D90608850263CDE303E19FE7279D8B4F3",
+          "source_message_index": 7489,
+          "display_message_index": 7560,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "424772C6F147AEF362D013F958B8250F9CEFC26AD2881F4BF6BCB42FD70B85E8",
+            "native_index": 14802,
+            "cell_offset": 236056,
+            "index_field_offset": 20831,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:491:0:annotation:236484:repair",
+          "command_order": 491,
+          "command_target": 26456,
+          "status": "reviewed",
+          "source_message_sha256": "1F630F1470D836DDCEECCF9B3499F465202046E65D4B0C42B34026F7383FE2BB",
+          "display_message_sha256": "E40475CD5079FEC06224E3CABF248933D0ECF9EFB59024FD8FBD183587780F9A",
+          "source_message_index": 7717,
+          "display_message_index": 7770,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "FCDD8C82753FDD90E7644D74207A8B28E8AD457DE84B132CD6D85DE2E7D119F5",
+            "native_index": 15326,
+            "cell_offset": 236484,
+            "index_field_offset": 20951,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:492:0:annotation:236688:repair",
+          "command_order": 492,
+          "command_target": 26500,
+          "status": "reviewed",
+          "source_message_sha256": "9CD5B1A990FF97898F8BB9CBF74649B93921116C7826FBD6E38E919A0D5F4BBB",
+          "display_message_sha256": "12595353677B0870D883592AEE20722367449130DA82632AC3156D5C26230954",
+          "source_message_index": 7831,
+          "display_message_index": 7871,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "3CD5C07E4D22796874B0D39CFA7A46D5C121B802784D97390B393E795E241238",
+            "native_index": 15484,
+            "cell_offset": 236688,
+            "index_field_offset": 21001,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:600:0:annotation:237544:repair",
+          "command_order": 600,
+          "command_target": 34732,
+          "status": "reviewed",
+          "source_message_sha256": "C1F009F7B009E90DCAEF7293B8D99B582BA6391D4968249B6FF4AD4C246B0CC0",
+          "display_message_sha256": "F8BE86093E24CACC97CF038E1522C9D73B8BD6AC9091AFF7FD09625D5503F85A",
+          "source_message_index": 8251,
+          "display_message_index": 8295,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4FA1667C1B6F93C4CEEF5C4D760357FCAC7DA31016851718B775886636CDF906",
+            "native_index": 16300,
+            "cell_offset": 237544,
+            "index_field_offset": 27090,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:667:0:annotation:238412:repair",
+          "command_order": 667,
+          "command_target": 39628,
+          "status": "reviewed",
+          "source_message_sha256": "0128DB0B1C0DF6E0F9262704C9548359DF47E1DF411EACFD9F37C88701FBBD6A",
+          "display_message_sha256": "04083ACA2B9E1295EEE801A10B4EDC899814F70B1FB4E5FAE136112B9B6496AF",
+          "source_message_index": 8671,
+          "display_message_index": 8748,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "03FDB146D436FC009CDD244EC2145FB83F6445598486BB7604D16C34B09964B8",
+            "native_index": 17116,
+            "cell_offset": 238412,
+            "index_field_offset": 30260,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:732:0:annotation:239896:repair",
+          "command_order": 732,
+          "command_target": 44764,
+          "status": "reviewed",
+          "source_message_sha256": "4B580AE6A06EC2DE76182078D03B11B9065C94F42C6BF32E45BB9CEF081F088D",
+          "display_message_sha256": "BCFE21880E8771E6223390D1299C13EDAFD0BEE913B9B38235D546CA07CAAF85",
+          "source_message_index": 9415,
+          "display_message_index": 9488,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4A94C95F9FD021D130953D534FC4CC02F991CE17FC5FC9CF7B467D483E369A03",
+            "native_index": 18610,
+            "cell_offset": 239896,
+            "index_field_offset": 33383,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:769:0:annotation:240250:repair",
+          "command_order": 769,
+          "command_target": 48044,
+          "status": "reviewed",
+          "source_message_sha256": "272B3D2C0D68AA9EFC548D414E1ABE3870EF9FD9701488737F09CA2CD224DA6C",
+          "display_message_sha256": "706067CBC145CF6D810C7F1E7063497CB45D3C1FB58B8361F5949462DEA64E89",
+          "source_message_index": 9587,
+          "display_message_index": 9653,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "0E4F5DE1DD9EDBD569B53708DCCDB070F6CB0B84D3186EA05302475ACB71AF2F",
+            "native_index": 18921,
+            "cell_offset": 240250,
+            "index_field_offset": 35291,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:780:0:annotation:240628:repair",
+          "command_order": 780,
+          "command_target": 48724,
+          "status": "reviewed",
+          "source_message_sha256": "EDEED0921CA3811E87BA762C650CA79296136710BE46EF4701E4635B6EF007D1",
+          "display_message_sha256": "F55EE21E4BF7917D0A05A908E817A635397A47944084E296A9BB37EB5D7F959E",
+          "source_message_index": 9786,
+          "display_message_index": 9859,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "F8377C6DB35FEC465FF3D54BF25E459114A5977ED513150EABABCACD2F35C725",
+            "native_index": 19202,
+            "cell_offset": 240628,
+            "index_field_offset": 35796,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:819:0:annotation:240976:repair",
+          "command_order": 819,
+          "command_target": 50784,
+          "status": "reviewed",
+          "source_message_sha256": "B4954E2091A93AD4ED2D2FF84B85E77FA1FDFC561247D41DC4D66389A8E2223B",
+          "display_message_sha256": "FF59C00AF560BFCDA4184B0F0E584A796DECF28DDD14E9EC21274D8E5195000F",
+          "source_message_index": 9950,
+          "display_message_index": 10029,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "1B980AD514CB0C1FFF044476F6A278D5C60D596D2CC05F999A0DE60857302837",
+            "native_index": 19435,
+            "cell_offset": 240976,
+            "index_field_offset": 37281,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:839:0:annotation:241248:repair",
+          "command_order": 839,
+          "command_target": 52384,
+          "status": "reviewed",
+          "source_message_sha256": "57ABACB7B70A2B268E48BAD2CCDB4D75C1F3115530175848D1366B8017531BBE",
+          "display_message_sha256": "03E9F1668C693BE817D91F5EA026D558CD6BD478F0747FAD56099F82B3F375A8",
+          "source_message_index": 10083,
+          "display_message_index": 10148,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "5364106B2A7F20B4F24BC52AC99A59BAC45B3DD19E7B130EDE4F14A01F798F58",
+            "native_index": 19630,
+            "cell_offset": 241248,
+            "index_field_offset": 38547,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:841:0:annotation:241486:repair",
+          "command_order": 841,
+          "command_target": 52484,
+          "status": "reviewed",
+          "source_message_sha256": "7B149E32D8F09EBF60F4A49A9227D8C738936DD3FAD57EB69FF4D8BFBCA8DB9B",
+          "display_message_sha256": "B9986B462E8DE28D8B9C302CF892B692F9C2170CCFEC485BFB90720B2DC7D34F",
+          "source_message_index": 10233,
+          "display_message_index": 10298,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "3A133D1999176A6E5E1F474FCD9E36786BB88AE99521F5363EA43C22A83AB816",
+            "native_index": 19835,
+            "cell_offset": 241486,
+            "index_field_offset": 38627,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:1429:0:annotation:245664:repair",
+          "command_order": 1429,
+          "command_target": 83668,
+          "status": "reviewed",
+          "source_message_sha256": "056FBA656FE37061A4D23C2F3C4909E22C69666E1168040240E8251F58CC2E25",
+          "display_message_sha256": "F54394A3A85ECAEC33422F5B02C22740A32D47ACBB443EB42D4C49C341583956",
+          "source_message_index": 12326,
+          "display_message_index": 12352,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "E40544B592629DAA9202041F80B6ADBE5AAC703E4ECFD1AB4021D7BDC1A20FC4",
+            "native_index": 23795,
+            "cell_offset": 245664,
+            "index_field_offset": 62619,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:1637:0:annotation:245742:repair",
+          "command_order": 1637,
+          "command_target": 95804,
+          "status": "reviewed",
+          "source_message_sha256": "EECC0FE33F405E89291443CE9516CFC1ED012EA97848794F619D5A7B8BE80671",
+          "display_message_sha256": "88F045034E5E064E2CA325803B6E7C8F10AE888538ABB9003DBDF8345063EB36",
+          "source_message_index": 12368,
+          "display_message_index": 12395,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "0DD88360FE637014D7A20CD81EC88E644B5892253345582D49657657F94D98EA",
+            "native_index": 23855,
+            "cell_offset": 245742,
+            "index_field_offset": 71051,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:1728:0:annotation:245838:repair",
+          "command_order": 1728,
+          "command_target": 101456,
+          "status": "reviewed",
+          "source_message_sha256": "67F61F684664096696024F8C6ECEF5195E7353334AA03109CC68601105B652A6",
+          "display_message_sha256": "DAC257CA8CED5ACA53D48665490F74A461DE47A55A275C79E17C554F8E69933C",
+          "source_message_index": 12406,
+          "display_message_index": 12459,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "EAA0F96C06F10D324A106A0913B2C3C581775CBBE598DEFB5123EAABFBB3E156",
+            "native_index": 23911,
+            "cell_offset": 245838,
+            "index_field_offset": 74763,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4079:0:annotation:247706:repair",
+          "command_order": 4079,
+          "command_target": 237988,
+          "status": "reviewed",
+          "source_message_sha256": "E1686ABCFA540C4A4B6233BD54DEE95E6F723E8D9D218F20E85F0075AE304F6F",
+          "display_message_sha256": "2AF99DCE28CB8DEA001A42E788280F4FD0915D64CB615956D510F80B9C716EAB",
+          "source_message_index": 13336,
+          "display_message_index": 13374,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "EE59BB4EFCC3DC7F6F099E4AF899830AF26E31CDA42E34BA4636C7C77658BCEA",
+            "native_index": 25236,
+            "cell_offset": 247706,
+            "index_field_offset": 168671,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4080:0:annotation:247836:repair",
+          "command_order": 4080,
+          "command_target": 238044,
+          "status": "reviewed",
+          "source_message_sha256": "A4C50C080241EC95433260A20413B569D3BE002822975BA88C33DD826494BD44",
+          "display_message_sha256": "74B5A4D582341E66F8190884EDCC05122DF82B5FDF5F85037A253EFB56E9C21F",
+          "source_message_index": 13402,
+          "display_message_index": 13439,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "EE59BB4EFCC3DC7F6F099E4AF899830AF26E31CDA42E34BA4636C7C77658BCEA",
+            "native_index": 25329,
+            "cell_offset": 247836,
+            "index_field_offset": 168721,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4114:0:annotation:248982:repair",
+          "command_order": 4114,
+          "command_target": 239924,
+          "status": "reviewed",
+          "source_message_sha256": "43EF2823655963BF96413C5CB894CA7E0208F220ECB137FC72785358BD86E83D",
+          "display_message_sha256": "01F182810EA730620360A42C468058C4F86FD0D2CBF0CF270346DD0B37FA1C74",
+          "source_message_index": 13967,
+          "display_message_index": 14015,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "B46480236AF3A2442FC28F6A197B7068A7D11DE1209D653C9F2121083157C7D3",
+            "native_index": 26328,
+            "cell_offset": 248982,
+            "index_field_offset": 170066,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4118:0:annotation:249176:repair",
+          "command_order": 4118,
+          "command_target": 240060,
+          "status": "reviewed",
+          "source_message_sha256": "39F1AE0A79E984D2A1B6B49A6BF3FA0FCA782D8A866287623EB0918F887FE02B",
+          "display_message_sha256": "F51A341BBAB3AFA74CD179D5A5A44E2DA0AD475DAEB8FF3C153F659D62C32AA4",
+          "source_message_index": 14040,
+          "display_message_index": 14127,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4B06A4EBCDA60FA1F82E7F4A44B29D70D56B20F203E2A4D7F14BEBB7F464FA3A",
+            "native_index": 26493,
+            "cell_offset": 249176,
+            "index_field_offset": 170177,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4123:0:annotation:249426:repair",
+          "command_order": 4123,
+          "command_target": 240332,
+          "status": "reviewed",
+          "source_message_sha256": "A5FB0264629D0DD5F91732AAB90E12CDC7F74765CA28D9246C7498D9C54D7423",
+          "display_message_sha256": "5024CF801AECAC6F6215A040DA819E64619BDC7A7ACFE056387B43DBD7D3DD39",
+          "source_message_index": 14179,
+          "display_message_index": 14239,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "020774642096FF9E99D632C66007B3C9AC4DC277E6466F97B66728702B61DE27",
+            "native_index": 26743,
+            "cell_offset": 249426,
+            "index_field_offset": 170379,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4131:0:annotation:249890:repair",
+          "command_order": 4131,
+          "command_target": 240820,
+          "status": "reviewed",
+          "source_message_sha256": "93DFDFFE55C6E749DCBDDB4C865D3D118174CD467E9AFFE98E585E40C9A5C808",
+          "display_message_sha256": "1496C840F4411760C676F1CD3BB076E643557E701D0251C0D90A2AE0ED924090",
+          "source_message_index": 14412,
+          "display_message_index": 14475,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "21F34D7D920F1A9C015ADC0DD7D8240BAC47302D4D5FDB9DCEE58D69CC89100E",
+            "native_index": 27171,
+            "cell_offset": 249890,
+            "index_field_offset": 170797,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4213:0:annotation:253830:repair",
+          "command_order": 4213,
+          "command_target": 246780,
+          "status": "reviewed",
+          "source_message_sha256": "CA4748E75C4C58B30EDCD3BE0F8568EBAFAFBBCB80A0CD8FCA46BE324E44D6F7",
+          "display_message_sha256": "3629C560FE02C2856BE24BE0B16B3200C9D8EA306E88472D404141560A7B9B4D",
+          "source_message_index": 16414,
+          "display_message_index": 16448,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "5CC69F528CBC54F2F86CB680CB0220BC6BA472A232AC87FB16B7BA8154A4F648",
+            "native_index": 30899,
+            "cell_offset": 253830,
+            "index_field_offset": 174627,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4250:0:annotation:256752:repair",
+          "command_order": 4250,
+          "command_target": 249040,
+          "status": "reviewed",
+          "source_message_sha256": "6B1AC46004A51108377637CFA7C3ADE3A3A056C52FA57F3042694B404BA8B7AC",
+          "display_message_sha256": "0DA3F64F91B2FE53E253127397EA26C25834C72B488AA5C363B8E61148F299B6",
+          "source_message_index": 17826,
+          "display_message_index": 17904,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "5BA8553F41BF88C991E1A94F8FCF3A3AA4B4E0E67A285D82275E03CAD219AE02",
+            "native_index": 33548,
+            "cell_offset": 256752,
+            "index_field_offset": 176221,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4295:0:annotation:257348:repair",
+          "command_order": 4295,
+          "command_target": 252576,
+          "status": "reviewed",
+          "source_message_sha256": "C7E5B15D23401DB89169104392A78A71305450313166798E3447EDB60EC5A8C4",
+          "display_message_sha256": "FCC50D9F44531D8BD8BF3FD9AB772EDC1F1D84131886FB838225A6EC565E1363",
+          "source_message_index": 18156,
+          "display_message_index": 18205,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "D94F03E6347E2E253F96D04C85D0F5460DD27A19CEFC36765052D0B5ACDC4BC6",
+            "native_index": 34187,
+            "cell_offset": 257348,
+            "index_field_offset": 178175,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4397:0:annotation:259368:repair",
+          "command_order": 4397,
+          "command_target": 258384,
+          "status": "reviewed",
+          "source_message_sha256": "06ED417F7124E185BAF3DD182516993CB9C186463651D2E5B847B98F4FEC9AE7",
+          "display_message_sha256": "7A7B1CB437A944B7620C7BF650BFFC1D849F96091FC28A5D9BA3A32BAA72F37D",
+          "source_message_index": 19155,
+          "display_message_index": 19204,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "A6239AC857A6567AE9BB8B28DDDE6E56B0E38A424D95B906FFC9E16BC76BC210",
+            "native_index": 35925,
+            "cell_offset": 259368,
+            "index_field_offset": 182135,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4398:0:annotation:259518:repair",
+          "command_order": 4398,
+          "command_target": 258440,
+          "status": "reviewed",
+          "source_message_sha256": "382E79C2826BAE8DB2812EA24E5D848917CDAF03D99092AA194646F702658AFE",
+          "display_message_sha256": "05B57DA718A7A3349D8FDEEC85A43B4C05E05FA452327A140DB576FCB9B8D288",
+          "source_message_index": 19237,
+          "display_message_index": 19285,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "717ED2A91EFF0B2745774B683995F8910D45604BC5B14FD84BDD7A25710D947C",
+            "native_index": 36107,
+            "cell_offset": 259518,
+            "index_field_offset": 182185,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4419:0:annotation:259918:repair",
+          "command_order": 4419,
+          "command_target": 259500,
+          "status": "reviewed",
+          "source_message_sha256": "5CF4E6F9A6CD5D973C6C5864D1349AE6E4239560CB47A9054004E4FBAA752DDE",
+          "display_message_sha256": "D3C0E2CBB0AD0B354C3E2BD7C057E696FF0B479C2F3DCB65BFAB566667EA90D2",
+          "source_message_index": 19426,
+          "display_message_index": 19496,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4BA70F89DDFD8215D5DFF7A864DC8607ECBFDE66023DB7F366DC6C808E1EDB2F",
+            "native_index": 36504,
+            "cell_offset": 259918,
+            "index_field_offset": 183014,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4483:0:annotation:261832:repair",
+          "command_order": 4483,
+          "command_target": 262768,
+          "status": "reviewed",
+          "source_message_sha256": "3F8CD7B30A97FDB43EAA4DFAD89E2C543D41434B3350C61FE8080FB5515D6AA3",
+          "display_message_sha256": "113292DFCFEF9C7D3DFFE99797F9EACA27589D59B8874B467353DFC2B969F067",
+          "source_message_index": 20354,
+          "display_message_index": 20454,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "2463C0833F97028A8A305ECD33696BD12D084F460855188363A98D5DC477F14E",
+            "native_index": 38205,
+            "cell_offset": 261832,
+            "index_field_offset": 185619,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4523:0:annotation:262464:repair",
+          "command_order": 4523,
+          "command_target": 264956,
+          "status": "reviewed",
+          "source_message_sha256": "4E41F7970A3824D50BFA1A3BE6194620A1E65E7650D9F79342EB9E64F7A69716",
+          "display_message_sha256": "104C719B874179DD3B83D5FA9C89DD591DF98CC3B2C94D0298F7E53E779B385A",
+          "source_message_index": 20699,
+          "display_message_index": 20753,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "83A7B3D41A78073F219FDCC978D3AE671B2DEBC409D3379036E54F8443E91304",
+            "native_index": 38825,
+            "cell_offset": 262464,
+            "index_field_offset": 187155,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4603:0:annotation:263130:repair",
+          "command_order": 4603,
+          "command_target": 269228,
+          "status": "reviewed",
+          "source_message_sha256": "08B344143DCE45930492303E8BE92E0982C0B400477F284F715E2D52607AC0EF",
+          "display_message_sha256": "D857DC841C953C928436B3FA428EC63413DD8915932AC71B883CC2BB4BF2256E",
+          "source_message_index": 21038,
+          "display_message_index": 21087,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4B11E5E43F70DAD21E97540E2FB7B4C8DC373674FA1F382975BE9D1BC98024ED",
+            "native_index": 39389,
+            "cell_offset": 263130,
+            "index_field_offset": 190318,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4604:0:annotation:263264:repair",
+          "command_order": 4604,
+          "command_target": 269284,
+          "status": "reviewed",
+          "source_message_sha256": "EE65094BB113CB4A08ADBA53A17871F2FCF9636240E35DAEDFC651820B19CAC6",
+          "display_message_sha256": "C455032B963B6C592F86D76CB10F08E5E0D8F18A98139B599110A722C9B75558",
+          "source_message_index": 21119,
+          "display_message_index": 21153,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4E9CAF9A54B3A78761B3AD175C03C0FDB9D62F7A878DC903A1D63377A32471C6",
+            "native_index": 39531,
+            "cell_offset": 263264,
+            "index_field_offset": 190368,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4615:0:annotation:263786:repair",
+          "command_order": 4615,
+          "command_target": 269832,
+          "status": "reviewed",
+          "source_message_sha256": "62CD05BF7B39A616615B48FAB95C8677F41C5F84DE13C962D6CC21489A8FEFF2",
+          "display_message_sha256": "325108C8EAEC5D49350CE2EA4BEC008BBBF1A76192177EBD66309742B29F9909",
+          "source_message_index": 21365,
+          "display_message_index": 21411,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "146A204DB710E6112F343B11A9A4FBDE9FBEFFF109C28326CA973648A25A4E6E",
+            "native_index": 40090,
+            "cell_offset": 263786,
+            "index_field_offset": 190878,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4641:0:annotation:263958:repair",
+          "command_order": 4641,
+          "command_target": 271408,
+          "status": "reviewed",
+          "source_message_sha256": "328CEDC6A585886EABD89E215EEBE86628E01F75828A87FF3D0E2B71D03DE4A6",
+          "display_message_sha256": "3F0660CD9E69DFF92C2CE02AD139809D11DE5635B26D9E410B2FB33647210676",
+          "source_message_index": 21442,
+          "display_message_index": 21519,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "719BE45EDB0E615F8ECD588681447E25096291A3CC8312EA0FE74F8A40B0805B",
+            "native_index": 40240,
+            "cell_offset": 263958,
+            "index_field_offset": 191835,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4702:0:annotation:265058:repair",
+          "command_order": 4702,
+          "command_target": 274968,
+          "status": "reviewed",
+          "source_message_sha256": "EB6C160E12DADA5603F2E1AF9F916CC3645AF0306DFC195D5BCAB4BC28CD3915",
+          "display_message_sha256": "4EEFCBB390A98EFED3F0290FFD78A26B9EF103C78BCB0393AE5F4ECBB3E46B3B",
+          "source_message_index": 22012,
+          "display_message_index": 22047,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "EE3E05DE71F22DA6C90553CD5BC795832B72F98A1AAC7C439158C8225FB643A0",
+            "native_index": 41254,
+            "cell_offset": 265058,
+            "index_field_offset": 194264,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4711:0:annotation:265420:repair",
+          "command_order": 4711,
+          "command_target": 275528,
+          "status": "reviewed",
+          "source_message_sha256": "00A683DDF7D7BC10CAF719AD80BAC249269675B0C18382C1AA3B07D6FAA9E1A4",
+          "display_message_sha256": "609CA48F4CFB33BA30AA29162E7A7687DC264EED38E5C0F873EF72109852824C",
+          "source_message_index": 22160,
+          "display_message_index": 22232,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "62EE9B08A5A011B64F00D7F069868577E1C864B10C11B818DADC7C85A67BAF0C",
+            "native_index": 41542,
+            "cell_offset": 265420,
+            "index_field_offset": 194653,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4786:0:annotation:266944:repair",
+          "command_order": 4786,
+          "command_target": 279976,
+          "status": "reviewed",
+          "source_message_sha256": "FCB59D57A5A2B38D27E76CD7BFF9476E551F47DF8B53E367626F18F1B31E73F7",
+          "display_message_sha256": "D23E85B11AAA92676AF6AB6971CD740DD5D94BF9F7800126609BA9A8C0296890",
+          "source_message_index": 22942,
+          "display_message_index": 22993,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "359EA1E2DD35BF80EF25F022DC735858EBC00DD4388A42CE507823168B69346D",
+            "native_index": 42872,
+            "cell_offset": 266944,
+            "index_field_offset": 197668,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4816:0:annotation:268240:repair",
+          "command_order": 4816,
+          "command_target": 281732,
+          "status": "reviewed",
+          "source_message_sha256": "7CFC05659918A38E2C1224767827CE5BB93969396C1813E9D782C681EE8E8FD6",
+          "display_message_sha256": "04CD4BDB9C003E2558E060BB286AB0F8C378FA513F80DE9410962077AE9D122A",
+          "source_message_index": 23621,
+          "display_message_index": 23645,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "724268C382EA102AEA964A362AF444F2C05B195C09F9955460DB5B4661E8546A",
+            "native_index": 44039,
+            "cell_offset": 268240,
+            "index_field_offset": 198961,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4899:0:annotation:269580:repair",
+          "command_order": 4899,
+          "command_target": 286844,
+          "status": "reviewed",
+          "source_message_sha256": "352A061E5C6BAE43E362BF55C93F1F589566C7C3B8620F3ABC9CC9EDDB610741",
+          "display_message_sha256": "02C2AA58744458ABDD8125AF05A92410CE5F42B7178DE737B69DF0B9D6DB6190",
+          "source_message_index": 24278,
+          "display_message_index": 24327,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "64AC676F4D4CDAD513776470BB2DDD62A0C0D49281D2705BAB5976E7C7F36FA8",
+            "native_index": 45315,
+            "cell_offset": 269580,
+            "index_field_offset": 202213,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4938:0:annotation:270856:repair",
+          "command_order": 4938,
+          "command_target": 289024,
+          "status": "reviewed",
+          "source_message_sha256": "E62299F4BA2B67CA02C06215338ACB070EF526795152DD4450FA61AAD7885E30",
+          "display_message_sha256": "7BB8E90A9D8627571E8E511CA3518BFE15C427AE0BE2DF31EF33881131B294D8",
+          "source_message_index": 24874,
+          "display_message_index": 24960,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "D6C536938EDE5F78CBB22BE350CFED032FBAF8B22E864394C7F9A406ABE40938",
+            "native_index": 46428,
+            "cell_offset": 270856,
+            "index_field_offset": 203756,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4948:0:annotation:271474:repair",
+          "command_order": 4948,
+          "command_target": 289632,
+          "status": "reviewed",
+          "source_message_sha256": "B1EEF2CE45643F3B994C2049E224004DF3E36FAC5CF79005363030C3E806D4FA",
+          "display_message_sha256": "0F78D0DCEA59C0FF7447D622D5759995CAE2DA68CFC6B24CB8B8C3AB0DCAC15C",
+          "source_message_index": 25193,
+          "display_message_index": 25258,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "96543CF97CAC01F85C2098EC02D6C760D323169EF02F79A74A7DEA29A7EC2CCA",
+            "native_index": 46956,
+            "cell_offset": 271474,
+            "index_field_offset": 204303,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4949:0:annotation:271670:repair",
+          "command_order": 4949,
+          "command_target": 289688,
+          "status": "reviewed",
+          "source_message_sha256": "42BE0507D0E949E46B3F5CDED7A85B5ADC94695BD055817530872414656801A8",
+          "display_message_sha256": "EEEC72BC4B5EAD20513ABCBC389C23DF7E01113AC86211C153DFC28CE5B20A28",
+          "source_message_index": 25305,
+          "display_message_index": 25358,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "04D917A0ACF19DBE7A4E364D48EBD777FB8B12779B8FCBB8092848B224C8FA54",
+            "native_index": 47117,
+            "cell_offset": 271670,
+            "index_field_offset": 204353,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4950:0:annotation:271822:repair",
+          "command_order": 4950,
+          "command_target": 289744,
+          "status": "reviewed",
+          "source_message_sha256": "E707EC16FF7C02CCCDBF60A03526CB5F14C70549544E35BDF1FA3E64FA87D233",
+          "display_message_sha256": "6A1F8292EB6ACFC04E290345E083E0218375244794FB53683EA12CAA790B4506",
+          "source_message_index": 25394,
+          "display_message_index": 25439,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "76D7361653044EFC66081B16F0A602436EFA871228D7E1A0ED93FCB55274A1EC",
+            "native_index": 47268,
+            "cell_offset": 271822,
+            "index_field_offset": 204403,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4952:0:annotation:272208:repair",
+          "command_order": 4952,
+          "command_target": 289856,
+          "status": "reviewed",
+          "source_message_sha256": "CCDA55A5BC34C0452AF1D1FBFD14F97FCEE4177495F0F3752AB351B8D7F6ED77",
+          "display_message_sha256": "638881177586F3A243CCEDAD13052489317CA087AE14411C26564157784B4915",
+          "source_message_index": 25553,
+          "display_message_index": 25626,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "27F1B06A9681FD82D86DE406039D9FEF6F0A2CBF100BFD8DB68871F39EFE3FE3",
+            "native_index": 47568,
+            "cell_offset": 272208,
+            "index_field_offset": 204503,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4976:0:annotation:274274:repair",
+          "command_order": 4976,
+          "command_target": 291176,
+          "status": "reviewed",
+          "source_message_sha256": "DAFE5CC4C6390BB565541FC63073EA95573D105ADF264D9DE5C7AB1CFC27A139",
+          "display_message_sha256": "0930FB4707236FDE18BB3AA07AF7608C6623BEF7F29778145DC88FAC102E05AD",
+          "source_message_index": 26610,
+          "display_message_index": 26659,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "F663D85941B9816E69BF37C630EDBE8CD816CBF443399034CEC1104621DCDCD8",
+            "native_index": 49466,
+            "cell_offset": 274274,
+            "index_field_offset": 205531,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4982:0:annotation:275122:repair",
+          "command_order": 4982,
+          "command_target": 291464,
+          "status": "reviewed",
+          "source_message_sha256": "9BD8B62B44B3F14AFF182F387F452437E1D0E1438CAF01F5C7572F9F9BB5407D",
+          "display_message_sha256": "C5EB8F7F3E48F8E0BD82D2E99ED41A15F892C61B20678BFC3DD03CDB50F5FFAF",
+          "source_message_index": 27027,
+          "display_message_index": 27079,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "EE3E05DE71F22DA6C90553CD5BC795832B72F98A1AAC7C439158C8225FB643A0",
+            "native_index": 50224,
+            "cell_offset": 275122,
+            "index_field_offset": 205781,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5006:0:annotation:275814:repair",
+          "command_order": 5006,
+          "command_target": 292864,
+          "status": "reviewed",
+          "source_message_sha256": "0514D964D817CADC8F2EE3533C99DBB6CF88A4BC43651352C13A561E084A65F4",
+          "display_message_sha256": "09DB82D404B80DFAC84F82DF6A4AF8B9FFB307DFFF432FD441DB4D8FA057D76F",
+          "source_message_index": 27394,
+          "display_message_index": 27472,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "6494FE3A6442E25DDFD5AF463BD363A8486D18A8F50B6DC3FE7F388ED34CD427",
+            "native_index": 50988,
+            "cell_offset": 275814,
+            "index_field_offset": 206741,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5031:0:annotation:276406:repair",
+          "command_order": 5031,
+          "command_target": 294384,
+          "status": "reviewed",
+          "source_message_sha256": "F5027BED4763C0A17FEBF060E1830C87BC989284F91573BA23FD8F9313D27F47",
+          "display_message_sha256": "6CE7C79003E8BDDC2C605822851ABA2566C0271FDEF646E346994C45C8EB0F95",
+          "source_message_index": 27661,
+          "display_message_index": 27726,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "E88D7D905ABCAFCC25656F6379545376E4BD51D800A9E5CC7CFB0D6C7247207E",
+            "native_index": 51394,
+            "cell_offset": 276406,
+            "index_field_offset": 207763,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5093:0:annotation:277544:repair",
+          "command_order": 5093,
+          "command_target": 298088,
+          "status": "reviewed",
+          "source_message_sha256": "9F8879B19F4D7833984385AAC2E61F3715844B739C7F195DAB3B2621B8D64FC8",
+          "display_message_sha256": "AB196B90D4574DA5A3A40426F822AF869ED8D9B9784F2750279904C5377E2E24",
+          "source_message_index": 28259,
+          "display_message_index": 28292,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "044F4E054F18C3E9B2925638EF6E63A02FABE6BFE276EE359E117D15A2C8A6F9",
+            "native_index": 52466,
+            "cell_offset": 277544,
+            "index_field_offset": 210250,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5125:0:annotation:278214:repair",
+          "command_order": 5125,
+          "command_target": 300100,
+          "status": "reviewed",
+          "source_message_sha256": "61BAD00FF889253205374CC93D1A4952F97CF24FC54A382D7B582BC1A88EA819",
+          "display_message_sha256": "522CACC41ABE793D8BA1DFBBD19A9C9BB045BD3B81ADAC3B456FC3E85A8AFCD1",
+          "source_message_index": 28569,
+          "display_message_index": 28644,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "D48D350FC464059D4D0A2290B0286D23EF08B6C8D8EB962D4A08DD3C9357FA79",
+            "native_index": 53004,
+            "cell_offset": 278214,
+            "index_field_offset": 211593,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5244:0:annotation:280166:repair",
+          "command_order": 5244,
+          "command_target": 307144,
+          "status": "reviewed",
+          "source_message_sha256": "5B2CC814779FCA8C7695D9E8F1776ED5AA3B5E89C8795F325A66AB7DA6786840",
+          "display_message_sha256": "58FC117EDA10DCF3343462BAD32C0E43DD1AF84DD027A70A9F605AC4BCA570CC",
+          "source_message_index": 29563,
+          "display_message_index": 29608,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "2EDE7524771E382A3D0FD021D92FC9D5446E5DBDE86A5E3C371B3061F69EB7C2",
+            "native_index": 54679,
+            "cell_offset": 280166,
+            "index_field_offset": 216513,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5318:0:annotation:281962:repair",
+          "command_order": 5318,
+          "command_target": 310776,
+          "status": "reviewed",
+          "source_message_sha256": "5B003E11BF36E90A1AB5A62CB1868FB45513D1A2DAAFDA9124D047792FC14371",
+          "display_message_sha256": "03C88AA273AD813FD44E81060F5B2DE04CB36AFBE9CC9F1F878E0C7B3026B7B4",
+          "source_message_index": 30471,
+          "display_message_index": 30535,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "6106D24E17B1CA9A8B6E8DA52A2636882D63B15A1211634D441A815D91AB86A9",
+            "native_index": 56466,
+            "cell_offset": 281962,
+            "index_field_offset": 219399,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5323:0:annotation:282108:repair",
+          "command_order": 5323,
+          "command_target": 310956,
+          "status": "reviewed",
+          "source_message_sha256": "1993ED6BD1D8812D922E4D80B7AEC7646B412FAB93B24323388B1360ADF36B5E",
+          "display_message_sha256": "6124EEC4D1AA1A4BC9A1EE58D386573DF901C46C1D6BBC8A84F712D5CF046AE3",
+          "source_message_index": 30557,
+          "display_message_index": 30589,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "7F294DC1D011BE0DAC86ACF1DF03251A62850337436CC68A0471D12C2D468C02",
+            "native_index": 56560,
+            "cell_offset": 282108,
+            "index_field_offset": 219563,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:8:chinese-annotation",
+          "command_order": 8,
+          "command_target": 244,
+          "status": "reviewed",
+          "source_message_sha256": "D6D140839AC5FD3740B2C2F0AC9BC80E7D32160532983D811F2B3F2CE290C07F",
+          "display_message_sha256": "B0E39AB0375209832F5FCE5ED11C8BDD781C6888D646E31F387018A5BBA0C801",
+          "source_message_index": 1,
+          "display_message_index": 39,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "14194E7798A21F3D73E99F1F6E799B7D0CB8F074EBA89457C80AA2B1731895B5",
+              "native_index": 14,
+              "cell_offset": 221004,
+              "index_field_offset": 439,
+              "binding": "exact_native_reference"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "谁能不思念故乡:归乡"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:104:chinese-annotation",
+          "command_order": 104,
+          "command_target": 5632,
+          "status": "reviewed",
+          "source_message_sha256": "8E91D3EEEBC5AB27A09361BDF38275603E6779E15950F2BDF6EBEEAC09C7B51B",
+          "display_message_sha256": "43C8A927A138A1CDE8F0ADE90AA43511AFB85A836B4CC72F981FEFC233B95DB5",
+          "source_message_index": 999,
+          "display_message_index": 1083,
+          "action": "set_display_annotation",
+          "review_status": "revise",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "8FBDACF7065A143172F17C13D37373824AD63E3E59192C1DD508D82B77425FC7",
+              "native_index": 2183,
+              "cell_offset": 223028,
+              "index_field_offset": 4591,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "无处可去，抢走老爸的钱:漫无目的，花着老爸的钱"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:117:chinese-annotation",
+          "command_order": 117,
+          "command_target": 6332,
+          "status": "reviewed",
+          "source_message_sha256": "10842DE86388A7F18A904F14984BB821B355FF5C03833A640E0F2CC20D6F019D",
+          "display_message_sha256": "300538AFCFFBB27B16756EFDB46FAF0C0E9F3971E662A932F26BF49F1762EA87",
+          "source_message_index": 1510,
+          "display_message_index": 1587,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "B25884A71C1F580470D7301AEC828AA056F183C037D19C0C0FA82BFA8DAA1DC9",
+              "native_index": 3275,
+              "cell_offset": 224124,
+              "index_field_offset": 5127,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "伊丽莎白:CVA-01"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:119:chinese-annotation",
+          "command_order": 119,
+          "command_target": 6432,
+          "status": "reviewed",
+          "source_message_sha256": "116D3887FA71DB64B1ADF47A380B7F818B5DA5497E56A280C06CE069154C35DE",
+          "display_message_sha256": "19AADBF541EC0114937142B36B93438592CF08532EC3739163957BA1CF20532F",
+          "source_message_index": 1696,
+          "display_message_index": 1768,
+          "action": "set_display_annotation",
+          "review_status": "revise",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "1154629A2523513A23371E539C5429FF68A3236AA5B7634E37DC66C33C1850E4",
+              "native_index": 3625,
+              "cell_offset": 224414,
+              "index_field_offset": 5207,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "向着故乡，回归故乡:你要相信，我们正回家"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:273:chinese-annotation",
+          "command_order": 273,
+          "command_target": 15024,
+          "status": "reviewed",
+          "source_message_sha256": "7AD0705A668B0D859F098D2CD03B90EF114E78F848CEC2DBE8B10D100D4EB37B",
+          "display_message_sha256": "9499A73700A634A9E34ADAFF84B6DBD6A746F56185F0E4F47AD690041C7A1700",
+          "source_message_index": 3518,
+          "display_message_index": 3568,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "5B216FB9A37107E7CDF006928BD8C0306A5B5596963BDC67C4E0FCEDFDCEE695",
+              "native_index": 7106,
+              "cell_offset": 228084,
+              "index_field_offset": 11914,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "微妙感情:情结"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:341:chinese-annotation",
+          "command_order": 341,
+          "command_target": 18444,
+          "status": "reviewed",
+          "source_message_sha256": "70CC22B2897459163BE7BD0FF27AEDA736DB29CB6BF51548B2951D0FFF49EFF3",
+          "display_message_sha256": "E8BF781B5DA268451C35AC2A82D01D845749CFF260675B25AB31E5F7F03B4939",
+          "source_message_index": 4589,
+          "display_message_index": 4625,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "C6BC8A6EE0F733936AB7CC7A81EDC5CCBA10C5626713952333BF43A43C36842D",
+              "native_index": 8947,
+              "cell_offset": 230294,
+              "index_field_offset": 14872,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 8947,
+          "target_text": "热爱歌唱:爱与歌唱"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:360:chinese-annotation",
+          "command_order": 360,
+          "command_target": 19456,
+          "status": "reviewed",
+          "source_message_sha256": "D05D34A0EF86999720BD2D5D08AFC13FDC3C85C36A26563ECEBBDCEA59FB1D11",
+          "display_message_sha256": "77831FA03585EF735813DADB1180EA729C8907E87E0FF54B694C15546025A2C1",
+          "source_message_index": 5095,
+          "display_message_index": 5149,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "B3CF864C9BD872A5466F00AE2A13D1A1AAC2FA2C46069A420C71155114473F65",
+              "native_index": 9799,
+              "cell_offset": 231254,
+              "index_field_offset": 15615,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "宣传部门:戈培尔"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:401:chinese-annotation",
+          "command_order": 401,
+          "command_target": 21672,
+          "status": "reviewed",
+          "source_message_sha256": "5527592AC378EC104E77556396941774953786558FEE985AE4B5A8F4A2055054",
+          "display_message_sha256": "DA7392409E7586B733A38A7A7108EC67CFF7A34E824B18F19F2E7DFC3A382221",
+          "source_message_index": 5765,
+          "display_message_index": 5838,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "649942E788C42FD933CB5A5906527E4D9C816B87D3EF604159ECE837AC2FFA54",
+              "native_index": 11175,
+              "cell_offset": 232592,
+              "index_field_offset": 17241,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "ＥＦ－2000:台风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:404:chinese-annotation",
+          "command_order": 404,
+          "command_target": 21816,
+          "status": "reviewed",
+          "source_message_sha256": "21F08C8DE721CBAEB8FE563B3C826D7904A0418358EA4968668271A3DB527B27",
+          "display_message_sha256": "954B87A7AC099FB4603BA73F83012584BFDD94CE3C3DA251A52A2C0AE8E2ED4A",
+          "source_message_index": 6005,
+          "display_message_index": 6080,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "771B29A3CE89E467C6E6FB673AD97C384BF6531158BC04328B72DAB94C853E83",
+              "native_index": 11796,
+              "cell_offset": 233200,
+              "index_field_offset": 17373,
+              "binding": "adjacent_to_owned_message_stale_index"
+            },
+            {
+              "language": 0,
+              "sha256": "470EE98F624A898EAFB875B7A21B20BA8E59A6790AD78EA5A3286102F9111C73",
+              "native_index": 11653,
+              "cell_offset": 233074,
+              "index_field_offset": 17361,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 11796,
+          "target_text": "雨舞中队:雨之舞者;突击前卫:首席女伶"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:413:chinese-annotation",
+          "command_order": 413,
+          "command_target": 22312,
+          "status": "reviewed",
+          "source_message_sha256": "055B0C20623DE7557A079ECDC7861BB4EBEAABBE60A008A3926369F33DB89705",
+          "display_message_sha256": "6FCBD2564E7BAE0550AC801AE994DABCBE816FD200C2E89A6417894C593921A3",
+          "source_message_index": 6137,
+          "display_message_index": 6196,
+          "action": "set_display_annotation",
+          "review_status": "revise",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "7D8C1BA878F7880A670BD36CC3966B3333ECC1FF59F82A4B763A39087DED4986",
+              "native_index": 11860,
+              "cell_offset": 233328,
+              "index_field_offset": 17711,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "单枪匹马的勇者:传奇（Legend）;军团:Legion"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:420:chinese-annotation",
+          "command_order": 420,
+          "command_target": 22648,
+          "status": "reviewed",
+          "source_message_sha256": "A8A33F574F2DABBBC7E09DCA4994BF599D9EBB6EFD44CDC405D1DF35BE0D73FD",
+          "display_message_sha256": "70F9EAA259CFC337ADB1D3417EF091D5949144B8AE799C0097198DEEA27FA721",
+          "source_message_index": 6235,
+          "display_message_index": 6297,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "13A5717A993129B82AEF14298032CE4881BF5A32359F26BF4F35E764B22571D4",
+              "native_index": 12115,
+              "cell_offset": 233532,
+              "index_field_offset": 17989,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "重装兵大军:台风军团"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:421:chinese-annotation",
+          "command_order": 421,
+          "command_target": 22692,
+          "status": "reviewed",
+          "source_message_sha256": "9BC41B11DD22806EF03920134253CD5F4A57472E89C007E581DCA9EC61CDE5E7",
+          "display_message_sha256": "1346A9761B06526B38B6411F90BED1074590DA20CAB11F6E947EBA6124C11AAF",
+          "source_message_index": 6335,
+          "display_message_index": 6417,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "4C44E256F2996D7D133D2311422A00542EE9128E07FEED022C6EBB23C1092137",
+              "native_index": 12321,
+              "cell_offset": 233774,
+              "index_field_offset": 18039,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "帝都:伦敦;英国人:约翰牛"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:422:chinese-annotation",
+          "command_order": 422,
+          "command_target": 22736,
+          "status": "reviewed",
+          "source_message_sha256": "07558FE238DCDC5E0433AA6451FFB21A9832FFAD3274017FEE5410B6367CF3AF",
+          "display_message_sha256": "FC01F5EDCC70DD6DBADE6840EEB8F1572897517ECBEC46E09352A10F91BBF0A9",
+          "source_message_index": 6479,
+          "display_message_index": 6568,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "073F77ACCF164B8BA4621A1F95288D7BDCC522E6125ADE4EF7881756E7901BEB",
+              "native_index": 12663,
+              "cell_offset": 234056,
+              "index_field_offset": 18079,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "共同开发计划:ECTSF"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:478:chinese-annotation",
+          "command_order": 478,
+          "command_target": 25768,
+          "status": "reviewed",
+          "source_message_sha256": "B4D045782CA75A826BB8156C90D6E7876B30975E98FAC2B9C6C9F87EB3E170F4",
+          "display_message_sha256": "BDA4C8CC203A395C24813A6B45B0C76C491A93ECA2F7EAA5C6C88419DA76686D",
+          "source_message_index": 7112,
+          "display_message_index": 7180,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "A6B7A24BF48F90D1E6723B7340A7FFED460F66C24ABEF70A228EB8B75CBAFE4F",
+              "native_index": 14118,
+              "cell_offset": 235300,
+              "index_field_offset": 20398,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "随时起飞状态:红色战备"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:488:chinese-annotation",
+          "command_order": 488,
+          "command_target": 26312,
+          "status": "reviewed",
+          "source_message_sha256": "D8B0F824976846AF004FBABAB76B34EDF197654B3A2E0BCFFB8167A1D6D7EEE3",
+          "display_message_sha256": "303D9E62CF021D76A991DA73EC925D4D90608850263CDE303E19FE7279D8B4F3",
+          "source_message_index": 7489,
+          "display_message_index": 7560,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "424772C6F147AEF362D013F958B8250F9CEFC26AD2881F4BF6BCB42FD70B85E8",
+              "native_index": 14802,
+              "cell_offset": 236056,
+              "index_field_offset": 20831,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "暴风:台风;乞雨中队:雨舞中队"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:491:chinese-annotation",
+          "command_order": 491,
+          "command_target": 26456,
+          "status": "reviewed",
+          "source_message_sha256": "1F630F1470D836DDCEECCF9B3499F465202046E65D4B0C42B34026F7383FE2BB",
+          "display_message_sha256": "E40475CD5079FEC06224E3CABF248933D0ECF9EFB59024FD8FBD183587780F9A",
+          "source_message_index": 7717,
+          "display_message_index": 7770,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "734BCDDA7F0CDE39704EE9BEEC4F2E1CD2D51FA646917EBE687CD8C76D6EABCE",
+              "native_index": 15430,
+              "cell_offset": 236580,
+              "index_field_offset": 20963,
+              "binding": "adjacent_to_owned_message_stale_index"
+            },
+            {
+              "language": 0,
+              "sha256": "FCDD8C82753FDD90E7644D74207A8B28E8AD457DE84B132CD6D85DE2E7D119F5",
+              "native_index": 15326,
+              "cell_offset": 236484,
+              "index_field_offset": 20951,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 15430,
+          "target_text": "来自罗马的风:西北风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:492:chinese-annotation",
+          "command_order": 492,
+          "command_target": 26500,
+          "status": "reviewed",
+          "source_message_sha256": "9CD5B1A990FF97898F8BB9CBF74649B93921116C7826FBD6E38E919A0D5F4BBB",
+          "display_message_sha256": "12595353677B0870D883592AEE20722367449130DA82632AC3156D5C26230954",
+          "source_message_index": 7831,
+          "display_message_index": 7871,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "3CD5C07E4D22796874B0D39CFA7A46D5C121B802784D97390B393E795E241238",
+              "native_index": 15484,
+              "cell_offset": 236688,
+              "index_field_offset": 21001,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "欧洲民族之师:西北风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:600:chinese-annotation",
+          "command_order": 600,
+          "command_target": 34732,
+          "status": "reviewed",
+          "source_message_sha256": "C1F009F7B009E90DCAEF7293B8D99B582BA6391D4968249B6FF4AD4C246B0CC0",
+          "display_message_sha256": "F8BE86093E24CACC97CF038E1522C9D73B8BD6AC9091AFF7FD09625D5503F85A",
+          "source_message_index": 8251,
+          "display_message_index": 8295,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "4FA1667C1B6F93C4CEEF5C4D760357FCAC7DA31016851718B775886636CDF906",
+              "native_index": 16300,
+              "cell_offset": 237544,
+              "index_field_offset": 27090,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "歌姬:首席女伶"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:667:chinese-annotation",
+          "command_order": 667,
+          "command_target": 39628,
+          "status": "reviewed",
+          "source_message_sha256": "0128DB0B1C0DF6E0F9262704C9548359DF47E1DF411EACFD9F37C88701FBBD6A",
+          "display_message_sha256": "04083ACA2B9E1295EEE801A10B4EDC899814F70B1FB4E5FAE136112B9B6496AF",
+          "source_message_index": 8671,
+          "display_message_index": 8748,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "03FDB146D436FC009CDD244EC2145FB83F6445598486BB7604D16C34B09964B8",
+              "native_index": 17116,
+              "cell_offset": 238412,
+              "index_field_offset": 30260,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "联合国那群超国家主义混蛋:终极民族主义者【UN】"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:732:chinese-annotation",
+          "command_order": 732,
+          "command_target": 44764,
+          "status": "reviewed",
+          "source_message_sha256": "4B580AE6A06EC2DE76182078D03B11B9065C94F42C6BF32E45BB9CEF081F088D",
+          "display_message_sha256": "BCFE21880E8771E6223390D1299C13EDAFD0BEE913B9B38235D546CA07CAAF85",
+          "source_message_index": 9415,
+          "display_message_index": 9488,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "4A94C95F9FD021D130953D534FC4CC02F991CE17FC5FC9CF7B467D483E369A03",
+              "native_index": 18610,
+              "cell_offset": 239896,
+              "index_field_offset": 33383,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "F-5E ADV:狂风;突击前卫:首席女伶"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:769:chinese-annotation",
+          "command_order": 769,
+          "command_target": 48044,
+          "status": "reviewed",
+          "source_message_sha256": "272B3D2C0D68AA9EFC548D414E1ABE3870EF9FD9701488737F09CA2CD224DA6C",
+          "display_message_sha256": "706067CBC145CF6D810C7F1E7063497CB45D3C1FB58B8361F5949462DEA64E89",
+          "source_message_index": 9587,
+          "display_message_index": 9653,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "0E4F5DE1DD9EDBD569B53708DCCDB070F6CB0B84D3186EA05302475ACB71AF2F",
+              "native_index": 18921,
+              "cell_offset": 240250,
+              "index_field_offset": 35291,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "快速反应状态:红色战备"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:819:chinese-annotation",
+          "command_order": 819,
+          "command_target": 50784,
+          "status": "reviewed",
+          "source_message_sha256": "B4954E2091A93AD4ED2D2FF84B85E77FA1FDFC561247D41DC4D66389A8E2223B",
+          "display_message_sha256": "FF59C00AF560BFCDA4184B0F0E584A796DECF28DDD14E9EC21274D8E5195000F",
+          "source_message_index": 9950,
+          "display_message_index": 10029,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "1B980AD514CB0C1FFF044476F6A278D5C60D596D2CC05F999A0DE60857302837",
+              "native_index": 19435,
+              "cell_offset": 240976,
+              "index_field_offset": 37281,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "2000:台风;F-5E ADV:狂风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:839:chinese-annotation",
+          "command_order": 839,
+          "command_target": 52384,
+          "status": "reviewed",
+          "source_message_sha256": "57ABACB7B70A2B268E48BAD2CCDB4D75C1F3115530175848D1366B8017531BBE",
+          "display_message_sha256": "03E9F1668C693BE817D91F5EA026D558CD6BD478F0747FAD56099F82B3F375A8",
+          "source_message_index": 10083,
+          "display_message_index": 10148,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "5364106B2A7F20B4F24BC52AC99A59BAC45B3DD19E7B130EDE4F14A01F798F58",
+              "native_index": 19630,
+              "cell_offset": 241248,
+              "index_field_offset": 38547,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "技术验证机:ESFP"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:841:chinese-annotation",
+          "command_order": 841,
+          "command_target": 52484,
+          "status": "reviewed",
+          "source_message_sha256": "7B149E32D8F09EBF60F4A49A9227D8C738936DD3FAD57EB69FF4D8BFBCA8DB9B",
+          "display_message_sha256": "B9986B462E8DE28D8B9C302CF892B692F9C2170CCFEC485BFB90720B2DC7D34F",
+          "source_message_index": 10233,
+          "display_message_index": 10298,
+          "action": "set_display_annotation",
+          "review_status": "revise",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "3A133D1999176A6E5E1F474FCD9E36786BB88AE99521F5363EA43C22A83AB816",
+              "native_index": 19835,
+              "cell_offset": 241486,
+              "index_field_offset": 38627,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "向着我们的故乡，全速前进:必须相信，我们要回家"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:1429:chinese-annotation",
+          "command_order": 1429,
+          "command_target": 83668,
+          "status": "reviewed",
+          "source_message_sha256": "056FBA656FE37061A4D23C2F3C4909E22C69666E1168040240E8251F58CC2E25",
+          "display_message_sha256": "F54394A3A85ECAEC33422F5B02C22740A32D47ACBB443EB42D4C49C341583956",
+          "source_message_index": 12326,
+          "display_message_index": 12352,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "E40544B592629DAA9202041F80B6ADBE5AAC703E4ECFD1AB4021D7BDC1A20FC4",
+              "native_index": 23795,
+              "cell_offset": 245664,
+              "index_field_offset": 62619,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "拔剑:冲锋"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4118:chinese-annotation",
+          "command_order": 4118,
+          "command_target": 240060,
+          "status": "reviewed",
+          "source_message_sha256": "39F1AE0A79E984D2A1B6B49A6BF3FA0FCA782D8A866287623EB0918F887FE02B",
+          "display_message_sha256": "F51A341BBAB3AFA74CD179D5A5A44E2DA0AD475DAEB8FF3C153F659D62C32AA4",
+          "source_message_index": 14040,
+          "display_message_index": 14127,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "4B06A4EBCDA60FA1F82E7F4A44B29D70D56B20F203E2A4D7F14BEBB7F464FA3A",
+              "native_index": 26493,
+              "cell_offset": 249176,
+              "index_field_offset": 170177,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "试制长刀:战戟;重装步兵师团:罗马军团"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4123:chinese-annotation",
+          "command_order": 4123,
+          "command_target": 240332,
+          "status": "reviewed",
+          "source_message_sha256": "A5FB0264629D0DD5F91732AAB90E12CDC7F74765CA28D9246C7498D9C54D7423",
+          "display_message_sha256": "5024CF801AECAC6F6215A040DA819E64619BDC7A7ACFE056387B43DBD7D3DD39",
+          "source_message_index": 14179,
+          "display_message_index": 14239,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "020774642096FF9E99D632C66007B3C9AC4DC277E6466F97B66728702B61DE27",
+              "native_index": 26743,
+              "cell_offset": 249426,
+              "index_field_offset": 170379,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "ＥＦ－2000:台风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4213:chinese-annotation",
+          "command_order": 4213,
+          "command_target": 246780,
+          "status": "reviewed",
+          "source_message_sha256": "CA4748E75C4C58B30EDCD3BE0F8568EBAFAFBBCB80A0CD8FCA46BE324E44D6F7",
+          "display_message_sha256": "3629C560FE02C2856BE24BE0B16B3200C9D8EA306E88472D404141560A7B9B4D",
+          "source_message_index": 16414,
+          "display_message_index": 16448,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "5CC69F528CBC54F2F86CB680CB0220BC6BA472A232AC87FB16B7BA8154A4F648",
+              "native_index": 30899,
+              "cell_offset": 253830,
+              "index_field_offset": 174627,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "不可恢复点:无法回头之处"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4250:chinese-annotation",
+          "command_order": 4250,
+          "command_target": 249040,
+          "status": "reviewed",
+          "source_message_sha256": "6B1AC46004A51108377637CFA7C3ADE3A3A056C52FA57F3042694B404BA8B7AC",
+          "display_message_sha256": "0DA3F64F91B2FE53E253127397EA26C25834C72B488AA5C363B8E61148F299B6",
+          "source_message_index": 17826,
+          "display_message_index": 17904,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "5BA8553F41BF88C991E1A94F8FCF3A3AA4B4E0E67A285D82275E03CAD219AE02",
+              "native_index": 33548,
+              "cell_offset": 256752,
+              "index_field_offset": 176221,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "R中队各机:全体舞者"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4419:chinese-annotation",
+          "command_order": 4419,
+          "command_target": 259500,
+          "status": "reviewed",
+          "source_message_sha256": "5CF4E6F9A6CD5D973C6C5864D1349AE6E4239560CB47A9054004E4FBAA752DDE",
+          "display_message_sha256": "D3C0E2CBB0AD0B354C3E2BD7C057E696FF0B479C2F3DCB65BFAB566667EA90D2",
+          "source_message_index": 19426,
+          "display_message_index": 19496,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "4BA70F89DDFD8215D5DFF7A864DC8607ECBFDE66023DB7F366DC6C808E1EDB2F",
+              "native_index": 36504,
+              "cell_offset": 259918,
+              "index_field_offset": 183014,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "联合国那群胆小鬼:联合保姆【UN】"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4483:chinese-annotation",
+          "command_order": 4483,
+          "command_target": 262768,
+          "status": "reviewed",
+          "source_message_sha256": "3F8CD7B30A97FDB43EAA4DFAD89E2C543D41434B3350C61FE8080FB5515D6AA3",
+          "display_message_sha256": "113292DFCFEF9C7D3DFFE99797F9EACA27589D59B8874B467353DFC2B969F067",
+          "source_message_index": 20354,
+          "display_message_index": 20454,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "2463C0833F97028A8A305ECD33696BD12D084F460855188363A98D5DC477F14E",
+              "native_index": 38205,
+              "cell_offset": 261832,
+              "index_field_offset": 185619,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "ＥＦ－2000:台风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4523:chinese-annotation",
+          "command_order": 4523,
+          "command_target": 264956,
+          "status": "reviewed",
+          "source_message_sha256": "4E41F7970A3824D50BFA1A3BE6194620A1E65E7650D9F79342EB9E64F7A69716",
+          "display_message_sha256": "104C719B874179DD3B83D5FA9C89DD591DF98CC3B2C94D0298F7E53E779B385A",
+          "source_message_index": 20699,
+          "display_message_index": 20753,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "83A7B3D41A78073F219FDCC978D3AE671B2DEBC409D3379036E54F8443E91304",
+              "native_index": 38825,
+              "cell_offset": 262464,
+              "index_field_offset": 187155,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "吃的:意大利餐"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4603:chinese-annotation",
+          "command_order": 4603,
+          "command_target": 269228,
+          "status": "reviewed",
+          "source_message_sha256": "08B344143DCE45930492303E8BE92E0982C0B400477F284F715E2D52607AC0EF",
+          "display_message_sha256": "D857DC841C953C928436B3FA428EC63413DD8915932AC71B883CC2BB4BF2256E",
+          "source_message_index": 21038,
+          "display_message_index": 21087,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "4B11E5E43F70DAD21E97540E2FB7B4C8DC373674FA1F382975BE9D1BC98024ED",
+              "native_index": 39389,
+              "cell_offset": 263130,
+              "index_field_offset": 190318,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "上帝的家:教堂"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4702:chinese-annotation",
+          "command_order": 4702,
+          "command_target": 274968,
+          "status": "reviewed",
+          "source_message_sha256": "EB6C160E12DADA5603F2E1AF9F916CC3645AF0306DFC195D5BCAB4BC28CD3915",
+          "display_message_sha256": "4EEFCBB390A98EFED3F0290FFD78A26B9EF103C78BCB0393AE5F4ECBB3E46B3B",
+          "source_message_index": 22012,
+          "display_message_index": 22047,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "EE3E05DE71F22DA6C90553CD5BC795832B72F98A1AAC7C439158C8225FB643A0",
+              "native_index": 41254,
+              "cell_offset": 265058,
+              "index_field_offset": 194264,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "队长:长官"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4816:chinese-annotation",
+          "command_order": 4816,
+          "command_target": 281732,
+          "status": "reviewed",
+          "source_message_sha256": "7CFC05659918A38E2C1224767827CE5BB93969396C1813E9D782C681EE8E8FD6",
+          "display_message_sha256": "04CD4BDB9C003E2558E060BB286AB0F8C378FA513F80DE9410962077AE9D122A",
+          "source_message_index": 23621,
+          "display_message_index": 23645,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "724268C382EA102AEA964A362AF444F2C05B195C09F9955460DB5B4661E8546A",
+              "native_index": 44039,
+              "cell_offset": 268240,
+              "index_field_offset": 198961,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "啊，真安静:・・・・・"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4899:chinese-annotation",
+          "command_order": 4899,
+          "command_target": 286844,
+          "status": "reviewed",
+          "source_message_sha256": "352A061E5C6BAE43E362BF55C93F1F589566C7C3B8620F3ABC9CC9EDDB610741",
+          "display_message_sha256": "02C2AA58744458ABDD8125AF05A92410CE5F42B7178DE737B69DF0B9D6DB6190",
+          "source_message_index": 24278,
+          "display_message_index": 24327,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "64AC676F4D4CDAD513776470BB2DDD62A0C0D49281D2705BAB5976E7C7F36FA8",
+              "native_index": 45315,
+              "cell_offset": 269580,
+              "index_field_offset": 202213,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "人类，依然在此:・・・・・・・"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4938:chinese-annotation",
+          "command_order": 4938,
+          "command_target": 289024,
+          "status": "reviewed",
+          "source_message_sha256": "E62299F4BA2B67CA02C06215338ACB070EF526795152DD4450FA61AAD7885E30",
+          "display_message_sha256": "7BB8E90A9D8627571E8E511CA3518BFE15C427AE0BE2DF31EF33881131B294D8",
+          "source_message_index": 24874,
+          "display_message_index": 24960,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "D6C536938EDE5F78CBB22BE350CFED032FBAF8B22E864394C7F9A406ABE40938",
+              "native_index": 46428,
+              "cell_offset": 270856,
+              "index_field_offset": 203756,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "中队首屈一指的突击前卫:我的首席女伶"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4949:chinese-annotation",
+          "command_order": 4949,
+          "command_target": 289688,
+          "status": "reviewed",
+          "source_message_sha256": "42BE0507D0E949E46B3F5CDED7A85B5ADC94695BD055817530872414656801A8",
+          "display_message_sha256": "EEEC72BC4B5EAD20513ABCBC389C23DF7E01113AC86211C153DFC28CE5B20A28",
+          "source_message_index": 25305,
+          "display_message_index": 25358,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "04D917A0ACF19DBE7A4E364D48EBD777FB8B12779B8FCBB8092848B224C8FA54",
+              "native_index": 47117,
+              "cell_offset": 271670,
+              "index_field_offset": 204353,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "F-5E:狂风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4950:chinese-annotation",
+          "command_order": 4950,
+          "command_target": 289744,
+          "status": "reviewed",
+          "source_message_sha256": "E707EC16FF7C02CCCDBF60A03526CB5F14C70549544E35BDF1FA3E64FA87D233",
+          "display_message_sha256": "6A1F8292EB6ACFC04E290345E083E0218375244794FB53683EA12CAA790B4506",
+          "source_message_index": 25394,
+          "display_message_index": 25439,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "76D7361653044EFC66081B16F0A602436EFA871228D7E1A0ED93FCB55274A1EC",
+              "native_index": 47268,
+              "cell_offset": 271822,
+              "index_field_offset": 204403,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "英国音乐:利物浦节拍"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4976:chinese-annotation",
+          "command_order": 4976,
+          "command_target": 291176,
+          "status": "reviewed",
+          "source_message_sha256": "DAFE5CC4C6390BB565541FC63073EA95573D105ADF264D9DE5C7AB1CFC27A139",
+          "display_message_sha256": "0930FB4707236FDE18BB3AA07AF7608C6623BEF7F29778145DC88FAC102E05AD",
+          "source_message_index": 26610,
+          "display_message_index": 26659,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "F663D85941B9816E69BF37C630EDBE8CD816CBF443399034CEC1104621DCDCD8",
+              "native_index": 49466,
+              "cell_offset": 274274,
+              "index_field_offset": 205531,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "战术机:狂风"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:4982:chinese-annotation",
+          "command_order": 4982,
+          "command_target": 291464,
+          "status": "reviewed",
+          "source_message_sha256": "9BD8B62B44B3F14AFF182F387F452437E1D0E1438CAF01F5C7572F9F9BB5407D",
+          "display_message_sha256": "C5EB8F7F3E48F8E0BD82D2E99ED41A15F892C61B20678BFC3DD03CDB50F5FFAF",
+          "source_message_index": 27027,
+          "display_message_index": 27079,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "EE3E05DE71F22DA6C90553CD5BC795832B72F98A1AAC7C439158C8225FB643A0",
+              "native_index": 50224,
+              "cell_offset": 275122,
+              "index_field_offset": 205781,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "队长:长官"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5031:chinese-annotation",
+          "command_order": 5031,
+          "command_target": 294384,
+          "status": "reviewed",
+          "source_message_sha256": "F5027BED4763C0A17FEBF060E1830C87BC989284F91573BA23FD8F9313D27F47",
+          "display_message_sha256": "6CE7C79003E8BDDC2C605822851ABA2566C0271FDEF646E346994C45C8EB0F95",
+          "source_message_index": 27661,
+          "display_message_index": 27726,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "E88D7D905ABCAFCC25656F6379545376E4BD51D800A9E5CC7CFB0D6C7247207E",
+              "native_index": 51394,
+              "cell_offset": 276406,
+              "index_field_offset": 207763,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "他们:披头士四人组"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5125:chinese-annotation",
+          "command_order": 5125,
+          "command_target": 300100,
+          "status": "reviewed",
+          "source_message_sha256": "61BAD00FF889253205374CC93D1A4952F97CF24FC54A382D7B582BC1A88EA819",
+          "display_message_sha256": "522CACC41ABE793D8BA1DFBBD19A9C9BB045BD3B81ADAC3B456FC3E85A8AFCD1",
+          "source_message_index": 28569,
+          "display_message_index": 28644,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "D48D350FC464059D4D0A2290B0286D23EF08B6C8D8EB962D4A08DD3C9357FA79",
+              "native_index": 53004,
+              "cell_offset": 278214,
+              "index_field_offset": 211593,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "雾之国:英格兰;太阳之国:金色太阳"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488271272:5323:chinese-annotation",
+          "command_order": 5323,
+          "command_target": 310956,
+          "status": "reviewed",
+          "source_message_sha256": "1993ED6BD1D8812D922E4D80B7AEC7646B412FAB93B24323388B1360ADF36B5E",
+          "display_message_sha256": "6124EEC4D1AA1A4BC9A1EE58D386573DF901C46C1D6BBC8A84F712D5CF046AE3",
+          "source_message_index": 30557,
+          "display_message_index": 30589,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "7F294DC1D011BE0DAC86ACF1DF03251A62850337436CC68A0471D12C2D468C02",
+              "native_index": 56560,
+              "cell_offset": 282108,
+              "index_field_offset": 219563,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "发自内心:必须相信"
+        }
+      ]
+    },
+    {
+      "volume": "photonflowers11.rio",
+      "block_offset": 488631608,
+      "source_raw_key": "0xAA43661F",
+      "effective_record_sha256": "E08FC4893BE5D96477D949D5385BFBFDD2E0BF176D9EF5AAA287519039561895",
+      "payload_sha256": "48AD564FA2C014FCA2FECB3BD0040E0B44F549F50E2E4ABD4ECB8015E85A16F7",
+      "entries": [
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488631608:70:0:annotation:48574:repair",
+          "command_order": 70,
+          "command_target": 4552,
+          "status": "reviewed",
+          "source_message_sha256": "D33281AAD187D1E926B7C37B3F47101C581E9BEEC6EB221E73FD4E679F1CFB34",
+          "display_message_sha256": "6D9FA83C4FE4109B6F93FC5DF1B4A1024EE9537C3D1F45E65B93F10CAABD01AA",
+          "source_message_index": 543,
+          "display_message_index": 591,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "6345B7DBAB4BF1E5BE68306A3787D8724B71CACE14390D8918E34DEA3A57669D",
+            "native_index": 1096,
+            "cell_offset": 48574,
+            "index_field_offset": 3444,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488631608:73:0:annotation:48892:repair",
+          "command_order": 73,
+          "command_target": 4696,
+          "status": "reviewed",
+          "source_message_sha256": "01D447BC4EC885A9DF9B55C0C2C5591A8B1598876569E9613AE06978DBA66AFD",
+          "display_message_sha256": "6C363AC9F4496A02730B9F50BEDA5CE10A2BBCDDD76EBA6FB9A830674DA3C1B2",
+          "source_message_index": 704,
+          "display_message_index": 747,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "FBDEC3C63A565B0FA89488B347A423ED73152AA49D41CCAD10A3534DADB06D35",
+            "native_index": 1354,
+            "cell_offset": 48892,
+            "index_field_offset": 3584,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488631608:85:0:annotation:49744:repair",
+          "command_order": 85,
+          "command_target": 5316,
+          "status": "reviewed",
+          "source_message_sha256": "494E623A1F6B6FD77CB4DA879F0FC8897D02D0069EADD7C0B06E9D37FB7D1A7F",
+          "display_message_sha256": "45483934938252C66D0944BD60DEA552A9942F90036D66F00202BECA73F8303C",
+          "source_message_index": 1108,
+          "display_message_index": 1173,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "5680BF454359A79A2B43E8BD0BD9C210BBBD4D0112A34D3DB1A043B48824CF86",
+            "native_index": 2115,
+            "cell_offset": 49744,
+            "index_field_offset": 4003,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488631608:70:chinese-annotation",
+          "command_order": 70,
+          "command_target": 4552,
+          "status": "reviewed",
+          "source_message_sha256": "D33281AAD187D1E926B7C37B3F47101C581E9BEEC6EB221E73FD4E679F1CFB34",
+          "display_message_sha256": "6D9FA83C4FE4109B6F93FC5DF1B4A1024EE9537C3D1F45E65B93F10CAABD01AA",
+          "source_message_index": 543,
+          "display_message_index": 591,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "6345B7DBAB4BF1E5BE68306A3787D8724B71CACE14390D8918E34DEA3A57669D",
+              "native_index": 1096,
+              "cell_offset": 48574,
+              "index_field_offset": 3444,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "凄乃皇贰型:你",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488631608:73:chinese-annotation",
+          "command_order": 73,
+          "command_target": 4696,
+          "status": "reviewed",
+          "source_message_sha256": "01D447BC4EC885A9DF9B55C0C2C5591A8B1598876569E9613AE06978DBA66AFD",
+          "display_message_sha256": "6C363AC9F4496A02730B9F50BEDA5CE10A2BBCDDD76EBA6FB9A830674DA3C1B2",
+          "source_message_index": 704,
+          "display_message_index": 747,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "FBDEC3C63A565B0FA89488B347A423ED73152AA49D41CCAD10A3534DADB06D35",
+              "native_index": 1354,
+              "cell_offset": 48892,
+              "index_field_offset": 3584,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "那个人:・・・",
+          "storage": {
+            "kind": "append"
+          }
+        }
+      ]
+    },
+    {
+      "volume": "photonflowers11.rio",
+      "block_offset": 488838928,
+      "source_raw_key": "0xAA443095",
+      "effective_record_sha256": "23533745F7EF7400FBFF844C2E7A0CB4BDED6ECBE1D8D0B18866A47125EEECE6",
+      "payload_sha256": "679529B818B34FBBBF90D92C24D31D4D2F688AB2D8CA21924C8A61EFFDDA3898",
+      "entries": [
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:339:0:annotation:141347:repair",
+          "command_order": 339,
+          "command_target": 18620,
+          "status": "reviewed",
+          "source_message_sha256": "99E9C2DCD19D2210464E3401A52EF8CFBEBA17401082EFE111D775C9E1DE1428",
+          "display_message_sha256": "137C94DCFEAC63323C1B374CDB246DE25AE9C3C64A87B13580CACDB0054B3132",
+          "source_message_index": 299,
+          "display_message_index": 395,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4B7A75B3EFB192FFBE651170C24E2001D6723906474A904EEF4204CBC171298E",
+            "native_index": 669,
+            "cell_offset": 141347,
+            "index_field_offset": 13075,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:385:0:annotation:142277:repair",
+          "command_order": 385,
+          "command_target": 22496,
+          "status": "reviewed",
+          "source_message_sha256": "91B07A83BC810DDD9353C3700FBB7894EE2E6A882EE61B3CE4891E9814300756",
+          "display_message_sha256": "74E730E489E546FA4FD4D62E9DA6F78061340D7557ED051658C4F880DC6B34DB",
+          "source_message_index": 795,
+          "display_message_index": 835,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "610F1712570D8F605515C0C328E86649131C321A10C9757D636323E6BBA3E7ED",
+            "native_index": 1478,
+            "cell_offset": 142277,
+            "index_field_offset": 15278,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:432:0:annotation:143329:repair",
+          "command_order": 432,
+          "command_target": 26408,
+          "status": "reviewed",
+          "source_message_sha256": "1CEF4E8BB213A3F03EF9BFE92B68C073489D6811A88AF87BAEC9CDD0881F75C1",
+          "display_message_sha256": "E6D56D8E5B6084703559AAF56DF12F5AEEC8F25B76183134F858059F0A5251EF",
+          "source_message_index": 1306,
+          "display_message_index": 1364,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "1A9F39CCE2007B80454E3305479B2ADA1A4BD0B620583CE0989340DEAFC120DB",
+            "native_index": 2397,
+            "cell_offset": 143329,
+            "index_field_offset": 17528,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:433:0:annotation:143511:repair",
+          "command_order": 433,
+          "command_target": 26452,
+          "status": "reviewed",
+          "source_message_sha256": "95A1329B8CAE919E195D678390D4ECAFD06E2E036AC17346C6D6B26C17BB6BEC",
+          "display_message_sha256": "FD05BAA3856D7C3633D4920674CA406FAE65759C2293C4A6915E7721FEF19693",
+          "source_message_index": 1410,
+          "display_message_index": 1462,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "8367E666891D0F9F30D80B2CCF7D854163C17A5D794411E98ACF1D505DFAA3F5",
+            "native_index": 2616,
+            "cell_offset": 143511,
+            "index_field_offset": 17568,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:434:0:annotation:143751:repair",
+          "command_order": 434,
+          "command_target": 26496,
+          "status": "reviewed",
+          "source_message_sha256": "85D22C3E26661DAAFEC7350027A272F530E6D6890BCE4975197C34234E26661B",
+          "display_message_sha256": "74BA274D5CF77F654327260F5926853E50A9865A99FF9F932A70223E4C66CFEF",
+          "source_message_index": 1492,
+          "display_message_index": 1582,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "E5A720D4C5683DE8E8D69B0BF478A8E8D4C931A2F7956D97FBDF613F0ACEEDE1",
+            "native_index": 2796,
+            "cell_offset": 143751,
+            "index_field_offset": 17608,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:458:0:annotation:144181:repair",
+          "command_order": 458,
+          "command_target": 28072,
+          "status": "reviewed",
+          "source_message_sha256": "EB935401EDB878D2DB6C1C478BA9E3610290DD60AD9203DF30160B5B44C3CF89",
+          "display_message_sha256": "96FA6E3DBF3A9BCB9232CB4E6AF21E3C3FB53771207A690B5B57D7CB23438A8D",
+          "source_message_index": 1744,
+          "display_message_index": 1790,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "125A5261F230C00F5F4D9FBD9A34E3EAC3F598AC343E10FD747653847DB04839",
+            "native_index": 3207,
+            "cell_offset": 144181,
+            "index_field_offset": 18555,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:460:0:annotation:144339:repair",
+          "command_order": 460,
+          "command_target": 28140,
+          "status": "reviewed",
+          "source_message_sha256": "BB909DA66FC0358BA4A4A5B50C7892163168B14D69F4B052D358ED9E6233D548",
+          "display_message_sha256": "C95B39BFA1603AC021A9BB8865B77508E886DA86C7218FFA9EF63212B2188D9F",
+          "source_message_index": 1825,
+          "display_message_index": 1883,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "5C9DD568138D042AAEB1622E64DEA8B6BD8EC87BDA6D630B187859AED5E83BD5",
+            "native_index": 3343,
+            "cell_offset": 144339,
+            "index_field_offset": 18612,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:548:0:annotation:144919:repair",
+          "command_order": 548,
+          "command_target": 35128,
+          "status": "reviewed",
+          "source_message_sha256": "B7E183A47002034C894370FDD031F743072463A18513C7E1AA8A1E5EFB970779",
+          "display_message_sha256": "424C983B37200D9FF80797939799BBC4FD1A0105EF5F979E9C827E749F941288",
+          "source_message_index": 2112,
+          "display_message_index": 2189,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "D150A64D68A61962DCF7A265883FA8DCAB129A91B38AAAD5B963DD00184DF9D1",
+            "native_index": 3858,
+            "cell_offset": 144919,
+            "index_field_offset": 22874,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:572:0:annotation:145135:repair",
+          "command_order": 572,
+          "command_target": 36272,
+          "status": "reviewed",
+          "source_message_sha256": "36EC7760B5DD0BEA11E6E04AC4C32C24006F9996D4024AEC152CB398AA21BD07",
+          "display_message_sha256": "C68C760B3C5A2D2C28E5D4AECFEA596EF01D334F9C58065369EA2283EA3FB028",
+          "source_message_index": 2222,
+          "display_message_index": 2287,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "6C1BBE6DC4BBADF7760FD9307102835D5491A102965383707A7AEF03F21AB74B",
+            "native_index": 4034,
+            "cell_offset": 145135,
+            "index_field_offset": 23603,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:677:0:annotation:146649:repair",
+          "command_order": 677,
+          "command_target": 43132,
+          "status": "reviewed",
+          "source_message_sha256": "FE94AF7D14E4273CCE73BADB5ED4B2232D442A3F590F4C1D265AA926302FDF50",
+          "display_message_sha256": "53506E4F4DAF160EA0C65C5E20BE77EE6B310FEA671F885B1483BF4F4FC3973F",
+          "source_message_index": 2958,
+          "display_message_index": 3038,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "4FB4FCBDC844E32F896B0224CA49C902F69F5FF74DA094CDEAC21B41FE22FC5A",
+            "native_index": 5449,
+            "cell_offset": 146649,
+            "index_field_offset": 27453,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:829:0:annotation:149327:repair",
+          "command_order": 829,
+          "command_target": 54568,
+          "status": "reviewed",
+          "source_message_sha256": "8CDF5C81EF77895F5A760C96DC50D4695422E9A696183527C6E6B2DA9F766496",
+          "display_message_sha256": "59A278651535E074C35E7C87A8FC80CAF34B7E84CAB4B3A467D729035726B8C0",
+          "source_message_index": 4277,
+          "display_message_index": 4363,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "8D181EB1A73AC7C5CB95B026E1E2194F0B606F38DCDF8A3E4048ADF5878E1D54",
+            "native_index": 8021,
+            "cell_offset": 149327,
+            "index_field_offset": 34455,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:898:0:annotation:150795:repair",
+          "command_order": 898,
+          "command_target": 58732,
+          "status": "reviewed",
+          "source_message_sha256": "9B945CA168A339F17BE1FD558AE31B931A6E80BCEE92B968471DB5F203DA4FD6",
+          "display_message_sha256": "3CC5A56D5BD7FE1E52BDFEC2EB58944810F64C7B13E9DA378008F8FCD5EC18C7",
+          "source_message_index": 5042,
+          "display_message_index": 5096,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "25245891F1067AE380699CFC02586DD9C37469DD529F01ED690EEABDE6C818BD",
+            "native_index": 9304,
+            "cell_offset": 150795,
+            "index_field_offset": 37431,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1074:0:annotation:151341:repair",
+          "command_order": 1074,
+          "command_target": 71116,
+          "status": "reviewed",
+          "source_message_sha256": "9C01DA93BAEAA353CD3AAC075833ACA7436ED028796001AE6362B16A873C1A67",
+          "display_message_sha256": "64FC2646454CA99030FFFC1FBC6E157E3BC46715A43C71BFDA85DEE27891BA2B",
+          "source_message_index": 5340,
+          "display_message_index": 5387,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "E6C4A816F443125F6DCD2670A54660493A079842DD805CAC285A24F356D2CB41",
+            "native_index": 9797,
+            "cell_offset": 151341,
+            "index_field_offset": 44718,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1130:0:annotation:152855:repair",
+          "command_order": 1130,
+          "command_target": 75456,
+          "status": "reviewed",
+          "source_message_sha256": "1332A426219F4133B7D845A0A72D6F71B80336D3FE118B48915D9BEEBBE41E37",
+          "display_message_sha256": "1A723B1DD71AE5DFF3030979D2F3D449E9D9FDFBC60D58B5C32027FD8C5BA6AB",
+          "source_message_index": 6076,
+          "display_message_index": 6135,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "F083FE963D8F8BC7EB505AA702AEEB3ED8FBDE98E176188999D304CE9A27F603",
+            "native_index": 11223,
+            "cell_offset": 152855,
+            "index_field_offset": 47311,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1144:0:annotation:153047:repair",
+          "command_order": 1144,
+          "command_target": 76308,
+          "status": "reviewed",
+          "source_message_sha256": "4F6FACFECBADCCA40D6BF7B9DA038E06D2CA2681816E20FC4BEE5F5DB83436E3",
+          "display_message_sha256": "A95EDB264033EA78C9C17C5B010C7D4485D88AE15D49CC484522F1E289A49350",
+          "source_message_index": 6169,
+          "display_message_index": 6229,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "3EA409E0300A59227E5BA0039627D4B37254427C5E4F09A2D4BA1AFEBEC7F9A9",
+            "native_index": 11368,
+            "cell_offset": 153047,
+            "index_field_offset": 47979,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1149:0:annotation:153237:repair",
+          "command_order": 1149,
+          "command_target": 76468,
+          "status": "reviewed",
+          "source_message_sha256": "0A5A65E3E30DDA30DB877B4647F6956C25BC2CD61B6E7AF1689F3391844E4B51",
+          "display_message_sha256": "B577EF551881C7E127629087FACD8EE055FDC162C4036098CF4F9E7BB8A602FB",
+          "source_message_index": 6267,
+          "display_message_index": 6328,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "E5672F181D302A55DB9AA8357461B17AA2F2E0EDD4D70AAB70689A24F157CE3C",
+            "native_index": 11502,
+            "cell_offset": 153237,
+            "index_field_offset": 48166,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1168:0:annotation:153493:repair",
+          "command_order": 1168,
+          "command_target": 77668,
+          "status": "reviewed",
+          "source_message_sha256": "32A7AE3EBC7944B50F3D6C830BD64BBE74729477B14CFA5B6105169EC8BBCE92",
+          "display_message_sha256": "2F84897E1DC38349C5DE5AD78E6823E5494048657304CE2A09701A626FFC822F",
+          "source_message_index": 6381,
+          "display_message_index": 6457,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "74256D3B5D042D7E09A437E05759348E8664183389C28F14163B98F60AA60F44",
+            "native_index": 11655,
+            "cell_offset": 153493,
+            "index_field_offset": 49026,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1256:0:annotation:156729:repair",
+          "command_order": 1256,
+          "command_target": 84116,
+          "status": "reviewed",
+          "source_message_sha256": "F103D6253D41F62BB23ACDE683EEC63EFD5758B4700136F23B2D3102ACEE8109",
+          "display_message_sha256": "6DB078F5EB3F508A7AE59D18A2D3F15648AF97A635A2327044995F5C1BF66A83",
+          "source_message_index": 7974,
+          "display_message_index": 8070,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "1B1F63A1BB4DE3643496AAD2000C39F1450284FBC1C891E127E494375E5FE614",
+            "native_index": 14745,
+            "cell_offset": 156729,
+            "index_field_offset": 53059,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1275:0:annotation:157991:repair",
+          "command_order": 1275,
+          "command_target": 85220,
+          "status": "reviewed",
+          "source_message_sha256": "7C829378DF03169D9A45B4E9BD452AC059CA2383816B8796B4693D46FE2765AD",
+          "display_message_sha256": "F1A974D0669DB85CAB1A87DF71528DEE1E7BBD4FC6648A05D1521B5BADCAA6AF",
+          "source_message_index": 8622,
+          "display_message_index": 8718,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "E50F2FD526711961CCEEBB9BFAD3C4B84B554B951496044B3BC7C66EC3B909AA",
+            "native_index": 15916,
+            "cell_offset": 157991,
+            "index_field_offset": 53896,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1353:0:annotation:159273:repair",
+          "command_order": 1353,
+          "command_target": 91064,
+          "status": "reviewed",
+          "source_message_sha256": "593D3136C4DEAF645E44726C53701F1A3D7585F7A5CC7CBC4734660164368F3C",
+          "display_message_sha256": "00AE98BFF353BEDDE332E062D68C2447D84F0B6CE28C8C1414666E9C0F3018DB",
+          "source_message_index": 9274,
+          "display_message_index": 9350,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "67933FABA224ADE11AED7B3C2BD796A4012D7E57643896C0FF8647F432D95623",
+            "native_index": 17035,
+            "cell_offset": 159273,
+            "index_field_offset": 57418,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1434:0:annotation:159475:repair",
+          "command_order": 1434,
+          "command_target": 98448,
+          "status": "reviewed",
+          "source_message_sha256": "65884BBDE3B6E70E669B80A1F08C6F54DA6B55528F3376CC20E032585E2D041B",
+          "display_message_sha256": "D10103C10E5E57443FB5D1C3DAA8E95C88BDD6F0FAA1A5DC9B076D3C18DFD853",
+          "source_message_index": 9401,
+          "display_message_index": 9451,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "36EFAAA0FD97ACCFF8678C8464E5AE14D021B1FBD79C0B1F210C3CC63D2B9AC2",
+            "native_index": 17193,
+            "cell_offset": 159475,
+            "index_field_offset": 61530,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1435:0:annotation:159719:repair",
+          "command_order": 1435,
+          "command_target": 98492,
+          "status": "reviewed",
+          "source_message_sha256": "18DC16C0C0B4CC6C761181385ED107E285D0462FF03519C2ADEFCAB4253835B2",
+          "display_message_sha256": "EF9C88A5A0C513DF310C23444FDA775D6EA3EE409AD4C4171F17668C0B875D4E",
+          "source_message_index": 9484,
+          "display_message_index": 9563,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "3F2D40E90F50CEA787281ECA9BDFF8947AB2E2FC2D258F20EA21686FBB029D76",
+            "native_index": 17321,
+            "cell_offset": 159719,
+            "index_field_offset": 61580,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1997:0:annotation:167401:repair",
+          "command_order": 1997,
+          "command_target": 138896,
+          "status": "reviewed",
+          "source_message_sha256": "351E82B24104B1708930E008F872E0C81BA8AD80B7D889E5616E472D18DE90B6",
+          "display_message_sha256": "D1BA92E1BBC4E2F7910E53AF853C0328231D4ADD6C25EC23771B21D3B147904A",
+          "source_message_index": 13353,
+          "display_message_index": 13420,
+          "action": "repair_source_annotation",
+          "review_status": "revise",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "576DD1F6C721C4320537328A21CE38E9BF9D1F2855F73B6AB4BC2A4F5CCB951C",
+            "native_index": 24108,
+            "cell_offset": 167401,
+            "index_field_offset": 89085,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1999:0:annotation:167743:repair",
+          "command_order": 1999,
+          "command_target": 138984,
+          "status": "reviewed",
+          "source_message_sha256": "5FEA87C6C8EDA93185D92D7B8B361AB4536D9ADB58BD3702443B1ADB09F9EEA9",
+          "display_message_sha256": "A5380B121ECD937A5269446486677FA135686F283A1E2F4857DBDFE28CC61FB3",
+          "source_message_index": 13517,
+          "display_message_index": 13580,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "641E977014B05E968C6CBAAC102FA86FA77D281C074C78CBD9DCDCA96BEFF028",
+            "native_index": 24351,
+            "cell_offset": 167743,
+            "index_field_offset": 89175,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:2569:0:annotation:176351:repair",
+          "command_order": 2569,
+          "command_target": 175544,
+          "status": "reviewed",
+          "source_message_sha256": "8FC1C868DBE1E919F62DF2CC9C29607F67A8B0E8A386AEAB638C591FD5545BC2",
+          "display_message_sha256": "27CB7A6FFF02D40B5FC8913E663D026B8E6A474B611CD3C1E527AAB41970720A",
+          "source_message_index": 17808,
+          "display_message_index": 17880,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "7A5DDC53EB1DA8103D68724850FCB942D29B582599D49C92C8CFD6E323D9805A",
+            "native_index": 32280,
+            "cell_offset": 176351,
+            "index_field_offset": 114627,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:385:chinese-annotation",
+          "command_order": 385,
+          "command_target": 22496,
+          "status": "reviewed",
+          "source_message_sha256": "91B07A83BC810DDD9353C3700FBB7894EE2E6A882EE61B3CE4891E9814300756",
+          "display_message_sha256": "74E730E489E546FA4FD4D62E9DA6F78061340D7557ED051658C4F880DC6B34DB",
+          "source_message_index": 795,
+          "display_message_index": 835,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "610F1712570D8F605515C0C328E86649131C321A10C9757D636323E6BBA3E7ED",
+              "native_index": 1478,
+              "cell_offset": 142277,
+              "index_field_offset": 15278,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "两战:・・",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:460:chinese-annotation",
+          "command_order": 460,
+          "command_target": 28140,
+          "status": "reviewed",
+          "source_message_sha256": "BB909DA66FC0358BA4A4A5B50C7892163168B14D69F4B052D358ED9E6233D548",
+          "display_message_sha256": "C95B39BFA1603AC021A9BB8865B77508E886DA86C7218FFA9EF63212B2188D9F",
+          "source_message_index": 1825,
+          "display_message_index": 1883,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "5C9DD568138D042AAEB1622E64DEA8B6BD8EC87BDA6D630B187859AED5E83BD5",
+              "native_index": 3343,
+              "cell_offset": 144339,
+              "index_field_offset": 18612,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "身份不明:无名氏",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:678:chinese-annotation",
+          "command_order": 678,
+          "command_target": 43176,
+          "status": "reviewed",
+          "source_message_sha256": "1ACC59E4906D510F47A40FC599963D0E06D69471EF2408155706F10EA9976018",
+          "display_message_sha256": "3A353E39066AA3E9349A7D07B294A78241477E6A02B0CAE72F8F1F0FBD7256CA",
+          "source_message_index": 3089,
+          "display_message_index": 3142,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "4EFB90912FDEA1D9321C82036EB69EC9D8A4F6C9D14BE104F0E9F5F97A50D10E",
+              "native_index": 5892,
+              "cell_offset": 146997,
+              "index_field_offset": 27505,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 5892,
+          "target_text": "AL:抗激光"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:898:chinese-annotation",
+          "command_order": 898,
+          "command_target": 58732,
+          "status": "reviewed",
+          "source_message_sha256": "9B945CA168A339F17BE1FD558AE31B931A6E80BCEE92B968471DB5F203DA4FD6",
+          "display_message_sha256": "3CC5A56D5BD7FE1E52BDFEC2EB58944810F64C7B13E9DA378008F8FCD5EC18C7",
+          "source_message_index": 5042,
+          "display_message_index": 5096,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "25245891F1067AE380699CFC02586DD9C37469DD529F01ED690EEABDE6C818BD",
+              "native_index": 9304,
+              "cell_offset": 150795,
+              "index_field_offset": 37431,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "丧家犬:胆小鬼",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1074:chinese-annotation",
+          "command_order": 1074,
+          "command_target": 71116,
+          "status": "reviewed",
+          "source_message_sha256": "9C01DA93BAEAA353CD3AAC075833ACA7436ED028796001AE6362B16A873C1A67",
+          "display_message_sha256": "64FC2646454CA99030FFFC1FBC6E157E3BC46715A43C71BFDA85DEE27891BA2B",
+          "source_message_index": 5340,
+          "display_message_index": 5387,
+          "action": "set_display_annotation",
+          "review_status": "revise",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "E6C4A816F443125F6DCD2670A54660493A079842DD805CAC285A24F356D2CB41",
+              "native_index": 9797,
+              "cell_offset": 151341,
+              "index_field_offset": 44718,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "再绕一圈，还是直接扎下去:执行或中止",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1144:chinese-annotation",
+          "command_order": 1144,
+          "command_target": 76308,
+          "status": "reviewed",
+          "source_message_sha256": "4F6FACFECBADCCA40D6BF7B9DA038E06D2CA2681816E20FC4BEE5F5DB83436E3",
+          "display_message_sha256": "A95EDB264033EA78C9C17C5B010C7D4485D88AE15D49CC484522F1E289A49350",
+          "source_message_index": 6169,
+          "display_message_index": 6229,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "3EA409E0300A59227E5BA0039627D4B37254427C5E4F09A2D4BA1AFEBEC7F9A9",
+              "native_index": 11368,
+              "cell_offset": 153047,
+              "index_field_offset": 47979,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "有问题吗:一切正常吗",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1168:chinese-annotation",
+          "command_order": 1168,
+          "command_target": 77668,
+          "status": "reviewed",
+          "source_message_sha256": "32A7AE3EBC7944B50F3D6C830BD64BBE74729477B14CFA5B6105169EC8BBCE92",
+          "display_message_sha256": "2F84897E1DC38349C5DE5AD78E6823E5494048657304CE2A09701A626FFC822F",
+          "source_message_index": 6381,
+          "display_message_index": 6457,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "74256D3B5D042D7E09A437E05759348E8664183389C28F14163B98F60AA60F44",
+              "native_index": 11655,
+              "cell_offset": 153493,
+              "index_field_offset": 49026,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "至少外表看起来没问题:各项状态正常",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1275:chinese-annotation",
+          "command_order": 1275,
+          "command_target": 85220,
+          "status": "reviewed",
+          "source_message_sha256": "7C829378DF03169D9A45B4E9BD452AC059CA2383816B8796B4693D46FE2765AD",
+          "display_message_sha256": "F1A974D0669DB85CAB1A87DF71528DEE1E7BBD4FC6648A05D1521B5BADCAA6AF",
+          "source_message_index": 8622,
+          "display_message_index": 8718,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "E50F2FD526711961CCEEBB9BFAD3C4B84B554B951496044B3BC7C66EC3B909AA",
+              "native_index": 15916,
+              "cell_offset": 157991,
+              "index_field_offset": 53896,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "两次被莉娜投放出去，也两次活了下来:・・・・・・・・・・・・・・・・・",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1997:chinese-annotation",
+          "command_order": 1997,
+          "command_target": 138896,
+          "status": "reviewed",
+          "source_message_sha256": "351E82B24104B1708930E008F872E0C81BA8AD80B7D889E5616E472D18DE90B6",
+          "display_message_sha256": "D1BA92E1BBC4E2F7910E53AF853C0328231D4ADD6C25EC23771B21D3B147904A",
+          "source_message_index": 13353,
+          "display_message_index": 13420,
+          "action": "set_display_annotation",
+          "review_status": "revise",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "576DD1F6C721C4320537328A21CE38E9BF9D1F2855F73B6AB4BC2A4F5CCB951C",
+              "native_index": 24108,
+              "cell_offset": 167401,
+              "index_field_offset": 89085,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "货舱火箭点火准备完毕:准许点火",
+          "storage": {
+            "kind": "append"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio:488838928:1999:chinese-annotation",
+          "command_order": 1999,
+          "command_target": 138984,
+          "status": "reviewed",
+          "source_message_sha256": "5FEA87C6C8EDA93185D92D7B8B361AB4536D9ADB58BD3702443B1ADB09F9EEA9",
+          "display_message_sha256": "A5380B121ECD937A5269446486677FA135686F283A1E2F4857DBDFE28CC61FB3",
+          "source_message_index": 13517,
+          "display_message_index": 13580,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "641E977014B05E968C6CBAAC102FA86FA77D281C074C78CBD9DCDCA96BEFF028",
+              "native_index": 24351,
+              "cell_offset": 167743,
+              "index_field_offset": 89175,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "飞驰的棺材:飞行棺材",
+          "storage": {
+            "kind": "append"
+          }
+        }
+      ]
+    },
+    {
+      "volume": "photonflowers11.rio.002",
+      "block_offset": 413194600,
+      "source_raw_key": "0xC9238FDB",
+      "effective_record_sha256": "50E2B87ED87BA64B7AC8A302A09A74278A3772277B820DF3379A0179DA272868",
+      "payload_sha256": "A9F9825109CFCAC6ABAB9CF0BF9532B9AE9BA3C0354D886E606740BAC9132EF1",
+      "entries": [
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:413194600:11:1:message:191602",
+          "command_order": 11,
+          "command_target": 456,
+          "status": "reviewed",
+          "source_message_sha256": "2921A11F25DADAA24AA79A548E4E81508C2E5E56AF2D833D65E2BCCE448CE2F5",
+          "display_message_sha256": "BEA9038F49EEE0CADEFCD113731266F1278A19C3C1B9DF3590FE07A075C0A867",
+          "source_message_index": 1,
+          "display_message_index": 3,
+          "action": "replace_display_message",
+          "review_status": "keep",
+          "target_text": "\u0005【美知留】「哈啊……哈啊……哈啊……哈啊……」"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:413194600:13:1:message:191704",
+          "command_order": 13,
+          "command_target": 524,
+          "status": "reviewed",
+          "source_message_sha256": "2921A11F25DADAA24AA79A548E4E81508C2E5E56AF2D833D65E2BCCE448CE2F5",
+          "display_message_sha256": "2E5AEB3E61215B8045F90950433D38F56F33B8CDC3974E0EC5D3CDA1EED74D87",
+          "source_message_index": 52,
+          "display_message_index": 54,
+          "action": "replace_display_message",
+          "review_status": "keep",
+          "target_text": "\u0005【神宫司教官】「怎么了，伊隅！这就跑不动了吗？别慢吞吞地跑，混账！」"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:413194600:20:1:message:191904",
+          "command_order": 20,
+          "command_target": 840,
+          "status": "reviewed",
+          "source_message_sha256": "2921A11F25DADAA24AA79A548E4E81508C2E5E56AF2D833D65E2BCCE448CE2F5",
+          "display_message_sha256": "88230A8748DDCDFB4664820037074D55D4E555CC615E9855643921E39B3A9B07",
+          "source_message_index": 152,
+          "display_message_index": 154,
+          "action": "replace_display_message",
+          "review_status": "keep",
+          "target_text": "\u0005【神宫司教官】「脑袋一定很沉吧，全国模拟考第一名的超级优等生大人！」"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:413194600:24:1:message:192108",
+          "command_order": 24,
+          "command_target": 1076,
+          "status": "reviewed",
+          "source_message_sha256": "2921A11F25DADAA24AA79A548E4E81508C2E5E56AF2D833D65E2BCCE448CE2F5",
+          "display_message_sha256": "F5CDDFB0829E489A150A30B253B1FA85B5328BD7A08592A7FE6A45505842AC46",
+          "source_message_index": 254,
+          "display_message_index": 256,
+          "action": "replace_display_message",
+          "review_status": "keep",
+          "target_text": "\u0005【美知留】「不、不是的……教官……！」"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:413194600:380:0:annotation:201046:repair",
+          "command_order": 380,
+          "command_target": 21444,
+          "status": "reviewed",
+          "source_message_sha256": "895EC39FF777C7FD298151BBF8BB317B03EAF60936FF15933B9462BAD7B1B29E",
+          "display_message_sha256": "441FF75B24CFF8CE3D39CA0F4BF7F36214FA70120D335B7BE0DDE86E6C1DA3B0",
+          "source_message_index": 4653,
+          "display_message_index": 4733,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "D9945882623FF9027D8D22B15AE1B186CF7A562677E308B6C695287D5EFDFC39",
+            "native_index": 9518,
+            "cell_offset": 201046,
+            "index_field_offset": 17622,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:413194600:1223:0:annotation:214308:repair",
+          "command_order": 1223,
+          "command_target": 71152,
+          "status": "reviewed",
+          "source_message_sha256": "F7D32EFE0EE61033ADA3DDDAB4240E4C1A8147A8FFCBF961054245DCA7560703",
+          "display_message_sha256": "A53F29491194692E4478ACAAB13A98766FB5F4C8CE6D0BFB92058CD0696DC779",
+          "source_message_index": 11331,
+          "display_message_index": 11362,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "A9B942771AA1917C26B501ABDB68E78D0C209A3631B3CE74B2FEE3BA31BF6DC7",
+            "native_index": 22738,
+            "cell_offset": 214308,
+            "index_field_offset": 53765,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:413194600:380:chinese-annotation",
+          "command_order": 380,
+          "command_target": 21444,
+          "status": "reviewed",
+          "source_message_sha256": "895EC39FF777C7FD298151BBF8BB317B03EAF60936FF15933B9462BAD7B1B29E",
+          "display_message_sha256": "441FF75B24CFF8CE3D39CA0F4BF7F36214FA70120D335B7BE0DDE86E6C1DA3B0",
+          "source_message_index": 4653,
+          "display_message_index": 4733,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "D9945882623FF9027D8D22B15AE1B186CF7A562677E308B6C695287D5EFDFC39",
+              "native_index": 9518,
+              "cell_offset": 201046,
+              "index_field_offset": 17622,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "操纵杆:・・・"
+        }
+      ]
+    },
+    {
+      "volume": "photonflowers11.rio.002",
+      "block_offset": 1218102496,
+      "source_raw_key": "0xD5220AB9",
+      "effective_record_sha256": "F99ADCA910F0DD0114A5502A42BF433CE7C852D6554E2B38A07C082BB5A893ED",
+      "payload_sha256": "B8EBE9145B6F66234128C52C4CFC6987D8AC3ED68AF309DA02E5BC3A95B8072B",
+      "entries": [
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1218102496:926:0:annotation:85795:repair",
+          "command_order": 926,
+          "command_target": 50192,
+          "status": "reviewed",
+          "source_message_sha256": "7EFC477D29EA4061EE93F6D4EFE6F15B381834F8F9BC632E1E64A7F5CABAB0D9",
+          "display_message_sha256": "09B25AA12202B96E62FF7726E8F8AF4D6B141010AF6DE4F165C53201AE2626B6",
+          "source_message_index": 12261,
+          "display_message_index": 12310,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "3DFEA7877D21AEDF060DC25252F8278FA0D03A14F35110BC39D3FD14C0186AC6",
+            "native_index": 21786,
+            "cell_offset": 85795,
+            "index_field_offset": 40218,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1218102496:926:chinese-annotation",
+          "command_order": 926,
+          "command_target": 50192,
+          "status": "reviewed",
+          "source_message_sha256": "7EFC477D29EA4061EE93F6D4EFE6F15B381834F8F9BC632E1E64A7F5CABAB0D9",
+          "display_message_sha256": "09B25AA12202B96E62FF7726E8F8AF4D6B141010AF6DE4F165C53201AE2626B6",
+          "source_message_index": 12261,
+          "display_message_index": 12310,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "3DFEA7877D21AEDF060DC25252F8278FA0D03A14F35110BC39D3FD14C0186AC6",
+              "native_index": 21786,
+              "cell_offset": 85795,
+              "index_field_offset": 40218,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "正好可以:・・・・"
+        }
+      ]
+    },
+    {
+      "volume": "photonflowers11.rio.002",
+      "block_offset": 1263207112,
+      "source_raw_key": "0xD5CE1A33",
+      "effective_record_sha256": "2E5BADD61A29D5EF9FE904FAA3287C2DAD380338CFE5B795BE2DCA71DEF6391E",
+      "payload_sha256": "254A3F7CE96BEC08C60C3A075ED6B3DD060049FA6796CB4A3E230AB070987550",
+      "entries": [
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1263207112:286:0:annotation:67748:repair",
+          "command_order": 286,
+          "command_target": 16688,
+          "status": "reviewed",
+          "source_message_sha256": "CD8C19C983B765ADD89FD84CA337DD45044F8796A6401E285C31717FE9C53357",
+          "display_message_sha256": "4FBEB6C0AA9CB869CE38CA1233646BD7AF547D21A4D1DBAFB3F9BD732839DBD2",
+          "source_message_index": 4205,
+          "display_message_index": 4268,
+          "action": "repair_source_annotation",
+          "review_status": "keep",
+          "annotation_source": {
+            "language": 0,
+            "sha256": "0456AB1188F7B258D9F746CFFCE30B14CD08A20D5EAAB280A50926D44FD5E948",
+            "native_index": 7510,
+            "cell_offset": 67748,
+            "index_field_offset": 13714,
+            "binding": "adjacent_to_owned_message_stale_index"
+          }
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1263207112:222:chinese-annotation",
+          "command_order": 222,
+          "command_target": 12832,
+          "status": "reviewed",
+          "source_message_sha256": "0DA265362FEB4FA2F49C70B51EF9EA2982B194BE89B197EA1D5483903E35314F",
+          "display_message_sha256": "7CF7E05292E6CDF5FB73312253CC0F5A36662A75BF523E152FDA0A2B302A2F6D",
+          "source_message_index": 2982,
+          "display_message_index": 3036,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "A799AD20FB460B308AEE8F8D577DC225B2C2A967C744F2F8CD1AE1004798E757",
+              "native_index": 5625,
+              "cell_offset": 65390,
+              "index_field_offset": 10468,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 5625,
+          "target_text": "DOR:自主退学"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1263207112:286:chinese-annotation",
+          "command_order": 286,
+          "command_target": 16688,
+          "status": "reviewed",
+          "source_message_sha256": "CD8C19C983B765ADD89FD84CA337DD45044F8796A6401E285C31717FE9C53357",
+          "display_message_sha256": "4FBEB6C0AA9CB869CE38CA1233646BD7AF547D21A4D1DBAFB3F9BD732839DBD2",
+          "source_message_index": 4205,
+          "display_message_index": 4268,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 0,
+              "sha256": "0456AB1188F7B258D9F746CFFCE30B14CD08A20D5EAAB280A50926D44FD5E948",
+              "native_index": 7510,
+              "cell_offset": 67748,
+              "index_field_offset": 13714,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 0,
+          "target_text": "宽大处理:・・・・"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1263207112:644:chinese-annotation",
+          "command_order": 644,
+          "command_target": 37776,
+          "status": "reviewed",
+          "source_message_sha256": "FCBAD20D7B590B09ED733E2A74DE31A550C51D0D1840C54112C4E3F08C0A7BB0",
+          "display_message_sha256": "4AA2D68ED147785F43FC03767169D2CFE1A07C6ABB9F3BA38C664E879AC38C78",
+          "source_message_index": 8824,
+          "display_message_index": 8854,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "704EFD72DA9735F56D623DECBC25FB1DCBC7130702CDCBA87EC6E851E30EDC0F",
+              "native_index": 16357,
+              "cell_offset": 76986,
+              "index_field_offset": 29442,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 16357,
+          "target_text": "BDU:战斗服"
+        }
+      ]
+    },
+    {
+      "volume": "photonflowers11.rio.002",
+      "block_offset": 1377793936,
+      "source_raw_key": "0xD7833765",
+      "effective_record_sha256": "2AE7F846FD0A181656B750ABF3645C6704C9926BB62D11A7238D52EE052F9CDB",
+      "payload_sha256": "D93C5354A4D19CB6F1CB55BA0D17D9D7FD42CC88514507CD20AF1FE6859C2BFD",
+      "entries": [
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1377793936:1083:chinese-annotation",
+          "command_order": 1083,
+          "command_target": 60536,
+          "status": "reviewed",
+          "source_message_sha256": "E8DA31CC69BA6E2F56388701BA58D38CD50A22C0A634170150179EE959816309",
+          "display_message_sha256": "12F3BD672E8AF3F6E52CC5EC592BDB364ACA5668B885525A2CA8B62B796C294D",
+          "source_message_index": 8607,
+          "display_message_index": 8660,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "7E7B1E2E3A56CB746CFF6DFE758BAC7F9E09B04252E5724F682EC6D57736ECDB",
+              "native_index": 15622,
+              "cell_offset": 229885,
+              "index_field_offset": 50660,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 15622,
+          "target_text": "神宫司:不明机1;韭泽:不明机2"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1377793936:1354:chinese-annotation",
+          "command_order": 1354,
+          "command_target": 76672,
+          "status": "reviewed",
+          "source_message_sha256": "C6F017A1FAB36D6509308087B0D463C6805D753ECB457E9CBE0F1F0D815F14AD",
+          "display_message_sha256": "3FA81E9CA59503BE4D945817A9C1E161F6DFBCB5E6578DC33036EDFED84A1B31",
+          "source_message_index": 9120,
+          "display_message_index": 9170,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "DDC8CA18F78A04935F7163DEB742102DDBF14D24056E922CCD8F0EE70DF28DB2",
+              "native_index": 16355,
+              "cell_offset": 230899,
+              "index_field_offset": 64441,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 16355,
+          "target_text": "神宫司:不明机1"
+        },
+        {
+          "stable_id": "pf:native:photonflowers11.rio.002:1377793936:2306:chinese-annotation",
+          "command_order": 2306,
+          "command_target": 128304,
+          "status": "reviewed",
+          "source_message_sha256": "5A7A7E2E2C18E99901BD4CD95A0A1DFD316FB486803B249F0652ABD25DD64229",
+          "display_message_sha256": "DBD74300FF2CE078024AE328814D75D9DCD97B9924730758991F9BCE905FAB88",
+          "source_message_index": 10664,
+          "display_message_index": 10716,
+          "action": "set_display_annotation",
+          "review_status": "keep",
+          "annotation_sources": [
+            {
+              "language": 1,
+              "sha256": "DDC8CA18F78A04935F7163DEB742102DDBF14D24056E922CCD8F0EE70DF28DB2",
+              "native_index": 18763,
+              "cell_offset": 233991,
+              "index_field_offset": 115602,
+              "binding": "adjacent_to_owned_message_stale_index"
+            }
+          ],
+          "display_annotation_index": 18763,
+          "target_text": "神宫司:不明机1"
+        }
+      ]
+    }
+  ]
+}

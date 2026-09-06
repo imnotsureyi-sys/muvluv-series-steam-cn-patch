@@ -19,6 +19,14 @@ PM 的 CRsa 路线暴露了 AGES Internal Error 8311：带长度的 CString 内�
 [8311 复盘](../../docs/postmortems/error-8311.md)。图片使用 PF/PM 共用清单，但 PM 的
 多个 RIO 分卷、shared/common 端点与运行时表面替换必须单独验证。
 
+本轮原生 CRsa 补译还确认了另一条独立边界：后续分卷中的记录即使做内容完全相同的
+RUO 重定向，实机仍会触发 `InternalError(831)`；相同字节写回原分卷的固定范围则通过。
+因此 PM 原生 CRsa 不再由 RUO 构建器输出，而由
+[`build_crsa_native_volume_patch.py`](../../tools/text/build_crsa_native_volume_patch.py)
+从哈希锁定的干净原卷生成新分卷副本，发布时再转换为支持安装和回滚的区段补丁。
+完整实验、实机抽样和 831／8311 的区别见
+[CRsa 原生增量记录](../../docs/postmortems/crsa-native-increment-20260904.md)。
+
 当前组件还不是玩家安装包。正式发布需要 PM 自己的干净根构建、哈希门、字体与图片
 权利核验、安装/卸载以及完整路线实机 QA。
 
