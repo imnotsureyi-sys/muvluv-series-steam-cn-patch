@@ -1,0 +1,87 @@
+{
+  "schema": "photon-consolidated-chinese-review/v1",
+  "status": "draft_audit_snapshot_not_native_write_contract",
+  "game": "pf",
+  "source_private_jsonl_sha256": "ac6daf0ae4572566356d9e18662b824c789d2f8cff9634db30f884abafe4315f",
+  "source_hash_encoding": "Exact parsed JP/EN slot encoded as UTF-8, actual control characters; no normalization. Null means no English slot.",
+  "official_source_text_included": false,
+  "identity_policy": "binding_id is unique; stable_id is a historical alias and may repeat",
+  "counts": {
+    "cvm": 12952,
+    "cstring": 69,
+    "recovered_message": 4
+  },
+  "rows": 13025,
+  "shards": [
+    {
+      "file": "rows-00001-01000.json",
+      "rows": 1000,
+      "sha256": "25e534f60df358a6599b60b3b1cd460d64d358ba753614c6010c583d106da76f"
+    },
+    {
+      "file": "rows-01001-02000.json",
+      "rows": 1000,
+      "sha256": "9dd28cff292015267ce96fa53cf37dd4231a1ca8243372f5a5dca9ea3807c116"
+    },
+    {
+      "file": "rows-02001-03000.json",
+      "rows": 1000,
+      "sha256": "2b287d46990141ebbdffce41999468c3ae8ea9cf78bcdf910659fa7a29fac572"
+    },
+    {
+      "file": "rows-03001-04000.json",
+      "rows": 1000,
+      "sha256": "656200f495fd49f4861c99cf7e18865fef9374cc265fcb388aed78b2f3f368f5"
+    },
+    {
+      "file": "rows-04001-05000.json",
+      "rows": 1000,
+      "sha256": "e1eac2b34931836a22168bdb6f57d147b889ef34377ae7b3353ab92f5d5e9abb"
+    },
+    {
+      "file": "rows-05001-06000.json",
+      "rows": 1000,
+      "sha256": "1aa3f98dd660058f06636c659894e649f508821bb5a7bee9f07da341e8f13975"
+    },
+    {
+      "file": "rows-06001-07000.json",
+      "rows": 1000,
+      "sha256": "81056825ce3277e1dd768e8ba580de58648638f87d313cb74b5bddddf6edf217"
+    },
+    {
+      "file": "rows-07001-08000.json",
+      "rows": 1000,
+      "sha256": "7b3caf1f9ecd2acdd828a43ca3c91a867429fa6558afb2aadf6078df030bc195"
+    },
+    {
+      "file": "rows-08001-09000.json",
+      "rows": 1000,
+      "sha256": "8136f03832550ca8f39f1b2136e140030be4a64d07a1067b606b8159a5b45918"
+    },
+    {
+      "file": "rows-09001-10000.json",
+      "rows": 1000,
+      "sha256": "8f08c808d80190a0187c53a8c34bbacaabba74668df53c456aa1b1d0510f081a"
+    },
+    {
+      "file": "rows-10001-11000.json",
+      "rows": 1000,
+      "sha256": "1952e2e9174d92a8b8ae05a7952e1aa2d1593d67b90f1f1ece1fa2f93a912110"
+    },
+    {
+      "file": "rows-11001-12000.json",
+      "rows": 1000,
+      "sha256": "294b6defccc26e492154aa478386a9451cc52146114559c31131a7f582b5d9de"
+    },
+    {
+      "file": "rows-12001-13000.json",
+      "rows": 1000,
+      "sha256": "2f469357aa1da253ccb2ca39c1ec0bcab72bf26b725a5559ff381ab88de7581d"
+    },
+    {
+      "file": "rows-13001-13025.json",
+      "rows": 25,
+      "sha256": "cf462c0625c0461ee276780c3c38c0228a1d9b9bf2077362e7654c9e77688e64"
+    }
+  ]
+}

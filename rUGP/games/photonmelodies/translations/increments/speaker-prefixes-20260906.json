@@ -1,0 +1,30 @@
+{
+  "schema": "photon-speaker-prefix-repairs/v1",
+  "game": "pm",
+  "blocks": [
+    {
+      "volume": "photonmelodies11.rio.004",
+      "block_offset": 1457084560,
+      "source_raw_key": "0x112D53F1",
+      "effective_record_sha256": "BE904A4581D015347CE70C9DC9E8AA723A741B8F5508C9FE616FF75247A621C2",
+      "payload_sha256": "3DBF1705563C21538F5F5DB68F817CB0BB97CB260691834C30CA7F0A9D376B8A",
+      "entries": [
+        {
+          "stable_id": "pm:speaker-prefix:photonmelodies11.rio.004:1457084560:477",
+          "command_order": 477,
+          "command_target": 28184,
+          "status": "reviewed",
+          "review_status": "revise",
+          "action": "replace_display_message",
+          "source_message_sha256": "E02F37829690C6F78444D1E270884500C977AAFE5022A4FD3717DEF82993CAA5",
+          "display_message_sha256": "CC4F2FE2DE736BC6474DCD9249BF1E75FDAA2D6013D45594C752119C911D44DB",
+          "source_message_index": 7736,
+          "display_message_index": 7790,
+          "target_text": "【武】「虽然总觉得自己像是被几句随口编的话\n给哄住了……\u0003……\u0003不过，\u0003这次就算了。」\u0001",
+          "before_text": "虽然总觉得自己像是被几句随口编的话\n给哄住了……\u0003……\u0003不过，\u0003这次就算了。\u0001",
+          "reason": "Restore native speaker delimiters; preserve existing wording and control sequence."
+        }
+      ]
+    }
+  ]
+}

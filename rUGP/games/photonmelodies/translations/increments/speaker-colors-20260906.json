@@ -1,0 +1,170 @@
+{
+  "schema": "photon-speaker-color-increment/v1",
+  "game": "pm",
+  "volume": "photonmelodies11.rio",
+  "block_offset": 563244,
+  "record_bytes": 3384,
+  "effective_record_sha256": "A32A1250A401C2C3FE4A9B1010F03CE40D35D4EFE7F7BED3A4C70CB450BCA6A4",
+  "aliases": [
+    {
+      "source": "アイヒベルガー少佐",
+      "target": "艾希贝尔格少校",
+      "color": 11842740
+    },
+    {
+      "source": "ファーレンホルスト中尉",
+      "target": "法伦霍斯特中尉",
+      "color": 14339482
+    },
+    {
+      "source": "ララーシュタイン大尉",
+      "target": "拉拉施泰因上尉",
+      "color": 13800888
+    },
+    {
+      "source": "ベスターナッハ中尉",
+      "target": "贝斯特纳赫中尉",
+      "color": 16495539
+    },
+    {
+      "source": "イルフリーデ",
+      "target": "伊尔芙莉德",
+      "color": 16775888
+    },
+    {
+      "source": "ブラウアー少尉",
+      "target": "布劳尔少尉",
+      "color": 14599348
+    },
+    {
+      "source": "シルヴィオ",
+      "target": "西尔维奥",
+      "color": 16777215
+    },
+    {
+      "source": "レンツォ",
+      "target": "伦佐",
+      "color": 14539204
+    },
+    {
+      "source": "悠陽",
+      "target": "悠阳",
+      "color": 14798586
+    },
+    {
+      "source": "純夏",
+      "target": "纯夏",
+      "color": 16761008
+    },
+    {
+      "source": "月詠",
+      "target": "月咏",
+      "color": 15269856
+    },
+    {
+      "source": "千鶴",
+      "target": "千鹤",
+      "color": 8450192
+    },
+    {
+      "source": "壬姫",
+      "target": "壬姬",
+      "color": 16744688
+    },
+    {
+      "source": "まりも",
+      "target": "麻理茉",
+      "color": 14809216
+    },
+    {
+      "source": "ウォーケン",
+      "target": "沃肯",
+      "color": 9022860
+    },
+    {
+      "source": "ルナテレジア",
+      "target": "露娜特蕾西娅",
+      "color": 14086620
+    },
+    {
+      "source": "ヘルガローゼ",
+      "target": "赫尔加罗泽",
+      "color": 10000634
+    },
+    {
+      "source": "ピアティフ",
+      "target": "皮亚蒂芙",
+      "color": 16767055
+    },
+    {
+      "source": "イルマ",
+      "target": "伊尔玛",
+      "color": 15785404
+    },
+    {
+      "source": "速瀬",
+      "target": "速濑",
+      "color": 7973631
+    },
+    {
+      "source": "風間",
+      "target": "风间",
+      "color": 10005656
+    },
+    {
+      "source": "涼宮",
+      "target": "凉宫",
+      "color": 16769200
+    },
+    {
+      "source": "伊隅大尉",
+      "target": "伊隅上尉",
+      "color": 16743022
+    },
+    {
+      "source": "速瀬中尉",
+      "target": "速濑中尉",
+      "color": 7973631
+    },
+    {
+      "source": "涼宮中尉",
+      "target": "凉宫中尉",
+      "color": 16769200
+    },
+    {
+      "source": "風間少尉",
+      "target": "风间少尉",
+      "color": 10005656
+    },
+    {
+      "source": "涼宮少尉",
+      "target": "凉宫少尉",
+      "color": 16762976
+    },
+    {
+      "source": "遙",
+      "target": "遥",
+      "color": 16769200
+    },
+    {
+      "source": "ドクター香月",
+      "target": "香月博士",
+      "color": 16765160
+    },
+    {
+      "source": "鎧衣課長",
+      "target": "铠衣课长",
+      "color": 8454120
+    },
+    {
+      "source": "ブラジル",
+      "target": "巴西",
+      "color": 16762976
+    },
+    {
+      "source": "みちる",
+      "target": "美知留",
+      "color": 16743022
+    }
+  ]
+}

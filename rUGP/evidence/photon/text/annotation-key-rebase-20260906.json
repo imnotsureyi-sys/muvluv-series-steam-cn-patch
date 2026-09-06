@@ -1,0 +1,15 @@
+{
+  "scope": "Explicit per-occurrence annotation key rebase to latest approved Chinese. Body and existing annotation values are unchanged; no global replacement.",
+  "decisions": [
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:273:chinese-annotation","before":"微妙感情:情结","after":"复杂的感情:情结","reason":"正文原对应短语已审定为复杂的感情，批注仍指该感情。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:401:chinese-annotation","before":"ＥＦ－2000:台风","after":"EF-2000:台风","reason":"机型名称在最新正文使用半角；只重绑键，不改正文或注释。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:488:chinese-annotation","before":"暴风:台风;乞雨中队:雨舞中队","after":"暴风:台风;雨舞中队:雨舞中队","reason":"保留暴风的台风注释；旧队名已统一雨舞中队，保留同名注释记录而不恢复旧译。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:492:chinese-annotation","before":"欧洲民族之师:西北风","after":"欧洲诸民族之师:西北风","reason":"最新正文称欧洲诸民族之师，批注键补入现有诸字，正文不动。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:1429:chinese-annotation","before":"拔剑:冲锋","after":"白刃战:冲锋","reason":"这条命令中原拔剑对应现有准备白刃战；绑定当前白刃战，不把旧措辞写回正文。注释仍沿用交接审定值，未重新翻译。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:4123:chinese-annotation","before":"ＥＦ－2000:台风","after":"EF-2000:台风","reason":"本句机型同样为半角EF-2000，逐条重绑。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:4213:chinese-annotation","before":"不可恢复点:无法回头之处","after":"无法挽回的临界点:无法回头之处","reason":"旧术语对应正文引号内完整短语，不能只绑定临界点两个字。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:4483:chinese-annotation","before":"ＥＦ－2000:台风","after":"EF-2000:台风","reason":"本句机型也是半角形式，逐条重绑。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:4938:chinese-annotation","before":"中队首屈一指的突击前卫:我的首席女伶","after":"中队头号突击前卫:我的首席女伶","reason":"匹配最新正文对同一称谓的审定措辞，保留首席女伶的双关注释。"},
+    {"stable_id":"pf:native:photonflowers11.rio:488271272:5323:chinese-annotation","before":"发自内心:必须相信","after":"打从心底:必须相信","reason":"最新正文同义短语为打从心底，注释只改定位键。"}
+  ]
+}
