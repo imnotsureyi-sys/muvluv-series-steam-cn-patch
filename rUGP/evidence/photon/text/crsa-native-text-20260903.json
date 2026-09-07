@@ -239,12 +239,12 @@
       "reviewed_source_hashes_matched": 12964,
       "reviewed_files": [
         {
-          "file": "rUGP/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv",
+          "file": "rUGP/games/photonflowers/text-data/history/reviewed/alternative.zh-Hans.csv",
           "rows": 6033,
           "sha256": "F2AFC90C8DD09E48D96D88655E8A1B32C2D85AD5B8F25305B57EE83E7798D5FC"
         },
         {
-          "file": "rUGP/games/photonflowers/translations/reviewed/extra.zh-Hans.csv",
+          "file": "rUGP/games/photonflowers/text-data/history/reviewed/extra.zh-Hans.csv",
           "rows": 6931,
           "sha256": "D1A6E2195A430CE8F8E2A064BA087E2F41AB57285E2F1AD85EEEF8CC90BC8AB0"
         }
@@ -304,22 +304,22 @@
       "reviewed_source_hashes_matched": 44583,
       "reviewed_files": [
         {
-          "file": "rUGP/games/photonmelodies/translations/reviewed/adoration-resurrection.zh-Hans.csv",
+          "file": "rUGP/games/photonmelodies/text-data/history/reviewed/adoration-resurrection.zh-Hans.csv",
           "rows": 8407,
           "sha256": "794E10E5EFC5716AA2F58B0E06856B9E4F651EE63EE5554D27B1583D4DA6D128"
         },
         {
-          "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.002.zh-Hans.csv",
+          "file": "rUGP/games/photonmelodies/text-data/history/reviewed/shard-of-spacetime/photonmelodies11.rio.002.zh-Hans.csv",
           "rows": 771,
           "sha256": "BEF98CE48F6B4CBE761EDD146D082C106E46C6957E93E1E320B6B6B18AAB145B"
         },
         {
-          "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.003.zh-Hans.csv",
+          "file": "rUGP/games/photonmelodies/text-data/history/reviewed/shard-of-spacetime/photonmelodies11.rio.003.zh-Hans.csv",
           "rows": 4850,
           "sha256": "FAEAFDD1F0E07CDC08B9508E50C07F4A8FF279AD0E396056A768FD3C06A810CE"
         },
         {
-          "file": "rUGP/games/photonmelodies/translations/reviewed/shard-of-spacetime/photonmelodies11.rio.004.zh-Hans.csv",
+          "file": "rUGP/games/photonmelodies/text-data/history/reviewed/shard-of-spacetime/photonmelodies11.rio.004.zh-Hans.csv",
           "rows": 30555,
           "sha256": "78B30525CC58FFF99C444EB05C95C0DAB49BC75171E9B86F3791236F2CCE3C92"
         }

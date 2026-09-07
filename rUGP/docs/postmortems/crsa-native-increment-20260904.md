@@ -68,12 +68,12 @@ PM 的 46 个记录全部保持池长度、后缀位置和记录长度不变。P
 
 ```powershell
 python -m rUGP.tools.text.build_crsa_native_volume_patch `
-  --spec rUGP/games/photonmelodies/translations/increments/crsa-native-20260904.json `
+  --spec rUGP/games/photonmelodies/text-data/increments/crsa-native-20260904.json `
   --source-dir "<clean PM game directory>" `
   --output-dir "<new work directory>/pm-native-fixed-volumes"
 
 python -m rUGP.tools.text.build_crsa_native_increment `
-  --spec rUGP/games/photonflowers/translations/increments/crsa-native-20260904.json `
+  --spec rUGP/games/photonflowers/text-data/increments/crsa-native-20260904.json `
   --source-dir "<PF game directory>" `
   --base-ruo "<PF game directory>/photonflowers11.rio.ruo1" `
   --output "<work directory>/pf-native-v3-minimal-append.ruo"

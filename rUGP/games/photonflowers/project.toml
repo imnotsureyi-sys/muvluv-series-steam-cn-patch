@@ -6,9 +6,19 @@ steam_app_id = 889700
 target_locales = ["zh-Hans"]
 development_status = "development-no-player-package"
 translation_authorities = [
-  "translations/reviewed/alternative.zh-Hans.csv",
-  "translations/reviewed/extra.zh-Hans.csv",
-  "translations/zh-Hans.csv",
+  "translations/樱花盛开之前.csv",
+  "translations/和小武在一起！.csv",
+  "translations/小武哥的尾巴.csv",
+  "translations/白银同学，等一下！！.csv",
+  "translations/白银……在吃吗？.csv",
+  "translations/其名为武.csv",
+  "translations/我名为冥夜.csv",
+  "translations/赎罪.csv",
+  "translations/雨舞者.csv",
+  "translations/告白.csv",
+  "translations/继承.csv",
+  "translations/小鸡潜降兵.csv",
+  "translations/共通系统.csv",
 ]
 image_authority = "../../evidence/photon/images/manifest.json"
 image_filter = "PF"

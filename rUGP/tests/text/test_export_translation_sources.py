@@ -95,7 +95,7 @@ class PortableTranslationExportTests(unittest.TestCase):
             )
 
             self.assertEqual(result["status"], "PASS")
-            pm_path = games / "photonmelodies" / "translations" / "zh-Hans.csv"
+            pm_path = games / "photonmelodies" / "text-data" / "runtime" / "zh-Hans.csv"
             with pm_path.open("r", encoding="utf-8", newline="") as stream:
                 rows = list(csv.DictReader(stream))
             self.assertEqual(tuple(rows[0]), PUBLIC_COLUMNS)

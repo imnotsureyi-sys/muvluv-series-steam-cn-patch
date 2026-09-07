@@ -49,12 +49,12 @@ python -m rUGP.tools.text.chapter_review rUGP/games/photonmelodies/translations 
 
 ## 历史文件与构建边界
 
-- `reviewed/`：封存的早期正文证据，保留以兼容旧 manifest 和测试，不再人工编辑。
-- `layout-20260906/`：这次迁移的不可变基线和完整绑定元数据，不维护第二套新正文。
-- `zh-Hans.csv`：旧运行时精确写入合同，**不是新的正文编辑入口**。
-- `increments/`：原生补提取、注释和姓名修复的机器证据，保留供写回校验。
+- `../text-data/history/reviewed/`：封存的早期正文证据，不再人工编辑。
+- `../text-data/layout-baseline/`：不可变基线和完整绑定元数据，不维护第二套新正文。
+- `../text-data/runtime/zh-Hans.csv`：旧运行时精确写入合同，**不是新的正文编辑入口**。
+- `../text-data/increments/`：原生补提取、注释和姓名修复的机器证据。
 
-旧文件不删除、不改哈希；新编辑只进入章节 CSV。原生构建接入时必须读取 `read_chapters()`
+旧资料仅迁移位置，内容与哈希不变；新编辑只进入章节 CSV。原生构建接入时必须读取 `read_chapters()`
 的有效结果并走已有原生写入合同，不能回退使用旧正文。
 **本 PR 只完成编辑面重组和读取接口，不宣称章节 CSV 已直接接入玩家包构建。**
 尤其 `cstring` 是可读显示文本，不等于含多个语言槽、PUA 与字段边界的完整序列化字段。
@@ -62,3 +62,37 @@ python -m rUGP.tools.text.chapter_review rUGP/games/photonmelodies/translations 
 
 这次初始 CSV 经表格工具按文本类型写入、逐格读取核验后导出；完整 Python 往返校验
 独立证明全部 57,723 条与基线相同。目录重组没有安装游戏文件，也没有修改玩家存档。
+
+## 本地完整三语审核
+
+公开仓库保留中文、唯一绑定及日英哈希，不发布完整官方日英脚本。
+本地三语表是审核视图，不是第二份中文权威来源。日英列只读，中文及注释可编辑。
+输出只能位于当前仓库已忽略的 `local-internal/` 子目录，不进入提交、Release 或 CI 附件。
+版权声明与非商业用途不等于获得脚本分发许可；参见[内容权利说明](../../docs/legal/NOTICE.md)。
+
+使用现有的本地合并审计 `full-three-language.jsonl` 作为输入；它应来自合法持有的对应游戏版本。
+本命令不下载脚本，也不直接重新解析游戏安装目录。没有该私有输入时，应先走已有提取、
+绑定和合并审计流程，不能从哈希反造原文或拿其他版本顶替。
+导出逐条核对绑定、类型及精确日英哈希，中文始终读取当前公开章节表，忽略私有输入里的旧中文。
+
+```powershell
+python -m rUGP.tools.text.local_chapter_review export rUGP/games/photonflowers/translations local-internal/three-language/session-01/PF --source work/full-three-language.jsonl
+python -m rUGP.tools.text.local_chapter_review export rUGP/games/photonmelodies/translations local-internal/three-language/session-01/PM --source work/full-three-language.jsonl
+```
+
+生成与公开目录一一对应的 58 份 CSV，`jp_text`、`en_text`、`translated_text` 并列。
+所有源文控制符可逆显示，包括日英原有 `<03>`，不套用中文禁用规则。
+源槽不存在时留空且哈希为空；真实空字符串的哈希不为空，不混淆二者。
+已有会话不覆盖，需要更新原文或同步较新中文时换一个会话目录。
+
+审核后先预检，确认修改条数，再显式回写：
+
+```powershell
+python -m rUGP.tools.text.local_chapter_review import rUGP/games/photonflowers/translations local-internal/three-language/session-01/PF
+python -m rUGP.tools.text.local_chapter_review import rUGP/games/photonflowers/translations local-internal/three-language/session-01/PF --apply
+```
+
+PM 对应更换目录。回写仅更新中文与注释；按唯一 ID 对齐，允许同章排序，拒绝跨章移动、
+漏行、重复行、日英改动、只读元数据改动和不合规控制符。所有章节先校验通过才写入。
+`base_edit_sha256` 用于拒绝旧审核覆盖较新的公开中文，请勿修改。
+无改动导入不重写文件；重复导入相同结果也不产生新改动。

@@ -8,6 +8,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import io
 import json
 from pathlib import Path
 import re
@@ -40,7 +41,7 @@ def cells(row: dict) -> list[str]:
 
 
 def snapshot(folder: Path) -> list[dict]:
-    source = folder / "layout-20260906"
+    source = folder.parent / "text-data" / "layout-baseline"
     manifest = json.loads((source / "manifest.json").read_text(encoding="utf-8"))
     result = []
     for shard in manifest["shards"]:
@@ -56,7 +57,8 @@ def snapshot(folder: Path) -> list[dict]:
     return result
 
 
-def read_chapters(folder: Path, *, unchanged: bool = False) -> list[dict]:
+def read_chapters(folder: Path, *, unchanged: bool = False,
+                  overrides: dict[str, bytes] | None = None) -> list[dict]:
     """Overlay editable text/annotations on exact original binding metadata."""
     originals = snapshot(folder)
     by_id = {r["binding_id"]: r for r in originals}
@@ -89,7 +91,9 @@ def read_chapters(folder: Path, *, unchanged: bool = False) -> list[dict]:
         raise ValueError("Missing or unlisted chapter CSV")
     for entry in manifest["files"]:
         count = 0
-        with (folder / entry["file"]).open(encoding="utf-8-sig", newline="") as stream:
+        data = (overrides[entry["file"]] if overrides is not None
+                else (folder / entry["file"]).read_bytes())
+        with io.StringIO(data.decode("utf-8-sig"), newline="") as stream:
             reader = csv.DictReader(stream)
             if tuple(reader.fieldnames or ()) != COLUMNS:
                 raise ValueError("Unexpected chapter CSV columns")

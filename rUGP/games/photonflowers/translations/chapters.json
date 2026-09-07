@@ -2,7 +2,7 @@
   "schema": "photon-chapter-review/v1",
   "game": "pf",
   "rows": 13025,
-  "snapshot": "layout-20260906/manifest.json",
+  "snapshot": "../text-data/layout-baseline/manifest.json",
   "official_source_text_included": false,
   "control_encoding": "Uppercase <HEX> for Cc/Cf characters and literal less-than; one-pass decoding. <3C>0A> is literal text <0A>.",
   "ordering": "Native storage order within each story; not gameplay route order. Shard file labels are descriptive scene labels, not official subchapter titles.",

@@ -45,7 +45,7 @@
 使用 BCP 47 风格标识，如 `ko`、`ru`、`zh-Hans`。新语言必须新建文件或语言列，不能覆盖日文依据或现有中文。模板工具只保留稳定 ID、源哈希和明确选择的上下文，并把目标译文置空：
 
 ```powershell
-python -m localization.tools.create_locale_template rUGP/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text
+python -m localization.tools.create_locale_template rUGP/games/photonflowers/text-data/history/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text
 ```
 
 完整要求见[新语言指南](new-locale.md)。

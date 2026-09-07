@@ -20,7 +20,7 @@ class ConsolidatedExportTests(unittest.TestCase):
         root = Path(__file__).resolve().parents[2]
         identities = set()
         for title, expected in [("photonflowers", 13025), ("photonmelodies", 44698)]:
-            folder = root / "games" / title / "translations/layout-20260906"
+            folder = root / "games" / title / "text-data/layout-baseline"
             manifest = json.loads((folder / "manifest.json").read_text(encoding="utf-8"))
             count = 0
             for shard in manifest["shards"]:

@@ -387,7 +387,7 @@ def main() -> None:
     parser.add_argument("--overlay-manifest", type=Path)
     args = parser.parse_args()
     reviewed = args.reviewed or sorted((Path(__file__).resolve().parents[2] / "games" /
-                                      GAME_FOLDERS[args.game] / "translations/reviewed").rglob("*.csv"))
+                                      GAME_FOLDERS[args.game] / "text-data/history/reviewed").rglob("*.csv"))
     report = audit(args.game, args.cache, args.output, reviewed, args.overlay_cache, args.overlay_manifest)
     if report["unmatched_reviewed_ids"] or report["unmapped_crsa_references"]:
         raise SystemExit(1)

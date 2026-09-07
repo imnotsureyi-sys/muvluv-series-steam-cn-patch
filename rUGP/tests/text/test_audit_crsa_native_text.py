@@ -22,7 +22,7 @@ class NativeAuditClassificationTests(unittest.TestCase):
         glossary = root / "localization/glossaries/muv-luv.ja-zh-Hans.csv"
         glossary_hash = digest(glossary)
         for game in ("photonflowers", "photonmelodies"):
-            spec = json.loads((root / f"rUGP/games/{game}/translations/increments/crsa-native-20260904.json").read_text(encoding="utf-8"))
+            spec = json.loads((root / f"rUGP/games/{game}/text-data/increments/crsa-native-20260904.json").read_text(encoding="utf-8"))
             self.assertEqual(glossary_hash, spec["glossary_sha256"])
         for name in ("crsa-native-review-20260904.json", "crsa-native-terms-20260904.json"):
             evidence = json.loads((root / "rUGP/evidence/photon/text" / name).read_text(encoding="utf-8"))

@@ -11,8 +11,8 @@
 - Photon 图片权威：PF 636 项
 
 [按章节命名的 CSV](translations/README.md) 是最新人工编辑入口。
-`translations/reviewed/` 保留早期审校中文、稳定 ID 和日文源哈希，作为封存证据，不再人工编辑。
-`translations/zh-Hans.csv` 保存偏移、容量、控制符、运行时值和写入路线，仍是原有 69 行
+`text-data/history/reviewed/` 保留早期审校中文、稳定 ID 和日文源哈希，作为封存证据，不再人工编辑。
+`text-data/runtime/zh-Hans.csv` 保存偏移、容量、控制符、运行时值和写入路线，仍是原有 69 行
 写入合同。章节 CSV 读取接口不会把全部审校文本自动变成可安全写回的原生字段。
 
 公开表故意不批量镜像完整官方日文。贡献者从合法游戏提取源文本后，通过稳定 ID 与

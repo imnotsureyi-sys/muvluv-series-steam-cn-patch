@@ -62,7 +62,7 @@ engine-neutral exporter removes the existing localized-text column and creates
 blank `target_text` cells instead:
 
 ```powershell
-python -m localization.tools.create_locale_template rUGP/games/photonflowers/translations/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text --keep-column call_order --keep-column rio_file --keep-column scene
+python -m localization.tools.create_locale_template rUGP/games/photonflowers/text-data/history/reviewed/alternative.zh-Hans.csv work/ru/photonflowers-alternative.csv --target-locale ru --identity-column stable_id --source-hash-column source_text_sha256 --text-column translated_text --keep-column call_order --keep-column rio_file --keep-column scene
 ```
 
 CSV and TSV schemas vary across AGE2, rUGP review sources and runtime contracts,

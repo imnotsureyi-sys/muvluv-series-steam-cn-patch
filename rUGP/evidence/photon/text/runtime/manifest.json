@@ -24,13 +24,13 @@
   "games": {
     "photonflowers": {
       "bytes": 28757,
-      "path": "rUGP/games/photonflowers/translations/zh-Hans.csv",
+      "path": "rUGP/games/photonflowers/text-data/runtime/zh-Hans.csv",
       "rows": 69,
       "sha256": "714FC82990784F5F414FA2A2A466A887056507B85B1986181E8A02F48B6C9548"
     },
     "photonmelodies": {
       "bytes": 63963,
-      "path": "rUGP/games/photonmelodies/translations/zh-Hans.csv",
+      "path": "rUGP/games/photonmelodies/text-data/runtime/zh-Hans.csv",
       "rows": 151,
       "sha256": "F1A69217A4D8B06E8071393567C18C2A9685D675A4B54F35F261C0AAE3B70742"
     }
