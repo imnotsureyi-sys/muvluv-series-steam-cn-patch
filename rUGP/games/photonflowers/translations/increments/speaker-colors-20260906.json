@@ -1,0 +1,165 @@
+{
+  "schema": "photon-speaker-color-increment/v1",
+  "game": "pf",
+  "volume": "photonflowers11.rio",
+  "block_offset": 300536,
+  "record_bytes": 2842,
+  "effective_record_sha256": "6F2254D14452D448048A0AD7548482B57228177EFD51AEA263757EDF77193935",
+  "aliases": [
+    {
+      "source": "千鶴",
+      "target": "千鹤",
+      "color": 8450192
+    },
+    {
+      "source": "壬姫",
+      "target": "壬姬",
+      "color": 16744688
+    },
+    {
+      "source": "純夏",
+      "target": "纯夏",
+      "color": 16761008
+    },
+    {
+      "source": "たける",
+      "target": "小武",
+      "color": 13684964
+    },
+    {
+      "source": "まりも",
+      "target": "麻理茉",
+      "color": 16775296
+    },
+    {
+      "source": "月詠",
+      "target": "月咏",
+      "color": 15269856
+    },
+    {
+      "source": "ヒュー",
+      "target": "休",
+      "color": 13810100
+    },
+    {
+      "source": "モニカ",
+      "target": "莫妮卡",
+      "color": 12513455
+    },
+    {
+      "source": "みちる",
+      "target": "美知留",
+      "color": 15113080
+    },
+    {
+      "source": "あきら",
+      "target": "晶",
+      "color": 16435335
+    },
+    {
+      "source": "斯衛部隊指揮官",
+      "target": "斯卫部队指挥官",
+      "color": 12167935
+    },
+    {
+      "source": "マザーグース１",
+      "target": "鹅妈妈1",
+      "color": 16763110
+    },
+    {
+      "source": "教官１",
+      "target": "教官1",
+      "color": 13156030
+    },
+    {
+      "source": "教官２",
+      "target": "教官2",
+      "color": 13156030
+    },
+    {
+      "source": "教官３",
+      "target": "教官3",
+      "color": 13156030
+    },
+    {
+      "source": "訓練兵１",
+      "target": "训练兵1",
+      "color": 12185855
+    },
+    {
+      "source": "神宮司教官",
+      "target": "神宫司教官",
+      "color": 16775810
+    },
+    {
+      "source": "韮沢助教",
+      "target": "韭泽助教",
+      "color": 8232985
+    },
+    {
+      "source": "藤澤",
+      "target": "藤泽",
+      "color": 16102625
+    },
+    {
+      "source": "竹宮",
+      "target": "竹宫",
+      "color": 6272100
+    },
+    {
+      "source": "佐久間",
+      "target": "佐久间",
+      "color": 10201755
+    },
+    {
+      "source": "まりか",
+      "target": "麻里香",
+      "color": 16750210
+    },
+    {
+      "source": "やよい",
+      "target": "弥生",
+      "color": 10219685
+    },
+    {
+      "source": "訓練兵２",
+      "target": "训练兵2",
+      "color": 12185855
+    },
+    {
+      "source": "訓練兵３",
+      "target": "训练兵3",
+      "color": 12185855
+    },
+    {
+      "source": "訓練兵４",
+      "target": "训练兵4",
+      "color": 12185855
+    },
+    {
+      "source": "軍医",
+      "target": "军医",
+      "color": 11186175
+    },
+    {
+      "source": "速瀬中尉",
+      "target": "速濑中尉",
+      "color": 8693986
+    },
+    {
+      "source": "涼宮中尉",
+      "target": "凉宫中尉",
+      "color": 15720639
+    },
+    {
+      "source": "風間少尉",
+      "target": "风间少尉",
+      "color": 10201755
+    },
+    {
+      "source": "涼宮少尉",
+      "target": "凉宫少尉",
+      "color": 15846011
+    }
+  ]
+}

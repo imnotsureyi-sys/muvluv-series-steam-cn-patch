@@ -1,0 +1,39 @@
+{
+  "pf": {
+    "unique_speaker_pairs": 229,
+    "recovered_pairs": 32,
+    "source_unchanged": 229,
+    "failures": 0,
+    "matcher_sha256": "2C9D152FA5885E8EBD76CB6595D99DC1EA2FA2783FE29CD0E85EE5FDCBD4DF97",
+    "runtime_build": {
+      "bytes": 619008,
+      "path": "Ages3ResT.dll",
+      "sha256": "E9571CC4C6EF4AEFBA75D184B937C2435901EA74C4D59D03C03AB82EC0A8C403"
+    }
+  },
+  "pm": {
+    "unique_speaker_pairs": 320,
+    "recovered_pairs": 32,
+    "source_unchanged": 320,
+    "failures": 0,
+    "matcher_sha256": "2C9D152FA5885E8EBD76CB6595D99DC1EA2FA2783FE29CD0E85EE5FDCBD4DF97",
+    "runtime_build": {
+      "bytes": 590336,
+      "path": "Ages3ResT.dll",
+      "sha256": "8DE2B98F2C02967EAA42D0199FB88D17A80E34FEC7858A365F00100456870DDF"
+    }
+  },
+  "status": "Offline native matcher verified; new runtime DLLs not installed or game-tested.",
+  "message_census": {
+    "pf": 13163,
+    "pm": 44848
+  },
+  "prefix_repairs": {
+    "pf": 53,
+    "pm": 1
+  },
+  "aliases": {
+    "pf": 31,
+    "pm": 32
+  }
+}

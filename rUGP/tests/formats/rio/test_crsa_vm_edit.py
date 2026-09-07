@@ -58,6 +58,22 @@ def entries_for(payload):
 
 
 class NativeEditTests(unittest.TestCase):
+    def test_longer_speaker_prefix_needs_storage_and_preserves_source(self):
+        before = fixture(auxiliary=False)
+        entries = entries_for(before)
+        entries[0]['target_text'] = '\x05【说话人】「' + '中文台词' * 12 + '」'
+        with self.assertRaisesRegex(ValueError, 'explicit storage contract'):
+            edit_native_fields(before, 'pf', entries, digest(before))
+        entries[0]['storage'] = {'kind': 'append'}
+        result = edit_native_fields(before, 'pf', entries, digest(before))
+        parsed = parse_crsa_vm_stream(result.payload, 'pf')
+        inv = inventory_vm_pool(result.payload, native_message_commands(parsed), parsed['pool_base'])
+        self.assertEqual(entries[0]['target_text'], next(
+            r.text for r in inv.references if r.language == 1 and r.role == 'message'))
+        self.assertEqual('Source example', next(
+            r.text for r in inv.references if r.language == 0 and r.role == 'message'))
+        self.assertTrue(result.report['validation']['all_source_messages_preserved'])
+
     def test_rebinds_both_annotations_and_preserves_unrelated_cstring(self):
         before=fixture();entries=entries_for(before)
         result=edit_native_fields(before,'pf',entries,digest(before))

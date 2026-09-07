@@ -256,8 +256,15 @@ def edit_native_fields(payload: bytes, game: str, entries: list[dict],
                 cell = cells_by_offset.get(display.cell_offset)
                 if cell is None or display.error or not display.at_cell_start:
                     raise ValueError("display message has no complete native slot")
-                placement = write_fixed(
-                    cell.index, len(cell.raw)//2 - 1, target, "native_display_message_slot")
+                capacity = len(cell.raw)//2 - 1
+                if len(raw)//2 <= capacity:
+                    placement = write_fixed(cell.index, capacity, target, "native_display_message_slot")
+                else:
+                    # Restoring a missing speaker prefix can require more units.
+                    # Reuse only proven free storage; growth still needs the
+                    # existing explicit contract. The source slot is untouched.
+                    placement = allocate_zero_run(target) or explicit_storage(entry, target)
+                    index_edit(message_order, 1, 0, placement["index"])
                 target_ref_text[message_order, 1, "message"] = target
             elif action == "repair_source_annotation":
                 annotation = bind_annotation(message_order, entry["annotation_source"])
