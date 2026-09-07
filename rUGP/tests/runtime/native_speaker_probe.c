@@ -39,7 +39,8 @@ int main(int argc,char **argv) {
         int after=lookup(target,aliases,count,fn,1);
         if(lookup(source,aliases,count,fn,1)!=expected)failed++;
         else source_unchanged++;
-        if(expected>=0 && after!=expected){failed++;printf("mismatch pair %u expected %d got %d\n",i,expected,after);}
+        /* Also require expected == -1 to remain unmatched: no false colour. */
+        if(after!=expected){failed++;printf("mismatch pair %u expected %d got %d\n",i,expected,after);}
         if(expected>=0 && before!=expected && after==expected)recovered++;
         free(source);free(target);
     }

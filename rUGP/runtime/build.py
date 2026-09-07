@@ -224,13 +224,14 @@ def prepare_generated(destination: Path, authorized: bool) -> None:
             path.write_bytes(data.replace(disabled, enabled))
 
 
-def _command_sources(game: str) -> list[Path]:
+def _command_sources(game: str, speaker_color_candidate: bool = False) -> list[Path]:
     """Return the source files passed to Zig, in command-line order."""
 
-    return [SRC / str(name) for name in (*COMMON_SOURCES, *GAMES[game]["sources"])]
+    extra = ("photon_speaker_policy.c",) if speaker_color_candidate else ()
+    return [SRC / str(name) for name in (*COMMON_SOURCES, *GAMES[game]["sources"], *extra)]
 
 
-def _manifest_inputs(game: str, generated: Path) -> list[dict[str, object]]:
+def _manifest_inputs(game: str, generated: Path, speaker_color_candidate: bool = False) -> list[dict[str, object]]:
     """Describe every repository-controlled input to the selected build.
 
     Headers are deliberately recorded as a complete include-root snapshot.  A
@@ -242,7 +243,7 @@ def _manifest_inputs(game: str, generated: Path) -> list[dict[str, object]]:
     copy that the compiler actually sees.
     """
 
-    command_sources = _command_sources(game)
+    command_sources = _command_sources(game, speaker_color_candidate)
     rows: list[tuple[str, Path, str]] = []
     rows.extend(
         (path.relative_to(ROOT).as_posix(), path, "command_source")
@@ -285,14 +286,15 @@ def _compile_command(
     output: str,
     authorized: bool,
     portable_paths: bool,
+    speaker_color_candidate: bool = False,
 ) -> list[str]:
     config = GAMES[game]
     if portable_paths:
-        sources = [path.relative_to(ROOT).as_posix() for path in _command_sources(game)]
+        sources = [path.relative_to(ROOT).as_posix() for path in _command_sources(game, speaker_color_candidate)]
         include = "include"
         definition = "include/Ages3ResT.def"
     else:
-        sources = [str(path) for path in _command_sources(game)]
+        sources = [str(path) for path in _command_sources(game, speaker_color_candidate)]
         include = str(INCLUDE)
         definition = str(INCLUDE / "Ages3ResT.def")
     return [
@@ -307,6 +309,7 @@ def _compile_command(
         include,
         *(f"-D{name}" for name in config["defines"]),
         f"-DPHOTON_V6_PRODUCTION_AUTHORIZED={int(authorized)}",
+        *(["-DPHOTON_SPEAKER_COLOR_CANDIDATE=1"] if speaker_color_candidate else []),
         COMPILE_FLAGS[-1],
         "-o",
         output,
@@ -317,9 +320,10 @@ def _compile_command(
 
 
 def compile_once(
-    *, zig: Path, game: str, generated: Path, output: Path, authorized: bool
+    *, zig: Path, game: str, generated: Path, output: Path, authorized: bool,
+    speaker_color_candidate: bool = False,
 ) -> subprocess.CompletedProcess[str]:
-    sources = _command_sources(game)
+    sources = _command_sources(game, speaker_color_candidate)
     require_files((*sources, INCLUDE / "Ages3ResT.def"))
     command = _compile_command(
         zig=str(zig),
@@ -328,13 +332,17 @@ def compile_once(
         output=str(output),
         authorized=authorized,
         portable_paths=False,
+        speaker_color_candidate=speaker_color_candidate,
     )
     return subprocess.run(command, cwd=ROOT, capture_output=True, text=True, check=False)
 
 
 def build(
-    *, zig: Path, game: str, output: Path, authorized: bool, verify_release_code: bool
+    *, zig: Path, game: str, output: Path, authorized: bool, verify_release_code: bool,
+    speaker_color_candidate: bool = False,
 ) -> dict[str, object]:
+    if speaker_color_candidate and (not authorized or verify_release_code):
+        raise BuildError("speaker candidate requires pinned authorization and cannot verify as an approved release")
     zig = zig.resolve(strict=True)
     compiler_bytes = zig.stat().st_size
     compiler_sha256 = sha256_file(zig)
@@ -350,12 +358,13 @@ def build(
         temp = Path(temporary)
         generated = temp / "generated"
         prepare_generated(generated, authorized)
-        manifest_inputs = _manifest_inputs(game, generated)
+        manifest_inputs = _manifest_inputs(game, generated, speaker_color_candidate)
         candidate = temp / "Ages3ResT.dll"
 
         first = compile_once(
             zig=zig, game=game, generated=generated, output=candidate,
             authorized=authorized,
+            speaker_color_candidate=speaker_color_candidate,
         )
         if first.returncode != 0:
             raise BuildError(first.stderr or first.stdout or "first compile failed")
@@ -366,6 +375,7 @@ def build(
         second = compile_once(
             zig=zig, game=game, generated=generated, output=candidate,
             authorized=authorized,
+            speaker_color_candidate=speaker_color_candidate,
         )
         if second.returncode != 0:
             raise BuildError(second.stderr or second.stdout or "second compile failed")
@@ -373,7 +383,7 @@ def build(
         second_bytes = normalize_pe_reproducibility_fields(second_raw)
         if first_bytes != second_bytes:
             raise BuildError("two normalized clean compiles produced different DLL bytes")
-        if _manifest_inputs(game, generated) != manifest_inputs:
+        if _manifest_inputs(game, generated, speaker_color_candidate) != manifest_inputs:
             raise BuildError("runtime source inputs changed during compilation")
         if zig.stat().st_size != compiler_bytes or sha256_file(zig) != compiler_sha256:
             raise BuildError("Zig executable changed during compilation")
@@ -413,6 +423,7 @@ def build(
         output="<output>/Ages3ResT.dll",
         authorized=authorized,
         portable_paths=True,
+        speaker_color_candidate=speaker_color_candidate,
     )
     return {
         "schema": "photon-runtime-build-v2",
@@ -432,12 +443,14 @@ def build(
             "defines": [
                 *GAMES[game]["defines"],
                 f"PHOTON_V6_PRODUCTION_AUTHORIZED={int(authorized)}",
+                *(["PHOTON_SPEAKER_COLOR_CANDIDATE=1"] if speaker_color_candidate else []),
             ],
             "include_roots": ["<authorized-generated>", "include"],
             "link_libraries": list(LINK_LIBRARIES),
             "portable_command": portable_command,
         },
         "authorization_compiled": authorized,
+        "speaker_color_candidate": speaker_color_candidate,
         "deterministic_double_compile_after_pe_normalization": True,
         "historical_release": {
             "raw_sha256": GAMES[game]["release_sha256"],
@@ -468,6 +481,8 @@ def main() -> int:
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--manifest", type=Path)
     parser.add_argument("--authorize-pinned-build", action="store_true")
+    parser.add_argument("--speaker-color-candidate", action="store_true",
+                        help="Opt in to the unapproved speaker-name lookup candidate for live sampling")
     parser.add_argument(
         "--verify-release-code",
         action="store_true",
@@ -490,6 +505,7 @@ def main() -> int:
         output=output,
         authorized=args.authorize_pinned_build,
         verify_release_code=args.verify_release_code,
+        speaker_color_candidate=args.speaker_color_candidate,
     )
     try:
         write_new_file(
