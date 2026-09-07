@@ -59,6 +59,21 @@ def synthetic_pe() -> bytes:
 
 
 class RuntimeBuildTests(unittest.TestCase):
+    def test_speaker_candidate_is_explicit_and_not_a_release(self) -> None:
+        args = dict(zig="zig", game="pf", generated="generated", output="out.dll",
+                    authorized=True, portable_paths=True)
+        default = _compile_command(**args)
+        candidate = _compile_command(**args, speaker_color_candidate=True)
+        self.assertNotIn("src/photon_speaker_policy.c", default)
+        self.assertNotIn("-DPHOTON_SPEAKER_COLOR_CANDIDATE=1", default)
+        self.assertIn("src/photon_speaker_policy.c", candidate)
+        self.assertIn("-DPHOTON_SPEAKER_COLOR_CANDIDATE=1", candidate)
+        for authorized, release in [(False, False), (True, True)]:
+            with self.assertRaisesRegex(BuildError, "speaker candidate"):
+                build(zig=Path("unused"), game="pf", output=Path("unused"),
+                      authorized=authorized, verify_release_code=release,
+                      speaker_color_candidate=True)
+
     def test_normalization_is_idempotent_and_only_clears_provenance(self) -> None:
         source = synthetic_pe()
         normalized = normalize_pe_reproducibility_fields(source)

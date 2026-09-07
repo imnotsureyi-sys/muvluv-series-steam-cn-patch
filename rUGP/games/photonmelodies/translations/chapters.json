@@ -1,0 +1,1233 @@
+{
+  "schema": "photon-chapter-review/v1",
+  "game": "pm",
+  "rows": 44698,
+  "snapshot": "layout-20260906/manifest.json",
+  "official_source_text_included": false,
+  "control_encoding": "Uppercase <HEX> for Cc/Cf characters and literal less-than; one-pass decoding. <3C>0A> is literal text <0A>.",
+  "ordering": "Native storage order within each story; not gameplay route order. Shard file labels are descriptive scene labels, not official subchapter titles.",
+  "files": [
+    {
+      "file": "时空的欠片/01_序章实验.csv",
+      "rows": 26,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1214082412,
+          "rows": 26,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.002.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "憧憬.csv",
+      "rows": 3983,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1214091360,
+          "rows": 984,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1641436828,
+          "rows": 461,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 923926052,
+          "rows": 1041,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1347879948,
+          "rows": 329,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1519248208,
+          "rows": 296,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1683261592,
+          "rows": 199,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1841522276,
+          "rows": 180,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 2010308820,
+          "rows": 493,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Seijuro/Elfriede story within the existing combined short-story dataset."
+        }
+      ]
+    },
+    {
+      "file": "再诞.csv",
+      "rows": 4424,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1214632544,
+          "rows": 150,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1665565448,
+          "rows": 108,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 958394640,
+          "rows": 71,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1526866676,
+          "rows": 203,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1699730948,
+          "rows": 49,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1870646988,
+          "rows": 33,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 2045013904,
+          "rows": 159,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 90023844,
+          "rows": 213,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 192548100,
+          "rows": 121,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 303686356,
+          "rows": 73,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 386273948,
+          "rows": 1,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 409193696,
+          "rows": 38,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 434959792,
+          "rows": 156,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 555485612,
+          "rows": 160,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 621270032,
+          "rows": 44,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 667084320,
+          "rows": 25,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 709700612,
+          "rows": 1,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 768573080,
+          "rows": 17,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 782340880,
+          "rows": 226,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 826680548,
+          "rows": 30,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 920089932,
+          "rows": 1,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1009504344,
+          "rows": 207,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1098041868,
+          "rows": 90,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1145431776,
+          "rows": 42,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1183320776,
+          "rows": 3,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1212336624,
+          "rows": 167,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1224031068,
+          "rows": 33,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1239716184,
+          "rows": 1,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1294118228,
+          "rows": 118,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1391097240,
+          "rows": 66,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1480031568,
+          "rows": 23,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1584694692,
+          "rows": 2,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1664453976,
+          "rows": 100,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1699608664,
+          "rows": 198,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1746695876,
+          "rows": 70,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1759446920,
+          "rows": 132,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1766088068,
+          "rows": 31,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1769368948,
+          "rows": 58,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1770854300,
+          "rows": 44,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1772738012,
+          "rows": 47,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1775614640,
+          "rows": 93,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1784157092,
+          "rows": 173,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1788418260,
+          "rows": 164,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1796299128,
+          "rows": 133,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1825021728,
+          "rows": 145,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1828786024,
+          "rows": 168,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1835123768,
+          "rows": 80,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1838831072,
+          "rows": 157,
+          "previous_dataset_groups": [
+            "adoration-resurrection.zh-Hans.csv"
+          ],
+          "assignment_reason": "Silvio story and its intercut briefing/reaction scenes in the existing combined short-story dataset."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/02_白陵日常.csv",
+      "rows": 745,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1544313288,
+          "rows": 745,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.002.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/03_日常与准备.csv",
+      "rows": 982,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 839604068,
+          "rows": 982,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.003.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/04_小队集合.csv",
+      "rows": 564,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1272111780,
+          "rows": 564,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.003.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/05_演说与出发.csv",
+      "rows": 389,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1487490840,
+          "rows": 389,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.003.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/06_通信与行动.csv",
+      "rows": 733,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1668688832,
+          "rows": 733,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.003.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/07_行动之后.csv",
+      "rows": 321,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1808201404,
+          "rows": 321,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.003.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/08_住宿与安排.csv",
+      "rows": 538,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 1933169644,
+          "rows": 538,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.003.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/09_夜间选择.csv",
+      "rows": 1323,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.003",
+          "block_offset": 2092185664,
+          "rows": 1323,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.003.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/10_同行人选择.csv",
+      "rows": 916,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 131862200,
+          "rows": 916,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/11_雪地游览.csv",
+      "rows": 913,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 258770628,
+          "rows": 913,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/12_悠阳插曲.csv",
+      "rows": 152,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 408936772,
+          "rows": 152,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/13_滑雪与分支.csv",
+      "rows": 2271,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 426952928,
+          "rows": 2271,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/14_冥夜同行.csv",
+      "rows": 684,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 499205748,
+          "rows": 684,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/15_悠阳同行.csv",
+      "rows": 798,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 601851372,
+          "rows": 798,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/16_纯夏同行.csv",
+      "rows": 799,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 655753292,
+          "rows": 799,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/17_寻找霞.csv",
+      "rows": 445,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 695803188,
+          "rows": 445,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/18_拾贝插曲.csv",
+      "rows": 62,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 751768580,
+          "rows": 62,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/19_抵达与接待.csv",
+      "rows": 216,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 780938508,
+          "rows": 216,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/20_拜访与选择.csv",
+      "rows": 1645,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 812258960,
+          "rows": 1645,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/21_海边相遇.csv",
+      "rows": 1030,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 860955960,
+          "rows": 1030,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/22_打西瓜教程.csv",
+      "rows": 56,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 871742696,
+          "rows": 56,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/23_午后自由活动.csv",
+      "rows": 1027,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 874373084,
+          "rows": 1027,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/24_海边选择与泳装.csv",
+      "rows": 2414,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 933776684,
+          "rows": 2414,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/25_沙滩排球教程.csv",
+      "rows": 115,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 979390512,
+          "rows": 115,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/26_海边分组.csv",
+      "rows": 1076,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1015106108,
+          "rows": 1076,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/27_比赛晋级.csv",
+      "rows": 202,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1068948144,
+          "rows": 202,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/28_第二轮之后.csv",
+      "rows": 1228,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1139636328,
+          "rows": 1228,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/29_决赛之前.csv",
+      "rows": 753,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1169383896,
+          "rows": 753,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/30_比赛结果.csv",
+      "rows": 598,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1199844672,
+          "rows": 598,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/31_月咏插曲.csv",
+      "rows": 208,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1216455180,
+          "rows": 208,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/32_霞的来访.csv",
+      "rows": 2166,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1235087732,
+          "rows": 2166,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/33_真耶插曲.csv",
+      "rows": 956,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1259067424,
+          "rows": 956,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/34_柏木的来访.csv",
+      "rows": 1848,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1269734756,
+          "rows": 1848,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/35_前情回顾与后续.csv",
+      "rows": 1245,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1327482084,
+          "rows": 1245,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/36_慧的来访.csv",
+      "rows": 1817,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1361070408,
+          "rows": 1817,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/37_御剑家插曲.csv",
+      "rows": 350,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1410213692,
+          "rows": 350,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/38_美琴的来访.csv",
+      "rows": 1871,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1457084560,
+          "rows": 1871,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/39_年末聚会.csv",
+      "rows": 633,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1511431932,
+          "rows": 633,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/40_壬姬的来访.csv",
+      "rows": 796,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1560893912,
+          "rows": 796,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/41_新年问候.csv",
+      "rows": 365,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1617564412,
+          "rows": 365,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "时空的欠片/42_新年后续.csv",
+      "rows": 937,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 1676972672,
+          "rows": 937,
+          "previous_dataset_groups": [
+            "photonmelodies11.rio.004.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Shard dataset; native CRsa boundary, not an arbitrary row-count cut."
+        }
+      ]
+    },
+    {
+      "file": "共通系统.csv",
+      "rows": 78,
+      "scenes": [
+        {
+          "rio_file": "photonmelodies11.rio",
+          "block_offset": 637744,
+          "rows": 1,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio",
+          "block_offset": 1339066040,
+          "rows": 2,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio",
+          "block_offset": 1339179508,
+          "rows": 15,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio",
+          "block_offset": 1685841352,
+          "rows": 13,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio",
+          "block_offset": 1688114244,
+          "rows": 28,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio",
+          "block_offset": 1688686468,
+          "rows": 4,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1205271640,
+          "rows": 7,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1211649556,
+          "rows": 2,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.002",
+          "block_offset": 1858727564,
+          "rows": 2,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonmelodies11.rio.004",
+          "block_offset": 150106928,
+          "rows": 4,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        }
+      ]
+    }
+  ]
+}

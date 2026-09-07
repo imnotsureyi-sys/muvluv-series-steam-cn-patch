@@ -1,0 +1,578 @@
+{
+  "schema": "photon-chapter-review/v1",
+  "game": "pf",
+  "rows": 13025,
+  "snapshot": "layout-20260906/manifest.json",
+  "official_source_text_included": false,
+  "control_encoding": "Uppercase <HEX> for Cc/Cf characters and literal less-than; one-pass decoding. <3C>0A> is literal text <0A>.",
+  "ordering": "Native storage order within each story; not gameplay route order. Shard file labels are descriptive scene labels, not official subchapter titles.",
+  "files": [
+    {
+      "file": "樱花盛开之前.csv",
+      "rows": 4037,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 487194916,
+          "rows": 216,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 30631052,
+          "rows": 433,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 630827184,
+          "rows": 313,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 969768164,
+          "rows": 72,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1097218736,
+          "rows": 145,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1162587616,
+          "rows": 263,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1238534540,
+          "rows": 200,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1291020652,
+          "rows": 174,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1322667676,
+          "rows": 394,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1366349532,
+          "rows": 290,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1391025672,
+          "rows": 578,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1495411112,
+          "rows": 96,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1533930220,
+          "rows": 106,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1546610032,
+          "rows": 17,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1592562700,
+          "rows": 27,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1599749696,
+          "rows": 126,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1602830768,
+          "rows": 587,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "和小武在一起！.csv",
+      "rows": 273,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 487283344,
+          "rows": 273,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "小武哥的尾巴.csv",
+      "rows": 363,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 487417908,
+          "rows": 363,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "白银同学，等一下！！.csv",
+      "rows": 308,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 487590408,
+          "rows": 308,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "白银……在吃吗？.csv",
+      "rows": 464,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 487716956,
+          "rows": 464,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "其名为武.csv",
+      "rows": 622,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 487890932,
+          "rows": 622,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "我名为冥夜.csv",
+      "rows": 857,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 488133660,
+          "rows": 357,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 186673440,
+          "rows": 500,
+          "previous_dataset_groups": [
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "赎罪.csv",
+      "rows": 1014,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 488251388,
+          "rows": 33,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 199353776,
+          "rows": 206,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 772757324,
+          "rows": 109,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1023076340,
+          "rows": 385,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1110878708,
+          "rows": 226,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1182769004,
+          "rows": 55,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "雨舞者.csv",
+      "rows": 446,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 488271272,
+          "rows": 446,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "告白.csv",
+      "rows": 3797,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 488631608,
+          "rows": 267,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 413194600,
+          "rows": 578,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 850658492,
+          "rows": 294,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1057173848,
+          "rows": 150,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1144718264,
+          "rows": 325,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1218102496,
+          "rows": 300,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1263207112,
+          "rows": 274,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1303593164,
+          "rows": 409,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1342639132,
+          "rows": 106,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1377793936,
+          "rows": 258,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1449567684,
+          "rows": 396,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1513970884,
+          "rows": 196,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 1539789928,
+          "rows": 244,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "继承.csv",
+      "rows": 515,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 488751288,
+          "rows": 76,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 501633640,
+          "rows": 439,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "小鸡潜降兵.csv",
+      "rows": 260,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 488838928,
+          "rows": 260,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv"
+          ],
+          "assignment_reason": "Existing Extra/Alternative scene binding, chapter opening and continuation characters/context."
+        }
+      ]
+    },
+    {
+      "file": "共通系统.csv",
+      "rows": 69,
+      "scenes": [
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 374496,
+          "rows": 2,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 14809024,
+          "rows": 1,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 14922468,
+          "rows": 15,
+          "previous_dataset_groups": [
+            "alternative.zh-Hans.csv",
+            "extra.zh-Hans.csv"
+          ],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 440479696,
+          "rows": 13,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 442931592,
+          "rows": 22,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 443691704,
+          "rows": 4,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 466627680,
+          "rows": 6,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio",
+          "block_offset": 472112940,
+          "rows": 2,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        },
+        {
+          "rio_file": "photonflowers11.rio.002",
+          "block_offset": 652088336,
+          "rows": 4,
+          "previous_dataset_groups": [],
+          "assignment_reason": "Common UI, chapter selector or shared system dialog; no story body in this block."
+        }
+      ]
+    }
+  ]
+}

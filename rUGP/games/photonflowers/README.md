@@ -5,14 +5,15 @@
 - Steam App ID：`889700`
 - 目标语言：简体中文（`zh-Hans`）
 - 玩家包：尚未发布
-- 已审校文本：Alternative 6,033 行、Extra 6,931 行，共 12,964 行
+- 最新章节编辑表：13,025 条（包含系统文本与补提取消息）
+- 历史已审校文本：Alternative 6,033 行、Extra 6,931 行，共 12,964 行
 - 当前精确运行时绑定表：69 行
 - Photon 图片权威：PF 636 项
 
-`translations/reviewed/` 保存完整审校中文、稳定 ID 和日文源哈希；它是继续审核与制作
-其他语言版本的文本权威。`translations/zh-Hans.csv` 进一步保存偏移、容量、控制符、
-运行时值和写入路线，只包含已经精确绑定的 69 行。两者不是重复，也不能把 12,964 行
-自动说成已经全部接入当前 writer。
+[按章节命名的 CSV](translations/README.md) 是最新人工编辑入口。
+`translations/reviewed/` 保留早期审校中文、稳定 ID 和日文源哈希，作为封存证据，不再人工编辑。
+`translations/zh-Hans.csv` 保存偏移、容量、控制符、运行时值和写入路线，仍是原有 69 行
+写入合同。章节 CSV 读取接口不会把全部审校文本自动变成可安全写回的原生字段。
 
 公开表故意不批量镜像完整官方日文。贡献者从合法游戏提取源文本后，通过稳定 ID 与
 源哈希连接。图片使用 PF/PM 共用的 [Photon 清单](../../evidence/photon/README.md)，但
@@ -23,6 +24,6 @@ PF 有自己的输入哈希、运行时配置、安装包和实机 QA；PM 的�
 
 ## English summary
 
-Photon Flowers exposes 12,964 reviewed rows, 69 currently runtime-bound rows
-and 636 image authorities. Reviewed text, exact runtime bindings and binary
-release payloads are deliberately separate stages.
+Photon Flowers has 13,025 latest review entries in chapter CSVs, a sealed legacy
+12,964-row review dataset, 69 existing runtime contracts and 636 image authorities.
+The chapter editing surface is not a player package or a native write contract.

@@ -1,11 +1,48 @@
 # Photon speaker colours: Chinese name lookup and prefix repairs
 
-Status: offline candidate, not approved for player release or live acceptance.
+Status (2026-09-07): opt-in candidate with user-reported PF/PM live sample pass;
+not enabled in the default player build.
 
-Integration boundary in this draft: the policy, aliases and probe sources are
-included for review, but neither the default build source list nor proxy
-initialization enables this policy. The DLL evidence below describes the
-separate private candidate, not the default DLL built from this draft.
+Original 2026-09-06 integration boundary: the policy, aliases and probe sources were
+included for review without default initialization. The dated offline evidence
+below describes that earlier candidate, not the 2026-09-07 installed DLLs.
+
+Local sampling build, 2026-09-07: `--speaker-color-candidate` explicitly adds
+the policy source and guarded initialization after host/private-DLL/font checks.
+It requires `--authorize-pinned-build` and cannot be combined with
+`--verify-release-code`. The default build remains unchanged. Candidate hook
+installation failure reports an error instead of silently appearing to pass.
+
+The tightened native probe now also checks that a source name with no matching
+style remains unmatched. Against the latest 57,503 body records, the local run
+covers 134 PF and 221 PM unique source/Chinese pairs, plus original-alias and
+negative regressions: 236 PF / 327 PM total pairs, zero failures. There are no
+unparsed target names or missing source-name references after recognizing native
+numeric prefixes such as `3:` and `10:`. This is offline coverage, not live QA.
+
+One explicit input discrepancy is retained: PM `.004`, block `655753292`,
+command offset `31180` (parser order 157) has JP speaker Takeru but EN speaker
+Kasumi; current Chinese is Kasumi and follows the English dialogue. The colour
+check uses the original English display speaker for this one binding; no text
+is rewritten and the JP/EN discrepancy is not claimed to be resolved.
+
+## 2026-09-07 installed sample acceptance
+
+At the user's request, the two opt-in DLLs were installed after verifying and
+backing up each pre-existing DLL. No RIO, RUO, EXE, font or save file was changed
+by that installation. The user subsequently reported that the requested
+PF/PM colour samples were all OK. This is sample acceptance, not a claim that
+every scene, old-save transition or backlog state was individually verified.
+
+| Game | Installed candidate SHA-256 |
+| --- | --- |
+| PF | `4C58F6EC31E73E81222DB25859451B05037B36D0E0BD10A350F6A5B451392158` |
+| PM | `BD95F8480DD8CEA094E05B0DEBC453EE7F756F77BD71D7DA80072DE88329BBAC` |
+
+Both candidates reproduced across two builds. The default non-candidate builds
+were separately checked against their existing approved hashes and remained
+unchanged. This PR exposes the tested opt-in build and records acceptance; it
+does not silently enable the hook in release builds or change approved hashes.
 
 Chinese speaker names were translated without extending the engine's name
 lookup. For example `千鶴` became `千鹤`, `純夏` became `纯夏`, and `みちる`
@@ -64,7 +101,7 @@ Do not copy an old complete RIO/RUO over newer layout work. Future runtime
 integration must preserve the current image/timer changes and obtain live
 acceptance before changing the approved build.
 
-## Offline verification and remaining acceptance
+## Historical 2026-09-06 offline verification
 
 The local 32-bit probe executes the original machine-code matcher outside the
 game and passes it to the new policy. It checks the census's unique speaker
@@ -77,12 +114,15 @@ translation or scene counts.
 Both candidate DLLs were built twice with Zig 0.16.0 and have reproducible
 normalized outputs. Their identities are recorded in
 `../../evidence/photon/text/speaker-colors-offline-20260906.json`.
-The approved release hashes were not changed; new DLLs are not installed.
+At that time the approved release hashes were not changed and those DLLs were not installed.
 The earlier trial RIO/RUO changes were hash-checked and restored from their
 pre-trial backups. All new fixes now remain in the candidate directory.
 
-The user requested that live work stop. Still required before release: sample
+At that time the user requested that live work stop. The acceptance plan listed sample
 colour restoration in PF and PM, old-save/new-scene behavior, backlog colours,
 the repaired speaker prefixes, typography and PM error regression. The 28
-subtitle PNGs are separately approved at `localized-v3` and are not part of
+subtitle PNGs were separately approved at `localized-v3` and are not part of
 this runtime colour change.
+
+The dated 2026-09-07 section above supersedes the earlier installation/sample
+status, but does not claim exhaustive coverage of the other acceptance states.

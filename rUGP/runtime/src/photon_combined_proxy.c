@@ -29,6 +29,9 @@
 
 #include "photon_font_policy.h"
 #include "photon_optional_runtime_bridge.h"
+#if defined(PHOTON_SPEAKER_COLOR_CANDIDATE)
+#include "photon_speaker_policy.h"
+#endif
 
 typedef void *(__cdecl *PluginFn)(void);
 typedef int (__cdecl *PluginAgesFn)(void);
@@ -525,6 +528,15 @@ static int initialize_guard(void) {
     g_plugin_ages =
         (PluginAgesFn)GetProcAddress(g_private, "PluginThisLibrary_Ages3Res");
     if (!g_plugin || !g_plugin_ages) return GUARD_EXPORT_RESOLVE_FAILED;
+#if defined(PHOTON_SPEAKER_COLOR_CANDIDATE)
+    /* Pinned host/private DLL/font checks have all completed. A failed test
+     * hook must not masquerade as a successful colour test. */
+    if (!photon_install_speaker_hook()) {
+        MessageBoxW(NULL, L"Speaker colour test hook failed; the candidate is not active.",
+                    L"Photon speaker candidate", MB_OK | MB_ICONERROR);
+        return GUARD_FONT_HOOK_FAILED;
+    }
+#endif
 
     /* The installer owns all image-runtime resources below a versioned root.
      * Keep that contract here instead of making either loader guess relative
