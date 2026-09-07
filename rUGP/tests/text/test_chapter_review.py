@@ -41,12 +41,13 @@ class ChapterReviewTests(unittest.TestCase):
         self.assertTrue(all(":871742696:" in r["binding_id"] for r in rows))
 
     def fixture(self, folder):
+        folder.mkdir(parents=True, exist_ok=True)
         original = dict(binding_id="pf:vm:test:1:2:3", kind="cvm", game="pf",
                         rio_file="test", block_offset=1, translated_text="【姓名】正文\n续行\x01",
                         jp_utf8_sha256="a"*64, en_utf8_sha256=None, review_scope="layout_only",
                         command_offset=2, custom_metadata="must survive")
-        source = folder / "layout-20260906"
-        source.mkdir()
+        source = folder.parent / "text-data" / "layout-baseline"
+        source.mkdir(parents=True, exist_ok=True)
         raw = json.dumps([original]).encode()
         (source / "rows.json").write_bytes(raw)
         (source / "manifest.json").write_text(json.dumps(dict(rows=1,shards=[dict(
@@ -63,7 +64,7 @@ class ChapterReviewTests(unittest.TestCase):
 
     def test_edit_overlays_text_only_and_preserves_opaque_metadata(self):
         with tempfile.TemporaryDirectory() as temporary:
-            folder = Path(temporary)
+            folder = Path(temporary) / "translations"
             original = self.fixture(folder)
             row = cells(original)
             row[2] = "【姓名】正文续行<01>"
@@ -76,7 +77,7 @@ class ChapterReviewTests(unittest.TestCase):
 
     def test_rejects_missing_duplicate_bad_metadata_and_controls(self):
         with tempfile.TemporaryDirectory() as temporary:
-            folder = Path(temporary)
+            folder = Path(temporary) / "translations"
             original = self.fixture(folder)
             row = cells(original)
             variants = [[], [row,row]]

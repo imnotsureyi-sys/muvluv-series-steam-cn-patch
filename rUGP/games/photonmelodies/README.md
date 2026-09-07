@@ -11,8 +11,8 @@
 - Photon 图片权威：PM 854 项
 
 [按章节命名的 CSV](translations/README.md) 是最新人工编辑入口。
-`translations/reviewed/` 保留早期审校中文、稳定 ID 和日文源哈希，作为封存证据，不再人工编辑。
-`translations/zh-Hans.csv` 仍是原有 151 行生产绑定契约，包含对象偏移、容量、精确运行时
+`text-data/history/reviewed/` 保留早期审校中文、稳定 ID 和日文源哈希，作为封存证据，不再人工编辑。
+`text-data/runtime/zh-Hans.csv` 仍是原有 151 行生产绑定契约，包含对象偏移、容量、精确运行时
 值、控制符和写入路线。章节 CSV 读取接口不会把审校文本自动变成可安全写回的原生字段。
 
 PM 的 CRsa 路线暴露了 AGES Internal Error 8311：带长度的 CString 内混入 `U+0000`

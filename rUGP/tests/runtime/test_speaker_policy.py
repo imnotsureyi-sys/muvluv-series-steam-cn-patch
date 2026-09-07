@@ -15,13 +15,13 @@ class SpeakerPolicyTests(unittest.TestCase):
             block = header.split('defined(PHOTON_BUILD_'+game+')', 1)[1].split('#', 1)[0]
             compiled = [(json.loads(cn), json.loads(jp)) for cn, jp in re.findall(
                 r'\{L("[^"\n]+"), L("[^"\n]+")\}', block)]
-            reviewed = json.loads((ROOT/'games'/title/'translations/increments/speaker-colors-20260906.json').read_text(encoding='utf-8'))
+            reviewed = json.loads((ROOT/'games'/title/'text-data/increments/speaker-colors-20260906.json').read_text(encoding='utf-8'))
             self.assertEqual(compiled, [(r['target'], r['source']) for r in reviewed['aliases']])
 
     def test_all_reviewed_prefix_repairs_are_only_structural_and_idempotent(self):
         counts = []
         for title in ['photonflowers', 'photonmelodies']:
-            spec = json.loads((ROOT/'games'/title/'translations/increments/speaker-prefixes-20260906.json').read_text(encoding='utf-8'))
+            spec = json.loads((ROOT/'games'/title/'text-data/increments/speaker-prefixes-20260906.json').read_text(encoding='utf-8'))
             count = 0
             for block in spec['blocks']:
                 for row in block['entries']:

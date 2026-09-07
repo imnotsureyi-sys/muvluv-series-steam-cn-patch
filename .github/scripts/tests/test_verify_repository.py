@@ -14,6 +14,12 @@ SPEC.loader.exec_module(MODULE)
 
 
 class RepositoryPolicyHelperTests(unittest.TestCase):
+    def test_private_review_and_quarantine_cannot_be_published(self):
+        self.assertTrue(MODULE.is_private_review_csv('binding_id,jp_text,en_text,base_edit_sha256\n'))
+        self.assertTrue(MODULE.is_private_review_csv('"en_text","jp_text","base_edit_sha256"\n'))
+        self.assertFalse(MODULE.is_private_review_csv('binding_id,translated_text,jp_utf8_sha256,en_utf8_sha256\n'))
+        self.assertTrue(MODULE.is_forbidden_public_path('.codex-trash/example/receipt.json'))
+
     def test_html_language_button_targets_are_visible_to_link_checks(self) -> None:
         text = '<a href="docs/en/README.md"><img src="https://example.invalid/badge.svg"></a>'
         self.assertEqual(MODULE.HTML_HREF.findall(text), ["docs/en/README.md"])

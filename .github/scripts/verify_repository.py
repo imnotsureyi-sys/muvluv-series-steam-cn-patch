@@ -3,6 +3,8 @@
 
 from __future__ import annotations
 
+import csv
+import io
 import json
 import re
 import subprocess
@@ -12,6 +14,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[2]
 FORBIDDEN_TOP_LEVEL = (
+    ".codex-trash/",
     ".imagegen-venv/",
     ".playwright-cli/",
     ".venv-imagegen/",
@@ -413,6 +416,11 @@ def check_release_index(errors: list[str]) -> None:
             fail(errors, f"{label}: non-installer warning is missing")
 
 
+def is_private_review_csv(text: str) -> bool:
+    header = next(csv.reader(io.StringIO(text)), [])
+    return {"jp_text", "en_text", "base_edit_sha256"}.issubset(header)
+
+
 def main() -> int:
     files = public_worktree_files()
     present = set(files)
@@ -461,6 +469,9 @@ def main() -> int:
             r"(?m)^\s*(?:from\s+AGE2\b|import\s+AGE2\b)", text
         ):
             fail(errors, f"rUGP imports AGE2: {relative}")
+        if suffix == ".csv":
+            if is_private_review_csv(text):
+                fail(errors, f"private three-language review CSV is tracked: {relative}")
         if suffix == ".md":
             check_links(path, relative, text, errors)
 

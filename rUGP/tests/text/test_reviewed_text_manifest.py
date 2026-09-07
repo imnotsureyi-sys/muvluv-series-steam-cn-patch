@@ -119,7 +119,7 @@ class PhotonReviewedTextManifestTests(unittest.TestCase):
                         f"review table needs deterministic secondary sharding: {relative}",
                     )
                     self.assertIn(
-                        "/translations/reviewed/", relative.replace("\\", "/")
+                        "/text-data/history/reviewed/", relative.replace("\\", "/")
                     )
                 self.assertEqual(len(payload), public["bytes"])
                 self.assertEqual(digest(payload), public["sha256"])

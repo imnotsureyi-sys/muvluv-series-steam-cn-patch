@@ -27,7 +27,7 @@ photon/
 ## 2026-09-06 最新合并审计（草稿）
 
 PF 13,025 条、PM 44,698 条的最新中文快照保存在各游戏的
-`translations/layout-20260906/`，不覆盖上方历史 reviewed 表。
+`text-data/layout-baseline/`，不覆盖上方历史 reviewed 表。
 参见[完整范围、宽度例外及未接入生产的颜色候选](../../docs/postmortems/pf-pm-layout-audit-20260906.md)。
 完整官方日英原文仅保留在本地审计；公开快照记录原文槽校验值。
 

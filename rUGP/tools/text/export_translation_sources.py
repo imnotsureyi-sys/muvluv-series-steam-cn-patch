@@ -121,7 +121,7 @@ def manifest_bytes(
 ) -> bytes:
     games = {
         GAME_SLUGS[game]: {
-            "path": f"rUGP/games/{GAME_SLUGS[game]}/translations/zh-Hans.csv",
+            "path": f"rUGP/games/{GAME_SLUGS[game]}/text-data/runtime/zh-Hans.csv",
             "rows": _csv_record_count(data),
             "bytes": len(data),
             "sha256": sha256_bytes(data),
@@ -188,7 +188,7 @@ def run(
         )
     exports = export_rows(input_path)
     targets = {
-        game: games_root / GAME_SLUGS[game] / "translations" / "zh-Hans.csv"
+        game: games_root / GAME_SLUGS[game] / "text-data" / "runtime" / "zh-Hans.csv"
         for game in GAME_SLUGS
     }
     manifest = manifest_bytes(

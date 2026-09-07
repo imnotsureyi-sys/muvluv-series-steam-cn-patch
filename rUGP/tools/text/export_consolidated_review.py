@@ -73,7 +73,7 @@ def export(source: Path, games_root: Path) -> dict:
         selected = [r for r in rows if r["game"] == game]
         if not selected:
             continue
-        folder = games_root / title / "translations" / "layout-20260906"
+        folder = games_root / title / "text-data" / "layout-baseline"
         shards = []
         for start in range(0, len(selected), 1000):
             batch = selected[start:start + 1000]

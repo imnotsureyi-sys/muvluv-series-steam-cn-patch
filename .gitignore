@@ -42,6 +42,7 @@
 node_modules/
 
 # Downloaded compilers/SDKs and generated native build trees
+/.codex-trash/
 **/toolchains/
 **/build/
 **/bin/

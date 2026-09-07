@@ -16,10 +16,10 @@
 inline alias 出现，不能再重复计数；净增加的是 PM 36 条。
 这不是“本次重新人工审核了 57,723 条”的声明，而是之前逐条审校成果的合并快照。
 
-每作的 translations/layout-20260906 保存最新中文、实际控制字符、
+每作的 text-data/layout-baseline 保存最新中文、实际控制字符、
 逐条审校理由（来源有记录时）、日英槽校验值和实际命令绑定。
 binding_id 是唯一主键；历史 stable_id 可能重复，不可拿来盲目覆盖。
-旧 translations/reviewed 表及封存契约保持不动，便于追溯。
+旧 text-data/history/reviewed 表及封存契约保持不动，便于追溯。
 
 完整日文、translation 槽英文及原始特殊符号仍在本地三语审计资料中。
 按照仓库公开边界，GitHub 不发布整部官方原文；公开校验值针对解析后的

@@ -26,8 +26,8 @@ ICI 只告诉我们对象在哪里、是什么类型；找到 RIO 中的对象�
 
 | 游戏 | 已审校文本 | 精确运行时绑定表 | 图片资产状态 | 玩家包 |
 | --- | --- | --- | --- | --- |
-| [Photon Flowers](games/photonflowers/) | [12,964 行](games/photonflowers/translations/reviewed/) | [69 行](games/photonflowers/translations/zh-Hans.csv) | [636 项](games/photonflowers/images/) | 尚未发布 |
-| [Photon Melodies](games/photonmelodies/) | [44,583 行](games/photonmelodies/translations/reviewed/) | [151 行](games/photonmelodies/translations/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | 尚未发布 |
+| [Photon Flowers](games/photonflowers/) | [13,025 条章节文本](games/photonflowers/translations/) | [69 行历史合同](games/photonflowers/text-data/runtime/zh-Hans.csv) | [636 项](games/photonflowers/images/) | 尚未发布 |
+| [Photon Melodies](games/photonmelodies/) | [44,698 条章节文本](games/photonmelodies/translations/) | [151 行历史合同](games/photonmelodies/text-data/runtime/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | 尚未发布 |
 
 图片的稳定身份、源/成品哈希、格式、尺寸与路由统一保存在
 [`evidence/photon/`](evidence/photon/README.md)；编解码器在 [`formats/images/`](formats/images/)。

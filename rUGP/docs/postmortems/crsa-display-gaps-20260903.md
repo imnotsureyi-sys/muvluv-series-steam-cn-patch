@@ -76,8 +76,8 @@ PM 当前安装**没有 RUO**，候选为该状态下的一路增量；安装时
 ## 可复查材料
 
 - [机器审计及候选哈希](../../evidence/photon/text/crsa-display-gap-20260903.json)
-- [PF 4 条增量](../../games/photonflowers/translations/increments/crsa-display-20260903.json)
-- [PM 36 条增量](../../games/photonmelodies/translations/increments/crsa-display-20260903.json)
+- [PF 4 条增量](../../games/photonflowers/text-data/increments/crsa-display-20260903.json)
+- [PM 36 条增量](../../games/photonmelodies/text-data/increments/crsa-display-20260903.json)
 - [提取、审计和构建工具](../../tools/text/README.md)
 
 完整原文、块缓存、逐项候选决定、85 项待确认清单、译文对照表、当前 RUO 小型
