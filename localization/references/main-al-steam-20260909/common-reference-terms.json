@@ -1,0 +1,590 @@
+[
+  {
+    "jp": "90部隊",
+    "cn": "90部队",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:320e",
+    "al_source_id": "al:alternative16.rio.ruo1:12c385a:bf59"
+  },
+  {
+    "jp": "BETA",
+    "cn": "BETA",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:f631",
+    "al_source_id": "al:alternative16.rio.ruo1:136e32:238a"
+  },
+  {
+    "jp": "G弾",
+    "cn": "G弹",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:6146",
+    "al_source_id": "al:alternative16.rio.ruo1:136e32:25e7"
+  },
+  {
+    "jp": "まりも",
+    "cn": "麻理茉",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:70d6",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:13be2"
+  },
+  {
+    "jp": "オルタネイティヴ4",
+    "cn": "Alternative4",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:1b404",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:47c7"
+  },
+  {
+    "jp": "オルタネイティヴ5",
+    "cn": "Alternative5",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:1b06b",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:4124"
+  },
+  {
+    "jp": "ゲームガイ",
+    "cn": "GameGuy",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:a94",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:4df2"
+  },
+  {
+    "jp": "ソ連",
+    "cn": "苏联",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:fc14",
+    "al_source_id": "al:alternative16.rio.ruo1:c87966:29b6"
+  },
+  {
+    "jp": "データリンク",
+    "cn": "数据链",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:76eade0e:55aa",
+    "al_source_id": "al:alternative16.rio.ruo1:36226e:1ab5e"
+  },
+  {
+    "jp": "ハイヴ",
+    "cn": "巢穴",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:10066",
+    "al_source_id": "al:alternative16.rio.ruo1:136e32:5db"
+  },
+  {
+    "jp": "バルジャーノン",
+    "cn": "巴尔加农",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:1399d8de:11c9b",
+    "al_source_id": "al:alternative16.rio.ruo1:323460:123d5"
+  },
+  {
+    "jp": "ヤキソバパン",
+    "cn": "炒面面包",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:39ef818c:1c8c4",
+    "al_source_id": "al:alternative16.rio.ruo1:172659c:8733"
+  },
+  {
+    "jp": "ラクロス",
+    "cn": "长曲棍球",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:237bbd38:9df0",
+    "al_source_id": "al:alternative16.rio.ruo1:dde17c:2b2c"
+  },
+  {
+    "jp": "レドーム",
+    "cn": "雷达罩",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7071f19a:8f4e",
+    "al_source_id": "al:alternative16.rio.ruo1:2ba638:5d20"
+  },
+  {
+    "jp": "不知火",
+    "cn": "不知火",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:74eeb806:42b1",
+    "al_source_id": "al:alternative16.rio.ruo1:783fbe:16186"
+  },
+  {
+    "jp": "中尉",
+    "cn": "中尉",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5d2b",
+    "al_source_id": "al:alternative16.rio.ruo1:136e32:3726"
+  },
+  {
+    "jp": "佐渡島",
+    "cn": "佐渡岛",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:5ebb3b22:6889",
+    "al_source_id": "al:alternative16.rio.ruo1:2084ec:19aae"
+  },
+  {
+    "jp": "佐渡島ハイヴ",
+    "cn": "佐渡岛巢穴",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:5ebb3b22:6889",
+    "al_source_id": "al:alternative16.rio.ruo1:2084ec:19aae"
+  },
+  {
+    "jp": "侍従長",
+    "cn": "侍从长",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:39ef818c:c41a",
+    "al_source_id": "al:alternative16.rio.ruo1:5f73ee:877e"
+  },
+  {
+    "jp": "冥夜",
+    "cn": "冥夜",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:5dc",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:1d12"
+  },
+  {
+    "jp": "千鶴",
+    "cn": "千鹤",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:ec68",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:1425a"
+  },
+  {
+    "jp": "吹雪",
+    "cn": "吹雪",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:3dd",
+    "al_source_id": "al:alternative16.rio.ruo1:2e7d70:13a20"
+  },
+  {
+    "jp": "国連",
+    "cn": "联合国",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:bb1b",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:51c5"
+  },
+  {
+    "jp": "国連軍",
+    "cn": "联合国军",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:c778",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:18d27"
+  },
+  {
+    "jp": "地下茎構造",
+    "cn": "地下茎构造",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:74eeb806:3beb",
+    "al_source_id": "al:alternative16.rio.ruo1:c87966:3e8d"
+  },
+  {
+    "jp": "壬姫",
+    "cn": "壬姬",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:e0ba",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:15e00"
+  },
+  {
+    "jp": "夕呼",
+    "cn": "夕呼",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:566b",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:1eaa"
+  },
+  {
+    "jp": "尊人",
+    "cn": "尊人",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:1399d8de:11df9",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:1d12"
+  },
+  {
+    "jp": "少佐",
+    "cn": "少校",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:35b1",
+    "al_source_id": "al:alternative16.rio.ruo1:5f73ee:24599"
+  },
+  {
+    "jp": "少尉",
+    "cn": "少尉",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:548c",
+    "al_source_id": "al:alternative16.rio.ruo1:36226e:d755"
+  },
+  {
+    "jp": "帝国斯衛軍",
+    "cn": "帝国斯卫军",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5902",
+    "al_source_id": "al:alternative16.rio.ruo1:36226e:d98f"
+  },
+  {
+    "jp": "帝国本土防衛軍",
+    "cn": "帝国本土防卫军",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:10e8d",
+    "al_source_id": "al:alternative16.rio.ruo1:54f5b6:d966"
+  },
+  {
+    "jp": "帝国軍",
+    "cn": "帝国军",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:10e8d",
+    "al_source_id": "al:alternative16.rio.ruo1:2509d6:832"
+  },
+  {
+    "jp": "強化装備",
+    "cn": "强化装备",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:76eade0e:aba",
+    "al_source_id": "al:alternative16.rio.ruo1:2e7d70:37d8"
+  },
+  {
+    "jp": "彩峰慧",
+    "cn": "彩峰慧",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:2ad6e",
+    "al_source_id": "al:alternative16.rio.ruo1:523d0c:46f9"
+  },
+  {
+    "jp": "御剣",
+    "cn": "御剑",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:237bbd38:e6cf",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:13954"
+  },
+  {
+    "jp": "御剣冥夜",
+    "cn": "御剑冥夜",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:237bbd38:e6cf",
+    "al_source_id": "al:alternative16.rio.ruo1:36226e:dbc0"
+  },
+  {
+    "jp": "恋愛原子核",
+    "cn": "恋爱原子核",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:58847ada:a789",
+    "al_source_id": "al:alternative16.rio.ruo1:1755a78:23b52"
+  },
+  {
+    "jp": "戦術機",
+    "cn": "战术机",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:9734",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:1435"
+  },
+  {
+    "jp": "戦術機部隊",
+    "cn": "战术机部队",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:74eeb806:2b6c",
+    "al_source_id": "al:alternative16.rio.ruo1:10252de:26aa3"
+  },
+  {
+    "jp": "撃震",
+    "cn": "击震",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:74eeb806:3aae",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:3600"
+  },
+  {
+    "jp": "操縦桿",
+    "cn": "操纵杆",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:76eade0e:30f",
+    "al_source_id": "al:alternative16.rio.ruo1:2e7d70:2f8b"
+  },
+  {
+    "jp": "政威大将軍",
+    "cn": "政威大将军",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:bfe1",
+    "al_source_id": "al:alternative16.rio.ruo1:323460:d11a"
+  },
+  {
+    "jp": "斯衛",
+    "cn": "斯卫",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5902",
+    "al_source_id": "al:alternative16.rio.ruo1:323460:7b48"
+  },
+  {
+    "jp": "斯衛軍",
+    "cn": "斯卫军",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5902",
+    "al_source_id": "al:alternative16.rio.ruo1:323460:7b48"
+  },
+  {
+    "jp": "月詠",
+    "cn": "月咏",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:39ef818c:1cf9",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:1eaa"
+  },
+  {
+    "jp": "月詠真那",
+    "cn": "月咏真那",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:539535be:40bc8",
+    "al_source_id": "al:alternative16.rio.ruo1:5f73ee:242e1"
+  },
+  {
+    "jp": "柊町",
+    "cn": "柊町",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:267c",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:3e0f"
+  },
+  {
+    "jp": "柏木",
+    "cn": "柏木",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:65e5bdbe:f9e0",
+    "al_source_id": "al:alternative16.rio.ruo1:bc2b4e:38fb"
+  },
+  {
+    "jp": "榊千鶴",
+    "cn": "榊千鹤",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:539535be:a1e0",
+    "al_source_id": "al:alternative16.rio.ruo1:3ae464:6212"
+  },
+  {
+    "jp": "横浜基地",
+    "cn": "横滨基地",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:bb1b",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:3aa9"
+  },
+  {
+    "jp": "橘町",
+    "cn": "橘町",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:1399d8de:9163",
+    "al_source_id": "al:alternative16.rio.ruo1:4a5c54:cac5"
+  },
+  {
+    "jp": "機械化歩兵",
+    "cn": "机械化步兵",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7a2c2d0e:30f",
+    "al_source_id": "al:alternative16.rio.ruo1:1e7a48:3e4"
+  },
+  {
+    "jp": "機械化歩兵装甲",
+    "cn": "机械化步兵装甲",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7a2c2d0e:30f",
+    "al_source_id": "al:alternative16.rio.ruo1:1e7a48:3e4"
+  },
+  {
+    "jp": "武御雷",
+    "cn": "武御雷",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:4385",
+    "al_source_id": "al:alternative16.rio.ruo1:323460:77ed"
+  },
+  {
+    "jp": "涼宮",
+    "cn": "凉宫",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:4f55052a:f8fb",
+    "al_source_id": "al:alternative16.rio.ruo1:2084ec:14122"
+  },
+  {
+    "jp": "涼宮茜",
+    "cn": "凉宫茜",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:67c46db0:4751",
+    "al_source_id": "al:alternative16.rio.ruo1:2084ec:143e2"
+  },
+  {
+    "jp": "珠瀬壬姫",
+    "cn": "珠濑壬姬",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:237bbd38:12546",
+    "al_source_id": "al:alternative16.rio.ruo1:36226e:49a0"
+  },
+  {
+    "jp": "珠瀬玄丞斎",
+    "cn": "珠濑玄丞斋",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:74278644:ed6e",
+    "al_source_id": "al:alternative16.rio.ruo1:54f5b6:a493"
+  },
+  {
+    "jp": "白銀武",
+    "cn": "白银武",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:54e1",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:790a"
+  },
+  {
+    "jp": "白陵",
+    "cn": "白陵",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:12c9a3d2:efd",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:4d8a"
+  },
+  {
+    "jp": "皆琉神威",
+    "cn": "皆琉神威",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:39ef818c:f2d5",
+    "al_source_id": "al:alternative16.rio.ruo1:a6fb96:2b7f"
+  },
+  {
+    "jp": "短刀",
+    "cn": "短刀",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:39ef818c:c623",
+    "al_source_id": "al:alternative16.rio.ruo1:cfe4cc:31a8"
+  },
+  {
+    "jp": "社霞",
+    "cn": "社霞",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:4f55052a:1afdc",
+    "al_source_id": "al:alternative16.rio.ruo1:1a5384:8026"
+  },
+  {
+    "jp": "神代",
+    "cn": "神代",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:539535be:f93f",
+    "al_source_id": "al:alternative16.rio.ruo1:323460:9268"
+  },
+  {
+    "jp": "神宮司",
+    "cn": "神宫司",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:70d6",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:19271"
+  },
+  {
+    "jp": "神宮司まりも",
+    "cn": "神宫司麻理茉",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:70d6",
+    "al_source_id": "al:alternative16.rio.ruo1:683262:2558c"
+  },
+  {
+    "jp": "築地",
+    "cn": "筑地",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:72e64052:7a29",
+    "al_source_id": "al:alternative16.rio.ruo1:10abda4:1ccee"
+  },
+  {
+    "jp": "米国",
+    "cn": "美国",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:eba4",
+    "al_source_id": "al:alternative16.rio.ruo1:2e7d70:16aa1"
+  },
+  {
+    "jp": "米軍",
+    "cn": "美军",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:ffa5",
+    "al_source_id": "al:alternative16.rio.ruo1:54f5b6:4650"
+  },
+  {
+    "jp": "純夏",
+    "cn": "纯夏",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:1399d8de:552d",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:21f2"
+  },
+  {
+    "jp": "総合戦闘技術評価演習",
+    "cn": "综合战斗技术评价演习",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:12bc3",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:19a3e"
+  },
+  {
+    "jp": "総戦技",
+    "cn": "综战技",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:5b01efac:e5df",
+    "al_source_id": "al:alternative16.rio.ruo1:2084ec:1420b"
+  },
+  {
+    "jp": "総戦技評価演習",
+    "cn": "综战技评价演习",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:5b01efac:e5df",
+    "al_source_id": "al:alternative16.rio.ruo1:3e24a0:1f37f"
+  },
+  {
+    "jp": "美琴",
+    "cn": "美琴",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:e5de",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:13f6c"
+  },
+  {
+    "jp": "衛士",
+    "cn": "卫士",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:c778",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:4b97"
+  },
+  {
+    "jp": "衛士候補生",
+    "cn": "卫士候补生",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:bf8b",
+    "al_source_id": "al:alternative16.rio.ruo1:82d052:f619"
+  },
+  {
+    "jp": "起床ラッパ",
+    "cn": "起床号",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:4f55052a:4ce7",
+    "al_source_id": "al:alternative16.rio.ruo1:1cfb88:125a"
+  },
+  {
+    "jp": "軍曹",
+    "cn": "中士",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:b4df",
+    "al_source_id": "al:alternative16.rio.ruo1:643f26:7b33"
+  },
+  {
+    "jp": "鎧衣美琴",
+    "cn": "铠衣美琴",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:e5de",
+    "al_source_id": "al:alternative16.rio.ruo1:1e7a48:6e95"
+  },
+  {
+    "jp": "鑑純夏",
+    "cn": "鉴纯夏",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:35eefb40:625e",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:11e0f"
+  },
+  {
+    "jp": "長刀",
+    "cn": "长刀",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio.002:acd9734:797b",
+    "al_source_id": "al:alternative16.rio.ruo1:cfe4cc:2f6d"
+  },
+  {
+    "jp": "陽炎",
+    "cn": "阳炎",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:3865",
+    "al_source_id": "al:alternative16.rio.ruo1:88335e:36ef"
+  },
+  {
+    "jp": "香月夕呼",
+    "cn": "香月夕呼",
+    "status": "cross_game_reference_not_published_authority",
+    "ml_source_id": "ml-cn:muvluv16_chn.rio:20111882:6ffd",
+    "al_source_id": "al:alternative16.rio.ruo1:1468c6:7703"
+  }
+]

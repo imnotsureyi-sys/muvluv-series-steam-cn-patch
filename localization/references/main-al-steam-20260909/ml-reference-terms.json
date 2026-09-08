@@ -1,0 +1,2356 @@
+[
+  {
+    "jp": "90部隊",
+    "cn": "90部队",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 6,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:320e",
+        "record_sha256": "50a2cf478b9e774e289a4600bb07c4fb799af1ccb2558eab205810a6d0b08465",
+        "ja_sha256": "1e20d69077aa4efb9d4eb59ab08f3646eb0c42f76b3f686fe6cb02cb112b5977",
+        "en_sha256": "3526e58e12869d2c71dc1a327e60f73a9fd51e0d30984dbb6fb54e950e18fcd4",
+        "zh_sha256": "78b8b5ebc11780f67313debddba9acdf5915f64a3bf5afae758771629c3de39e"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:361c",
+        "record_sha256": "50a2cf478b9e774e289a4600bb07c4fb799af1ccb2558eab205810a6d0b08465",
+        "ja_sha256": "fd15bf0b2de95aae408d73bbfdb4aae77af013785477548e38d35c4dfe17a54c",
+        "en_sha256": "bc7c8182163b9f11f7fca415f7370eab9df6e0cea0734ba7e49d2a5d24ae1dd3",
+        "zh_sha256": "ad686ba4afb590e038a876d8418cba4acb592efbe4a8499d0d89a3469e82e66b"
+      }
+    ]
+  },
+  {
+    "jp": "BETA",
+    "cn": "BETA",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 73,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:f631",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "62ebaaeb29829427ea2471aec78c7dd46fd6ae93709e21b3e99105c929e7a386",
+        "en_sha256": "fffd3b13ae0fd73a1497e673144ff51ad00c84ae00c737e2f54ed769d841e02b",
+        "zh_sha256": "83118e1135a65458cfebdef8d6befb7b4e3ddc5a12f357bf9152776a46e8a472"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:f6e1",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "40de13f32467a04d6cd1ec3cd38b995180d914966fbf2638442d3514d9e497b8",
+        "en_sha256": "0a4e35fc7de1f6e94aeb2885c33e720ef99173b736ebbe8935666c0404aa3b64",
+        "zh_sha256": "4f9af40f498e10c801fbd12ce8f00340da4f662d324b954dc010e58a52caaad7"
+      }
+    ]
+  },
+  {
+    "jp": "G弾",
+    "cn": "G弹",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:6146",
+        "record_sha256": "50a2cf478b9e774e289a4600bb07c4fb799af1ccb2558eab205810a6d0b08465",
+        "ja_sha256": "1894002d31245c961c8b2484851010b876f4baccf5e5df32796ceedf1d5c13bf",
+        "en_sha256": "5d12c21311e390e641c46ae3041aa3b96e02b08e225b0ee7102b10ae50b5366a",
+        "zh_sha256": "ffae9107f084ddb5ef0a03137cc312a1720cd1ccad3abf0b110f19c7a5962a66"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:61fe",
+        "record_sha256": "50a2cf478b9e774e289a4600bb07c4fb799af1ccb2558eab205810a6d0b08465",
+        "ja_sha256": "4f726d28e471aec5cf0fe2c94199c9084fb2ff6eb9bf6ffd814cae5e96abcaa2",
+        "en_sha256": "cbf11c6781be3ae7130ee2023583783a676e1a649f6d91b402212b082a964269",
+        "zh_sha256": "f7bf08aa05e43150a52ff316da2d67502a22bb72563ab44d37342092af871e04"
+      }
+    ]
+  },
+  {
+    "jp": "まりも",
+    "cn": "麻理茉",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1363,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:70d6",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "6245c44aeaab1a5843aec3afbd8b3e59f7acfe2355a0992c6232c610d19c8078",
+        "en_sha256": "c0c3643e34d6fb0a4b51d99da3a0db6964797313002fb8c32ead99b1e1a260b4",
+        "zh_sha256": "d81919340299048cb026a72b9ef082836cd926889866f1639a3400315100844a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:b434",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "3ce68e4d66bce4f306c764b8fd276d3038e53db5a164717fdc4f6b4c3cb1f25d",
+        "en_sha256": "853b57089251fd6d74cfc4771431c536124c947a311d2125090f8f7d01dce0dd",
+        "zh_sha256": "f260c09becdf5ffc94179e93fb261a8f7719a8631ea64ddc07d2cc6519de9741"
+      }
+    ]
+  },
+  {
+    "jp": "オルタネイティヴ4",
+    "cn": "Alternative4",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 22,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:1b404",
+        "record_sha256": "cad8a7e09756334c7dfc2339aa15a6ea0cc1485eaa110ed4897d5d73a8c45d61",
+        "ja_sha256": "1718e93767e1f93f9011e969e6b7caf072caa8044fbbbf2f3181fd4f7d8ef249",
+        "en_sha256": "14342b21453c21fc33c835c7612d045e9b0af9887f75978c5b07d6d285340104",
+        "zh_sha256": "3d49a70ff3c59da8a809c4ad71db7609602aec8942ba09103b30b3229695f59d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:1b442",
+        "record_sha256": "cad8a7e09756334c7dfc2339aa15a6ea0cc1485eaa110ed4897d5d73a8c45d61",
+        "ja_sha256": "7c5b491fdbf875f1ea968bad2ac75806a338408c33e92bf27696aedad53c0d2e",
+        "en_sha256": "30aaf81b97ea7d005204d89906c51563dca6d1e591502372b44c06c58e8458f8",
+        "zh_sha256": "2adee0199fd741672289630515667a4222aaee1d6cc533403bc0ede4c60a283b"
+      }
+    ]
+  },
+  {
+    "jp": "オルタネイティヴ5",
+    "cn": "Alternative5",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 9,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:1b06b",
+        "record_sha256": "cad8a7e09756334c7dfc2339aa15a6ea0cc1485eaa110ed4897d5d73a8c45d61",
+        "ja_sha256": "04d278e22adf510dfae05317ca4cf16c63e0dd90a04a9a7d710992cb6d15c677",
+        "en_sha256": "deb43c9371a0e925dc3471527583514955e9834daba09625328370f283d3773a",
+        "zh_sha256": "407f53a6ff0bad50d898217ac24c05a9ba14a2902b4635d2c019d187c5813858"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:74fea",
+        "record_sha256": "cad8a7e09756334c7dfc2339aa15a6ea0cc1485eaa110ed4897d5d73a8c45d61",
+        "ja_sha256": "29daa542c789db18899ea69d38782426ca064a81ead601a24efebea2f497bd6e",
+        "en_sha256": "6a78306221db1fb126e76d52e46e6600cf0b051b9db79ad91d0e41f178ce0502",
+        "zh_sha256": "8f2d85ba8cbee534bb4880058053c5e33f3e9a78a9886a5795f017e5e7c3eba6"
+      }
+    ]
+  },
+  {
+    "jp": "カイゼル",
+    "cn": "凯撒",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 25,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:4ea1",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "e1e723e013687456d5cdc610b7ee2796eb25f72582e55e29dc70748b648a4917",
+        "en_sha256": "c08569c1409440d96f71da53a2ab13cded262141d54236edeb62e33c886b02d4",
+        "zh_sha256": "22f4b056fad396a50a8f910ee0a61047657d4f053679822f194d13b8b1567daa"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:503f",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "a6a4818c38f5656c3db46fbc40bb8d5ba6b2dd5e4dac01724144b29c6e445e34",
+        "en_sha256": "33715d40d9f69b0ef876dfdc447e5ace81f02091d4c4cc76df5a25afd8193ec0",
+        "zh_sha256": "9a374a270e2eff4e383b3687169bf8fcb96bf6c9bc87774956bf550c2e65eaa0"
+      }
+    ]
+  },
+  {
+    "jp": "ゲームガイ",
+    "cn": "GameGuy",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 101,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:a94",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "0938db61b274f23f7a004ba27b4579e5250bfad46fda736492b464da2bfd17fe",
+        "en_sha256": "d11b38447b7ff142a2725eb7396707aa2850c74ffe9309f40323b25bf4445645",
+        "zh_sha256": "d597b46d457b483cc6f282299e81f4c3586667fc32dc836c3feb189878cb6533"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:1627b",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "6850301f61387682c665ae5d4aa5a99bb61ce2aae76adbe79e1c537e96e4143c",
+        "en_sha256": "7021991f163026ae3defd568a5110cdf3a7579f86ffb12406ca8fd99de20e4ae",
+        "zh_sha256": "85b4ecdb329bd6520e436c2d37a01da8e9be53317917e3c31d1636fd1aa17435"
+      }
+    ]
+  },
+  {
+    "jp": "シャオ・ミュン",
+    "cn": "肖·缪",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 34,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:4056",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "a532c7e8d66526cfe623427d3e8da724baa0ac180f45a0e51e8ab949aabf155b",
+        "en_sha256": "7058b9677d71790fb6dc1dcc2f4f882adbfa22b725c8f7001545b49dd3988c92",
+        "zh_sha256": "834466b19ca6da0f5a3b258cb886e91bd13970b56fb57b277911f58d29ba6470"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:4537",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "5270207ee7609733754a08da348e085171428c589c16e8edeb7f07c0577b154c",
+        "en_sha256": "b5928dbd9ac972821db68233375509a29f982fd440fd3a43236248d8ccedb8a4",
+        "zh_sha256": "11a8ec6b4c8bf797ec9859fb3cdde0881070a4de4454cb43e729968dc971b973"
+      }
+    ]
+  },
+  {
+    "jp": "スーパーエリートソルジャー",
+    "cn": "超级精英战士",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 22,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:29b73",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "096e7dd6963db747dda71603b1cbecdea487e9aa5a1fd3c26faa09a8578b1295",
+        "en_sha256": "3ecc97591cc2841b0fc9f53913a0d5f6a816bb5ad9b4a1fb9d692ed9a5ac7c43",
+        "zh_sha256": "f1cb01b2208f4eab0e566f15220f2fe5339b385115dc0500d157ec6ef1003bd6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:2a9bd",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "8844ed4531ecf21dcb4b58d1d8b611ae76f81eff5ed27fe9864313553abc234a",
+        "en_sha256": "ee410bd7525f1547cd6d9960ab028c3d341ac31559f68e710ceecd61c665ae96",
+        "zh_sha256": "3b8390f742e1f25f06a2fe9f32a85acd8c7945128d30dced5550782ad538f95b"
+      }
+    ]
+  },
+  {
+    "jp": "ソ連",
+    "cn": "苏联",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:fc14",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "879bfc029b362d9032eb04afda9e54319e7d02131d96d9e66aff76630a882484",
+        "en_sha256": "ba3dd324f8da7c08a37af6fa328d6e1dad0b94e8f750de0863544f4e027d46d2",
+        "zh_sha256": "2c53369d20f0f320bd1ac072c3ca66db1b496ae88b0bef3a2d92bb97f1b6f9f5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:2f91",
+        "record_sha256": "50a2cf478b9e774e289a4600bb07c4fb799af1ccb2558eab205810a6d0b08465",
+        "ja_sha256": "9e093ca66176b782d39ab85b403296fd75f12da3f87f47ef821da4e2e0e220a5",
+        "en_sha256": "1cb2831ae247a17eafdc0a5064de63c62d9a406e1b3b175ded551962fd3a6d92",
+        "zh_sha256": "35b0ae8497e546273f5f7246cf4d00f4534b70ac4541ee5369c55e01c66c2b10"
+      }
+    ]
+  },
+  {
+    "jp": "データリンク",
+    "cn": "数据链",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:76eade0e:55aa",
+        "record_sha256": "884dad5e82247041fc26a1ce6e2948a5e2d30554691eb450c0ce11fdd7f0aa95",
+        "ja_sha256": "1f21d5f7a8d5aaf101c9ae8305afb4566c7aeb0e42a04add2495a53f28907a76",
+        "en_sha256": "626f09fa52afd4df4389a020458678f3eaa8f74b42cb8f66b7a40e789e1ff4ab",
+        "zh_sha256": "55dcbf24c89a05f4b36842da7e92e0c522eb2a585a93d854a9aa76689e50ec28"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:1d866",
+        "record_sha256": "65d58aca53b0bc828108c0d381d77e29a1591c34933de5bfb05bdcf52fbc151c",
+        "ja_sha256": "96560ba8258b378cfbcbd43555f1dbedaed288e03548aded9d862cde36803612",
+        "en_sha256": "a7ba4c47cfa559eb6adf53c8a328ce8e415053fb35aa1e76477696904182e1b9",
+        "zh_sha256": "23ab02c182759133f014fdbbea8f57d0bebd2ef776d8441ebc6160811c6fbcd8"
+      }
+    ]
+  },
+  {
+    "jp": "ハイヴ",
+    "cn": "巢穴",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 7,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:10066",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "8eff7bc259fb0dd08fbb284c4dcacdbafe098d01b0a7efb89724ac0e4c6c1215",
+        "en_sha256": "68bb36abbd198f218e704bf10c72b8a6f4a89c4c3acbf3f5edaf47a8f9f9b444",
+        "zh_sha256": "8ef8ff2a6b6356632f13acb1f3f351d679319cea3b41e64f710da71084796d58"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:f23",
+        "record_sha256": "8e297844c34103d44471c3a393b5a72b576848108899b4b8b0a42a5457565deb",
+        "ja_sha256": "315f88d83af03acfe9a2ce06014e7290b031ca1dff6429883f0fead3f7cd5300",
+        "en_sha256": "d561774ab78fdf007dd4918d85d7add193aa558c3c5a99b4e8c97d6deb5f3f2d",
+        "zh_sha256": "d433f93f2c3ee5d217907f267fd572626e3aa1794b10de06af7c5d12021a01ea"
+      }
+    ]
+  },
+  {
+    "jp": "バルジャーノン",
+    "cn": "巴尔加农",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 45,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:11c9b",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "7528deefb7b72321e29a2193aca6e2682f527f8e4ad53123ebb0ff14637ae8ff",
+        "en_sha256": "98603b5f90829d7c80daab6539f9f3ed254a9fd32eec5e9d58f06f50d8b6c726",
+        "zh_sha256": "cd7df2fd946e62b234dc920ec0532539218730623d3bcb20560d23554ee0ac11"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:d25d",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "df037b0521eca78bf6b460cc3eaaa323bff9c78e2a6995ca24f6653ba5f5b29a",
+        "en_sha256": "dbf248bb42d918059e77740a0e43e23d209a3a3184f29994e8929b2da844e958",
+        "zh_sha256": "b078468c14da2c1f21988e1cbbd1dbbbfa4e1ced960ffebe2c67817312e49eae"
+      }
+    ]
+  },
+  {
+    "jp": "プレアディス",
+    "cn": "Pleiades",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 20,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:1e4b6",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "02e90bfc66e36b7e56b7ffe27ff397ca24a50497ee6ef2b0d27c67ae4a55b8c0",
+        "en_sha256": "de23cf8ec625ba97ddf27eb67edf65984fc9f5e994893b47b98f574a3821a137",
+        "zh_sha256": "a7e2c82eab660cb5d117ff36402a83669fe846462fe03eb8ef87faecfcd2b5e6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:1e4f4",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "ffc062e28e6513d2a103dfa4135912e6f055aaf32b11f138b062f426abc51cef",
+        "en_sha256": "386b3cd24e477f26f5a23437e524e2f43c965c1e5ae2fecb0347238e94df46c4",
+        "zh_sha256": "2dd7c2e289a436fc4afbfd055a54d11432361f7f4fd21baa89d11b0d72358cd8"
+      }
+    ]
+  },
+  {
+    "jp": "ヤキソバパン",
+    "cn": "炒面面包",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 15,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:1c8c4",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "3f87e9192786af602a0e9d8879285c2a1b71b6279da5dac755939473d6d7c345",
+        "en_sha256": "9ee5e50016375cec61648bbc8b6fc94931b1c5c85ed00c34ea5d10d4c0ede0f9",
+        "zh_sha256": "9f8d1df3267ef5ec85f73d56cf2f165ffaf8198f674a763157495de9dd151022"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:13f5c",
+        "record_sha256": "ec5411c734db138d79d9417cea9de4ed8cf21858570925e2ace5d92eb12502a6",
+        "ja_sha256": "3f87e9192786af602a0e9d8879285c2a1b71b6279da5dac755939473d6d7c345",
+        "en_sha256": "9ee5e50016375cec61648bbc8b6fc94931b1c5c85ed00c34ea5d10d4c0ede0f9",
+        "zh_sha256": "9f8d1df3267ef5ec85f73d56cf2f165ffaf8198f674a763157495de9dd151022"
+      }
+    ]
+  },
+  {
+    "jp": "ラクロス",
+    "cn": "长曲棍球",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 128,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:9df0",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "3d08c5fa00c93e62707627011e68b785177fed1cc6b44fd9bdcccd446a02ab2d",
+        "en_sha256": "8c88752af48fef32995f8a1daa3e857858589f81073a8195d4c4075725b5b616",
+        "zh_sha256": "77d841796366b2761495390a4fbeda962ca07ae6e20867a0a282b445d6d78bac"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:d3fb",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "eefb51858cbe874a1205c6501336752698aecf61a69e0524dae330770b532f39",
+        "en_sha256": "86e868ba5024e5b4c6e8a92f7392bd9c4f29c76f331bfc05ecf22e562cd19492",
+        "zh_sha256": "414da669e73bd0c858f51844efc99e2125964b059b8380166daedf052fe61aad"
+      }
+    ]
+  },
+  {
+    "jp": "レドーム",
+    "cn": "雷达罩",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 9,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7071f19a:8f4e",
+        "record_sha256": "a3d275cbb775b3895abfd1bdf80092b4c88ca33be3b5c435041789c2702ff466",
+        "ja_sha256": "11985d23dabfb9cf11db2167a38686a36425dc09e6b42c6d292ef5d40c3f323e",
+        "en_sha256": "9c87063ce86ce076eaef1f0d6a140f36e81b0402eda6d5ddf6ab98b2be9ab19b",
+        "zh_sha256": "3647da00f215245a2dc2b82003572b5c97d51396db5e88da49515e4df645c64d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7071f19a:8fd2",
+        "record_sha256": "a3d275cbb775b3895abfd1bdf80092b4c88ca33be3b5c435041789c2702ff466",
+        "ja_sha256": "6a0596d85f788e6511864243f81e33ec75c60d596773724f970272212f9743ad",
+        "en_sha256": "c980916a92d3bfe1c7440f57104b0517c90ce81327b896f1d71ea94f57d14a47",
+        "zh_sha256": "876fd6f4da925276dbbbc21939b2c024a2989d690b4f6688d16e25948b780264"
+      }
+    ]
+  },
+  {
+    "jp": "レーション",
+    "cn": "口粮",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 6,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:69403718:12a6",
+        "record_sha256": "326edd2749635695624aa1dd19f3da7362a35593ee256b538ca00de9b2bd60b4",
+        "ja_sha256": "99895e34dd767355d8411a7e90c057e61ecf021011920dd107615f39bd6f3dea",
+        "en_sha256": "4662943cf46fdf88c4506bc05f98b6ac52b633db91afd6aaf07520e28052e42f",
+        "zh_sha256": "317f7a7faef11aa2a411ad7db6a0ced8eb2556e78b60a7cc9cbcd76ebcb837b6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:69403718:14cf",
+        "record_sha256": "326edd2749635695624aa1dd19f3da7362a35593ee256b538ca00de9b2bd60b4",
+        "ja_sha256": "110b39f3c368c7968fe6c3c52af62c56cf5429fd1463930d633d60933b8aed44",
+        "en_sha256": "5c279cd7b39dfca0ac798cb83fd50a0e8a563f95b234f6b9394672b23f87eec0",
+        "zh_sha256": "c828e885531d0598efae60161cf33d6138acdadc6fad12dd22456e06daea16c1"
+      }
+    ]
+  },
+  {
+    "jp": "不知火",
+    "cn": "不知火",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:42b1",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "6133c89e64204588c0e53fcdfe4ede4b407d95973a3ea3ea3ed024498a36fe72",
+        "en_sha256": "528ccd400bd0612590d4a14dec9f41dfb2dc79cd628fa453c49dd4eef5f7dfd1",
+        "zh_sha256": "43e584896328e0b3dae0583c8cfc4f220f748f77c4bb93c24c8458c139b582ae"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:3865",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "c016d428d75901398791f704cbccbd5cba6c4bead2fe087804b0e6b2d63a12ff",
+        "en_sha256": "8b74f5b4a2d99cf8543d360efdf0429cc622046362e68b1a5551faa4544c9977",
+        "zh_sha256": "f223b0b7c96801a19e4ad63d62ca59d8768c403c4d2afb256d961e4abdb79f2d"
+      }
+    ]
+  },
+  {
+    "jp": "中尉",
+    "cn": "中尉",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5d2b",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "d8dcf920b7bbb22064c336fab5b6db61192f63a66d2d58db67c5d0d8363d31c4",
+        "en_sha256": "70d4927f32b133c0ad541356646188e927dd154b5cec107e289e8935285d8cee",
+        "zh_sha256": "bf2641ae585671658c82537277df2f24825ae2c648b627e804e77eba26633026"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:639c",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "0de7109d7a4c9b86c35989227ac53bdae64d97c5edd27be81a38cf76c759b9bf",
+        "en_sha256": "f89316df62e75e08372d728a7d629e1f36c958275285af21dd033502258bf5da",
+        "zh_sha256": "627e695ca8f2948232385150578ac84be8f511979f022288c7c150d19cc1fd05"
+      }
+    ]
+  },
+  {
+    "jp": "佐渡島",
+    "cn": "佐渡岛",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 6,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5ebb3b22:6889",
+        "record_sha256": "2b5cd83edf550dc0efa5163859aa090f2856efa29c98020098c2374236b77bcf",
+        "ja_sha256": "6775752979d22cd7c2005723a138f0e65177adc59d89607cb79772d053b2c29b",
+        "en_sha256": "3dafbd2da694689755ee3ee87e796c33f59c83ab0da5256e7b812994077a9cff",
+        "zh_sha256": "257dfeeae5f84db2c42a82a82edf0510c2df5c24efac331fda95d102250eb231"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5ebb3b22:8358",
+        "record_sha256": "2b5cd83edf550dc0efa5163859aa090f2856efa29c98020098c2374236b77bcf",
+        "ja_sha256": "15ff919fe168530474a7c80644075b67efbbfec10169f26b7b707a08b5728ecc",
+        "en_sha256": "bee4c44a6a5d9a11ae2d8a57b187cf1c8d69449e968cd9e7d04bd28cab06b76a",
+        "zh_sha256": "54941f5e5d5809779a8201e6e24948d5dc9a0a022edc6683882d638526d98699"
+      }
+    ]
+  },
+  {
+    "jp": "佐渡島ハイヴ",
+    "cn": "佐渡岛巢穴",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5ebb3b22:6889",
+        "record_sha256": "2b5cd83edf550dc0efa5163859aa090f2856efa29c98020098c2374236b77bcf",
+        "ja_sha256": "6775752979d22cd7c2005723a138f0e65177adc59d89607cb79772d053b2c29b",
+        "en_sha256": "3dafbd2da694689755ee3ee87e796c33f59c83ab0da5256e7b812994077a9cff",
+        "zh_sha256": "257dfeeae5f84db2c42a82a82edf0510c2df5c24efac331fda95d102250eb231"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:76eade0e:fd5c",
+        "record_sha256": "884dad5e82247041fc26a1ce6e2948a5e2d30554691eb450c0ce11fdd7f0aa95",
+        "ja_sha256": "81691ba16577fc007887a5cf45b37352445c4e70815a0430df7b8e456cd74727",
+        "en_sha256": "60548669516a1abc3bc82e4866544fa7e58b3563cc3b056196089aa44e627b82",
+        "zh_sha256": "fe36747772e79627aa23d9e19f429d1f3383e42b1d81fe190d1a50c255810ade"
+      }
+    ]
+  },
+  {
+    "jp": "侍従長",
+    "cn": "侍从长",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:c41a",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "6bb10f619095445b66a11136305951c3a53b00453e660c48ef3e5de932efc550",
+        "en_sha256": "5c6b21f19fe30f77cb46b7d45a92941dcaf74b5bad866171d9999593c6fa6d51",
+        "zh_sha256": "fc293b738bc102467e347238974ece67bf5474277bdbc29c9c9fbe16dc8f3137"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:40a3d",
+        "record_sha256": "5aef3cc29dcbb339fbe615136416fd89b39ebac7ba1292250b37df113f074ffc",
+        "ja_sha256": "1820b9ca8cb41fbb59b1da1a28073ddb3ae799a2dc0d0526b92c175dba0baf91",
+        "en_sha256": "ceef97766bb3965b18f0e92f3bf91b0f96673e4d058af395945d15bff57b12d6",
+        "zh_sha256": "d8de51175ef6313ced8dde9d32a30287ce4671bcca0d468cdc259f2d2afb00b5"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜",
+    "cn": "冥夜",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 5694,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:5dc",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "d77cff72f58aa221dc790f52a535b6d8b11c7c72edacee949b77594c2d87fb6c",
+        "en_sha256": "cfdb8ca9398ddb7d516a65d0de2a8224b7721db8971b6d545513a19f9ce2c5e0",
+        "zh_sha256": "38810514079746ec3f89875c3097c7f1524b6ed74ca5207d127e0908dd28e376"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:c1f",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "c1e2546f22b764e0e720262dfe144b3210cd8e33c6389b4637c74a6ab57f0749",
+        "en_sha256": "310ecc094f169d6192a0b42d8e8bd5550afd16588d9065e16ed012cefd70173a",
+        "zh_sha256": "e72576202c365408945d9a13af059b3ba2f576761999286840b05d18592d625e"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴",
+    "cn": "千鹤",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4947,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:ec68",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "f75b011bcff3af1195a6249a8342650e15b01b386ac72a1292b38c6e3f40f42d",
+        "en_sha256": "e15bc90d06eae9906a07fa02f9963bbb13ed370a23ee18ea29f31259dc5271d3",
+        "zh_sha256": "d3ac3c64eb5a57906592e624055fa156a7005d46d9db1fe02266000d2196c0e4"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:10c95",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "cccf1d482902e8aba252b711d8f12b86b756d33f2a524645e725fa3befb9ee7f",
+        "en_sha256": "2513c03972267686ef0acda3bc839fc0c3a6c0460007c054295f014911b3c914",
+        "zh_sha256": "3f9a5c086431b70595d73ef4b27d909f822d23abd6e876d3e4a206d7968af1ef"
+      }
+    ]
+  },
+  {
+    "jp": "吹雪",
+    "cn": "吹雪",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 56,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:3dd",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "6f86136e8369f9e8fe5de4760ebe828b012c75a23eadaab5d0960a7accf59816",
+        "en_sha256": "73f1afe428ae677719d08b37c4fec3a3ad5c073b73caf4b9afd9be00fedaa179",
+        "zh_sha256": "6f4966fb7d4151ca603fcfe866cfd24feb230e6b6663d070b3c36eee4917ce0d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:374e",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "cf73745d35793f9996a4898b3f8203b1f6f88d29ef37ea7fba3b6e07f1973315",
+        "en_sha256": "6e228839cbcd13797b0cf59a97a38ddae1024e9bff5548f67d3c2c210f4a9248",
+        "zh_sha256": "39f5c050c93c4ff08d675334a7cd6af4d7b81de0b82d6149a3236e2776301bc5"
+      }
+    ]
+  },
+  {
+    "jp": "国連",
+    "cn": "联合国",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 59,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:bb1b",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "1b6b72bcf8471bc5ebe8764a340b7800a250b0f1dafbcbcdb140a88598a55e38",
+        "en_sha256": "f9a31fda1ba7a00ee47a6620eff47b9f920496b44d2163f999cbd05a1749f3ad",
+        "zh_sha256": "f1a6bdc0c9ecbefd8c7394793a50c3d6de6d4be7e0329e16efc77f0e11b35373"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:bb59",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "e7978ad62a82d0c84db35b659b1be532987810bcddd284fbe06b7d67077fd3d3",
+        "en_sha256": "7d765ab87ff4273e61cb592f0ba421ea04a2a5d659e8c862c5bc544f507e0e10",
+        "zh_sha256": "b6dd029b213e4a429a049bf2415a011e3027c6f45cb205195623384d280dca8d"
+      }
+    ]
+  },
+  {
+    "jp": "国連横浜基地",
+    "cn": "联合国横滨基地",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2b384a04:6698",
+        "record_sha256": "50a2cf478b9e774e289a4600bb07c4fb799af1ccb2558eab205810a6d0b08465",
+        "ja_sha256": "ebcf54d7e55b8e7f7aa991d7563058f04dfc3cd02f56e4a2d0bd4bace05d9117",
+        "en_sha256": "83091f747cc872b81c60bd03e4876c3790b1aa874a66cbec107e6c9d0267822b",
+        "zh_sha256": "8861aa7dcf1cd758bfec41763c8d0fa5ce0020e17abef1953b71b8dcd5af2551"
+      }
+    ]
+  },
+  {
+    "jp": "国連軍",
+    "cn": "联合国军",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 40,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:c778",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "74f043eb5500c37c8838c305240feb0c08a2d8294b91506be782425254850c88",
+        "en_sha256": "fa02c93c3ad9e746a0508928fa1075ae40c2295d6656ef4c42441dc5b87001fa",
+        "zh_sha256": "871a2b6a45faa6851902445b40c881b52323f3aa92bc4ee6f6b47545f7c89d0c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:f631",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "62ebaaeb29829427ea2471aec78c7dd46fd6ae93709e21b3e99105c929e7a386",
+        "en_sha256": "fffd3b13ae0fd73a1497e673144ff51ad00c84ae00c737e2f54ed769d841e02b",
+        "zh_sha256": "83118e1135a65458cfebdef8d6befb7b4e3ddc5a12f357bf9152776a46e8a472"
+      }
+    ]
+  },
+  {
+    "jp": "地下茎構造",
+    "cn": "地下茎构造",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:3beb",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "e315784b9f1572b73daf6a90e83c7d3f88bc164c7f1c08982912066a58c21edf",
+        "en_sha256": "2aea0f0d811b2022453849f49fd4852e1d2abfe8bbb49a016683e83e0782ac1c",
+        "zh_sha256": "2b6208ad860807b8ed1983b3673dffb6fe83da475573e30744818f404ced56bb"
+      }
+    ]
+  },
+  {
+    "jp": "地獄坂",
+    "cn": "地狱坡",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:83f7",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "03dffa8a85678478b4b8c386d06dea609c79830bbb815d0543fd61564526bca1",
+        "en_sha256": "a5015ef0f7b32ad367a0cfd37c1c333f3031ac00813fc9554c8cac19a49fa501",
+        "zh_sha256": "f49f6136426886dfa807d5413a3068968d8e743698a410cf1486cb1ace1eebe6"
+      }
+    ]
+  },
+  {
+    "jp": "壬姫",
+    "cn": "壬姬",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3254,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:e0ba",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "92220530862a3566f8703e541312d2f6596949872b9b46a716450db0c1dd90b4",
+        "en_sha256": "90bff06abe11ffbd93883268aa53122f76eea119cbfe98db605c62a005b6f345",
+        "zh_sha256": "1345fd2d6ca3011a8b5073bdcaa44f5cc77b0a5bb0a2c53fb2e36405a5626dde"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:10769",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "5a5ac8986338ba99286804338f0720d0660825951715a66892949f71ee0606ed",
+        "en_sha256": "66937868ee86e7455221651c556ee909036f9cfdf83d9e9f513fbaab63f3e8a0",
+        "zh_sha256": "57e371b16540c592cf6205672e62f016f0652ea4e2fcd4c5c559976d576e1f1c"
+      }
+    ]
+  },
+  {
+    "jp": "夕呼",
+    "cn": "夕呼",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1412,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:566b",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "d5f673755bf722325343aae218991ee2d9740e419218577b9a99dad68ec7bd93",
+        "en_sha256": "b020f657c541d3069267e7562b452f043b0ff00a069a83c9a9ae4780f8b70e97",
+        "zh_sha256": "34df9d6a334fadb5f50148e6a076fd7b9b348203710126449794a0afd4461a52"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:56ef",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "ee318d8f7ccaa6718dcabf43b5d8d74d8b0ade604d7046efec9c51de17128fee",
+        "en_sha256": "4b2b2ddc0403257a4f9f892ace9856366530ec55bfb35267f75c9478e2f5eb5a",
+        "zh_sha256": "ae1b9b5b9536e36d53a3d1f9197c108ee56821aab808f61d0021ae16931f2254"
+      }
+    ]
+  },
+  {
+    "jp": "宇宙書記長ゴルバン",
+    "cn": "宇宙书记长戈尔班",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5d5275de:74cc",
+        "record_sha256": "d95dbc86a7891839de7f1972be3a7c21262af36278999e80c65937900711b4dc",
+        "ja_sha256": "046440134fafbf9636b6f6df2075f2b7bc5da799cfc5b9552ee9cc3cd974e81d",
+        "en_sha256": "da4c43cd8b45d210fa360446eba6d23956727a77d579647d4e27fa767711bb02",
+        "zh_sha256": "66a5a87a670103b61584f0d5b871cacdbf63f27e21713f8eae9fce3ddf7bf772"
+      }
+    ]
+  },
+  {
+    "jp": "尊人",
+    "cn": "尊人",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 582,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:11df9",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "154d8291c2ac458ef8983059d9c6572bab0f07cff41f9d262ffccf5c61925b86",
+        "en_sha256": "ebe92c8db58df9ab0b4331dcb3c2da2cec293ebb6729101d6111cbc01fc8b06e",
+        "zh_sha256": "f811d47e01bf08d1741c255c77dbfa439c607dbcdc5e6252c521f112537d37c5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:d229",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "c6c19128d0118d802a3580e21842da6a05b9ed132a16eeb4e9e1bcea3f1b3ec5",
+        "en_sha256": "710cdcee7491e5fbba95d59020e7a84a0c59ba4e60cfdeced78247bd1629cf8d",
+        "zh_sha256": "8992ae9b3d7e790040afede4ff1a566e5b7ebc974f8dc9a68532914a92e9cdb0"
+      }
+    ]
+  },
+  {
+    "jp": "少佐",
+    "cn": "少校",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 5,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:35b1",
+        "record_sha256": "e3351ec017cdae467bd3223ac2f916da4e9201f142b93a5100c5647308942ef1",
+        "ja_sha256": "2f9bb4ff8d916b9acc61c8fa0ba5ed8ba0bade33a5693d672d1c949ae5793c4b",
+        "en_sha256": "af38a18d19d8e737d61bdadc51cacd7e63857936fb09b63a73e971d6f1f0a151",
+        "zh_sha256": "54591b7af1f9d7547f926be5fa10a41cad6a0abd682ebf5087ff8cd85b532a60"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:8ae8",
+        "record_sha256": "e3351ec017cdae467bd3223ac2f916da4e9201f142b93a5100c5647308942ef1",
+        "ja_sha256": "a3e2e45d506cb1219d26c83df9738d1e958d06b1ade30b2d8ba2f68af1451198",
+        "en_sha256": "5093283635de96f484804f78b7b0f28d01d3afe547ba5417dd71291957eb7db6",
+        "zh_sha256": "9ebf89dc1c0beb647c07f3e37ca75fa4e820fdda372e162c90cefee463f44b8e"
+      }
+    ]
+  },
+  {
+    "jp": "少尉",
+    "cn": "少尉",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 16,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:548c",
+        "record_sha256": "7a40b631221cb790f9f662b63518f6e60d8b8e7658e3ff00af8316b6b10f3715",
+        "ja_sha256": "f53c1476d34e0d904ec051725d4a1841ec34d5f56a03d96bc2b2910ec80475d9",
+        "en_sha256": "891c87a95102688dec6f8ea11186caa26013c468176baec35085be1d494b6fe3",
+        "zh_sha256": "c34a2df9a6a9a843d14dcb7d1fab657523aed0c3b962c5498f050360c72d4bd2"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:54ca",
+        "record_sha256": "7a40b631221cb790f9f662b63518f6e60d8b8e7658e3ff00af8316b6b10f3715",
+        "ja_sha256": "80f6fe54b9f13a08d16e353a7f53a38367767b1aa3dc841177db260323909ae8",
+        "en_sha256": "597b8397a144a2346c6996c35d8d865687feff8df4b85806d066d058dbcde4ec",
+        "zh_sha256": "fd438aed5b8ae830c75343f0ce1f1bd36fb368f0984a5bb553c42523405a0126"
+      }
+    ]
+  },
+  {
+    "jp": "帝国斯衛軍",
+    "cn": "帝国斯卫军",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5902",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "f49eab8128a8348d6c2bb604f123bdb18b3862c266fa75990e038bc8391dd020",
+        "en_sha256": "857d05eea660322fbed06d08b911eabd1a8faed43f0f521e6425615560a5e940",
+        "zh_sha256": "40be0874d2914329b7f9c2d03a0feb9040545575fcd805c9c2462c1955610908"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:56d6",
+        "record_sha256": "7a40b631221cb790f9f662b63518f6e60d8b8e7658e3ff00af8316b6b10f3715",
+        "ja_sha256": "c37edbc5c665a825e730c76552d98cfbc7a8a377451e8847e240ff6a6ee38148",
+        "en_sha256": "27abeae7f7fb0fef5621be678b7638b919f20bfce0e8a645fafb0f0dd3d1bbba",
+        "zh_sha256": "afbf3788cae9ee5f2853336c5c5ed995303e47f280bee5705b0df5c38bc089a5"
+      }
+    ]
+  },
+  {
+    "jp": "帝国本土防衛軍",
+    "cn": "帝国本土防卫军",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:10e8d",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "5a4a7670c22860858591c901a2bf29d9429eb7aa7986689f3d3eb1573cccef42",
+        "en_sha256": "bf0ad4b50bd9cb5a827a70da80b5b29e917a7aada0d63c38fde9112fc7eb040a",
+        "zh_sha256": "92ea5a96bb71af35d41f7da5da08a6572c3fb47ee74a4ee18a471876c14e95df"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:7223",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "1f024825d5b0388e4f2f363a90cccb6b819dbfbcc302cf88a4cf39a50d1d3f0e",
+        "en_sha256": "b674e02b6fceb233ba8ff05d0feeba6879804262ad94f2fcea861542f8305306",
+        "zh_sha256": "05739d2ba0cb9ad874c9d284c4f9130f30cb9e41105537fc539bc43ced6446f3"
+      }
+    ]
+  },
+  {
+    "jp": "帝国軍",
+    "cn": "帝国军",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 34,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:10e8d",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "5a4a7670c22860858591c901a2bf29d9429eb7aa7986689f3d3eb1573cccef42",
+        "en_sha256": "bf0ad4b50bd9cb5a827a70da80b5b29e917a7aada0d63c38fde9112fc7eb040a",
+        "zh_sha256": "92ea5a96bb71af35d41f7da5da08a6572c3fb47ee74a4ee18a471876c14e95df"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:7178",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "fe426560f0ba304ba31d7fc0aa8cc92626ca2353f5cf74bbc612e1d510d2acf2",
+        "en_sha256": "e02d7403610f52e4d24b2906952c8d3f4d1a0d7561d9ee6f3c4fb1139c1b5d29",
+        "zh_sha256": "10cfff0c23d4dfe60d852254be88ce7719fd85e4cc01052846ec566e746fc587"
+      }
+    ]
+  },
+  {
+    "jp": "強化装備",
+    "cn": "强化装备",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 13,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:76eade0e:aba",
+        "record_sha256": "884dad5e82247041fc26a1ce6e2948a5e2d30554691eb450c0ce11fdd7f0aa95",
+        "ja_sha256": "038a8a2cb93f33166e91979662e96cd14008ac5cdd0087bbb75cda5b3e7ccf57",
+        "en_sha256": "7e8b53268f58e8423674669c75d5efb0dd3d84a0bb69fceb178001bcf02e06b7",
+        "zh_sha256": "8c025ebf775b483feed691e4259c8119e158256543517e2dea9daa2916738f7a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:76eade0e:2200",
+        "record_sha256": "884dad5e82247041fc26a1ce6e2948a5e2d30554691eb450c0ce11fdd7f0aa95",
+        "ja_sha256": "536b22eb8baf39db31d9ad3e286e086b2fb37d493f3a585daa6172dabaa8218a",
+        "en_sha256": "5d47e77a5c74ffc6c6038eddf98e0dca450f57753263433e3f68756c00192415",
+        "zh_sha256": "006032b3caa393c6d21fd2caca3bcdad7ddffd33e77a932d89ab207d1a8b92d0"
+      }
+    ]
+  },
+  {
+    "jp": "彩峰慧",
+    "cn": "彩峰慧",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:2ad6e",
+        "record_sha256": "2c40395ed168bd0053b701e87e8ef3644aea60d961e73dc1632b644df69c0912",
+        "ja_sha256": "d23e9ad6cc80efb934a82b18d209acaf27e44f3434343589ecb70fac4763c051",
+        "en_sha256": "64de50bb9b3860bc5234be5960acbafdbb7f8f5044ea98d2a8da7afa736f490d",
+        "zh_sha256": "3f261fd9b58d6c52342b6238984b76868fe2bb8650a2aec959f669e7e9725c16"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:144c5af4:21cd",
+        "record_sha256": "c814d252d27610c257dbb7ae4f915bf9698a60fed4c0fb1702bb52f3adcdb75a",
+        "ja_sha256": "ac9ed9d8f137e5f3510846ef7daf894045bc74e5264f5dcee1d358548d03a0af",
+        "en_sha256": "8c53eccff0e0a350395b9031961508f09928fb1dceb54bcbbb52b0399ca78bf9",
+        "zh_sha256": "f5be6a328da6591e41fa6c6b2e2e6965f6159b48c34aab6af3ebbd9754fc2140"
+      }
+    ]
+  },
+  {
+    "jp": "御剣",
+    "cn": "御剑",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 275,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:e6cf",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "be3807d7134fd2fed05cb04d148ca1809b840bdf208df1b65d7d8532829196c6",
+        "en_sha256": "3cf58dcac342685aa21493a689138ade094949dc5a45c2b218cdf13f9b353a8f",
+        "zh_sha256": "6e270b5c3a6ede22a2854774db2fbb38a3b7cfb8a29a9bae48d41e111a304735"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:ecbe",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "6d687cac05dba2e8689ca1d22693cbf119bd9e12eebda97d2e78158395565774",
+        "en_sha256": "9c7c0ba68f8523afe5373b22f4b3baf53227f613fcff02bf7a9a8dcb749e09f2",
+        "zh_sha256": "e72e888e6bac31678385abef9b381884b68922cb18110aba44b2efeedb3073f7"
+      }
+    ]
+  },
+  {
+    "jp": "御剣冥夜",
+    "cn": "御剑冥夜",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 10,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:e6cf",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "be3807d7134fd2fed05cb04d148ca1809b840bdf208df1b65d7d8532829196c6",
+        "en_sha256": "3cf58dcac342685aa21493a689138ade094949dc5a45c2b218cdf13f9b353a8f",
+        "zh_sha256": "6e270b5c3a6ede22a2854774db2fbb38a3b7cfb8a29a9bae48d41e111a304735"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:19289",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "58affbeb7f39a320132653609349cb995f2ec0b53292428cc7846f59e5dd9a18",
+        "en_sha256": "1727a0dd01d3ee2e2fd1586bc359067ddc093cccc9bd60628f8f426e1d46e005",
+        "zh_sha256": "84dfc8218f15868a4ed3ff56e931765568b55af7c6b29e356e1427b8625afec5"
+      }
+    ]
+  },
+  {
+    "jp": "御剣財閥",
+    "cn": "御剑财阀",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 24,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:ad53",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "ead255dbf8177fe86fa096d628066a07a985be7e5514d2a222b80dac4091f658",
+        "en_sha256": "58e4057ae31b41204d16aaf21cfb45879e31f88fee506009be699eb2ed348600",
+        "zh_sha256": "9725cc6ac87b14119263920c00f2b9c7112c9eaaa86ae6b2ae919a847c14295c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:b6a2",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "8a1e25fe86bf081966cd795830bae908a634a50006072874c678f6799711b4d7",
+        "en_sha256": "ab2432c46befe57e203a251cd4989ace23ace93242cfaa42daa56d99f6c18109",
+        "zh_sha256": "9ac2907900d11e5ebf01ad3eb73d19cc7a7bff984777487baaacee35b80e9c28"
+      }
+    ]
+  },
+  {
+    "jp": "恋愛原子核",
+    "cn": "恋爱原子核",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:58847ada:a789",
+        "record_sha256": "0edb9c15eef07248283d1029df16c817d9fd8bfd9a4e2f37053056d36e60f771",
+        "ja_sha256": "1a92f86738a3141812b9766cf27623779a8e3d56b9b022c93ffd3f00a43de127",
+        "en_sha256": "6d039de0f99088fc0b8130bc2433fcf14bae560c1937caf53b3d64e64a341ec3",
+        "zh_sha256": "16a3604ecf82c98f03fa5594b682ee9eeefae403485c8bbc98a0211523f3d79f"
+      }
+    ]
+  },
+  {
+    "jp": "戦術機",
+    "cn": "战术机",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 150,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:9734",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "c04439baad5e6f6ff2775469cd57cf09d49793cdd2bc786c0d26aefaea6e5c02",
+        "en_sha256": "48c1c693ee0302ab426f9115ef0541acfab8147e051b57c96765428f0d9eb6c9",
+        "zh_sha256": "da660b327903b9810c802af9b24b3c15e2f69b743861723a7bd68043fc73bee9"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:980d",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "edffc8d9e00a6b0932cc650e30d5225a86097118b611f5909205e943c81a65bc",
+        "en_sha256": "4c317e6c22aff222f04d1f8a2cf9660908224c825cf39179206b88e3b4adea7e",
+        "zh_sha256": "34bb69ecda62103a13952d8b0f2b9b751c9f8694f063398f60f28aa499ab9c32"
+      }
+    ]
+  },
+  {
+    "jp": "戦術機部隊",
+    "cn": "战术机部队",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:2b6c",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "4cceec95e2e02a66e85476a09c968161e5f84cc978a29ff64989e5675bf0d18d",
+        "en_sha256": "9ba2367459f872fee01ddd467871ed84d8b2b917fffa33a148f1786ffe253ecc",
+        "zh_sha256": "7e9faa8e3d6e70a28dd928cd2afaadae00bb4b440d3ed881bbfbd0e81eb7b06b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:3b2a",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "288be9b577f3b3b6b903fd70737297269cc3b207a945a55434f4a59831b108bc",
+        "en_sha256": "f580502cb6b0d61e397c20c570bde09bdf8733d058a56621df7fa668d5952c66",
+        "zh_sha256": "8020c83c7956b14f2a002efbe19fe224c322d608c9378e5ac0bf315d7c1ea998"
+      }
+    ]
+  },
+  {
+    "jp": "撃震",
+    "cn": "击震",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 21,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:3aae",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "dec9d6f1015b1ac6166b7e7e987f9cb3ea7de868919e9584905dd382d226c6a8",
+        "en_sha256": "2b3325966628b8afe6758bf815eb06ba527deee30eb520abceabc1e318e4bb8f",
+        "zh_sha256": "785be4a81ab30254e33feb59113763836a8f595c1ee7981b11e01e87d6a2d683"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:3f6d",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "eee60875992c64e430426e2b7eb4165b7511bb67141ae8a84e640dcb0b219b9a",
+        "en_sha256": "05bb64c24129c296adba626a1d3e8b7600eea4be80f86b57e9904b84354b39d5",
+        "zh_sha256": "a03703b84c1a5b3c56dde38840e94da503e75ae9248a7061bf496ea80f446dbd"
+      }
+    ]
+  },
+  {
+    "jp": "操縦桿",
+    "cn": "操纵杆",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:76eade0e:30f",
+        "record_sha256": "884dad5e82247041fc26a1ce6e2948a5e2d30554691eb450c0ce11fdd7f0aa95",
+        "ja_sha256": "0fc9c1f9910b5695bb9964dcbc6b5b15b99525189d54817975a6ebf68d5a2dfb",
+        "en_sha256": "ed494b44fb9c16e5776a59d4b3b6c840958e362d968fec13ee9a336e43196a01",
+        "zh_sha256": "52df678bad71a146d318103c473841b6133618b9900c9858d9644f22e6babb37"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:176e1",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "85c0463dd5d97a4b041a935dfe1d9f4b327483bd21b196067c26759499db7a30",
+        "en_sha256": "5d2718704e844ca229f1db48e81bce831601d60021359570407ec37e1abc0c5e",
+        "zh_sha256": "2b74023d5c72fca0246232e239b8661494b5258a06fe5259d0d04d9b9cfc22e9"
+      }
+    ]
+  },
+  {
+    "jp": "政威大将軍",
+    "cn": "政威大将军",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:bfe1",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "8c38bb1dd82ca6650071a4eceb84edad0e1fc9dc724be7318e2516d329ffdde2",
+        "en_sha256": "0ddc99ca510f5ee1ee0e0e4b35b64ce89780a1d560d375e37edf39a89b2fedcf",
+        "zh_sha256": "9de85562b7817aeda92a79346c2384c1ffc3cafa405de6a843fe09db3288d44d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:c0ef",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "d747f91bcfbdf444c7dd02739bc3723c9c6cf60e497dc444f0692cfaa52ac96e",
+        "en_sha256": "fc737b1b92b758e7beed777ab1b6787fe5d6e303894a8bc18f812d57906268d1",
+        "zh_sha256": "33bac73ac89caf35434e597a16e782e38fdfe94b9138e0d100f1c03de7921c8e"
+      }
+    ]
+  },
+  {
+    "jp": "斯衛",
+    "cn": "斯卫",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 11,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5902",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "f49eab8128a8348d6c2bb604f123bdb18b3862c266fa75990e038bc8391dd020",
+        "en_sha256": "857d05eea660322fbed06d08b911eabd1a8faed43f0f521e6425615560a5e940",
+        "zh_sha256": "40be0874d2914329b7f9c2d03a0feb9040545575fcd805c9c2462c1955610908"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5e9c",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "924e964af74c4446ea0e897e75e0715347946d020ad00cd0c3a29d2b6c8f30f1",
+        "en_sha256": "aacb61e8031f084c6a95ad5211d968b6972d7c7830ef1c5cd93f9401fff000fa",
+        "zh_sha256": "d5979f8e1d7f669c99dc04f3caaaf1b6acffbc1f089a66236b516f1bad6a29df"
+      }
+    ]
+  },
+  {
+    "jp": "斯衛軍",
+    "cn": "斯卫军",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 9,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:5902",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "f49eab8128a8348d6c2bb604f123bdb18b3862c266fa75990e038bc8391dd020",
+        "en_sha256": "857d05eea660322fbed06d08b911eabd1a8faed43f0f521e6425615560a5e940",
+        "zh_sha256": "40be0874d2914329b7f9c2d03a0feb9040545575fcd805c9c2462c1955610908"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:be8b",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "50932deab33a9d57344a05f49129a4a38748a216cad4d4fc02e8f918f8887dcf",
+        "en_sha256": "7dbadf6f25546b836256ac5b9107f7f1d708538e30102b87bc047a61530cb3ca",
+        "zh_sha256": "1dbaf84ebea95b74523ec99051b67906ed70bb8b6561226f3128386a2c5998cf"
+      }
+    ]
+  },
+  {
+    "jp": "月詠",
+    "cn": "月咏",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 738,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:1cf9",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "965f41248cdfefd0c37b42d81f92d911feb460b15642e376d6717f40611810b6",
+        "en_sha256": "90f7c23aeac338df4dd566fdb051602a8675a75dc5e12ede74320faf58af26e1",
+        "zh_sha256": "2cf26e5b24786020ad2765bd0478de39d1b0b82189a86a49d87267d16751bd31"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:1e9b",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "33023ff8e44d7139803dbf8c4c67dbbbff9fc69a2a90cd72811658f2ccb4c64d",
+        "en_sha256": "d52c31da2d0db02959f2c90c7c9d3a3212c6d389a10bda6f9dfbf1486a1a8059",
+        "zh_sha256": "c73eeb4d47d866d3d1e4fe9958c805204cc28cb3270559ee8df5f22b742ede80"
+      }
+    ]
+  },
+  {
+    "jp": "月詠真那",
+    "cn": "月咏真那",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 5,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:40bc8",
+        "record_sha256": "5aef3cc29dcbb339fbe615136416fd89b39ebac7ba1292250b37df113f074ffc",
+        "ja_sha256": "6ba6deae2da0e9f9e25b1f6b4f183cf92c95439fc65c767b2a3ac715ca019778",
+        "en_sha256": "8fc049dd9b26a37cae9b42105d781850b7e909ab24cc483c0d11af9cff967f13",
+        "zh_sha256": "b8f4a66344748c3361ff4ebc299e1b4ffd07e1ae5da13d2b95cfbaa10ac9db56"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:207e6314:55e6",
+        "record_sha256": "2fe435121b12e3da8b3654f2412dbdfafb1d0fcc3bf7dd214ac621e58368d4f2",
+        "ja_sha256": "aca7a1b54d2ccc92c7004c8b474727218fa165346ceb420190087507eec274b0",
+        "en_sha256": "2d5ea7174e92ba5f00a8f20d15914077247a7c907e5256da2c5db3758e956716",
+        "zh_sha256": "74c6386bbfab2322c58ecc17c3d1e36cfe00dc2de7bb111ea60d16fa0484b2f8"
+      }
+    ]
+  },
+  {
+    "jp": "柊町",
+    "cn": "柊町",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 9,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:267c",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "94b5dc44a1e7b9c1cd0a746446808f67c40b79b49a31cc2e48d27b70c21b5a40",
+        "en_sha256": "2829aadb04f15a3d88d77694ee419f76c726483cd26883c74763e7fb66330ba2",
+        "zh_sha256": "48bfdd5691b0d1e337224c6b4d495f44c415896be47bd5831a7b43b8d080e485"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:6a9f",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "7eb060ddb7c9bef8ada5a69752b71f7677d77a0282ee5b0b7b9eeba255aa1f8e",
+        "en_sha256": "b4133c72df76161778f4244f7dfccba83bab5df390bf411b6bc42207f67e43c0",
+        "zh_sha256": "6e90bbf76b224cf85bc3350ff0b2f68fb102a90e4ce428ed68d04e2a8a9d84bd"
+      }
+    ]
+  },
+  {
+    "jp": "柏木",
+    "cn": "柏木",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 35,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:65e5bdbe:f9e0",
+        "record_sha256": "d3f64367179d0b4c98dbd36003ed024ced17a5c7e1750797ec8c9d765a208646",
+        "ja_sha256": "2844e8a62cc3378c79a2b804f5ed65142e785c0fcb09ffbe0849b9aa1da0164a",
+        "en_sha256": "641778ce8ae18b2339956f1b832a4d01747ead8a74cc188010caf9ac9a075484",
+        "zh_sha256": "ab77ef07e1393273c6f3b318d01e2eac6a497f6ed52ca5fd87a57e913a375ade"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:6ca9a1da:c90e",
+        "record_sha256": "8976a5e3766b9aaae1fb9b23f0ad569d7791ae732b675313e7886a639db663a0",
+        "ja_sha256": "2b96ac8abb72b29a8a1713790388656001812a6565192aba6df61b53d2942fd5",
+        "en_sha256": "03cc5a56ea266fd0c79a0b9e35928277913c079bb8a6dc86948e8cd67b01fc14",
+        "zh_sha256": "4cb2734b346f8a5e83679a81dcd01e74e3c2d1471bd6206bb00bff73191b6630"
+      }
+    ]
+  },
+  {
+    "jp": "榊千鶴",
+    "cn": "榊千鹤",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:a1e0",
+        "record_sha256": "5aef3cc29dcbb339fbe615136416fd89b39ebac7ba1292250b37df113f074ffc",
+        "ja_sha256": "de07e198a1f3daf54a4554fd2e1e539457822568567563ec3e6de592c6237908",
+        "en_sha256": "7741e4cafec2d1ca39d028b8fac7743d91304ff72b255c9a490df832c799c720",
+        "zh_sha256": "ddfc2aa5cccd895ffa618ee87314c14e8e7a351d26192c751eabb971e9f0fa23"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:c811",
+        "record_sha256": "75fd90c70047cf72c6ffe3cad39c1b8ca50feca26d3f736faa73af588ba4904d",
+        "ja_sha256": "5d4d72094e0685a5f2b830b9107e574af65ad605e3dd043aab02da84d10d053e",
+        "en_sha256": "593f5743d21092b973c68bf2a7bc7cccd0a8fa89b152786616a1731618c9a5ac",
+        "zh_sha256": "bdb66862a69c79713afee2598127d273d64c3d83781f6394a579e2708b212112"
+      }
+    ]
+  },
+  {
+    "jp": "横浜基地",
+    "cn": "横滨基地",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 21,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:bb1b",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "1b6b72bcf8471bc5ebe8764a340b7800a250b0f1dafbcbcdb140a88598a55e38",
+        "en_sha256": "f9a31fda1ba7a00ee47a6620eff47b9f920496b44d2163f999cbd05a1749f3ad",
+        "zh_sha256": "f1a6bdc0c9ecbefd8c7394793a50c3d6de6d4be7e0329e16efc77f0e11b35373"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:bc69",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "39d09896b819a519666629ea7d2b3ac3b6bda016144526d2092d7e6b933e44fe",
+        "en_sha256": "fc4245332a33a9f65a517c107df924a666e3abfae56e481d85a98d0c80974e75",
+        "zh_sha256": "e1d72604ddbf0c6f63e4ec9c6214a1eadc4f1c27a05c9890cf55a42af952a909"
+      }
+    ]
+  },
+  {
+    "jp": "橘町",
+    "cn": "橘町",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 15,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:9163",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "ed6c90e13df671455c95711c961e89557d450faf13d660ad4fb48d4fc4fb95ec",
+        "en_sha256": "cbef0474198b2abdad08e513cb1f8e69f454f3fc33683e702c7638cfe9e70265",
+        "zh_sha256": "9e6a3573da29750cc3665a7596c72729927f1d12a3b9796b0c5d60901e9babcc"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:9245",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "02d242dae5614e68cd9e4f4e9adf04480ecd0f54b6cf388758dc6c5d34447645",
+        "en_sha256": "eaea326292a40fefd1104c5d7a51444b59db73af628bf93b598d4351c444c89e",
+        "zh_sha256": "227eb73b6d9557ba7323a49c7ed54bf433c17ddc2b49a1695e8c60d945e1d272"
+      }
+    ]
+  },
+  {
+    "jp": "機械化歩兵",
+    "cn": "机械化步兵",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7a2c2d0e:30f",
+        "record_sha256": "407bfab4849b61e931db4fc7fa606dba4bdb07add63925318942680f6cfdf4fb",
+        "ja_sha256": "1367a78770257b13b79198a0aec4f586ac4a2389790f4f732e9c70e7a8b32c64",
+        "en_sha256": "a0d41a3482af705e324c5e8891e44a77d8cbc84e20a6c2301aa573f6da4cc3ae",
+        "zh_sha256": "be45bab7cdf6c0d25140711e4504f0d03941be6095b077778e3dfa7b19c3481b"
+      }
+    ]
+  },
+  {
+    "jp": "機械化歩兵装甲",
+    "cn": "机械化步兵装甲",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7a2c2d0e:30f",
+        "record_sha256": "407bfab4849b61e931db4fc7fa606dba4bdb07add63925318942680f6cfdf4fb",
+        "ja_sha256": "1367a78770257b13b79198a0aec4f586ac4a2389790f4f732e9c70e7a8b32c64",
+        "en_sha256": "a0d41a3482af705e324c5e8891e44a77d8cbc84e20a6c2301aa573f6da4cc3ae",
+        "zh_sha256": "be45bab7cdf6c0d25140711e4504f0d03941be6095b077778e3dfa7b19c3481b"
+      }
+    ]
+  },
+  {
+    "jp": "武御雷",
+    "cn": "武御雷",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 17,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:4385",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "44f67be7e31bdb02eba623b753e2cca52de8fb01f3c23854ae0c382481eae39d",
+        "en_sha256": "9dad9e5343854f81366798b80fac2d6ae6451597e2371ed4e0fe3ca83c390753",
+        "zh_sha256": "611c185d1126a38987ce50ab201a043d0de4e1c8ebfb4d6ff69ffd4963acdeb6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:4469",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "0853f8212218f928ed2a7a01b0375d5c9c2bbe28fdae1744ec1590ab675267b2",
+        "en_sha256": "5fa1614afb5d50f0311cc5f74728ab609cba249c9559962a2b1746177cd3b070",
+        "zh_sha256": "6dc11973854333f253b7ecd26c801d2057fef515984c9c9851505c4564805c36"
+      }
+    ]
+  },
+  {
+    "jp": "水着撮影会",
+    "cn": "泳装摄影会",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:65e5bdbe:e340",
+        "record_sha256": "d3f64367179d0b4c98dbd36003ed024ced17a5c7e1750797ec8c9d765a208646",
+        "ja_sha256": "1420cd3c00abc10edb5e765755c2290728d6f0213d66d3f525a5be42492f1d28",
+        "en_sha256": "7a602dd3780d74c5fc286582cbf984587f93c4a921ab4563591057a2c91d7472",
+        "zh_sha256": "0ae5f02b4a9369c1fb8e97cb6ec0950e6c6fb56e569f22f8270224902b6ab9d3"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:65e5bdbe:e3ef",
+        "record_sha256": "d3f64367179d0b4c98dbd36003ed024ced17a5c7e1750797ec8c9d765a208646",
+        "ja_sha256": "cb67398eb2819090eb8bed3e345381e8eb7eec1d8a9e1380d59f03bbcced0a4a",
+        "en_sha256": "0dd1374ffbbded4847c3711b86e5b1436308c0bc91ffcd5acbfb65c5dc38670e",
+        "zh_sha256": "7d3ad602a312069f4bdbfe738ad487fa8d3d41ceedbfe4a3c30cb6d95e0ef20e"
+      }
+    ]
+  },
+  {
+    "jp": "涼宮",
+    "cn": "凉宫",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 135,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:f8fb",
+        "record_sha256": "8c810a99d09b3c1452b746cd6c73f297d0a4369930774a9f3bbe86412641d173",
+        "ja_sha256": "9b7e64c6ceda497969086b1775d7fa043cdb37fa58bfc29155a9db4d1965942f",
+        "en_sha256": "6ae4769b2155c6b73a74bb2769f3d0b9d04018c6492538868822dadf19eacfe5",
+        "zh_sha256": "a3dd2049efeaa12ab0c3d8b4089ade40b5662c9cc236ac4be7fa4d4753c3409f"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:f977",
+        "record_sha256": "8c810a99d09b3c1452b746cd6c73f297d0a4369930774a9f3bbe86412641d173",
+        "ja_sha256": "46625736d2719550ef4ac8b51d2751e0319c7ae4ab36bea0a8e081ea800408b3",
+        "en_sha256": "10bedc2e25be266f636ffa577cc04b248ede92d73be24ae0c8ac8ef6888d4be5",
+        "zh_sha256": "3ad87f7aa0f2d2d5085d68be08b7390f58408c8388a9f758fc5636ef654ef430"
+      }
+    ]
+  },
+  {
+    "jp": "涼宮茜",
+    "cn": "凉宫茜",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:67c46db0:4751",
+        "record_sha256": "a92af21b446693a4ebcd7ab87c744ed81b1d7ee71c99bea57735e0cc26bc036a",
+        "ja_sha256": "6f08bbca9c5c3fb42b85c1a6d1784e265a23b9a6d3d8dd1cd36d13ab2fa793d7",
+        "en_sha256": "1485dc9d93327237e37f60948a8ffb890e2d2e523945a2c3d72472041e7ddc71",
+        "zh_sha256": "1c2b6e9f7d8068abcbdb96539d49504ec2d6f2c297d37d85e5c1b1a5eb85f6a4"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:56a67de:3a20",
+        "record_sha256": "ee9c4431a637455f34f237062329af021994af3ad3f8e990835f2cd8f9eaf267",
+        "ja_sha256": "7c6d7adb5cc339af63abdf65e1226f3584f1e1d2aa83f100aff9b9256551533c",
+        "en_sha256": "e86c9e4f3f70eaf58b224a4830bc2993b5b00c99e48c8b32ee0e11fbefbf8560",
+        "zh_sha256": "8bbc723361505fd31aa07f25f9d09645a7046e1ec007c117d5f62bfb4bb0c9f4"
+      }
+    ]
+  },
+  {
+    "jp": "無現鬼道流",
+    "cn": "无现鬼道流",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 6,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:f1ea",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "b35b9a6233745a668984f54af13a39ff6979843c3b43f2d08eb03b253bb9b955",
+        "en_sha256": "8d1d8c8e6aeab41c4424a8699624149203469b95335eb4e8f2564905e72d7d20",
+        "zh_sha256": "c151c7493e6db480c56dd2b6480e66db00cf2caed0c8eb6e232eb80d22620706"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:63c7412:48a2",
+        "record_sha256": "b1555ecaaa819e701613b4b9c0931a95e7a65ece845a6825ea49b149564f24e0",
+        "ja_sha256": "fd6382151bb67bf81deed1fed20203d00f9a33a3c1d1cf2e0758bc926095df5c",
+        "en_sha256": "e26972be6e86bda2de5954b6d145911cf0451942781b95f261aebbc330aa511f",
+        "zh_sha256": "b925ae5ca4cf93bc8052ec8dc14654c17c5a27fdb65ad37592804ce1fc201630"
+      }
+    ]
+  },
+  {
+    "jp": "珠瀬壬姫",
+    "cn": "珠濑壬姬",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 6,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:12546",
+        "record_sha256": "43908e9757266c080817fb4830ef658f3e386d53b120100964747aaaac11c586",
+        "ja_sha256": "9c6f9c9d47c38a53cf5592324bef54c33ea283d28b106d94b999e75136271594",
+        "en_sha256": "acdb0404bd6a581b5fe037cbd69b9cf9bd839d78085b9b283dcb25af99b7968b",
+        "zh_sha256": "a96a84260df1df8c867411e1c1474d25e220c660a90b69de9ff832f5b150950c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:9a8c",
+        "record_sha256": "5aef3cc29dcbb339fbe615136416fd89b39ebac7ba1292250b37df113f074ffc",
+        "ja_sha256": "670009c9a77e97cefd1a8b60b6e2e215dba93eb8dbba65a1a0e2310c6f37e39a",
+        "en_sha256": "9cbac5c269a374cc6a1358b0fada6b6292e863ce77dd85fb9eac9aba291a1586",
+        "zh_sha256": "b9acf441e4d466b68e83d83b14673ef3d07288d96481739d509f6157d634e725"
+      }
+    ]
+  },
+  {
+    "jp": "珠瀬玄丞斎",
+    "cn": "珠濑玄丞斋",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:ed6e",
+        "record_sha256": "6f6dd5075d48ed8db5f513368148833064de6e16b22495eb86e393ccd9143daa",
+        "ja_sha256": "aa3f69b78d89b9eacda13f12fe124ab27d1a9898914cab266c14da41da11ea13",
+        "en_sha256": "128dd9b5c4e41cc96efe7acee1023d27aa1cf3bded9fa40db8344aa4ec027378",
+        "zh_sha256": "c0e4d1067635c697d44930fd2e696d7f3c2b6d9488c44b550151d7403dd1bb2b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:12f94",
+        "record_sha256": "6f6dd5075d48ed8db5f513368148833064de6e16b22495eb86e393ccd9143daa",
+        "ja_sha256": "29eb258fb6889b46f3c116cae6e6cd6c8c9396e517d99be658af1a6c7dee417e",
+        "en_sha256": "fde8cfb7deb3c1b8a0dad5b63a52ec58a1693edd80fe4971f207be60b0809f25",
+        "zh_sha256": "af43f40f855faedc1b8ada6be156514f438adbeda3dd94b43e4e4f52edf324a6"
+      }
+    ]
+  },
+  {
+    "jp": "白秋祭",
+    "cn": "白秋祭",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:65e5bdbe:e0fd",
+        "record_sha256": "d3f64367179d0b4c98dbd36003ed024ced17a5c7e1750797ec8c9d765a208646",
+        "ja_sha256": "2a577f698bce44831ccde31f3c8e4f00ed9ec40ef6441de721c536f119b3bfda",
+        "en_sha256": "15e9e04c4868d07fa51e0482aac757fb280703e614b195be016c3acd7d139c60",
+        "zh_sha256": "fe86db02875bfa705d1c0f5234a27e680c71ffc9c0d474e106be6d3252036c03"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:65e5bdbe:e178",
+        "record_sha256": "d3f64367179d0b4c98dbd36003ed024ced17a5c7e1750797ec8c9d765a208646",
+        "ja_sha256": "532c58364a11346bf1fa86ed803e1a2f81392165c4eb8a70a8cb405ad19b2bca",
+        "en_sha256": "83311e0abf68c83c9fe702b5f0e9d64db2c1f60d97eb6ca91648b9405bcacd0c",
+        "zh_sha256": "532c58364a11346bf1fa86ed803e1a2f81392165c4eb8a70a8cb405ad19b2bca"
+      }
+    ]
+  },
+  {
+    "jp": "白銀武",
+    "cn": "白银武",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 34,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:54e1",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "d793624dace4d75749dc9c2b2dc176f9d4e7f7ac0696445f8e9b57a6a4aeba0c",
+        "en_sha256": "80f18a8b604cc0c990013c251ef8f173b38b0ccbb35c0a0587d2fd8b53122246",
+        "zh_sha256": "9af89925c1feb0cee64510763c75fba4c1f7a6574ae66b0da8b162bd1dc06759"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:610c",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "28f895fa7ac8f0862436787bc7004be08b0050f4b3600eefc7ea97d6d8e92a02",
+        "en_sha256": "147b342fce74d0863e43d4fafe029fbb9c3d8966720217361c660fd6fdef6796",
+        "zh_sha256": "48a1f73fb906eb5a30d3f451835877087889d3d48885547cd7fe39da6381135f"
+      }
+    ]
+  },
+  {
+    "jp": "白陵",
+    "cn": "白陵",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 46,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:12c9a3d2:efd",
+        "record_sha256": "20b5f5ffb36df36a5f9a13f72fca61322674bd9cdbfd7c5fe87c2da468f98600",
+        "ja_sha256": "fff925a1e53d973632a22b1a61c3e2fc36fcaf2a403e7acf8b3aec9a331fc417",
+        "en_sha256": "06392f25b573e76a8b3e83b2336b166bae9a533ce8b240bf649274f8986a1d52",
+        "zh_sha256": "8a12a4b7abe5cb5471b48f816c9206980d60db034a257e1254c2504e5c6b493a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:12c9a3d2:f99",
+        "record_sha256": "20b5f5ffb36df36a5f9a13f72fca61322674bd9cdbfd7c5fe87c2da468f98600",
+        "ja_sha256": "a52328e38945952a7001562dc4d1a08cfb556ef56cc83b4ad319111d80502e98",
+        "en_sha256": "a3e8528189f2bde2fde4b2d35c70d9315d8e748b34c8648c396e36be3df7ccfa",
+        "zh_sha256": "8b405497280b439c582186340ea95879385c9b24915dfbb99dc07b904ab8ffba"
+      }
+    ]
+  },
+  {
+    "jp": "皆琉神威",
+    "cn": "皆琉神威",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 7,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:f2d5",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "cee7cefc1578019152744770ea93b96bcdd7ba4baa95ea4a500bc8b47ea51103",
+        "en_sha256": "72e77cc18a1ee580e065dd7bd7add978d0ff62291580ec18eb1db4928ae3c9f2",
+        "zh_sha256": "ddef9d8dd7139cb06d0da233291c4f161cccf6baa29e19676ead7333ef38b2d3"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:588b",
+        "record_sha256": "2c40395ed168bd0053b701e87e8ef3644aea60d961e73dc1632b644df69c0912",
+        "ja_sha256": "9b8a96533615f3a06c928cf93303bd8e1738dc8d9c9c14cb78cf2fb9d7c680ee",
+        "en_sha256": "417b0f34a52bde7474f3c3bbd616e4db33671e1ae880f68c1d7313bd15a1ec6a",
+        "zh_sha256": "0643c47e11f8fa26a7616b34400e5fd5f5c3d00db3570f5b9d3395dab75183a7"
+      }
+    ]
+  },
+  {
+    "jp": "短刀",
+    "cn": "短刀",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 2,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:c623",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "a64a4c058975d34e568112865c0dc84c96110ad1549f766ed43d48eedb94b46f",
+        "en_sha256": "244196e8ed1b77ccb2f5871fca037c5745c32d47762bed68b433c13309e7862a",
+        "zh_sha256": "f48f0c98355bfb22fc0f6492f4ca6335ae2b13cd538d4b5d1558f8813f9c44cb"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:acd9734:797b",
+        "record_sha256": "a611c9da96ccd7a9d5f63da1a27ecc74c9029b12b88fb71871fade4a0a747636",
+        "ja_sha256": "352595a344939466b46f9d61b25267e6738cb40f0e57c2684687e2aecef5b371",
+        "en_sha256": "38bfa47c5f230080603ed2089a48cedac93fc89271d3238c751afb46ed91b26f",
+        "zh_sha256": "b667af4144b6356a40fb325abe919431f8b437b1429022ae561b5d263d3e7e1a"
+      }
+    ]
+  },
+  {
+    "jp": "社霞",
+    "cn": "社霞",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:1afdc",
+        "record_sha256": "8c810a99d09b3c1452b746cd6c73f297d0a4369930774a9f3bbe86412641d173",
+        "ja_sha256": "2055099a1c50be7bb4b77e77a601a250e66e46122c8292f06b6db1b9c4b76f98",
+        "en_sha256": "4387b8df5de26d78767e321bba3a95c501318a13db13a13efb6ff6fb906f5378",
+        "zh_sha256": "2055099a1c50be7bb4b77e77a601a250e66e46122c8292f06b6db1b9c4b76f98"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:76eade0e:176a8",
+        "record_sha256": "884dad5e82247041fc26a1ce6e2948a5e2d30554691eb450c0ce11fdd7f0aa95",
+        "ja_sha256": "d487e7678e46627f06b18d04b147677e8e682001b18a692c18b51754173eaeda",
+        "en_sha256": "a264caacd1a4f781fb44df4a599008012318264bd45fd4d589ca6ac4f26646f5",
+        "zh_sha256": "fe9332d8a666da4dca54bccbc2b38fa2935977e261f8a9acd6a2be0ea0139bab"
+      }
+    ]
+  },
+  {
+    "jp": "神代",
+    "cn": "神代",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 226,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:f93f",
+        "record_sha256": "5aef3cc29dcbb339fbe615136416fd89b39ebac7ba1292250b37df113f074ffc",
+        "ja_sha256": "ae37a314bca406e36a8e459107f775549619295bc757059e81c8952d58cf53d4",
+        "en_sha256": "0ca53f71bc6fe9e0ba11996af374ff2960b651a186ce3983f751d96b33aeebd1",
+        "zh_sha256": "0236a9140a5c747ec17fd0d935d64e7e9ef0837289f1a48a1cc0b598fa2c052c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:1c048",
+        "record_sha256": "5aef3cc29dcbb339fbe615136416fd89b39ebac7ba1292250b37df113f074ffc",
+        "ja_sha256": "ae37a314bca406e36a8e459107f775549619295bc757059e81c8952d58cf53d4",
+        "en_sha256": "0ca53f71bc6fe9e0ba11996af374ff2960b651a186ce3983f751d96b33aeebd1",
+        "zh_sha256": "0236a9140a5c747ec17fd0d935d64e7e9ef0837289f1a48a1cc0b598fa2c052c"
+      }
+    ]
+  },
+  {
+    "jp": "神宮司",
+    "cn": "神宫司",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 45,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:70d6",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "6245c44aeaab1a5843aec3afbd8b3e59f7acfe2355a0992c6232c610d19c8078",
+        "en_sha256": "c0c3643e34d6fb0a4b51d99da3a0db6964797313002fb8c32ead99b1e1a260b4",
+        "zh_sha256": "d81919340299048cb026a72b9ef082836cd926889866f1639a3400315100844a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:b4df",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "7e85f50cd996f9332668d9cae242610fd388bcb26edc4cd37d11067dc0a910b2",
+        "en_sha256": "9021ee847850c76a3bbaced305a65c31c5de7bc6dc9bf5950ddd5b81edc39093",
+        "zh_sha256": "8fec43a46324aad7ec01ec92f7d7c198f0d07066e794bffe9b9584d39804d50a"
+      }
+    ]
+  },
+  {
+    "jp": "神宮司まりも",
+    "cn": "神宫司麻理茉",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:70d6",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "6245c44aeaab1a5843aec3afbd8b3e59f7acfe2355a0992c6232c610d19c8078",
+        "en_sha256": "c0c3643e34d6fb0a4b51d99da3a0db6964797313002fb8c32ead99b1e1a260b4",
+        "zh_sha256": "d81919340299048cb026a72b9ef082836cd926889866f1639a3400315100844a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:17350",
+        "record_sha256": "ec5411c734db138d79d9417cea9de4ed8cf21858570925e2ace5d92eb12502a6",
+        "ja_sha256": "c970b392a26584cd5cca83772e8752c92325c4e04f9da7f6feb23688ac08b9fb",
+        "en_sha256": "66e962f4ef50d3fba75e177cee66617a07b7936bcc882feabb8da10d4b9f62ce",
+        "zh_sha256": "fa15cff4d2db4cd73242ffdd2666566f8c9c383146ab620c235321c0420e3e89"
+      }
+    ]
+  },
+  {
+    "jp": "管制ユニット",
+    "cn": "管制单元",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:42b1",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "6133c89e64204588c0e53fcdfe4ede4b407d95973a3ea3ea3ed024498a36fe72",
+        "en_sha256": "528ccd400bd0612590d4a14dec9f41dfb2dc79cd628fa453c49dd4eef5f7dfd1",
+        "zh_sha256": "43e584896328e0b3dae0583c8cfc4f220f748f77c4bb93c24c8458c139b582ae"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74eeb806:4b95",
+        "record_sha256": "b12fccea32812043bd39ab52c9131dea5126a7694ffbe5cc939259fe0db669a1",
+        "ja_sha256": "0ec4697b4ae5329ec0da7001e60e4dec6a052f475be49aedd713ab86cba5752b",
+        "en_sha256": "21719cc5361c76d203aeb4f623d26eeb6d4500cf8136f55e8894edbc16bebcee",
+        "zh_sha256": "08347d58e07cc6acdf5915d89067f11eae1c9f94b6d3f19417243c804848ff5d"
+      }
+    ]
+  },
+  {
+    "jp": "築地",
+    "cn": "筑地",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 13,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:72e64052:7a29",
+        "record_sha256": "ec18b61c9ac0147a5ca48217065e9177f9877082ee2ca848dc4cc163409775cf",
+        "ja_sha256": "da71a642d6ec13405f90186a91bc9d4f53a06ceb59c60f71a3b4a16e8cde10d3",
+        "en_sha256": "76a90591d859758928dd4f5823f04267a67743f2eb9f3a359f2341d95d51cabe",
+        "zh_sha256": "831a4bcbdfe8ca261fe9b5538e45ab2b2403ff1f414861b24ec9281b5e78bdda"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:72e64052:11fa4",
+        "record_sha256": "ec18b61c9ac0147a5ca48217065e9177f9877082ee2ca848dc4cc163409775cf",
+        "ja_sha256": "6d26476483636a1ed70f57860ca806965a642ad5b10faee4146a60720ea516f2",
+        "en_sha256": "443e5a90ae8de27a2719401f86c4870fe491bbcad65586c6d9eb6f35ec129490",
+        "zh_sha256": "0e46510bc81ac1be438268890051fbe16b55382c03f1d221cd60569f5bdc4437"
+      }
+    ]
+  },
+  {
+    "jp": "米国",
+    "cn": "美国",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 7,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:eba4",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "5db5dc43c3c581dd30c8f9756fd597cbb980268fa1c035626322dbdf0488e012",
+        "en_sha256": "a6615090c28906609b838741c7b0f68f69a47037350760d9f582d9addb60c983",
+        "zh_sha256": "343b1c2095ea9b7b98d86d72af40fb64b0e1e9703a98ba7bb20db31ffa3c344d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:7434",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "eb0cf2424929bb2fec67e89b3c586ffbefa53d767e24c033b01178256392626f",
+        "en_sha256": "7a98aaefab83415169170dee94cb30444395da7e101241ea49d58c6d1daf9088",
+        "zh_sha256": "412bc22d3232c1b423f3dfb4cb0e5d630df309e7c8f75360efeb2b50f22411a3"
+      }
+    ]
+  },
+  {
+    "jp": "米軍",
+    "cn": "美军",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 11,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:ffa5",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "7c0b8043f381d963b0256490bccf5c321b500beaa45abdcca6041d9590abf593",
+        "en_sha256": "4e4b1181b96af83ec00f9491f2a6b30857fcbe4e80ab9d5c0f210f399200c252",
+        "zh_sha256": "6db0242a2f24f15341d9d1a0a933d5518ac2ce592b3fd5251d9f4f67e9a2ee12"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:1091b",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "0408f488defc49d9d0c416dee3ae91e9b29c1aacc4b483e22b47314573b062f8",
+        "en_sha256": "7b939aa4ea61a3b5b5014ecb90495e9988c5c055458e5ec11353dc1c72047aad",
+        "zh_sha256": "4b11d0d911e5edfe60033d752a134949f5a676660d392698a61532a9603cfd1a"
+      }
+    ]
+  },
+  {
+    "jp": "純夏",
+    "cn": "纯夏",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3373,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:552d",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "5d39f429480dd013ea5efec171c6bfed6f7d3c82196337894cd0d1592eb177b3",
+        "en_sha256": "60971760d83c5ff471afe8c071ce61ecfabe7131209de266ea808e19ad7ef621",
+        "zh_sha256": "dda97ab90c5a6e83b1d69e8f69ae4fe45b302551c5e0dfd3939f0c1c30240ab9"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:5561",
+        "record_sha256": "cd1586a9388e7c6504346a4db8401eb65422ed1e5aa2597d08fdf31d39591289",
+        "ja_sha256": "d0f32632c37c81c05b5fdade65ccae7952acf2dbffaecec62bbe60282d0ed505",
+        "en_sha256": "f717855d854f9674488960795f0c0717b4d9af5cba562708c49d2443cd19fea6",
+        "zh_sha256": "767d949496ac4f4845435c9deedb28fefe4142fc3dde4d84015676ecbbaa9f80"
+      }
+    ]
+  },
+  {
+    "jp": "総合戦闘技術評価演習",
+    "cn": "综合战斗技术评价演习",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 12,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:12bc3",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "197ca4642602c923cae636bd5544de64aaae201481e3944710b4d395b8540cff",
+        "en_sha256": "36380822e26da79277fdfa11344a2cdb7d215df27c0b77d6fc21c488d4911b57",
+        "zh_sha256": "8df6e1367b267ee465689c7b0f9ca8dff07396ac7fe2327392a41bcfaa9679de"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:12d95",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "8377cda6544a8283edd4b5d8b110433d070f8a4e7d87c9f5477df7f35891c121",
+        "en_sha256": "115de404b1c4471b66d26347e43c27c4e8774c3df18f053993e57057672c3a47",
+        "zh_sha256": "048eff7e4efe1ca3a4e5d2442aa4a16d52fc1a9bc667837edec58dac2436e566"
+      }
+    ]
+  },
+  {
+    "jp": "総戦技",
+    "cn": "综战技",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 14,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5b01efac:e5df",
+        "record_sha256": "163fcf87d22a739235e8d5de310a00e0b5d01d1b5570f2ef8f365e4daa12682b",
+        "ja_sha256": "2415ca295694c3595479d877d7f89bc753a04f6cb913744e4f4b0b3c310f2e60",
+        "en_sha256": "369f95ba18626929237e7dddb81154af3d40990779729480ac1f0e72c423de73",
+        "zh_sha256": "d4cfa974a8a802899c7c32e94d1f80035c33c413970089a20b60283d968103a0"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5b01efac:e68a",
+        "record_sha256": "163fcf87d22a739235e8d5de310a00e0b5d01d1b5570f2ef8f365e4daa12682b",
+        "ja_sha256": "3d03dc2fa8c3ba9a0173f43577598017b1589bf5438211df6ddcb89aa01e6bf6",
+        "en_sha256": "9165094330871f555a1b7f43fda188857a3f767de69c743a21b2eb44654ef376",
+        "zh_sha256": "ebd43655804aa981a3e2253c2e615cc7a19144e5d75d05004ee98128be9a2fef"
+      }
+    ]
+  },
+  {
+    "jp": "総戦技評価演習",
+    "cn": "综战技评价演习",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 14,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5b01efac:e5df",
+        "record_sha256": "163fcf87d22a739235e8d5de310a00e0b5d01d1b5570f2ef8f365e4daa12682b",
+        "ja_sha256": "2415ca295694c3595479d877d7f89bc753a04f6cb913744e4f4b0b3c310f2e60",
+        "en_sha256": "369f95ba18626929237e7dddb81154af3d40990779729480ac1f0e72c423de73",
+        "zh_sha256": "d4cfa974a8a802899c7c32e94d1f80035c33c413970089a20b60283d968103a0"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5b01efac:e68a",
+        "record_sha256": "163fcf87d22a739235e8d5de310a00e0b5d01d1b5570f2ef8f365e4daa12682b",
+        "ja_sha256": "3d03dc2fa8c3ba9a0173f43577598017b1589bf5438211df6ddcb89aa01e6bf6",
+        "en_sha256": "9165094330871f555a1b7f43fda188857a3f767de69c743a21b2eb44654ef376",
+        "zh_sha256": "ebd43655804aa981a3e2253c2e615cc7a19144e5d75d05004ee98128be9a2fef"
+      }
+    ]
+  },
+  {
+    "jp": "美琴",
+    "cn": "美琴",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1872,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:e5de",
+        "record_sha256": "8e297844c34103d44471c3a393b5a72b576848108899b4b8b0a42a5457565deb",
+        "ja_sha256": "08d1adc6ab56add8d1ef7c8cb25aa37e038980d91fcd7194443126312123607e",
+        "en_sha256": "e45c6388d2e4374f462abdeb00f0f9a40bbf0a8ac493656ddfc83c151c6a97f4",
+        "zh_sha256": "31b9766b0c6e92ccebac9df82e30747e275c246eff164c6984244c0516d6ab32"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:e757",
+        "record_sha256": "8e297844c34103d44471c3a393b5a72b576848108899b4b8b0a42a5457565deb",
+        "ja_sha256": "448f62f54e1630aa19f5ba357a5e85096c181558ce6e707ee7ab8328fad1dc73",
+        "en_sha256": "6511ae8aee8bc3fe4ddf5fec1edce91824ba17fc25f1044308b69a4cfae5c6d4",
+        "zh_sha256": "6fafe4289d8cfe3154ed2af502bfeed0214734e11cecb3331cc7e93fd36ed9e7"
+      }
+    ]
+  },
+  {
+    "jp": "衛士",
+    "cn": "卫士",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 115,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:c778",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "74f043eb5500c37c8838c305240feb0c08a2d8294b91506be782425254850c88",
+        "en_sha256": "fa02c93c3ad9e746a0508928fa1075ae40c2295d6656ef4c42441dc5b87001fa",
+        "zh_sha256": "871a2b6a45faa6851902445b40c881b52323f3aa92bc4ee6f6b47545f7c89d0c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:c8f2",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "86dcff8c9b46a42f74a0c8405d209e5d977e9408700d699e403fa8f4256ebe78",
+        "en_sha256": "fcfb63d6f9e98268cd16db45883d622a970c7bf68e61dbdfb5151aeb3f6ef48e",
+        "zh_sha256": "2a15182f157aa1c2e891a036f54f070004c935f6c200c9e3a1e37a83b8a48dac"
+      }
+    ]
+  },
+  {
+    "jp": "衛士候補生",
+    "cn": "卫士候补生",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:bf8b",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "810d730a964de6b5b3c8d4ac3ccc905726ece1437687f451ee84810905b54072",
+        "en_sha256": "70b5fc0917bbc56046c913bbcd63df4d9b0dc5a2d56572d83f5e54858c2d690e",
+        "zh_sha256": "d210002d60ce7d9d1cc990ba447ff3436e7f48b9699bc033bde6478bc4b89cc0"
+      }
+    ]
+  },
+  {
+    "jp": "起床ラッパ",
+    "cn": "起床号",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:4ce7",
+        "record_sha256": "8c810a99d09b3c1452b746cd6c73f297d0a4369930774a9f3bbe86412641d173",
+        "ja_sha256": "85d2ffe4534f81c2a7befb24168d20ccd410bae03662d8c8b27dc85ace8cc06f",
+        "en_sha256": "d752fab6c34cdb838ede3d166a7d22908d89adf05de39501586272026b9a95e6",
+        "zh_sha256": "3f5e2363f57f60dc01e41a08158155b2fb66b01062cac7469d31f24c6cfa4ed8"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:3126",
+        "record_sha256": "b7c8bdb106b62c8b6b5e9643c4fcce4d751910ae13a15f59127047e99610389b",
+        "ja_sha256": "0f2782b6d6907ee138e0999b93a5f808a872e540c0533060e416f5f6f5919eeb",
+        "en_sha256": "ffcbe27f6b5f87ea1c97a2954e58098eeb83abea7ab93946c2bcceefef9866dc",
+        "zh_sha256": "592bffaa9fc34df1d6563b2b4c858cc21bde185e7909ff2fd054b77ea06f118f"
+      }
+    ]
+  },
+  {
+    "jp": "跳躍ユニット",
+    "cn": "跳跃单元",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1fd15e5e:1410e",
+        "record_sha256": "a18bb20d3afe67232cb2110a85d12a0d71107fdbec518df586b35633a6f64e6e",
+        "ja_sha256": "3c6fc83a1a75cd9917778326303938b3d1651314f458810cc8d14e9bfac4018b",
+        "en_sha256": "96e17f944e22b662a4979873295e042ca1def18decf8ecd69d0d54c1df6213b6",
+        "zh_sha256": "5f962b769c27b4d09542f4b860781e45448a086a23f1933ce58218bd258c8332"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1fd15e5e:14196",
+        "record_sha256": "a18bb20d3afe67232cb2110a85d12a0d71107fdbec518df586b35633a6f64e6e",
+        "ja_sha256": "b670a7ade9a9c207e8a24dec32ee068f839deaccc73bd6d69a0f76d73ab9e213",
+        "en_sha256": "9eed854746a71b90b5d88427d26ccdf578175e63605d6756492aa2cea3ca94ae",
+        "zh_sha256": "01eb2723f92ff45adb9d6be6a668c5479a25c2a6555b9e0cd6b585fb1f98ed0a"
+      }
+    ]
+  },
+  {
+    "jp": "軍曹",
+    "cn": "中士",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 9,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:b4df",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "7e85f50cd996f9332668d9cae242610fd388bcb26edc4cd37d11067dc0a910b2",
+        "en_sha256": "9021ee847850c76a3bbaced305a65c31c5de7bc6dc9bf5950ddd5b81edc39093",
+        "zh_sha256": "8fec43a46324aad7ec01ec92f7d7c198f0d07066e794bffe9b9584d39804d50a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:b51d",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "97757bf4de0ba8712935d2c7cfcf6df386139e701207db1f9cad0a2cc62e55fb",
+        "en_sha256": "5b5c9f8d9be5b1bfbb850be2a5db1c16a372e12b16d205cd187c1e5bcdb27076",
+        "zh_sha256": "c65ce88359fbd318c849e7d78c655b91c4645d786e7926a6df7ee924ce9bea93"
+      }
+    ]
+  },
+  {
+    "jp": "醍三郎",
+    "cn": "醍三郎",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:207e6314:17207",
+        "record_sha256": "2fe435121b12e3da8b3654f2412dbdfafb1d0fcc3bf7dd214ac621e58368d4f2",
+        "ja_sha256": "ca87f1f61127f1816d4e20d564695416811641f6fb83535df86b8ddbffa1a437",
+        "en_sha256": "23bc42294d66b7575cd146656e176ec704c724b917fd23dcc8610fc493aa5141",
+        "zh_sha256": "39ca255b6a2b6ade7c59f4a7550bf43effc400329af2168a4696e4bbad310835"
+      }
+    ]
+  },
+  {
+    "jp": "鎧衣尊人",
+    "cn": "铠衣尊人",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 7,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:22e12",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "cf9e35528b377926e01dbb8cfac2243e79ce6dcd7b497388398bfd0a613cd8d1",
+        "en_sha256": "ff8f69ebf7829783804f990bc618c177357d1e50bb78bcfbb880389cdc94e63c",
+        "zh_sha256": "e4677b78ff37bc27cd6760148419fc82ff56bd2d98c16bbbca8f497fffe8c3eb"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:24d3d",
+        "record_sha256": "934be3f9ab7473b040aa18981c6d9f73b44077c1b3911fdf81f805153aad1b87",
+        "ja_sha256": "a339988a25e2d3f8b74414d49c6c3826e97a0f04f09853cc15a7a5a6b6921f8e",
+        "en_sha256": "fbf77c44687fa46b4e5a7e0a1703572b9e10b0780facc5fc85e7bb69069b3455",
+        "zh_sha256": "675a6d86c1b0c2507b6b45f65ba1792de126b37c3c86f040a86b2f1d54cbe887"
+      }
+    ]
+  },
+  {
+    "jp": "鎧衣美琴",
+    "cn": "铠衣美琴",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 3,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:e5de",
+        "record_sha256": "8e297844c34103d44471c3a393b5a72b576848108899b4b8b0a42a5457565deb",
+        "ja_sha256": "08d1adc6ab56add8d1ef7c8cb25aa37e038980d91fcd7194443126312123607e",
+        "en_sha256": "e45c6388d2e4374f462abdeb00f0f9a40bbf0a8ac493656ddfc83c151c6a97f4",
+        "zh_sha256": "31b9766b0c6e92ccebac9df82e30747e275c246eff164c6984244c0516d6ab32"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:144a7",
+        "record_sha256": "8e297844c34103d44471c3a393b5a72b576848108899b4b8b0a42a5457565deb",
+        "ja_sha256": "651567c036b5cafb6219b1622f9d79bd5d8bdfd4738bd38ee33352fba0eba581",
+        "en_sha256": "e87b2fd55dbbbaabce34550874c4d6268799ba0f78b39405cb99666093516c3c",
+        "zh_sha256": "ee976f29cc7608d6eed6a48cc925216c6842d549d27725a0a420918c614346e3"
+      }
+    ]
+  },
+  {
+    "jp": "鑑純夏",
+    "cn": "鉴纯夏",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 8,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:625e",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "b832065220651bfd949a10a2c11103e04cab67f0c4779a1f5d9e9fe375242922",
+        "en_sha256": "e14245de6b472283a6721d85e326cc41424f0adeffb5bb22d095c0150e8de2c0",
+        "zh_sha256": "acdafef26a91cbdf9bae7bb33c81745704827152953d8a99455d38f478f32813"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:7e48",
+        "record_sha256": "27e59f861696bb88b9bf931fcc1f5ccced7bfe69f2eaedf25acf727d043905cf",
+        "ja_sha256": "9a8fe5cdec37b159e59689e653114aec31bef4d7556803933f11c338fd2022c2",
+        "en_sha256": "f93ae8872e4c1484d7055eefea79c91b905abfe1187367625875991791d8e203",
+        "zh_sha256": "f34515ec659162db85f719c6cb90b73a5df5995b1a02f89a418eb6b7ca16c834"
+      }
+    ]
+  },
+  {
+    "jp": "長刀",
+    "cn": "长刀",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 5,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:acd9734:797b",
+        "record_sha256": "a611c9da96ccd7a9d5f63da1a27ecc74c9029b12b88fb71871fade4a0a747636",
+        "ja_sha256": "352595a344939466b46f9d61b25267e6738cb40f0e57c2684687e2aecef5b371",
+        "en_sha256": "38bfa47c5f230080603ed2089a48cedac93fc89271d3238c751afb46ed91b26f",
+        "zh_sha256": "b667af4144b6356a40fb325abe919431f8b437b1429022ae561b5d263d3e7e1a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1fd15e5e:12c88",
+        "record_sha256": "a18bb20d3afe67232cb2110a85d12a0d71107fdbec518df586b35633a6f64e6e",
+        "ja_sha256": "dea09cf299a8bbaaa9a8c219b5065da0e04514d5c8f2eaff1f52d76a5f4f6919",
+        "en_sha256": "acc14a0ad67897b93ccb5855dfc9fa368796915023b4a779a32760bf1162f3b6",
+        "zh_sha256": "3b47cfcbc873304cdb33c716a5e9d784ffcc386f2339422cc5b1dc62ec25e496"
+      }
+    ]
+  },
+  {
+    "jp": "陽炎",
+    "cn": "阳炎",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 1,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:3865",
+        "record_sha256": "3f25992a73ada0040dc1d41d7c21357fb0dbda94446e3797620bcdbb863ab6ea",
+        "ja_sha256": "c016d428d75901398791f704cbccbd5cba6c4bead2fe087804b0e6b2d63a12ff",
+        "en_sha256": "8b74f5b4a2d99cf8543d360efdf0429cc622046362e68b1a5551faa4544c9977",
+        "zh_sha256": "f223b0b7c96801a19e4ad63d62ca59d8768c403c4d2afb256d961e4abdb79f2d"
+      }
+    ]
+  },
+  {
+    "jp": "香月夕呼",
+    "cn": "香月夕呼",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 4,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:6ffd",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "9837d731dd493965a6cb5540e65e52f05916dea86c71061de58b41fc1947aa6c",
+        "en_sha256": "1fd385c6f922bde42f5e48c303e840c15a33e035432be5cced7bcbedce9e7b4b",
+        "zh_sha256": "ba1261bb8452e13a90416ecd0ac3c7ac6e46a83fb84441ace8400224cc966ab5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:7588",
+        "record_sha256": "20eef6eafaffca4d6f42162c8e352b3db57a29684394456e963dfbb11796a539",
+        "ja_sha256": "3d775f96b485bc40c0cfbed25adbc339652f9529d93a8bbfd7b5a618f5090a4b",
+        "en_sha256": "6551cb4b2d91662f5d1738df218ddd75b22496d7c699259c9523ce189f85971e",
+        "zh_sha256": "11bc5c257c13807936b45eaccbfa0805dc88937a20cd45d10c11edc98cd0ee45"
+      }
+    ]
+  },
+  {
+    "jp": "鮭児",
+    "cn": "鲑儿",
+    "category": "术语参考",
+    "status": "reference_observed_not_global_replacement",
+    "context": "本作 Steam 中文实际译法；简称、完整名称和人物指代需按上下文使用",
+    "occurrences": 7,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:af86",
+        "record_sha256": "ec5411c734db138d79d9417cea9de4ed8cf21858570925e2ace5d92eb12502a6",
+        "ja_sha256": "1e32bb3c771d40314c115c79df33802065327b46b6148b7468cc3f86289e7f12",
+        "en_sha256": "6466b9b557eba110880fe520940d9fa3a0907b916f84aeb0ef68d22186848ad2",
+        "zh_sha256": "21754d5dd765453f0e1fe398ecf4ea48addef64c689933fda4304cf37dd3bd3f"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:b154",
+        "record_sha256": "ec5411c734db138d79d9417cea9de4ed8cf21858570925e2ace5d92eb12502a6",
+        "ja_sha256": "2df9f7aeaa2b45ab8b847b1a952147b0505c0817f11d95f82b5030387d1635f5",
+        "en_sha256": "37a2cc039daacf53166e26029247667ed535b833762d6b97fdba42e6988b9ead",
+        "zh_sha256": "2c97e3fcbbce8cc51c5480f6e3697f0ccf5acb98634d3c048fd0b94382f6db34"
+      }
+    ]
+  }
+]
