@@ -1,0 +1,464 @@
+{
+  "schema": "muv-luv-terminology-recovery/v1",
+  "historical_row_proofs": {"tda00-draft":{"game":"tda00","rows":369,"projection_sha256":"c8ddcdcdb17da2190f51b97d17ffcfb32d711e8666ef08aeb03dfd74b8d4fbed"},"imperial-old":{"game":"imperial-capital-burns","rows":185,"projection_sha256":"b24a7d1b03127ec7d875acb3a373e609a7f9c490241eadd9e1468c4d34a01693"},"pf-ex-table":{"game":"photonflowers","rows":88,"projection_sha256":"c953cbb9cd31a41c5e516e4288719dc9aeb254372f33e835b52dfef304c70c33"},"pf-ex-baseline":{"game":"photonflowers","rows":945,"projection_sha256":"f9303f997381082b464a7399ce517670346e6a3d8d1e1ec6a0d3486310cc54d2"},"pf-al-table":{"game":"photonflowers","rows":98,"projection_sha256":"928acc0797b4be5dc4b72b5cf471ba7c11a64fa64b21f80610ffa27220617fd2"},"pm-shard-table":{"game":"photonmelodies","rows":417,"projection_sha256":"823cffdcc8aad70fb5deec88b9e817b0ad7cb5b438b205de75dee042f25aaef4"},"pm-shard-baseline":{"game":"photonmelodies","rows":2321,"projection_sha256":"1123884af3d35dcbc3aa1c576e4b376f189b8042d7a8e7685a9d7fd3d5687bfa"},"pm-ar-table":{"game":"photonmelodies","rows":341,"projection_sha256":"8d6d6729b734db7b78bd0e2b7568956e31456d6603960f7efc8ac6c466c8ef15"}},
+  "supersedes": "scope-audit-20260908.json",
+  "sources": [
+    {"name":"tda-shared-decisions","path":"local-internal/handoff/SHARED_RULES.md","commit":null,"sha256":"f96c4b0614805f9d40e777aba53b6869b668647080da4f4ea8485b31d10b796b","rows":13,"row_identity":"curated decision index, not physical document line","decisions":[["ボクサー","拳师号"],["イーグル","鹰"],["フェザント","雉鸡"],["フェザント中隊","雉鸡中队"],["サラマンダー","蝾螈"],["クレイン","鹤"],["ウォードッグ","战犬"],["ユズちゃん","柚酱"],["可憐","可怜"],["可憐さん","可怜"],["ＰＸ","PX"],["PX","PX"],["大尉","上尉"]]},
+    {
+      "name": "selected-tda00",
+      "path": "AGE2/games/tda00/terminology/ja-zh-Hans.csv",
+      "commit": null,
+      "sha256": "5152c5efbbf6f6d027765058037b8625202f382e0edaf5a1f3d0339bc7aafe22",
+      "rows": 133
+    },
+    {
+      "name": "selected-tda01",
+      "path": "AGE2/games/tda01/terminology/ja-zh-Hans.csv",
+      "commit": null,
+      "sha256": "c18bdd75ed20949bbed16f284d5dc9e5f6c7ea55cfb355881ae1076d31165300",
+      "rows": 82
+    },
+    {
+      "name": "selected-tda02",
+      "path": "AGE2/games/tda02/terminology/ja-zh-Hans.csv",
+      "commit": null,
+      "sha256": "41074abdfc07034a76c25e523e86eeb8cf49c8c22ffd5d8d83f4a9a954fc1015",
+      "rows": 85
+    },
+    {
+      "name": "selected-tda03",
+      "path": "AGE2/games/tda03/terminology/ja-zh-Hans.csv",
+      "commit": null,
+      "sha256": "0dabb684de627bc3c99297be705470fe086b0c31251264fd97dd4e7c6426bc0a",
+      "rows": 100
+    },
+    {
+      "name": "selected-imperial-capital-burns",
+      "path": "AGE2/games/imperial-capital-burns/terminology/ja-zh-Hans.csv",
+      "commit": null,
+      "sha256": "7a6e3a8cf426b9c19a08405cff68ecf58242e9f73f41f12ac2009a5041501841",
+      "rows": 79
+    },
+    {
+      "name": "selected-photonflowers",
+      "path": "rUGP/games/photonflowers/terminology/ja-zh-Hans.csv",
+      "commit": null,
+      "sha256": "0bad1f4526a649cf13d1e50eaf19aa6f379b929f52803fbacc86b366c018cf31",
+      "rows": 147
+    },
+    {
+      "name": "selected-photonmelodies",
+      "path": "rUGP/games/photonmelodies/terminology/ja-zh-Hans.csv",
+      "commit": null,
+      "sha256": "2be2b175d9115a265823350171e593fc58097f8483136697b8f1d0e3014108ae",
+      "rows": 224
+    },
+    {
+      "name": "mixed",
+      "path": "localization/glossaries/history/mixed-20260908.csv",
+      "commit": null,
+      "sha256": "78768e085332a2a2668f85b81c808172b4a7235573ba02bb65cd5e8e36289762",
+      "rows": 894
+    },
+    {
+      "name": "legacy",
+      "path": "local-internal/glossary/legacy/muvluv_lunatranslator_full_glossary.csv",
+      "commit": null,
+      "sha256": "8e45bceaf934f682fcdb6237fd1b527fefffbed8e35f21cd33b40bc81b1110d0",
+      "rows": 1120
+    },
+    {
+      "name": "legacy-tsv",
+      "path": "local-internal/glossary/legacy/muvluv_lunatranslator_proper_nouns.tsv",
+      "commit": null,
+      "sha256": "302afa81948d8c13509a96c35e13d339c0c74ce5bae667eb57e83c1acbcf2322",
+      "rows": 2194,
+      "first_data_row": 1
+    },
+    {
+      "name": "tda00-draft",
+      "path": "local-internal/chapters/TDA00/terms/tda00_all_terms_with_cn_draft.csv",
+      "commit": null,
+      "sha256": "a408abc7506a0877cc20029b299c79afc82e3aff62b92f90ab50a2ffad06f32a",
+      "rows": 369
+    },
+    {
+      "name": "imperial-old",
+      "path": "patch-sources/imperial_capital_burns_terminology_jp_cn.csv",
+      "commit": "7f0d2eacad38293de0780a6fabb86134252e1792",
+      "sha256": "405dadd3722b935292d3329de09ca35c188ebb6abdeb4feca74a27f5211fbdfa",
+      "rows": 185
+    },
+    {
+      "name": "pf-ex-table",
+      "path": "patch-sources/photonflowers_ex_terminology_jp_cn.csv",
+      "commit": "704aab2f7ca2cb04787bd55a0957b0e691e1f5b4",
+      "sha256": "64700f41e0901abd0e0da150ebff880ec0392b10b784b0110948657760a7c019",
+      "rows": 88
+    },
+    {
+      "name": "pf-ex-baseline",
+      "path": "patch-sources/photonflowers_ex_terminology_baseline_v1.csv",
+      "commit": "63d4d2583cd5c02f40e721f3a7056a5657c36104",
+      "sha256": "9147066c3ba08818c2fc4e63e0878557625f03aeaef128136337b4cebabc085d",
+      "rows": 945
+    },
+    {
+      "name": "pf-al-table",
+      "path": "patch-sources/photonflowers_al_terminology_jp_cn.csv",
+      "commit": "92ebe44ae1e63ca422696becaab9deca9006a27e",
+      "sha256": "fede6a5a6da668fbc4eaab4cc36d1ca115bba8731a3df89ee46ba30a21636e8e",
+      "rows": 98
+    },
+    {
+      "name": "pm-shard-table",
+      "path": "patch-sources/photonmelodies_shard_of_spacetime_terminology_jp_cn.csv",
+      "commit": "dd881d5d50eaa21628c9994c6281e01093c06a4f",
+      "sha256": "1696fdeed0ad66799977509fd2111fe8abf3466dc8d3510db39986ddb79e709e",
+      "rows": 417
+    },
+    {
+      "name": "pm-shard-baseline",
+      "path": "patch-sources/photonmelodies_shard_of_spacetime_terminology_baseline_jp_cn.csv",
+      "commit": "dd881d5d50eaa21628c9994c6281e01093c06a4f",
+      "sha256": "6cc2fdbcae07ea790c50a86b5e5af416aa869b0d0bf6dee5956de4fe1f9d573b",
+      "rows": 2321
+    },
+    {
+      "name": "pm-ar-table",
+      "path": "patch-sources/photonmelodies_adoration_resurrection_terminology_jp_cn.csv",
+      "commit": "9c58a67bd9af119eb22ef4b1bbb1f15640872db3",
+      "sha256": "04ef87a4c0a4e7d2d5c25c878a0d95a509036f54381ecf08550c16985d2243ff",
+      "rows": 341
+    },
+    {
+      "name": "photon-native",
+      "path": "rUGP/evidence/photon/text/crsa-native-terms-20260904.json",
+      "commit": null,
+      "sha256": "ed215b318554f9b50937ead57c12ced1b198cdf764eb7b247aaea6c2d07569ce",
+      "rows": 37,
+      "row_identity": "section:index"
+    }
+  ],
+  "coverage": {
+    "tda00": {
+      "current_rows": 3713,
+      "verified_source_rows": 3713,
+      "source_commit": "32dde2fd9e21edb05b51b8f0456a64b0fce23edd",
+      "method": "exact id and JP SHA-256; independent term matches; no target-text eligibility filter"
+    },
+    "tda01": {
+      "current_rows": 8565,
+      "verified_source_rows": 8565,
+      "source_commit": "32dde2fd9e21edb05b51b8f0456a64b0fce23edd",
+      "method": "exact id and JP SHA-256; independent term matches; no target-text eligibility filter"
+    },
+    "tda02": {
+      "current_rows": 6589,
+      "verified_source_rows": 6589,
+      "source_commit": "32dde2fd9e21edb05b51b8f0456a64b0fce23edd",
+      "method": "exact id and JP SHA-256; independent term matches; no target-text eligibility filter"
+    },
+    "tda03": {
+      "current_rows": 6913,
+      "verified_source_rows": 6913,
+      "source_commit": "32dde2fd9e21edb05b51b8f0456a64b0fce23edd",
+      "method": "exact id and JP SHA-256; independent term matches; no target-text eligibility filter"
+    },
+    "photonflowers": {
+      "current_rows": 13025,
+      "verified_source_rows": 13025,
+      "method": "private JP SHA-256 matches current chapter records; occurrence counts count matches, not rows"
+    },
+    "photonmelodies": {
+      "current_rows": 44698,
+      "verified_source_rows": 44698,
+      "method": "private JP SHA-256 matches current chapter records; occurrence counts count matches, not rows"
+    }
+  },
+  "conflicts": [
+    {
+      "game": "photonflowers",
+      "jp": "神代・巴",
+      "old_cn": "神代・巴",
+      "current_cn": "神代、巴",
+      "source": "pf-ex-table",
+      "source_row": "20"
+    },
+    {
+      "game": "photonflowers",
+      "jp": "レーザー級",
+      "old_cn": "激光级",
+      "current_cn": "光线级",
+      "source": "pf-al-table",
+      "source_row": "26"
+    },
+    {
+      "game": "photonflowers",
+      "jp": "重レーザー級",
+      "old_cn": "重激光级",
+      "current_cn": "重光线级",
+      "source": "pf-al-table",
+      "source_row": "27"
+    },
+    {
+      "game": "photonflowers",
+      "jp": "光線級",
+      "old_cn": "激光级",
+      "current_cn": "光线级",
+      "source": "pf-al-table",
+      "source_row": "46"
+    },
+    {
+      "game": "photonflowers",
+      "jp": "チキン・ダイバーズ",
+      "old_cn": "Chicken Divers",
+      "current_cn": "小鸡潜降兵",
+      "source": "pf-al-table",
+      "source_row": "91"
+    },
+    {
+      "game": "photonflowers",
+      "jp": "重光線級",
+      "old_cn": "重激光级",
+      "current_cn": "重光线级",
+      "source": "pf-al-table",
+      "source_row": "97"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "吹雪",
+      "old_cn": "暴风雪",
+      "current_cn": "吹雪",
+      "source": "pm-shard-table",
+      "source_row": "110"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "部隊員１",
+      "old_cn": "部队员1",
+      "current_cn": "队员1",
+      "source": "pm-ar-table",
+      "source_row": "15"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "まりも",
+      "old_cn": "真理茂",
+      "current_cn": "麻理茉",
+      "source": "pm-ar-table",
+      "source_row": "42"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "女たち",
+      "old_cn": "女生们",
+      "current_cn": "众女",
+      "source": "pm-ar-table",
+      "source_row": "70"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "女性一同",
+      "old_cn": "女性们",
+      "current_cn": "女性众人",
+      "source": "pm-ar-table",
+      "source_row": "71"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "女１",
+      "old_cn": "女性1",
+      "current_cn": "女人1",
+      "source": "pm-ar-table",
+      "source_row": "74"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "女の子",
+      "old_cn": "女孩子",
+      "current_cn": "女孩",
+      "source": "pm-ar-table",
+      "source_row": "208"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "男の子",
+      "old_cn": "男孩子",
+      "current_cn": "男孩",
+      "source": "pm-ar-table",
+      "source_row": "210"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "全員",
+      "old_cn": "众人",
+      "current_cn": "全员",
+      "source": "pm-ar-table",
+      "source_row": "251"
+    },
+    {
+      "game": "photonflowers",
+      "jp": "レインダンサーズ",
+      "old_cn": "雨之舞者",
+      "current_cn": "雨舞者",
+      "source": "photon-native",
+      "source_row": "reusable_terms:5"
+    },
+    {
+      "game": "photonmelodies",
+      "jp": "クワドラプルアクセル",
+      "old_cn": "阿克塞尔四周跳",
+      "current_cn": "四周半阿克塞尔跳",
+      "source": "photon-native",
+      "source_row": "reusable_terms:20"
+    }
+  ],
+  "common_rows": 139,
+  "games": {
+    "tda00": {
+      "terms": 133,
+      "baseline_records": 870,
+      "baseline_unique_jp": 365,
+      "status_counts": {
+        "contextual": 133,
+        "candidate": 731,
+        "excluded": 5,
+        "confirmed": 1
+      },
+      "source_counts": {
+        "selected-tda00": 133,
+        "mixed": 266,
+        "legacy": 44,
+        "legacy-tsv": 57,
+        "tda00-draft": 369,
+        "tda-shared-decisions": 1
+      },
+      "baseline_kind": "reconstructed-from-historical-draft-and-matched-sources",
+      "records_sha256": "f686895a58b2ba8bda9705400d1a69b47b7a29d440658d00bc0d4f7cb1926057"
+    },
+    "tda01": {
+      "terms": 84,
+      "baseline_records": 480,
+      "baseline_unique_jp": 187,
+      "status_counts": {
+        "contextual": 82,
+        "excluded": 3,
+        "candidate": 390,
+        "confirmed": 5
+      },
+      "source_counts": {
+        "selected-tda01": 82,
+        "mixed": 183,
+        "legacy": 92,
+        "legacy-tsv": 118,
+        "tda-shared-decisions": 5
+      },
+      "baseline_kind": "reconstructed-from-historical-draft-and-matched-sources",
+      "records_sha256": "9cd1ca5a9d55fa3c0b683eed5efaf7753eacfd33b84805816f45e0ab72a5f7cb"
+    },
+    "tda02": {
+      "terms": 86,
+      "baseline_records": 534,
+      "baseline_unique_jp": 198,
+      "status_counts": {
+        "contextual": 85,
+        "excluded": 3,
+        "candidate": 440,
+        "confirmed": 6
+      },
+      "source_counts": {
+        "selected-tda02": 85,
+        "mixed": 195,
+        "legacy": 112,
+        "legacy-tsv": 136,
+        "tda-shared-decisions": 6
+      },
+      "baseline_kind": "reconstructed-from-historical-draft-and-matched-sources",
+      "records_sha256": "a050f412542f41479269ad044ec36a55816230713c4ec7dc223f7d361c2b96fd"
+    },
+    "tda03": {
+      "terms": 102,
+      "baseline_records": 616,
+      "baseline_unique_jp": 236,
+      "status_counts": {
+        "contextual": 100,
+        "excluded": 3,
+        "candidate": 506,
+        "confirmed": 7
+      },
+      "source_counts": {
+        "selected-tda03": 100,
+        "mixed": 229,
+        "legacy": 124,
+        "legacy-tsv": 156,
+        "tda-shared-decisions": 7
+      },
+      "baseline_kind": "reconstructed-from-historical-draft-and-matched-sources",
+      "records_sha256": "10ec0fa507a2681785cab0a32c546a7e4b2b6f4f4d6b6f8faa75c806048274ec"
+    },
+    "imperial-capital-burns": {
+      "terms": 183,
+      "baseline_records": 264,
+      "baseline_unique_jp": 185,
+      "status_counts": {
+        "contextual": 262,
+        "excluded": 2
+      },
+      "source_counts": {
+        "selected-imperial-capital-burns": 79,
+        "imperial-old": 185
+      },
+      "baseline_kind": "recovered-historical-tables",
+      "records_sha256": "50e84b35ae9405fb1a4d724f88d253abb506b448ba5fdc3f11c84b6359c4a146"
+    },
+    "photonflowers": {
+      "terms": 298,
+      "baseline_records": 1561,
+      "baseline_unique_jp": 1178,
+      "status_counts": {
+        "contextual": 1177,
+        "question": 29,
+        "candidate": 322,
+        "confirmed": 28,
+        "excluded": 5
+      },
+      "source_counts": {
+        "selected-photonflowers": 147,
+        "pf-ex-table": 88,
+        "pf-ex-baseline": 945,
+        "pf-al-table": 98,
+        "mixed": 139,
+        "legacy": 56,
+        "legacy-tsv": 82,
+        "photon-native": 6
+      },
+      "baseline_kind": "recovered-historical-tables",
+      "records_sha256": "3c60b870602f209951516c24894e64789e2b4b9624de78d8556a3e85fdfdd2d0"
+    },
+    "photonmelodies": {
+      "terms": 745,
+      "baseline_records": 3656,
+      "baseline_unique_jp": 2668,
+      "status_counts": {
+        "contextual": 682,
+        "confirmed": 714,
+        "question": 12,
+        "candidate": 2244,
+        "excluded": 4
+      },
+      "source_counts": {
+        "selected-photonmelodies": 224,
+        "pm-shard-table": 417,
+        "pm-shard-baseline": 2321,
+        "pm-ar-table": 341,
+        "mixed": 173,
+        "legacy": 71,
+        "legacy-tsv": 101,
+        "photon-native": 8
+      },
+      "baseline_kind": "recovered-historical-tables",
+      "records_sha256": "abea931848d2eef6d5bedd9cc52174bb956de98d46a8d9b3d20527ff1d53d058"
+    }
+  }
+}

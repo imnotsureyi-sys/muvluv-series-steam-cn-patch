@@ -9,15 +9,54 @@ from rUGP.tools.text.chapter_review import COLUMNS, cells, decoded, read_chapter
 
 
 class ChapterReviewTests(unittest.TestCase):
-    def test_committed_migration_is_exact_for_every_row_and_metadata_field(self):
+    def test_committed_chapters_preserve_baseline_except_audited_corrections(self):
         root = Path(__file__).resolve().parents[2] / "games"
+        audit = json.loads((root.parent / "evidence/photon/text/terminology-20260908.json").read_text(encoding="utf-8"))
+        edits = {e["binding_id"]: e for e in audit["edits"]}
+        self.assertEqual(len(edits), 12)
+        self.assertEqual(len(audit["edits"]), len(edits))
+        seen = set()
         for title, count, files in [("photonflowers", 13025, 13), ("photonmelodies", 44698, 45)]:
             folder = root / title / "translations"
-            result = read_chapters(folder, unchanged=True)
+            result = read_chapters(folder)
             self.assertEqual(len(result), count)
-            self.assertEqual(result, snapshot(folder))
+            expected = snapshot(folder)
+            for row in expected:
+                if row["binding_id"] in edits:
+                    edit = edits[row["binding_id"]]
+                    self.assertEqual(visible(row["translated_text"]), edit["before"])
+                    row["translated_text"] = decoded(edit["after"])
+                    seen.add(row["binding_id"])
+            self.assertEqual(result, expected)
             manifest = json.loads((folder / "chapters.json").read_text(encoding="utf-8"))
             self.assertEqual(len(manifest["files"]), files)
+        self.assertEqual(seen, set(edits))
+
+    def test_terminology_fixes_are_narrow_and_do_not_regress(self):
+        import re
+        root = Path(__file__).resolve().parents[2]
+        audit = json.loads((root / "evidence/photon/text/terminology-20260908.json").read_text(encoding="utf-8"))
+        replacements = {"激光级":"光线级", "美纪":"壬姬", "Enigma":"恩尼格玛", "Rafale":"阵风"}
+        for edit in audit["edits"]:
+            expected = edit["before"]
+            for before, after in replacements.items():
+                expected = expected.replace(before, after)
+            self.assertEqual(expected, edit["after"])
+            self.assertEqual(re.findall(r"<[0-9A-F]+>", edit["before"]),
+                             re.findall(r"<[0-9A-F]+>", edit["after"]))
+        for title in ("photonflowers", "photonmelodies"):
+            for row in read_chapters(root / "games" / title / "translations"):
+                text = re.sub(r"[\x00-\x1f\u2060]", "", row["translated_text"])
+                self.assertNotIn("激光级", text)
+                if "【壬姬】" in text:
+                    self.assertNotIn("美纪", text)
+        with (root.parent / "localization/glossaries/muv-luv.ja-zh-Hans.csv").open(encoding="utf-8-sig", newline="") as stream:
+            glossary = {r["jp"]:r["cn"] for r in csv.DictReader(stream)}
+        for term in ("光線級", "レーザー級"):
+            self.assertEqual(glossary[term], "光线级")
+        for term in ("重光線級", "重レーザー級"):
+            self.assertEqual(glossary[term], "重光线级")
+        self.assertEqual(glossary["レーザー"], "激光")
 
     def test_control_encoding_is_unambiguous_and_lossless(self):
         for value in ["甲\n乙\x01", "<0A>", "\u2060【姓名】正文", "\\A关闭回看",

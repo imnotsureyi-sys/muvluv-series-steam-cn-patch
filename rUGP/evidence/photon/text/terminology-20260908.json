@@ -1,0 +1,78 @@
+{
+  "schema": "photon-terminology-corrections/v1",
+  "scope": "Current PF/PM chapter Chinese only. Source hashes, controls, annotations and historical baseline unchanged.",
+  "edits": [
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00131648:00156",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "before": "脚下欧亚大陆耸立着无数巢穴，<0A>那一带的重激光级已经完全能把我们纳入射程。然而——。<01>",
+      "after": "脚下欧亚大陆耸立着无数巢穴，<0A>那一带的重光线级已经完全能把我们纳入射程。然而——。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00175444:00221",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "before": "【Aquila 1】「看来激光级……没能全部消灭」<01>",
+      "after": "【Aquila 1】「看来光线级……没能全部消灭」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00199060:00249",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "before": "还有拼上身体歼灭地表BETA的地面部队，<0A>以及在激光级怀中继续肉搏的支援炮击舰队——。",
+      "after": "还有拼上身体歼灭地表BETA的地面部队，<0A>以及在光线级怀中继续肉搏的支援炮击舰队——。"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1602830768:00079224:00516",
+      "file": "rUGP/games/photonflowers/translations/樱花盛开之前.csv",
+      "before": "【壬姬】「美纪觉得这样就已经足够了！」<01>",
+      "after": "【壬姬】「壬姬觉得这样就已经足够了！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1602830768:00086544:00541",
+      "file": "rUGP/games/photonflowers/translations/樱花盛开之前.csv",
+      "before": "【壬姬】「美纪也是！」<01>",
+      "after": "【壬姬】「壬姬也是！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1602830768:00096296:00571",
+      "file": "rUGP/games/photonflowers/translations/樱花盛开之前.csv",
+      "before": "【壬姬】「原来尊人也是这么想的啊……<0A>你看，美纪也把纪念册带来了」<01>",
+      "after": "【壬姬】「原来尊人也是这么想的啊……<0A>你看，壬姬也把纪念册带来了」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1110878708:00048372:00188",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "before": "【帝国军卫士5】「——队长，快躲开！！<0A>4点钟方向有激光级！！」<01>",
+      "after": "【帝国军卫士5】「——队长，快躲开！！<0A>4点钟方向有光线级！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1110878708:00050576:00190",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "before": "——看见BETA群中那只重激光级的瞬间，我的身体僵住了。<01>",
+      "after": "——看见BETA群中那只重光线级的瞬间，我的身体僵住了。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488271272:00057968:00156",
+      "file": "rUGP/games/photonflowers/translations/雨舞者.csv",
+      "before": "幸运的是，意大利南端与西西里中部都是山地，<0A>激光级造成的威胁相对较小。<01>",
+      "after": "幸运的是，意大利南端与西西里中部都是山地，<0A>光线级造成的威胁相对较小。<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.002:1214091360:00197604:00707",
+      "file": "rUGP/games/photonmelodies/translations/憧憬.csv",
+      "before": "【伊尔芙莉德】「法国中途百般挑剔，最后退出了开发计划，<0A>后来又模仿 EF-2000，造出一架名为 Rafale、<0A>外形很像却稍显粗俗的战术机」<01>",
+      "after": "【伊尔芙莉德】「法国中途百般挑剔，最后退出了开发计划，<0A>后来又模仿 EF-2000，造出一架名为 阵风、<0A>外形很像却稍显粗俗的战术机」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1808201404:00097948:00241",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/07_行动之后.csv",
+      "before": "【武】「Enigma……？」<01>",
+      "after": "【武】「恩尼格玛……？」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1617564412:00031100:00136",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/41_新年问候.csv",
+      "before": "【皮亚蒂芙】「在我们之间，<0A>因为目标被过多谜团包围…………<0A>所以被称作『Enigma』」<01>",
+      "after": "【皮亚蒂芙】「在我们之间，<0A>因为目标被过多谜团包围…………<0A>所以被称作『恩尼格玛』」<01>"
+    }
+  ]
+}

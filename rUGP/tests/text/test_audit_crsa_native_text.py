@@ -19,8 +19,14 @@ class NativeAuditClassificationTests(unittest.TestCase):
     def test_public_schema_and_glossary_hash_contracts_match_committed_bytes(self) -> None:
         root = Path(__file__).resolve().parents[3]
         digest = lambda path: hashlib.sha256(path.read_bytes()).hexdigest().upper()
-        glossary = root / "localization/glossaries/muv-luv.ja-zh-Hans.csv"
-        glossary_hash = digest(glossary)
+        glossary = root / "localization/glossaries/history/mixed-20260908.csv"
+        # The September 4 evidence remains pinned to the glossary used then.
+        # Reconstruct those exact bytes after the audited append-only aliases;
+        # do not relabel old evidence as if it used the new glossary.
+        glossary_bytes = glossary.read_bytes()
+        additions = "レーザー級,光线级\n重レーザー級,重光线级\n".encode("utf-8")
+        self.assertTrue(glossary_bytes.endswith(additions))
+        glossary_hash = hashlib.sha256(glossary_bytes[:-len(additions)]).hexdigest().upper()
         for game in ("photonflowers", "photonmelodies"):
             spec = json.loads((root / f"rUGP/games/{game}/text-data/increments/crsa-native-20260904.json").read_text(encoding="utf-8"))
             self.assertEqual(glossary_hash, spec["glossary_sha256"])
