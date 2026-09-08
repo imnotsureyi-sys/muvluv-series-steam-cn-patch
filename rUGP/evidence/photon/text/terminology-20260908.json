@@ -3,6 +3,24 @@
   "scope": "Current PF/PM chapter Chinese only. Source hashes, controls, annotations and historical baseline unchanged.",
   "edits": [
     {
+      "binding_id": "pf:vm:photonflowers11.rio.002:772757324:00005616:00026",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "before": "【新井】「女兵要说有什么用，<0A>也就是能少几个遭到强奸的平民，<0A>少几个被鸡奸的新兵罢了。」<01>",
+      "after": "【新井】「女兵要说有什么用，<0A>也就是能少几个遭到强奸的平民，<0A>少几个被爆菊的新兵罢了。」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:772757324:00008804:00038",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "before": "【麻理茉】「你是自己想被鸡奸，所以才嫌女人碍事吧？<0A>既然这样，早点直说不就好了。」<01>",
+      "after": "【麻理茉】「你是自己想被爆菊，所以才嫌女人碍事吧？<0A>既然这样，早点直说不就好了。」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1023076340:00009256:00056",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "before": "【麻理茉】「新井可是优秀的『男人』嘛。<0A>为了随时都能被人鸡奸，你就尽量擦干净一点吧。」<01>",
+      "after": "【麻理茉】「新井可是优秀的『男人』嘛。<0A>为了随时都能被人爆菊，你就尽量擦干净一点吧。」<01>"
+    },
+    {
       "binding_id": "pf:vm:photonflowers11.rio:488838928:00131648:00156",
       "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
       "before": "脚下欧亚大陆耸立着无数巢穴，<0A>那一带的重激光级已经完全能把我们纳入射程。然而——。<01>",
