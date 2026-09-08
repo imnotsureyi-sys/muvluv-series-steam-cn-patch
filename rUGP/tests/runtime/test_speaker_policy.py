@@ -16,7 +16,12 @@ class SpeakerPolicyTests(unittest.TestCase):
             compiled = [(json.loads(cn), json.loads(jp)) for cn, jp in re.findall(
                 r'\{L("[^"\n]+"), L("[^"\n]+")\}', block)]
             reviewed = json.loads((ROOT/'games'/title/'text-data/increments/speaker-colors-20260906.json').read_text(encoding='utf-8'))
-            self.assertEqual(compiled, [(r['target'], r['source']) for r in reviewed['aliases']])
+            latest = json.loads((ROOT/'evidence/photon/text/latin-decisions-20260909.json').read_text(encoding='utf-8'))
+            expected = [(r['target'], r['source']) for r in reviewed['aliases']]
+            expected += [(r['target'], r['source']) for r in latest['speaker_aliases'] if r['game'] == title]
+            round2 = json.loads((ROOT/'evidence/photon/text/latin-decisions-20260909-round2.json').read_text(encoding='utf-8'))
+            expected += [(r['target'], r['source']) for r in round2['speaker_aliases'] if r['game'] == title]
+            self.assertEqual(compiled, expected)
 
     def test_all_reviewed_prefix_repairs_are_only_structural_and_idempotent(self):
         counts = []

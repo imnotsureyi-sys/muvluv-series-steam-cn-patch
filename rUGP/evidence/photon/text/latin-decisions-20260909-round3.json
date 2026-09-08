@@ -1,0 +1,91 @@
+{
+  "schema": "photon-latin-user-decisions/v1",
+  "date": "2026-09-09",
+  "round": 3,
+  "approved_decisions": [
+    31,
+    32,
+    51,
+    53,
+    54,
+    76
+  ],
+  "protected_file": "rUGP/games/photonflowers/translations/樱花盛开之前.csv",
+  "protected_sha256": "b14b5e17598154868096f863a0a79b3789c91dee7a59153b036765c3818903d0",
+  "scope": "Final user authorization: DreamCost/DC, fictional console name, DS and readability adjudication of section VI. No AL/main extraction. Only Chinese text and necessary hard breaks change.",
+  "speaker_aliases": [],
+  "edits": [
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.002:1214091360:00136392:00514",
+      "file": "rUGP/games/photonmelodies/translations/憧憬.csv",
+      "decisions": [
+        51
+      ],
+      "before": "【布劳尔少尉】「就是所谓的 Samurai 吧？<0A>在日本，身为 Samurai 就得保护柔弱女子，是这种规矩吗！？」<01>",
+      "after": "【布劳尔少尉】「就是所谓的 Samurai（武士）吧？<0A>在日本，身为 Samurai 就得保护柔弱女子，是这种规矩吗！？」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:923926052:00089060:00255",
+      "file": "rUGP/games/photonmelodies/translations/憧憬.csv",
+      "decisions": [
+        76
+      ],
+      "before": "【拉拉施泰因上尉】「唔……战术横卧·<0A>直接扫裙底（DS），是吗。<0A>……记下了」<01>",
+      "after": "【拉拉施泰因上尉】「唔……战术横卧·<0A>直击内裤（DS），是吗。<0A>……记下了」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:839604068:00155404:00503",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/03_日常与准备.csv",
+      "decisions": [
+        32
+      ],
+      "before": "【麻理茉】「本来气氛就已经够险恶了，<0A>她偏偏又说那是 PS2 上一款『无聊透顶的 3D 游戏』，真是的！」<01>",
+      "after": "【麻理茉】「本来气氛就已经够险恶了，<0A>她偏偏又说那是普雷斯塔2上一款<0A>『无聊透顶的 3D 游戏』，真是的！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:131862200:00196368:00857",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/10_同行人选择.csv",
+      "decisions": [
+        31
+      ],
+      "before": "【武】「你家里也有DreamCos吗？」<01>",
+      "after": "【武】「你家里也有DreamCost（DC）吗？」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:258770628:00018308:00053",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/11_雪地游览.csv",
+      "decisions": [
+        54
+      ],
+      "before": "【慧】「TAKE……」<01>",
+      "after": "【慧】「武……」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:258770628:00018684:00055",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/11_雪地游览.csv",
+      "decisions": [
+        54
+      ],
+      "before": "【慧】「SHI………」<01>",
+      "after": "【慧】「……我是说刚田武。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:695803188:00113924:00260",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/17_寻找霞.csv",
+      "decisions": [
+        53
+      ],
+      "before": "【千鹤】「喂！那是『八百万（YAOYOROZU）』才对吧——！」<01>",
+      "after": "【千鹤】「喂！该读成『八百万（YAOYOROZU）』才对吧——！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:695803188:00114404:00262",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/17_寻找霞.csv",
+      "decisions": [
+        53
+      ],
+      "before": "【壬姬】「啊哈哈哈哈，『HAPPYAKUMAN』<0A>听起来好像某个英雄的名字哦——」<01>",
+      "after": "【壬姬】「啊哈哈哈哈，『HAPPYAKUMAN』<0A>听起来好像什么‘……超人’的名字哦——」<01>"
+    }
+  ]
+}
