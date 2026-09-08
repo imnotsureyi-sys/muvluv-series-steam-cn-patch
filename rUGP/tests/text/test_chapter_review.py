@@ -26,6 +26,10 @@ class ChapterReviewTests(unittest.TestCase):
         final = {e["binding_id"]: e for e in round3["edits"]}
         self.assertEqual(len(final), 8)
         final_seen = set()
+        semantic = json.loads((root.parent / 'evidence/photon/text/semantic-followup-20260909.json').read_text(encoding='utf-8'))
+        corrections = {e['binding_id']: e for e in semantic['edits']}
+        self.assertEqual(len(corrections), 3)
+        corrected_seen = set()
         latest_seen = set()
         seen = set()
         for title, count, files in [("photonflowers", 13025, 13), ("photonmelodies", 44698, 45)]:
@@ -54,6 +58,11 @@ class ChapterReviewTests(unittest.TestCase):
                     self.assertEqual(visible(row["translated_text"]), edit["before"])
                     row["translated_text"] = decoded(edit["after"])
                     final_seen.add(row["binding_id"])
+                if row['binding_id'] in corrections:
+                    edit = corrections[row['binding_id']]
+                    self.assertEqual(visible(row['translated_text']), edit['before'])
+                    row['translated_text'] = decoded(edit['after'])
+                    corrected_seen.add(row['binding_id'])
             self.assertEqual(result, expected)
             manifest = json.loads((folder / "chapters.json").read_text(encoding="utf-8"))
             self.assertEqual(len(manifest["files"]), files)
@@ -61,6 +70,7 @@ class ChapterReviewTests(unittest.TestCase):
         self.assertEqual(latest_seen, set(latest))
         self.assertEqual(followup_seen, set(followup))
         self.assertEqual(final_seen, set(final))
+        self.assertEqual(corrected_seen, set(corrections))
 
     def test_final_latin_ledger_accounts_for_all_candidates(self):
         import re
@@ -79,7 +89,7 @@ class ChapterReviewTests(unittest.TestCase):
         self.assertEqual(covered | protected, set(range(1,353)))
         self.assertFalse(covered & protected)
         audited = {}
-        for name in ['latin-decisions-20260909.json','latin-decisions-20260909-round2.json','latin-decisions-20260909-round3.json']:
+        for name in ['latin-decisions-20260909.json','latin-decisions-20260909-round2.json','latin-decisions-20260909-round3.json','semantic-followup-20260909.json']:
             audit = json.loads((folder/name).read_text(encoding='utf-8'))
             for edit in audit['edits']:
                 self.assertEqual(re.findall(r'<(?!0A>)[0-9A-F]+>',edit['before']), re.findall(r'<(?!0A>)[0-9A-F]+>',edit['after']))

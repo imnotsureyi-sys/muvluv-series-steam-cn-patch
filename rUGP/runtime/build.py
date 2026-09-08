@@ -26,6 +26,7 @@ ROOT = Path(__file__).resolve().parent
 SRC = ROOT / "src"
 INCLUDE = ROOT / "include"
 GENERATED = ROOT / "generated"
+PM_FONT_CANDIDATE_SHA256 = "3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B"
 TARGET = "x86-windows-gnu"
 COMPILE_FLAGS = ("-std=c11", "-O2", "-Wall", "-Wextra", "-Werror", "-shared")
 LINK_LIBRARIES = ("advapi32", "user32", "gdi32", "windowscodecs", "ole32")
@@ -211,7 +212,9 @@ def require_files(paths: Iterable[Path]) -> None:
         raise BuildError(f"missing runtime sources: {', '.join(missing)}")
 
 
-def prepare_generated(destination: Path, authorized: bool) -> None:
+def prepare_generated(destination: Path, authorized: bool, pm_font_candidate: bool = False) -> None:
+    if pm_font_candidate and not authorized:
+        raise BuildError('PM font candidate requires pinned authorization')
     shutil.copytree(GENERATED, destination)
     for game in ("pf", "pm"):
         path = destination / f"photon_combined_{game}.generated.h"
@@ -221,7 +224,14 @@ def prepare_generated(destination: Path, authorized: bool) -> None:
         if data.count(disabled) != 1 or enabled in data:
             raise BuildError(f"authorization precondition drift: {path.name}")
         if authorized:
-            path.write_bytes(data.replace(disabled, enabled))
+            data = data.replace(disabled, enabled)
+        if pm_font_candidate and game == 'pm':
+            previous = b'7D555D9B2905A56A8E97D0C2CFF4CC12559013DD8BCBFF41DC254D5C74ACE8E2'
+            if data.count(previous) != 1:
+                raise BuildError('PM base font identity drift')
+            data = data.replace(previous, PM_FONT_CANDIDATE_SHA256.encode('ascii'))
+        if authorized:
+            path.write_bytes(data)
 
 
 def _command_sources(game: str, speaker_color_candidate: bool = False) -> list[Path]:
@@ -340,7 +350,10 @@ def compile_once(
 def build(
     *, zig: Path, game: str, output: Path, authorized: bool, verify_release_code: bool,
     speaker_color_candidate: bool = False,
+    pm_font_candidate: bool = False,
 ) -> dict[str, object]:
+    if pm_font_candidate and (game != 'pm' or not authorized or verify_release_code):
+        raise BuildError('PM font candidate requires authorized PM build and cannot verify as an approved release')
     if speaker_color_candidate and (not authorized or verify_release_code):
         raise BuildError("speaker candidate requires pinned authorization and cannot verify as an approved release")
     zig = zig.resolve(strict=True)
@@ -357,7 +370,10 @@ def build(
     with tempfile.TemporaryDirectory(prefix="photon-runtime-") as temporary:
         temp = Path(temporary)
         generated = temp / "generated"
-        prepare_generated(generated, authorized)
+        if pm_font_candidate:
+            prepare_generated(generated, authorized, pm_font_candidate=True)
+        else:
+            prepare_generated(generated, authorized)
         manifest_inputs = _manifest_inputs(game, generated, speaker_color_candidate)
         candidate = temp / "Ages3ResT.dll"
 
@@ -451,6 +467,8 @@ def build(
         },
         "authorization_compiled": authorized,
         "speaker_color_candidate": speaker_color_candidate,
+        "pm_font_candidate": pm_font_candidate,
+        "candidate_font_sha256": PM_FONT_CANDIDATE_SHA256 if pm_font_candidate else None,
         "deterministic_double_compile_after_pe_normalization": True,
         "historical_release": {
             "raw_sha256": GAMES[game]["release_sha256"],
@@ -483,6 +501,8 @@ def main() -> int:
     parser.add_argument("--authorize-pinned-build", action="store_true")
     parser.add_argument("--speaker-color-candidate", action="store_true",
                         help="Opt in to the unapproved speaker-name lookup candidate for live sampling")
+    parser.add_argument('--pm-font-candidate', action='store_true',
+                        help='Opt in to the hash-pinned PM font with repaired PUA metrics and U+73E5')
     parser.add_argument(
         "--verify-release-code",
         action="store_true",
@@ -506,6 +526,7 @@ def main() -> int:
         authorized=args.authorize_pinned_build,
         verify_release_code=args.verify_release_code,
         speaker_color_candidate=args.speaker_color_candidate,
+        pm_font_candidate=args.pm_font_candidate,
     )
     try:
         write_new_file(

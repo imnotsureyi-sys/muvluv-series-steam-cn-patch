@@ -1,0 +1,25 @@
+{
+  "schema": "photon-semantic-followup/v1",
+  "date": "2026-09-09",
+  "scope": "User-approved three pre-existing mistranslations; no new terminology decisions.",
+  "edits": [
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00043088:00038",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "before": "【大鹫1】「大幅减速下的姿态控制，<0A>是吧……我可不想死了还得干这活……」<01>",
+      "after": "【大鹫1】「大幅减速下的姿态控制，<0A>是吧……我死也不想摊上这活……」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00118780:00149",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "before": "【大鹫1】「上吧，低等生物们——！」<01>",
+      "after": "【大鹫1】「我来了，低等生物们——！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00133640:00161",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "before": "【大鹫1】「是啊，不过，被那些小虫子狠狠干趴的人类，<0A>不就是一群只剩脑子的垃圾虫吗？」<01>",
+      "after": "【大鹫1】「是啊，不过，被那些小虫子狠狠干趴的人类，<0A>岂不是连只长脑子的垃圾虫都不如吗？」<01>"
+    }
+  ]
+}

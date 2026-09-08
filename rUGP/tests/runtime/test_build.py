@@ -59,6 +59,26 @@ def synthetic_pe() -> bytes:
 
 
 class RuntimeBuildTests(unittest.TestCase):
+    def test_pm_font_candidate_is_opt_in_and_preserves_sealed_headers(self):
+        from rUGP.runtime.build import PM_FONT_CANDIDATE_SHA256
+        evidence = json.loads((ROOT.parent/'evidence/photon/text/pm-font-er-20260909.json').read_text(encoding='utf-8'))
+        self.assertEqual(evidence['candidate_font_sha256'], PM_FONT_CANDIDATE_SHA256)
+        before = {p.name: p.read_bytes() for p in GENERATED.glob('*.h')}
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            prepare_generated(root/'normal', True)
+            prepare_generated(root/'font', True, pm_font_candidate=True)
+            normal = (root/'normal/photon_combined_pm.generated.h').read_bytes()
+            candidate = (root/'font/photon_combined_pm.generated.h').read_bytes()
+            old = b'7D555D9B2905A56A8E97D0C2CFF4CC12559013DD8BCBFF41DC254D5C74ACE8E2'
+            self.assertEqual(normal.replace(old, PM_FONT_CANDIDATE_SHA256.encode()), candidate)
+            self.assertEqual((root/'normal/photon_combined_pf.generated.h').read_bytes(), (root/'font/photon_combined_pf.generated.h').read_bytes())
+        self.assertEqual(before, {p.name:p.read_bytes() for p in GENERATED.glob('*.h')})
+        for game, authorized, release in [('pf',True,False),('pm',False,False),('pm',True,True)]:
+            with self.assertRaisesRegex(BuildError, 'PM font candidate'):
+                build(zig=Path('unused'), game=game, output=Path('unused'), authorized=authorized,
+                      verify_release_code=release, pm_font_candidate=True)
+
     def test_speaker_candidate_is_explicit_and_not_a_release(self) -> None:
         args = dict(zig="zig", game="pf", generated="generated", output="out.dll",
                     authorized=True, portable_paths=True)

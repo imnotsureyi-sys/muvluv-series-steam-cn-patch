@@ -8,12 +8,13 @@
     },
     "total_script_rows": 57723,
     "release_readiness": {
-        "status": "blocked_on_pm_font_increment",
+        "status": "candidate_font_and_runtime_verified_pending_packaging_and_live_sample",
         "installed_files_changed": false,
-        "pm_missing_codepoints_in_changed_text": ["U+73E5"],
+        "pm_missing_codepoints_in_changed_text": [],
         "pm_font_sha256": "7D555D9B2905A56A8E97D0C2CFF4CC12559013DD8BCBFF41DC254D5C74ACE8E2",
-        "safe_increment_result": "refused: vmtx table expected 19314 bytes, got 18860",
-        "required_followup": "Repair or reconstruct the PM font under a separate reviewed contract, add 珥 without changing existing glyphs, and revalidate the matching runtime font hash before packaging. No font binary was produced or installed by this review."
+        "safe_increment_result": "repaired under a hash-pinned contract; U+73E5 added; see pm-font-er-20260909.json",
+        "candidate_font_sha256": "3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B",
+        "required_followup": "Assemble matching text/font/runtime candidate under the packaging contract, then user live samples. Isolated font and runtime exist; installed files remain unchanged."
     },
     "candidate_rows": 352,
     "protected_rows": 15,
@@ -1280,7 +1281,7 @@
             ],
             "state": "changed",
             "before_sha256": "0b6fb0c7cfdffa5e3b7cf6ad9c3a1a0f631d21b43119d73c3d62f375006853ea",
-            "after_sha256": "0485e136d1e1e82659d757c460c7552aa3dafb4d8fcc47f5e8320c889b8ba877"
+            "after_sha256": "4098226952ba2db9e700b1f1e93a975255c14a49f2d608f5e786a444211d95b4"
         },
         {
             "candidate": 26,
@@ -1623,7 +1624,7 @@
             ],
             "state": "changed",
             "before_sha256": "7155a46777971c35e02c9989088223167a45fd0723292a77f8f832ee69648a8d",
-            "after_sha256": "9c82da770fc80bccfb9235b9da7ad3f08dec102101f5092fd304aa4e355a9376"
+            "after_sha256": "2d257fd65a953ff2ce7a48ee2be1ab8839a79eb4d813c2e1c9fa72a3d0d946c2"
         },
         {
             "candidate": 57,
@@ -1711,7 +1712,7 @@
             ],
             "state": "changed",
             "before_sha256": "70b3d5ff950c6d7cd48b7419c2c7f2dd26e58167d6ab2793f6115d7a1b7e8549",
-            "after_sha256": "8a8df506e13e1cf13f9047ba4de82c6def555e4b490b0d30da0d878f8aca3003"
+            "after_sha256": "cbc6aeafa8d01a57d21419dcc4724dc7a4cae97987f649cebf55f0456abf2249"
         },
         {
             "candidate": 65,
