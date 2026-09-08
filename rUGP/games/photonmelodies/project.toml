@@ -4,6 +4,9 @@ display_name = "Muv-Luv photonmelodies♮"
 engine = "rUGP"
 steam_app_id = 889710
 target_locales = ["zh-Hans"]
+terminology_common_authority = "../../../localization/glossaries/muv-luv.ja-zh-Hans.csv"
+terminology_authority = "terminology/ja-zh-Hans.csv"
+terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
 development_status = "development-no-player-package"
 translation_authorities = [
   "translations/时空的欠片/01_序章实验.csv",

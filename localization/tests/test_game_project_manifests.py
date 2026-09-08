@@ -42,7 +42,7 @@ class GameProjectManifestTests(unittest.TestCase):
                 relative_paths = list(manifest["translation_authorities"])
                 relative_paths.append(manifest["image_authority"])
                 relative_paths.append(manifest["font_policy"])
-                for optional_key in ("terminology_authority", "image_copy_authority"):
+                for optional_key in ("terminology_authority", "terminology_common_authority", "terminology_baseline", "image_copy_authority"):
                     if optional_key in manifest:
                         relative_paths.append(manifest[optional_key])
 

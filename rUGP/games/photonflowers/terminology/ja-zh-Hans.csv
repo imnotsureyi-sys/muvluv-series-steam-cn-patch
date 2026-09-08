@@ -1,0 +1,299 @@
+jp,cn,context
+YOKOHAMAスカイウォーカー,YOKOHAMA Sky Walker,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:61。仅作语境审校参考，不自动替换。
+あきら,晶,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；正式 Alternative 精确日中对；覆盖旧 glossary 的“明”。；来源 pf-al-table:62。仅作语境审校参考，不自动替换。
+おでんまん,关东煮包,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:31。仅作语境审校参考，不自动替换。
+お師匠様,师父,EX 各篇；本篇人物关系与全文审核；来源 pf-ex-table:25。仅作语境审校参考，不自动替换。
+すみか,纯夏,仅限完整【说话人】字段；不得用作正文子串替换
+たける,小武,仅限完整【说话人】字段；不得用作正文子串替换
+たけるさん,小武哥,EX 各篇；正式称谓证据；来源 pf-ex-table:6。仅作语境审校参考，不自动替换。
+たけるさんのしっぽ,小武哥的尾巴,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:62。仅作语境审校参考，不自动替换。
+まりか,麻里香,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；伊隅家人物简称统一。；来源 pf-al-table:63。仅作语境审校参考，不自动替换。
+まりも,麻理茉,仅限完整【说话人】字段；不得用作正文子串替换 | EX 各篇；正式称谓证据；来源 pf-ex-table:2。仅作语境审校参考，不自动替换。 | AL 五篇；正式 Alternative 中文姓名。；来源 pf-al-table:3。仅作语境审校参考，不自动替换。
+まりもちゃん,小麻（按句重组）,EX 各篇；正式称谓证据；按语境处理；来源 pf-ex-table:10。仅作语境审校参考，不自动替换。
+まりも・壬姫・尊人・柏木,麻理茉·壬姬·尊人·柏木,仅限完整【说话人】字段；不得用作正文子串替换
+みちる,美知留,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；正式 Alternative 中文姓名。；来源 pf-al-table:56。仅作语境审校参考，不自动替换。
+みちるちゃん,美知留,AL 五篇；pf-al-self-adjudication-v1 家庭关系裁决；亲昵由语气承载，避免机械“美知留酱”。；来源 pf-al-table:90。仅作语境审校参考，不自动替换。
+みちる姉ちゃん,美知留姐,AL 五篇；pf-al-self-adjudication-v1 家庭关系裁决；保留妹妹对姐姐的亲近关系。；来源 pf-al-table:89。仅作语境审校参考，不自动替换。
+やよい,弥生,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；伊隅家人物简称统一。；来源 pf-al-table:71。仅作语境审校参考，不自动替换。
+やよい姉ちゃん,弥生姐,AL 五篇；pf-al-self-adjudication-v1 家庭关系裁决；保留妹妹对姐姐的亲近关系。；来源 pf-al-table:88。仅作语境审校参考，不自动替换。
+アクイラス,Aquilas,仅限完整【说话人】字段；不得用作正文子串替换
+アクイラ１,Aquila 1,仅限完整【说话人】字段；不得用作正文子串替换
+アクイラ２,Aquila 2,仅限完整【说话人】字段；不得用作正文子串替换
+アクイラ３,Aquila 3,仅限完整【说话人】字段；不得用作正文子串替换
+アクイラ４,Aquila 4,仅限完整【说话人】字段；不得用作正文子串替换
+アクイラ５,Aquila 5,仅限完整【说话人】字段；不得用作正文子串替换
+アクセル・ビョルケル,阿克塞尔·比约克,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+アンリ・ギーツェン,亨利·吉岑,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+インド,印度,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+オグラグッディメン,豆沙超人,EX 各篇；用户审定；来源 pf-ex-table:45。仅作语境审校参考，不自动替换。
+オペレーター,作战管制官,AL 五篇；pf-al-self-adjudication-v1 正式 Alternative 日中语料 confirmed；服从 R0 v3/v8/v10/v12/v18/v20，并追溯应用到本轮派生候选。；来源 pf-al-table:58。仅作语境审校参考，不自动替换。
+オペレーター１,作战管制官1,仅限完整【说话人】字段；不得用作正文子串替换
+オペレーター２,作战管制官2,仅限完整【说话人】字段；不得用作正文子串替换
+オヤジ,大叔,仅限完整【说话人】字段；不得用作正文子串替换
+オリジナルハイヴ,母巢,AL 五篇；pf-al-r0-v13 confirmed；repeated official Alternative exact pairs beginning alternative:alternative16.rio:1133593648:22364:60 and throughout Alternative final operations；来源 pf-al-table:31。仅作语境审校参考，不自动替换。
+オーストラリア,澳大利亚,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+クロニクルズ,编年史,AL 五篇；用户最终裁定；三个 Chronicles 篇名统一。；来源 pf-al-table:2。仅作语境审校参考，不自动替换。
+グレアム,格雷厄姆,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；采用稳定通行音译；贝尼尼有项目 glossary 全名佐证。；来源 pf-al-table:43。仅作语境审校参考，不自动替换。
+コード９９１,代号991,AL 五篇；pf-al-r0-v10 confirmed；official exact Alternative pairs alternative:alternative16.rio:1146975552:160688:425; alternative:alternative16.rio:1149721454:68528:278；来源 pf-al-table:25。仅作语境审校参考，不自动替换。
+ゴースト,Ghost,AL 五篇；pf-al-r0-v1 confirmed；official Alternative speaker alias exact instance；来源 pf-al-table:99。仅作语境审校参考，不自动替换。
+ゴースト１,Ghost1,仅限完整【说话人】字段；不得用作正文子串替换
+サンタうさぎ,圣诞兔,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:40。仅作语境审校参考，不自动替换。
+ザウバー,Sauber,AL 五篇；pf-al-r0-v1 confirmed；official Alternative speaker alias exact instance；来源 pf-al-table:98。仅作语境审校参考，不自动替换。
+ザウバー１,Sauber1,仅限完整【说话人】字段；不得用作正文子串替换
+ザウバー２,Sauber2,仅限完整【说话人】字段；不得用作正文子串替换
+ソース・醤油事件,酱汁·酱油事件,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:32。仅作语境审校参考，不自动替换。
+ソ連,苏联,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+ゾエさん,老副,EX 各篇；用户审定；来源 pf-ex-table:63。仅作语境审校参考，不自动替换。
+タケルちゃん,小武,EX 各篇；正式称谓证据；来源 pf-ex-table:3。仅作语境审校参考，不自动替换。
+タケルちゃんといっしょ！,和小武在一起！,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:64。仅作语境审校参考，不自动替换。
+ダイバー,降下兵,AL 五篇；用户最终裁定；正文口语兵种称呼。；来源 pf-al-table:84。仅作语境审校参考，不自动替换。
+チェックシックス,注意6点方向,AL 五篇；pf-al-r0-v17 confirmed；official exact Alternative pair alternative:alternative16.rio:1152994734:64817:158；来源 pf-al-table:50。仅作语境审校参考，不自动替换。
+チキン・ダイバーズ,小鸡潜降兵,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+ツー,Two,本作原文命中；CRsa 补漏审核范围；2026-09-04 CRsa 术语审核记录；缩写和专名均须结合原注语境。；来源 photon-native:contextual_terms:10。仅作语境审校参考，不自动替换。
+データリンク,数据链,"AL 五篇；pf-al-r0-v19 confirmed；repeated official Alternative exact pairs, including alternative:alternative16.rio:1133593648:109406:339 and alternative:alternative16.rio:1146152950:60552:82；来源 pf-al-table:59。仅作语境审校参考，不自动替换。"
+トリ,鸟,仅限完整【说话人】字段；不得用作正文子串替换
+ドリルミルキィパンチ,钻头牛奶拳,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:65。仅作语境审校参考，不自动替换。
+ナディア,娜迪亚,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；采用稳定通行音译；贝尼尼有项目 glossary 全名佐证。；来源 pf-al-table:40。仅作语境审校参考，不自动替换。
+ナノストップ,Nano Stop,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:46。仅作语境审校参考，不自动替换。
+ハイヴ,巢穴,"AL 五篇；pf-al-r0-v15 confirmed；repeated official Alternative exact pairs throughout alternative16.rio, including alternative:alternative16.rio:1143184112:15951:81 and alternative:alternative16.rio:1143184112:16528:84；来源 pf-al-table:32。仅作语境审校参考，不自动替换。"
+ハルバード,战戟,本作原文命中；CRsa 补漏审核范围；2026-09-04 CRsa 术语审核记录；缩写和专名均须结合原注语境。；来源 photon-native:reusable_terms:11。仅作语境审校参考，不自动替换。
+バルゴ,巴尔戈,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:66。仅作语境审校参考，不自动替换。
+バルジャーノン,Baljarnon,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:36。仅作语境审校参考，不自动替换。
+パブロ,巴勃罗,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；采用稳定通行音译；贝尼尼有项目 glossary 全名佐证。；来源 pf-al-table:41。仅作语境审校参考，不自动替换。
+パレオロゴス作戦,巴列奥略作战,AL 五篇；pf-al-r0-v13 confirmed；official exact Alternative pair alternative:alternative16.rio:1143670360:55760:250；来源 pf-al-table:33。仅作语境审校参考，不自动替换。
+ヒュー,休,仅限完整【说话人】字段；不得用作正文子串替换
+ヒュー・ウィンストン,休·温斯顿,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+フランコ,弗兰科,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；采用稳定通行音译；贝尼尼有项目 glossary 全名佐证。；来源 pf-al-table:47。仅作语境审校参考，不自动替换。
+ベニーニ,贝尼尼,AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；采用稳定通行音译；贝尼尼有项目 glossary 全名佐证。；来源 pf-al-table:55。仅作语境审校参考，不自动替换。
+ベニーニ大尉,贝尼尼上尉,仅限完整【说话人】字段；不得用作正文子串替换
+マイルドクルー横幅,竖滨 MILD CREW 水上乐园,EX 各篇；用户审定；来源 pf-ex-table:53。仅作语境审校参考，不自动替换。
+マザーグース,鹅妈妈,AL 五篇；Chicken Divers 舰艇呼号词干。；来源 pf-al-table:94。仅作语境审校参考，不自动替换。
+マザーグース１,鹅妈妈1,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；Chicken Divers 带编号舰艇呼号。；来源 pf-al-table:95。仅作语境审校参考，不自动替换。
+ミキ,壬姬,仅指珠濑壬姬（壬姫）的名字读音/自称，不是独立人物美纪
+モニカ,莫妮卡,仅限完整【说话人】字段；不得用作正文子串替换
+モニカ・ジアコーザ,莫妮卡·贾科萨,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+ユーラシア,欧亚大陆,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+ライトニングス全員,Lightning全员,仅限完整【说话人】字段；不得用作正文子串替换
+ライトニング２,Lightning 2,仅限完整【说话人】字段；不得用作正文子串替换
+ライトニング３,Lightning 3,仅限完整【说话人】字段；不得用作正文子串替换
+ライトニング４,Lightning 4,仅限完整【说话人】字段；不得用作正文子串替换
+ラクロス,长曲棍球,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:47。仅作语境审校参考，不自动替换。
+ラザフォード場,卢瑟福力场,"仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文 | AL 五篇；pf-al-r0-v19 confirmed；repeated official Alternative exact pairs, including alternative:alternative16.rio:1144892310:54643:194 and alternative:alternative16.rio:1146729186:58653:79；来源 pf-al-table:57。仅作语境审校参考，不自动替换。"
+リーナ,莉娜,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+レイチェル,蕾切尔,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；采用稳定通行音译；贝尼尼有项目 glossary 全名佐证。；来源 pf-al-table:48。仅作语境审校参考，不自动替换。
+レインダンサーズ,雨舞者,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+レインダンス中隊,雨舞中队,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；用户最终裁定；部队名。；来源 pf-al-table:35。仅作语境审校参考，不自动替换。
+レインダンス０１,雨舞01,AL 五篇；用户最终裁定；数字呼号。；来源 pf-al-table:54。仅作语境审校参考，不自动替换。
+レインダンスＡ,雨舞A,AL 五篇；沿用用户确认的雨舞呼号规则。；来源 pf-al-table:45。仅作语境审校参考，不自动替换。
+レイン・ダンサーズ,雨舞者,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文 | AL 五篇；用户最终裁定；篇名。；来源 pf-al-table:29。仅作语境审校参考，不自动替换。
+レーザー発振器官,震荡激光发射器官,AL 五篇；pf-al-r0-v11 confirmed；official exact Alternative pairs alternative:alternative16.rio:1143184112:38494:208 and alternative:alternative16.rio:1143184112:42095:238；来源 pf-al-table:28。仅作语境审校参考，不自动替换。
+レーション,口粮,AL 五篇；pf-al-r0-v7 confirmed；official exact Muv-Luv pairs muvluv:muvluv16_chn.rio:1765816088:4774:38 (军用口粮); muvluv:muvluv16_chn.rio:1765816088:5327:46 (口粮); muvluv:muvluv16_chn.rio:1797857680:3280:25 (军用口粮)；来源 pf-al-table:14。仅作语境审校参考，不自动替换。
+三浦,三浦,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；三浦园子的语境简称。；来源 pf-al-table:72。仅作语境审校参考，不自动替换。
+下北オペレーター,下北作战管制官,仅限完整【说话人】字段；不得用作正文子串替换
+中隊長,中队长,AL 五篇；pf-al-r0-v9 confirmed；official exact Alternative pairs alternative:alternative16.rio:1139340580:18344:81; alternative:alternative16.rio:1139340580:18563:82；来源 pf-al-table:19。仅作语境审校参考，不自动替换。
+伊隅あきら,伊隅晶,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文 | AL 五篇；pf-al-r0-v21 confirmed；official exact Alternative pair alternative:alternative16.rio:1146975552:229966:572；来源 pf-al-table:66。仅作语境审校参考，不自动替换。
+伊隅さん,伊隅,AL 五篇；pf-al-self-adjudication-v1 关系阶段裁决；同届关系不机械翻译さん。；来源 pf-al-table:83。仅作语境审校参考，不自动替换。
+伊隅ヴァルキリーズ,伊隅女武神,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+佐久間,佐久间,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；按日文汉字透明简化。；来源 pf-al-table:79。仅作语境审校参考，不自动替换。
+候補生,候补生,AL 五篇；pf-al-r0-v1 confirmed；official compound evidence plus unambiguous project register；来源 pf-al-table:70。仅作语境审校参考，不自动替换。
+候補生一同,候补生众人,仅限完整【说话人】字段；不得用作正文子串替换
+光風霽月,光风霁月,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:41。仅作语境审校参考，不自动替换。
+免許皆伝,免许皆传,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:26。仅作语境审校参考，不自动替换。
+全機兵器使用自由,全机兵器使用限制解除,AL 五篇；pf-al-r0-v10 confirmed；official exact Alternative pair alternative:alternative16.rio:1136301392:97552:180; corroborating 兵器使用自由 pairs in Alternative and Muv-Luv；来源 pf-al-table:23。仅作语境审校参考，不自动替换。
+其の名はタケル,其名小武,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:67。仅作语境审校参考，不自动替换。
+再突入殻,返回式舱,AL 五篇；pf-al-self-adjudication-v1 正式 Alternative 日中语料 confirmed；服从 R0 v1/v11/v16；不保留第一遍“再入壳／光线级”。；来源 pf-al-table:92。仅作语境审校参考，不自动替换。
+冥夜,冥夜,仅限完整【说话人】字段；不得用作正文子串替换
+冥夜ちゃん,冥夜,EX 各篇；正式称谓证据；来源 pf-ex-table:48。仅作语境审校参考，不自动替换。
+冥夜様,冥夜小姐,EX 各篇；正式称谓证据；来源 pf-ex-table:9。仅作语境审校参考，不自动替换。
+凄乃皇・弐型,凄乃皇贰型,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+分隊,分队,AL 五篇；pf-al-r0-v1 confirmed；official mainline usage and stable military register；来源 pf-al-table:44。仅作语境审校参考，不自动替换。
+分隊長,分队长,AL 五篇；pf-al-r0-v1 confirmed；many official exact JP/CN pairs including muvluv:muvluv16_chn.rio:595311928:38668:217 and official corpus line group at block 1835472344；来源 pf-al-table:74。仅作语境审校参考，不自动替换。
+前線司令部,前线司令部,仅限完整【说话人】字段；不得用作正文子串替换
+助手Ａ・Ｂ・Ｃ,助手A·B·C,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴,千鹤,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴ちゃん,千鹤（按句省略）,EX 各篇；正式称谓证据；按语境处理；来源 pf-ex-table:28。仅作语境审校参考，不自动替换。
+千鶴・冥夜・壬姫・慧・美琴,千鹤、冥夜、壬姬、慧、美琴,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴・冥夜・壬姫・慧・美琴・武,千鹤、冥夜、壬姬、慧、美琴、武,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴・壬姫,千鹤·壬姬,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴・壬姫・尊人・柏木,千鹤·壬姬·尊人·柏木,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴・壬姫・慧・尊人,千鹤·壬姬·慧·尊人,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴・壬姫・慧・尊人・柏木,千鹤·壬姬·慧·尊人·柏木,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴・壬姫・慧・柏木・尊人,千鹤·壬姬·慧·柏木·尊人,仅限完整【说话人】字段；不得用作正文子串替换
+千鶴・慧,千鹤·慧,仅限完整【说话人】字段；不得用作正文子串替换
+反重力乃嵐,反重力之岚,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:49。仅作语境审校参考，不自动替换。
+回収ポイント,回收点,AL 五篇；pf-al-r0-v4 confirmed；official exact Alternative pairs alternative:alternative16.rio:1132906480:1353:2; alternative:alternative16.rio:1132906480:4102:7; alternative:alternative16.rio:1432733660:8001:25；来源 pf-al-table:11。仅作语境审校参考，不自动替换。
+国連軌道艦隊司令,联合国轨道舰队司令,仅限完整【说话人】字段；不得用作正文子串替换
+園子,园子,AL 五篇；pf-al-r0-v1 contextual；target JP and close teammate relation；来源 pf-al-table:76。仅作语境审校参考，不自动替换。
+地下茎構造,地下茎构造,AL 五篇；pf-al-r0-v13 confirmed；repeated official Alternative exact pairs including alternative:alternative16.rio:1143184112:16013:82 and alternative:alternative16.rio:1143670360:56392:255；来源 pf-al-table:34。仅作语境审校参考，不自动替换。
+地獄坂,地狱坡,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:68。仅作语境审校参考，不自动替换。
+壬姫,壬姬,仅限完整【说话人】字段；不得用作正文子串替换
+壬姫ちゃん,壬姬,EX 各篇；正式称谓证据；来源 pf-ex-table:24。仅作语境审校参考，不自动替换。
+夕呼,夕呼,仅限完整【说话人】字段；不得用作正文子串替换
+夕呼先生,夕呼老师（按句省略）,EX 各篇；正式称谓证据；按语境处理；来源 pf-ex-table:12。仅作语境审校参考，不自动替换。
+女の人,女人,仅限完整【说话人】字段；不得用作正文子串替换
+姉さん,姐姐,AL 五篇；pf-al-r0-v21 confirmed；official exact Alternative pair alternative:alternative16.rio:1147527184:11992:43；来源 pf-al-table:64。仅作语境审校参考，不自动替换。
+姉御,大姐,AL 五篇；pf-al-self-adjudication-v1 人物语气裁决；保留带江湖气的尊称，不直译为普通姐姐。；来源 pf-al-table:42。仅作语境审校参考，不自动替换。
+宇宙乃雷,宇宙之雷,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:50。仅作语境审校参考，不自动替换。
+宇宙書記長ゴルバン,宇宙书记长戈尔班,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:69。仅作语境审校参考，不自动替换。
+宗像中尉,宗像中尉,仅限完整【说话人】字段；不得用作正文子串替换
+家督,家主之位／继承权（按语境）,EX 各篇；第二遍全文审核；来源 pf-ex-table:42。仅作语境审校参考，不自动替换。
+尊人,尊人,仅限完整【说话人】字段；不得用作正文子串替换
+小型種,小型种,"AL 五篇；pf-al-r0-v17 confirmed；repeated official Alternative exact pairs, including alternative:alternative16.rio:1143184112:42508:242 and alternative:alternative16.rio:1150223368:6122:28；来源 pf-al-table:51。仅作语境审校参考，不自动替换。"
+小隊全員,小队全员,仅限完整【说话人】字段；不得用作正文子串替换
+小隊長,小队长,AL 五篇；pf-al-r0-v9 confirmed；official exact Alternative pairs including alternative:alternative16.rio:1133905442:15820:45 and repeated Alternative command scenes；来源 pf-al-table:20。仅作语境审校参考，不自动替换。
+少女,少女,仅限完整【说话人】字段；不得用作正文子串替换
+巴,巴,仅限完整【说话人】字段；不得用作正文子串替换
+帝国軍衛士,帝国军卫士,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+帝国軍衛士１,帝国军卫士1,仅限完整【说话人】字段；不得用作正文子串替换
+帝国軍衛士２,帝国军卫士2,仅限完整【说话人】字段；不得用作正文子串替换
+帝国軍衛士３,帝国军卫士3,仅限完整【说话人】字段；不得用作正文子串替换
+帝国軍衛士４,帝国军卫士4,仅限完整【说话人】字段；不得用作正文子串替换
+帝国軍衛士５,帝国军卫士5,仅限完整【说话人】字段；不得用作正文子串替换
+帝国陸軍第１３３連隊,帝国陆军第133连队,AL 五篇；pf-al-r0-v22 confirmed；official exact Alternative pair alternative:alternative16.rio:1146975552:229966:572；来源 pf-al-table:67。仅作语境审校参考，不自动替换。
+強化装備,强化装备,"AL 五篇；pf-al-r0-v14 confirmed；repeated official Alternative exact pairs across alternative16.rio, including alternative:alternative16.rio:1133092660:14296:28; alternative:alternative16.rio:1133593648:109126:337; alternative:alternative16.rio:1136301392:22462:27；来源 pf-al-table:36。仅作语境审校参考，不自动替换。"
+彩峰さん,彩峰,EX 各篇；正式称谓证据；来源 pf-ex-table:18。仅作语境审校参考，不自动替换。
+彩峰慧,彩峰慧,EX 各篇；主库术语表；来源 pf-ex-table:70。仅作语境审校参考，不自动替换。
+御剣冥夜,御剑冥夜,EX 各篇；主库术语表；来源 pf-ex-table:37。仅作语境审校参考，不自动替换。
+御剣財閥,御剑财阀,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:33。仅作语境审校参考，不自动替换。
+御学友記念金貨,同窗纪念金币,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:71。仅作语境审校参考，不自动替换。
+御師匠様,师父,EX 各篇；本篇人物关系与全文审核；来源 pf-ex-table:8。仅作语境审校参考，不自动替换。
+御祖父様,祖父大人,EX 各篇；本篇人物关系与全文审核；来源 pf-ex-table:14。仅作语境审校参考，不自动替换。
+御館様,老爷,EX 各篇；本篇人物关系与全文审核；来源 pf-ex-table:34。仅作语境审校参考，不自动替换。
+慧,慧,仅限完整【说话人】字段；不得用作正文子串替换
+慧ちゃん,慧（按句省略）,EX 各篇；正式称谓证据；按语境处理；来源 pf-ex-table:29。仅作语境审校参考，不自动替换。
+慧・柏木,慧·柏木,仅限完整【说话人】字段；不得用作正文子串替换
+戎,戎,仅限完整【说话人】字段；不得用作正文子串替换
+我が名は冥夜,吾名冥夜,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:72。仅作语境审校参考，不自动替换。
+戦術機母艦,战术机母舰,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+支店長,分行经理,仅限完整【说话人】字段；不得用作正文子串替换
+教官殿,教官,AL 五篇；pf-al-self-adjudication-v1 关系阶段裁决；训练应答的敬意由军令句式表达，不机械补“殿／阁下”。；来源 pf-al-table:6。仅作语境审校参考，不自动替换。
+教官１,教官1,仅限完整【说话人】字段；不得用作正文子串替换
+教官２,教官2,仅限完整【说话人】字段；不得用作正文子串替换
+教官３,教官3,仅限完整【说话人】字段；不得用作正文子串替换
+教導隊,教导队,AL 五篇；pf-al-r0-v9 confirmed；official exact Alternative pairs alternative:alternative16.rio:1136615564:67589:139; alternative:alternative16.rio:1136874440:22124:44; alternative:alternative16.rio:1139340580:20070:89；来源 pf-al-table:21。仅作语境审校参考，不自动替换。
+整備兵,整备兵,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+斯衛部隊指揮官,斯卫部队指挥官,仅限完整【说话人】字段；不得用作正文子串替换
+新井,新井,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；字形在简繁中不变；读法未获官方证据，但不阻塞中文显示。；来源 pf-al-table:8。仅作语境审校参考，不自动替换。
+晦,晦,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:73。仅作语境审校参考，不自动替换。
+月の輪,月之轮,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:51。仅作语境审校参考，不自动替换。
+月刊トリ,《月刊鸟类》,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:54。仅作语境审校参考，不自动替换。
+月刊ヤキソバ,《月刊炒面》,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:43。仅作语境审校参考，不自动替换。
+月子さん,月子,AL 五篇；pf-al-self-adjudication-v1 关系阶段裁决；同龄候补生间亲近称呼，以名字和语气承载礼貌。；来源 pf-al-table:81。仅作语境审校参考，不自动替换。
+月詠,月咏,仅限完整【说话人】字段；不得用作正文子串替换
+月詠さん,月咏,EX 各篇；正式称谓证据；来源 pf-ex-table:19。仅作语境审校参考，不自动替换。
+朧月,胧月,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:74。仅作语境审校参考，不自动替换。
+東ドイツ,东德,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+柏木,柏木,仅限完整【说话人】字段；不得用作正文子串替换
+柏木さん,柏木,EX 各篇；正式称谓证据；来源 pf-ex-table:75。仅作语境审校参考，不自动替换。
+柏木晴子,柏木晴子,EX 各篇；主库术语表；来源 pf-ex-table:76。仅作语境审校参考，不自动替换。
+桜の花が咲くまえに,樱花盛开之前,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:77。仅作语境审校参考，不自动替换。
+楔参型隊形,楔叁型阵型,AL 五篇；pf-al-r0-v10 confirmed；official exact Alternative pair alternative:alternative16.rio:1136301392:79095:157；来源 pf-al-table:24。仅作语境审校参考，不自动替换。
+榊さん,榊,EX 各篇；正式称谓证据；来源 pf-ex-table:16。仅作语境审校参考，不自动替换。
+榊千鶴,榊千鹤,EX 各篇；主库术语表；来源 pf-ex-table:78。仅作语境审校参考，不自动替换。
+橘町,橘町,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:79。仅作语境审校参考，不自动替换。
+正樹,正树,AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；按日文汉字透明简化。；来源 pf-al-table:65。仅作语境审校参考，不自动替换。
+武,武,仅限完整【说话人】字段；不得用作正文子串替换
+武・千鶴,武·千鹤,仅限完整【说话人】字段；不得用作正文子串替换
+武・純夏,武·纯夏,仅限完整【说话人】字段；不得用作正文子串替换
+武様,武先生,EX 各篇；正式称谓证据；来源 pf-ex-table:52。仅作语境审校参考，不自动替换。
+死の８分,8分钟的死亡线,AL 五篇；pf-al-r0-v9 confirmed；official exact Alternative pairs alternative:alternative16.rio:1139340580:14925:66; alternative:alternative16.rio:1139340580:46988:218；来源 pf-al-table:5。仅作语境审校参考，不自动替换。
+死合い,死斗,EX 各篇；第二遍全文审核；来源 pf-ex-table:44。仅作语境审校参考，不自动替换。
+涼宮中尉,凉宫中尉,仅限完整【说话人】字段；不得用作正文子串替换
+涼宮少尉,凉宫少尉,仅限完整【说话人】字段；不得用作正文子串替换
+無現鬼道流,无现鬼道流,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:22。仅作语境审校参考，不自动替换。
+狩野,狩野,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；字形在简繁中不变。；来源 pf-al-table:80。仅作语境审校参考，不自动替换。
+珠瀬さん,珠濑,EX 各篇；正式称谓证据；来源 pf-ex-table:27。仅作语境审校参考，不自动替换。
+珠瀬壬姫,珠濑壬姬,EX 各篇；主库术语表；来源 pf-ex-table:80。仅作语境审校参考，不自动替换。
+珠瀬様,珠濑小姐,EX 各篇；本篇人物关系与全文审核；来源 pf-ex-table:81。仅作语境审校参考，不自动替换。
+球技大会,球类大赛,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:38。仅作语境审校参考，不自动替换。
+男の声１,男人的声音1,仅限完整【说话人】字段；不得用作正文子串替换
+男の声２,男人的声音2,仅限完整【说话人】字段；不得用作正文子串替换
+男の声３,男人的声音3,仅限完整【说话人】字段；不得用作正文子串替换
+異星起源種,异星起源物种,AL 五篇；pf-al-r0-v2 confirmed；official exact Alternative JP/CN pair alternative:alternative16.rio:1151153770:90883:255；来源 pf-al-table:7。仅作语境审校参考，不自动替换。
+白秋祭,白秋祭,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:82。仅作语境审校参考，不自动替换。
+白銀……食べてる？,白银……在吃吗？,EX 各篇；用户审定；来源 pf-ex-table:83。仅作语境审校参考，不自动替换。
+白銀君,白银同学,EX 各篇；正式称谓证据；来源 pf-ex-table:5。仅作语境审校参考，不自动替换。
+白銀君ちょっとッ！！,白银同学，等一下！！,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:84。仅作语境审校参考，不自动替换。
+白銀武,白银武,EX 各篇；主库术语表；来源 pf-ex-table:55。仅作语境审校参考，不自动替换。
+白陵,白陵,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文 | EX 各篇；主库术语表；来源 pf-ex-table:15。仅作语境审校参考，不自动替换。
+白陵大学付属柊学園,白陵大学附属柊学园,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:56。仅作语境审校参考，不自动替换。
+皆琉神威,皆琉神威,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:17。仅作语境审校参考，不自动替换。
+真那様,真那大人,EX 各篇；本篇人物关系与全文审核；来源 pf-ex-table:57。仅作语境审校参考，不自动替换。
+着剣,拔剑,AL 五篇；pf-al-r0-v17 confirmed；official exact Alternative pair alternative:alternative16.rio:1150746756:18141:15；来源 pf-al-table:49。仅作语境审校参考，不自动替换。
+着陸ユニット,登陆舱,AL 五篇；pf-al-r0-v13 confirmed；repeated official Alternative exact pairs alternative:alternative16.rio:1143184112:9389:36; alternative:alternative16.rio:1143184112:9768:37; alternative:alternative16.rio:1143184112:11082:50；来源 pf-al-table:30。仅作语境审校参考，不自动替换。
+神代,神代,仅限完整【说话人】字段；不得用作正文子串替换
+神代・巴,神代、巴,仅限完整【说话人】字段；不得用作正文子串替换
+神代・巴・戎,神代・巴・戎,EX 各篇；主库术语表；来源 pf-ex-table:23。仅作语境审校参考，不自动替换。
+神代・戎,神代、戎,仅限完整【说话人】字段；不得用作正文子串替换
+神宮司,神宫司,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文 | EX 各篇；主库术语表；来源 pf-ex-table:35。仅作语境审校参考，不自动替换。
+神宮司まりも,神宫司麻理茉,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文 | AL 五篇；pf-al-r0-v1 confirmed；pf-al-terms-v1; official Alternative exact speaker alias 915 instances；来源 pf-al-table:61。仅作语境审校参考，不自动替换。
+神宮司先生,神宫司老师,EX 各篇；正式称谓证据；来源 pf-ex-table:58。仅作语境审校参考，不自动替换。
+神宮司教官,神宫司教官,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 关系阶段裁决；岗位加姓氏，符合训练校称谓。；来源 pf-al-table:68。仅作语境审校参考，不自动替换。
+福引係,抽奖员,仅限完整【说话人】字段；不得用作正文子串替换
+移し身の術法,移身之术,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:85。仅作语境审校参考，不自动替换。
+突撃前衛,突击前卫,"AL 五篇；pf-al-r0-v15 confirmed；repeated official Alternative exact pairs, including alternative:alternative16.rio:1143184112:37273:202 and alternative:alternative16.rio:1143670360:71871:291；来源 pf-al-table:38。仅作语境审校参考，不自动替换。"
+竹宮,竹宫,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；MAGES 官方页确认角色日文全名竹宮千夏；中文采用透明简体字。；来源 pf-al-table:78。仅作语境审校参考，不自动替换。
+竹宮さん,竹宫,AL 五篇；pf-al-self-adjudication-v1 关系阶段裁决；同届关系不机械翻译さん。；来源 pf-al-table:82。仅作语境审校参考，不自动替换。
+管制ユニット,管制组件,AL 五篇；pf-al-self-adjudication-v1 正式 Alternative 日中语料 confirmed；服从 R0 v3/v8/v10/v12/v18/v20，并追溯应用到本轮派生候选。；来源 pf-al-table:4。仅作语境审校参考，不自动替换。
+米国,美国,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+純夏,纯夏,仅限完整【说话人】字段；不得用作正文子串替换
+純夏ちゃん,纯夏,EX 各篇；正式称谓证据；来源 pf-ex-table:11。仅作语境审校参考，不自动替换。
+総合戦闘技術評価演習,综合战斗技术评价演习,AL 五篇；pf-al-r0-v4 confirmed；official exact Muv-Luv/Alternative pairs muvluv:muvluv16_chn.rio:537991298:76739:613; alternative:alternative16.rio:1131383402:105022:278; alternative:alternative16.rio:1432733660:8683:28；来源 pf-al-table:10。仅作语境审校参考，不自动替换。
+総戦技,综战技,AL 五篇；pf-al-r0-v5 confirmed；official exact Alternative usage alternative:alternative16.rio:1134118512:127871:343; alternative:alternative16.rio:1142377674:38655:149；来源 pf-al-table:12。仅作语境审校参考，不自动替换。
+総戦技演習,综战技演习,AL 五篇；pf-al-r0-v5 confirmed；official exact Alternative usage alternative:alternative16.rio:1132177038:82443:233; alternative:alternative16.rio:1138618846:113337:330；来源 pf-al-table:16。仅作语境审校参考，不自动替换。
+総戦技評価演習,综战技评价演习,AL 五篇；pf-al-r0-v5 confirmed；official exact Alternative usage alternative:alternative16.rio:1134118512:127871:343; alternative:alternative16.rio:1142377674:137394:599；来源 pf-al-table:15。仅作语境审校参考，不自动替换。
+美琴,美琴,仅限完整【说话人】字段；不得用作正文子串替换
+英国,英国,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+茜,茜,仅限完整【说话人】字段；不得用作正文子串替换
+藤澤,藤泽,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；项目姓名定名；MAGES 官方日文角色名，中文透明简化。；来源 pf-al-table:75。仅作语境审校参考，不自动替换。
+融資,贷款／贷款置换（银行语境）,EX 各篇；第二遍全文审核；来源 pf-ex-table:39。仅作语境审校参考，不自动替换。
+衛士候補生,卫士候补生,AL 五篇；pf-al-r0-v1 confirmed；official exact JP/CN pair: muvluv:muvluv16_chn.rio:1435824342:49035:326；来源 pf-al-table:85。仅作语境审校参考，不自动替换。
+覆面の男１,蒙面男子1,仅限完整【说话人】字段；不得用作正文子串替换
+覆面の男２,蒙面男子2,仅限完整【说话人】字段；不得用作正文子串替换
+訓練兵たち,训练兵们,仅限完整【说话人】字段；不得用作正文子串替换
+訓練兵１,训练兵1,仅限完整【说话人】字段；不得用作正文子串替换
+訓練兵２,训练兵2,仅限完整【说话人】字段；不得用作正文子串替换
+訓練兵３,训练兵3,仅限完整【说话人】字段；不得用作正文子串替换
+訓練兵４,训练兵4,仅限完整【说话人】字段；不得用作正文子串替换
+訓練小隊,训练小队,AL 五篇；pf-al-r0-v1 confirmed；transparent structured term consistent with 第207卫士训练小队；来源 pf-al-table:77。仅作语境审校参考，不自动替换。
+訓練小隊全員,训练小队全员,仅限完整【说话人】字段；不得用作正文子串替换
+謎の人物Ａ,谜之人物A,仅限完整【说话人】字段；不得用作正文子串替换
+謎の人物Ｂ・Ｃ・Ｄ,谜之人物B·C·D,仅限完整【说话人】字段；不得用作正文子串替换
+警備部隊隊長,警备部队队长,仅限完整【说话人】字段；不得用作正文子串替换
+警備隊員,警备队员,仅限完整【说话人】字段；不得用作正文子串替换
+軌道降下兵,轨道降下兵,本作采用轨道降下兵；旧表轨道潜水员错误，不自动改正文中的其他译法 | AL 五篇；用户最终裁定；正式兵种。；来源 pf-al-table:93。仅作语境审校参考，不自动替换。
+軌道降下兵団,轨道降下兵团,AL 五篇；用户最终裁定；正式编制。；来源 pf-al-table:96。仅作语境审校参考，不自动替换。
+軍曹,中士,AL 五篇；pf-al-r0-v1 confirmed；official exact JP/CN pairs including muvluv:muvluv16_chn.rio:537991298:46303:415；来源 pf-al-table:69。仅作语境审校参考，不自动替换。
+速瀬中尉,速濑中尉,仅限完整【说话人】字段；不得用作正文子串替换
+部隊長,部队长,AL 五篇；pf-al-r0-v9 confirmed；multiple official exact Alternative pairs for 伊隅/速瀬 command appointments；来源 pf-al-table:22。仅作语境审校参考，不自动替换。
+醍三郎,醍三郎,仅限完整【说话人】字段；不得用作正文子串替换 | EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:4。仅作语境审校参考，不自动替换。
+醍三郎殿,醍三郎大人,EX 各篇；本篇人物关系与全文审核；来源 pf-ex-table:59。仅作语境审校参考，不自动替换。
+重力偏差,重力偏差,"AL 五篇；pf-al-r0-v19 confirmed；official exact Alternative pairs, including alternative:alternative16.rio:1144892310:124214:514 and alternative:alternative16.rio:1144892310:57160:214；来源 pf-al-table:60。仅作语境审校参考，不自动替换。"
+銀行強盗１,银行劫匪1,仅限完整【说话人】字段；不得用作正文子串替换
+銀行強盗１・２,银行劫匪1、2,仅限完整【说话人】字段；不得用作正文子串替换
+銀行強盗２,银行劫匪2,仅限完整【说话人】字段；不得用作正文子串替换
+鎧衣君,铠衣,EX 各篇；正式称谓证据；来源 pf-ex-table:21。仅作语境审校参考，不自动替换。
+鎧衣尊人,铠衣尊人,EX 各篇；主库术语表；来源 pf-ex-table:86。仅作语境审校参考，不自动替换。
+鏡花水月,镜花水月,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:87。仅作语境审校参考，不自动替换。
+鑑さん,鉴同学／纯夏（按句重组）,EX 各篇；正式称谓证据；按语境处理；来源 pf-ex-table:7。仅作语境审校参考，不自动替换。
+鑑純夏,鉴纯夏,EX 各篇；主库术语表；来源 pf-ex-table:88。仅作语境审校参考，不自动替换。
+間接思考制御,间接思考控制,AL 五篇；pf-al-self-adjudication-v1 正式 Alternative 日中语料 confirmed；服从 R0 v3/v8/v10/v12/v18/v20，并追溯应用到本轮派生候选。；来源 pf-al-table:17。仅作语境审校参考，不自动替换。
+陽動,佯动,AL 五篇；pf-al-r0-v6 confirmed；official exact Alternative pairs alternative:alternative16.rio:1143184112:7011:22; alternative:alternative16.rio:1143184112:7199:23; alternative:alternative16.rio:1146277752:71155:62；来源 pf-al-table:13。仅作语境审校参考，不自动替换。
+雨乞い中隊,乞雨中队,AL 五篇；用户最终裁定；篇内释义性别称。；来源 pf-al-table:39。仅作语境审校参考，不自动替换。
+雷電,雷电,仅限完整【说话人】字段；不得用作正文子串替换 | EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:13。仅作语境审校参考，不自动替换。
+韮沢,韭泽,AL 五篇；pf-al-self-adjudication-v1 项目编辑定名；按日文汉字透明简化；不伪称正式中文实例。；来源 pf-al-table:73。仅作语境审校参考，不自动替换。
+韮沢助教,韭泽助教,仅限完整【说话人】字段；不得用作正文子串替换
+音紋,声纹,AL 五篇；pf-al-r0-v17 confirmed；repeated official Alternative exact pairs alternative:alternative16.rio:1146152950:40819:39; alternative:alternative16.rio:1146152950:59000:73；来源 pf-al-table:53。仅作语境审校参考，不自动替换。
+風間少尉,风间少尉,仅限完整【说话人】字段；不得用作正文子串替换
+香月先生,香月老师,EX 各篇；正式称谓证据；来源 pf-ex-table:30。仅作语境审校参考，不自动替换。
+鬼灯,那些畜生,AL 五篇；用户接受的语境性裁决；泛指 BETA 的辱称，不是物种名。；来源 pf-al-table:86。仅作语境审校参考，不自动替换。
+鬼灯野郎,那些畜生,AL 五篇；用户接受的语境性裁决；泛指 BETA 的辱称，不是物种名。；来源 pf-al-table:87。仅作语境审校参考，不自动替换。
+Ａ小隊,A小队,仅限完整【说话人】字段；不得用作正文子串替换
+Ｂ小隊,B小队,仅作翻译审校参考；确认对应专名/军事称谓后使用，不自动替换正文
+ＣＰ,ＣＰ,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 正式 Alternative 日中语料 confirmed；服从 R0 v3/v8/v10/v12/v18/v20，并追溯应用到本轮派生候选。；来源 pf-al-table:18。仅作语境审校参考，不自动替换。
+ＥＦ－２０００,ＥＦ－2000,AL 五篇；pf-al-r0-v15 confirmed；official exact Alternative pair alternative:alternative16.rio:1143670360:9792:34；来源 pf-al-table:37。仅作语境审校参考，不自动替换。
+Ｆ分隊全員,F分队全员,仅限完整【说话人】字段；不得用作正文子串替换
+ＨＱ,ＨＱ,仅限完整【说话人】字段；不得用作正文子串替换 | AL 五篇；pf-al-self-adjudication-v1 正式 Alternative 日中语料 confirmed；服从 R0 v3/v8/v10/v12/v18/v20，并追溯应用到本轮派生候选。；来源 pf-al-table:52。仅作语境审校参考，不自动替换。
+ＰＸ,ＰＸ,AL 五篇；pf-al-self-adjudication-v1 正式 Alternative 日中语料 confirmed；服从 R0 v3/v8/v10/v12/v18/v20，并追溯应用到本轮派生候选。；来源 pf-al-table:9。仅作语境审校参考，不自动替换。
+ＳＴＡ,STA,EX 各篇；用户审定；来源 pf-ex-table:89。仅作语境审校参考，不自动替换。
+ＴＱアームズ,TQ Arms,EX 各篇；本篇剧情与全文审核；来源 pf-ex-table:60。仅作语境审校参考，不自动替换。

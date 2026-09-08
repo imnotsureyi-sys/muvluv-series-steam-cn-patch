@@ -9,7 +9,7 @@
 | 内容 | 共用部分 | 游戏专属部分 |
 | --- | --- | --- |
 | 正文与 UI 文本 | [完整流程](workflow.md)、[初译规则](standards/05-translation.md)、[第二轮独立审核](standards/06-review.md)、[源数据规范](standards/02-source-data.md) | [AGE2 games](../AGE2/games/) · [rUGP games](../rUGP/games/) 下各自的 `translations/` |
-| 术语 | [Muv-Luv 总术语表](glossaries/muv-luv.ja-zh-Hans.csv)、[维护规则](standards/04-terminology.md) | 只有确属单作的词才放进该游戏目录；例如[帝都燃烧篇术语](../AGE2/games/imperial-capital-burns/terminology/ja-zh-Hans.csv) |
+| 术语 | [通用总表与七作独立表](glossaries/README.md)、[维护规则](standards/04-terminology.md) | 每作仅加载通用 + 本作；候选和历史词库不生效，语境限制不可省略 |
 | 图片 | [无字底、确定性排字与 QA 流程](image-workflow.md)、[`tools/images/`](tools/images/) | [五部 AGE2 WebP 清单](../AGE2/games/README.md) · [帝都图片文案](../AGE2/games/imperial-capital-burns/images/) · [Photon 图片身份与路由](../rUGP/evidence/photon/README.md) |
 | 字体 | [字体来源与发布规则](fonts/README.md)、[字形覆盖工具](tools/font_coverage.py) | 引擎实际选字和运行时问题分别记录在 [AGE2](../AGE2/docs/postmortems/font-glyph-substitution-retired.md) 与 [rUGP](../rUGP/docs/postmortems/font-runtime.md) |
 | 审核与反馈 | [审核规范](standards/06-review.md) | 各引擎的质量门与实机清单 |
