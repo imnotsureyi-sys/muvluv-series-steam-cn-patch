@@ -4,6 +4,23 @@
 
 ## Player downloads
 
+### PF / PM — BETA 0.1
+
+The Simplified Chinese Windows / Steam patches are published as ordinary releases, in separate packages:
+
+| Game | Version | Download |
+| --- | --- | --- |
+| Muv-Luv photonflowers | **BETA 0.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1/MuvLuv_PF_CN_Patch_BETA_0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1) |
+| Muv-Luv photonmelodies | **BETA 0.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1/MuvLuv_PM_CN_Patch_BETA_0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1) |
+
+Set the Steam game language to **English**, wait for downloads to finish, and close the game. Extract the ZIP, run its EXE, and click Install. No earlier patch or manual verification script is required.
+
+These packages retain R2 content and fix the backlog Return to Game button. They create **no backups** and include no uninstaller or rollback. To recover from an interrupted install or restore the original game, preserve saves, uninstall through Steam, remove patch leftovers from that specific game folder, and download the game again. Do not clear the Steam root, steamapps/common, userdata, or save folders. File verification alone may leave added patch files behind.
+
+### Historical AGE2 packages
+
+The following table and remaining installation/backup/rollback instructions apply to TDA00–03 and Imperial Capital Burns; use the separate procedure above for PF / PM.
+
 These historical test packages were retained during migration. Font-license,
 official-UI-fallback, input-version, and rollback remediation remains, so they
 are **not currently recommended releases**. Do not use GitHub's source ZIP or
@@ -17,11 +34,9 @@ the 1,490-image Photon research bundle as a game patch.
 | THE DAY AFTER episode:03 | beta0.1.6 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
 | The Imperial Capital Burns | beta0.1 | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
 
-Photon Flowers and Photon Melodies do not yet have player installers.
-
 ## Before you install
 
-The current player packages are historical AGE2 prerelease/test patches. They install loose files into a per-user LocalAppData directory and do not rewrite Steam's original `pack.bin`, executable or saves. Photon source and the 1,490-image Photon Release are **not** player installers.
+The following AGE2 packages are historical prerelease/test patches. They install loose files into a per-user LocalAppData directory and do not rewrite Steam's original `pack.bin`, executable or saves. Photon source and the 1,490-image Photon Release are **not** player installers.
 
 These beta packages predate the repository's current release gate. They do not consistently include an install manifest, input-version hash check, uninstall tool or bundled font-license notice. An `install.bat` completing successfully proves that files were copied; it does not prove that an updated or repacked game is compatible.
 

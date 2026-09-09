@@ -31,8 +31,8 @@ CRmt 家族的结构、日英对应、全层导出和替换验证请从[专项�
 
 | 游戏 | 已审校文本 | 精确运行时绑定表 | 图片资产状态 | 玩家包 |
 | --- | --- | --- | --- | --- |
-| [Photon Flowers](games/photonflowers/) | [13,025 条章节文本](games/photonflowers/translations/) | [69 行历史合同](games/photonflowers/text-data/runtime/zh-Hans.csv) | [636 项](games/photonflowers/images/) | 尚未发布 |
-| [Photon Melodies](games/photonmelodies/) | [44,698 条章节文本](games/photonmelodies/translations/) | [151 行历史合同](games/photonmelodies/text-data/runtime/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | 尚未发布 |
+| [Photon Flowers](games/photonflowers/) | [13,025 条章节文本](games/photonflowers/translations/) | [69 行历史合同](games/photonflowers/text-data/runtime/zh-Hans.csv) | [636 项](games/photonflowers/images/) | [BETA 0.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1) |
+| [Photon Melodies](games/photonmelodies/) | [44,698 条章节文本](games/photonmelodies/translations/) | [151 行历史合同](games/photonmelodies/text-data/runtime/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | [BETA 0.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1) |
 
 上表图片数为 V6 历史集合。另见[当前 1,791 项静态审核选集](evidence/photon/images/static-review-20260909/README.md)
 及[审核页／长图工具](tools/images/README.md)：保留最新人工稿与待安装修订，不能与历史数相加。

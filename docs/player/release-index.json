@@ -1,6 +1,6 @@
 {
   "schema": "muvluv-community-release-index/v1",
-  "audited_date": "2026-09-01",
+  "audited_date": "2026-09-10",
   "repository": "imnotsureyi-sys/muvluv-series-steam-cn-patch",
   "scope": "current-listed-player-packages-and-research-assets",
   "central_player_guide": "docs/player/README.md",
@@ -214,6 +214,66 @@
       "manifest_name": "manifest-v6.json",
       "manifest_sha256": "428ED401E27ED5A61FD8F8738B381884D8277981140B5A7133DB469ADFCB98F0",
       "warning": "Reviewed image authority only; not a game patch or installer. Nineteen PNGs are byte-identical to official source images and require redistribution remediation."
+    }
+  ],
+  "photon_player_packages": [
+    {
+      "game_id": "pf",
+      "title": "Muv-Luv photonflowers",
+      "engine": "rugp",
+      "locale": "zh-Hans",
+      "status": "published",
+      "player_installable": true,
+      "version": "BETA 0.1",
+      "prerelease": false,
+      "build_id": "2026.09.10-r3",
+      "release_tag": "pf-BETA-0.1",
+      "asset_name": "MuvLuv_PF_CN_Patch_BETA_0.1.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1/MuvLuv_PF_CN_Patch_BETA_0.1.zip",
+      "asset_sha256": "E8933FAB8D3E4285A82269653B3F58D738BA6B2803BC2C96B956D5D148EFCCC3",
+      "asset_bytes": 112873626,
+      "checksum_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1/MuvLuv_PF_CN_Patch_BETA_0.1_SHA256SUMS.txt",
+      "source_commit": "12aa06a951e529b6596149330eb39faac1f069a1",
+      "installer_target": "<SteamLibrary>/steamapps/common/Muv-Luv photonflowers",
+      "package_root": ".",
+      "archive_entry_count": 2,
+      "backup_policy": "none",
+      "restoration": "Preserve saves; Steam uninstall, clear patch leftovers in the named game directory, and re-download.",
+      "font_license_notice_present": true,
+      "known_limitations": [
+        "Windows Steam English route only",
+        "No full-route exhaustive gameplay claim",
+        "No automatic rollback"
+      ]
+    },
+    {
+      "game_id": "pm",
+      "title": "Muv-Luv photonmelodies",
+      "engine": "rugp",
+      "locale": "zh-Hans",
+      "status": "published",
+      "player_installable": true,
+      "version": "BETA 0.1",
+      "prerelease": false,
+      "build_id": "2026.09.10-r3",
+      "release_tag": "pm-BETA-0.1",
+      "asset_name": "MuvLuv_PM_CN_Patch_BETA_0.1.zip",
+      "asset_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1/MuvLuv_PM_CN_Patch_BETA_0.1.zip",
+      "asset_sha256": "F368B25BB4E09061F9CA7709CB9DB898EBB43D5757142DFF91D44BA4431C8285",
+      "asset_bytes": 152584584,
+      "checksum_url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1/MuvLuv_PM_CN_Patch_BETA_0.1_SHA256SUMS.txt",
+      "source_commit": "12aa06a951e529b6596149330eb39faac1f069a1",
+      "installer_target": "<SteamLibrary>/steamapps/common/Muv-Luv photonmelodies",
+      "package_root": ".",
+      "archive_entry_count": 2,
+      "backup_policy": "none",
+      "restoration": "Preserve saves; Steam uninstall, clear patch leftovers in the named game directory, and re-download.",
+      "font_license_notice_present": true,
+      "known_limitations": [
+        "Windows Steam English route only",
+        "No full-route exhaustive gameplay claim",
+        "No automatic rollback"
+      ]
     }
   ]
 }
