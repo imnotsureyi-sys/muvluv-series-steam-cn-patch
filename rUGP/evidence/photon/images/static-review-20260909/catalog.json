@@ -64672,5 +64672,6 @@
     }
   },
   "scope": "Current reviewed selection; not all extracted assets, not a redistribution authorization, and not a complete in-game acceptance.",
-  "source_manifest_sha256": "AB2505CBFD61F6B4839DF21AE1A51CFF25D61753C4513ED1F932303A76B9E034"
+  "source_manifest_sha256": "AB2505CBFD61F6B4839DF21AE1A51CFF25D61753C4513ED1F932303A76B9E034",
+  "source_resource_catalog_sha256": "D6EEC0E3DD1C95645252AD16CE8800BCFA2ABDD3F183A38C289CEE0A687BDA9B"
 }

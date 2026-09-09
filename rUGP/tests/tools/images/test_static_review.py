@@ -7,7 +7,7 @@ import unittest
 from unittest.mock import patch
 
 from PIL import Image, ImageFont
-from rUGP.tools.images.build_static_review import build, validate, StreamPNG
+from rUGP.tools.images.build_static_review import build, validate, panels, card, StreamPNG
 from rUGP.tools.provenance.export_static_review import export
 
 
@@ -62,6 +62,41 @@ class StaticReviewTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "category"):
             self.projection()
 
+    def test_resource_catalog_ambiguity_and_string_flags_fail(self):
+        self.resources["assets"].append(deepcopy(self.resources["assets"][0]))
+        with self.assertRaisesRegex(ValueError, "Duplicate resource"):
+            self.projection()
+        self.resources["assets"].pop()
+        self.row["shared_native"] = "false"
+        with self.assertRaisesRegex(ValueError, "shared_native"):
+            self.projection()
+
+    def test_reader_rejects_omitted_rows_with_stale_counts(self):
+        catalog, assets = self.projection()
+        catalog["rows"].clear()
+        with self.assertRaisesRegex(ValueError, "counts mismatch"):
+            validate(catalog, assets, self.root)
+
+    def test_additional_unknown_official_image_remains_visible(self):
+        catalog, assets = self.projection()
+        row = catalog["rows"][0]
+        row["shared_native"] = False
+        colors = {"jp": "red", "en": "green", "unknown": "blue", "candidate": "yellow"}
+        for label, color in colors.items():
+            path = self.root / f"{label}.png"
+            Image.new("RGB", (100, 100), color).save(path)
+            identity = dict(size=[100, 100], sha256=hashlib.sha256(path.read_bytes()).hexdigest().upper())
+            assets[identity["sha256"]] = str(path)
+            if label == "candidate":
+                row["candidate"] = identity
+            else:
+                row["official"][label] = identity
+        views = panels(row)
+        self.assertEqual(len(views), 4)
+        font = ImageFont.load_default()
+        rendered = card(row, validate(catalog, assets, self.root), {n: font for n in [16, 18, 22, 34]})
+        for index, color in enumerate(colors.values()):
+            self.assertEqual(rendered.getpixel((127 + index * 246, 187)), Image.new("RGB", (1, 1), color).getpixel((0, 0)))
     def test_status_only_rows_cannot_leak_images(self):
         self.row["placeholder"] = True
         catalog, assets = self.projection()

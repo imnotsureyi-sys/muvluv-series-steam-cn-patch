@@ -29,12 +29,15 @@
 - 椭圆角色卡已核对 18 个角色的无圈、白圈、黄圈，共 54 态；原资源另有
   彩峰、柏木、纯夏、霞四个暗态（G1110、G1111、G1114、G1116），合计 58 态。
   不能据此为其余角色臆造暗态；暗态实际解锁条件未在本次确认。
+  [逐角色状态矩阵](oval-state-matrix.json) 保存 18 人全部状态的资源 ID，并由测试核对
+  58 项无重复、无缺失，均存在于当前审核清单。
 
 ## 语言列与复现
 
 `official.jp` / `official.en` 表示确认的官方语言对应；`shared_native` 表示
 已核对两语言共用画面，工具会再次比较 RGBA 像素。`unknown` 保留语言未确认的官图。
 不再把“官方独立”作为一种语言。缺少对应项只说明未确认配对，不证明另一语言不存在。
+35 项同时有确认日文与语言待核官图，审核卡显示额外一列，保留全部来源，避免静默漏图。
 
 用 [`export_static_review`](../../../../tools/provenance/export_static_review.py)
 从本地清单投影身份，再用
@@ -42,7 +45,8 @@
 生成分类审核页和一张长 PNG。输入哈希、尺寸或共用像素不符就拒绝生成。
 审核卡是缩略概览，不能替代原尺寸画面检查。
 
-`source_manifest_sha256` 绑定本地来源清单；`refs` 是游戏卷与记录位置，
+`source_manifest_sha256` 绑定本地来源清单；`refs` 是游戏卷与记录位置。
+`source_resource_catalog_sha256` 绑定提供这些资源位置的源目录；
 `sha256` / `size` 绑定审核图片。它们不是运行时 payload FNV 身份，也不能直接
 转成安装表。V6 的 1,490 项历史账本继续保留，不用这份新选集覆盖。
 
@@ -52,3 +56,21 @@
 旧准入预期 7 个 hook 时拒绝底层实际安装的 9 个；新准入通过，覆盖直接／索引
 surface 提交及正负 pitch。它不执行游戏私有解码器，不等于所有新增资源已实机通过。
 完整故障说明见 [PM 图片准入修复](../../../../docs/postmortems/pm-image-admission-20260909.md)。
+
+## 版本与其他 PR
+
+这份审核选集逐项匹配最新六张人工采用稿和 54 项术语新稿的 SHA-256，没有用
+V6 或较早人工预览替代。运行时源码只纳入本 PR 明确测试的 PM 图片准入修复；
+当前机器安装版包含其他本地修复，不能用本 PR 构建物直接覆盖它。
+
+逐文件对照人工稿采用时的本地源码，仍有五处明确差异：PF、PM 普通 exact 表和
+special57 表共三份 generated 配置尚未同步；PM RUO 基址修复的
+`include/photon_pm_ruo_base_fix.h` 及 `src/photon_combined_proxy.c` 调用尚未纳入。
+其余该本地源码快照中的 C／汇编／头文件与公开版本一致（忽略换行差异）。
+因此本 PR 不是最新实机版本的完整源码快照；上述差异需独立核对原生记录与安装
+基线后再集成，不能只替换生成表或把本次构建 hash 标成实机版本。
+
+文本／字体候选在 [PR #14](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/14)，
+术语来源在 [PR #15](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/15)，
+CRmt 素材工具在 [PR #16](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/16)。
+这些独立内容没有漏进静态图目录，也不应复制一份形成平行维护版本。

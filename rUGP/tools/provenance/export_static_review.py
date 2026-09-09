@@ -42,11 +42,21 @@ def image_identity(item: dict, assets: dict[str, str]) -> dict:
     return dict(sha256=digest, size=size)
 
 
+def catalog_counts(rows: list[dict]) -> dict:
+    return dict(entries=len(rows), pictured=sum(not r["placeholder"] for r in rows),
+                status_only=sum(r["placeholder"] for r in rows),
+                categories=dict(Counter(r["category"] for r in rows)))
+
+
 def export(manifest: dict, resource_catalog: dict) -> tuple[dict, dict]:
     categories = [text(c) for c in manifest["categories"]]
     if len(set(categories)) != len(categories):
         raise ValueError("Duplicate categories")
-    references = {a["id"]: a["refs"] for a in resource_catalog["assets"]}
+    references = {}
+    for asset in resource_catalog["assets"]:
+        if asset["id"] in references:
+            raise ValueError("Duplicate resource catalog ID")
+        references[asset["id"]] = asset["refs"]
     rows, assets, seen = [], {}, set()
     for row in manifest["rows"]:
         gid = row["id"]
@@ -62,6 +72,9 @@ def export(manifest: dict, resource_catalog: dict) -> tuple[dict, dict]:
         placeholder = row["placeholder"]
         if type(placeholder) is not bool:
             raise ValueError("Invalid placeholder flag")
+        shared = row.get("shared_native", False)
+        if type(shared) is not bool:
+            raise ValueError("Invalid shared_native flag")
         official = {}
         candidate = None
         if not placeholder:
@@ -75,12 +88,10 @@ def export(manifest: dict, resource_catalog: dict) -> tuple[dict, dict]:
         rows.append(dict(id=gid, refs=refs, category=category,
                          title=text(row["title"]), collection=text(row["collection"]),
                          section=text(row["section"]), status=text(row["status"]),
-                         placeholder=placeholder, shared_native=bool(row.get("shared_native", False)),
+                         placeholder=placeholder, shared_native=shared,
                          official=official, candidate=candidate))
     result = dict(schema=SCHEMA, categories=categories, rows=rows,
-                  counts=dict(entries=len(rows), pictured=sum(not r["placeholder"] for r in rows),
-                              status_only=sum(r["placeholder"] for r in rows),
-                              categories=dict(Counter(r["category"] for r in rows))),
+                  counts=catalog_counts(rows),
                   scope="Current reviewed selection; not all extracted assets, not a redistribution authorization, and not a complete in-game acceptance.")
     return result, assets
 
@@ -93,10 +104,13 @@ def main() -> None:
     args = parser.parse_args()
     if args.output.exists():
         raise ValueError("Output directory already exists")
-    manifest = json.loads(args.manifest.read_text("utf-8"))
-    resources = json.loads(args.resource_catalog.read_text("utf-8"))
+    manifest_bytes = args.manifest.read_bytes()
+    resources_bytes = args.resource_catalog.read_bytes()
+    manifest = json.loads(manifest_bytes)
+    resources = json.loads(resources_bytes)
     result, assets = export(manifest, resources)
-    result["source_manifest_sha256"] = hashlib.sha256(args.manifest.read_bytes()).hexdigest().upper()
+    result["source_manifest_sha256"] = hashlib.sha256(manifest_bytes).hexdigest().upper()
+    result["source_resource_catalog_sha256"] = hashlib.sha256(resources_bytes).hexdigest().upper()
     encode = lambda obj: (json.dumps(obj, ensure_ascii=False, indent=2) + "\n").encode("utf-8")
     write_new_files({args.output / "catalog.json": encode(result),
                      args.output / "PRIVATE-asset-map.json": encode(assets)})

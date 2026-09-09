@@ -7,7 +7,8 @@ photon/
 ├─ text/
 │  ├─ reviewed/   57,547 行已审校中文的公开身份与 manifest
 │  └─ runtime/    PF 69 行、PM 151 行精确运行时绑定 manifest
-├─ images/        PF 636 + PM 854 = 1,490 项图片权威
+├─ images/        历史 V6：PF 636 + PM 854 = 1,490 项图片权威
+│  └─ static-review-20260909/ 当前 1,791 项审核选集；独立于历史发行账本
 └─ routes/        1,448 个 translation peer + 42 个 shared/common 端点
 ```
 
@@ -23,6 +24,9 @@ photon/
 4. `routes`：游戏运行时究竟从哪个 locale/common 端点取得该图片。
 
 任一层通过都不能代替其他层或最终实机 QA。
+
+[当前静态审核选集](images/static-review-20260909/README.md) 另行记录人工登记、候选版本、
+角色卡状态和未安装术语修订。它不是对上方历史路由合同的自动更新。
 
 ## 2026-09-06 最新合并审计（草稿）
 

@@ -27,9 +27,6 @@ SCRIPT_COMMANDS = (
 )
 
 MODULE_COMMANDS = (
-    "rUGP.tools.images.verify_pm_production",
-    "rUGP.tools.images.build_static_review",
-    "rUGP.tools.provenance.export_static_review",
     "localization.tools.font_coverage",
     "localization.tools.images.build_deterministic_textless_background",
     "localization.tools.images.render_deterministic_localized_text",
@@ -43,6 +40,9 @@ MODULE_COMMANDS = (
     "rUGP.tools.text.export_reviewed_translation",
     "rUGP.tools.text.split_reviewed_translation",
     "rUGP.tools.text.extract_crsa_text",
+    "rUGP.tools.images.verify_pm_production",
+    "rUGP.tools.images.build_static_review",
+    "rUGP.tools.provenance.export_static_review",
 )
 
 

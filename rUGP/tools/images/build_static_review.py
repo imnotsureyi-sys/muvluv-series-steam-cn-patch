@@ -18,7 +18,7 @@ import struct
 import zlib
 
 from PIL import Image, ImageDraw, ImageFont
-from rUGP.tools.provenance.export_static_review import SCHEMA, SHA
+from rUGP.tools.provenance.export_static_review import SCHEMA, SHA, catalog_counts
 
 BG = (25, 31, 41)
 PANEL, GAP, CARD_W, CARD_H = 320, 8, 992, 324
@@ -64,6 +64,8 @@ def panels(row: dict) -> list[tuple[str, dict | None]]:
     else:
         native = [("官方日文", official["jp"])] if "jp" in official else [("官图 · 语言待核", official["unknown"])] if "unknown" in official else [("官方日文 · 无已确认对应", None)]
         native.append(("官方英文", official["en"]) if "en" in official else ("官方英文 · 无已确认对应", None))
+    if "jp" in official and "unknown" in official:
+        native.append(("官图 · 语言待核", official["unknown"]))
     return native + [("汉化 · 当前审核稿", row["candidate"])]
 
 
@@ -81,12 +83,16 @@ def validate(catalog: dict, assets: dict, map_root: Path) -> dict[str, Path]:
     categories = catalog["categories"]
     if not categories or len(categories) != len(set(categories)):
         raise ValueError("Invalid categories")
+    if catalog.get("counts") != catalog_counts(catalog["rows"]):
+        raise ValueError("Catalog counts mismatch; possible omitted or stale rows")
     paths, sizes, seen = {}, {}, set()
     for row in catalog["rows"]:
         gid = row["id"]
         if type(gid) is not int or gid <= 0 or gid in seen or row["category"] not in categories:
             raise ValueError("Invalid group identity or category")
         seen.add(gid)
+        if type(row["placeholder"]) is not bool or type(row["shared_native"]) is not bool:
+            raise ValueError("Invalid catalog state flag")
         if row["placeholder"]:
             if row["candidate"] is not None or row["official"]:
                 raise ValueError("Status-only rows must not contain images")
@@ -139,17 +145,18 @@ def card(row: dict, paths: dict[str, Path], fonts: dict[int, ImageFont.FreeTypeF
         draw.text((24, 150), "人工完成登记 · 仅列状态", font=fonts[34], fill=(160, 210, 190))
         return result
     views = panels(row)
+    panel_width = (CARD_W - GAP * (len(views) + 1)) // len(views)
     sizes = [item["size"] for _, item in views if item]
-    scale = min(PANEL / max(s[0] for s in sizes), 200 / max(s[1] for s in sizes), 2)
+    scale = min(panel_width / max(s[0] for s in sizes), 200 / max(s[1] for s in sizes), 2)
     for column, (label, item) in enumerate(views):
-        x = GAP + column * (PANEL + GAP)
-        draw.text((x + 3, 61), label, font=fonts[18], fill=(130, 215, 210))
-        draw.rectangle((x, 87, x + PANEL - 1, 286), fill=(71, 78, 88))
+        x = GAP + column * (panel_width + GAP)
+        draw.text((x + 3, 61), short(draw, label, fonts[18], panel_width - 6), font=fonts[18], fill=(130, 215, 210))
+        draw.rectangle((x, 87, x + panel_width - 1, 286), fill=(71, 78, 88))
         if item:
             with authenticated_image(paths[item["sha256"]], item["sha256"]) as source:
                 tile = source.convert("RGBA")
                 tile = tile.resize((max(1, round(tile.width * scale)), max(1, round(tile.height * scale))), Image.Resampling.LANCZOS)
-                result.paste(tile, (x + (PANEL - tile.width) // 2, 87 + (200 - tile.height) // 2), tile)
+                result.paste(tile, (x + (panel_width - tile.width) // 2, 87 + (200 - tile.height) // 2), tile)
     return result
 
 
