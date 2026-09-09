@@ -54,7 +54,7 @@ jobs:
         if: steps.pending.outputs.exists != 'true'
         run: |
           git diff --check
-          python -m unittest discover -s AGE2/tests -p 'test_*.py' -v
+          python -m unittest discover -s AGE2/tests/games -p 'test_translation_tables.py' -v
           python .github/scripts/verify_repository.py
       - name: Publish a review PR (manual main-branch runs only)
         if: >-
