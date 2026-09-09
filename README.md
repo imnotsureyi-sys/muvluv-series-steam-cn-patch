@@ -1,75 +1,106 @@
-<p align="right">
-  <a href="README.md"><img alt="简体中文" src="https://img.shields.io/badge/%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87-%E5%BD%93%E5%89%8D-C62828?style=for-the-badge"></a>
-  <a href="docs/en/README.md"><img alt="English" src="https://img.shields.io/badge/English-Read-2F81F7?style=for-the-badge"></a>
-</p>
-
 # Muv-Luv 系列 Steam 中文补丁
 
-这是一个非官方、非商业的 Muv-Luv 系列本地化项目。仓库既保存面向玩家的简体中文
-测试补丁，也公开让其他语言团队能够复用的翻译、术语、图片、字体、格式工具和逆向
-经验。
+<p align="center">
+  <strong><a href="#游戏下载">游戏下载</a></strong> ·
+  <a href="docs/player/README.md">安装、卸载与排错</a> ·
+  <a href="docs/research/README.md">公开的制作与研究成果</a> ·
+  <a href="#问题反馈">问题反馈</a>
+</p>
 
-使用补丁必须拥有对应游戏正版。本仓库不提供游戏本体、破解、完整原始资源或 Steam
-原始 `pack.bin`。
+这是一个非官方、非商业的 Muv-Luv 系列 Steam 简体中文补丁项目。
 
-## 请选择入口
+> [!IMPORTANT]
+> 使用补丁必须拥有对应游戏正版。本仓库不提供游戏本体、破解或完整原始资源。
+> 下列 AGE2 补丁是保留的历史测试版，尚未达到现行发布标准；安装前请阅读
+> [完整玩家指南](docs/player/README.md)，并备份对应游戏的 LocalAppData 覆盖目录。
 
-| **普通玩家** | **本地化制作者与技术研究者** |
-| --- | --- |
-| **[下载、安装、卸载与排错](docs/player/README.md)** | **[文本、图片、字体、工具与逆向研究](docs/research/README.md)** |
-| 只保留玩家真正需要的版本状态、下载地址和安全操作。 | 从资产地图进入多语言工作流、AGE2、rUGP 和故障复盘。 |
+<details>
+<summary><strong>🌐 English — expand here / 在本页展开英文</strong></summary>
 
-英文读者可直接进入 [English overview](docs/en/README.md)、
-[Player guide](docs/en/player-guide.md) 或
-[Research and localization index](docs/en/research-index.md)。
+## Downloads
 
-## 当前状态
+This is an unofficial, non-commercial Simplified Chinese patch project. You must own the
+corresponding Steam game. The AGE2 packages below are preserved historical test builds rather than
+current recommended releases. Read the [English player guide](docs/en/player-guide.md) before
+installing, and do not use GitHub's automatically generated source-code ZIP as a game patch.
 
-| 范围 | 玩家状态 | 公开的制作与研究成果 |
+| Game | Version | Download |
 | --- | --- | --- |
-| TDA00–03、帝都燃烧篇 | 保留历史 AGE2 测试包；仍在补做版本、字体许可、官方 UI 兜底资源和安全回滚审计 | 五作可维护文本、730 个历史 WebP 路径清单、帝都图片文案、FPD/EGPACK 工具与松散覆盖经验 |
-| photonflowers、photonmelodies | 暂无玩家安装包 | 可维护文本、PF/PM 1,490 图权威与路由、ICI/RIO/CRsa/RUO/Cr6Ti/CRip 工具、受保护运行时与故障复盘 |
+| THE DAY AFTER episode:00 | Historical beta0.1 | [Patch ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip) · [Release notes](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
+| THE DAY AFTER episode:01 | Historical beta0.2.2 | [Patch ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip) · [Release notes](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
+| THE DAY AFTER episode:02 | Historical beta0.1 | [Patch ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip) · [Release notes](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
+| THE DAY AFTER episode:03 | Historical beta0.1.6 | [Patch ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip) · [Release notes](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
+| The Imperial Capital Burns | Historical beta0.1 | [Patch ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip) · [Release notes](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
+| photonflowers / photonmelodies | In development | No player package yet |
 
-历史包可以识别和安装，但在现行发布门完成前不标记为推荐版本；以
-[玩家指南](docs/player/README.md)中的状态和警告为准。Photon 的 1,490 图 Release 是
-研究/制作资产，不是补丁安装器。
+Use the [English player guide](docs/en/player-guide.md) for installation and rollback. Localizers and
+developers can enter the [public production and research index](docs/en/research-index.md).
 
-## 内容放在哪里
+</details>
 
-| 目录 | 职责 |
+## 游戏下载
+
+请选择与你拥有的游戏完全对应的补丁。**下载名为“补丁 ZIP”的文件，不要下载 GitHub
+自动生成的 Source code ZIP。**
+
+| 游戏 | 当前公开版本 | 下载与说明 |
+| --- | --- | --- |
+| THE DAY AFTER episode:00 | 历史测试版 beta0.1 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda00-beta0.1/MuvLuv_TDA00_CN_Patch_beta0.1.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1) |
+| THE DAY AFTER episode:01 | 历史测试版 beta0.2.2 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda01-beta0.2.2/MuvLuv_TDA01_CN_Patch_beta0.2.2.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2) |
+| THE DAY AFTER episode:02 | 历史测试版 beta0.1 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
+| THE DAY AFTER episode:03 | 历史测试版 beta0.1.6 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
+| 帝都燃烧篇 | 历史测试版 beta0.1 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
+| photonflowers | 制作中 | 暂无玩家安装包 |
+| photonmelodies | 制作中 | 暂无玩家安装包 |
+
+## 安装、卸载和注意事项
+
+1. 确认 Steam 已安装对应游戏，至少启动过一次，然后完全退出游戏。
+2. 下载上表中对应游戏的补丁 ZIP，完整解压后阅读包内说明，再运行安装脚本。
+3. 安装前备份该游戏准确的 LocalAppData 覆盖目录。不同作品的文件不能混用。
+4. Steam 的“验证游戏文件完整性”不会删除 LocalAppData 中的补丁文件，不能当作卸载方法。
+
+历史包在安装清单、版本哈希、字体许可和安全回滚方面仍有待补审。准确目标路径、校验方法、
+旧版本风险及恢复步骤都集中在 **[玩家下载、安装、卸载与排错指南](docs/player/README.md)**。
+
+## 项目状态
+
+- **TDA00—03、帝都燃烧篇：**已有上述历史测试包，正在整理可维护文本、版本校验、字体和
+  安全回滚，为后续更新做准备。
+- **photonflowers、photonmelodies：**文本、图片和运行时仍在制作与验证，目前没有可供普通
+  玩家安装的补丁。Release 中的 Photon 图片研究资产不是游戏安装包。
+
+## 公开的制作与研究成果
+
+本仓库同时公开可复用的翻译、术语、图片、字体、工具和逆向研究，方便其他汉化者、
+开发者和其他语言团队继续维护：
+
+| 内容 | 入口 |
 | --- | --- |
-| [`localization/`](localization/README.md) | 跨引擎的两轮翻译、术语、图片制作、字体检查与新语言工作流 |
-| [`AGE2/`](AGE2/README.md) | TDA／帝都的游戏专属文本和图片身份、FPD、EGPACK、WebP、松散覆盖、测试与复盘 |
-| [`rUGP/`](rUGP/README.md) | Photon 的游戏专属文本和图片身份、ICI、RIO、CRsa、RUO、Cr6Ti、CRip、运行时与复盘 |
-| [`docs/`](docs/README.md) | 玩家说明、研究索引、项目维护、法律与英文文档 |
+| 全部公开成果与研究索引 | **[制作与研究入口](docs/research/README.md)** |
+| 翻译规则、术语、图片和字体流程 | [通用本地化工作区](localization/README.md) |
+| TDA／帝都的 AGE2、FPD、EGPACK 与松散覆盖 | [AGE2 工作区](AGE2/README.md) |
+| Photon 的 RIO、RUO、CRsa、图片和运行时 | [rUGP 工作区](rUGP/README.md) |
+| 文本、图片、字体和工具的具体位置 | [资产地图](docs/research/asset-map.md) |
 
-完整的归类规则与实际数量见
-**[文本、术语、图片与字体资产地图](docs/research/asset-map.md)**。原则很简单：
-跨游戏、跨引擎的方法放 `localization/`；绑定具体游戏资源 ID、语言槽、路径或编码的内容
-放对应的 `AGE2/games/` 或 `rUGP/games/`；完整官方原始资源只从贡献者自己的合法安装
-提取，不进入公开仓库。
+## 问题反馈
 
-## 本地化工作流
+- [报告安装、启动、文本、图片或字体问题](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
+- [提交有日文原文依据的翻译修正](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml)
+- [查看参与方式、贡献者与致谢](.github/CONTRIBUTING.md)
 
-本项目采用“剧情与术语基线 → 第一次翻译 → 第二次独立
-`keep/revise/question` 审核 → 技术写回 → 实机 QA → 玩家反馈回流”的完整流程。
+## 贡献者与致谢
 
-- [中文完整工作流](localization/workflow.md)
-- [English workflow](localization/workflow.en.md)
-- [制作韩语、俄语等新语言](localization/new-locale.md)
-- [图片本地化与 Image 2 经验](localization/image-workflow.md)
+项目由 [imnotsureyi-sys](https://github.com/imnotsureyi-sys)／Yi Shen 发起和维护。
+感谢“主任保护协会”提供 AGES 引擎汉化思路，让本项目开始制作补丁；感谢 GARbro、AFHook、
+rugptools、FatePackageManager 及其他成熟补丁项目提供公开技术先例。OpenAI Codex 和图像模型
+在维护者指挥与审核下参与了部分代码、文档、分析、检查和图片工作。
 
-## 致谢与参与
+完整贡献范围、责任边界与参考项目见 **[贡献者与致谢](docs/project/CONTRIBUTORS.md)** 和
+[研究参考](docs/research/references.md)。
 
-致谢“主任保护协会”提供了 AGES 引擎的汉化思路，并感谢他让我们开始了汉化补丁制作
-之路。GARbro、AFHook、rugptools、FatePackageManager 以及其他成熟补丁项目为本项目
-提供了明确标注的技术先例；详见[贡献者与致谢](docs/project/CONTRIBUTORS.md)和
-[参考项目比较](docs/research/references.md)。
+## 许可与内容边界
 
-[提交程序或安装问题](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=bug-report.yml)
-· [提交译文修正](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/issues/new?template=translation-review.yml)
-· [参与贡献](docs/project/CONTRIBUTING.md)
-
-自写代码采用 [MIT License](LICENSE)。MIT 不自动覆盖游戏内容、翻译文本、字体、衍生
-图片、发布包或第三方组件；详见[内容与发布政策](docs/project/asset-and-release-policy.md)、
+自写代码采用 [MIT License](LICENSE)。MIT 不自动覆盖游戏内容、翻译文本、字体、衍生图片、
+发布包或第三方组件；详见[内容与发布政策](docs/project/asset-and-release-policy.md)、
 [第三方来源](docs/legal/THIRD_PARTY.md)与[法律说明](docs/legal/NOTICE.md)。
