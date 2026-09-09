@@ -1,0 +1,1004 @@
+[
+  {
+    "jp": "ALTERNATIVE IV",
+    "ml_term_id": "ml-ind-0015",
+    "al_term_id": "al-ind-0008",
+    "ml_cn": [
+      "Alternative IV"
+    ],
+    "al_cn": [
+      "Alternative IV"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "BDU",
+    "ml_term_id": "ml-ind-0016",
+    "al_term_id": "al-ind-0010",
+    "ml_cn": [
+      "BDU"
+    ],
+    "al_cn": [
+      "BDU"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "BETA",
+    "ml_term_id": "ml-ind-0017",
+    "al_term_id": "al-ind-0011",
+    "ml_cn": [
+      "BETA"
+    ],
+    "al_cn": [
+      "BETA"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "F-15",
+    "ml_term_id": "ml-ind-0020",
+    "al_term_id": "al-ind-0022",
+    "ml_cn": [
+      "F-15"
+    ],
+    "al_cn": [
+      "F-15"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "F-15J",
+    "ml_term_id": "ml-ind-0021",
+    "al_term_id": "al-ind-0024",
+    "ml_cn": [
+      "F-15J"
+    ],
+    "al_cn": [
+      "F-15J"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "F-4",
+    "ml_term_id": "ml-ind-0022",
+    "al_term_id": "al-ind-0028",
+    "ml_cn": [
+      "F-4"
+    ],
+    "al_cn": [
+      "F-4"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "F-4J",
+    "ml_term_id": "ml-ind-0023",
+    "al_term_id": "al-ind-0029",
+    "ml_cn": [
+      "F-4J"
+    ],
+    "al_cn": [
+      "F-4J"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "HSST",
+    "ml_term_id": "ml-ind-0031",
+    "al_term_id": "al-ind-0037",
+    "ml_cn": [
+      "HSST"
+    ],
+    "al_cn": [
+      "HSST"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "MLRS",
+    "ml_term_id": "ml-ind-0034",
+    "al_term_id": "al-ind-0042",
+    "ml_cn": [
+      "多管火箭炮"
+    ],
+    "al_cn": [
+      "多管火箭炮"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "MP",
+    "ml_term_id": "ml-ind-0037",
+    "al_term_id": "al-ind-0043",
+    "ml_cn": [
+      "MP"
+    ],
+    "al_cn": [
+      "MP"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "PX",
+    "ml_term_id": "ml-ind-0040",
+    "al_term_id": "al-ind-0054",
+    "ml_cn": [
+      "PX"
+    ],
+    "al_cn": [
+      "PX"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "SES009",
+    "ml_term_id": "ml-ind-0043",
+    "al_term_id": "al-ind-0057",
+    "ml_cn": [
+      "SES009"
+    ],
+    "al_cn": [
+      "SES009"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "うしろのトロロ",
+    "ml_term_id": "ml-ind-0049",
+    "al_term_id": "al-ind-0071",
+    "ml_cn": [
+      "背后的托罗罗"
+    ],
+    "al_cn": [
+      "背后的托罗罗"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "たけるさん",
+    "ml_term_id": "ml-ind-0055",
+    "al_term_id": "al-ind-0078",
+    "ml_cn": [
+      "小武哥"
+    ],
+    "al_cn": [
+      "小武哥"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "アサバスカ",
+    "ml_term_id": "ml-ind-0058",
+    "al_term_id": "al-ind-0081",
+    "ml_cn": [
+      "阿萨帕斯卡尔"
+    ],
+    "al_cn": [
+      "阿萨巴斯卡"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "イーグル",
+    "ml_term_id": "ml-ind-0064",
+    "al_term_id": "al-ind-0088",
+    "ml_cn": [
+      "鹰(Eagle)"
+    ],
+    "al_cn": [
+      "鹰"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "ウルターメン・パワード",
+    "ml_term_id": "ml-ind-0065",
+    "al_term_id": "al-ind-0092",
+    "ml_cn": [
+      "奥塔曼·帕瓦德"
+    ],
+    "al_cn": [
+      "奥塔曼·帕瓦德"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "エリア51",
+    "ml_term_id": "ml-ind-0069",
+    "al_term_id": "al-ind-0097",
+    "ml_cn": [
+      "51区"
+    ],
+    "al_cn": [
+      "51区"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "オグラグッディメン",
+    "ml_term_id": "ml-ind-0071",
+    "al_term_id": "al-ind-0102",
+    "ml_cn": [
+      "奥格兰古迪曼"
+    ],
+    "al_cn": [
+      "奥格兰古迪曼"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "オルタネイティヴ4",
+    "ml_term_id": "ml-ind-0074",
+    "al_term_id": "al-ind-0105",
+    "ml_cn": [
+      "Alternative4"
+    ],
+    "al_cn": [
+      "Alternative4"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "ゴルバン",
+    "ml_term_id": "ml-ind-0084",
+    "al_term_id": "al-ind-0119",
+    "ml_cn": [
+      "古尔班"
+    ],
+    "al_cn": [
+      "古尔班"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "ストラトス",
+    "ml_term_id": "ml-ind-0098",
+    "al_term_id": "al-ind-0133",
+    "ml_cn": [
+      "STRATOS"
+    ],
+    "al_cn": [
+      "STRATOS"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "タケルちゃん",
+    "ml_term_id": "ml-ind-0105",
+    "al_term_id": "al-ind-0143",
+    "ml_cn": [
+      "小武"
+    ],
+    "al_cn": [
+      "小武"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "データリンク",
+    "ml_term_id": "ml-ind-0111",
+    "al_term_id": "al-ind-0148",
+    "ml_cn": [
+      "数据连接",
+      "数据链"
+    ],
+    "al_cn": [
+      "数据链"
+    ],
+    "comparison": "some_shared_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "バーナード星系",
+    "ml_term_id": "ml-ind-0121",
+    "al_term_id": "al-ind-0164",
+    "ml_cn": [
+      "巴纳德星系"
+    ],
+    "al_cn": [
+      "巴纳德星系"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "プレスタ2",
+    "ml_term_id": "ml-ind-0129",
+    "al_term_id": "al-ind-0173",
+    "ml_cn": [
+      "PlayStallion 2"
+    ],
+    "al_cn": [
+      "PS2"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "ラグランジュ点",
+    "ml_term_id": "ml-ind-0149",
+    "al_term_id": "al-ind-0189",
+    "ml_cn": [
+      "拉格朗日点"
+    ],
+    "al_cn": [
+      "拉格朗日点"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "不知火",
+    "ml_term_id": "ml-ind-0159",
+    "al_term_id": "al-ind-0222",
+    "ml_cn": [
+      "不知火"
+    ],
+    "al_cn": [
+      "不知火"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "先生",
+    "ml_term_id": "ml-ind-0176",
+    "al_term_id": "al-ind-0247",
+    "ml_cn": [
+      "老师"
+    ],
+    "al_cn": [
+      "老师"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "再突入型駆逐艦",
+    "ml_term_id": "ml-ind-0181",
+    "al_term_id": "al-ind-0252",
+    "ml_cn": [
+      "再入式驱逐舰"
+    ],
+    "al_cn": [
+      "返回式驱逐舰"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "冥夜さん",
+    "ml_term_id": "ml-ind-0182",
+    "al_term_id": "al-ind-0254",
+    "ml_cn": [
+      "冥夜"
+    ],
+    "al_cn": [
+      "冥夜"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "冥夜ちゃん",
+    "ml_term_id": "ml-ind-0183",
+    "al_term_id": "al-ind-0255",
+    "ml_cn": [
+      "冥夜"
+    ],
+    "al_cn": [
+      "冥夜"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "冥夜様",
+    "ml_term_id": "ml-ind-0184",
+    "al_term_id": "al-ind-0256",
+    "ml_cn": [
+      "冥夜小姐"
+    ],
+    "al_cn": [
+      "冥夜小姐"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "匍匐飛行",
+    "ml_term_id": "ml-ind-0188",
+    "al_term_id": "al-ind-0269",
+    "ml_cn": [
+      "匍匐飞行"
+    ],
+    "al_cn": [
+      "匍匐飞行"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "千鶴さん",
+    "ml_term_id": "ml-ind-0189",
+    "al_term_id": "al-ind-0271",
+    "ml_cn": [
+      "千鹤"
+    ],
+    "al_cn": [
+      "千鹤"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "双子は家を分ける",
+    "ml_term_id": "ml-ind-0192",
+    "al_term_id": "al-ind-0273",
+    "ml_cn": [
+      "双胞胎会分家所以不吉利"
+    ],
+    "al_cn": [
+      "双胞胎会分家所以不吉利"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "噴射跳躍",
+    "ml_term_id": "ml-ind-0195",
+    "al_term_id": "al-ind-0280",
+    "ml_cn": [
+      "喷射跳跃"
+    ],
+    "al_cn": [
+      "喷射跳跃"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "因果律量子論",
+    "ml_term_id": "ml-ind-0196",
+    "al_term_id": "al-ind-0284",
+    "ml_cn": [
+      "因果律量子论"
+    ],
+    "al_cn": [
+      "因果律量子论"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "壬姫さん",
+    "ml_term_id": "ml-ind-0208",
+    "al_term_id": "al-ind-0293",
+    "ml_cn": [
+      "壬姬"
+    ],
+    "al_cn": [
+      "壬姬"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "壬姫ちゃん",
+    "ml_term_id": "ml-ind-0209",
+    "al_term_id": "al-ind-0294",
+    "ml_cn": [
+      "壬姬"
+    ],
+    "al_cn": [
+      "壬姬"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "夕呼先生",
+    "ml_term_id": "ml-ind-0210",
+    "al_term_id": "al-ind-0295",
+    "ml_cn": [
+      "夕呼老师"
+    ],
+    "al_cn": [
+      "夕呼老师"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "委員長",
+    "ml_term_id": "ml-ind-0226",
+    "al_term_id": "al-ind-0302",
+    "ml_cn": [
+      "班长"
+    ],
+    "al_cn": [
+      "班长"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "将軍",
+    "ml_term_id": "ml-ind-0233",
+    "al_term_id": "al-ind-0311",
+    "ml_cn": [
+      "将军"
+    ],
+    "al_cn": [
+      "将军"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "将軍殿下",
+    "ml_term_id": "ml-ind-0234",
+    "al_term_id": "al-ind-0312",
+    "ml_cn": [
+      "将军殿下"
+    ],
+    "al_cn": [
+      "将军殿下"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "師岡先生",
+    "ml_term_id": "ml-ind-0247",
+    "al_term_id": "al-ind-0325",
+    "ml_cn": [
+      "师冈老师"
+    ],
+    "al_cn": [
+      "师岡老师"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "強化外骨格",
+    "ml_term_id": "ml-ind-0249",
+    "al_term_id": "al-ind-0328",
+    "ml_cn": [
+      "强化外骨骼"
+    ],
+    "al_cn": [
+      "强化外骨骼"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "彩峰さん",
+    "ml_term_id": "ml-ind-0252",
+    "al_term_id": "al-ind-0331",
+    "ml_cn": [
+      "彩峰同学"
+    ],
+    "al_cn": [
+      "彩峰"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "御剣さん",
+    "ml_term_id": "ml-ind-0253",
+    "al_term_id": "al-ind-0337",
+    "ml_cn": [
+      "御剑同学"
+    ],
+    "al_cn": [
+      "御剑"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "恋愛原子核",
+    "ml_term_id": "ml-ind-0257",
+    "al_term_id": "al-ind-0343",
+    "ml_cn": [
+      "恋爱原子核"
+    ],
+    "al_cn": [
+      "恋爱原子核"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "慧さん",
+    "ml_term_id": "ml-ind-0258",
+    "al_term_id": "al-ind-0349",
+    "ml_cn": [
+      "慧"
+    ],
+    "al_cn": [
+      "慧"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "戦術機",
+    "ml_term_id": "ml-ind-0261",
+    "al_term_id": "al-ind-0357",
+    "ml_cn": [
+      "战术机"
+    ],
+    "al_cn": [
+      "战术机"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "月詠さん",
+    "ml_term_id": "ml-ind-0273",
+    "al_term_id": "al-ind-0371",
+    "ml_cn": [
+      "月咏小姐"
+    ],
+    "al_cn": [
+      "月咏小姐"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "柊町",
+    "ml_term_id": "ml-ind-0278",
+    "al_term_id": "al-ind-0375",
+    "ml_cn": [
+      "柊町"
+    ],
+    "al_cn": [
+      "柊町"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "榊さん",
+    "ml_term_id": "ml-ind-0281",
+    "al_term_id": "al-ind-0380",
+    "ml_cn": [
+      "榊"
+    ],
+    "al_cn": [
+      "榊"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "榊千鶴",
+    "ml_term_id": "ml-ind-0283",
+    "al_term_id": "al-ind-0381",
+    "ml_cn": [
+      "榊千鹤"
+    ],
+    "al_cn": [
+      "榊千鹤"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "橘町",
+    "ml_term_id": "ml-ind-0287",
+    "al_term_id": "al-ind-0388",
+    "ml_cn": [
+      "橘町"
+    ],
+    "al_cn": [
+      "橘町"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "武様",
+    "ml_term_id": "ml-ind-0291",
+    "al_term_id": "al-ind-0394",
+    "ml_cn": [
+      "武先生"
+    ],
+    "al_cn": [
+      "武先生"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "殿下",
+    "ml_term_id": "ml-ind-0293",
+    "al_term_id": "al-ind-0396",
+    "ml_cn": [
+      "殿下"
+    ],
+    "al_cn": [
+      "殿下"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "涼宮さん",
+    "ml_term_id": "ml-ind-0296",
+    "al_term_id": "al-ind-0402",
+    "ml_cn": [
+      "凉宫"
+    ],
+    "al_cn": [
+      "凉宫"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "狂犬",
+    "ml_term_id": "ml-ind-0305",
+    "al_term_id": "al-ind-0412",
+    "ml_cn": [
+      "狂犬"
+    ],
+    "al_cn": [
+      "狂犬"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "珠瀬さん",
+    "ml_term_id": "ml-ind-0308",
+    "al_term_id": "al-ind-0414",
+    "ml_cn": [
+      "珠濑"
+    ],
+    "al_cn": [
+      "珠濑同学"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "珠瀬玄丞斎",
+    "ml_term_id": "ml-ind-0311",
+    "al_term_id": "al-ind-0417",
+    "ml_cn": [
+      "珠濑玄丞斋"
+    ],
+    "al_cn": [
+      "珠濑玄丞斋"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "白銀君",
+    "ml_term_id": "ml-ind-0321",
+    "al_term_id": "al-ind-0430",
+    "ml_cn": [
+      "白银君"
+    ],
+    "al_cn": [
+      "白银同学"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "白銀武",
+    "ml_term_id": "ml-ind-0322",
+    "al_term_id": "al-ind-0432",
+    "ml_cn": [
+      "白银武"
+    ],
+    "al_cn": [
+      "白银武"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "白陵大",
+    "ml_term_id": "ml-ind-0325",
+    "al_term_id": "al-ind-0435",
+    "ml_cn": [
+      "白陵大学"
+    ],
+    "al_cn": [
+      "白陵大"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "白陵柊",
+    "ml_term_id": "ml-ind-0327",
+    "al_term_id": "al-ind-0436",
+    "ml_cn": [
+      "白陵柊"
+    ],
+    "al_cn": [
+      "白陵柊"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "皆琉神威",
+    "ml_term_id": "ml-ind-0328",
+    "al_term_id": "al-ind-0438",
+    "ml_cn": [
+      "皆琉神威"
+    ],
+    "al_cn": [
+      "皆琉神威"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "社霞",
+    "ml_term_id": "ml-ind-0331",
+    "al_term_id": "al-ind-0452",
+    "ml_cn": [
+      "社霞"
+    ],
+    "al_cn": [
+      "社霞"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "神宮司先生",
+    "ml_term_id": "ml-ind-0333",
+    "al_term_id": "al-ind-0455",
+    "ml_cn": [
+      "神宫司老师"
+    ],
+    "al_cn": [
+      "神宫司老师"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "純夏ちゃん",
+    "ml_term_id": "ml-ind-0345",
+    "al_term_id": "al-ind-0467",
+    "ml_cn": [
+      "纯夏"
+    ],
+    "al_cn": [
+      "小夏"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "蛇遣い座",
+    "ml_term_id": "ml-ind-0360",
+    "al_term_id": "al-ind-0482",
+    "ml_cn": [
+      "蛇夫座"
+    ],
+    "al_cn": [
+      "蛇夫座"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "鎧衣さん",
+    "ml_term_id": "ml-ind-0380",
+    "al_term_id": "al-ind-0505",
+    "ml_cn": [
+      "铠衣"
+    ],
+    "al_cn": [
+      "铠衣"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "鎧衣君",
+    "ml_term_id": "ml-ind-0381",
+    "al_term_id": "al-ind-0506",
+    "ml_cn": [
+      "铠衣同学"
+    ],
+    "al_cn": [
+      "铠衣"
+    ],
+    "comparison": "different_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "鎧衣少尉",
+    "ml_term_id": "ml-ind-0384",
+    "al_term_id": "al-ind-0507",
+    "ml_cn": [
+      "铠衣少尉"
+    ],
+    "al_cn": [
+      "铠衣少尉"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "鑑さん",
+    "ml_term_id": "ml-ind-0386",
+    "al_term_id": "al-ind-0511",
+    "ml_cn": [
+      "鉴同学"
+    ],
+    "al_cn": [
+      "鉴同学"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "鑑様",
+    "ml_term_id": "ml-ind-0387",
+    "al_term_id": "al-ind-0513",
+    "ml_cn": [
+      "鉴小姐"
+    ],
+    "al_cn": [
+      "鉴小姐"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  },
+  {
+    "jp": "香月先生",
+    "ml_term_id": "ml-ind-0396",
+    "al_term_id": "al-ind-0526",
+    "ml_cn": [
+      "香月老师"
+    ],
+    "al_cn": [
+      "香月老师"
+    ],
+    "comparison": "same_observed_variants",
+    "promotion_to_common_authorized": false
+  }
+]

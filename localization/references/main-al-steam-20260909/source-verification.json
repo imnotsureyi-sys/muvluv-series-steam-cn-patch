@@ -1,0 +1,31 @@
+{
+  "records": 767,
+  "language_fields": 404557,
+  "readback_mismatches": [],
+  "archives": [
+    {
+      "file": "alternative16.rio.ruo1",
+      "size": 25585340,
+      "crsa_records": 255,
+      "base_crsa_records": 255,
+      "all_base_crsa_redirected": true
+    },
+    {
+      "file": "muvluv16.rio.ruo1",
+      "size": 164356652,
+      "crsa_records": 253,
+      "base_crsa_records": 253,
+      "all_base_crsa_redirected": true
+    },
+    {
+      "file": "muvluv16_chn.rio.002",
+      "size": 1142370990,
+      "crsa_records": 63
+    },
+    {
+      "file": "muvluv16_chn.rio",
+      "size": 2146929902,
+      "crsa_records": 196
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # 通用术语、各作术语与基线
 
+后续完成的[独立发现目录](../references/main-al-independent-20260909/README.md)包含本篇403项、AL529项及77个共同词形；先独立发现再交叉比较，不是旧101／193项参考名单的命中扩展。
+
+本篇／Alternative 的 [Steam 术语参考快照](../references/main-al-steam-20260909/README.md)单独存放，仅供查证，尚未加入生效术语表。
+
 系列通用表为 [muv-luv.ja-zh-Hans.csv](muv-luv.ja-zh-Hans.csv)，目前 **139 条**。
 各作使用“通用表 + 本作术语表”，不继承其他作品的专表。基线用于查证和审校，不作为自动替换字典加载。
 
