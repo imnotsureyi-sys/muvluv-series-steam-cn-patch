@@ -1,6 +1,6 @@
 {
   "bulk_official_dialogue_included": false,
-  "output_bytes": 2223527,
+  "output_bytes": 2223877,
   "output_columns": [
     "call_order",
     "id",
@@ -11,7 +11,7 @@
     "record_kind",
     "cn_text"
   ],
-  "output_sha256": "31A27F6DF000E8DC38416A2140A8722722EFA7FFE2C3E7D918812394E8B6417D",
+  "output_sha256": "0F27F89451D5590AF52C641C70C906D9B3DFD99DF7FB417E1106D1EFBE9D3728",
   "record_kinds": {
     "structural_empty": 0,
     "text": 8565
@@ -24,5 +24,12 @@
   ],
   "rows": 8565,
   "source_bytes": 2487940,
-  "source_sha256": "80B89914BE8BF185A1C7D07D6C38A0DD21B3751C67BC8F4185E5D0C8D9BC3B43"
+  "source_sha256": "80B89914BE8BF185A1C7D07D6C38A0DD21B3751C67BC8F4185E5D0C8D9BC3B43",
+  "revision_20260909": {
+    "previous_output_bytes": 2223527,
+    "previous_output_sha256": "31A27F6DF000E8DC38416A2140A8722722EFA7FFE2C3E7D918812394E8B6417D",
+    "audit": "localization/reviews/main-al-alignment-20260909.json",
+    "additional_repairs": "localization/reviews/tda-fragment-repairs-20260909.json",
+    "source_identity_and_non_chinese_fields_unchanged": true
+  }
 }

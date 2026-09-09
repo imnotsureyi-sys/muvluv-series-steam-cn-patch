@@ -36,22 +36,48 @@
     "TDA00": {
       "bytes": 738721,
       "rows": 3713,
-      "sha256": "88428AC57E90BEC5E78868E045504C3888E33CCAC95FE8DDE6DE34123A12096E"
+      "sha256": "590D435E9EACDB53E44BC8444D736049C03E9F0F1F22030C0035AAF5BCAC4D6D"
     },
     "TDA01": {
-      "bytes": 2223527,
+      "bytes": 2223877,
       "rows": 8565,
-      "sha256": "31A27F6DF000E8DC38416A2140A8722722EFA7FFE2C3E7D918812394E8B6417D"
+      "sha256": "0F27F89451D5590AF52C641C70C906D9B3DFD99DF7FB417E1106D1EFBE9D3728"
     },
     "TDA02": {
-      "bytes": 1980939,
+      "bytes": 1980942,
       "rows": 6589,
-      "sha256": "97A329533574CCBB2B1C37752F44D3D7B685F26E547754EEA812F2DE54C70E1C"
+      "sha256": "2BC9AEAD3A77E53817D85E264A9A86C9CD5221B085AB177EED279A261468EEB2"
     },
     "TDA03": {
-      "bytes": 1728956,
+      "bytes": 1729119,
       "rows": 6913,
-      "sha256": "3FC09545D34B746D448060B0B36B4D55C6E73151CC55A996E7D5759A57187623"
+      "sha256": "5C44BF384D5BBCD0B036E5DBC2FE6D09D8F9D7E26684A3BA20EC99807C3174E3"
     }
+  },
+  "revision_20260909": {
+    "previous_translation_inputs": {
+      "TDA00": {
+        "bytes": 738721,
+        "rows": 3713,
+        "sha256": "88428AC57E90BEC5E78868E045504C3888E33CCAC95FE8DDE6DE34123A12096E"
+      },
+      "TDA01": {
+        "bytes": 2223527,
+        "rows": 8565,
+        "sha256": "31A27F6DF000E8DC38416A2140A8722722EFA7FFE2C3E7D918812394E8B6417D"
+      },
+      "TDA02": {
+        "bytes": 1980939,
+        "rows": 6589,
+        "sha256": "97A329533574CCBB2B1C37752F44D3D7B685F26E547754EEA812F2DE54C70E1C"
+      },
+      "TDA03": {
+        "bytes": 1728956,
+        "rows": 6913,
+        "sha256": "3FC09545D34B746D448060B0B36B4D55C6E73151CC55A996E7D5759A57187623"
+      }
+    },
+    "reason": "Chinese-only approved terminology alignment and separately audited fragment repairs. Source identities and all non-Chinese fields verified unchanged against PR14 base. This rebind does not mark any pending item reviewed.",
+    "pending_csv_unchanged": true
   }
 }

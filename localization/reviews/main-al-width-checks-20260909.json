@@ -1,0 +1,20 @@
+{
+  "schema": "main-al-integrated-width-check/v1",
+  "base_commit": "3d4c09974d04f94fd7ad76757cbe8de09d7960c3",
+  "scope": "All new PF/PM translated_text edits in main-al-alignment-20260909.json; complete hard lines include speaker labels.",
+  "measurement": "Native x86 GDI, 24px, weights 400/700, charsets 0/1/128/134. Input hash, selected font hash and every measured line matched the supplied input.",
+  "budget_px_by_weight": {"400": 724, "700": 754},
+  "limitations": "Diagnostic measurement only; does not certify live AGES rendering. PM uses the pinned U+73E5 candidate and must be packaged with its matching runtime.",
+  "pf": {
+    "rows": 16, "contexts": 8, "over_budget": 0,
+    "font_sha256": "AADF895003AE6452E1FBDCA1B64206B77D6F9A6EEBE226C31D46D1247AD4830B",
+    "input_sha256": "05b8acd2ad2e40ed0d86ddba7041743368c3aad4e3f688fd26334c45114413c0",
+    "result_sha256": "9627c283e533b622910654532c6bad13e0de8bab2e8878c81ce763f463908ca0"
+  },
+  "pm": {
+    "rows": 383, "contexts": 8, "over_budget": 0,
+    "font_sha256": "3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B",
+    "input_sha256": "0a1831a7ae4fead143cf1377ddd2eabf43092a2ec094a7f7f5d487fdb2e57c83",
+    "result_sha256": "b3da22ccdc4f5bded6045456ce368e87599e31d3797db83f0eb8d462c2038d8d"
+  }
+}

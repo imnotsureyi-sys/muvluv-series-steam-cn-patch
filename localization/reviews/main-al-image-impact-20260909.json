@@ -1,0 +1,880 @@
+{
+  "schema": "terminology-image-impact/v1",
+  "status": "pending-image-edits",
+  "basis": "Old copy targets joined to current V6 asset IDs; every located PNG hash verified; pixel text reviewed only for marked entries.",
+  "entries": [
+    {
+      "asset_id": "pf:rio000:0x1ada7bc0",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "49CFBEA5761761B82B8FB8889E64EDB7357534BE8F8AE9EE505DC181842232CD",
+      "v6_backup_png": "localized-png/PF/0060_pf_rio000_0x1ada7bc0.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adaa948",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "8AB49770B1EBCEF298384A8855CEDEDD467B046BAE80AE129272077A10BF03C8",
+      "v6_backup_png": "localized-png/PF/0061_pf_rio000_0x1adaa948.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adad5b8",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "DE79DA14790AFE27A2404C3F0020AE39CEE4CC24DB3EAC15CBC3823E3D6F9519",
+      "v6_backup_png": "localized-png/PF/0062_pf_rio000_0x1adad5b8.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adb020c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CA6D212E172AD63C3C70B9C076238680C436BBB9779347A08B2F657B440E01B5",
+      "v6_backup_png": "localized-png/PF/0063_pf_rio000_0x1adb020c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adb2d54",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "0C399D4F617017F1218157C990F792B7EFAC934DA2A0B83345BB87F0981D7517",
+      "v6_backup_png": "localized-png/PF/0064_pf_rio000_0x1adb2d54.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adb580c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "AF82D4B50AC7754EFE45E8B9138C47349E0B475BD61E7A5F4582E3C52F6817C6",
+      "v6_backup_png": "localized-png/PF/0065_pf_rio000_0x1adb580c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adb8198",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "F25E7437F9CB0B4F81512AED961E3782A01F1AFC7AA35E3E82D556EEC6B2157B",
+      "v6_backup_png": "localized-png/PF/0066_pf_rio000_0x1adb8198.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adbab08",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "24E4E3F5658C806CE2979B20389CA1D306B012379EC618FD04C258231F110E06",
+      "v6_backup_png": "localized-png/PF/0067_pf_rio000_0x1adbab08.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adbd3c4",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "7F79288335A4EE4CFD8980E8E866F5F1C82F8D9A933F156F52E4BE3D8CFD1792",
+      "v6_backup_png": "localized-png/PF/0068_pf_rio000_0x1adbd3c4.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adbfbac",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "E718388B311AFEB657FD5B870AA650FCCB934AABFC351437E47A3908779D9DB3",
+      "v6_backup_png": "localized-png/PF/0069_pf_rio000_0x1adbfbac.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adc22d0",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "13E12001BAC00C823D2CF2CBFF87110960387B7981CAE2FC1ED296456440EEDF",
+      "v6_backup_png": "localized-png/PF/0070_pf_rio000_0x1adc22d0.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adc49b4",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "5F5A60D9B8B0824F20B051B69FEE812E658856B196C850692F0D159694BCBEA4",
+      "v6_backup_png": "localized-png/PF/0071_pf_rio000_0x1adc49b4.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adc6ff8",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "3A517E03FC4498347B1DBD6BBEF4238CE55E1585E5825E4F06FADA7996C8CC0F",
+      "v6_backup_png": "localized-png/PF/0072_pf_rio000_0x1adc6ff8.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adc95b8",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "9E3AAB28422B9AFDDF4FF4EB6289530B9826B35DA14081ADDE7408B532F04847",
+      "v6_backup_png": "localized-png/PF/0073_pf_rio000_0x1adc95b8.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adcbb60",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "B83E3DD97D710ADCE5B881452E9986468E9CB4C040888A03C08352DB1769134A",
+      "v6_backup_png": "localized-png/PF/0074_pf_rio000_0x1adcbb60.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adce0b8",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "F43CC020F543540037EB5F90FF521B15F399AB9249EEECE6074BE940134BB799",
+      "v6_backup_png": "localized-png/PF/0075_pf_rio000_0x1adce0b8.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1add05dc",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CC89AA0928E579075FD8D4AEF494CD2048A55D0FC4B458135F2F9EE30A10F125",
+      "v6_backup_png": "localized-png/PF/0076_pf_rio000_0x1add05dc.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1add29dc",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "65523A86776511AF6619686CAC1BDF233AE61A83B60D9F758B5AC0F706974103",
+      "v6_backup_png": "localized-png/PF/0077_pf_rio000_0x1add29dc.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1add4c90",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "19D8593AF0296BD6D6D396B6F30EF977EAE34D4C13329A263CCA3AFC53D1D9CE",
+      "v6_backup_png": "localized-png/PF/0078_pf_rio000_0x1add4c90.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1add6d54",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "712BBA78832EA5B2CA358952EA088F4833BE770B2F0FEC0510961CB557EF26B0",
+      "v6_backup_png": "localized-png/PF/0079_pf_rio000_0x1add6d54.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1add8ce4",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "09C2657EF6AC3B113820243BB3EEB0CEE5F91A8F370C78F309BF819B5AB701A2",
+      "v6_backup_png": "localized-png/PF/0080_pf_rio000_0x1add8ce4.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1addab80",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "638B248A56EA4A2EA8DC656D8FAC3DD1CDDFD7BCF676829F82963E0264189847",
+      "v6_backup_png": "localized-png/PF/0081_pf_rio000_0x1addab80.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1addc91c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "FB10E6FF02664D9FDE28641C05E2DF1BF4A0ED5CA6492840F64E01CFB63EBC6E",
+      "v6_backup_png": "localized-png/PF/0082_pf_rio000_0x1addc91c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adde640",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "7E04AB1E04585045FE9BB25DC07271785192B37B2DD3016F175614307B96B7A8",
+      "v6_backup_png": "localized-png/PF/0083_pf_rio000_0x1adde640.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1ade0208",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "ED43A01D29EC3AFB86B4237C44AD640CB937EA0CA30650CD3311E841798B6780",
+      "v6_backup_png": "localized-png/PF/0084_pf_rio000_0x1ade0208.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1ade1ca4",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "D7480604FD564703D24EE468BA8BC9E16C8A14CF71DA08F39E620C13371A8575",
+      "v6_backup_png": "localized-png/PF/0085_pf_rio000_0x1ade1ca4.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1ade35f0",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "837CD350FC5C54F33314692499E07B3165C0F2A41DAA2766991565FE8B7C164D",
+      "v6_backup_png": "localized-png/PF/0086_pf_rio000_0x1ade35f0.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1ade4e7c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "4B17D23C98ADD55B9851BB615C9D03469824E9D32213FC428684CF0E465C38D2",
+      "v6_backup_png": "localized-png/PF/0087_pf_rio000_0x1ade4e7c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1ade650c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "938D12362C73FF57AA360D10FCBB20995729B368DBB1758C0E557D838EA3ABCD",
+      "v6_backup_png": "localized-png/PF/0088_pf_rio000_0x1ade650c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1ade7af0",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "1AAD5A302CF414881B7C5B1A815407640368ED11133F73A27789F4C248772071",
+      "v6_backup_png": "localized-png/PF/0089_pf_rio000_0x1ade7af0.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1ade901c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "77BAC39B7EECA9FB5A90D0C5F698C4979557C663B73531576E206A982B6B1CE2",
+      "v6_backup_png": "localized-png/PF/0090_pf_rio000_0x1ade901c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adea40c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "6F0A275DBDEFA197E3A105B7C02E68094336BB817F4DD2E72A3AA298311F00DC",
+      "v6_backup_png": "localized-png/PF/0091_pf_rio000_0x1adea40c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adeb714",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "A5AF8611C85F09D6DAF5C894F8CE504FBC2F81EC4AC2E5DE7DA9DE18C7E2A7D0",
+      "v6_backup_png": "localized-png/PF/0092_pf_rio000_0x1adeb714.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adec8f4",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "19D8809C447984A89660C047A359A522F1A8FC075B875C80ED96DB6CBA87850E",
+      "v6_backup_png": "localized-png/PF/0093_pf_rio000_0x1adec8f4.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1aded988",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "000D681EAE72BD57A75DD54652AD1B0AA475AC67FB820F5D41FABE509C70138A",
+      "v6_backup_png": "localized-png/PF/0094_pf_rio000_0x1aded988.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adee8ec",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "0B371ADE3443B44E16E756E8D425DBA2887873CB715772A6B1B6295779B14A6C",
+      "v6_backup_png": "localized-png/PF/0095_pf_rio000_0x1adee8ec.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adef794",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "F16F49A60FBFF32EA8AA87FA340ECD3D2DE90DEA926BADF908C63460EB303406",
+      "v6_backup_png": "localized-png/PF/0096_pf_rio000_0x1adef794.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adf0544",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "0A1C080057CE0F1F95328508ABB98962C9F0CAC21926069497C4FE910BDF6C06",
+      "v6_backup_png": "localized-png/PF/0097_pf_rio000_0x1adf0544.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adf11c0",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CBC751F0A7CB099E57BF852D7B152FD05E5BE808C16517FC7A4C75F527B67679",
+      "v6_backup_png": "localized-png/PF/0098_pf_rio000_0x1adf11c0.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adf1d1c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CBC751F0A7CB099E57BF852D7B152FD05E5BE808C16517FC7A4C75F527B67679",
+      "v6_backup_png": "localized-png/PF/0099_pf_rio000_0x1adf1d1c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adf2878",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "869D266C38B2F23859ADF384C8777A26DF49D01240445E0CBA715E4D0A912FDD",
+      "v6_backup_png": "localized-png/PF/0100_pf_rio000_0x1adf2878.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adf32dc",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "8AEABE1E545D82A0076F7C1EC18AC945A32FC9ED02DF126F2BEBD1056C975697",
+      "v6_backup_png": "localized-png/PF/0101_pf_rio000_0x1adf32dc.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adf3c90",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "D8493ECDEC993C1D142E726F803EF8740272185B3B3EF2F0801C370A49CD716C",
+      "v6_backup_png": "localized-png/PF/0102_pf_rio000_0x1adf3c90.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1adf458c",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "920B970E5C54DA33698F54DABD69D57E617AFBA2C84B19ACFA7C43F282E1247A",
+      "v6_backup_png": "localized-png/PF/0103_pf_rio000_0x1adf458c.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pf:rio000:0x1d418904",
+      "old_copy_ledger": "小鸡潜降兵\n（出处：活动周边贩售 2009年）\n这是将为活动制作的同名作品强化演出后，\n收录于《Muv-Luv Alternative Chronicles 01》的短篇。\n故事聚焦于被誉为卫士巅峰的轨道降下兵，\n绝大多数场景都发生在货舱内战术机的驾驶舱中，\n也是一部风格独特的作品。",
+      "proposed_copy": "小鸡潜降兵\n（出处：活动周边贩售 2009年）\n这是将为活动制作的同名作品强化演出后，\n收录于《Muv-Luv Alternative Chronicles 01》的短篇。\n故事聚焦于被誉为卫士巅峰的轨道空降兵，\n绝大多数场景都发生在货舱内战术机的驾驶舱中，\n也是一部风格独特的作品。",
+      "v6_png_sha256": "8DB5840C0510376AD80981519C843B8CC0CBB149EC0CF62043F23981AF947110",
+      "v6_backup_png": "localized-png/PF/0589_pf_rio000_0x1d418904.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65d9bd30:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "49CFBEA5761761B82B8FB8889E64EDB7357534BE8F8AE9EE505DC181842232CD",
+      "v6_backup_png": "localized-png/PM/0694_pm_rio000_0x65d9bd30_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65d9eab8:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "8AB49770B1EBCEF298384A8855CEDEDD467B046BAE80AE129272077A10BF03C8",
+      "v6_backup_png": "localized-png/PM/0695_pm_rio000_0x65d9eab8_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65da1728:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "DE79DA14790AFE27A2404C3F0020AE39CEE4CC24DB3EAC15CBC3823E3D6F9519",
+      "v6_backup_png": "localized-png/PM/0696_pm_rio000_0x65da1728_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65da437c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CA6D212E172AD63C3C70B9C076238680C436BBB9779347A08B2F657B440E01B5",
+      "v6_backup_png": "localized-png/PM/0697_pm_rio000_0x65da437c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65da6ec4:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "0C399D4F617017F1218157C990F792B7EFAC934DA2A0B83345BB87F0981D7517",
+      "v6_backup_png": "localized-png/PM/0698_pm_rio000_0x65da6ec4_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65da997c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "AF82D4B50AC7754EFE45E8B9138C47349E0B475BD61E7A5F4582E3C52F6817C6",
+      "v6_backup_png": "localized-png/PM/0699_pm_rio000_0x65da997c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dac308:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "F25E7437F9CB0B4F81512AED961E3782A01F1AFC7AA35E3E82D556EEC6B2157B",
+      "v6_backup_png": "localized-png/PM/0700_pm_rio000_0x65dac308_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65daec78:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "24E4E3F5658C806CE2979B20389CA1D306B012379EC618FD04C258231F110E06",
+      "v6_backup_png": "localized-png/PM/0701_pm_rio000_0x65daec78_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65db1534:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "7F79288335A4EE4CFD8980E8E866F5F1C82F8D9A933F156F52E4BE3D8CFD1792",
+      "v6_backup_png": "localized-png/PM/0702_pm_rio000_0x65db1534_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65db3d1c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "E718388B311AFEB657FD5B870AA650FCCB934AABFC351437E47A3908779D9DB3",
+      "v6_backup_png": "localized-png/PM/0703_pm_rio000_0x65db3d1c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65db6440:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "13E12001BAC00C823D2CF2CBFF87110960387B7981CAE2FC1ED296456440EEDF",
+      "v6_backup_png": "localized-png/PM/0704_pm_rio000_0x65db6440_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65db8b24:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "5F5A60D9B8B0824F20B051B69FEE812E658856B196C850692F0D159694BCBEA4",
+      "v6_backup_png": "localized-png/PM/0705_pm_rio000_0x65db8b24_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dbb168:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "3A517E03FC4498347B1DBD6BBEF4238CE55E1585E5825E4F06FADA7996C8CC0F",
+      "v6_backup_png": "localized-png/PM/0706_pm_rio000_0x65dbb168_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dbd728:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "9E3AAB28422B9AFDDF4FF4EB6289530B9826B35DA14081ADDE7408B532F04847",
+      "v6_backup_png": "localized-png/PM/0707_pm_rio000_0x65dbd728_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dbfcd0:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "B83E3DD97D710ADCE5B881452E9986468E9CB4C040888A03C08352DB1769134A",
+      "v6_backup_png": "localized-png/PM/0708_pm_rio000_0x65dbfcd0_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dc2228:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "F43CC020F543540037EB5F90FF521B15F399AB9249EEECE6074BE940134BB799",
+      "v6_backup_png": "localized-png/PM/0709_pm_rio000_0x65dc2228_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dc474c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CC89AA0928E579075FD8D4AEF494CD2048A55D0FC4B458135F2F9EE30A10F125",
+      "v6_backup_png": "localized-png/PM/0710_pm_rio000_0x65dc474c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dc6b4c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "65523A86776511AF6619686CAC1BDF233AE61A83B60D9F758B5AC0F706974103",
+      "v6_backup_png": "localized-png/PM/0711_pm_rio000_0x65dc6b4c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dc8e00:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "19D8593AF0296BD6D6D396B6F30EF977EAE34D4C13329A263CCA3AFC53D1D9CE",
+      "v6_backup_png": "localized-png/PM/0712_pm_rio000_0x65dc8e00_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dcaec4:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "712BBA78832EA5B2CA358952EA088F4833BE770B2F0FEC0510961CB557EF26B0",
+      "v6_backup_png": "localized-png/PM/0713_pm_rio000_0x65dcaec4_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dcce54:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "09C2657EF6AC3B113820243BB3EEB0CEE5F91A8F370C78F309BF819B5AB701A2",
+      "v6_backup_png": "localized-png/PM/0714_pm_rio000_0x65dcce54_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dcecf0:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "638B248A56EA4A2EA8DC656D8FAC3DD1CDDFD7BCF676829F82963E0264189847",
+      "v6_backup_png": "localized-png/PM/0715_pm_rio000_0x65dcecf0_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dd0a8c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "FB10E6FF02664D9FDE28641C05E2DF1BF4A0ED5CA6492840F64E01CFB63EBC6E",
+      "v6_backup_png": "localized-png/PM/0716_pm_rio000_0x65dd0a8c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dd27b0:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "7E04AB1E04585045FE9BB25DC07271785192B37B2DD3016F175614307B96B7A8",
+      "v6_backup_png": "localized-png/PM/0717_pm_rio000_0x65dd27b0_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dd4378:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "ED43A01D29EC3AFB86B4237C44AD640CB937EA0CA30650CD3311E841798B6780",
+      "v6_backup_png": "localized-png/PM/0718_pm_rio000_0x65dd4378_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dd5e14:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "D7480604FD564703D24EE468BA8BC9E16C8A14CF71DA08F39E620C13371A8575",
+      "v6_backup_png": "localized-png/PM/0719_pm_rio000_0x65dd5e14_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dd7760:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "837CD350FC5C54F33314692499E07B3165C0F2A41DAA2766991565FE8B7C164D",
+      "v6_backup_png": "localized-png/PM/0720_pm_rio000_0x65dd7760_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dd8fec:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "4B17D23C98ADD55B9851BB615C9D03469824E9D32213FC428684CF0E465C38D2",
+      "v6_backup_png": "localized-png/PM/0721_pm_rio000_0x65dd8fec_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dda67c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "938D12362C73FF57AA360D10FCBB20995729B368DBB1758C0E557D838EA3ABCD",
+      "v6_backup_png": "localized-png/PM/0722_pm_rio000_0x65dda67c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65ddbc60:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "1AAD5A302CF414881B7C5B1A815407640368ED11133F73A27789F4C248772071",
+      "v6_backup_png": "localized-png/PM/0723_pm_rio000_0x65ddbc60_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65ddd18c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "77BAC39B7EECA9FB5A90D0C5F698C4979557C663B73531576E206A982B6B1CE2",
+      "v6_backup_png": "localized-png/PM/0724_pm_rio000_0x65ddd18c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65dde57c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "6F0A275DBDEFA197E3A105B7C02E68094336BB817F4DD2E72A3AA298311F00DC",
+      "v6_backup_png": "localized-png/PM/0725_pm_rio000_0x65dde57c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65ddf884:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "A5AF8611C85F09D6DAF5C894F8CE504FBC2F81EC4AC2E5DE7DA9DE18C7E2A7D0",
+      "v6_backup_png": "localized-png/PM/0726_pm_rio000_0x65ddf884_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de0a64:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "19D8809C447984A89660C047A359A522F1A8FC075B875C80ED96DB6CBA87850E",
+      "v6_backup_png": "localized-png/PM/0727_pm_rio000_0x65de0a64_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de1af8:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "000D681EAE72BD57A75DD54652AD1B0AA475AC67FB820F5D41FABE509C70138A",
+      "v6_backup_png": "localized-png/PM/0728_pm_rio000_0x65de1af8_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de2a5c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "0B371ADE3443B44E16E756E8D425DBA2887873CB715772A6B1B6295779B14A6C",
+      "v6_backup_png": "localized-png/PM/0729_pm_rio000_0x65de2a5c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de3904:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "F16F49A60FBFF32EA8AA87FA340ECD3D2DE90DEA926BADF908C63460EB303406",
+      "v6_backup_png": "localized-png/PM/0730_pm_rio000_0x65de3904_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de46b4:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "0A1C080057CE0F1F95328508ABB98962C9F0CAC21926069497C4FE910BDF6C06",
+      "v6_backup_png": "localized-png/PM/0731_pm_rio000_0x65de46b4_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de5330:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CBC751F0A7CB099E57BF852D7B152FD05E5BE808C16517FC7A4C75F527B67679",
+      "v6_backup_png": "localized-png/PM/0732_pm_rio000_0x65de5330_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de5e8c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CBC751F0A7CB099E57BF852D7B152FD05E5BE808C16517FC7A4C75F527B67679",
+      "v6_backup_png": "localized-png/PM/0733_pm_rio000_0x65de5e8c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de69e8:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "869D266C38B2F23859ADF384C8777A26DF49D01240445E0CBA715E4D0A912FDD",
+      "v6_backup_png": "localized-png/PM/0734_pm_rio000_0x65de69e8_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de744c:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "8AEABE1E545D82A0076F7C1EC18AC945A32FC9ED02DF126F2BEBD1056C975697",
+      "v6_backup_png": "localized-png/PM/0735_pm_rio000_0x65de744c_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de7e00:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "D8493ECDEC993C1D142E726F803EF8740272185B3B3EF2F0801C370A49CD716C",
+      "v6_backup_png": "localized-png/PM/0736_pm_rio000_0x65de7e00_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de86fc:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "920B970E5C54DA33698F54DABD69D57E617AFBA2C84B19ACFA7C43F282E1247A",
+      "v6_backup_png": "localized-png/PM/0737_pm_rio000_0x65de86fc_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio000:0x65de8f74:cr6ti",
+      "old_copy_ledger": "高度500km　地球近地轨道\n联合国宇宙总军轨道降下兵团　待命轨道LE-521\n小鸡潜降兵",
+      "proposed_copy": "高度500km　地球近地轨道\n联合国宇宙总军轨道空降兵团　待命轨道LE-521\n小鸡潜降兵",
+      "v6_png_sha256": "CB63A53BE5C11B9A988EA2D48896E044CE1065BFCE9DFDC2BCD6E72337203373",
+      "v6_backup_png": "localized-png/PM/0738_pm_rio000_0x65de8f74_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio002:0x47be21d4:cr6ti",
+      "old_copy_ledger": "伊尔玛·特斯莱夫",
+      "proposed_copy": "伊露玛·塔斯雷夫",
+      "v6_png_sha256": "420DEA8F82EDE8EBB64AF36F06E17D789A11F78E999A9A89AC82BC53363DF989",
+      "v6_backup_png": "localized-png/PM/0998_pm_rio002_0x47be21d4_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": true
+    },
+    {
+      "asset_id": "pm:rio002:0x47bf17c4:cr6ti",
+      "old_copy_ledger": "伊尔玛·特斯莱夫",
+      "proposed_copy": "伊露玛·塔斯雷夫",
+      "v6_png_sha256": "8574C5A3240F4695C5E0544D1C600CFCB18055692B8261340F1B6CDBC9472724",
+      "v6_backup_png": "localized-png/PM/0999_pm_rio002_0x47bf17c4_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio002:0x48101348:cr6ti",
+      "old_copy_ledger": "伊尔玛·特斯莱夫",
+      "proposed_copy": "伊露玛·塔斯雷夫",
+      "v6_png_sha256": "C66A574761E47BAD5AA210E9E5997055BA00150E16B625965E2014527414E505",
+      "v6_backup_png": "localized-png/PM/1076_pm_rio002_0x48101348_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio002:0x481130e0:cr6ti",
+      "old_copy_ledger": "伊尔玛·特斯莱夫",
+      "proposed_copy": "伊露玛·塔斯雷夫",
+      "v6_png_sha256": "A914E0F5310A28364AB7BBA379774F783DD633F98ECC7F91F79E9841DE9BFED9",
+      "v6_backup_png": "localized-png/PM/1077_pm_rio002_0x481130e0_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio004:0x44cb7068:cr6ti",
+      "old_copy_ledger": "伊尔玛",
+      "proposed_copy": "伊露玛",
+      "v6_png_sha256": "4FE6FE295C78C4953E9E8D3C15D39FA3A721F6425BEEEB25405C7EC27261BCC6",
+      "v6_backup_png": "localized-png/PM/1437_pm_rio004_0x44cb7068_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": true
+    },
+    {
+      "asset_id": "pm:rio004:0x44de4170:cr6ti",
+      "old_copy_ledger": "伊尔玛",
+      "proposed_copy": "伊露玛",
+      "v6_png_sha256": "30FBF0C0B3CEA424BF4E9F067A38BE41153AF496403A3C78CBB30235DD4431F4",
+      "v6_backup_png": "localized-png/PM/1456_pm_rio004_0x44de4170_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    },
+    {
+      "asset_id": "pm:rio004:0x44f2cd18:cr6ti",
+      "old_copy_ledger": "伊尔玛",
+      "proposed_copy": "伊露玛",
+      "v6_png_sha256": "9A2502E5392094816FA53E8C8FB085FFEEDAFE5362C7AB2F0BF8D51A558402E4",
+      "v6_backup_png": "localized-png/PM/1478_pm_rio004_0x44f2cd18_cr6ti.png",
+      "status": "pending-image-edit",
+      "pixel_text_reviewed": false
+    }
+  ]
+}

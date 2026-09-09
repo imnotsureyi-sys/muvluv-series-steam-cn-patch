@@ -21,7 +21,8 @@ class SpeakerPolicyTests(unittest.TestCase):
             expected += [(r['target'], r['source']) for r in latest['speaker_aliases'] if r['game'] == title]
             round2 = json.loads((ROOT/'evidence/photon/text/latin-decisions-20260909-round2.json').read_text(encoding='utf-8'))
             expected += [(r['target'], r['source']) for r in round2['speaker_aliases'] if r['game'] == title]
-            self.assertEqual(compiled, expected)
+            alignment = json.loads((ROOT/'evidence/photon/text/speaker-alignment-20260909.json').read_text(encoding='utf-8'))
+            self.assertEqual(compiled, [tuple(p) for p in alignment[title]] + expected)
 
     def test_all_reviewed_prefix_repairs_are_only_structural_and_idempotent(self):
         counts = []

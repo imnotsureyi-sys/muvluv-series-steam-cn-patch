@@ -30,6 +30,9 @@ class ChapterReviewTests(unittest.TestCase):
         corrections = {e['binding_id']: e for e in semantic['edits']}
         self.assertEqual(len(corrections), 3)
         corrected_seen = set()
+        alignment = json.loads((root.parent.parent/'localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
+        alignment_edits = {e['id']: e for e in alignment['edits'] if e['column'] == 'translated_text'}
+        alignment_seen = set()
         latest_seen = set()
         seen = set()
         for title, count, files in [("photonflowers", 13025, 13), ("photonmelodies", 44698, 45)]:
@@ -63,10 +66,16 @@ class ChapterReviewTests(unittest.TestCase):
                     self.assertEqual(visible(row['translated_text']), edit['before'])
                     row['translated_text'] = decoded(edit['after'])
                     corrected_seen.add(row['binding_id'])
+                if row['binding_id'] in alignment_edits:
+                    edit = alignment_edits[row['binding_id']]
+                    self.assertEqual(visible(row['translated_text']), edit['before'])
+                    row['translated_text'] = decoded(edit['after'])
+                    alignment_seen.add(row['binding_id'])
             self.assertEqual(result, expected)
             manifest = json.loads((folder / "chapters.json").read_text(encoding="utf-8"))
             self.assertEqual(len(manifest["files"]), files)
         self.assertEqual(seen, set(edits))
+        self.assertEqual(alignment_seen, set(alignment_edits))
         self.assertEqual(latest_seen, set(latest))
         self.assertEqual(followup_seen, set(followup))
         self.assertEqual(final_seen, set(final))
@@ -97,9 +106,15 @@ class ChapterReviewTests(unittest.TestCase):
                 audited[edit['binding_id']] = edit
         self.assertEqual(len(audited), 170)
         current = {r['binding_id']:visible(r['translated_text']) for game in ['photonflowers','photonmelodies'] for r in read_chapters(root/'games'/game/'translations')}
+        alignment = json.loads((root.parent/'localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
+        aligned = {e['id']: e for e in alignment['edits'] if e['column'] == 'translated_text'}
         for record in records:
             identity = record['binding_id']
-            self.assertEqual(hashlib.sha256(current[identity].encode()).hexdigest(),record['after_sha256'])
+            historical = current[identity]
+            if identity in aligned:
+                self.assertEqual(current[identity], aligned[identity]['after'])
+                historical = aligned[identity]['before']
+            self.assertEqual(hashlib.sha256(historical.encode()).hexdigest(),record['after_sha256'])
             self.assertEqual(record['state']=='changed',identity in audited)
             if record['state']!='changed':
                 self.assertEqual(record['before_sha256'],record['after_sha256'])
