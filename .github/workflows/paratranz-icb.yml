@@ -78,7 +78,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add -- AGE2/games/imperial-capital-burns/translations/main.ja-zh-Hans.csv AGE2/games/imperial-capital-burns/translations/speakers.ja-zh-Hans.csv AGE2/games/imperial-capital-burns/translations/choices.ja-zh-Hans.csv AGE2/games/imperial-capital-burns/translations/ui-strings.ja-zh-Hans.tsv localization/paratranz/imperial-capital-burns/baseline.json
-          git commit -m 'sync(icb): import ParaTranz proofreading' -m 'Co-authored-by: Codex <codex@openai.com>'
+          git commit --author='Yi Shen <239485544+imnotsureyi-sys@users.noreply.github.com>' -m 'sync(icb): import ParaTranz proofreading' -m 'Co-authored-by: Codex <codex@openai.com>'
           git push origin "$branch"
           gh pr create --base main --head "$branch" --title '[ParaTranz] 帝都燃烧校对同步' --body-file "$RUNNER_TEMP/icb-sync-report.md"
       - name: Dry-run boundary

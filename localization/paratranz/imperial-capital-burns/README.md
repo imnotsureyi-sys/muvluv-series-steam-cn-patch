@@ -45,5 +45,6 @@ python -m localization.tools.sync_icb_paratranz --snapshot PRIVATE_SNAPSHOT.json
 不带 `--apply` 不写文件。即使带该参数，也仅修改本地 checkout，不向平台或 GitHub
 发送修改；公开工作流只暂存四份中文表及基线，不使用 `git add .`。
 
-线上机器生成的同步提交包含 `Co-authored-by: Codex <codex@openai.com>`。
+线上同步提交沿用维护者 Yi Shen 为 author，Actions bot 为 committer，
+并包含 `Co-authored-by: Codex <codex@openai.com>`。
 若 squash 合并，应在最终提交信息中保留该 trailer。
