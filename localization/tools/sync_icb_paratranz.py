@@ -1,7 +1,7 @@
 """ICB-only, read-only ParaTranz pull with stable identities and a two-sided baseline.
 
 Raw exports remain in memory (or an explicitly supplied private test fixture).
-Only Chinese destination cells and the source-hash baseline may be updated.
+Only Chinese destination cells, export checksums and the sync baseline may be updated.
 This module never uploads, changes review stages, merges PRs or builds releases.
 """
 from __future__ import annotations
@@ -25,6 +25,7 @@ from AGE2.tools.egpack.egpack_codec import extract_control_codes, has_manual_new
 PROJECT = 20659
 FOLDER = Path('AGE2/games/imperial-capital-burns/translations')
 BASELINE = Path('localization/paratranz/imperial-capital-burns/baseline.json')
+SIDECAR = Path('AGE2/evidence/translations/snapshots/imperial-capital-burns.json')
 TABLES = {
     'main.ja-zh-Hans.csv': ('cn_text', ','),
     'speakers.ja-zh-Hans.csv': ('replacement_text', ','),
@@ -226,6 +227,17 @@ def plan(repo, snapshot, baseline):
         if table['raw'].startswith(b'\xef\xbb\xbf'):
             data = b'\xef\xbb\xbf' + data
         outputs[FOLDER / name] = data
+    # Public export metadata describes the resulting CSV, not the old export.
+    # Preserve source provenance and every other field; only output identity changes.
+    main_path = FOLDER / 'main.ja-zh-Hans.csv'
+    payload = outputs.get(main_path, tables['main.ja-zh-Hans.csv']['raw'])
+    sidecar = json.loads((repo / SIDECAR).read_text(encoding='utf8'))
+    if not isinstance(sidecar, dict) or not {'output_bytes', 'output_sha256'} <= sidecar.keys():
+        raise ValueError('Missing public export checksum metadata')
+    sidecar.update(output_bytes=len(payload), output_sha256=hashlib.sha256(payload).hexdigest().upper())
+    sidecar_data = (json.dumps(sidecar, ensure_ascii=False, indent=2) + '\n').encode('utf8')
+    if sidecar_data != (repo / SIDECAR).read_bytes():
+        outputs[SIDECAR] = sidecar_data
     baseline_data = (json.dumps(next_baseline, ensure_ascii=False, indent=2) + '\n').encode('utf8')
     if baseline_data != (repo / BASELINE).read_bytes():
         outputs[BASELINE] = baseline_data
@@ -252,7 +264,7 @@ def main():
     rendered = '\n'.join(['# 帝都燃烧 ParaTranz 同步', '',
         f"核对 {summary['files']} 个文件、{summary['verified_rows']} 条。",
         f"译文变更 {summary['changed_translations']} 条，硬性军衔规范 {summary['hard_rank_normalizations']} 条，暂缓 {summary['held_rows']} 条。", '',
-        '仅修改中文目标列和同步基线；未上传 ParaTranz、自动审核、合并或发布。',
+        '仅修改中文目标列、配套导出校验清单和同步基线；未上传 ParaTranz、自动审核、合并或发布。',
         '原文不进入日志、PR 正文或构建附件。请审核中文差异后再合并。', ''])
     if args.report:
         args.report.write_text(rendered, encoding='utf8')

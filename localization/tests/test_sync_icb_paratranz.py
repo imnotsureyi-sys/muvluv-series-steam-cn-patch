@@ -1,5 +1,6 @@
 import copy
 import csv
+import hashlib
 import io
 import json
 import tempfile
@@ -33,6 +34,12 @@ class IcbSyncTests(unittest.TestCase):
         self.snapshot = [{'file': {'id': 10, 'name': 'test.json', 'project': sync.PROJECT, 'total': 4}, 'rows': remote}]
         self.base = sync.bootstrap(self.repo, self.snapshot, 'fixture-commit')
         self.save_base(self.base)
+        payload = (folder / 'main.ja-zh-Hans.csv').read_bytes()
+        self.sidecar = {'output_bytes': len(payload), 'output_sha256': hashlib.sha256(payload).hexdigest().upper(),
+                        'source_sha256': 'unchanged-source', 'rows': 1, 'bulk_official_dialogue_included': False}
+        sidecar_path = self.repo / sync.SIDECAR
+        sidecar_path.parent.mkdir(parents=True)
+        sidecar_path.write_text(json.dumps(self.sidecar, ensure_ascii=False, indent=2)+'\n', encoding='utf8', newline='\n')
 
     def save_base(self, value):
         path = self.repo / sync.BASELINE
@@ -63,7 +70,33 @@ class IcbSyncTests(unittest.TestCase):
         self.change_local('旧正文', 'Git人工修改')
         outputs, report = sync.plan(self.repo, self.snapshot, self.base)
         self.assertEqual(0, report['changed_translations'])
-        self.assertEqual({sync.BASELINE}, set(outputs))
+        self.assertEqual({sync.BASELINE, sync.SIDECAR}, set(outputs))
+
+    def test_output_checksum_tracks_exact_csv_and_preserves_provenance(self):
+        self.snapshot[0]['rows'][0]['translation'] = '长度不同的新正文\\p'
+        outputs, _ = sync.plan(self.repo, self.snapshot, self.base)
+        payload = outputs[sync.FOLDER / 'main.ja-zh-Hans.csv']
+        updated = json.loads(outputs[sync.SIDECAR])
+        expected = dict(self.sidecar, output_bytes=len(payload),
+                        output_sha256=hashlib.sha256(payload).hexdigest().upper())
+        self.assertEqual(expected, updated)
+
+    def test_stale_sidecar_is_repaired_without_translation_edits(self):
+        self.change_local('旧正文', '旧正文加字')
+        self.base = sync.bootstrap(self.repo, self.snapshot, 'fixture')
+        self.snapshot[0]['rows'][0]['translation'] = '旧正文加字\\p'
+        self.save_base(self.base)
+        outputs, report = sync.plan(self.repo, self.snapshot, self.base)
+        self.assertEqual({sync.SIDECAR}, set(outputs))
+        self.assertEqual(0, report['changed_translations'])
+
+    def test_missing_sidecar_stops_before_writing(self):
+        (self.repo / sync.SIDECAR).write_text('{}', encoding='utf8')
+        self.snapshot[0]['rows'][0]['translation'] = '新正文\\p'
+        before = (self.repo / sync.FOLDER / 'main.ja-zh-Hans.csv').read_bytes()
+        with self.assertRaisesRegex(ValueError, 'checksum metadata'):
+            sync.plan(self.repo, self.snapshot, self.base)
+        self.assertEqual(before, (self.repo / sync.FOLDER / 'main.ja-zh-Hans.csv').read_bytes())
 
     def test_conflict_refuses_all_writes(self):
         self.change_local('旧正文', 'Git修改')
