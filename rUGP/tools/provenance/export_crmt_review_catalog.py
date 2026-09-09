@@ -251,7 +251,9 @@ def main(argv=None):
     with args.output.open("x", encoding="utf-8") as stream:
         json.dump(result, stream, ensure_ascii=False, indent=2)
         stream.write("\n")
-    print(json.dumps(result["summary"], ensure_ascii=False))
+    # Keep redirected Windows consoles (e.g. cp1252) from failing after publication.
+    # The artifact above remains readable UTF-8; stdout is ASCII-safe JSON.
+    print(json.dumps(result["summary"], ensure_ascii=True))
 
 
 if __name__ == "__main__":

@@ -1,5 +1,6 @@
 from collections import Counter
 import json
+import os
 from pathlib import Path
 import unittest
 import subprocess
@@ -141,7 +142,10 @@ class SyntheticProjectionTests(unittest.TestCase):
         for name in ("review", "expanded", "catalog", "volume-index"):
             command += ["--" + name, str(fixture_dir / (name + ".json"))]
         command += ["--output", str(output)]
-        subprocess.run(command, cwd=root, check=True, capture_output=True)
+        # Windows redirected stdout may use cp1252 even when the parent uses UTF-8.
+        env = dict(os.environ, PYTHONIOENCODING="cp1252")
+        completed = subprocess.run(command, cwd=root, env=env, capture_output=True)
+        self.assertEqual(completed.returncode, 0, completed.stderr.decode("ascii", errors="replace"))
         result = json.loads(output.read_text(encoding="utf-8"))
         assert_portable_document(result)
         self.assertEqual(result["summary"]["logical_groups"], 3)
