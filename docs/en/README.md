@@ -62,8 +62,10 @@ run in-game QA; and feed player reports back into maintained source.
 
 ## Credits and participation
 
-The project thanks 主任保护协会 for the original AGES localization approach
-that started this patch-making effort. GARbro, AFHook, rugptools,
+The project warmly thanks 主任保护协会 for the loose-file resource overlay method
+that started our localization journey. Subsequent extraction, translation, tool development
+and patch production are our own work, with specific references documented separately.
+GARbro, AFHook/AFEditor, rugptools, alterdec, RioX,
 FatePackageManager, and mature patch projects supplied narrowly attributed
 technical precedents. See [contributors and acknowledgments](../project/CONTRIBUTORS.md)
 and the [reference comparison](../research/references.md).

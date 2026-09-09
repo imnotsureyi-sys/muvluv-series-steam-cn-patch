@@ -14,11 +14,21 @@
 | [rugptools](https://github.com/osmium76/rugptools/tree/3ff587416e41eeeee7122fb122c90f7a36c409dd) | README 对原始部分提及 GPL；未观察到清晰的全仓许可证文件 | 仅用于历史 rUGP/alterdec 行为和术语参考。因许可证边界不够明确，不复制源码。 |
 | [FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager/tree/080c2cac36391e2d2de473f8f8a841b08cf752dc) | MIT | AGE2 FPD v2 提取/实验性重封及 `Scrambler.cs` 密钥调度的主要参考。观察到的 `Scrambler.cs` SHA-256 为 `5AA8BCEFB9F2F1D14917FE11027B32FFFFD0A8C8C3F25C3AE8D690827EEAE33E`；本项目要求用户显式提供该上游文件，不复制第二份密钥表。 |
 
+alterdec 与 RioX 也在[历史研究参考](../research/references.md)中留有记录。
+其中 AFEditor 与 alterdec 的 Cr6Ti 编解码行为参考，明确记载于
+[`cr6ti_encode.py`](../../rUGP/formats/images/cr6ti_encode.py)及
+[`cr6ti_reference.py`](../../rUGP/formats/images/cr6ti_reference.py)的说明。
+历史资料尚未逐一固定原始链接、版本及许可证，不能据此视为已经取得源码再分发许可，
+也不将 RioX 列为当前构建依赖。
+
 ## 汉化思路来源
 
 本项目最初参考了主任保护协会发布的
 [Steam 版 Muv-Luv Alternative Total Eclipse 汉化补丁](https://www.moyu.moe/patch/5461/resource)
-所展示的 AGES 汉化路线。根据项目发起者保存的沟通记录，对方允许发布本项目独立制作的
+所展示的松散文件结构覆盖游戏资源的方法；这份启发让我们开始了汉化之路，谨致诚挚感谢。
+后续资源提取、翻译、工具开发与补丁制作由本项目自行完成，具体技术参考分别列明。
+历史 EGPACK 只读结构对照保留在[兼容性记录](../../AGE2/tools/egpack/README.md#兼容性)中。
+根据项目发起者保存的沟通记录，对方允许发布本项目独立制作的
 TDA 汉化，并要求在发布时致谢其提供汉化思路。该公开补丁页面同时禁止拆解、二次修改和
 移植，因此本仓库不复制其补丁文件、译文、字体、图片或代码。
 

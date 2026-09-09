@@ -19,7 +19,7 @@ class NativeAuditClassificationTests(unittest.TestCase):
     def test_public_schema_and_glossary_hash_contracts_match_committed_bytes(self) -> None:
         root = Path(__file__).resolve().parents[3]
         digest = lambda path: hashlib.sha256(path.read_bytes()).hexdigest().upper()
-        glossary = root / "localization/glossaries/history/mixed-20260908.csv"
+        glossary = root / "localization/terminology-history/mixed-20260908.csv"
         # The September 4 evidence remains pinned to the glossary used then.
         # Reconstruct those exact bytes after the audited append-only aliases;
         # do not relabel old evidence as if it used the new glossary.

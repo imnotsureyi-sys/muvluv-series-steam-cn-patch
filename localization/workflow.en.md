@@ -25,7 +25,11 @@ AGE2 or rUGP binding, writeback, and automated validation
         ↓
 full-route in-game QA
         ↓
-test release and reproducible player reports
+maintainer's manual checks, corrections, and verification of fixes
+        ↓
+complete production and publish the test release
+        ↓
+post-release player reports and ParaTranz community proofreading
         ↓
 return findings to maintained text/terminology/source and release again
 ```
@@ -165,7 +169,22 @@ differences, and shared/common behavior all matter.
 Each finding should identify game/build, route/date/scene, surrounding dialogue,
 screenshot, stable resource ID, and exact reproduction steps.
 
-## 8. Close the player-feedback loop
+## 8. Maintainer's final checks before release
+
+The final production step is the maintainer's manual review and correction of
+identified wording, terminology, missing text, layout, image text, and in-game
+display problems. Verify the fixes, rerun affected writeback and checks, and then
+publish the corresponding version. Player packages already include the manual
+corrections completed for that release; they are not unreviewed AI drafts.
+This does not claim complete professional Japanese-to-Chinese proofreading.
+Record the actual coverage and unresolved issues for each version.
+
+## 9. Post-release feedback and ParaTranz proofreading
+
+ParaTranz primarily supports community proofreading and revisions after release,
+separately from the maintainer's pre-release checks and corrections. Works in
+progress may also open collaboration early. Accepted edits must be checked and
+packaged for a later release; syncing them to GitHub does not update installed patches.
 
 A player report is a third layer of real-environment evidence, not permission to
 replace one generated file in a Release manually.
@@ -178,7 +197,7 @@ replace one generated file in a Release manually.
 5. Rerun relevant automated checks and routes.
 6. Document the fix and produce a new reproducible Release.
 
-## 9. What becomes public
+## 10. What becomes public
 
 Publish:
 
@@ -199,7 +218,7 @@ Record an image-generation/edit request only when it materially affects a
 reproducible visual result. Ordinary text translation does not require every
 prompt; rules, maintained data state, and verification tools are more useful.
 
-## 10. Apply the method to Korean, Russian, or another locale
+## 11. Apply the method to Korean, Russian, or another locale
 
 Reuse the stages and identities, not Chinese prose conventions:
 
@@ -209,7 +228,7 @@ Reuse the stages and identities, not Chinese prose conventions:
 3. Establish locale-specific terminology, address, punctuation, typography,
    line breaking, and font policy.
 4. Complete both passes, question resolution, engine binding, in-game QA, and
-   the player-feedback loop.
+   the maintainer's manual corrections before release, followed by community revisions.
 
 Continue with the [new-locale guide](new-locale.md) and the
 [asset map](../docs/en/asset-map.md).

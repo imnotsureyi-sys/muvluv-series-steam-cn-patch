@@ -25,7 +25,11 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
         ↓
 全路线实机 QA
         ↓
-发布测试包、接收可定位的玩家反馈
+维护者人工检查、修改发现的错误并复查结果
+        ↓
+完成制作，发布对应测试包
+        ↓
+发布后的玩家反馈与 ParaTranz 协作校对
         ↓
 反馈回到原文、术语和场景重新复核，再发布新版本
 ```
@@ -150,7 +154,20 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 
 每个问题应记录游戏、版本、路线、日期/章节、前后台词、截图、稳定资源 ID 和复现步骤。
 
-## 8. 玩家反馈闭环
+## 8. 发布前的维护者人工收尾
+
+这是制作流程的最后一步。AI 初译、独立复核和技术检查完成后，维护者仍会人工检查译文
+措辞、称谓、术语、缺漏、排版、图片文字及实机显示，修改发现的错误、确认采用方案并
+复查结果，然后发布对应版本。修改影响资源时须重新写回并复跑相关检查。
+
+玩家下载包已经包含该版本发布前落实的人工修正，不是等待发布后才开始处理的 AI 初稿。
+这不等于维护者完成了全篇专业日中校对；实际检查覆盖范围及尚未解决的问题仍按版本记录。
+
+## 9. 发布后的玩家反馈与 ParaTranz 校对
+
+ParaTranz 主要用于发布后其他参与者的日文对照校对与后续修订，与发布前的制作和维护者
+人工收尾分开。在制作品也可提前开放协作。平台改文须由维护者确认、检查并纳入后续发布，
+同步到 GitHub 不代表玩家手中的安装包已经更新。
 
 玩家反馈是第三层真实环境验证，不是随手在 Release 里改一个文件。收到反馈后：
 
@@ -161,7 +178,7 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 5. 重跑自动检查和相关路线；
 6. 在变更记录中说明修复，并生成新的可复现 Release。
 
-## 9. 哪些内容进入公开仓库
+## 10. 哪些内容进入公开仓库
 
 应该公开：
 
@@ -180,14 +197,14 @@ AGE2 或 rUGP 技术绑定、写回与自动验证
 图片生成/编辑提示只有在它直接影响可复现视觉结果时才记录在图片工作流或资产配方中；
 普通文本翻译不需要公开每轮提示词，公开规则、数据状态和验证工具更重要。
 
-## 10. 迁移到韩语、俄语等其他语言
+## 11. 迁移到韩语、俄语等其他语言
 
 复用的是阶段和身份体系，不是中文表达规则：
 
 1. 从合法游戏重新提取并连接源哈希；
 2. 新建 `ko`、`ru` 等独立目标文件，不覆盖日文或中文；
 3. 为目标语言重建术语、称谓、标点和字体政策；
-4. 完整执行两轮翻译、`question` 处理、技术写回、实机 QA 和玩家反馈闭环。
+4. 完整执行两轮翻译、`question` 处理、技术写回、实机 QA、维护者人工收尾与发布，再进行后续协作修订。
 
 开始方法见[新语言指南](new-locale.md)。
 
@@ -197,5 +214,6 @@ The reusable method is a staged, evidence-backed loop: freeze legal source
 identity; understand the story and establish terminology; produce a first
 translation by complete scene; independently review every row as
 `keep`/`revise`/`question`; resolve questions and re-freeze terminology; bind
-through the correct engine; run automated and in-game QA; then feed player
+through the correct engine; run automated and in-game QA; have the maintainer
+check and correct remaining issues before release; then feed player
 reports back into the maintained source rather than patching generated files.

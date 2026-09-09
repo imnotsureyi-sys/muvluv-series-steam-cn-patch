@@ -28,7 +28,7 @@ FPD 与 EGPACK 是两层不同格式：先从 `pack.bin` 的 FPD 目录找到文
 | TDA01 | [`games/tda01/translations/`](games/tda01/translations/) | [93 个 WebP 路径](games/tda01/images/) | beta0.2.2 |
 | TDA02 | [`games/tda02/translations/`](games/tda02/translations/) | [100 个 WebP 路径](games/tda02/images/) | beta0.1 |
 | TDA03 | [`games/tda03/translations/`](games/tda03/translations/) | [152 个 WebP 路径](games/tda03/images/) | beta0.1.6 |
-| 帝都燃烧篇 | [正文、选项、说话人、UI](games/imperial-capital-burns/translations/)与[作内术语](games/imperial-capital-burns/terminology/ja-zh-Hans.csv) | [315 个 WebP 路径及可维护文案](games/imperial-capital-burns/images/) | beta0.1 |
+| 帝都燃烧篇 | [正文、选项、说话人、UI](games/imperial-capital-burns/translations/)与[作内术语](../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) | [315 个 WebP 路径及可维护文案](games/imperial-capital-burns/images/) | beta0.1 |
 
 这些表和图片清单是当前可维护的公开快照，不代表能够逐字节重建历史 Release。WebP
 数量表示 ZIP 中实际存在的路径，不等于全部为独立翻译图；公开表、旧分支与实际发布载荷
