@@ -92,6 +92,7 @@ separate. See the [completed offline audit](../../docs/postmortems/offline-hook-
 
 ### Other tools
 
+- [`trace_pending_script_references.py`](trace_pending_script_references.py) re-reads the 13 source-archive owners of the first capture's 40 CRip008 and four PM load-only follow-ups. It verifies typed resource fields, bounded helper calls, mapping-table bytes and source-hash-matched Chinese scene cues. Run with `--census-root <private-census-directory> --output <report.json>`. Static registration does not establish a runtime draw; see the [entry-point report](../../docs/postmortems/pending-hook-entry-points-20260909.md).
 - [`decode_record.py`](decode_record.py) is the read-only first-step tool: combine an exact ICI-catalogued volume/offset/extent with the matching supported codec and create a review PNG plus portable JSON evidence.
 - [`sanitize_route_closure.py`](sanitize_route_closure.py) projects a private route-working set into the path-redacted public route contract.
 - [`verify_route_closure.py`](verify_route_closure.py) verifies the frozen 1,490-row Photon route closure.

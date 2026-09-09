@@ -1,0 +1,3371 @@
+{
+  "schema": "photon-pending-script-routes-v1",
+  "date": "2026-09-09",
+  "input_hashes": {
+    "tool": "5D3E0D9EA957C4AA4380C9E1CB883623FB5F16696A5342179689E7308217D394",
+    "catalog": "B19965F9465E26F61E4678B4FD6A153F95B338F8BD6E45B0A92F73261FFF4086",
+    "pending_groups": "C40298B54A64F8FA655EF179EDE44B517D6DF867BBE2A1A2505FF2C6F16E0FEA",
+    "reference_census": "6CFA5C2AE74DD60C8A8B004DFC07EEFD8FA4590537A062A8868C12765085957B",
+    "full_crsa_census": "8B56A8D6C119AA1AB6E02C42EAF011E24390B6BEF08767E8C86F297586531E19",
+    "mapping_report": "C09E3C26EBA961A181FB7769D77E76FC4F87A759C74902B7ABFAEB1795F442AA",
+    "chapter_indexes": {
+      "pf": "AD559973ED08DC84502AB678CDA96388C9ED87C133FD5693117D19B40E271389",
+      "pm": "3141EDF01DF2DB38E956E8888CB600E290D2CAF6D71CA692F6DAD3D22108EE28"
+    }
+  },
+  "scope": {
+    "pending_crip008_bindings": 40,
+    "pm_load_only_bindings": 4,
+    "archive_verified_script_owners": 13,
+    "known_crsa_census_records": 466,
+    "script_referenced_crip008": 38,
+    "mapping_only_crip008": 2,
+    "prefetch_only_pm": 3,
+    "guarded_unlock_pm": 1
+  },
+  "owners": [
+    {
+      "id": "pf:photonflowers11.rio:0x1d1a6da8",
+      "game": "pf",
+      "volume": "photonflowers11.rio",
+      "record_offset": 488271272,
+      "record_sha256": "FA48E605EA27ED4185A24F99BB756343F0333BF6B94DD8FB2D7CFC0FDC7D1C43",
+      "plaintext_sha256": "826AE66A4637A8FCC71B740CAE50E4C43545E81EE3FFD1438D92F584B914A105",
+      "command_count": 5368,
+      "chapter": "雨舞者.csv",
+      "archive_record_verified": true
+    },
+    {
+      "id": "pf:photonflowers11.rio:0x1d231710",
+      "game": "pf",
+      "volume": "photonflowers11.rio",
+      "record_offset": 488838928,
+      "record_sha256": "6C0F6EF08EF9508A9BC3299E483091A82947A5BAC440D07DDFF4B30B0C978716",
+      "plaintext_sha256": "999610D777778DCADDE924934E1A6E062DBBC8D7DC4C556E0AC97E874885BEBA",
+      "command_count": 3203,
+      "chapter": "小鸡潜降兵.csv",
+      "archive_record_verified": true
+    },
+    {
+      "id": "pf:photonflowers11.rio.002:0x1de65268",
+      "game": "pf",
+      "volume": "photonflowers11.rio.002",
+      "record_offset": 501633640,
+      "record_sha256": "2119ADAFCE122999CE63C39016CC0A2A2B060492B510BB9CF1B45D135066FC8C",
+      "plaintext_sha256": "8CC3407B90C5A9656E586F731087835E33ECC8D13DEFD5E26E36940E1D578A1D",
+      "command_count": 1499,
+      "chapter": "继承.csv",
+      "archive_record_verified": true
+    },
+    {
+      "id": "pf:photonflowers11.rio.002:0x0ce5c16c",
+      "game": "pf",
+      "volume": "photonflowers11.rio.002",
+      "record_offset": 216383852,
+      "record_sha256": "9E658D21CF829F495FAD4171677764186EE9D6213BD32DDB6C9DB60F723444E6",
+      "plaintext_sha256": "A43880821A206EBB46F3CD7A14A815BA4E6D091BF9298F97581FB1D3C54A3350",
+      "command_count": 20,
+      "chapter": null,
+      "archive_record_verified": true
+    },
+    {
+      "id": "pf:photonflowers11.rio.002:0x0ce67474",
+      "game": "pf",
+      "volume": "photonflowers11.rio.002",
+      "record_offset": 216429684,
+      "record_sha256": "CC93976CECF9EA97445B1FE792518000C10C4E36E8E734DBE8A5B01C59D3B66C",
+      "plaintext_sha256": "A43B4A08D54946D125D883950D17200C12493A6D1AEBB1A9055D2DB90D82A128",
+      "command_count": 20,
+      "chapter": null,
+      "archive_record_verified": true
+    },
+    {
+      "id": "pf:photonflowers11.rio.002:0x521f7790",
+      "game": "pf",
+      "volume": "photonflowers11.rio.002",
+      "record_offset": 1377793936,
+      "record_sha256": "06A2841380A8FD3A9A1EEEB0C0182B481058B5FD240CC1F252B0D71FC442FC53",
+      "plaintext_sha256": "F67ED90C01642FEB9A3611A78D15E8839019A6FF5CFD37110D62496147A2679D",
+      "command_count": 4370,
+      "chapter": "告白.csv",
+      "archive_record_verified": true
+    },
+    {
+      "id": "pf:photonflowers11.rio.002:0x5f8941b0",
+      "game": "pf",
+      "volume": "photonflowers11.rio.002",
+      "record_offset": 1602830768,
+      "record_sha256": "A4275C561B9E09D99002B199FB9241DE03D133C4BBEECB10BA815D76BA834C37",
+      "plaintext_sha256": "2889512EEF955C2873A0F4504C509E67729C8FCB4808DD73DA5A77A417C07C53",
+      "command_count": 2044,
+      "chapter": "樱花盛开之前.csv",
+      "archive_record_verified": true
+    },
+    {
+      "id": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "game": "pm",
+      "volume": "photonmelodies11.rio.003",
+      "record_offset": 1841522276,
+      "record_sha256": "5937F954E5855390ADB1162150F7CC1A89BF472664CAB018B8C2F73AF5C5BE78",
+      "plaintext_sha256": "51E9D19FE4644EE6252D803B49A7DC0EAA2CF02C1CDD6EC8871756AEF52D0E02",
+      "command_count": 5031,
+      "chapter": "憧憬.csv",
+      "archive_record_verified": true
+    },
+    {
+      "id": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "game": "pm",
+      "volume": "photonmelodies11.rio.003",
+      "record_offset": 2010308820,
+      "record_sha256": "6C5F645DD1EF201DDC6552B71A451B789042298B11C9014CD423B20EC69CDBE0",
+      "plaintext_sha256": "1FEA09C821060E5980CCAF8BC5922DF9702E91FC8BDB7292DF58BB665AEF21BA",
+      "command_count": 2810,
+      "chapter": "憧憬.csv",
+      "archive_record_verified": true
+    },
+    {
+      "id": "pm:photonmelodies11.rio.003:0x757020e8",
+      "game": "pm",
+      "volume": "photonmelodies11.rio.003",
+      "record_offset": 1970282728,
+      "record_sha256": "F51EBD8B03A384B54A2F77E3D3BFBD6003C72E6EBD77EAE7F5C1049C324769E2",
+      "plaintext_sha256": "2BE302B341087A6A5356D0C1A07878DC76407634778FFC0713C851B4DD00DD25",
+      "command_count": 20,
+      "chapter": null,
+      "archive_record_verified": true
+    },
+    {
+      "id": "pm:photonmelodies11.rio.003:0x7570f28c",
+      "game": "pm",
+      "volume": "photonmelodies11.rio.003",
+      "record_offset": 1970336396,
+      "record_sha256": "CA4135805A246FE0E070FE6A4818405F71479D35A517A19C20962F106DEE5F09",
+      "plaintext_sha256": "D87A20174F27834D13FD3214E5BB84F0047997DFD83536CDE0C7FFF72469D787",
+      "command_count": 20,
+      "chapter": null,
+      "archive_record_verified": true
+    },
+    {
+      "id": "pm:photonmelodies11.rio:0x4fd2aa74",
+      "game": "pm",
+      "volume": "photonmelodies11.rio",
+      "record_offset": 1339206260,
+      "record_sha256": "0C3D70D30536249174487F27F47802D79331177F99E9CE2C9A180D283A9B7A8A",
+      "plaintext_sha256": "0494CD566E76961080CB62CE987F2889F47825D8C1DA802DC0CA770228BC2CE0",
+      "command_count": 104,
+      "chapter": null,
+      "archive_record_verified": true
+    },
+    {
+      "id": "pm:photonmelodies11.rio.002:0x5c0c5430",
+      "game": "pm",
+      "volume": "photonmelodies11.rio.002",
+      "record_offset": 1544311856,
+      "record_sha256": "28F63D4EED6D22F600132B078B1758F314A8414C5C8F3A904C1E04D0883A5556",
+      "plaintext_sha256": "A5BF052AFF9191744CE91160D372F06F899C85EA3F1F194AC9C8815F48D9BECD",
+      "command_count": 22,
+      "chapter": null,
+      "archive_record_verified": true
+    }
+  ],
+  "verified_owner_calls": [
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 508,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 509,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 510,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 511,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 514,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 536,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 537,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 538,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 539,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 542,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 543,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 544,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 545,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 546,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 638,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 639,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 640,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 641,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 642,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 643,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 644,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 645,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 687,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 688,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 689,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 690,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 693,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3723,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3724,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3725,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3726,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3732,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3733,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3734,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3735,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 3736,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d1a6da8",
+      "command_order": 4262,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 270,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 271,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 272,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 273,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 274,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 277,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 278,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 279,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 280,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 281,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 344,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 345,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 346,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 347,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 348,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 351,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 352,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 353,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 354,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 355,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 394,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 395,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 396,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 397,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 398,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 401,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 402,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 403,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 404,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 405,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 476,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 477,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 478,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 479,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 480,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 483,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 484,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 485,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 486,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 487,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 697,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 698,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 699,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 700,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 701,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 704,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 705,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 706,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 707,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 708,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 737,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 738,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 739,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 740,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 741,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 744,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 745,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 746,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 747,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 748,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 927,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 928,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 929,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 930,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 931,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 934,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 935,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 936,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 937,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 938,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 995,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 996,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 997,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 998,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 999,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1002,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1003,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1004,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1005,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1006,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1094,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1095,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1096,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1097,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1098,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1101,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1102,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1103,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1104,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1105,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1202,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1203,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1204,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1205,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1206,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1209,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1210,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1211,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1212,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1213,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1291,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1292,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1293,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1294,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1295,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1298,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1299,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1300,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1301,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1302,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1359,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1360,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1361,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1362,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1363,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1366,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1367,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1368,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1369,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1370,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1395,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1396,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1397,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1398,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1399,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1402,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1403,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1404,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1405,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1406,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1540,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1541,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1542,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1543,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1544,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1547,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1548,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1549,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1550,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1551,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1627,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1628,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1629,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1630,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1631,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1634,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1635,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1636,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1637,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1638,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1698,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1699,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1700,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1701,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1702,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1705,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1706,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1707,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1708,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1709,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1747,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1748,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1749,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1750,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1751,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1754,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1755,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1756,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1757,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1758,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1839,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1840,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1841,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1842,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1843,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1846,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1847,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1848,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1849,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1850,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1951,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1952,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1953,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1954,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1955,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1958,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1959,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1960,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1961,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 1962,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2022,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2023,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2024,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2025,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2026,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2029,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2030,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2031,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2032,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2033,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2181,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2182,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2183,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2184,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2185,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2188,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2189,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2190,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2191,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2192,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2272,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2273,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2274,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2275,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2276,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2279,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2280,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2281,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2282,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2283,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2574,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2575,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2576,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2577,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2578,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2581,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2582,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2583,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2584,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio:0x1d231710",
+      "command_order": 2585,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x1de65268",
+      "command_order": 1283,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x1de65268",
+      "command_order": 1284,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x1de65268",
+      "command_order": 1285,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x1de65268",
+      "command_order": 1286,
+      "callee": "pf:photonflowers11.rio.002:0x0ce5c16c"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x1de65268",
+      "command_order": 1289,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x1de65268",
+      "command_order": 1290,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 262,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 263,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 264,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 1143,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 1144,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 1145,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 1379,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 1380,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 1381,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3236,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3237,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3238,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3687,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3688,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3689,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3788,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3789,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3790,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3906,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3907,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 3908,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4081,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4082,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4083,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4192,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4193,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4194,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4280,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4281,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pf:photonflowers11.rio.002:0x521f7790",
+      "command_order": 4282,
+      "callee": "pf:photonflowers11.rio.002:0x0ce67474"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1340,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1341,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1342,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1343,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1346,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1347,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1348,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x6dc36664",
+      "command_order": 1349,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2092,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2093,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2094,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2095,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2096,
+      "callee": "pm:photonmelodies11.rio.003:0x757020e8"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2099,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2100,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2101,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2102,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    },
+    {
+      "caller": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "command_order": 2103,
+      "callee": "pm:photonmelodies11.rio.003:0x7570f28c"
+    }
+  ],
+  "mapping_checks": [
+    {
+      "game": "pf",
+      "volume": "photonflowers11.rio",
+      "offset": 440489948,
+      "extent": 6377,
+      "sha256": "7E0BDD659C06501238397A75DF8B2510EB59943AE3DF9DE9C43EA84D6DA58BCB",
+      "rows": [
+        {
+          "source": "pf:rio000:0x1ad622c4",
+          "target": "pf:rio000:0x006d21f4"
+        }
+      ],
+      "scope": "Previously typed mapping rechecked against archive bytes; no display entry proven."
+    },
+    {
+      "game": "pm",
+      "volume": "photonmelodies11.rio",
+      "offset": 1685850512,
+      "extent": 11890,
+      "sha256": "E918546A2C35A03309E92E8C85A975119F8EBD0E07C4C9C46E7723F770660028",
+      "rows": [
+        {
+          "source": "pm:rio000:0x71eb56dc",
+          "target": "pm:rio000:0x0cf80164"
+        }
+      ],
+      "scope": "Previously typed mapping rechecked against archive bytes; no display entry proven."
+    }
+  ],
+  "rows": [
+    {
+      "game": "pf",
+      "group_id": 1668,
+      "title": "樱花盛开之前 · 彩色 · PF图层",
+      "classification": "mapping_only_display_entry_unresolved",
+      "script_hits": [],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2278,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x0ce5d4f4",
+          "owner": "pf:photonflowers11.rio:0x1d1a6da8",
+          "command_order": 508,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 21730,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x0ce5d4f4",
+          "owner": "pf:photonflowers11.rio:0x1d231710",
+          "command_order": 270,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 8856,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x0ce5d4f4",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1284,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55256,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2288,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x0cf177a8",
+          "owner": "pf:photonflowers11.rio:0x1d1a6da8",
+          "command_order": 545,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 24331,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x0cf177a8",
+          "owner": "pf:photonflowers11.rio:0x1d231710",
+          "command_order": 272,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 9061,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x0cf177a8",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1285,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55353,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2597,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee26518",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1284,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55237,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x2ee26518",
+          "owner": "pf:photonflowers11.rio.002:0x0ce5c16c",
+          "command_order": 4,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 287,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2598,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee277d0",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1285,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55334,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x2ee277d0",
+          "owner": "pf:photonflowers11.rio.002:0x0ce5c16c",
+          "command_order": 7,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 389,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2599,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee28a24",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1286,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55431,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x2ee28a24",
+          "owner": "pf:photonflowers11.rio.002:0x0ce5c16c",
+          "command_order": 10,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 491,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2603,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee2c23c",
+          "owner": "pf:photonflowers11.rio.002:0x0ce67474",
+          "command_order": 4,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 287,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x539a3234",
+          "owner": "pf:photonflowers11.rio.002:0x521f7790",
+          "command_order": 262,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 14292,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2604,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee2d500",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1289,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55625,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x2ee2d500",
+          "owner": "pf:photonflowers11.rio.002:0x0ce67474",
+          "command_order": 7,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 389,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x539ab5b0",
+          "owner": "pf:photonflowers11.rio.002:0x521f7790",
+          "command_order": 264,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 14523,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2605,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee2e768",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1290,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55735,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x2ee2e768",
+          "owner": "pf:photonflowers11.rio.002:0x0ce67474",
+          "command_order": 10,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 491,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2650,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x353999d4",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1286,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55450,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2651,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x3539dcb4",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1289,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55657,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x539ac818",
+          "owner": "pf:photonflowers11.rio.002:0x521f7790",
+          "command_order": 264,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 14542,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2652,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x353a19a4",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1290,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55754,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2751,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x539a4504",
+          "owner": "pf:photonflowers11.rio.002:0x521f7790",
+          "command_order": 262,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 14350,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2280,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x0ce622a0",
+          "owner": "pf:photonflowers11.rio:0x1d1a6da8",
+          "command_order": 509,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 21838,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x0ce622a0",
+          "owner": "pf:photonflowers11.rio:0x1d231710",
+          "command_order": 271,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 8964,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x0ce622a0",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1283,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55157,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2596,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee25778",
+          "owner": "pf:photonflowers11.rio.002:0x1de65268",
+          "command_order": 1283,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 55099,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x2ee25778",
+          "owner": "pf:photonflowers11.rio.002:0x0ce5c16c",
+          "command_order": 1,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 60,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2602,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee2b45c",
+          "owner": "pf:photonflowers11.rio.002:0x0ce67474",
+          "command_order": 1,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 60,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pf:rio002:0x539a8318",
+          "owner": "pf:photonflowers11.rio.002:0x521f7790",
+          "command_order": 263,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 14426,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2752,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x539a90ec",
+          "owner": "pf:photonflowers11.rio.002:0x521f7790",
+          "command_order": 263,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 14445,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2600,
+      "title": "选择兵装",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee29d38",
+          "owner": "pf:photonflowers11.rio.002:0x0ce5c16c",
+          "command_order": 15,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SetVarData",
+          "reference_position": 780,
+          "typed_fields": [
+            "fields.operation.fields[1].value"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2606,
+      "title": "选择兵装",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x2ee2fa80",
+          "owner": "pf:photonflowers11.rio.002:0x0ce67474",
+          "command_order": 15,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SetVarData",
+          "reference_position": 780,
+          "typed_fields": [
+            "fields.operation.fields[1].value"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2787,
+      "title": "毕业礼堂横幅 · 证书颁发式",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x60123428",
+          "owner": "pf:photonflowers11.rio.002:0x5f8941b0",
+          "command_order": 274,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 10555,
+          "typed_fields": [
+            "fields.arguments[0]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pf",
+      "group_id": 2803,
+      "title": "校门与毕业布幅 · 简体校名",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pf:rio002:0x61390a60",
+          "owner": "pf:photonflowers11.rio.002:0x5f8941b0",
+          "command_order": 1948,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 76457,
+          "typed_fields": [
+            "fields.arguments[0]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 3003,
+      "title": "樱花盛开之前 · 彩色 · PM图层",
+      "classification": "mapping_only_display_entry_unresolved",
+      "script_hits": [],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4294,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x75703474",
+          "owner": "pm:photonmelodies11.rio.003:0x6dc36664",
+          "command_order": 1340,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 58644,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x75703474",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2092,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88184,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4296,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x7570b150",
+          "owner": "pm:photonmelodies11.rio.003:0x6dc36664",
+          "command_order": 1342,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 58849,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7570b150",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2094,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88376,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4297,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x75710694",
+          "owner": "pm:photonmelodies11.rio.003:0x6dc36664",
+          "command_order": 1346,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 59111,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x75710694",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2099,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88735,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4299,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x757182f8",
+          "owner": "pm:photonmelodies11.rio.003:0x6dc36664",
+          "command_order": 1348,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 59316,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x757182f8",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2101,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88927,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4324,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x02219e90",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2092,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88126,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d40c13c",
+          "owner": "pm:photonmelodies11.rio.003:0x757020e8",
+          "command_order": 4,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 287,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4325,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x0221bee0",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2094,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88357,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d40d3f4",
+          "owner": "pm:photonmelodies11.rio.003:0x757020e8",
+          "command_order": 7,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 389,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4326,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x0221d134",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2095,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88454,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d40e648",
+          "owner": "pm:photonmelodies11.rio.003:0x757020e8",
+          "command_order": 10,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 491,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4329,
+      "title": "36mm突击机炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x02222724",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2099,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88703,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d411e64",
+          "owner": "pm:photonmelodies11.rio.003:0x7570f28c",
+          "command_order": 4,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 287,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4330,
+      "title": "74式近接战斗长刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x022247bc",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2101,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88908,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d413128",
+          "owner": "pm:photonmelodies11.rio.003:0x7570f28c",
+          "command_order": 7,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 389,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4331,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x02225a24",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2102,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 89005,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d414390",
+          "owner": "pm:photonmelodies11.rio.003:0x7570f28c",
+          "command_order": 10,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 491,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4366,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x0221e444",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2095,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88473,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4367,
+      "title": "65式近接战斗短刀",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x02226d38",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2102,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 89024,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4295,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x75708220",
+          "owner": "pm:photonmelodies11.rio.003:0x6dc36664",
+          "command_order": 1341,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 58752,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x75708220",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2093,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88279,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4298,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x757153e0",
+          "owner": "pm:photonmelodies11.rio.003:0x6dc36664",
+          "command_order": 1347,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 59219,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x757153e0",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2100,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88830,
+          "typed_fields": [
+            "fields.arguments[5]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4323,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x0221b148",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2093,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88260,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d40b394",
+          "owner": "pm:photonmelodies11.rio.003:0x757020e8",
+          "command_order": 1,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 60,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4328,
+      "title": "120mm滑膛炮",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio004:0x022239e8",
+          "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+          "command_order": 2100,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 88811,
+          "typed_fields": [
+            "fields.arguments[4]"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x7d411084",
+          "owner": "pm:photonmelodies11.rio.003:0x7570f28c",
+          "command_order": 1,
+          "command_class": "CVmFlagOp",
+          "native_operation": null,
+          "reference_position": 60,
+          "typed_fields": [
+            "fields.a"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4327,
+      "title": "选择兵装",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x7d40f95c",
+          "owner": "pm:photonmelodies11.rio.003:0x757020e8",
+          "command_order": 15,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SetVarData",
+          "reference_position": 780,
+          "typed_fields": [
+            "fields.operation.fields[1].value"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 4332,
+      "title": "选择兵装",
+      "classification": "script_resource_reference",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio003:0x7d4156a8",
+          "owner": "pm:photonmelodies11.rio.003:0x7570f28c",
+          "command_order": 15,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SetVarData",
+          "reference_position": 780,
+          "typed_fields": [
+            "fields.operation.fields[1].value"
+          ],
+          "resource_classes": [
+            "CRip008"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 2946,
+      "title": "方向键:选择 / ○:确定 / □:删除数据 / ×:返回",
+      "classification": "prefetch_only_native_widget_display_unresolved",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio000:0x64919e7c",
+          "owner": "pm:photonmelodies11.rio:0x4fd2aa74",
+          "command_order": 71,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SpecifyPrefetchCommand",
+          "reference_position": 5420,
+          "typed_fields": [
+            "fields.operation.fields[0].value"
+          ],
+          "resource_classes": [
+            "Cr6Ti"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 2961,
+      "title": "方向键:选择 / ○:确定 / □:删除数据 / ×:返回",
+      "classification": "prefetch_only_native_widget_display_unresolved",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio000:0x649a5544",
+          "owner": "pm:photonmelodies11.rio:0x4fd2aa74",
+          "command_order": 89,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SpecifyPrefetchCommand",
+          "reference_position": 6734,
+          "typed_fields": [
+            "fields.operation.fields[0].value"
+          ],
+          "resource_classes": [
+            "Cr6Ti"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 2971,
+      "title": "方向键:选择 / ○:播放语音 / ×:返回",
+      "classification": "prefetch_only_native_widget_display_unresolved",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio000:0x649d2814",
+          "owner": "pm:photonmelodies11.rio:0x4fd2aa74",
+          "command_order": 99,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SpecifyPrefetchCommand",
+          "reference_position": 7477,
+          "typed_fields": [
+            "fields.operation.fields[0].value"
+          ],
+          "resource_classes": [
+            "Cr6Ti"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    },
+    {
+      "game": "pm",
+      "group_id": 492,
+      "title": "恭喜！壁纸已解锁",
+      "classification": "prefetch_and_guarded_unlock_registration",
+      "script_hits": [
+        {
+          "asset_id": "pm:rio000:0x649d46d8",
+          "owner": "pm:photonmelodies11.rio:0x4fd2aa74",
+          "command_order": 100,
+          "command_class": "CVmGenericMsg",
+          "native_operation": "OM_SpecifyPrefetchCommand",
+          "reference_position": 7550,
+          "typed_fields": [
+            "fields.operation.fields[0].value"
+          ],
+          "resource_classes": [
+            "Cr6Ti"
+          ]
+        },
+        {
+          "asset_id": "pm:rio003:0x286b9158",
+          "owner": "pm:photonmelodies11.rio.002:0x5c0c5430",
+          "command_order": 17,
+          "command_class": "CVmCall",
+          "native_operation": null,
+          "reference_position": 1099,
+          "typed_fields": [
+            "fields.arguments[3]"
+          ],
+          "resource_classes": [
+            "Cr6Ti"
+          ]
+        }
+      ],
+      "runtime_status": "still_unverified"
+    }
+  ],
+  "story_scenarios": [
+    {
+      "game": "pf",
+      "chapter": "继承",
+      "owner": "pf:photonflowers11.rio.002:0x1de65268",
+      "registered_group_ids": [
+        2278,
+        2280,
+        2288,
+        2596,
+        2597,
+        2598,
+        2599,
+        2600,
+        2602,
+        2603,
+        2604,
+        2605,
+        2606,
+        2650,
+        2651,
+        2652
+      ],
+      "following_dialogue_cues": [
+        {
+          "image_reference_command": 1283,
+          "following_message_command": 1305,
+          "source_utf8_sha256": "24d67b1469b9d156afab26594379b0e7e9846ff643a51d97bd68b9fd2904d6ea",
+          "translated_text": "【Lightning 2】「——终于要开始了。<0A>真是的——都快等得不耐烦了！」<01>",
+          "translation_binding_ids": [
+            "pf:vm:photonflowers11.rio.002:501633640:00081256:00441"
+          ]
+        }
+      ],
+      "translation_file_sha256": "450581023EEA8206F83E4A243C35852F13C05A361E43185196423C9886F9E650",
+      "scope": "Static resource references and helper registrations, not proof that all members draw in one playthrough."
+    },
+    {
+      "game": "pf",
+      "chapter": "告白",
+      "owner": "pf:photonflowers11.rio.002:0x521f7790",
+      "registered_group_ids": [
+        2602,
+        2603,
+        2604,
+        2605,
+        2606,
+        2651,
+        2751,
+        2752
+      ],
+      "following_dialogue_cues": [
+        {
+          "image_reference_command": 262,
+          "following_message_command": 314,
+          "source_utf8_sha256": "f6c8db8380ccf01c261c7489adb3a665bd72896fa5210e6ce695bf52c9e45b2c",
+          "translated_text": "【竹宫】「——是音振欺骗筒！传感器会失效的——！」<01>",
+          "translation_binding_ids": [
+            "pf:vm:photonflowers11.rio.002:1377793936:00017868:00011"
+          ]
+        }
+      ],
+      "translation_file_sha256": "F3A84DE81DE0CFF55B9D08CCC4552DDA7F436562752CC4F51321FA854640BDE2",
+      "scope": "Static resource references and helper registrations, not proof that all members draw in one playthrough."
+    },
+    {
+      "game": "pf",
+      "chapter": "樱花盛开之前",
+      "owner": "pf:photonflowers11.rio.002:0x5f8941b0",
+      "registered_group_ids": [
+        2787,
+        2803
+      ],
+      "following_dialogue_cues": [
+        {
+          "image_reference_command": 274,
+          "following_message_command": 279,
+          "source_utf8_sha256": "71285a6465187f69bbcf1a1e44b44371903b77ed53f10b04921dd90e3978f959",
+          "translated_text": "寒意料峭的冬天也即将结束，风中已能感受到春天到来的气息。<01>",
+          "translation_binding_ids": [
+            "pf:vm:photonflowers11.rio.002:1602830768:00013508:00112"
+          ]
+        },
+        {
+          "image_reference_command": 1948,
+          "following_message_command": 1959,
+          "source_utf8_sha256": "7ce58d467199f4c1e79e5185daec9a1c47d90f3fe80457544cd463336776a337",
+          "translated_text": "——小武，我们要永远永远在一起哦。",
+          "translation_binding_ids": [
+            "pf:vm:photonflowers11.rio.002:1602830768:00111552:00647"
+          ]
+        }
+      ],
+      "translation_file_sha256": "B14B5E17598154868096F863A0A79B3789C91DEE7A59153B036765C3818903D0",
+      "scope": "Static resource references and helper registrations, not proof that all members draw in one playthrough."
+    },
+    {
+      "game": "pm",
+      "chapter": "憧憬",
+      "owner": "pm:photonmelodies11.rio.003:0x77d2e0d4",
+      "registered_group_ids": [
+        4294,
+        4295,
+        4296,
+        4297,
+        4298,
+        4299,
+        4323,
+        4324,
+        4325,
+        4326,
+        4327,
+        4328,
+        4329,
+        4330,
+        4331,
+        4332,
+        4366,
+        4367
+      ],
+      "following_dialogue_cues": [
+        {
+          "image_reference_command": 2092,
+          "following_message_command": 2123,
+          "source_utf8_sha256": "0497f34a0cbb640d1460e65b76d95cbe4c63de506829fecd22e70e6f724ac685",
+          "translated_text": "――那时的我还是个孩子。<01>",
+          "translation_binding_ids": [
+            "pm:vm:photonmelodies11.rio.003:2010308820:00111072:00414"
+          ]
+        }
+      ],
+      "translation_file_sha256": "22F6EE016F0902A0C52F5DA953BBC20C2FD63DFAACC198945333F3634B13D36F",
+      "scope": "Static resource references and helper registrations, not proof that all members draw in one playthrough."
+    }
+  ],
+  "limitations": [
+    "Source-archive script analysis; does not execute the VM or game and does not validate installed script overlay branch equivalence.",
+    "A reference, argument or registration is not a successful decode or draw. All 44 retain unverified runtime status.",
+    "The CRsa census excludes other script/container formats. Missing direct references do not prove unused resources.",
+    "Four story segments cover static references, not a guaranteed minimum number of gameplay actions or all language/input branches.",
+    "The 40 exact-length offline replays passed. Additional caller padding remains unobserved; this is not a list of 40 known defects."
+  ],
+  "game_writes": 0,
+  "game_processes_started": 0,
+  "computer_use": false
+}
