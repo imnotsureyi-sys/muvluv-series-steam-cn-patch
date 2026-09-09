@@ -36,7 +36,14 @@ class RecoveryTests(unittest.TestCase):
             self.assertEqual(sha(rows),meta['records_sha256'])
             self.assertEqual(dict(Counter(r['status'] for r in rows)),meta['status_counts'])
             self.assertEqual(dict(Counter(r['source'] for r in rows)),meta['source_counts'])
-            self.assertEqual(len(read_table(folder/'terminology/ja-zh-Hans.csv')),meta['terms'])
+            # The recovery manifest remains a sealed historical snapshot.
+            # Later reviewed additions carry their own current-table counts.
+            later=json.loads((ROOT/'rUGP/evidence/photon/text/latin-review-20260909.json').read_text(encoding='utf-8'))['terminology_counts']
+            expected_terms=meta['terms']
+            if game in later:
+                self.assertEqual(later[game]['before'],expected_terms)
+                expected_terms=later[game]['after']
+            self.assertEqual(len(read_table(folder/'terminology/ja-zh-Hans.csv')),expected_terms)
             for row in rows:
                 self.assertIn(row['source'],{s['name'] for s in self.manifest['sources']})
                 self.assertEqual(set(row),set(COLS))

@@ -1,0 +1,30 @@
+{
+  "ml": {
+    "dialogue_rows": 60393,
+    "alignment": {
+      "exact_japanese_block_sequence": 60393
+    },
+    "speaker_label_pairs": 167,
+    "existing_term_evidence_pairs": 246,
+    "address_candidates": 251,
+    "lexical_candidates": 11820,
+    "reference_term_pairs": 101,
+    "system_trilingual_records": 189,
+    "dialogue_blocks": 101,
+    "blocks_with_native_title": 100
+  },
+  "al": {
+    "dialogue_rows": 54329,
+    "alignment": {
+      "native_language_indices": 54329
+    },
+    "speaker_label_pairs": 296,
+    "existing_term_evidence_pairs": 345,
+    "address_candidates": 248,
+    "lexical_candidates": 14882,
+    "reference_term_pairs": 193,
+    "system_trilingual_records": 183,
+    "dialogue_blocks": 76,
+    "blocks_with_native_title": 46
+  }
+}

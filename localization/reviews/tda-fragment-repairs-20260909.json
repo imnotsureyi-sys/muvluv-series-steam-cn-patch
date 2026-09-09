@@ -1,0 +1,86 @@
+{
+  "schema": "tda-fragment-repairs/v1",
+  "basis": "All ten current source hashes matched private Japanese evidence before repair. Repairs restore the whole sentence, not only a missing terminology token.",
+  "edits": [
+    {
+      "game": "tda01",
+      "file": "AGE2/games/tda01/translations/ja-zh-Hans.csv",
+      "id": "game_t01078",
+      "source_text_sha256": "312786112341C766F624A32D348D077853FA0036872E184F46ED3E6779723DFF",
+      "before": "「狂犬」这种危险异名的程度……。",
+      "after": "看起来也不像是会被冠以「狂犬」这种危险外号的人啊……。"
+    },
+    {
+      "game": "tda01",
+      "file": "AGE2/games/tda01/translations/ja-zh-Hans.csv",
+      "id": "game_t01276",
+      "source_text_sha256": "7C977CBC329DDC7F6A915145C2746AE5B85A2E028A6F52799F08C24F91F0161A",
+      "before": "「上层部」不喜欢美军介入……。",
+      "after": "说是夏威夷的斯卫或元枢府，或许确实想得太多了，但不管怎样，「上层部」不喜欢美军介入……。"
+    },
+    {
+      "game": "tda01",
+      "file": "AGE2/games/tda01/translations/ja-zh-Hans.csv",
+      "id": "game_t05450",
+      "source_text_sha256": "D3CADC27826C9C12FAC24AFFAB227895320C6700610FD16CE12537F98AECF6BC",
+      "before": "「因认识分歧而重新谈判」，但这不是单方面的说法吗！",
+      "after": "文件上写的是与美军「因认识分歧而重新谈判」，但这不是单方面的说法吗！"
+    },
+    {
+      "game": "tda01",
+      "file": "AGE2/games/tda01/translations/ja-zh-Hans.csv",
+      "id": "game_t08191",
+      "source_text_sha256": "B8393869C3D7A12D6EEA38EE92646A909823CD5345D0E0D4AA7F8C487AAC082A",
+      "before": "进入西雅图。」",
+      "after": "「既然反应弹防卫圈已被突破，我们就做好了承受损失的准备。光线级的扫讨由我直接指挥。——绝不能让BETA进入西雅图。」"
+    },
+    {
+      "game": "tda01",
+      "file": "AGE2/games/tda01/translations/ja-zh-Hans.csv",
+      "id": "game_t08548",
+      "source_text_sha256": "AD9C06701C86A55448C0CE31FBCEC44AEAC1BB1858AAC74C702C63756CB05D38",
+      "before": "的战斗，还是与美方的关系、城市治安……同法国、加拿大的战争……都还什么也没有改变——。",
+      "after": "无论是与BETA的战斗，还是与美方的关系、城市治安……同法国、加拿大的战争……都还什么也没有改变——。"
+    },
+    {
+      "game": "tda01",
+      "file": "AGE2/games/tda01/translations/ja-zh-Hans.csv",
+      "id": "game_t08560",
+      "source_text_sha256": "CEF1E385098629B1E6136597D028386D81D00EDD38449F2F0F6D8A79BB819ED3",
+      "before": "煌武院悠阳。",
+      "after": "——我是日本帝国政威大将军，煌武院悠阳。"
+    },
+    {
+      "game": "tda03",
+      "file": "AGE2/games/tda03/translations/ja-zh-Hans.csv",
+      "id": "tda03_t00307",
+      "source_text_sha256": "8292494E4E9BC78B9141FB6EEE949D0C94E18926510AE7A822C47AE99E7236E7",
+      "before": "「必须拯救之物的重量」。",
+      "after": "殿下想要守护的国民，并不只是日本国民。这就是「必须拯救之物的重量」。"
+    },
+    {
+      "game": "tda03",
+      "file": "AGE2/games/tda03/translations/ja-zh-Hans.csv",
+      "id": "tda03_t04889",
+      "source_text_sha256": "78A38CD8D63F91178AEAD73EC48ED8B29A39303063F641852A2A3B1BABB8546F",
+      "before": "「阁下」？",
+      "after": "……殿下？为什么不说「阁下」？"
+    },
+    {
+      "game": "tda03",
+      "file": "AGE2/games/tda03/translations/ja-zh-Hans.csv",
+      "id": "tda03_t05503",
+      "source_text_sha256": "7C20A40782756B75D5BA03220D356F21A5D83039ABCB8216718F02EA940AE189",
+      "before": "的作战吧。听说白银中尉当时活跃得像鬼神一样。",
+      "after": "甲21号作战吗……。那是经过激战，才总算攻下敌方巢穴的作战吧。听说白银中尉当时活跃得像鬼神一样。"
+    },
+    {
+      "game": "tda03",
+      "file": "AGE2/games/tda03/translations/ja-zh-Hans.csv",
+      "id": "tda03_t99999",
+      "source_text_sha256": "63A1B9332728985A5963F3D595733C8861448DA4B990674AE6C85DF83624A587",
+      "before": "「反应炉破坏后，突入部队回收奇异物质。然后脱出。另外，若回收困难，优先撤退」",
+      "after": "据说最终使用G弹消灭了巢穴。……从那以后，日本就成了唯一两度遭受G弹灾害的国家。"
+    }
+  ]
+}

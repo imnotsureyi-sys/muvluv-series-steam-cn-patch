@@ -1,0 +1,583 @@
+{
+  "schema": "photon-latin-user-decisions/v1",
+  "date": "2026-09-09",
+  "round": 2,
+  "approved_decisions": [
+    3,
+    19,
+    20,
+    23,
+    24,
+    25,
+    37,
+    39,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    55,
+    61,
+    63,
+    64,
+    66
+  ],
+  "protected_file": "rUGP/games/photonflowers/translations/樱花盛开之前.csv",
+  "protected_sha256": "b14b5e17598154868096f863a0a79b3789c91dee7a59153b036765c3818903d0",
+  "scope": "User-approved names and readable bilingual glosses only. Keep romanization in wordplay/culture questions. 31,32,76 remain pending clarification. Sakura entire chapter protected.",
+  "speaker_aliases": [
+    {
+      "game": "photonflowers",
+      "source": "ザウバー１",
+      "target": "扎乌伯1",
+      "previous": "Sauber1"
+    },
+    {
+      "game": "photonflowers",
+      "source": "ザウバー２",
+      "target": "扎乌伯2",
+      "previous": "Sauber2"
+    },
+    {
+      "game": "photonmelodies",
+      "source": "ヴァルキリーズ",
+      "target": "女武神中队",
+      "previous": "Valkyries"
+    }
+  ],
+  "edits": [
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1110878708:00040116:00159",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "decisions": [
+        39
+      ],
+      "before": "【麻理茉】「——Blade 1呼叫ＣＰ！<0A>代号991发生！！重复，代号991发生！！」<01>",
+      "after": "【麻理茉】「——刀刃1呼叫ＣＰ！<0A>代号991发生！！重复，代号991发生！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1110878708:00040716:00162",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "decisions": [
+        39
+      ],
+      "before": "【麻理茉】「——Blade 1呼叫ＣＰ！<0A>代号991发生！紧急请求增援！」<01>",
+      "after": "【麻理茉】「——刀刃1呼叫ＣＰ！<0A>代号991发生！紧急请求增援！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1110878708:00041036:00164",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "decisions": [
+        39
+      ],
+      "before": "【麻理茉】「——Blade 1呼叫ＣＰ！<0A>大队本部请回答！——可恶，谁都行，回答我！！」<01>",
+      "after": "【麻理茉】「——刀刃1呼叫ＣＰ！<0A>大队本部请回答！——可恶，谁都行，回答我！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1182769004:00005568:00030",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "decisions": [
+        39
+      ],
+      "before": "【麻理茉】「——求求你…………<0A>Blade中队呢…………我的中队…………！？」<01>",
+      "after": "【麻理茉】「——求求你…………<0A>刀刃中队呢…………我的中队…………！？」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:1182769004:00006680:00034",
+      "file": "rUGP/games/photonflowers/translations/赎罪.csv",
+      "decisions": [
+        39
+      ],
+      "before": "【麻理茉】「还、还有其他幸存者吗！？——<0A>Blade中队的人怎么样了！？」<01>",
+      "after": "【麻理茉】「还、还有其他幸存者吗！？——<0A>刀刃中队的人怎么样了！？」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488271272:00312152:00451",
+      "file": "rUGP/games/photonflowers/translations/雨舞者.csv",
+      "decisions": [
+        20
+      ],
+      "before": "意大利半岛南端的大规模迎击计划——<0A>Bootstrap作战取得成功，西西里岛得以保全。<01>",
+      "after": "意大利半岛南端的大规模迎击计划——<0A>布特斯特拉普作战取得成功，西西里岛得以保全。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488631608:00003608:00004",
+      "file": "rUGP/games/photonflowers/translations/告白.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【美知留】「——Valkyrie1明白。」<01>",
+      "after": "【美知留】「——女武神1明白。」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488631608:00017168:00086",
+      "file": "rUGP/games/photonflowers/translations/告白.csv",
+      "decisions": [
+        46
+      ],
+      "before": "【夕呼】「——伊隅，<0A>Echo舰队已经撤离到安全区域了。」<01>",
+      "after": "【夕呼】「——伊隅，<0A>回声舰队已经撤离到安全区域了。」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488631608:00017404:00087",
+      "file": "rUGP/games/photonflowers/translations/告白.csv",
+      "decisions": [
+        47
+      ],
+      "before": "【夕呼】「Whiskey舰队再过十几分钟<0A>也能完成撤离。开始准备吧。」<01>",
+      "after": "【夕呼】「威士忌舰队再过十几分钟<0A>也能完成撤离。开始准备吧。」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488751288:00011280:00005",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        43
+      ],
+      "before": "【帝国军卫士1】「——Cracker 1呼叫ＨＱ！！<0A>支援炮击还没恢复吗！？这样下去我们撑不住！快一点！」<01>",
+      "after": "【帝国军卫士1】「——破击者1呼叫ＨＱ！！<0A>支援炮击还没恢复吗！？这样下去我们撑不住！快一点！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488751288:00011360:00006",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        43
+      ],
+      "before": "【ＨＱ】「——ＨＱ呼叫Cracker 1，<0A>支援炮击恢复时间未定。<0A>重复——支援炮击恢复时间未定」<01>",
+      "after": "【ＨＱ】「——ＨＱ呼叫破击者1，<0A>支援炮击恢复时间未定。<0A>重复——支援炮击恢复时间未定」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488751288:00098844:00046",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        44
+      ],
+      "before": "【月咏】「——是！——Crest2通告第16斯卫大队各机。<0A>以鹤翼双五阵前进」<01>",
+      "after": "【月咏】「——是！——纹章2通告第16斯卫大队各机。<0A>以鹤翼双五阵前进」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488751288:00104592:00051",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        23
+      ],
+      "before": "这场投入帝国军与远东联合国军半数总战力的大反攻，<0A>以歼灭Phase-4巢穴这一人类历史性的大胜利落下帷幕。<01>",
+      "after": "这场投入帝国军与远东联合国军半数总战力的大反攻，<0A>以歼灭四阶巢穴这一人类历史性的大胜利落下帷幕。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00082528:00456",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        48
+      ],
+      "before": "【下北作战管制官】「——Sierra Delta 1通告各领队！<0A>——全机准备起飞！——重复，全机准备起飞！」<01>",
+      "after": "【下北作战管制官】「——西拉·德尔塔1通告各领队！<0A>——全机准备起飞！——重复，全机准备起飞！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00085700:00458",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        48
+      ],
+      "before": "【下北作战管制官】「——Sierra Delta 1呼叫ＨＱ！<0A>全舰舰载机均已准备起飞！」<01>",
+      "after": "【下北作战管制官】「——西拉·德尔塔1呼叫ＨＱ！<0A>全舰舰载机均已准备起飞！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00083416:00097",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        63
+      ],
+      "before": "AKJ……Attack of Killer Juice，<0A>是降下兵之间流传得煞有介事的传说。<01>",
+      "after": "AKJ……Attack of Killer Juice，<0A>也就是“致命汁液的袭击”，<0A>是降下兵之间流传得煞有介事的传说。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00155992:00194",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        24
+      ],
+      "before": "希望我们狠狠拉下去的那坨烧得通红的金属大便，<0A>能在Stab上砸开一个巨大的漏雨洞——。<01>",
+      "after": "希望我们狠狠拉下去的那坨烧得通红的金属大便，<0A>能在地下茎上砸开一个巨大的漏雨洞——。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00207488:00263",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        45
+      ],
+      "before": "【Sauber1】「——超过四万只BETA<0A>正从第13层以下向地表移动！！」<01>",
+      "after": "【扎乌伯1】「——超过四万只BETA<0A>正从第13层以下向地表移动！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00207572:00264",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        45
+      ],
+      "before": "【Sauber2】「——不行！有线通信完全中断！」<01>",
+      "after": "【扎乌伯2】「——不行！有线通信完全中断！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00207740:00266",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        45
+      ],
+      "before": "【Sauber1】「——后退！！快后退——」<01>",
+      "after": "【扎乌伯1】「——后退！！快后退——」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1526866676:00000596:00001",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【戈德曼局长】「――欢迎你平安归来，‘Falso’。」<01>",
+      "after": "【戈德曼局长】「――欢迎你平安归来，‘伪面’。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1526866676:00006136:00045",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【戈德曼局长】「高兴吧，‘Falso’。<0A>――下一个目标是日本。」<01>",
+      "after": "【戈德曼局长】「高兴吧，‘伪面’。<0A>――下一个目标是日本。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1526866676:00017524:00111",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        19
+      ],
+      "before": "【戈德曼局长】「你这么想也无可厚非。<0A>我们欧盟即使算不上反对Alternative计划，<0A>也更倾向于稳妥的手段，<0A>并在推进Prominence计划等多项方案。」<01>",
+      "after": "【戈德曼局长】「你这么想也无可厚非。<0A>我们欧盟即使算不上反对Alternative计划，<0A>也更倾向于稳妥的手段，<0A>并在推进日珥计划等多项方案。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1526866676:00022604:00131",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【戈德曼局长】「正是你想的那样，‘Falso’。<0A>…………不过要我说，她更像兔子。」<01>",
+      "after": "【戈德曼局长】「正是你想的那样，‘伪面’。<0A>…………不过要我说，她更像兔子。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1526866676:00026440:00159",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【戈德曼局长】「这正是选你执行这项任务的理由，‘Falso’。」<01>",
+      "after": "【戈德曼局长】「这正是选你执行这项任务的理由，‘伪面’。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1870646988:00009460:00028",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        25
+      ],
+      "before": "这里既是异形要塞――巢穴，<0A>也是Ground Zero――G弹的爆炸中心。<01>",
+      "after": "这里既是异形要塞――巢穴，<0A>也是G弹的爆心地。<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:2045013904:00001020:00001",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【香月博士】「远道而来，辛苦了。我很期待你哦，<0A>西尔维奥·奥兰迪中尉，或者该叫你“Falso”吗？」<01>",
+      "after": "【香月博士】「远道而来，辛苦了。我很期待你哦，<0A>西尔维奥·奥兰迪中尉，或者该叫你“伪面”吗？」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:90023844:00032820:00054",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【女军官1】「我是特殊任务部队A-01，<0A>通称‘Valkyries’的队长，伊隅美知留上尉。<0A>请多关照，奥兰迪中尉。」<01>",
+      "after": "【女军官1】「我是特殊任务部队A-01，<0A>通称‘女武神中队’的队长，伊隅美知留上尉。<0A>请多关照，奥兰迪中尉。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:90023844:00098012:00205",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【Valkyries】「――明白。」<01>",
+      "after": "【女武神中队】「――明白。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:303686356:00000616:00001",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【录音机】「欢迎来到横滨基地，<0A>代号“Falso”的西尔维奥·奥兰迪。<0A>这盘磁带能平安送到你手里，首先值得庆贺一下。」<01>",
+      "after": "【录音机】「欢迎来到横滨基地，<0A>代号“伪面”的西尔维奥·奥兰迪。<0A>这盘磁带能平安送到你手里，首先值得庆贺一下。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00018152:00078",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【声音】「——Valkyries 集合！」<01>",
+      "after": "【声音】「——女武神中队集合！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00018236:00079",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【Valkyries】「——了解！」<01>",
+      "after": "【女武神中队】「——了解！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00022096:00092",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【Valkyries】「——明白！」<01>",
+      "after": "【女武神中队】「——明白！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00022924:00095",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【Valkyries】「——明、明白！」<01>",
+      "after": "【女武神中队】「——明、明白！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00033448:00133",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【凉宫中尉】「Valkyrie Mom呼叫Valkyries！<0A>目标捕捉，作战开始！」<01>",
+      "after": "【凉宫中尉】「女武神Mom呼叫女武神中队！<0A>目标捕捉，作战开始！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00033828:00134",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【伊隅上尉】「Valkyries全员突击！！」<01>",
+      "after": "【伊隅上尉】「女武神中队全员突击！！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00034248:00136",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【巴西】「Valkyrie 8，收到！」<01>",
+      "after": "【巴西】「女武神8，收到！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:555485612:00035764:00138",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【风间少尉】「Valkyrie 7，收到！」<01>",
+      "after": "【风间少尉】「女武神7，收到！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:667084320:00015276:00023",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【Valkyries】「——了解！」<01>",
+      "after": "【女武神中队】「——了解！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:782340880:00046812:00195",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【凉宫中尉】「Valkyrie Mom呼叫Valkyries！<0A>目标捕捉，作战开始！」<01>",
+      "after": "【凉宫中尉】「女武神Mom呼叫女武神中队！<0A>目标捕捉，作战开始！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:782340880:00047876:00196",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【伊隅上尉】「Valkyries全员突击！！」<01>",
+      "after": "【伊隅上尉】「女武神中队全员突击！！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:782340880:00049436:00198",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【巴西】「Valkyrie 8，收到！」<01>",
+      "after": "【巴西】「女武神8，收到！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:782340880:00049928:00200",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【风间少尉】「Valkyrie 7，收到！」<01>",
+      "after": "【风间少尉】「女武神7，收到！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1009504344:00061712:00093",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【伊隅上尉】「说到底，速濑也只是四天王中最弱的一个……。<0A>连这种程度的对手都赢不了，简直是 Valkyries 的耻辱！」<01>",
+      "after": "【伊隅上尉】「说到底，速濑也只是四天王中最弱的一个……。<0A>连这种程度的对手都赢不了，简直是女武神中队的耻辱！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1009504344:00067424:00099",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【伊隅上尉】「听我说，风间。<0A>Valkyries就只剩你一个了…………」<01>",
+      "after": "【伊隅上尉】「听我说，风间。<0A>女武神中队就只剩你一个了…………」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1009504344:00069040:00101",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【伊隅上尉】「风间…………作为最后的幸存者，<0A>Valkyries…………就托付给你了…………（倒下）」<01>",
+      "after": "【伊隅上尉】「风间…………作为最后的幸存者，<0A>女武神中队…………就托付给你了…………（倒下）」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1699608664:00015936:00048",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【美登里川博士】「这个嘛…………对，没错。<0A>我还给你布置过几项考验。…………‘Falso’。」<01>",
+      "after": "【美登里川博士】「这个嘛…………对，没错。<0A>我还给你布置过几项考验。…………‘伪面’。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1825021728:00023384:00137",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        49
+      ],
+      "before": "【铠衣课长】「不，真不愧是欧盟情报军的至宝‘Falso’。<0A>号称最优秀，果然名不虚传」<01>",
+      "after": "【铠衣课长】「不，真不愧是欧盟情报军的至宝‘伪面’。<0A>号称最优秀，果然名不虚传」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1828786024:00032692:00119",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【西尔维奥】「Valkyries 的那些人……」<01>",
+      "after": "【西尔维奥】「女武神中队的那些人……」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1835123768:00012364:00065",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        37
+      ],
+      "before": "【西尔维奥】「你让美冴和 Valkyries 那些人相信，<0A>那一切都只是为了陷害我而编出的谎话——」<01>",
+      "after": "【西尔维奥】「你让美冴和女武神中队那些人相信，<0A>那一切都只是为了陷害我而编出的谎话——」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1838831072:00016232:00091",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        19
+      ],
+      "before": "阿拉斯加的联合国军基地……育空……！？<0A>那里是欧盟推动的 Prominence 计划总部……！！<01>",
+      "after": "阿拉斯加的联合国军基地……育空……！？<0A>那里是欧盟推动的日珥计划总部……！！<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1838831072:00016332:00092",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        19
+      ],
+      "before": "【西尔维奥】「Alternative 5……<0A>打算摧毁 Prominence 计划吗？！」<01>",
+      "after": "【西尔维奥】「Alternative 5……<0A>打算摧毁日珥计划吗？！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1838831072:00017980:00105",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        19
+      ],
+      "before": "不，更重要的是，如果欧盟的 Prominence 计划和<0A>日本帝国的 Alternative 4同时遭到恐袭，<0A>Alternative 5 势必会被怀疑参与其中，<0A>并遭到全世界谴责。<01>",
+      "after": "不，更重要的是，如果欧盟的日珥计划和<0A>日本帝国的 Alternative 4同时遭到恐袭，<0A>Alternative 5 势必会被怀疑参与其中，<0A>并遭到全世界谴责。<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:258770628:00012360:00029",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/11_雪地游览.csv",
+      "decisions": [
+        3
+      ],
+      "before": "【武】「………Keiji是什么？」<01>",
+      "after": "【武】「………鲑儿？那是什么？」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:258770628:00119916:00564",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/11_雪地游览.csv",
+      "decisions": [
+        55
+      ],
+      "before": "【伊尔玛】「没错……不过更准确地说，<0A>‘sauna’这个词本来就是芬兰语」<01>",
+      "after": "【伊尔玛】「没错……不过更准确地说，<0A>‘桑拿’这个词本来就是芬兰语」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:780938508:00001356:00008",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/19_抵达与接待.csv",
+      "decisions": [
+        64
+      ],
+      "before": "【月咏】「『SI』是『Southern Island』的缩写，<0A>但这并非正式名称，正式名称将在全面开业前决定」<01>",
+      "after": "【月咏】「『SI』是『南岛』（Southern Island）的缩写，<0A>但这并非正式名称，正式名称将在全面开业前决定」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1361070408:00167072:01063",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/36_慧的来访.csv",
+      "decisions": [
+        61
+      ],
+      "before": "【慧】「不知不觉，ZERO这种叫法已经成惯例了吧？」<01>",
+      "after": "【慧】「不知不觉，零这种叫法已经成惯例了吧？」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1361070408:00167376:01065",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/36_慧的来访.csv",
+      "decisions": [
+        61
+      ],
+      "before": "【慧】「你看，出了１、２之后，不是３，<0A>而是回到系列原点做 ZERO…………」<01>",
+      "after": "【慧】「你看，出了１、２之后，不是３，<0A>而是回到系列原点做零…………」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1511431932:00045644:00131",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/39_年末聚会.csv",
+      "decisions": [
+        66
+      ],
+      "before": "【慧】「Hot Dog的缩写」<01>",
+      "after": "【慧】「“热狗”（Hot Dog）的缩写」<01>"
+    }
+  ]
+}

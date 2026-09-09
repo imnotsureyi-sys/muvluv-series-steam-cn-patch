@@ -24,5 +24,12 @@
   ],
   "rows": 5564,
   "source_bytes": 1978763,
-  "source_sha256": "AF4E480E691D3F616DE7CE42F9B8AFE15595739E4460B94FC7F353BDE25930B9"
+  "source_sha256": "AF4E480E691D3F616DE7CE42F9B8AFE15595739E4460B94FC7F353BDE25930B9",
+  "revision_20260909": {
+    "previous_output_bytes": 1772510,
+    "previous_output_sha256": "CD92A7C9BBA0F0EB1CF5DAEE5906133AE04D71458D378B5084EFF6BC33B9E5FA",
+    "audit": "localization/reviews/main-al-alignment-20260909.json",
+    "additional_repairs": "localization/reviews/tda-fragment-repairs-20260909.json",
+    "source_identity_and_non_chinese_fields_unchanged": true
+  }
 }

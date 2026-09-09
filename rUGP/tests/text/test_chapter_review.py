@@ -15,6 +15,25 @@ class ChapterReviewTests(unittest.TestCase):
         edits = {e["binding_id"]: e for e in audit["edits"]}
         self.assertEqual(len(edits), 15)
         self.assertEqual(len(audit["edits"]), len(edits))
+        reviewed = json.loads((root.parent / "evidence/photon/text/latin-decisions-20260909.json").read_text(encoding="utf-8"))
+        latest = {e["binding_id"]: e for e in reviewed["edits"]}
+        self.assertEqual(len(latest), 103)
+        round2 = json.loads((root.parent / "evidence/photon/text/latin-decisions-20260909-round2.json").read_text(encoding="utf-8"))
+        followup = {e["binding_id"]: e for e in round2["edits"]}
+        self.assertEqual(len(followup), 59)
+        followup_seen = set()
+        round3 = json.loads((root.parent / "evidence/photon/text/latin-decisions-20260909-round3.json").read_text(encoding="utf-8"))
+        final = {e["binding_id"]: e for e in round3["edits"]}
+        self.assertEqual(len(final), 8)
+        final_seen = set()
+        semantic = json.loads((root.parent / 'evidence/photon/text/semantic-followup-20260909.json').read_text(encoding='utf-8'))
+        corrections = {e['binding_id']: e for e in semantic['edits']}
+        self.assertEqual(len(corrections), 3)
+        corrected_seen = set()
+        alignment = json.loads((root.parent.parent/'localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
+        alignment_edits = {e['id']: e for e in alignment['edits'] if e['column'] == 'translated_text'}
+        alignment_seen = set()
+        latest_seen = set()
         seen = set()
         for title, count, files in [("photonflowers", 13025, 13), ("photonmelodies", 44698, 45)]:
             folder = root / title / "translations"
@@ -27,10 +46,119 @@ class ChapterReviewTests(unittest.TestCase):
                     self.assertEqual(visible(row["translated_text"]), edit["before"])
                     row["translated_text"] = decoded(edit["after"])
                     seen.add(row["binding_id"])
+                if row["binding_id"] in latest:
+                    edit = latest[row["binding_id"]]
+                    self.assertEqual(visible(row["translated_text"]), edit["before"])
+                    row["translated_text"] = decoded(edit["after"])
+                    latest_seen.add(row["binding_id"])
+                if row["binding_id"] in followup:
+                    edit = followup[row["binding_id"]]
+                    self.assertEqual(visible(row["translated_text"]), edit["before"])
+                    row["translated_text"] = decoded(edit["after"])
+                    followup_seen.add(row["binding_id"])
+                if row["binding_id"] in final:
+                    edit = final[row["binding_id"]]
+                    self.assertEqual(visible(row["translated_text"]), edit["before"])
+                    row["translated_text"] = decoded(edit["after"])
+                    final_seen.add(row["binding_id"])
+                if row['binding_id'] in corrections:
+                    edit = corrections[row['binding_id']]
+                    self.assertEqual(visible(row['translated_text']), edit['before'])
+                    row['translated_text'] = decoded(edit['after'])
+                    corrected_seen.add(row['binding_id'])
+                if row['binding_id'] in alignment_edits:
+                    edit = alignment_edits[row['binding_id']]
+                    self.assertEqual(visible(row['translated_text']), edit['before'])
+                    row['translated_text'] = decoded(edit['after'])
+                    alignment_seen.add(row['binding_id'])
             self.assertEqual(result, expected)
             manifest = json.loads((folder / "chapters.json").read_text(encoding="utf-8"))
             self.assertEqual(len(manifest["files"]), files)
         self.assertEqual(seen, set(edits))
+        self.assertEqual(alignment_seen, set(alignment_edits))
+        self.assertEqual(latest_seen, set(latest))
+        self.assertEqual(followup_seen, set(followup))
+        self.assertEqual(final_seen, set(final))
+        self.assertEqual(corrected_seen, set(corrections))
+
+    def test_final_latin_ledger_accounts_for_all_candidates(self):
+        import re
+        root = Path(__file__).resolve().parents[2]
+        folder = root / 'evidence/photon/text'
+        ledger = json.loads((folder/'latin-review-20260909.json').read_text(encoding='utf-8'))
+        self.assertEqual(ledger['total_script_rows'], 57723)
+        records = ledger['records']
+        self.assertEqual(len(records), 352)
+        self.assertEqual({r['candidate'] for r in records}, set(range(1,353)))
+        self.assertEqual(len({r['binding_id'] for r in records}), 352)
+        self.assertEqual([g['number'] for g in ledger['groups']], list(range(1,81)))
+        protected = {r['candidate'] for r in records if r['state']=='protected'}
+        covered = {i for g in ledger['groups'] for i in g['candidates']}
+        self.assertEqual(len(protected), 15)
+        self.assertEqual(covered | protected, set(range(1,353)))
+        self.assertFalse(covered & protected)
+        audited = {}
+        for name in ['latin-decisions-20260909.json','latin-decisions-20260909-round2.json','latin-decisions-20260909-round3.json','semantic-followup-20260909.json']:
+            audit = json.loads((folder/name).read_text(encoding='utf-8'))
+            for edit in audit['edits']:
+                self.assertEqual(re.findall(r'<(?!0A>)[0-9A-F]+>',edit['before']), re.findall(r'<(?!0A>)[0-9A-F]+>',edit['after']))
+                self.assertNotIn('<03>',edit['after'])
+                audited[edit['binding_id']] = edit
+        self.assertEqual(len(audited), 170)
+        current = {r['binding_id']:visible(r['translated_text']) for game in ['photonflowers','photonmelodies'] for r in read_chapters(root/'games'/game/'translations')}
+        alignment = json.loads((root.parent/'localization/reviews/main-al-alignment-20260909.json').read_text(encoding='utf-8'))
+        aligned = {e['id']: e for e in alignment['edits'] if e['column'] == 'translated_text'}
+        for record in records:
+            identity = record['binding_id']
+            historical = current[identity]
+            if identity in aligned:
+                self.assertEqual(current[identity], aligned[identity]['after'])
+                historical = aligned[identity]['before']
+            self.assertEqual(hashlib.sha256(historical.encode()).hexdigest(),record['after_sha256'])
+            self.assertEqual(record['state']=='changed',identity in audited)
+            if record['state']!='changed':
+                self.assertEqual(record['before_sha256'],record['after_sha256'])
+            self.assertEqual(record['groups'],[g['number'] for g in ledger['groups'] if record['candidate'] in g['candidates']])
+
+    def test_second_latin_review_preserves_sources_controls_and_protection(self):
+        import re
+        root = Path(__file__).resolve().parents[2]
+        audit = json.loads((root / "evidence/photon/text/latin-decisions-20260909-round2.json").read_text(encoding="utf-8"))
+        self.assertEqual(audit['approved_decisions'], [3,19,20,23,24,25,37,39,43,44,45,46,47,48,49,55,61,63,64,66])
+        self.assertEqual(hashlib.sha256((root.parent / audit['protected_file']).read_bytes()).hexdigest(), audit['protected_sha256'])
+        for edit in audit['edits']:
+            self.assertNotEqual(edit['file'], audit['protected_file'])
+            self.assertNotEqual(edit['before'], edit['after'])
+            self.assertEqual(re.findall(r'<(?!0A>)[0-9A-F]+>',edit['before']), re.findall(r'<(?!0A>)[0-9A-F]+>',edit['after']))
+            self.assertNotIn('<03>', edit['after'])
+            self.assertNotIn('<2060>', edit['after'])
+
+    def test_user_latin_decisions_preserve_controls_and_protected_chapter(self):
+        import re
+        root = Path(__file__).resolve().parents[2]
+        audit = json.loads((root / "evidence/photon/text/latin-decisions-20260909.json").read_text(encoding="utf-8"))
+        protected = root.parent / audit["protected_file"]
+        self.assertEqual(hashlib.sha256(protected.read_bytes()).hexdigest(), audit["protected_sha256"])
+        self.assertEqual(audit["approved_decisions"], [1, 2, 4, 13, 26, 35, 36, 38, 40, 41, 42])
+        rules = {
+            1: [(r"Mach 15", "15马赫")], 2: [(r"DELETE", "删除")],
+            4: [(r"Amen", "阿门")], 13: [(r"PLEASE", "求你了")],
+            26: [(r"Euro Fightas", "尤罗法伊塔斯公司")],
+            35: [(r"HIVE", "HIVE（巢穴）")],
+            36: [(r"Aquila\s*(\d+)", r"大鹫\1"), (r"Aquilas", "大鹫队"), (r"Aquila", "大鹫"), (r"All大鹫队", "All 大鹫队")],
+            38: [(r"Lightning\s*(\d+)", r"闪电\1"), (r"Lightning", "闪电")],
+            40: [(r"Dancer\s*(\d+)", r"舞者\1"), (r"Dancer", "舞者")],
+            41: [(r"Ghost\s*(\d+)", r"幽灵\1"), (r"Ghost", "幽灵")],
+            42: [(r"Hunter\s*(\d+)", r"猎人\1"), (r"Hunter", "猎人")],
+        }
+        for edit in audit["edits"]:
+            self.assertNotEqual(edit["file"], audit["protected_file"])
+            expected = edit["before"]
+            for decision in edit["decisions"]:
+                for pattern, replacement in rules[decision]:
+                    expected = re.sub(pattern, replacement, expected)
+            self.assertEqual(expected, edit["after"])
+            self.assertEqual(re.findall(r"<[0-9A-F]+>", edit["before"]), re.findall(r"<[0-9A-F]+>", edit["after"]))
 
     def test_terminology_fixes_are_narrow_and_do_not_regress(self):
         import re

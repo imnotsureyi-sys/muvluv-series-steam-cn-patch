@@ -1,0 +1,44 @@
+{
+  "frozen_at_utc": "2026-09-09T03:09:42.460507+00:00",
+  "project_glossary_inputs": [],
+  "seed_terms": [],
+  "files": {
+    "ml": {
+      "independent-baseline.json": "baa05665ef8397709d49f8470f9590aa938b341fbf6f26511c01429e975604bd",
+      "speaker-baseline.json": "3514366a0a82f921fd1d629d869ae524796e90a1192cbf6990a771cef873149d",
+      "manifest.json": "04115687a97cee10a2f5241383ebba53ab39391cca1b25c75278a160a1234f77"
+    },
+    "al": {
+      "independent-baseline.json": "3f76d754deb188b736e2d051f23dedd5a652fb9a8054cf58b36ed983cbf93a96",
+      "speaker-baseline.json": "92460b3e81e2256da28f132e858d7b028bcf82b3638c6fe44ccf09b3dc2bdc1c",
+      "manifest.json": "4596e246d8586e114ea9b74d257b2a3a671e8e8f944b5fb7a62ff10a7f015199"
+    }
+  },
+  "counts": {
+    "ml": {
+      "source_rows": 60393,
+      "source_blocks": 101,
+      "independent_japanese_forms": 403,
+      "cn_variants": 406,
+      "body_input_decisions": 273,
+      "speaker_label_pairs": 167,
+      "quotation_pairs_classified": 229,
+      "selected_evidence_source_rows": 356,
+      "raw_discovery_candidates": 21488,
+      "evidence_errors": 0
+    },
+    "al": {
+      "source_rows": 54329,
+      "source_blocks": 76,
+      "independent_japanese_forms": 529,
+      "cn_variants": 551,
+      "body_input_decisions": 314,
+      "speaker_label_pairs": 296,
+      "quotation_pairs_classified": 423,
+      "selected_evidence_source_rows": 471,
+      "raw_discovery_candidates": 24794,
+      "evidence_errors": 0
+    }
+  },
+  "scope": "Independent source-only selected terminology and context reference; full-source discovery is complete. Not a claim that every candidate or every utterance has been manually reviewed."
+}
