@@ -1,10 +1,9 @@
 ﻿[CmdletBinding()]
 param(
-    [ValidateSet('VerifyPackage', 'Status', 'Install', 'Rollback')]
+    [ValidateSet('VerifyPackage', 'Status', 'Install')]
     [string]$Action = 'Status',
     [switch]$Apply,
-    [string]$GameRoot,
-    [string]$SessionRoot
+    [string]$GameRoot
 )
 
 Set-StrictMode -Version Latest
@@ -15,7 +14,9 @@ $ProgressPreference = 'SilentlyContinue'
 [Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)
 $ManifestPath = Join-Path $PackageRoot 'package_manifest.20260910.json'
 $SealPath = Join-Path $PackageRoot 'package_seal.20260910.json'
-$InstallerLockStream = $null
+$InstallerMutex = $null
+$InstallerMutexHeld = $false
+$WritesStarted = $false
 
 function Assert-True {
     param([bool]$Condition, [string]$Message)
@@ -81,26 +82,6 @@ function Get-SafeTargetPath {
     $prefix = $rootFull.TrimEnd('\') + '\'
     Assert-True ($full.StartsWith($prefix, [StringComparison]::OrdinalIgnoreCase)) "目标路径越界：$Relative"
     return $full
-}
-
-function Write-JsonAtomic {
-    param([Parameter(Mandatory = $true)][string]$Path, [Parameter(Mandatory = $true)]$Value)
-    $parent = Split-Path -Parent $Path
-    New-Item -ItemType Directory -Path $parent -Force | Out-Null
-    $temp = Join-Path $parent ('.' + [IO.Path]::GetFileName($Path) + '.' + [guid]::NewGuid().ToString('N') + '.tmp')
-    $Value | ConvertTo-Json -Depth 32 | Set-Content -LiteralPath $temp -Encoding UTF8
-    Move-Item -LiteralPath $temp -Destination $Path -Force
-}
-
-function Remove-ExactTree {
-    param([string]$Path,[string]$ExpectedParent)
-    $full=[IO.Path]::GetFullPath($Path)
-    Assert-True ((Split-Path -Parent $full) -eq [IO.Path]::GetFullPath($ExpectedParent)) '恢复路径越界'
-    if (Test-Path -LiteralPath $full) {
-        $destination=Join-Path $script:ActiveSession ('retained-'+[guid]::NewGuid().ToString('N'))
-        Assert-True ($destination.StartsWith($script:ActiveSession.TrimEnd('\')+'\',[StringComparison]::OrdinalIgnoreCase)) '备份路径越界'
-        Move-Item -LiteralPath $full -Destination $destination
-    }
 }
 
 function Read-PackageDocuments {
@@ -263,24 +244,6 @@ function Assert-GameClosed {
     Assert-True ($running.Count -eq 0) "请先关闭 $($Manifest.game_title)，再安装或卸载。"
 }
 
-function Get-RowMatch {
-    param(
-        [Parameter(Mandatory = $true)][string]$Path,
-        [Parameter(Mandatory = $true)]$Before,
-        [Parameter(Mandatory = $true)]$After,
-        [switch]$Large
-    )
-    if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) {
-        return [ordered]@{ before = (-not [bool]$Before.exists); after = $false; exists = $false; bytes = $null; sha256 = $null }
-    }
-    $item = Get-Item -LiteralPath $Path
-    if ($Large) { Write-Host ("正在核对大型数据文件：{0} ({1:N2} GB)" -f $item.Name, ($item.Length / 1GB)) }
-    $hash = Get-Sha256 $Path
-    $beforeOk = [bool]$Before.exists -and [int64]$item.Length -eq [int64]$Before.bytes -and $hash -eq [string]$Before.sha256
-    $afterOk = [int64]$item.Length -eq [int64]$After.bytes -and $hash -eq [string]$After.sha256
-    return [ordered]@{ before = $beforeOk; after = $afterOk; exists = $true; bytes = [int64]$item.Length; sha256 = $hash }
-}
-
 function Get-ArchiveRangeMatch {
     param([string]$Path, $Archive)
     if (-not (Test-Path -LiteralPath $Path -PathType Leaf)) { return @{before=$false;after=$false} }
@@ -336,7 +299,7 @@ function Test-RootState {
     }
     $asset=Get-SafeTargetPath $Root $Manifest.asset_root
     if (Test-Path -LiteralPath $asset) {
-        if (@(Get-ChildItem -LiteralPath $asset -Recurse -File -Force).Count -ne [int]$Manifest.counts.asset_files) { $allAfter=$false }
+        # Every required asset was authenticated above; extra files are untouched.
     } else { $allAfter=$false }
     $status=if($allAfter){'INSTALLED_20260910_EXACT'}elseif($allBefore){'CLEAN_STEAM_SUPPORTED'}else{'UNSUPPORTED_OR_PARTIAL_STATE'}
     return @{status=$status;game=$Manifest.game;root=$Root;mismatches=@($mismatches)}
@@ -357,101 +320,6 @@ function Copy-ExactBytes {
         $OutputStream.Write($buffer, 0, $read)
         $remaining -= $read
     }
-}
-
-function Backup-Archives {
-    param(
-        [Parameter(Mandatory = $true)]$Manifest,
-        [Parameter(Mandatory = $true)][string]$Root,
-        [Parameter(Mandatory = $true)][string]$Session
-    )
-    $entries = [Collections.Generic.List[object]]::new()
-    $index = 0
-    foreach ($archive in @($Manifest.archives)) {
-        $target = Get-SafeTargetPath $Root ([string]$archive.target)
-        $backup = Join-Path $Session ("backup\archives\{0:D2}.ranges.bin" -f $index)
-        New-Item -ItemType Directory -Path (Split-Path -Parent $backup) -Force | Out-Null
-        Write-Host "正在备份改动区段：$($archive.target)"
-        $source = [IO.File]::Open($target, [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::Read)
-        $output = [IO.File]::Open($backup, [IO.FileMode]::CreateNew, [IO.FileAccess]::Write, [IO.FileShare]::None)
-        $spans = [Collections.Generic.List[object]]::new()
-        $backupOffset = [int64]0
-        try {
-            foreach ($segment in @($archive.segments)) {
-                $offset = [int64]$segment.offset
-                $length = [int64]$segment.length
-                $available = [int64]$source.Length - $offset
-                if ($available -lt 0) { $available = 0 }
-                $originalLength = [Math]::Min($length, $available)
-                if ($originalLength -gt 0) {
-                    $source.Position = $offset
-                    Copy-ExactBytes $source $output $originalLength
-                }
-                $spans.Add([ordered]@{ offset = $offset; length = $originalLength; backup_offset = $backupOffset })
-                $backupOffset += $originalLength
-            }
-        } finally {
-            $output.Dispose()
-            $source.Dispose()
-        }
-        $entries.Add([ordered]@{
-            target = [string]$archive.target
-            backup = $backup
-            backup_bytes = [int64](Get-Item -LiteralPath $backup).Length
-            backup_sha256 = Get-Sha256 $backup
-            original_bytes = [int64](Get-Item -LiteralPath $target).Length
-            original_sha256 = Get-Sha256 $target
-            spans = @($spans)
-        })
-        $index += 1
-    }
-    return @($entries)
-}
-
-function Backup-FixedFiles {
-    param(
-        [Parameter(Mandatory = $true)]$Manifest,
-        [Parameter(Mandatory = $true)][string]$Root,
-        [Parameter(Mandatory = $true)][string]$Session
-    )
-    $entries = [Collections.Generic.List[object]]::new()
-    foreach ($row in @($Manifest.files | Where-Object { $_.category -eq 'fixed' })) {
-        $target = Get-SafeTargetPath $Root ([string]$row.target)
-        $entry = [ordered]@{ target = [string]$row.target; before_exists = (Test-Path -LiteralPath $target -PathType Leaf); backup = $null }
-        if ([bool]$entry.before_exists) {
-            $backup = Get-SafeTargetPath (Join-Path $Session 'backup\files') ([string]$row.target)
-            New-Item -ItemType Directory -Path (Split-Path -Parent $backup) -Force | Out-Null
-            Copy-Item -LiteralPath $target -Destination $backup
-            Assert-True ((Get-Sha256 $backup) -eq (Get-Sha256 $target)) "固定文件备份失败：$($row.target)"
-            $entry.backup = $backup
-            $entry.before_sha256 = Get-Sha256 $backup
-        }
-        $entries.Add($entry)
-    }
-    return @($entries)
-}
-
-function New-AssetStage {
-    param(
-        [Parameter(Mandatory = $true)]$Manifest,
-        [Parameter(Mandatory = $true)][string]$Root,
-        [Parameter(Mandatory = $true)][string]$Token
-    )
-    $stage = Join-Path $Root ('.PhotonR2Assets.20260910-stage-' + $Token)
-    Assert-True (-not (Test-Path -LiteralPath $stage)) "临时目录已存在：$stage"
-    New-Item -ItemType Directory -Path $stage | Out-Null
-    $prefix = ([string]$Manifest.asset_root).TrimEnd('/', '\') + '/'
-    foreach ($row in @($Manifest.files | Where-Object { $_.category -eq 'asset' })) {
-        $target = ([string]$row.target).Replace('\', '/')
-        Assert-True ($target.StartsWith($prefix, [StringComparison]::OrdinalIgnoreCase)) "资源路径不属于资源目录：$target"
-        $relative = $target.Substring($prefix.Length)
-        $destination = Get-SafeTargetPath $stage $relative
-        New-Item -ItemType Directory -Path (Split-Path -Parent $destination) -Force | Out-Null
-        Copy-Item -LiteralPath (Get-SafePackagePath ([string]$row.payload.path)) -Destination $destination
-    }
-    $count = @(Get-ChildItem -LiteralPath $stage -Recurse -File -Force).Count
-    Assert-True ($count -eq [int]$Manifest.counts.asset_files) "临时资源数量不符：$count"
-    return $stage
 }
 
 function Apply-ArchivePatches {
@@ -477,98 +345,13 @@ function Apply-ArchivePatches {
     }
 }
 
-function Install-FixedFiles {
+function Install-PackageFiles {
     param([Parameter(Mandatory = $true)]$Manifest, [Parameter(Mandatory = $true)][string]$Root)
-    foreach ($row in @($Manifest.files | Where-Object { $_.category -eq 'fixed' })) {
+    foreach ($row in @($Manifest.files)) {
         $target = Get-SafeTargetPath $Root ([string]$row.target)
         New-Item -ItemType Directory -Path (Split-Path -Parent $target) -Force | Out-Null
         Copy-Item -LiteralPath (Get-SafePackagePath ([string]$row.payload.path)) -Destination $target -Force
     }
-}
-
-function Restore-FixedFiles {
-    param([Parameter(Mandatory = $true)]$Ledger, [Parameter(Mandatory = $true)][string]$Root)
-    foreach ($entry in @($Ledger.fixed_backups)) {
-        $target = Get-SafeTargetPath $Root ([string]$entry.target)
-        if ([bool]$entry.before_exists) {
-            Assert-True (Test-Path -LiteralPath ([string]$entry.backup) -PathType Leaf) "固定文件备份缺失：$($entry.backup)"
-            Copy-Item -LiteralPath ([string]$entry.backup) -Destination $target -Force
-        } elseif (Test-Path -LiteralPath $target) {
-            Move-Item -LiteralPath $target -Destination (Join-Path $script:ActiveSession ('retained-file-'+[guid]::NewGuid().ToString('N')))
-        }
-    }
-}
-
-function Restore-Archives {
-    param([Parameter(Mandatory = $true)]$Ledger, [Parameter(Mandatory = $true)][string]$Root)
-    foreach ($entry in @($Ledger.archive_backups)) {
-        Write-Host "正在还原原版数据：$($entry.target)"
-        Assert-True (Test-Path -LiteralPath ([string]$entry.backup) -PathType Leaf) "数据备份缺失：$($entry.backup)"
-        Assert-True ((Get-Sha256 ([string]$entry.backup)) -eq [string]$entry.backup_sha256) "数据备份损坏：$($entry.target)"
-        $targetPath = Get-SafeTargetPath $Root ([string]$entry.target)
-        $target = [IO.File]::Open($targetPath, [IO.FileMode]::OpenOrCreate, [IO.FileAccess]::ReadWrite, [IO.FileShare]::None)
-        $backup = [IO.File]::Open(([string]$entry.backup), [IO.FileMode]::Open, [IO.FileAccess]::Read, [IO.FileShare]::Read)
-        try {
-            if ($target.Length -lt [int64]$entry.original_bytes) { $target.SetLength([int64]$entry.original_bytes) }
-            foreach ($span in @($entry.spans)) {
-                $length = [int64]$span.length
-                if ($length -le 0) { continue }
-                $target.Position = [int64]$span.offset
-                $backup.Position = [int64]$span.backup_offset
-                Copy-ExactBytes $backup $target $length
-            }
-            $target.SetLength([int64]$entry.original_bytes)
-            $target.Flush($true)
-        } finally {
-            $backup.Dispose()
-            $target.Dispose()
-        }
-    }
-}
-
-function Restore-InstalledSession {
-    param(
-        [Parameter(Mandatory = $true)]$Manifest,
-        [Parameter(Mandatory = $true)]$Ledger,
-        [Parameter(Mandatory = $true)][string]$Root
-    )
-    $assetRoot = Get-SafeTargetPath $Root ([string]$Manifest.asset_root)
-    if ($Ledger.assets_switched -and (Test-Path -LiteralPath $assetRoot)) { Remove-ExactTree $assetRoot $Root }
-    if ($Ledger.previous_assets -and (Test-Path -LiteralPath $Ledger.previous_assets)) { Move-Item -LiteralPath $Ledger.previous_assets -Destination $assetRoot }
-    Restore-FixedFiles $Ledger $Root
-    Restore-Archives $Ledger $Root
-    foreach ($entry in @($Ledger.archive_backups)) {
-        Assert-True ((Get-Sha256 (Get-SafeTargetPath $Root $entry.target)) -eq $entry.original_sha256) '恢复的数据不完整'
-    }
-    foreach ($entry in @($Ledger.fixed_backups)) {
-        $target=Get-SafeTargetPath $Root $entry.target
-        if ($entry.before_exists) { Assert-True ((Get-Sha256 $target) -eq $entry.before_sha256) '恢复的程序不完整' }
-        else { Assert-True (-not (Test-Path -LiteralPath $target)) '新增程序未撤回' }
-    }
-}
-
-function Get-SessionRoot {
-    param([Parameter(Mandatory = $true)]$Manifest)
-    if (-not [string]::IsNullOrWhiteSpace($SessionRoot)) { return [IO.Path]::GetFullPath($SessionRoot) }
-    return [IO.Path]::GetFullPath((Join-Path $env:LOCALAPPDATA ("MuvLuvPhotonCN\2026.09.10\full\{0}\sessions" -f ([string]$Manifest.game).ToLowerInvariant())))
-}
-
-function Find-RollbackLedger {
-    param(
-        [Parameter(Mandatory = $true)]$Manifest,
-        [Parameter(Mandatory = $true)][string]$Sessions,
-        [Parameter(Mandatory = $true)][string]$Root
-    )
-    $files = @(Get-ChildItem -LiteralPath $Sessions -Recurse -File -Filter 'install_ledger.20260910.json' -ErrorAction SilentlyContinue | Sort-Object LastWriteTime -Descending)
-    foreach ($file in $files) {
-        $ledger = Get-Content -LiteralPath $file.FullName -Raw -Encoding UTF8 | ConvertFrom-Json
-        if ($ledger.package_id -eq $Manifest.package_id -and $ledger.status -eq 'INSTALLED_20260910_EXACT' -and -not [bool]$ledger.rollback_completed) {
-            if ([IO.Path]::GetFullPath([string]$ledger.root) -eq [IO.Path]::GetFullPath($Root)) {
-                return @{ File = $file; Ledger = $ledger }
-            }
-        }
-    }
-    return $null
 }
 
 function Assert-NoLinks {
@@ -652,177 +435,50 @@ public sealed class PhotonSteamKeyValues {
     catch { throw 'Steam 安装信息不匹配。请在游戏属性中把语言设为 English，等待下载完成后重试。' }
     return @{path=$acf;sha256=(Get-Sha256 $acf)}
 }
-function Restore-PendingInstall {
-    param($Manifest,[string]$Root,[string]$Sessions)
-    foreach ($file in @(Get-ChildItem -LiteralPath $Sessions -Recurse -File -Filter 'install_ledger.20260910.json' -ErrorAction SilentlyContinue | Sort-Object LastWriteTime)) {
-        $pending=Get-Content -LiteralPath $file.FullName -Raw -Encoding UTF8 | ConvertFrom-Json
-        if ($pending.package_id -ne $Manifest.package_id -or $pending.root -ne $Root -or $pending.status -notin @('PREPARED','INSTALLING')) { continue }
-        $script:ActiveSession=$file.Directory.FullName
-        Write-Host '正在恢复上次中断的安装…'
-        Restore-InstalledSession $Manifest $pending $Root
-        $pending.status='INTERRUPTED_RESTORED'
-        $pending.rollback_completed=$true
-        Write-JsonAtomic $file.FullName $pending
-    }
-}
 
 try {
     $documents = Read-PackageDocuments
     $manifest = $documents.Manifest
-
-    if ($Action -in @('Install', 'Rollback')) {
-        $lockDirectory = Join-Path $env:LOCALAPPDATA 'MuvLuvPhotonCN\2026.09.10'
-        New-Item -ItemType Directory -Path $lockDirectory -Force | Out-Null
-        $lockPath = Join-Path $lockDirectory 'installer.lock'
-        try {
-            $InstallerLockStream = [IO.File]::Open($lockPath, [IO.FileMode]::OpenOrCreate, [IO.FileAccess]::ReadWrite, [IO.FileShare]::None)
-        } catch {
-            throw '检测到另一个 PF／PM 补丁安装器正在运行。请一次只安装一个游戏，等前一个窗口完成后再继续。'
-        }
-    }
-
     if ($Action -eq 'VerifyPackage') {
         Test-PackagePayload $manifest | ConvertTo-Json -Depth 8
         exit 0
     }
-
     $root = Resolve-GameRoot $manifest
-    $sessions = Get-SessionRoot $manifest
-
     if ($Action -eq 'Status') {
-        $package = Test-PackagePayload $manifest
         $state = Test-RootState $manifest $root
-        [ordered]@{
-            schema = 'muvluv-photon-cn-full-20260910-status/v1'
-            status = [string]$state.status
-            package = $package
-            game = $state
-        } | ConvertTo-Json -Depth 12
+        $state | ConvertTo-Json -Depth 8
         exit $(if ($state.status -eq 'INSTALLED_20260910_EXACT') { 0 } else { 2 })
     }
-
-    Assert-True $Apply "$Action 必须使用 -Apply；请双击补丁包内的 CMD 入口。"
+    Assert-True $Apply '请双击补丁程序，点击安装汉化。'
+    $InstallerMutex = [Threading.Mutex]::new($false, 'Local\MuvLuvPhotonCNInstaller')
+    try { $InstallerMutexHeld = $InstallerMutex.WaitOne(0) }
+    catch [Threading.AbandonedMutexException] { $InstallerMutexHeld = $true }
+    Assert-True $InstallerMutexHeld '另一个补丁正在安装，请等它完成。'
     Assert-GameClosed $manifest
     Assert-NoLinks $root
-    if ($Action -eq 'Install') { [void](Test-PackagePayload $manifest) }
-
-    if ($Action -eq 'Install') {
-        $locale=Assert-SteamLanguage $manifest $root
-        Assert-NoLinks $root
-        Restore-PendingInstall $manifest $root $sessions
-        $before = Test-RootState $manifest $root
-        if ($before.status -eq 'INSTALLED_20260910_EXACT') {
-            [ordered]@{ status = 'ALREADY_INSTALLED_20260910_EXACT'; game = [string]$manifest.game; root = $root } | ConvertTo-Json -Depth 8
-            exit 0
-        }
-        Assert-True ($before.status -eq 'CLEAN_STEAM_SUPPORTED') ("当前游戏不是支持的版本，未写入任何内容。请先用 Steam 验证游戏文件后重试。`n" + ($before.mismatches -join "`n"))
-
-        New-Item -ItemType Directory -Path $sessions -Force | Out-Null
-        $token = (Get-Date).ToUniversalTime().ToString('yyyyMMddTHHmmssZ') + '-' + [guid]::NewGuid().ToString('N').Substring(0, 10)
-        $session = Join-Path $sessions $token
-        Assert-True (-not (Test-Path -LiteralPath $session)) "安装会话已存在：$session"
-        New-Item -ItemType Directory -Path $session | Out-Null
-        $script:ActiveSession=$session
-        $ledgerPath = Join-Path $session 'install_ledger.20260910.json'
-        $ledger = [ordered]@{
-            schema = 'muvluv-photon-cn-full-20260910-install-ledger/v1'
-            package_id = [string]$manifest.package_id
-            game = [string]$manifest.game
-            root = $root
-            status = 'PREPARING'
-            created_utc = (Get-Date).ToUniversalTime().ToString('o')
-            rollback_completed = $false
-            archive_backups = @()
-            fixed_backups = @()
-            asset_stage = $null
-            previous_assets = $null
-            assets_switched = $false
-        }
-        Write-JsonAtomic $ledgerPath $ledger
-        $stage = $null
-        try {
-            $ledger.archive_backups = @(Backup-Archives $manifest $root $session)
-            $ledger.fixed_backups = @(Backup-FixedFiles $manifest $root $session)
-            $stage = New-AssetStage $manifest $root $token
-            $ledger.asset_stage = $stage
-            $ledger.status = 'PREPARED'
-            Write-JsonAtomic $ledgerPath $ledger
-
-            Assert-True ((Get-Sha256 $locale.path) -eq $locale.sha256) '准备期间 Steam 改变了游戏配置，请重试。'
-            Assert-GameClosed $manifest
-            $ledger.status = 'INSTALLING'
-            Write-JsonAtomic $ledgerPath $ledger
-            Apply-ArchivePatches $manifest $root
-            Install-FixedFiles $manifest $root
-            $assetRoot = Get-SafeTargetPath $root ([string]$manifest.asset_root)
-            if (Test-Path -LiteralPath $assetRoot) {
-                $ledger.previous_assets=Join-Path $session 'previous-assets'
-                Write-JsonAtomic $ledgerPath $ledger
-                Move-Item -LiteralPath $assetRoot -Destination $ledger.previous_assets
-            }
-            $ledger.assets_switched=$true
-            Write-JsonAtomic $ledgerPath $ledger
-            Move-Item -LiteralPath $stage -Destination $assetRoot
-            $stage = $null
-
-            $after = Test-RootState $manifest $root
-            Assert-True ($after.status -eq 'INSTALLED_20260910_EXACT') '安装后完整哈希复核失败'
-            $ledger.status = 'INSTALLED_20260910_EXACT'
-            $ledger.installed_utc = (Get-Date).ToUniversalTime().ToString('o')
-            $ledger.asset_stage = $null
-            Write-JsonAtomic $ledgerPath $ledger
-            [ordered]@{
-                status = 'PASS_FULL_20260910_INSTALLED_FROM_CLEAN_STEAM_AND_VERIFIED'
-                game = [string]$manifest.game
-                root = $root
-                session = $session
-            } | ConvertTo-Json -Depth 8
-            exit 0
-        } catch {
-            $installError = $_
-            $restoreError = $null
-            try {
-                if ($stage -and (Test-Path -LiteralPath $stage)) { Remove-ExactTree $stage $root }
-                Restore-InstalledSession $manifest $ledger $root
-                $restored = Test-RootState $manifest $root
-                Assert-True ($restored.status -eq 'CLEAN_STEAM_SUPPORTED') '自动恢复后纯净版哈希复核失败'
-                $ledger.status = 'FAILED_ROLLED_BACK_TO_CLEAN'
-            } catch {
-                $restoreError = $_.Exception.Message
-                $ledger.status = 'FAILED_ROLLBACK_REQUIRES_ATTENTION'
-            }
-            $ledger.error = $installError.Exception.Message
-            $ledger.restore_error = $restoreError
-            Write-JsonAtomic $ledgerPath $ledger
-            if ($restoreError) { throw "安装失败，自动恢复也未完成。请保留会话目录并联系制作者：$session`n$restoreError" }
-            throw "安装失败，已自动恢复安装前的文件：$($installError.Exception.Message)"
-        }
+    [void](Test-PackagePayload $manifest)
+    $locale = Assert-SteamLanguage $manifest $root
+    $before = Test-RootState $manifest $root
+    if ($before.status -eq 'INSTALLED_20260910_EXACT') {
+        Write-Host '已经安装此版本，可以进入游戏。'
+        exit 0
     }
-
-    $chosen = Find-RollbackLedger $manifest $sessions $root
-    Assert-True ($null -ne $chosen) '没有找到这份 2026.09.10 的可卸载安装记录。'
-    $script:ActiveSession=$chosen.File.Directory.FullName
-    $current = Test-RootState $manifest $root
-    Assert-True ($current.status -eq 'INSTALLED_20260910_EXACT') '当前游戏文件已被再次修改，为避免覆盖未知改动，已拒绝卸载。'
-    Restore-InstalledSession $manifest $chosen.Ledger $root
-    $restored = Test-RootState $manifest $root
-    Assert-True ($restored.status -eq 'CLEAN_STEAM_SUPPORTED') '卸载后的纯净版哈希复核失败'
-    $chosen.Ledger.status = 'ROLLED_BACK_TO_CLEAN_STEAM_EXACT'
-    $chosen.Ledger.rollback_completed = $true
-    $chosen.Ledger | Add-Member -NotePropertyName rollback_utc -NotePropertyValue ((Get-Date).ToUniversalTime().ToString('o')) -Force
-    Write-JsonAtomic $chosen.File.FullName $chosen.Ledger
-    [ordered]@{
-        status = 'PASS_UNINSTALLED_AND_RESTORED_CLEAN_STEAM_EXACT'
-        game = [string]$manifest.game
-        root = $root
-        session = $chosen.File.Directory.FullName
-    } | ConvertTo-Json -Depth 8
+    Assert-True ($before.status -eq 'CLEAN_STEAM_SUPPORTED') ("当前游戏文件不匹配，请通过 Steam 重新下载游戏后安装。`n" + ($before.mismatches -join "`n"))
+    Assert-True ((Get-Sha256 $locale.path) -eq $locale.sha256) 'Steam 改变了游戏配置，请重试。'
+    Assert-GameClosed $manifest
+    $WritesStarted = $true
+    Apply-ArchivePatches $manifest $root
+    Install-PackageFiles $manifest $root
+    $after = Test-RootState $manifest $root
+    Assert-True ($after.status -eq 'INSTALLED_20260910_EXACT') '安装后文件核对失败'
+    [ordered]@{ status='PASS_INSTALLED_NO_BACKUP';game=$manifest.game;root=$root } | ConvertTo-Json -Depth 8
     exit 0
-}
-catch {
-    [Console]::Error.WriteLine($_.Exception.Message)
+} catch {
+    $message = $_.Exception.Message
+    if ($WritesStarted) { $message = "安装未完成。本补丁不备份或回滚；请通过 Steam 重新下载游戏后再安装。`n" + $message }
+    [Console]::Error.WriteLine($message)
     exit 1
-}
-finally {
-    if ($null -ne $InstallerLockStream) { $InstallerLockStream.Dispose() }
+} finally {
+    if ($InstallerMutexHeld) { $InstallerMutex.ReleaseMutex() }
+    if ($null -ne $InstallerMutex) { $InstallerMutex.Dispose() }
 }

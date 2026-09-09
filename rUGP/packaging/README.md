@@ -12,11 +12,27 @@ Windows executable. The player selects the detected game directory and clicks
 Install. Windows PowerShell and .NET are used internally; Python and a separate
 verification step are not required on the player's computer.
 
-`windows/Install-PhotonCN.ps1` backs up the actual changed archive ranges, fixed
-files and prior asset directory, verifies the installed result, supports repeat
-installation and exact rollback, and recovers recorded interrupted writes.
-Both Steam language fields are parsed automatically; unknown game versions or
-corrupt payloads are rejected before game writes. Backups are retained.
+`windows/Install-PhotonCN.ps1` writes the changed ranges and package files directly,
+without backups, rollback sessions or an uninstall button, as requested by the
+maintainer. An interrupted or failed write requires Steam reinstallation; the
+error message makes this explicit. Both Steam language fields are parsed
+automatically, and unknown game versions or corrupt payloads are rejected before
+game writes. Reinstalling the same completed version does not write again.
+Unreferenced existing files are left alone; they cannot bypass the runtime's
+sealed image identities. The installer does not clean historical developer data.
+
+Normal GUI runs extract into a fresh process-owned temporary directory and
+remove only the files they created when the window closes. They create no
+persistent extraction cache or backup tree. Force-killing the process can leave
+that temporary directory behind. The private `--inspect` / `--extract` verification
+options intentionally retain their extraction for inspection. Steam directory
+junctions are resolved before presenting the physical game path.
+
+Runtime builds now reject image lookup tables with unordered or duplicate keys.
+When supplying delivery-specific generated headers, replay
+`tests/runtime/exact_rgba_table_replay.c` against that exact include root and its
+package sidecars. Passing the repository tables alone does not validate newly
+generated delivery tables. See the [image-index regression](../docs/postmortems/player-image-index-20260910.md).
 
 Run synthetic transaction checks on Windows with a new output directory:
 
@@ -102,4 +118,5 @@ their distinct routing policies have not been promoted into this component.
 The historical packages were not retrofitted with this gate, and the current
 Photon source tree is not a player release. Any future one-click Photon
 installer must internalize the same checks without requiring end users to
-install Python, then perform transaction/rollback validation separately.
+install Python. The current player installer's deliberate no-backup policy and
+failure checks are described above; historical rollback tooling is unchanged.

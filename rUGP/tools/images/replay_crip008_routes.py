@@ -52,7 +52,8 @@ def validate_replay(replay: dict, returncode: int) -> None:
 
 
 def compile_fixture(zig: Path, game: str, output: Path,
-                    fixture: str = 'crip008_route_replay.c') -> Path:
+                    fixture: str = 'crip008_route_replay.c', *,
+                    generated: Path | None = None) -> Path:
     selector = f'PHOTON_V6_{game}_SELECTOR'
     names = [f'photon_v6_{game.lower()}_native_runtime.S',
              f'photon_v6_{game.lower()}_selector_adapter.c',
@@ -67,7 +68,7 @@ def compile_fixture(zig: Path, game: str, output: Path,
                '-Wall', '-Wextra', '-Werror', '-municode', f'-DPHOTON_BUILD_{game}=1',
                '-DPHOTON_V6_NATIVE_TEST_HOOKS=1', f'-DPHOTON_V6_PRODUCTION_{game}=1',
                f'-D{selector}_ADAPTER=1', f'-D{selector}_TEST_HOOKS=1',
-               '-I', str(RUNTIME / 'generated'), '-I', str(RUNTIME / 'include'),
+               '-I', str(generated if generated is not None else RUNTIME / 'generated'), '-I', str(RUNTIME / 'include'),
                str(ROOT / 'rUGP/tests/runtime' / fixture),
                *[str(RUNTIME / 'src' / name) for name in names],
                '-o', str(exe), '-Wl,--image-base,0x10000000',

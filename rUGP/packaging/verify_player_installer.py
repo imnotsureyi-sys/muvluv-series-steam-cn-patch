@@ -11,8 +11,8 @@ def doc(p,v):p.write_text(json.dumps(v,ensure_ascii=False,indent=2),encoding='ut
 def digest(b):return hashlib.sha256(b).hexdigest().upper()
 def snapshot(root):return {str(p.relative_to(root)):digest(p.read_bytes()) for p in root.rglob('*') if p.is_file()}
 def run(package,action,root,sessions,expect=0):
-    command=[str(PS),'-NoProfile','-NonInteractive','-ExecutionPolicy','Bypass','-File',str(package/'Install-PhotonCN.ps1'),'-Action',action,'-GameRoot',str(root),'-SessionRoot',str(sessions)]
-    if action in ('Install','Rollback'):command+=['-Apply']
+    command=[str(PS),'-NoProfile','-NonInteractive','-ExecutionPolicy','Bypass','-File',str(package/'Install-PhotonCN.ps1'),'-Action',action,'-GameRoot',str(root)]
+    if action=='Install':command+=['-Apply']
     env=dict(os.environ,PSModulePath='C:/Windows/System32/WindowsPowerShell/v1.0/Modules;C:/Program Files/WindowsPowerShell/Modules')
     result=subprocess.run(command,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,encoding='utf8',errors='replace',env=env)
     (OUT/(str(len(list(OUT.glob('*.log'))))+'-'+action+'.log')).write_text(result.stdout,encoding='utf8')
@@ -50,27 +50,41 @@ for old in (False,True):
     before=snapshot(game)
     run(package,'VerifyPackage',game,sessions)
     run(package,'Install',game,sessions)
-    installed=snapshot(game);assert (game/'Runtime.dll').is_file() and not (game/'PhotonR2Assets/old.txt').exists()
+    installed=snapshot(game);assert (game/'Runtime.dll').is_file()
+    if old:assert (game/'PhotonR2Assets/old.txt').read_bytes()==b'original-user-asset'
     run(package,'Install',game,sessions);assert snapshot(game)==installed
-    ledgers=list(sessions.rglob('install_ledger.20260910.json'));assert len(ledgers)==1
-    # Simulate a process interruption after writing, before final status commit.
-    pending=json.loads(ledgers[0].read_text(encoding='utf-8-sig'));pending['status']='INSTALLING';doc(ledgers[0],pending)
-    run(package,'Install',game,sessions);assert snapshot(game)==installed
-    run(package,'Rollback',game,sessions);assert snapshot(game)==before
+    assert not sessions.exists()
+    assert set(installed)==set(before)|{'Runtime.dll','PhotonR2Assets\\new.txt'}
     passed.append('upgrade' if old else 'clean')
+
+# A failure after an actual archive write must disclose the selected no-backup
+# policy and leave that write in place; it must not create a hidden rollback.
+package,game,sessions=fixture('write-failure')
+installer=package/'Install-PhotonCN.ps1'
+source=installer.read_text(encoding='utf-8-sig')
+assert source.count('    Install-PackageFiles $manifest $root')==1
+installer.write_text(source.replace('    Install-PackageFiles $manifest $root',"    throw 'synthetic write failure'"),encoding='utf-8-sig')
+reseal(package)
+before=snapshot(game)
+message=run(package,'Install',game,sessions,expect=1)
+assert '不备份或回滚' in message and 'Steam' in message
+assert (game/'fixture.rio').read_bytes()==(game.parents[2]/'final.rio').read_bytes()
+assert (game/'Fixture.exe').read_bytes()==b'exe-original'
+assert set(snapshot(game))==set(before) and not sessions.exists()
+passed.append('write-failure-no-backup')
 for failure in ('unknown-base','bad-payload','wrong-language','duplicate-language','wrong-appid','malformed-manifest'):
     package,game,sessions=fixture(failure)
     if failure=='unknown-base':
         with (game/'fixture.rio').open('r+b') as f:f.seek(1);f.write(b'X')
     elif failure=='bad-payload':put(package/'files/Runtime.dll',b'damaged')
     elif failure=='wrong-language':
-        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text().replace('english','japanese'))
+        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text(encoding='utf8').replace('english','japanese'),encoding='utf8')
     elif failure=='duplicate-language':
-        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text().replace('"language" "english"','"language" "english" "Language" "english"',1))
+        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text(encoding='utf8').replace('"language" "english"','"language" "english" "Language" "english"',1),encoding='utf8')
     elif failure=='wrong-appid':
-        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text().replace('889700','889710'))
+        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text(encoding='utf8').replace('889700','889710'),encoding='utf8')
     else:
-        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text()[:-1])
+        acf=game.parents[1]/'appmanifest_889700.acf';acf.write_text(acf.read_text(encoding='utf8')[:-1],encoding='utf8')
     before=snapshot(game);run(package,'Install',game,sessions,expect=1);assert snapshot(game)==before
     passed.append(failure)
 doc(OUT/'results.json',dict(passed=passed,status='PASS'))

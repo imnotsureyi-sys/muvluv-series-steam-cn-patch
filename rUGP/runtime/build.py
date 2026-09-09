@@ -14,6 +14,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import struct
@@ -212,10 +213,31 @@ def require_files(paths: Iterable[Path]) -> None:
         raise BuildError(f"missing runtime sources: {', '.join(missing)}")
 
 
+def validate_exact_rgba_tables(generated: Path) -> None:
+    """The production loader binary-searches strictly ordered unique keys."""
+    for game in ("pf", "pm"):
+        path = generated / f"photon_v6_{game}_exact_rgba_table.generated.h"
+        text = path.read_text(encoding="utf-8-sig")
+        # Historical PM headers select an installed snapshot per build game.
+        # Validate both of those existing branches, including their own counts.
+        for branch in (1, 2):
+            selected = re.sub(
+                r"#if defined\(PHOTON_BUILD_PM\)\s*\n(.*?)#else\s*\n(.*?)#endif /\* installed snapshot selection \*/",
+                lambda match: match[branch], text, flags=re.S)
+            keys = [(int(size), int(fnv, 16)) for size, fnv in re.findall(
+                r"UINT32_C\((\d+)\),\s*UINT64_C\(0x([0-9A-Fa-f]+)\)", selected)]
+            count = re.search(rf"photon_v6_{game}_exact_rgba_count\s*=\s*UINT32_C\((\d+)\)", selected)
+            if not keys or count is None or int(count[1]) != len(keys):
+                raise BuildError(f"exact RGBA table count mismatch: {path.name}")
+            if any(left >= right for left, right in zip(keys, keys[1:])):
+                raise BuildError(f"exact RGBA table must be strictly sorted with unique keys: {path.name}")
+
+
 def prepare_generated(destination: Path, authorized: bool, pm_font_candidate: bool = False) -> None:
     if pm_font_candidate and not authorized:
         raise BuildError('PM font candidate requires pinned authorization')
     shutil.copytree(GENERATED, destination)
+    validate_exact_rgba_tables(destination)
     for game in ("pf", "pm"):
         path = destination / f"photon_combined_{game}.generated.h"
         data = path.read_bytes()
