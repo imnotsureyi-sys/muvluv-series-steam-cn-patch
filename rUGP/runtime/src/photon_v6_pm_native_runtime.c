@@ -46,6 +46,12 @@
 #define photon_v6_pf_native_runtime_shutdown photon_v6_pm_native_runtime_shutdown
 #define photon_v6_pf_native_runtime_query photon_v6_pm_native_runtime_query
 
+#define photon_v6_pf_hook_crip008_direct_decode_abi photon_v6_pm_hook_crip008_direct_decode_abi
+#define photon_v6_pf_hook_crip008_direct_decode_counted photon_v6_pm_hook_crip008_direct_decode_counted
+#define photon_v6_pf_hook_crip008_direct_decode_end photon_v6_pm_hook_crip008_direct_decode_end
+#define photon_v6_pf_real_crip008_direct_decode_raw photon_v6_pm_real_crip008_direct_decode_raw
+#define photon_v6_pf_crip008_direct_decode_prepare photon_v6_pm_crip008_direct_decode_prepare
+
 #define PHOTON_NATIVE_TIMESTAMP UINT32_C(0x5D319898)
 #define PHOTON_NATIVE_SIZE_OF_IMAGE UINT32_C(0x00386000)
 #define PHOTON_NATIVE_CR6_LOAD_SLOT_RVA UINT32_C(0x0023C334)
@@ -69,8 +75,15 @@
 
 #if defined(PHOTON_V6_PM_SELECTOR_ADAPTER) && PHOTON_V6_PM_SELECTOR_ADAPTER
 #define PHOTON_NATIVE_HAS_CRIP008_EXACT_OVERLAY 1
-#define PHOTON_NATIVE_CRIP008_ORDINARY_TABLE 0
-#define PHOTON_NATIVE_EXPECTED_HOOK_COUNT UINT32_C(7)
+#define PHOTON_NATIVE_CRIP008_ORDINARY_TABLE 1
+#define PHOTON_NATIVE_EXPECTED_HOOK_COUNT UINT32_C(9)
+/* Exact PM counterparts of the already tested PF direct CRip008 ABI.
+ * Both callers clean five stack arguments; ECX/EDX hold payload and length. */
+#define PHOTON_NATIVE_HAS_CRIP008_DIRECT_EXACT_OVERLAY 1
+#define PHOTON_NATIVE_CRIP008_DIRECT_DECODE_CALLSITE0_RVA UINT32_C(0x00179218)
+#define PHOTON_NATIVE_CRIP008_DIRECT_DECODE_CALLSITE1_RVA UINT32_C(0x001792F1)
+#define PHOTON_NATIVE_CRIP008_DIRECT_DECODE_RVA UINT32_C(0x0017A740)
+#define PHOTON_NATIVE_CRIP008_DIRECT_EXPECTED_BYTES {{0xE8,0x23,0x15,0x00,0x00},{0xE8,0x4A,0x14,0x00,0x00}}
 #define PHOTON_NATIVE_CRIP008_DECODE_CALLSITE_RVA UINT32_C(0x0017B460)
 #define PHOTON_NATIVE_CRIP008_DECODE_RVA UINT32_C(0x0017B490)
 #define PHOTON_NATIVE_CRIP008_PAYLOAD_BYTES UINT32_C(11953)

@@ -86,3 +86,21 @@ python -m unittest -v `
   rUGP.tests.provenance.test_audit_photon_locale_bindings `
   rUGP.tests.provenance.test_verify_photon_images_v6
 ```
+
+## Current static review projection
+
+`python -m rUGP.tools.provenance.export_static_review --manifest "X:\private\atlas-manifest.json" --resource-catalog "X:\private\reader-catalog.json" --output "X:\export\new-review"`
+
+The exporter accepts the local atlas schema (`categories`, `rows` with ID,
+labels, status, official language image identities and candidate) plus resource
+catalog `assets[].id/refs`. Each pictured identity supplies `path`, `sha256`,
+`size`; each file is rehashed and decoded to verify dimensions. Status-only rows
+emit no image identities. Unrecognized private fields are never projected.
+
+Outputs are public-safe `catalog.json` and **local-only `PRIVATE-asset-map.json`**.
+Only the catalog may be committed; the map and later rendered review contain
+private paths or derived game assets. Existing output directories are rejected.
+Public labels reject workstation paths and URLs; this is a narrow schema
+projection, not a general secret scanner. Review the resulting diff as usual.
+See the [2026-09-09 snapshot](../../evidence/photon/images/static-review-20260909/README.md)
+and [review builder](../images/README.md).

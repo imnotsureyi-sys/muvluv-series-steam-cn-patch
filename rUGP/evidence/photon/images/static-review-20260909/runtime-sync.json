@@ -1,0 +1,299 @@
+{
+  "schema": "photon-installed-runtime-sync-v1",
+  "games": {
+    "pf": {
+      "installed_dll_sha256": "B3C43B2000BE0C286B140D900C081B3AECC771BEF7F7F69A79DE624ACC3875B0",
+      "installed_dll_bytes": 639488,
+      "reproduced_byte_exact": true,
+      "installed_profile": [
+        "--authorize-pinned-build",
+        "--speaker-color-candidate"
+      ],
+      "default_dll_sha256": "82BA9A7D9B49A8CB9414BBE7CC2BA05329AF75B9B99CDE827D0B57F68907665F",
+      "default_profile": [
+        "--authorize-pinned-build",
+        "--verify-release-code"
+      ]
+    },
+    "pm": {
+      "installed_dll_sha256": "2259884FF2CC52C3A94D917BCC5508D5951340FF8461612D89C270CE3FFC525E",
+      "installed_dll_bytes": 612864,
+      "reproduced_byte_exact": true,
+      "installed_profile": [
+        "--authorize-pinned-build",
+        "--speaker-color-candidate"
+      ],
+      "default_dll_sha256": "59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E",
+      "default_profile": [
+        "--authorize-pinned-build",
+        "--verify-release-code"
+      ]
+    }
+  },
+  "table_authority": {
+    "pf": {
+      "entries": 1197,
+      "all_fields_match_sealed_manifest": true,
+      "source_manifest_sha256": "19037C042AAA5CF74C208E1B5DA977AB8B540DBADAA924504153856A27EBA3BE"
+    },
+    "pm": {
+      "entries": 1598,
+      "all_fields_match_sealed_manifest": true,
+      "source_manifest_sha256": "3D412E4C469105959C2973BC6965E3AD991E9402BFD3D6D42B2A924A06EE9E3E"
+    }
+  },
+  "installed_image_checks": {
+    "ordinary": {
+      "PF": {
+        "verified": 1197,
+        "reserved_not_probed": 0
+      },
+      "PM": {
+        "verified": 1594,
+        "reserved_not_probed": 4
+      }
+    },
+    "special": {
+      "PF": 17,
+      "PM": 51
+    },
+    "game_started": false,
+    "game_files_modified": false
+  },
+  "game_started": false,
+  "game_files_modified": false,
+  "public_image_payloads": false,
+  "package_release_approved": false,
+  "timer_sidecars": [
+    {
+      "source_asset_id": "pm:rio000:0x6551721c",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10910,
+      "payload_fnv1a64": "C8DEC219EB260768",
+      "historical_png_sha256": "805ADAC380171BD5F2307D0B1FD09BF027AFC4B68772C408C8E459D0A0E1F06D",
+      "historical_rgba_sha256": "802E547CA73EA7D983020AF8EC33470C7BF305A8FDA619476DAB46E5FBC2EB32",
+      "installed_png_sha256": "968BAD30849EB1EEE32C7BDBD4B217C9B65A8F6933DAD59D97A9886F2B9ADD63",
+      "installed_rgba_sha256": "21221B25AC62F59863D8E3D577B16A06ADC79D1CF6BF098C9510A20BA842E018"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65518a88",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10718,
+      "payload_fnv1a64": "472244A8C0E4232C",
+      "historical_png_sha256": "97475D32CB4158D48DBA1146E3196A43212B4703B6AAEB180F9E2B61CBFEA564",
+      "historical_rgba_sha256": "1D9A53BEA56903DB87F88C909C8B355B613BA590546EA86917A627CF3E012F71",
+      "installed_png_sha256": "5A1DAFAD03F5E0E2CC53E86291A7EAE28CA628E63584C0AA9E3C1DE53FE4CAC5",
+      "installed_rgba_sha256": "C62C5D64D565FB95A48A285C2F2AC1C1C45FB6C6BD9C4742D8F392D3E4E751F7"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6551a28c",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10800,
+      "payload_fnv1a64": "D57E72DC133718EA",
+      "historical_png_sha256": "E64FA7D203AF5DBC997E6EF173D87137A434F8797DBDC47BD10550717A9E5D7F",
+      "historical_rgba_sha256": "455A09E0A1D8AB9E2C50868632C94009F3DB2549376F8795CC2BAD4FAF2BEE9E",
+      "installed_png_sha256": "A8EDAA4557C8FFD9BA08C5EAD7ABBDC6ED26EA51B901EA72AC691170D8891B77",
+      "installed_rgba_sha256": "2135D3C9F7413F860D24B8B6512E7B89F3AD9B693D7C63CADBFF84517E938A51"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6551bb04",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10474,
+      "payload_fnv1a64": "50ACFDED78CC7DA7",
+      "historical_png_sha256": "E0D25011CB32E2CF771B4561C626FCAA509D290D051D4919A59CD73E6B45B559",
+      "historical_rgba_sha256": "AE9F425C0625A0263855F461D963D207FD1559E463FB860F1E7775811ED740E6",
+      "installed_png_sha256": "FF45B74E26276A201CD0DC39D9298C1174CADEE5F68F4A8CD1CD0665B8318E0C",
+      "installed_rgba_sha256": "7D231D50175EB31BB78E77769E0552256C358C5D5791CCB8ABCD58EE627FC656"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6551d308",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10540,
+      "payload_fnv1a64": "7500A9DB58B20789",
+      "historical_png_sha256": "1F910AFC46D9E85BE0356694DC4C6525AEBDE02E2DF242FD92F64778BBD869F0",
+      "historical_rgba_sha256": "212750C5BC24AF232074E4B83F041A49E8C7D01B3689B88828B6B8EF87432355",
+      "installed_png_sha256": "C06DF1F34FFB335442129E0279D5CF03E7F582A74EA35485359276E9FD09E5C5",
+      "installed_rgba_sha256": "F49DF7A1AA28673395943A4A0D58BD836665A5E70958DA2A9CC4FF20BD633EA7"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6551eb64",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10508,
+      "payload_fnv1a64": "321A7E270E18F9FC",
+      "historical_png_sha256": "AC98599E39D0529CA081451E7BB6F5F241B6CB9CAD4A09987FC91D19B4C2A666",
+      "historical_rgba_sha256": "3A40721F47C7002E5621BB6662FF955A8AD333F8887F6F61865BDC1B4F54E410",
+      "installed_png_sha256": "5A0E1BA98A90E807B0EB2A15B1CCA4E404B328E7577B0547262558B56A952D8A",
+      "installed_rgba_sha256": "BECA0A39BD7E0556FEE5CF6B34B118DC16CFB45A033293B80DCEDFE2CF86DEE3"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6552031c",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10468,
+      "payload_fnv1a64": "2CF5E07988419E19",
+      "historical_png_sha256": "DBC14F8DEFF9E3770BC831D9C68EFCAEB79808A7610E91448ECDA9B04811C0F3",
+      "historical_rgba_sha256": "4C304D931F78A4416CA045F4C77AD769C15F7C4DCFD962A0033A7AF5BFB9CB39",
+      "installed_png_sha256": "3B2F705886D0695E7CA0FD4F81F3F12D35B0A68D4E6C3D6F49CD585BD7F1B63E",
+      "installed_rgba_sha256": "87502EB9E59056FF47144FA4AEA8F55DADF508FD387AC5ED7CFE26B9512D64AB"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65521b28",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10338,
+      "payload_fnv1a64": "9BB90AC65ABE7794",
+      "historical_png_sha256": "B3CD63322C1B359A53748E81375F6A72461334EA50B16B6663AD847048A45412",
+      "historical_rgba_sha256": "2561B6D3DCB34ABA4785BF1F9A02CAC99D7966D55DF7FB03EA5951E9AF8F666C",
+      "installed_png_sha256": "1E149218C80ABC6128FF64CA8AAE5C1FDC922E0C6DFF08188368AC8F3E1C820D",
+      "installed_rgba_sha256": "37A178D7AC14D4053FAD4BFB64864457322565FC367FB854A17C3AE39BE9C849"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65523330",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10316,
+      "payload_fnv1a64": "C5FF5A67E88475C2",
+      "historical_png_sha256": "A424FB7799B38F6C970480F53C727B9BA261CAE05FE37F22C612F929990E2BB5",
+      "historical_rgba_sha256": "939A0EC57B9FB0812615E2172443E2B2AD82636F80BD2D01F264F8D4101ECB7D",
+      "installed_png_sha256": "D86EE8ED1CAC99896928D9344CFB1E66708DA5AE29A5C168EC44069B6383E1E5",
+      "installed_rgba_sha256": "6ED13B2F41CF21DE7FA0C0D2EBB0129C305ECE7B2E250E094308CE34D578CC67"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65524b40",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 10234,
+      "payload_fnv1a64": "B14D1BFCBC07B90C",
+      "historical_png_sha256": "C426E14C26A53D878C7D0384AEE7D810C317EEDE08A08FD786426ACF7FB992A5",
+      "historical_rgba_sha256": "2BCD90776975FB1A5D1D3C5B878CE7E5F7E3847804682C31FF9FB069EE50A86E",
+      "installed_png_sha256": "EEA82148EFA756AA14DCD42241270E17550F861B2B2ABF3764FCEE66C51ACFC0",
+      "installed_rgba_sha256": "F58FD53F04BC9627C33EFD39D46E64B3E47C0D57B1C2D4040D2FE05A55DCF0B7"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65526374",
+      "kind": "dynamic_timer_layer",
+      "payload_bytes": 9038,
+      "payload_fnv1a64": "1FB029A4EF55765F",
+      "historical_png_sha256": "5CE61962C3CD9F1A344B6BD01508D11A236FBD6054DA0489B08938649BBB2D6B",
+      "historical_rgba_sha256": "76B922A566C67EEA593688ED3CFF5184667A20629612F0262263B1B2D41BA838",
+      "installed_png_sha256": "C4870E5796388222D1F9ACBA91C386668E754FDCC9BF5AF5A8526298BBF3C4B7",
+      "installed_rgba_sha256": "FB622FDE44917B88A6403AF0361D5EC930776EE610F81E086F9D123987C91709"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x651a84bc",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 272948,
+      "payload_fnv1a64": "7A9A5B91648545EA",
+      "historical_png_sha256": "B4890D1DE0E86953D9FF558CB85440FE0B37D5B49AA70C9BF201378FFB905882",
+      "historical_rgba_sha256": "5E294E9A22786FE750FDA6D3786CEA17FE367959C95897A95C0739A35A174D21",
+      "installed_png_sha256": "AB447AB67EF3579E9CB417A5C6DEB6F487652B145C38C4A9977D5292DF59B8A5",
+      "installed_rgba_sha256": "8486310F4EF1010411D42E5A2A522C77C92894157648E31B1C74D8D4973FA689"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x651ec27c",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 282716,
+      "payload_fnv1a64": "67D609B9104CC6AD",
+      "historical_png_sha256": "E4B9EAB21698999E7ADF74065B4633C531C5853B394E434683F04F47AF7BB703",
+      "historical_rgba_sha256": "BBEEA8655FC940B6FF26F5193D4E467A16968BB101866EC6086F8112B41944D6",
+      "installed_png_sha256": "31CF9B93732856EAA626193E8F47E24C731409584220AD3D0D281F232BE1CB12",
+      "installed_rgba_sha256": "CF3612EEFFF22FC261722C956A6D5354B65DBBFCBC517BD43E1BD1F221C14AA7"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65232578",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 272056,
+      "payload_fnv1a64": "63C6931E025F48B8",
+      "historical_png_sha256": "B3C31E3CA900057BE6B25F90A4A3DE148DA3947B9EB3B04DC5CEC95B1D613FD7",
+      "historical_rgba_sha256": "3FCE6167B7F78AA362199CB515AD36EA1A2F2BE77BBD5A881DF99627A8A040AC",
+      "installed_png_sha256": "C7A60AE241F8E046AA20849430D6F39CDA8BE664152EB1074A73F28B64AE923E",
+      "installed_rgba_sha256": "5A8775629A2212D145EFB31C0F1E7EEC1E8DD0B72811000BF1A2AF352DED9C89"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65275f70",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 272240,
+      "payload_fnv1a64": "2E784AC82A473ABE",
+      "historical_png_sha256": "A51A53B4CA1C0A1088E5029AA63A30E3BFCE514F5C899027ECE804399E08089A",
+      "historical_rgba_sha256": "6E320B4BD9D8C4F7A2E0EF98835EB7439C393F708B531BD7E93207FA07A187B8",
+      "installed_png_sha256": "97AD08D8D7F408E333FAC6A6439264129C9C3C2DA9A6C2E79A6BE5D2869BDC15",
+      "installed_rgba_sha256": "C00762DB5ACB13E70CDA529FB052F78C8A88E9860E6788448F323559D09B514E"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x652b99c8",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 272396,
+      "payload_fnv1a64": "43820D5038276882",
+      "historical_png_sha256": "CC8E1A525DC7E3BD7BC0950BDFAA203231F34EA85C85F493C06DA8659F3CE8B0",
+      "historical_rgba_sha256": "531B21FCD186AD5F860FA2639021485835D17A77B4D43B4971FBFB1F6EF5086E",
+      "installed_png_sha256": "BEBACAB0491A87E4C5AE41F3616BBB367BC5D4015248D4EA45A8ED2E3B1B4C85",
+      "installed_rgba_sha256": "F3FB3B9A62F249B94FAF4D62EA366BFF8CC39981846C5E652D2F824B3225DBCB"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x652fd4a0",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 272208,
+      "payload_fnv1a64": "0B13B3EF0AAA66B2",
+      "historical_png_sha256": "CD8CF2D91068377D9B2333839F592A572997047FF18F0C01498CA51EA4418CC5",
+      "historical_rgba_sha256": "8906AF033CDC40072327882B52E52A0D7A055E9EE00F0E71CE104F776E17BE33",
+      "installed_png_sha256": "46E1BAAFCE3B4ABA449877F210F48FC7ACB3CDACCF7CAFCA0B7E1A8B0E342A13",
+      "installed_rgba_sha256": "924CBF1C3BF45E26DA98C11180917598CD9250E942D0649CD809E46D91BC4C51"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x65340ef8",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 272372,
+      "payload_fnv1a64": "9EF9264DE28F6920",
+      "historical_png_sha256": "A56A46E7F1EDD848EEB42078BE0A63B2AAFB28C8B2646662AEB71B865B535AC8",
+      "historical_rgba_sha256": "4D61A9A53CFF8FE09B19087A509F0D9371821F05EE3E883E98F6778CE52C4CFF",
+      "installed_png_sha256": "D1CDB92C3EE7AB3AD5A46087956B1F3CED0D0A92F8BBF92D4B79DF663E78EDBE",
+      "installed_rgba_sha256": "77BB95E41B5A5EAFEF2E2B73D799369D47D2789578571B49C7AE3D9F83017594"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x653849f4",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 271950,
+      "payload_fnv1a64": "18CFD55353249959",
+      "historical_png_sha256": "5F4BF7DD66A905CB001854E4E5667723208E7EDFE4782C1F70EB9EE0583AB132",
+      "historical_rgba_sha256": "36DAC7614D4EE8BD189D4EA2BE2E774CE5AC6B5B5647168591A9B17BD7AE946D",
+      "installed_png_sha256": "EA7DA5897974A8A029DDCA5A0D373F10AA60F1399679A77E362185973097E208",
+      "installed_rgba_sha256": "033685802334C1F982F4DDBF265A624BDA642B6C0CD5D3B4DB975F18CDC81FD2"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x653c8380",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 272310,
+      "payload_fnv1a64": "8A5B53831C8E01DC",
+      "historical_png_sha256": "CC9A6CADC0E59854AFF996A0036A91AE298027840159551C3F1FA17B5A816801",
+      "historical_rgba_sha256": "3D04250388991B65BD8C1A58765711A7545CCD8B47CD8C0B5C70577AB2D323D3",
+      "installed_png_sha256": "A9A00C77D81F7454CAFE92FF17BF9B0E8D993266742421AA074BACA157F00878",
+      "installed_rgba_sha256": "EAAEED4325D344AC5133138CCD9DC014DF2087DDF3EBA4324E3BE21CC1674287"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6540be30",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 270632,
+      "payload_fnv1a64": "37EBDF336C8978DE",
+      "historical_png_sha256": "45D91A1C7A735B895BE53ED06737739F80EA23433896E3613EFC7EC61AE0E4F6",
+      "historical_rgba_sha256": "53BE6A953338B326901B8F54FE2730115AF5DEA02923993A2D99FA3D9C31C7CA",
+      "installed_png_sha256": "14E2330B18400F3A3520019801D9A7C588085C35E7B45CF5B935042F5A9BCAD2",
+      "installed_rgba_sha256": "F0D6023E3E307A10ADC9F566EB61F2A0F2FD4EBA85584B7F14A2330E802C0D8F"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6544f288",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 250322,
+      "payload_fnv1a64": "853757842300FB14",
+      "historical_png_sha256": "B6FF5C535AD306CF01FDB69A55D8061C6C2E36C861BE8D0BAA80488E3069A0AE",
+      "historical_rgba_sha256": "17DA749E04CC335F0FA3481FCD415C8111190E1647A6B9FBCC64DB16A56511D2",
+      "installed_png_sha256": "7F38FFA8832F4CF2C5769C2840CC81E2AC71D16FB44F1DB44EC1AAD3459CFF22",
+      "installed_rgba_sha256": "2237BDE0786885995D022C92397160709F255CDDA68246CB7988B83F6F57CEF6"
+    },
+    {
+      "source_asset_id": "pm:rio000:0x6548db58",
+      "kind": "embedded_tutorial_frame",
+      "payload_bytes": 270632,
+      "payload_fnv1a64": "37EBDF336C8978DE",
+      "historical_png_sha256": "45D91A1C7A735B895BE53ED06737739F80EA23433896E3613EFC7EC61AE0E4F6",
+      "historical_rgba_sha256": "53BE6A953338B326901B8F54FE2730115AF5DEA02923993A2D99FA3D9C31C7CA",
+      "installed_png_sha256": "14E2330B18400F3A3520019801D9A7C588085C35E7B45CF5B935042F5A9BCAD2",
+      "installed_rgba_sha256": "F0D6023E3E307A10ADC9F566EB61F2A0F2FD4EBA85584B7F14A2330E802C0D8F"
+    }
+  ]
+}
