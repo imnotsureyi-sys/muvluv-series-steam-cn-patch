@@ -6,6 +6,7 @@ These notes preserve the experiments behind the current Photon Flowers / Photon 
 
 | Case | Question answered | Reproducible evidence | Remaining boundary |
 | --- | --- | --- | --- |
+| [49-binding CRip008 replay](crip008-batch-replay-20260909.md) | How can the added bindings be checked without viewing every image? | Real archive/installed-sidecar replay, 2,352 C transaction cases and per-binding results | 40 artificial padded extents remain unsupported; retail arguments, ABI and initialization were not executed |
 | [PM album selector](pm-album-selector-20260909.md) | Why did Extra → Album terminate inside the patch? | Local crash-dump field shape, old/new synthetic selector replay, repaired build and user retest | Album-entry confirmation does not prove every image route |
 | [PF festival presentation](pf-festival-presentation-20260909.md) | Why was the thumbnail translated while the animation retained Japanese signs? | Live extent/rectangle trace, exact archive/sidecar transaction replay and user retest | The observed partial rectangle is supported; other partial formats remain unproven |
 | [Internal Error 8311](error-8311.md) | Why did a structurally valid CRsa/RUO fail at startup? | Controlled F/M/N CString variants, a census of official strings, public manifest/exporter tests | The conclusion applies to the observed counted-CString route; it is not a catalogue of every AGES error code |

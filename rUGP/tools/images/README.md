@@ -31,6 +31,31 @@ decoder or run a game. See the [failure analysis](../../docs/postmortems/pm-imag
 
 ## Resource tools
 
+### Private CRip008 binding replay
+
+```powershell
+python -m rUGP.tools.images.replay_crip008_routes --manifest "X:\private\manifest.json" --pf-root "X:\games\PF" --pm-root "X:\games\PM" --zig "X:\zig\zig.exe" --output "X:\checks\new-crip008-replay"
+```
+
+Requires Windows, Zig 0.16.0, the private installation manifest with detailed
+`runtime_identity` entries, original archives, and installed exact sidecars.
+The runner verifies record/payload/PNG hashes and runs the production C
+prepare/commit functions for each detailed CRip008 binding. It does not start
+or modify a game. Output includes private payloads and executables: keep the
+whole output directory local and ignored. A failed run's `progress.json` is
+not a completed report; require `verification.json` and zero required failures.
+
+Each binding receives 48 cases: direct/indexed entry, both stride signs, tight
+or padded rows, exact length, +2/+3/+4 bytes, wrong identity, and mutation
+between prepare/commit. +2/+3 rejection is recorded as a safe coverage gap;
+it is not evidence of a retail caller failure. Tests check pixel identity,
+outside-rectangle preservation, row/outer guards, and no premature writes.
+Runtime initialization, assembly wrappers, original decoders and actual caller
+arguments are outside this fixture. See the [49-binding result and remaining
+checks](../../docs/postmortems/crip008-batch-replay-20260909.md).
+
+### Other tools
+
 - [`decode_record.py`](decode_record.py) is the read-only first-step tool: combine an exact ICI-catalogued volume/offset/extent with the matching supported codec and create a review PNG plus portable JSON evidence.
 - [`sanitize_route_closure.py`](sanitize_route_closure.py) projects a private route-working set into the path-redacted public route contract.
 - [`verify_route_closure.py`](verify_route_closure.py) verifies the frozen 1,490-row Photon route closure.
