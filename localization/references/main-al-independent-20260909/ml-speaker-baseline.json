@@ -1,0 +1,3756 @@
+[
+  {
+    "jp": "武",
+    "cn": "武",
+    "en_variants": {
+      "Takeru": 19561,
+      "Kei": 1,
+      "Meiya": 1,
+      "Sumika": 1,
+      "Chizuru": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 19566,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:552d",
+        "ja_sha256": "5d39f429480dd013ea5efec171c6bfed6f7d3c82196337894cd0d1592eb177b3",
+        "en_sha256": "60971760d83c5ff471afe8c071ce61ecfabe7131209de266ea808e19ad7ef621",
+        "zh_sha256": "dda97ab90c5a6e83b1d69e8f69ae4fe45b302551c5e0dfd3939f0c1c30240ab9"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:55dd",
+        "ja_sha256": "3d3bb8787887b7e7e006b0ba4b522739224c2f1afc9477977ec83c7cb55411c9",
+        "en_sha256": "73b488d524c7c0a0a1a469a431a5a3316efa6a144238474a085dfd04b575702f",
+        "zh_sha256": "118d1da0a3f8702b1044cc4564cefaf1db68f9b74466e3fb589795d6cb73ccf6"
+      }
+    ]
+  },
+  {
+    "jp": "純夏",
+    "cn": "纯夏",
+    "en_variants": {
+      "Sumika": 2891
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2891,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:5561",
+        "ja_sha256": "d0f32632c37c81c05b5fdade65ccae7952acf2dbffaecec62bbe60282d0ed505",
+        "en_sha256": "f717855d854f9674488960795f0c0717b4d9af5cba562708c49d2443cd19fea6",
+        "zh_sha256": "767d949496ac4f4845435c9deedb28fefe4142fc3dde4d84015676ecbbaa9f80"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:57c0",
+        "ja_sha256": "b360f3f0e6356b46c3c0ec5558c1c1f308b8474339e0f316f306314f8bf8f1a8",
+        "en_sha256": "3d22d16e7838a1ead13cdf1c58d9e32f71d520eb546f5bbd5d1149da53708234",
+        "zh_sha256": "e0dab6b7c4ce725032e2727781eaab4ed1d2a64201e314444f223877c5f79936"
+      }
+    ]
+  },
+  {
+    "jp": "声",
+    "cn": "声",
+    "en_variants": {
+      "Voice": 97,
+      "Voices": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 98,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:559f",
+        "ja_sha256": "b429598405e7c41b603a4cec50bcd0b26d292723eda954dadedc3989aa41fbb2",
+        "en_sha256": "ee09d52acf1b458b643dc28d05310def5e1f3a7b49baeb4056502571975e5721",
+        "zh_sha256": "04455b99eb2ea9281d4668eb4f49f3d8d522204fb0d13ffa3e1a991c34439967"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:276",
+        "ja_sha256": "cc8a04a22f245ea5f9afe686de971d3a8073b6a49665ad62ad3dc0cbbc043c1d",
+        "en_sha256": "5973faebea555789b729bceca46ad67d0a337f18ca8e29e26bde7266c7f3d718",
+        "zh_sha256": "7bb4d05dd4943e435eb5bbb94fb8822962cfff6639b82967f737bfce75ad3f82"
+      }
+    ]
+  },
+  {
+    "jp": "車内アナウンス",
+    "cn": "车内广播",
+    "en_variants": {
+      "Train Announcer": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:1399d8de:9163",
+        "ja_sha256": "ed6c90e13df671455c95711c961e89557d450faf13d660ad4fb48d4fc4fb95ec",
+        "en_sha256": "cbef0474198b2abdad08e513cb1f8e69f454f3fc33683e702c7638cfe9e70265",
+        "zh_sha256": "9e6a3573da29750cc3665a7596c72729927f1d12a3b9796b0c5d60901e9babcc"
+      }
+    ]
+  },
+  {
+    "jp": "門兵1",
+    "cn": "门兵1",
+    "en_variants": {
+      "Soldier 1": 14
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 14,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:2fea",
+        "ja_sha256": "fe6efefbbfc67a936b007557763fefc79d7da157cc1b9a64564936cf007cdb25",
+        "en_sha256": "59edfa80fe81e9b341ee91feb46cec57189abf6b8c5e575ce7cafead0d97af9a",
+        "zh_sha256": "82cbdede41b14ac829f32dd3e4d890fea95ec6967c72f23c3e8e53dc7caf3e76"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:3103",
+        "ja_sha256": "8040fe425f586be3f7609f7c1ad317282ae987997240d2f6355dad527851bcd0",
+        "en_sha256": "192da378f1b69ef436b00ed04742b7077090e1d5e8686d72f59e037ebf166ad4",
+        "zh_sha256": "4dacc05c0609c295be211ea94ac3a4f1a58d3be6745d059eab827004cb0b3bc2"
+      }
+    ]
+  },
+  {
+    "jp": "門兵2",
+    "cn": "门兵2",
+    "en_variants": {
+      "Soldier 2": 13
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 13,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:30c5",
+        "ja_sha256": "009989bad013a98467d18b67a7b697319037301447a7acbf09937b8621e1132e",
+        "en_sha256": "ed8d8e134aa60277e72c4c835d427f430199bea4af26ce78b109bc4a3cfb8913",
+        "zh_sha256": "8efd1bfa0757cbdf430ac9c27e66f98e338d5fd1b584d6e1aac3b44c0ad26bfc"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:350c",
+        "ja_sha256": "ba054c46e841df1a8db7dbef5b1860bac7fc3870ff81d0d4564aa954c20a070d",
+        "en_sha256": "200e17d174c1c2ee83bc7c78e2b3c1b25f3cf94a4ff2297ba8f01d1c6a18b9d1",
+        "zh_sha256": "c64ab1af67ce4cc7df9009105e5b02af5520fe65866101a0a0d1d64e0174ad5b"
+      }
+    ]
+  },
+  {
+    "jp": "男",
+    "cn": "男人",
+    "en_variants": {
+      "Man": 8
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 8,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:4a7e",
+        "ja_sha256": "47e5a4828f6c1f769ce5e48b6032b6b0055473d236f7ab67898c0164616fde8b",
+        "en_sha256": "3803a327966e18ed75237e1f41e9a0b05ab30bfe3e8873d1539c107fa8cc5d69",
+        "zh_sha256": "c4544054b8194784b7222cb95dc9bde3acaacbe08b22c86a8e5105f5ed4dbc07"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:4af0",
+        "ja_sha256": "108f4767e48f67fbbd86a8c3ec7c72f8b51f500ee6664d0b79fb51e5126a2094",
+        "en_sha256": "9bf59ad6a79e08837ede7d704bc5059c0cefc759a618cb1b3345bc0bbf0b6bc4",
+        "zh_sha256": "be02edd75a5bad36b2dbab38432dd9b308e08a6d58ae0d7548c48d0aca368b9e"
+      }
+    ]
+  },
+  {
+    "jp": "声",
+    "cn": "声音",
+    "en_variants": {
+      "Voice": 57
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 57,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:4b6c",
+        "ja_sha256": "854ffa1c963de34f85fda2f13e539609f2d05e69fbf3f5f1d49e752d6d29b92a",
+        "en_sha256": "93239a64710be36cd9a5e8a690523adcfd95302a85caf19ab7d012ad2a33ce2f",
+        "zh_sha256": "884f60e006fd06d7a2e6e959c5ee06823cd8fb233938192189feb3d13126ac49"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:4e1a",
+        "ja_sha256": "4ddbe29456a6d8064b4495896185f9f8237ad9f3f95d046f78390d34a08a7895",
+        "en_sha256": "189769dd885c8e5897dc10fa23557e805a7878cca710faaccfab9d2cb9436fb5",
+        "zh_sha256": "5daa871adbd7a05f9c9aa0a2e9d3a921873c5855ffa6f0c0c33246dcc4062e5d"
+      }
+    ]
+  },
+  {
+    "jp": "夕呼",
+    "cn": "夕呼",
+    "en_variants": {
+      "Yuuko": 1225
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1225,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:56ef",
+        "ja_sha256": "ee318d8f7ccaa6718dcabf43b5d8d74d8b0ade604d7046efec9c51de17128fee",
+        "en_sha256": "4b2b2ddc0403257a4f9f892ace9856366530ec55bfb35267f75c9478e2f5eb5a",
+        "zh_sha256": "ae1b9b5b9536e36d53a3d1f9197c108ee56821aab808f61d0021ae16931f2254"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:5804",
+        "ja_sha256": "fb3c79601df2efbb474f7da132ca7331a95b300e2a0cc2f3d8b462af944bd74d",
+        "en_sha256": "20c1f54c8b656dcec986b98d909dce861452315afdf5e006f07b131424d92170",
+        "zh_sha256": "d352a8c7b79d4c40789286a66dce8de182b0642107e0af050489419a5508b96a"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜",
+    "cn": "冥夜",
+    "en_variants": {
+      "Meiya": 4520,
+      "Woman": 1,
+      "Takeru": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4522,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:d53e",
+        "ja_sha256": "16930a0cc5c58a5908de828baf2fbf5fba57f8dfd40bf0e93bd48ff58e3b1996",
+        "en_sha256": "78b9a4e3ab41d879d98b4209361f0708c4127e6e395c9a0fa87978627cb491be",
+        "zh_sha256": "aefc5fb05b1ad05a82201b28a233b36223bb93831fcbd9036d2e28a3c3ec755b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:10b9f",
+        "ja_sha256": "a30f60d9b291aab3dbf2c72f88f4199be887309c26b0d9e748eb2ee851ca7b8c",
+        "en_sha256": "041ca55e896b645b1778bef24b0d98ec0d490633148e7bdcd506b856c8536d60",
+        "zh_sha256": "d5aac84e10af69c532908162f8f90880036be8fcb914766100eaefbac0ac99b0"
+      }
+    ]
+  },
+  {
+    "jp": "壬姫",
+    "cn": "壬姬",
+    "en_variants": {
+      "Miki": 3065
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 3065,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:e0ba",
+        "ja_sha256": "92220530862a3566f8703e541312d2f6596949872b9b46a716450db0c1dd90b4",
+        "en_sha256": "90bff06abe11ffbd93883268aa53122f76eea119cbfe98db605c62a005b6f345",
+        "zh_sha256": "1345fd2d6ca3011a8b5073bdcaa44f5cc77b0a5bb0a2c53fb2e36405a5626dde"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:10769",
+        "ja_sha256": "5a5ac8986338ba99286804338f0720d0660825951715a66892949f71ee0606ed",
+        "en_sha256": "66937868ee86e7455221651c556ee909036f9cfdf83d9e9f513fbaab63f3e8a0",
+        "zh_sha256": "57e371b16540c592cf6205672e62f016f0652ea4e2fcd4c5c559976d576e1f1c"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴",
+    "cn": "千鹤",
+    "en_variants": {
+      "Chizuru": 4605,
+      "Sakaki": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4607,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:ec68",
+        "ja_sha256": "f75b011bcff3af1195a6249a8342650e15b01b386ac72a1292b38c6e3f40f42d",
+        "en_sha256": "e15bc90d06eae9906a07fa02f9963bbb13ed370a23ee18ea29f31259dc5271d3",
+        "zh_sha256": "d3ac3c64eb5a57906592e624055fa156a7005d46d9db1fe02266000d2196c0e4"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:10c95",
+        "ja_sha256": "cccf1d482902e8aba252b711d8f12b86b756d33f2a524645e725fa3befb9ee7f",
+        "en_sha256": "2513c03972267686ef0acda3bc839fc0c3a6c0460007c054295f014911b3c914",
+        "zh_sha256": "3f9a5c086431b70595d73ef4b27d909f822d23abd6e876d3e4a206d7968af1ef"
+      }
+    ]
+  },
+  {
+    "jp": "慧",
+    "cn": "慧",
+    "en_variants": {
+      "Kei": 3345,
+      "Takeru": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 3346,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:f816",
+        "ja_sha256": "bb0d9636afeffd8a6148b623c0f8f18e3f37808affa3ea5e28b655e68b4d3abc",
+        "en_sha256": "e12588a5e059c2c3fd5474201ee8129bfc2a31d32b78e656cd9074a883570fcf",
+        "zh_sha256": "16ca1f481be188e571ddbee08afd46e6d903c94a283436360bdc1f65b4158f76"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:11406",
+        "ja_sha256": "06bd3f7883ae880e1d2e23be206ad1ba874b905e38ce2b8f596153a282542865",
+        "en_sha256": "e988c43f59a998e81ed9678a9edebfd9d31a258124764e3d6e90dfc3b2f409c4",
+        "zh_sha256": "c8dc9e71dc95c796bc4dfc14d62b08daac0af0a3e2850edadd6e4597d1a17db6"
+      }
+    ]
+  },
+  {
+    "jp": "まりも",
+    "cn": "麻理茉",
+    "en_variants": {
+      "Marimo": 1303
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1303,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:13380",
+        "ja_sha256": "761794cba50f5afed9205f8f04764037765dd10577da5fbef5d192839f2d39bd",
+        "en_sha256": "1768d87dd135ea4f3320c9c5ad5db6211f934797040261bebe4ba97cf3b03633",
+        "zh_sha256": "65aec07ce323ffceb8457dc705067fdcaa8659ddb8beb8ca9c7f3aabd4160024"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:20111882:137c6",
+        "ja_sha256": "210ab915b96cdd99a5bb164bcb6aebf4bd8f354b46c81b5d1728d2f488a6e057",
+        "en_sha256": "21e257704fc95e30e3b34651de9fe3326991fd7ba418145ee2fe199a72593629",
+        "zh_sha256": "d763c3f829925c04fa75223fa623da8a48b35a24b6484c464071a72229382295"
+      }
+    ]
+  },
+  {
+    "jp": "女",
+    "cn": "女",
+    "en_variants": {
+      "Woman": 20
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 20,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:ea3",
+        "ja_sha256": "ae314f998665c4d092dffdee106626e92526ec91e3ecde957aff2af0982d2f3d",
+        "en_sha256": "05ae6fd926f0e5d01a27e9c041eaea682bd171714138cc20046643fea7c83f4e",
+        "zh_sha256": "30c662e41f8c48a0b84b57cc2599abf8eccc79fe71f922f7f5426a1bc55d18dc"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:10c3",
+        "ja_sha256": "60026abb60703329e0460b0eab77e1baefa19df01c6ef81cf9116932fed38ad7",
+        "en_sha256": "b979324d27e4f9163919e92bf0d9469cd95d2bcece62eaad30fb94ac7e1c3633",
+        "zh_sha256": "32df478bb267bd20828ef0b48f7f89bbcb3c9e51368e060e5cdb8e837a538dce"
+      }
+    ]
+  },
+  {
+    "jp": "委員長",
+    "cn": "班长",
+    "en_variants": {
+      "Class Rep": 21
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 21,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:970c",
+        "ja_sha256": "84ba77382f5006b552b5a31bf10c4bb467b05dab0a698409fde8247e1e5c34ef",
+        "en_sha256": "44e09f0b78b503f3beffd1d51b7e492983a5bd243168b7b7988dbc4e644ee862",
+        "zh_sha256": "e954adb3a8baa3ee4899dfdb56b864a2c084c7b8171a1daafe73d66f4c590bd5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:983b",
+        "ja_sha256": "5251b559b3c1761cc8454cd30eaf507c0a4b09abb76266a4227e852f16c550b2",
+        "en_sha256": "4096746c10c5aea4fcd307f8da0b16cf7c317bee45ab1a0130e6ad2610e46a81",
+        "zh_sha256": "e14243b574c0702b2136a14bd13f62c748997e088ca2d9fd61cc932dfed19cee"
+      }
+    ]
+  },
+  {
+    "jp": "クラスのみんな",
+    "cn": "众同学",
+    "en_variants": {
+      "The Whole Class": 8
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 8,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:daa2",
+        "ja_sha256": "81291042340f5c34184832093c31e61daba0197731cafb66fa197e5babd4d99d",
+        "en_sha256": "ee413f6ff42fd499488cf451217459ae660e4b814847367346174d836eaadf54",
+        "zh_sha256": "f39b506f745c673dd4301d0d5e90504817fd4e1dae328694eb20d86feaa2cdd8"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:df5e",
+        "ja_sha256": "3b3b789e5707e61de9a0197ee7e789e407af8acc2cafe5ed9871b77943e49b7c",
+        "en_sha256": "0f9cb4aa3f40aa7378ed5fd34aed8f9eaeca001da9c3e833438b2fd1b2067ff4",
+        "zh_sha256": "059c4cea97f17a405f3b03522c1c46c3c87fb85811991bf3a451622127639ca2"
+      }
+    ]
+  },
+  {
+    "jp": "クラスメイト",
+    "cn": "众同学",
+    "en_variants": {
+      "Classmates": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:eda0",
+        "ja_sha256": "e5563b67fe9646ac923d06991cb16b686a20f1499daf6f1bb7e16d8e79f6cbe8",
+        "en_sha256": "d28817f82d19c32a6cdbf4117596af9b1393081799ec43245c3bb160700e1499",
+        "zh_sha256": "b172efab05eb6a234b0436e072e328b9b51e117bf2c20532980e744daca8b4b4"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・壬姫",
+    "cn": "千鹤、壬姬",
+    "en_variants": {
+      "Chizuru & Miki": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:ffd9",
+        "ja_sha256": "dbadada0525f33538c07bb7ce42a210aceab37bf31cb3583397e8eb6e92de547",
+        "en_sha256": "b8077e1786724beee5bedb4b25d593893c935673e43b9c9388e618c13ecf3e01",
+        "zh_sha256": "d75a528a5cb76f89e5674f436e06faf9eb7fb106ecc5bf63537f53abb8d3752b"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの男子1",
+    "cn": "男生1",
+    "en_variants": {
+      "Male Classmate 1": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:10b61",
+        "ja_sha256": "53c215fd398c1c67bdfdaa1da5b48ebdf133a648e71328886b1a0485bcdf31a1",
+        "en_sha256": "0040194e6d2bd910fe2000e086d9de35e76dfe0f6035209fb2d980619e653832",
+        "zh_sha256": "bac951770b0c31c6de360fc1eb66fd1d69adcf549ad592cb58a0e3f6c73eebad"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの女子1",
+    "cn": "女生1",
+    "en_variants": {
+      "Female Classmate 1": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:10c6e",
+        "ja_sha256": "1ef268a305fed986b2f73a0c477539d5ca91cc64e5d02e2b4c2f4a49af16b259",
+        "en_sha256": "f8d7b04edf6b7f1e6202a2e227de2c9e00758d9a8aee21d069960de181bec317",
+        "zh_sha256": "3fca8321a6d853e7be49b94ee8a5ea9d9e7ee9cc3a3ba301185435a240ec11ef"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの男子2",
+    "cn": "男生2",
+    "en_variants": {
+      "Male Classmate 2": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:110a0",
+        "ja_sha256": "4e073aae0a674fc848567ffb90f89c2d3fd1e839d0af0fa86fab75b93b284ef7",
+        "en_sha256": "ce7c9fe73d66aed2151fd0b32b8075861b3ca822d7e5909c5ebea7f25aa91dc9",
+        "zh_sha256": "6300026bf830d3e5ee7a1eeb48a9a98f91b3c20d086ddd55e2f43d3d3fcfe64b"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの女子2",
+    "cn": "女生2",
+    "en_variants": {
+      "Female Classmate 2": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:111a0",
+        "ja_sha256": "f4272d4ed588787b0784d83b2d87d641dd4ec123b8c7f34fbbe847f68eca3fc0",
+        "en_sha256": "1a65e7479f898de987fbe89d6f0de0fc9a475b6a6e1c6f7c8d51e0343b91b6f1",
+        "zh_sha256": "60146c84463ccf82400b232fb05b22b43b5b194e38a418b6448802e18e515507"
+      }
+    ]
+  },
+  {
+    "jp": "クラスメイト",
+    "cn": "同学们",
+    "en_variants": {
+      "Classmates": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:14225",
+        "ja_sha256": "6b7b6bbfa260be57340fb7cdf46fca536bb79f4a409b94eda5b89f9af4e4c283",
+        "en_sha256": "4e58c3f04f286e578e4adef474ace585af924c06dd4c96ab80b0a9729c5ad8df",
+        "zh_sha256": "971d75c4b42191871e38e6887b04e1ddbda3afeb02652c7662d0f669a3c4c768"
+      }
+    ]
+  },
+  {
+    "jp": "料理長",
+    "cn": "厨师长",
+    "en_variants": {
+      "Head Chef": 3
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 3,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:157c1",
+        "ja_sha256": "25966dbc82cd80f3088a6aa64fab885c8d1bacda9a247b6bb2a31c9bd553bcf9",
+        "en_sha256": "efd23a7b57423484de522bcc16d52a4aa6c9098449d55d6399885cb826417436",
+        "zh_sha256": "002188725a218a296f054365b891b01969ce2770c1481e3ec9b125ef451c39f5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:17523",
+        "ja_sha256": "f2edda220090af9d351189459a17db53475a6892ffd37ca659c6cae0cd073147",
+        "en_sha256": "1f6148ee7b683297bc0b53e26f34c4b470f07a8cc57144d68b92f759227cb824",
+        "zh_sha256": "f198e008098d42c463fc0656c1c4de8f06ff6c787994fa0909fee6dd016ae043"
+      }
+    ]
+  },
+  {
+    "jp": "クラスメイトの男1",
+    "cn": "同班男生1",
+    "en_variants": {
+      "Male Classmate 1": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:16733",
+        "ja_sha256": "12f9072d4d0e66e64164ed303014920d18c53a8aa1420ab3f223d9f8f84fc3f3",
+        "en_sha256": "97836ad33b7d3b9ca02226a361685aab031f1cbfc748e8203fbb1d833863caf1",
+        "zh_sha256": "e367b73e6f15d128fd15d13346bd7984665a1318e194f1be8c578a8d61d4fec7"
+      }
+    ]
+  },
+  {
+    "jp": "クラスメイトの女2",
+    "cn": "同班女生2",
+    "en_variants": {
+      "Female Classmate 1": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:16771",
+        "ja_sha256": "5e68951066ede8c0aa323e45171948b43d6a56e70c1ac1f71ffaaa3032cf34a5",
+        "en_sha256": "b1815082fa5a6115d25912e7f44312e071af63321c35e619cd0142667aeab0c9",
+        "zh_sha256": "60ec10754117b83f990d64c6aa0486d806854c815a16719d1db60da8bfa63224"
+      }
+    ]
+  },
+  {
+    "jp": "クラスメイトの男女",
+    "cn": "同班男女生",
+    "en_variants": {
+      "Male and Female Classmates": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:237bbd38:167af",
+        "ja_sha256": "8f745da121a1352be5c2fecba44225b758a66c399b9362f824cba2b2d2b752f5",
+        "en_sha256": "ad40e21b63dcb619bf3803670147fad72976d60ce47ae43fd9132a8e50c1c256",
+        "zh_sha256": "4094774216c28aaec9d734c7f9ee82ec2ff0e52f45a97ca23023c1eff3fe94c1"
+      }
+    ]
+  },
+  {
+    "jp": "一同",
+    "cn": "众人",
+    "en_variants": {
+      "Everyone": 26
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 26,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:24c3",
+        "ja_sha256": "a89c7391ea9545937ed647727ad57ebb217646714b29d57f9b3e1966fe414d94",
+        "en_sha256": "31033caad7deb6aad36342d8483b32c46ce947fd5b6ab106a7ff3c7e1d1da62a",
+        "zh_sha256": "2d7e78cc0dcda90ddea389febaa64f5c6a5163ca90550ae326ab61f20c0f81af"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:60f9",
+        "ja_sha256": "8484116796f3c15fea2841e5c55e4af4e33988986cca387ac1307b29abc8d528",
+        "en_sha256": "31033caad7deb6aad36342d8483b32c46ce947fd5b6ab106a7ff3c7e1d1da62a",
+        "zh_sha256": "62384e4e69893307232db4298b6579756fa3616efda73edfcc8d25a9dc9292a9"
+      }
+    ]
+  },
+  {
+    "jp": "壬姫・武",
+    "cn": "壬姬、武",
+    "en_variants": {
+      "Miki & Takeru": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:35eefb40:668d",
+        "ja_sha256": "6977c3fb7b92b7eed0c0a77694eb3c32674a251c36e52d0af06cc382173a4141",
+        "en_sha256": "63c81e5ae91d1bffbc0a12ed7e55db4ad08f8c8d4e41c12da6b5c60cab24d960",
+        "zh_sha256": "64b0964faa625fa4aae6983545c608658bce03495c76770a9a3d740065ebf056"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:18818",
+        "ja_sha256": "33a4796b3e1a2b41ba1471064c1138acb0041ebf905ec44638b0b9d74a82f7d1",
+        "en_sha256": "8b450e3ee866e62769e7b8e2de06bf0f5c74d6750e0d6d2c50e4695ab17fb0cd",
+        "zh_sha256": "5afe8e64c561df334f28546c030510c0c83c475da4098a0a4736af528cab560c"
+      }
+    ]
+  },
+  {
+    "jp": "たける",
+    "cn": "小武",
+    "en_variants": {
+      "Takeru": 136
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 136,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:551",
+        "ja_sha256": "e6f2ccf170b792a541f135f61ff69131bce3cab960d1e7ced9c45c439486a188",
+        "en_sha256": "5b81a29d7c7f289041741b4aaa9261c1c130e152bfb69ba95040268303a5ea07",
+        "zh_sha256": "10407e9b0b13e795bff7df49df58c427cc2724c49a9752fb21278bbf7c1730d3"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:5e1",
+        "ja_sha256": "a1eb5016f56d3a5bf5b0b9101ff5ec048fdf90de6e1a2ba74de5d62f5e94dd98",
+        "en_sha256": "d9c2c26f7fa36a902908865d94caea1d135363b27ab3857f94c3c76da8421f33",
+        "zh_sha256": "4bde8a4241496d44ddab6479b95e6258d55f387f16e341848e10c5c472877a34"
+      }
+    ]
+  },
+  {
+    "jp": "すみか",
+    "cn": "小纯夏",
+    "en_variants": {
+      "Sumika": 123
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 123,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:58f",
+        "ja_sha256": "4682d1d6bc18d437e529f015a70bc962918eb6b081310cde3b1fd45c91cee1e6",
+        "en_sha256": "00491fc826bdafab03a1dc46ee2f7c1d61e26eca162d1774834ddc856c9b1f79",
+        "zh_sha256": "e58975d3af542b1348b39cd024dd5dc8e8beed446cd52eb1157e210f92bfb21a"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:61f",
+        "ja_sha256": "230e5561dec0d4f5d3c506edb9b2d85ffde971f5e9d51d15cb7c996905cbb064",
+        "en_sha256": "34fffd3ccd8be17218525e5dd4371888c5fd60356d478917db32e2842e4d196a",
+        "zh_sha256": "f0f40dbe00cfe334042905627cf8015f79cd59ace553f76e31e42a70c367022d"
+      }
+    ]
+  },
+  {
+    "jp": "月詠",
+    "cn": "月咏",
+    "en_variants": {
+      "Tsukuyomi": 541
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 541,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2848",
+        "ja_sha256": "474fdb7ed579ed732403b88bcc1b350fd397e9dbc2b07d476e0be5076392d49d",
+        "en_sha256": "6d9556346053c0fcaa8786a5ec689a8cd26cdbb61fa174e7318037dfca6e0f56",
+        "zh_sha256": "11c17f56c41969fbd778ee6e1c292693a430db190cbc061b53fdb4e350bb5251"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:297f",
+        "ja_sha256": "1c71ca63dd5a83a3c44949f9cfff0cf167a03dd4fa7cdf97d0954cd74d5b5046",
+        "en_sha256": "572f96faeffde95d0e907250b431c4a026f27a1f0ca9efccc0102d24fd52cee8",
+        "zh_sha256": "767194337693802a7245e9f5730b44e6d0a199ed32b307f2b37b857f933fc1f7"
+      }
+    ]
+  },
+  {
+    "jp": "武・純夏",
+    "cn": "武、纯夏",
+    "en_variants": {
+      "Takeru & Sumika": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:40ab",
+        "ja_sha256": "827a712c94ffe37143b70ab7a517e28a69a65aac39e094a4a047b5f79a196746",
+        "en_sha256": "a9d0cb03a5e53e9f745bd294af8c68b856e38713fa9a9995229bd4d8e694b749",
+        "zh_sha256": "c05e58f53b1c988c61806d1f50d4f6838b3e226ddfdf90fe8d84fa928c855f1e"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:65e5bdbe:190d",
+        "ja_sha256": "7fdfae0851f360e2bae3a0e798659bdc40a17767a5e0023896df817df5e22227",
+        "en_sha256": "7f1c17d9d2574384e5ef2d3a6ec001a6881ce55b41943c914d47d0f783f12075",
+        "zh_sha256": "0b49fcef804f2dcbdfa196cb5a5b0baf1b08a70f731136544e2614a444167299"
+      }
+    ]
+  },
+  {
+    "jp": "男",
+    "cn": "男",
+    "en_variants": {
+      "Man": 8
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 8,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:645c",
+        "ja_sha256": "860d93e8f52fcbc8b69a2f90fe81071062638bb335db3d122b7bcc19fa7cdc65",
+        "en_sha256": "54f55271ca30c0aacad0b6351e672a72c129a1688d87f79ce4991e82ee4f3097",
+        "zh_sha256": "5aa17d149b362f8bab50e2561e16e80bf3a506197dd164f71bde2ddb0b290fde"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:67e2",
+        "ja_sha256": "cdd5b34ce4c1c82d4a409dab18a5365e7fe46ff19175b852fbf4da43192c2d8c",
+        "en_sha256": "3977669c23e9313da292e7ee3377ed80ffe080daea8c814a33dc77752b4e2931",
+        "zh_sha256": "32c3e2638f92afa6e972b9ce01fade3c1707f044dd1efa23435f39df08537731"
+      }
+    ]
+  },
+  {
+    "jp": "鷹嘴",
+    "cn": "鹰嘴",
+    "en_variants": {
+      "Takahashi": 72
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 72,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:6a3d",
+        "ja_sha256": "d288bbfa2078737aa90ed2915bc50cc9314366d5be21ca237cfb36b40991e212",
+        "en_sha256": "9849fc5e03f3f101dd88ed0b7815d1cb9afedec2ca601f24c9b75cde59a312ed",
+        "zh_sha256": "bb3ae2049e25150c029e2761acaa64df9cbf387988cff9d37b54570312c2e3f4"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:6ab9",
+        "ja_sha256": "e17f10673eba938efff1d88ab92ba179b3ab9fc9bbe063b4949178d026872960",
+        "en_sha256": "2f2bd1f56e7c6e3bc7a17c69645df36bb58b9b57456bfe1bef0a140c73e54c72",
+        "zh_sha256": "282c889c2ad16533133a66d0376cc6fa89e1758ecf188636ad19e84114cc8526"
+      }
+    ]
+  },
+  {
+    "jp": "武・千鶴",
+    "cn": "武、千鹤",
+    "en_variants": {
+      "Takeru & Chizuru": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:1305a",
+        "ja_sha256": "6c808b7f084f397f318c76bfe872896b79058385c59098a684b046053c2482db",
+        "en_sha256": "6439edf65711097a34255d752374db6961f2c671d3d0076566f38ed045793061",
+        "zh_sha256": "c1f11e4ce9199166682bfa24f44568abd5117a3e58086ffc21a78ab1095f1ce5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:13148",
+        "ja_sha256": "4d7124adca2e3c52a15620930bbff24d4fc7c61fa81170553f97488cddacb7ff",
+        "en_sha256": "2d7792d50476b28588fc2434e7f311e72143ceb39662ad312b7b25ac03cfb127",
+        "zh_sha256": "366e34ac2ab3abea5c20e1912b6c38b4143971be415faf4b21af724e5a42c816"
+      }
+    ]
+  },
+  {
+    "jp": "彩峰",
+    "cn": "彩峰",
+    "en_variants": {
+      "Ayamine": 5
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 5,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:133e7",
+        "ja_sha256": "f8c5f8a4d758feb096b6396742e3d3049043387077062704b86c6972e973116e",
+        "en_sha256": "2552193c1a1b48a9ffbbdb9e76eae8d2743103c390a4e1f3d40348062d89c243",
+        "zh_sha256": "f5d040437066374f6cf7f0dca688ba3b8bd59e66cfd9fd30e00d4d4bdd1ae7ec"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:13492",
+        "ja_sha256": "f8c5f8a4d758feb096b6396742e3d3049043387077062704b86c6972e973116e",
+        "en_sha256": "2552193c1a1b48a9ffbbdb9e76eae8d2743103c390a4e1f3d40348062d89c243",
+        "zh_sha256": "f5d040437066374f6cf7f0dca688ba3b8bd59e66cfd9fd30e00d4d4bdd1ae7ec"
+      }
+    ]
+  },
+  {
+    "jp": "純夏・冥夜",
+    "cn": "纯夏、冥夜",
+    "en_variants": {
+      "Sumika & Meiya": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:14739",
+        "ja_sha256": "565cf7f445ba4a800bc1a38f90bf913afd2f7f3f5786307a6b0380dbbe1b451b",
+        "en_sha256": "eb78e9472c665d9c620380c5524e548a6e047196485b9b673c608b051ab1b549",
+        "zh_sha256": "e0c37049832ee63fbeba9da233b6eddb96025ef0df9d66b982b0e8d1ac859ec9"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:1aba4",
+        "ja_sha256": "05e95587e010e564bdfb118604722738b43df92cac018fa19c23869229570ff8",
+        "en_sha256": "81339414eb9c84ec3257bdf75cc54df2519c2d4695f6a960e9c5d475a56fa3ce",
+        "zh_sha256": "f7ddaf78476ef8d26423e2415cad237adcab38ee27d6430441f885559c046ca6"
+      }
+    ]
+  },
+  {
+    "jp": "武・壬姫",
+    "cn": "武、壬姬",
+    "en_variants": {
+      "Takeru & Miki": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:19a38",
+        "ja_sha256": "3f815daeb340a991260b00d3945113388a4657ff999d4c9634d3f56594466047",
+        "en_sha256": "aaf97cfc929577c56789ef68dbee489ab63c409f69416705e0215397fc4bc4dc",
+        "zh_sha256": "b5e6806badeea48acdc2eac72219144cae004cf3028090a3ec606e842fd68185"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:62d80",
+        "ja_sha256": "9d03ce2c1cf2381205c57193da3be9adbb9986daf3197c5330007a40d2072897",
+        "en_sha256": "55f3d2cb43cf0013ba212042522f0f7ca21586f9a893410a5fb6bb2c071b12b6",
+        "zh_sha256": "a38394cfd1be89c615a5f2531ea456f1343716b273df74c8bcfc17d6a7b34bd7"
+      }
+    ]
+  },
+  {
+    "jp": "女子部員1",
+    "cn": "女子部员1",
+    "en_variants": {
+      "Female Archer 1": 20
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 20,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:27e27",
+        "ja_sha256": "b3b9061e96ab126d19424a692f07bc1d7c336f672128ca3cff597602e4a617e8",
+        "en_sha256": "aec53a8313279a5e121ea71f642089ec1e9bfae48ba38509185633723d7ac5d2",
+        "zh_sha256": "a80e1c7eb084dbc7f224baf46f88cbeab6add335c15f3fc22cf189a94ba11b70"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:28497",
+        "ja_sha256": "0864d9654cb8a14642bdee4ad17833d0d5a2a702c53c71b976ebd28df78a4516",
+        "en_sha256": "19468d8d958c33d08e133c24a97038cdbc7dc0df5d3431624c221b995342cebb",
+        "zh_sha256": "fa2924b6d7513b3f04cc8cef0958734b8e627073e8826252c0924fac81e9790e"
+      }
+    ]
+  },
+  {
+    "jp": "女子部員2",
+    "cn": "女子部员2",
+    "en_variants": {
+      "Female Archer 2": 13
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 13,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2835b",
+        "ja_sha256": "ebc56af5b03c3507e016fd0095b2fef5922851d0f5349a32a82eef0c4856a253",
+        "en_sha256": "d8206d4e489c43755fad842399e85b2aa903687aac0aaddb042bb1182a7d7118",
+        "zh_sha256": "052150aa3b829bfa3b872689efdc170f9291c25c7ddb79e7173382f7861b24ea"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:28864",
+        "ja_sha256": "80a54e1265079706518bbdabdfc477e7b4c57d463241706ade0257d9ec0a107f",
+        "en_sha256": "8f477c690f730b3c5bad45aa024e47930570b6189ef60537bbab05793a20eb53",
+        "zh_sha256": "3368468450a41b97651df6568c70e5365b40ca284bacae8893a6b91bb19e1618"
+      }
+    ]
+  },
+  {
+    "jp": "女子部員3",
+    "cn": "女子部员3",
+    "en_variants": {
+      "Female Archer 3": 13
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 13,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:28413",
+        "ja_sha256": "3979d702ab609fcc4188f36c720e0bce7a3ad7bd9fcf6503f1444bbd86a64562",
+        "en_sha256": "122c34e47c94b6822fc6659bfa5d3dcafa0ec2d20c83983ce148071809b06f80",
+        "zh_sha256": "f27911b10caa04b528b7f62a5a8b5346f3ee47f4c9dbda826bfa9b07cec5dd12"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:28966",
+        "ja_sha256": "e7e2f326bf441a080593c7bc683280140b345d344c41f61fb6e06e5eb18993fb",
+        "en_sha256": "b9a21e8ea96067f884d2478ecdb7b2db28d885530b19a20864c0d44f1d14eaf4",
+        "zh_sha256": "0a15c068462f0eb3342eee53a96f36038e1f867a7f8dffac4d26ff636adc929f"
+      }
+    ]
+  },
+  {
+    "jp": "女子部員たち",
+    "cn": "女子部员们",
+    "en_variants": {
+      "Female Archers": 5
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 5,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:285a6",
+        "ja_sha256": "e3337b7daa82c3672e391a19515737c252c57c6bf63a01896987d4545d9e4bb7",
+        "en_sha256": "abc3366dbd006137416f443f839e7a93ceee7e4f37f10791efb805f40a6ae3a6",
+        "zh_sha256": "7a3f4999657f7c7c50059db3423930d9c76911245ebab99e50db1d99e43a9ae5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2b16d",
+        "ja_sha256": "e3e44853c8967411c9a569bd5f8b5c58326ab80f1cfbe53b4b621aac94e8c815",
+        "en_sha256": "b114d647c5c9efdd38fb3140fa973df5291db1c0b2fe7f9bd9eb48f40f8dbbd2",
+        "zh_sha256": "ecaa35d424fc6074e89aa1aae9aeaf057301d34adf41877ff2218dbf857e0e96"
+      }
+    ]
+  },
+  {
+    "jp": "主将",
+    "cn": "队长",
+    "en_variants": {
+      "Captain": 70
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 70,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:29eef",
+        "ja_sha256": "c765717c106e9abdd4e028518d69503a188fbdba94b2a06668b595466925a2b9",
+        "en_sha256": "afba8242d929709e3464c15db46a13f305301b9d3f5d93a809b7ef462a5a1e18",
+        "zh_sha256": "e540a099165bccaf0c7e88479cbef8c6254082db55cf9f07015b6643277409e1"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2a05f",
+        "ja_sha256": "12e58d1274adc087b783f3266bd2547b5f870fc96af284daae45fa5a6fa1540d",
+        "en_sha256": "9a925b27fbeae455e7b55543e3e6d76fe4edc0c2b0c6868c7db53be5f05db209",
+        "zh_sha256": "957939d6435f60c948f6f76fa28c7e78898d1f6d1801969fe6713b51f8acc3af"
+      }
+    ]
+  },
+  {
+    "jp": "近所のおばさん1",
+    "cn": "附近的大妈1",
+    "en_variants": {
+      "Female Neighbor 1": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2e1b8",
+        "ja_sha256": "ab5e365133255b263876eb6a8b50adf00ac645b32646f5015ad97dc3c659c0a4",
+        "en_sha256": "8d43d30ef4540b38deb20f459d55c66957afaf5b8f7ca192bb6b7bb1ba85e916",
+        "zh_sha256": "6ab0b8e59f97edce39ca9b1148da94f62ff2e2b462de30f31faca8cab1d051ea"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2e376",
+        "ja_sha256": "3bfd14dbe323bbb9a88fa6f8ae37f0bbad6ca4fce3f9030edf963e628808b13e",
+        "en_sha256": "96dce9eb4eac6b2e8c8f757a0d90f5bf8e4c5740f34c1960a096ff61c1dc03be",
+        "zh_sha256": "2d852f96634d40c04c4f7a5dbfcd85c069918a4ca66fade0eb111cffe443e5e7"
+      }
+    ]
+  },
+  {
+    "jp": "近所のおじさん1",
+    "cn": "附近的大叔1",
+    "en_variants": {
+      "Male Neighbor 1": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2e22a",
+        "ja_sha256": "da69b49bdf0093f3cc1fc8b2e7b57275956841e9f3be245168232ad81371d78d",
+        "en_sha256": "dfc5d044cb5e8b929ab0733898fe2fbeefeb67e5a75fc908702456d6613881aa",
+        "zh_sha256": "afa70627f90afe6ccfdc55446c21a3246c187733879e0ff6074830bcce5bce10"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:39ef818c:2e3e8",
+        "ja_sha256": "4f252831f8a931c380aeb2b8837795e80f4dba12c7bb1cb73c00539167a12128",
+        "en_sha256": "e2cfc074eb35a7942f8f2e785638dcd06d46b0c13de25ea2fe63b9a843ae9884",
+        "zh_sha256": "71263972d3ef280146352eb5390a16b1a8251d4fd71fec81ad728536a11b7d6c"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・冥夜・壬姫・慧",
+    "cn": "千鹤、冥夜、壬姬、慧",
+    "en_variants": {
+      "Girls": 1,
+      "Chizuru & Meiya & Miki & Kei": 3
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:5df",
+        "ja_sha256": "a4ba3047102cff237c7a253c9becc46d8bb673abb58080558411ef51d9986baa",
+        "en_sha256": "db33b7622c6ff0d00824b5c32c8402fcbedb65ca3805e882e3266f1dd43b19a5",
+        "zh_sha256": "5446553572eab786d27bc49b2a3d3a9e3aa4e6cd7d5defc6069bd479147f3883"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:142b",
+        "ja_sha256": "5f02ce9889ab5d1f9f6fa25f68c66af3f112bbdf2b292bf00e7013ece7c5b218",
+        "en_sha256": "422f90dc18b87b9b731d999922a3ccea148dd75e13843aaba066b1ecbde5cf20",
+        "zh_sha256": "4fa6b86bb050ca49d5ff01643a1d8ca3932423429c2c5c3b7d7c203d274ffa36"
+      }
+    ]
+  },
+  {
+    "jp": "尊人",
+    "cn": "尊人",
+    "en_variants": {
+      "Mikoto": 451
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 451,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:cbe2",
+        "ja_sha256": "98f2ad96cb8353ec1ef0f210c35293d6d7ed70ad0efad291191dc96336f5ede6",
+        "en_sha256": "477696e15424323a17de9031f108405ce5caf693959c6cfad6570d7c6005ddb4",
+        "zh_sha256": "47ad9dfc458e1512b7f79b3b478d6850dc1d7a0dd96bad2c6f273f416508c0c6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:ccd7",
+        "ja_sha256": "d782b90bac3f3af1dfb049a1d78fa691a148ff8520303deb8643e7582ed5943b",
+        "en_sha256": "66229c5753773da0361ed3b99c53fdeae0a109208e60801510ecfb4dd124ab01",
+        "zh_sha256": "f38a525adcc54046dc12693b962d8fa9cf95435199c736ce19a188749ca9df7f"
+      }
+    ]
+  },
+  {
+    "jp": "美琴",
+    "cn": "美琴",
+    "en_variants": {
+      "Mikoto": 1614
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1614,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:e5de",
+        "ja_sha256": "08d1adc6ab56add8d1ef7c8cb25aa37e038980d91fcd7194443126312123607e",
+        "en_sha256": "e45c6388d2e4374f462abdeb00f0f9a40bbf0a8ac493656ddfc83c151c6a97f4",
+        "zh_sha256": "31b9766b0c6e92ccebac9df82e30747e275c246eff164c6984244c0516d6ab32"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:e87c",
+        "ja_sha256": "5a1198872f02633551aa677b1da6b1550bb81e3bc627da09d8df95dba851d24c",
+        "en_sha256": "cec017454a8974a9855927d1f9892dee31f782ec5143671883d59bc7e8db8321",
+        "zh_sha256": "d27ed9de6803d4de5402e4b095f2ae525f3e69a69c3f4a0313d674d55e668985"
+      }
+    ]
+  },
+  {
+    "jp": "女の子",
+    "cn": "女孩子",
+    "en_variants": {
+      "Girl": 16
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 16,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:12c1f",
+        "ja_sha256": "b4e242a41f8671b95349358622c18a311b946641c7f00b53a6638c8304bd3e9d",
+        "en_sha256": "2dcde0563400f98a54173b192ae3992271d95b1f2ec16f2e7b683f20d090a2bc",
+        "zh_sha256": "24d78c7bdb81477ccb5256f7b1ec694169bde1fc6993497f2f9c5a67d5200c8b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:47bbc4d0:12cdc",
+        "ja_sha256": "b4e242a41f8671b95349358622c18a311b946641c7f00b53a6638c8304bd3e9d",
+        "en_sha256": "2dcde0563400f98a54173b192ae3992271d95b1f2ec16f2e7b683f20d090a2bc",
+        "zh_sha256": "24d78c7bdb81477ccb5256f7b1ec694169bde1fc6993497f2f9c5a67d5200c8b"
+      }
+    ]
+  },
+  {
+    "jp": "タケル",
+    "cn": "武",
+    "en_variants": {
+      "Takeru": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:16a3",
+        "ja_sha256": "81281038ca0de85743118cc5e31fd5f492c56bea8ac59ca7f5561ddaad981f4f",
+        "en_sha256": "080dcd5f05252bf91dc3c4aa3e4e038c33cb83e9eee3abd05b3b68adcdf285fd",
+        "zh_sha256": "8721409370fd454fe08001c7ce614bf119944572d9c569318839979270d9ad43"
+      }
+    ]
+  },
+  {
+    "jp": "簀巻き",
+    "cn": "席子卷",
+    "en_variants": {
+      "Reeds": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:63ff",
+        "ja_sha256": "5bb4d37099fae883f6578978b91d9dd46bb30a302b0dd419d34112c56d57f016",
+        "en_sha256": "3c04763154554cd9572f160359b1d1cbf9e66c8be8d7f00e006b7bb9023298b5",
+        "zh_sha256": "44c90491bc969b2a008e68e2297befa018028fc78ba941cd0c5e43c7f39dde65"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:651d",
+        "ja_sha256": "5bb4d37099fae883f6578978b91d9dd46bb30a302b0dd419d34112c56d57f016",
+        "en_sha256": "3c04763154554cd9572f160359b1d1cbf9e66c8be8d7f00e006b7bb9023298b5",
+        "zh_sha256": "44c90491bc969b2a008e68e2297befa018028fc78ba941cd0c5e43c7f39dde65"
+      }
+    ]
+  },
+  {
+    "jp": "おじさん1",
+    "cn": "大叔1",
+    "en_variants": {
+      "Old Man 1": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3b984",
+        "ja_sha256": "c5421323b094f17582dcd7b63d5e94274fc72c2cffba80b145b2020549ede907",
+        "en_sha256": "07e73331d68b3cc9b787e9da3635c9cf70a902f84536fd296b0b97f17b8ff5bd",
+        "zh_sha256": "920eac89d2957147fbb95f0c85cca279f2f258f358c70d7b7a4758dc58c0a7e6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3bf07",
+        "ja_sha256": "910bd4876cc1fc1180e7599908027fa0798621091556525c8e87b12e30d7a58a",
+        "en_sha256": "5b335485cda3ee4a03806cf88f0a216f8b3d9e5a546166583c64daee3cc89f73",
+        "zh_sha256": "1d4aeb1b0ec05a0d0f3c2424762737f5b9a6042767d7ae2ea8441d1e74d4ea21"
+      }
+    ]
+  },
+  {
+    "jp": "おばさん1",
+    "cn": "大妈1",
+    "en_variants": {
+      "Old Woman 1": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3bae0",
+        "ja_sha256": "2613595b030fc6c73614ae0e9771772ab5e14c81e95cad06a603110b44e2fe5e",
+        "en_sha256": "f35fb98ec28b5b806631567d71ecdf246568f4085b982c3a3ea9c0d4d12ae146",
+        "zh_sha256": "2a1e9ee145a8d7e305e9200f059e81ebad132c4de7048523650b2f0516461bdc"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3bf45",
+        "ja_sha256": "05c4c65d807038872531f06d9888b39c806601d7f2689af41058ee131894140f",
+        "en_sha256": "3d93a8762bc3bee4796b360612b652f898e76c61dcb0cae61caa2ff6f8c47f05",
+        "zh_sha256": "84f2684bca076c8c203d24ed6575ebef9fda8c8dcc51486be025100dd1926994"
+      }
+    ]
+  },
+  {
+    "jp": "おじさん2",
+    "cn": "大叔2",
+    "en_variants": {
+      "Old Man 2": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3bc00",
+        "ja_sha256": "61f12badda0c9ff26878082852bd0a559a54459130ccd9e797122cbd528ffda8",
+        "en_sha256": "e9fb1d82cfe5e3517d4fd370b1b136d88075f574979813ad1a57f09866ef5668",
+        "zh_sha256": "4cdc69056bff9ed0d8b7a9ff3a94f3a85d62cc88bc02b407c4100c110ed038e0"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3bf83",
+        "ja_sha256": "2569cb084d6a1075aa8486d8983ad75334cf04ed0bde74b7c87ed1d0428f2044",
+        "en_sha256": "2b6481b0036dc0fd4e10620a069e11019de8a195319d2a006590c24796026ae0",
+        "zh_sha256": "6fdc4d5b8f2805b87cad13c69b2d7d31009ea6909ce169526ef6a3e7e146c5ad"
+      }
+    ]
+  },
+  {
+    "jp": "おばさん2",
+    "cn": "大妈2",
+    "en_variants": {
+      "Old Woman 2": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3bd2d",
+        "ja_sha256": "cb78ee5fdbea150bc17cf6cda72d82ba0b5bcc0bc12fc3c5df0c7dbf12af699c",
+        "en_sha256": "1393ec5af918403ca5c0a49cde38ffbb9b9a7688758661731038cb6ae5885842",
+        "zh_sha256": "70cc58df0cf1063b84b03400689af3f9f1787211ade821b4184fd2b5eb888308"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4c1ba6aa:3bfc1",
+        "ja_sha256": "af2e74f1da0fc3663e777870fd62b3377fd4ba18e2bf85a4ef1fe4e99152c607",
+        "en_sha256": "0b4ea5c6e3c91ffc3f19b165a77b57bde3781a52f3845f558f3883a96a983a40",
+        "zh_sha256": "e3b038bcb8f3d2df90a95c80e3cd467b955ea0139e8a233f8ae45f870150f216"
+      }
+    ]
+  },
+  {
+    "jp": "カスミ",
+    "cn": "霞",
+    "en_variants": {
+      "Kasumi": 31
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 31,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:40b5",
+        "ja_sha256": "2f68e1c3f030fdb27d54d33df30dd38736ef0c02c3e153d54a476215ccddfdd2",
+        "en_sha256": "09a1c5c4f3135e6f4548ece4982e45e31d0297b9ec63875c4a72c35e2f926c70",
+        "zh_sha256": "57e5ec52f3f984a2700e5485fa0496d95523143fc3836ee532240dc5892ce1a1"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:43ea",
+        "ja_sha256": "2f68e1c3f030fdb27d54d33df30dd38736ef0c02c3e153d54a476215ccddfdd2",
+        "en_sha256": "09a1c5c4f3135e6f4548ece4982e45e31d0297b9ec63875c4a72c35e2f926c70",
+        "zh_sha256": "57e5ec52f3f984a2700e5485fa0496d95523143fc3836ee532240dc5892ce1a1"
+      }
+    ]
+  },
+  {
+    "jp": "京塚",
+    "cn": "京冢",
+    "en_variants": {
+      "Kyozuka": 94
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 94,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:a54c",
+        "ja_sha256": "25b8c47b9b08f84ed4ec2994d64724506ac388cb50b86afda1cf3a7e1dd0ba68",
+        "en_sha256": "50a5dc2c108e7b82220fb270175e26dfa3596922a1264874d2d46be3856d1e08",
+        "zh_sha256": "c134377066e0c22b9f7541e6ead73a5152cf0326621be6d71bffc6c1572ff71f"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:a731",
+        "ja_sha256": "baca3b8a331871ea83089fce1b23bf99146afe3a14466ee6c8fd2c8766c86b37",
+        "en_sha256": "3367edaf0e10c499275044b0f39318bfe14eb2fa779e503fc8bf27dbd6aa792a",
+        "zh_sha256": "effe0122df0a1ea43febdb17a400c52316600fe5194d827b81c5e8c36be391b8"
+      }
+    ]
+  },
+  {
+    "jp": "霞",
+    "cn": "霞",
+    "en_variants": {
+      "Kasumi": 266,
+      "Takeru": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 267,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:1b0e7",
+        "ja_sha256": "e623d3d8170fba09a2bddc0e1f11f62aae4b1c34e7741e8753567d9dfac76da2",
+        "en_sha256": "e16f973c4b1a271b9caf31323851b245f72eba9c7fa7490b9a4309f11b4db4b3",
+        "zh_sha256": "fbfc5e3d50300bd4191a1b1030fb38f036ecf3c326d4e22056870201f0cdb233"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:4f55052a:1b231",
+        "ja_sha256": "c24cee6da17f37f3389cd7574e9915f7e9de010e049207b7adceed1c7cf2fda6",
+        "en_sha256": "f250a8f766d9c7f7aaa324084247b7f130a1acdd1d60501f4e26799d4416adcc",
+        "zh_sha256": "0b0b068c690691c7b3868165a28f4a99ccb74f798bc2200131506343d1c9f8a8"
+      }
+    ]
+  },
+  {
+    "jp": "女1",
+    "cn": "女1",
+    "en_variants": {
+      "Girl 1": 46
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 46,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:ca33",
+        "ja_sha256": "4d93e77d7814a8fb8783f0c76dadc7cd2dc51c2a73b578d25285a0f2811d2701",
+        "en_sha256": "c9b9ef6b96d7336987c91b88e5912d7d00887e9d65b3d3bc9790a95551102e22",
+        "zh_sha256": "b89290f38f6447a691356f1599fe34350512743bd6d209579ee6403b806b5f09"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:cb96",
+        "ja_sha256": "9480772608538366826893a203f7f79b28067d636a3eaf595bd76f525e99118c",
+        "en_sha256": "b9be28e79f2d4d9c9a4eca44f79005c8778dc7d3c770f28da398122f2e75cbc5",
+        "zh_sha256": "c021ee7ce5acbff2ca956676ecdb50cb8ce9a9bb0d6d172cc36a19f6ffa88310"
+      }
+    ]
+  },
+  {
+    "jp": "女3",
+    "cn": "女3",
+    "en_variants": {
+      "Girl 3": 34
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 34,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:cb31",
+        "ja_sha256": "cb7995acb7109a0b1d3db4a301153606b841aa235690487870316c343f739c7b",
+        "en_sha256": "f2a1a4e1e65628a90a8abb7706c9ae9b463692ff16bb77a87c249369e837b657",
+        "zh_sha256": "63c852113b8ed2e521c0ed30528fd26b3d1db536dd9c495ffc4d9a5c3fb38c6c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:cea1",
+        "ja_sha256": "ca097118bcf2d90cbebd9600f66bad16bca05037454589d7bd2bcd1f6fe8b679",
+        "en_sha256": "c59bbac90c512ba058d8414c5d15079539a34cd2fee5bb0fd9b70f76376d8369",
+        "zh_sha256": "34e328166ee5a880268ac90490f8249c5e5b4d1b16154b4764b9fa7daf851478"
+      }
+    ]
+  },
+  {
+    "jp": "女2",
+    "cn": "女2",
+    "en_variants": {
+      "Girl 2": 38
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 38,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:cbd4",
+        "ja_sha256": "1b4fe04555b22e8fee58c1b9de22717fa95ab195ad46b55599b5b6a329c942c7",
+        "en_sha256": "12c7679e84e799f4446ee8e3bbf64ef685f52d0f56fca024dfd87ae402edf094",
+        "zh_sha256": "b3e8a02da8ee84f5ac3fbedcce9f88ed7d7f85b58c43917c2c521624bbb8c263"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:cd9f",
+        "ja_sha256": "cd2f8ed72fcf8cf6f12fb623a73aa109d94ef83a1e8ba8cc16f8a8d3ae460d35",
+        "en_sha256": "500b11fe68a06791caacb18e06653f4801c1cb9986383ef6a68a57cd16fca8f8",
+        "zh_sha256": "d47b08eba4e3ad6799483258396e975b41d5bd96a31cdffa4c139111ee47fb5f"
+      }
+    ]
+  },
+  {
+    "jp": "女共",
+    "cn": "女共",
+    "en_variants": {
+      "Girls": 3
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 3,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:dd3a",
+        "ja_sha256": "54c9356c8d2cd26f8bab1e8047ecee165d3da795596b599082edef76c4014df0",
+        "en_sha256": "43f74e6afd612fb7da6e895e6424e01f10d6c7a87332b1ed0c3c34d8607f8086",
+        "zh_sha256": "d24fe0aa574853ab3c763e51f365b65f29ffbc1d3ecae8325df0228df78ae3b8"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:1a756",
+        "ja_sha256": "54c9356c8d2cd26f8bab1e8047ecee165d3da795596b599082edef76c4014df0",
+        "en_sha256": "535ac15c8dc42f7bb7354e29cc448ed0da5695bd247e822a01a05bd3cd657ed1",
+        "zh_sha256": "d24fe0aa574853ab3c763e51f365b65f29ffbc1d3ecae8325df0228df78ae3b8"
+      }
+    ]
+  },
+  {
+    "jp": "女共",
+    "cn": "女人们",
+    "en_variants": {
+      "Girls": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:ec81",
+        "ja_sha256": "ffe2088c2efbf336d2901d9b534a34342cb468708ad3f3cc8eac99a9735c5003",
+        "en_sha256": "9afa9c324ce32be82a9a96ef5f0a952b9e75c2ae330c4b2623a79608b4371f36",
+        "zh_sha256": "d7668862f14bbea78174826c20b1b0da26e904b1360319bcf75e95a38c86a6d1"
+      }
+    ]
+  },
+  {
+    "jp": "女2・3",
+    "cn": "女2、女3",
+    "en_variants": {
+      "Girls 2 & 3": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:f49e",
+        "ja_sha256": "0a5e7c1a6e3a385d5fc0c123c3ec5f3042adf6b26d90386d5496d48ff51d6b87",
+        "en_sha256": "237efb8760a47f699164dd04160097a88944d5c79a321fabdee6182e842784a3",
+        "zh_sha256": "1027834624ed7b1c7e3bc2c453437300c7b75cdeaf50d7260edd396bbc90e87e"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:14a04",
+        "ja_sha256": "c8d65ac2451e0138a66269d8ac6307dd7570d433f54ba103aff727b43f6303ad",
+        "en_sha256": "084eb98d6c08c0f44d5c48dc84cdc2c9a3ca4a671657a3f8e6be4f5df37c19dd",
+        "zh_sha256": "cde6165a6541152b6f9ee349d51c0e0c991e1363b0716d64b59a596878716659"
+      }
+    ]
+  },
+  {
+    "jp": "武・尊人",
+    "cn": "武、尊人",
+    "en_variants": {
+      "Takeru & Mikoto": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:13c47",
+        "ja_sha256": "dc4ba2c5639f95376c065bc09c35dc88d5779706ddc9e227e1b1fcf6a52e94f2",
+        "en_sha256": "6582c567b56f12c51f7ca2ea98ab1b34aa5814022b037354213c7273507230b7",
+        "zh_sha256": "0195994756c119b9348965f148f7ce40617b2a6faf458dd357dde26448ca97b1"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:1fbe5",
+        "ja_sha256": "dc4ba2c5639f95376c065bc09c35dc88d5779706ddc9e227e1b1fcf6a52e94f2",
+        "en_sha256": "6582c567b56f12c51f7ca2ea98ab1b34aa5814022b037354213c7273507230b7",
+        "zh_sha256": "0195994756c119b9348965f148f7ce40617b2a6faf458dd357dde26448ca97b1"
+      }
+    ]
+  },
+  {
+    "jp": "女共",
+    "cn": "女人一同",
+    "en_variants": {
+      "Girls": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:40481",
+        "ja_sha256": "2377b5b678d4643deaa82f52d39de396cdb81b4962121dd61d91b30aff76d9d7",
+        "en_sha256": "00231667e81e529fdeef38a7bd18d2563124b426d6760e26f5fcf4ea234b12c1",
+        "zh_sha256": "c6e58449422caa4e7761ee86346b2e788e96c6af06bf70e88c35c3dce0e7fde1"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:412f9",
+        "ja_sha256": "d23a02d5b997473da76f208403eb2a02835c1d0bf29f7870bc17ab904e8a50f9",
+        "en_sha256": "464b9bb5afb1d96d318fe28e4c2beaea89af5d77a0149781255a4a5641d8d2ba",
+        "zh_sha256": "ea690fdcc95d7cd81da5e3a822191fca1ec9f79d444551660dff56873df3ece1"
+      }
+    ]
+  },
+  {
+    "jp": "神代・巴・戎",
+    "cn": "神代、巴、戎",
+    "en_variants": {
+      "Kamiyo & Tomoe & Ebisu": 91
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 91,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:418f9",
+        "ja_sha256": "3c47cf136b07cdc4020fb95305091be23f193683cfde5a7231d43912aa30f239",
+        "en_sha256": "997d3810c3b68f5a08e9588b534c6921633c506767de5ad6a302badf5bfb3876",
+        "zh_sha256": "763a2371149c2bd7e20dd2a0aad6d6adfea8163b00742219e7271611628fc3f7"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:41f58",
+        "ja_sha256": "a43aeb740e164f9d7f410168695a29293a89dd011d7298feecbc3663e719aa68",
+        "en_sha256": "422f372439be7965cecd23b3fc9b336836c5b8b24e82a6d6e892651ae300b16c",
+        "zh_sha256": "5cec0789a4ad125bd3088a1cea482701c06391c7e12cf4c9275cfcde57b711c4"
+      }
+    ]
+  },
+  {
+    "jp": "神代",
+    "cn": "神代",
+    "en_variants": {
+      "Kamiyo": 111,
+      "Kamiya": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 112,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:41acc",
+        "ja_sha256": "a591dcb643bbd6f27b09563a2d7100c0256af441b86c8f1568dbc09d67075422",
+        "en_sha256": "30df6a753bf6ce9e99e9e41c9c584ef172487ef7d0a35aaf897de80d4525367f",
+        "zh_sha256": "abaceea8ae8aad29c3578eda92b411b7f34832b6a1d8d17b82ac67d97aca0297"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:41c09",
+        "ja_sha256": "7c8ce6e9ddce4d367b79e2978ab7f465ad3bb6ed3d84f518f3c8a721ed10fb29",
+        "en_sha256": "bcd79cf59344f4dbf51ca3a6c90efe398dbf071845cc20d6b24685fbabeedda6",
+        "zh_sha256": "a34084bba1d68a92f9a850f0fe47a0a6e3938cca84b9d0ed11f4279e3eb727be"
+      }
+    ]
+  },
+  {
+    "jp": "巴",
+    "cn": "巴",
+    "en_variants": {
+      "Tomoe": 106
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 106,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:41b0a",
+        "ja_sha256": "77418dc017df08d12ec7fc0a8bdd043d3935621866d30bde9cf16dcc47cea4e0",
+        "en_sha256": "b9c214df2caa2699365f42b20843680cb68ef48f2fad4da3bbed2fb72f9f9eb1",
+        "zh_sha256": "d3103e9fcdd245e62cf353fba27603b97a854b97933478e8f81193338993b36e"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:41c47",
+        "ja_sha256": "b5dbaffce7b36e3175cd5eed68583164bf275830dcdc9ecea51704eefbdd3621",
+        "en_sha256": "3aa946e82d9c3f5cd28e7e909e51afd994de575ee52392458d54b06b7ef7c503",
+        "zh_sha256": "5c5b68bb4ad87c7e923455f442b4daaea377c4644bc5f99e52896206334cce2b"
+      }
+    ]
+  },
+  {
+    "jp": "戎",
+    "cn": "戎",
+    "en_variants": {
+      "Ebisu": 92
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 92,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:41b48",
+        "ja_sha256": "10b4869b62852f77399b3c14891e5dd360ddfeb24cf21ac589c3da703d602c91",
+        "en_sha256": "8e704ec131a2fd80b9af18d673635401dfabea1758c1997ea5e2409dd5363bc2",
+        "zh_sha256": "40cbe585c7f430dee4bd892bca74588295748718b7ed80db9cbdf5e419c0d45c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:539535be:41ca1",
+        "ja_sha256": "2f6a83cd7aa9bffa9c61269d43d03b004475babb3a1995877113257c9e59bc28",
+        "en_sha256": "25deb34d2b5c2edc3c282e96407d6200b7ad96d2a6385fdee673964388ee0fcd",
+        "zh_sha256": "1e6a836ab1bb0e92f93ef712d11fd285a4adde541409beabda1770d55b9369a1"
+      }
+    ]
+  },
+  {
+    "jp": "武の母",
+    "cn": "武的母亲",
+    "en_variants": {
+      "Takeru's Mom": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:20fe",
+        "ja_sha256": "0f0569ddad405b891754b6a61e89e50b18d62113f0e037f724bfa2c04b708932",
+        "en_sha256": "a3ef484e56e09983f68208385c2a674cd6ad89718ba865b661347369db36ee7b",
+        "zh_sha256": "46126d04c5b579ec810c204d1e63e1333239cf83251ac6ce9d113b30ddb33342"
+      }
+    ]
+  },
+  {
+    "jp": "美琴・壬姫",
+    "cn": "美琴、壬姬",
+    "en_variants": {
+      "Mikoto & Miki": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5594f0d6:99e2",
+        "ja_sha256": "8df24557dcb907fc7ef6d12390a411e6cd838180ade0bf703e85095303ebcc23",
+        "en_sha256": "2613cdcfd3c50c3777a7b15c6ac7329df9c4ea52e60a0c3f0eb540ee98685a4c",
+        "zh_sha256": "f344a9879c20ed62118b3d44cdea91387fb686d41f292e0b53eefcc5fd617443"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:739ba4ac:a80d",
+        "ja_sha256": "a24707929ac4d77ec483fd4483e148e12c0fa145f7a6be08bc16190b81d360ab",
+        "en_sha256": "5a6baa9174f693fcd307a2e3d907105ae853730d770ca16decc3a4727d7c45e8",
+        "zh_sha256": "7faa53443ac7a1dfe1a7c0a2c2ccc8c89d00e1d6852931eced9af2922e61f8f9"
+      }
+    ]
+  },
+  {
+    "jp": "神代・戎",
+    "cn": "神代、戎",
+    "en_variants": {
+      "Kamiyo & Ebisu": 3
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 3,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:58847ada:4aea",
+        "ja_sha256": "ed15bca6c4fbf3f4891e02dc0bea15e2d2b6e7ebba937ff16e72fee6faeafeeb",
+        "en_sha256": "50e6565522b117cc75f844f79d8789c7991bed7b226edc46d800534a1053ffd2",
+        "zh_sha256": "f0b7b2d56518a5fe47bd6a80a3ef38653f0a8d803cdb8584bb8c0b35645fde0b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:12a681d0:2bf4",
+        "ja_sha256": "48f87231bbe17f8393b465c8a7d3de9cddc9f5395ad0b3ce023f67766d19591a",
+        "en_sha256": "015df8ddeb2e19bf26720c36653c7e4db435982751329c0268303b2cc2ba2bc3",
+        "zh_sha256": "c85b6f9f3396180b81dd623af3c98f1d9895f141a203148628f332c3c1ff0540"
+      }
+    ]
+  },
+  {
+    "jp": "巴・戎",
+    "cn": "巴、戎",
+    "en_variants": {
+      "Tomoe & Ebisu": 6
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 6,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:58847ada:7a41",
+        "ja_sha256": "7f764a2e31553bf7d2fa0acceb169dc6c0a0fd980025fe00d156bb1736bd6533",
+        "en_sha256": "4d088a7cc1bc172d62c64b768e9759e094b04226426d5ffe8fcef2de5e089257",
+        "zh_sha256": "4902ddf50d18203106cdd69d92238b27d224c61c2e4f03255424146b0a42520f"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7cf9db2e:af51",
+        "ja_sha256": "e85740b68a1d51431de482fee29502c537c9edaec0de70869990a60f3f8990b6",
+        "en_sha256": "ebfcd7802cec7139497a8f2dc281f2f4c829f8da761045b0cd62f322f05abea7",
+        "zh_sha256": "fc844dde11bd60b152c1325dfd0e36a299eda2f0a151acece67f58f6ba78029e"
+      }
+    ]
+  },
+  {
+    "jp": "クラスのみんな",
+    "cn": "全班同学",
+    "en_variants": {
+      "The Whole Class": 8
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 8,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:58847ada:bb59",
+        "ja_sha256": "bb4c9296c07df52583885197cbcc89602bb71553698262ed97dc78c5e8685def",
+        "en_sha256": "7936823e8f4f9c386efb321c5d04f1f1f1bbddaf0eadf6dc1716ac0fc2643ae7",
+        "zh_sha256": "972a6d730d1ff8a0f4480921bb241439831caec3de6994c6a52afcdd2bce97a3"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:58847ada:e622",
+        "ja_sha256": "bb4c9296c07df52583885197cbcc89602bb71553698262ed97dc78c5e8685def",
+        "en_sha256": "dc950c72370ad28a17db93c32b7e3b49096ddd7b81c744af52834fd24eb93e7a",
+        "zh_sha256": "972a6d730d1ff8a0f4480921bb241439831caec3de6994c6a52afcdd2bce97a3"
+      }
+    ]
+  },
+  {
+    "jp": "壬姫・千鶴・尊人",
+    "cn": "壬姬、千鹤、尊人",
+    "en_variants": {
+      "Miki & Chizuru & Mikoto": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5d5275de:32cb",
+        "ja_sha256": "6a3c509d73886a9f3b6f6aa20e1201e066d6048ad8ef7314d74f7b981836ae7b",
+        "en_sha256": "0f5837fb4cfcc6d383ede1cc293a87a8bc29a947b9b94440691ff65423d8e789",
+        "zh_sha256": "1d32fe3f880b7b901cb24491701ab64a526f49f3b0b8fcde17e9e10e63443950"
+      }
+    ]
+  },
+  {
+    "jp": "壬姫・尊人",
+    "cn": "壬姬、尊人",
+    "en_variants": {
+      "Miki & Mikoto": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5d5275de:1b419",
+        "ja_sha256": "3f1962369edb518c68a9fbbf752f227f347eae2f8fb032b0c066f839a87af931",
+        "en_sha256": "6092c03315268998c16c18753f21d6be1c9f121c95dc51a58f4ad6b165a24bf4",
+        "zh_sha256": "cdff8d692f5236ebf93a14b982eb154ee5f94237233e7c09e3e90733cc817570"
+      }
+    ]
+  },
+  {
+    "jp": "全員",
+    "cn": "全员",
+    "en_variants": {
+      "Everyone": 11
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 11,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:5ebb3b22:819f",
+        "ja_sha256": "09be81fa58a656960f41e93d9716170596b43b9e5863489c31fb1c52b1f9c53b",
+        "en_sha256": "24e147af148b5d2d9f8d3ae80e93af169a1aba733abebf8a4eaf79ddf912db15",
+        "zh_sha256": "697275b6d82bc2257b90d0e7c0050e32b972421b13a229b26f4993e24f631103"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:6d6715d8:2815c",
+        "ja_sha256": "09be81fa58a656960f41e93d9716170596b43b9e5863489c31fb1c52b1f9c53b",
+        "en_sha256": "24e147af148b5d2d9f8d3ae80e93af169a1aba733abebf8a4eaf79ddf912db15",
+        "zh_sha256": "697275b6d82bc2257b90d0e7c0050e32b972421b13a229b26f4993e24f631103"
+      }
+    ]
+  },
+  {
+    "jp": "子供",
+    "cn": "小孩",
+    "en_variants": {
+      "Child": 21
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 21,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:2d23",
+        "ja_sha256": "877c7e94ada5da904160763467d4d29094a34772a3235e719b3d96ed72b84823",
+        "en_sha256": "040d5af05e9a1f8e157c1cf94e14f2ddce1fda96f478a69a5931b36fb9dae71d",
+        "zh_sha256": "7ee2dbd48aaf965f601c5aee897c50411a104d702cbe7c3a1309482d0a768d0f"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:2e4e",
+        "ja_sha256": "877c7e94ada5da904160763467d4d29094a34772a3235e719b3d96ed72b84823",
+        "en_sha256": "040d5af05e9a1f8e157c1cf94e14f2ddce1fda96f478a69a5931b36fb9dae71d",
+        "zh_sha256": "7ee2dbd48aaf965f601c5aee897c50411a104d702cbe7c3a1309482d0a768d0f"
+      }
+    ]
+  },
+  {
+    "jp": "怪人",
+    "cn": "怪人",
+    "en_variants": {
+      "Strange Person": 10
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 10,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:473b",
+        "ja_sha256": "fb9468a3d4fb41fd1758329d761222b282577faf7c2236470d2095899614d8ae",
+        "en_sha256": "2e6a7b54537ff3974df986656d83cefd85428e4bdf5fcabf95fa99383d424d8a",
+        "zh_sha256": "cf6ae46ab68946fe924ee7016e989d94f0de99090b6a59069ce2d9eb0ec15af6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:47b7",
+        "ja_sha256": "0b2865005cd9f53fef6b4fce41086c2957827bbea2147184dc7503073c8efc7b",
+        "en_sha256": "499aa73a50a8da4338db797992341f6dfd41f682aac10a291612f67e09be282b",
+        "zh_sha256": "e2f47bea9f493b7db697e66d779fc87b2b61fceca9f98f0f5a0a84242d364e39"
+      }
+    ]
+  },
+  {
+    "jp": "レッド",
+    "cn": "红",
+    "en_variants": {
+      "Red": 3
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 3,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:4946",
+        "ja_sha256": "da4e4dd35e88f2f1e6a52ee3b066d2a6bec57a85b270d16fe711901f0f16aded",
+        "en_sha256": "bfbe4b484d955f9edfaed74bab48f6afc71f0b99dc4c95405f2678176f84c06f",
+        "zh_sha256": "f0ccc525a3d68dc52e68c41fc3af692b9c5b356d093292be5419de1cfc852fe6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:4c38",
+        "ja_sha256": "a5cb85bdeae40703e83851e7736d78dd461817083d33e7711a0db43a23ce96a7",
+        "en_sha256": "08210db4f147fceea5a8d427c14641a9aed4f34e9dc9bf4100d490e6d248aa29",
+        "zh_sha256": "5f7bb4e87ad8fa4de34b5bf73c7081fae75d2341023fee7599ffa1bb07e86add"
+      }
+    ]
+  },
+  {
+    "jp": "ブルー",
+    "cn": "蓝",
+    "en_variants": {
+      "Blue": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:49db",
+        "ja_sha256": "709ddaf2ca02eb5ea12535eb9120b746bfbe23cc20f894ff1efd2fde606af7f3",
+        "en_sha256": "26fff0679a99f9d0d1c0b7719acc5b9bcd5a9ba6573ac32ba77bb8a74b96733e",
+        "zh_sha256": "5bbf94469ba5f6e1dc542aacd8ca842ef1f8a9edc04c319f6ccf3dae8d074356"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:5361",
+        "ja_sha256": "9ec75ee04cccf5a1af71e588c27821bf205cada12add2b12aada800ccc503ec7",
+        "en_sha256": "583c47d6a1b9ee316412e772a9edbabe3c67982c040bcc0f3806a299ebc7ba08",
+        "zh_sha256": "290296c7209b6bc48ff6cf72db965a36bd5ba88e76759150448d9f43c9353b89"
+      }
+    ]
+  },
+  {
+    "jp": "イエロー",
+    "cn": "黄",
+    "en_variants": {
+      "Yellow": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:4a56",
+        "ja_sha256": "fdfa330c7ba877dd3c9af78dd78d01c2e2017f9cc76cd256f9bbbff9e7bac609",
+        "en_sha256": "48a868f1af6d5dfa5e87e5fe3d807badfc6d2db3284c227c0d8c67c2fad824c1",
+        "zh_sha256": "9a3236a0958fc2b235a13644389c2146ba2d11605474958d7d01fd7a68aea261"
+      }
+    ]
+  },
+  {
+    "jp": "グリーン",
+    "cn": "绿",
+    "en_variants": {
+      "Green": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:4ad1",
+        "ja_sha256": "5570e6c90fcc0c36c1565045c778b56867154879160bef9b62dc95dcf4a8c036",
+        "en_sha256": "b0aae05251f183483efd33d2f87907959e5e14c78d09b4f3fabf122a9c20bfbe",
+        "zh_sha256": "c44a719891392a0b202aa3b10642feb9f29a1ff6eb4fb550013a60cb26effeec"
+      }
+    ]
+  },
+  {
+    "jp": "ブラウン",
+    "cn": "棕",
+    "en_variants": {
+      "Brown": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:4b4c",
+        "ja_sha256": "e9f70c8df0cf50c9948b04e6017027a60435afd1410a4d4fc8968886eb900ee7",
+        "en_sha256": "a1e40c6c18a4dd15ef78dcd103baf20212129b375db7eccdf13aafd3f297ccb2",
+        "zh_sha256": "985923c603ff6c502c97ac4911bced94e6cf5d6a5b1f3dbc2772e1dca3f8f59b"
+      }
+    ]
+  },
+  {
+    "jp": "司会",
+    "cn": "司仪",
+    "en_variants": {
+      "CO": 5
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 5,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:53dd",
+        "ja_sha256": "b0165e097ea1c40812f75a0e93dfda81adaff04f9eb070e1b32cb90d60013cc0",
+        "en_sha256": "b2044ec1b565eb28d087796fce1c935038e299b2005f663f3232466e106cc575",
+        "zh_sha256": "cab5341d1ee55f8b3d1dcc8c3c1ec3d7dfeb87271896609407a1b4f19a1b6dd7"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:56f1",
+        "ja_sha256": "40a3168318c0e36e00419b86efcc1dadaf748f3c303279a5af29bb4768787530",
+        "en_sha256": "f8bb377485312ea6c7c7baebf8f76f9169a7088e87425ef3bf5bcab09d41bb10",
+        "zh_sha256": "063c18c683ee7a92fd89c5af3fdb3fbf227dcef813ff8a321b29ea51a079d887"
+      }
+    ]
+  },
+  {
+    "jp": "係員",
+    "cn": "工作人员",
+    "en_variants": {
+      "Clerk": 9
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 9,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:b08c",
+        "ja_sha256": "297819a346c5bdff576e7c5d78146c878bc432dab98db75fc876f092b2d372f0",
+        "en_sha256": "cf8d833936290c9e59bcc814bc107455ec1c25122c019e1b89b94a3f4e3ce13a",
+        "zh_sha256": "4aae8046459c2015c65827d2164d318bcc11a1b040dc63c86788ec584307fba7"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:b1a3",
+        "ja_sha256": "573bc0b3ba76bf0c678ad2c0f8afaac8c304e7a8fe14dffa80c9917bedd61902",
+        "en_sha256": "4c4d2008ffa582601360f74286b13847fba359ebddd3316b3f8289fb19b40c7c",
+        "zh_sha256": "0ea9b5b40b5175d66e087cd892fe96a0a58222f6264712013d4a3db0026a3d6b"
+      }
+    ]
+  },
+  {
+    "jp": "男の子",
+    "cn": "小男孩",
+    "en_variants": {
+      "Boy": 15,
+      "Child": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 16,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:e29e",
+        "ja_sha256": "b59e7daf2a19b5fa92443a6f200ed28d2607fa7a6bd0cd5d6a5075033e8578b7",
+        "en_sha256": "64b4edb39fbd4ed668034e90896964888f30d9e4125102355b4c94b0e3f97801",
+        "zh_sha256": "b8cb5d7b65bb9050f0b7fc1359791d4b50fe48372c2ebac924f49e9e8bbe9815"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:e34d",
+        "ja_sha256": "fdeb9c4cf141cecdd49a9bf3534db108618fdefc0f5df56c014f673a65643c02",
+        "en_sha256": "92116b71b7e5dc187175856b920e19dbf251f2b7b26bfdf5ac68d36c0dc3dfbd",
+        "zh_sha256": "61d1ae51b1e6fca022206fbc930fc45c6b67611298bc302f52b86a85dbb8a6ca"
+      }
+    ]
+  },
+  {
+    "jp": "男の子",
+    "cn": "小孩",
+    "en_variants": {
+      "Boy": 1,
+      "Child": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:e5cd",
+        "ja_sha256": "548fb67b769951fe9e934f816706a9e329e0e274f813572bb44b9a848bcdd91a",
+        "en_sha256": "fc0ae72892859e73d88348b56981f670e81d1cf5b498b74c79c2570f90350c76",
+        "zh_sha256": "d8a24a6869b6f55c6624e79c1e67b09cbea9da41456561441963cf6993b2abca"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:e71c",
+        "ja_sha256": "2a3a3fae69a708211cc7a7f821611bf0830f3c9fe9215df082e8e54b001ea3fe",
+        "en_sha256": "c3c3fe4d31a715cb43ee7bb1f464b64edc806484fe33080352c9224e2bb6e08e",
+        "zh_sha256": "ae01cd53a83295a4e6c947d5686d54eb19aa34ad8324cc8fb55616b29a01290a"
+      }
+    ]
+  },
+  {
+    "jp": "ユウタ",
+    "cn": "勇太",
+    "en_variants": {
+      "Yuuta": 20
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 20,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:fd33",
+        "ja_sha256": "1c368dd7f899fe965e9349b052f5fd3a990eb8d7893047ec76f4a3bd310d424a",
+        "en_sha256": "06377d48de9169dfcaf666242e65c5c46734a3bd4420799ef34dca137ab4b46f",
+        "zh_sha256": "f4967d8a220ea20d08f0f1762b77f84b01f9eb36b92e66802ce38feee376414f"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:feb5",
+        "ja_sha256": "1c368dd7f899fe965e9349b052f5fd3a990eb8d7893047ec76f4a3bd310d424a",
+        "en_sha256": "f4d421d7fedb5e3c5cb1fe2e019a9a1bcf9e72e15279fb7abe7aa98e98fba87d",
+        "zh_sha256": "f4967d8a220ea20d08f0f1762b77f84b01f9eb36b92e66802ce38feee376414f"
+      }
+    ]
+  },
+  {
+    "jp": "女性の声",
+    "cn": "女声",
+    "en_variants": {
+      "Woman's Voice": 5
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 5,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:165d0",
+        "ja_sha256": "64a395363c64a01a743e492a63f55ba7df7dcf9d45fd3f93790a25cf3ecd1ced",
+        "en_sha256": "7f005b2fe25bf5d6988b6d4a96c386e5e0617800c6e798a9656da2a8582e77bc",
+        "zh_sha256": "a09149868c53fd23def94199b0c945c5912f4e4260b30448ac29d2f12236b96c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:16642",
+        "ja_sha256": "814b66c5ae0c05efb75d9c4f47d111cbb5094f899cf94c794682bb22eec9a1d6",
+        "en_sha256": "cd347e8010c618692f74d5ffd5f1e8c75abec8d3b9c81765cfc8f32638519a68",
+        "zh_sha256": "9e82dba71a2bbac1c2bd46d4be6aefe1b4fd73a4ccb1da6548928af05de6fe24"
+      }
+    ]
+  },
+  {
+    "jp": "シャベルちゃん",
+    "cn": "铁锹",
+    "en_variants": {
+      "Shovel-chan": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:179a6",
+        "ja_sha256": "fab1c83ac100f9891b2114001fc910c2cbf8d11335a09b7615982e4f71e76808",
+        "en_sha256": "b1e56b313f5e630979a45651a1021a4828805d0c3ee23a03483c8e55eaf33493",
+        "zh_sha256": "171fedb99a6db4979b2c1d1fd788acf839f9e4f0a5cceca6d000e7777cba5c05"
+      }
+    ]
+  },
+  {
+    "jp": "カップル男",
+    "cn": "情侣(男)",
+    "en_variants": {
+      "Man With Girlfriend": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:1a643",
+        "ja_sha256": "fb815fcb32fd91034661e28a55c0fc22b6220929f917d6316c9f24ce66275e04",
+        "en_sha256": "2946593f61c6230cb63947deb8e5df5d7e4e4aa66c20f0278cfb1149fd5da908",
+        "zh_sha256": "fac5da5f54f65b83094355264dacbde3aef02a09e65d7f93fd5b1a8ce177cace"
+      }
+    ]
+  },
+  {
+    "jp": "カップル女",
+    "cn": "情侣(女)",
+    "en_variants": {
+      "Woman With Boyfriend": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:1a681",
+        "ja_sha256": "d9ffd072cbfec78761a193374c3606925b890b37ac012897b050a67f7194810c",
+        "en_sha256": "451f49d1ce8c37ec510d5b01cefc8289cbe2d8fc471be88455487013c01a7b48",
+        "zh_sha256": "611f574bba5c54d8802cf42a6793acb02c85a0d801ee2ed2c07543fa0e366f75"
+      }
+    ]
+  },
+  {
+    "jp": "カップルの女",
+    "cn": "情侣(女)",
+    "en_variants": {
+      "Woman With Boyfriend": 11
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 11,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:1da0f",
+        "ja_sha256": "9a71ccf97b41217ccc33c4e4541dd7b8097790fa19d8a02bc975b44f8927d42a",
+        "en_sha256": "ef1ac2ab347285c3669d3482a6365d5f798a84570e78f81a3d2499ad20adbb68",
+        "zh_sha256": "d31be307e6effe809c0fc107b9e5d1f2d1474e81188edcb8fb668af73acd13c8"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:1e032",
+        "ja_sha256": "b244620c83509fb0b39c5e71e6b185afb21fe56a8f038a7aa39f162854340ecb",
+        "en_sha256": "87060670b452ce829ff8e864efbc0383600031ab95113249e973dbd5a179abb3",
+        "zh_sha256": "04ce210fae50146b375e3b1b04648bfe6725346ec45e4f74ede2c0db4d1e78dc"
+      }
+    ]
+  },
+  {
+    "jp": "カップルの男",
+    "cn": "情侣(男)",
+    "en_variants": {
+      "Man With Girlfriend": 8
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 8,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:1daa9",
+        "ja_sha256": "3fbb72d4b49a77e33368de3ece5bd4d532014d421043075a07ccf887d0ebaf1d",
+        "en_sha256": "4441eadc23a97f3a6cf996fe97e136b38777b40e31fcebf464d7e4a38d8005fd",
+        "zh_sha256": "5fdc3a9906b548a745b3fbb9d03673e28d8e2afc8d30806a25546f0cd2303ea5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:61fd5d5a:1dd2f",
+        "ja_sha256": "460bfa988ff50a50340e16450f77c2a1c772f1adda5ee17c8d3c8a17b3c202af",
+        "en_sha256": "14bd515082d17a42d8dcb105fe89b4e9331e600601b21719745784d9e3dd1eb8",
+        "zh_sha256": "0eb748782f448f5ee7752963c7bb72bfc75925b228f86a52a5291016c9481971"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・冥夜・壬姫・慧・美琴",
+    "cn": "千鹤、冥夜、壬姬、慧、美琴",
+    "en_variants": {
+      "Everyone": 5,
+      "Girls": 22
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 27,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:6337dda2:15a3",
+        "ja_sha256": "e5297a0c7e3ba19ca529fd873b6e766628dfc41a9d8c5faa467e6d9acd5f4331",
+        "en_sha256": "4186977d701911af456cf263de8084136a7da84ed8cffea6b9059edf55f9007e",
+        "zh_sha256": "cf3ce383a091d68c8d29d39b0b13783530d1c6dabe278ab698c49b3a8ba36e49"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:671c046e:2673",
+        "ja_sha256": "0f93b6e73354d695b694aa86516764682c092c83b66d2b050be131fb079ebc1b",
+        "en_sha256": "8c2fa467fbbfb53e97a28fc1d620c079badba9b9355f74a85703aeb2bf56a43a",
+        "zh_sha256": "16a45571d9a936130c4743bf22aaf76500e25e153ad53edba076a1edaf92bd0a"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜・壬姫・慧・美琴",
+    "cn": "冥夜、壬姬、慧、美琴",
+    "en_variants": {
+      "Girls": 3
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 3,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:671c046e:a67",
+        "ja_sha256": "2412efe839f83284cda76643a275f54126bee7f8aae02af66baa68a4375dae19",
+        "en_sha256": "f9f4d1f4d0c20bdca7ebd0867bd08e28ba339cbbd346088fac3bba032ad8f328",
+        "zh_sha256": "f0a7a31343d1097f50c3b5dcdd979dac3f35d8d76fb1d64b48c398356aa28873"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:671c046e:657f",
+        "ja_sha256": "1bb0ac1e47d8f2c3a21ed2e48fb45973dbe211801d767658e218e20732edfae5",
+        "en_sha256": "736000b1e723f73c2d6c5fcd137f8b2cb650ee2d99c8eee46045cef68ef77665",
+        "zh_sha256": "b7c4a16efca939f801b216f32e1dfa93f1f14e39f78dbae74ae4c4589cecf0e1"
+      }
+    ]
+  },
+  {
+    "jp": "茜",
+    "cn": "茜",
+    "en_variants": {
+      "Akane": 253
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 253,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:67c46db0:44a2",
+        "ja_sha256": "9a79a80febb74f97886c0e4c3ec04ccca067e9669c42dbc871982b801e718702",
+        "en_sha256": "73642c7bd5a638a571b5d4cd76f4d72367e2c9b0e7d4aeff7f7c78537cf1a833",
+        "zh_sha256": "b788bd08365bb2ba3dcd6d3e18e24ad178f4fccdb6b1f20bb2eab5a12af97d94"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:67c46db0:4751",
+        "ja_sha256": "6f08bbca9c5c3fb42b85c1a6d1784e265a23b9a6d3d8dd1cd36d13ab2fa793d7",
+        "en_sha256": "1485dc9d93327237e37f60948a8ffb890e2d2e523945a2c3d72472041e7ddc71",
+        "zh_sha256": "1c2b6e9f7d8068abcbdb96539d49504ec2d6f2c297d37d85e5c1b1a5eb85f6a4"
+      }
+    ]
+  },
+  {
+    "jp": "柏木",
+    "cn": "柏木",
+    "en_variants": {
+      "Kashiwagi": 23
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 23,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:6ca9a1da:c90e",
+        "ja_sha256": "2b96ac8abb72b29a8a1713790388656001812a6565192aba6df61b53d2942fd5",
+        "en_sha256": "03cc5a56ea266fd0c79a0b9e35928277913c079bb8a6dc86948e8cd67b01fc14",
+        "zh_sha256": "4cb2734b346f8a5e83679a81dcd01e74e3c2d1471bd6206bb00bff73191b6630"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:6ca9a1da:e669",
+        "ja_sha256": "0387deb4a4aa2d6edb9cfa87f50e00bc9ff8108998bb984ac1736f56fe4ebfb0",
+        "en_sha256": "4f1c062b5d0f0455443000665ed3b2fde2b253aeb142399367c08446b1231865",
+        "zh_sha256": "d9aee09543a0b2854d9bbc23c00ddabb688264c589aa8fa2eeaaf1de80c5a04c"
+      }
+    ]
+  },
+  {
+    "jp": "純夏・壬姫",
+    "cn": "纯夏、壬姬",
+    "en_variants": {
+      "Sumika & Miki": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:6ca9a1da:12aee",
+        "ja_sha256": "34d0877b90c2007d0c03fc934b93f34ded00b2df7affeeb593cb372d5fed7c00",
+        "en_sha256": "7fe9bc19e7411d9e5f27dab369dccea887a3fed93821cb6c9ec6ffde7b9d098d",
+        "zh_sha256": "ea6a7c3bff139d6dfb810bbc2f0f368335937169c5d8449e233fa24cd73c59f0"
+      }
+    ]
+  },
+  {
+    "jp": "翠子",
+    "cn": "翠子",
+    "en_variants": {
+      "Suiko": 69
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 69,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:fbe6",
+        "ja_sha256": "edf777f1664a6276ef928fab36e30595e0e6a8b8b4f8bbcb5febd47e37980591",
+        "en_sha256": "e1184174dffad388e5ea364c45008e48ea8daec208401721284c8d6589e70cfc",
+        "zh_sha256": "7275ac4f19be1b993002a82f815b11d1e118746d56877d9e5ccd32d83bd02661"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:ff24",
+        "ja_sha256": "3f842d42b77848886d71c4cd1d4e215495602e2f39d9a9943e527f85ef17e7c9",
+        "en_sha256": "9de1c8a86dbc5c79fc9786bf7d58ef6d42050ad723be3260acc0adae66b864c1",
+        "zh_sha256": "9a5f4412b8db9d3f469ed2012934974d364f32665d9662e439b0dd16bd7a2218"
+      }
+    ]
+  },
+  {
+    "jp": "玄丞斎",
+    "cn": "玄丞斋",
+    "en_variants": {
+      "Genjousai": 126
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 126,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:122ce",
+        "ja_sha256": "f7df75537c278eaf7c4f30961154c916d9b48272157d528f815ade0464d90a0b",
+        "en_sha256": "a497f8762c32e289cde42cdcd96ee855b0741c9310bc3ad081eb71578d7d95c9",
+        "zh_sha256": "1be808831cf58fa7aa6a5115161b614104c5c2e9f9630c7df587a8e72c9024a5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:12622",
+        "ja_sha256": "5b8257b3c57b4907cbb9322d7d199b0e6b4ffd5779d0ebb933156e0b8399f105",
+        "en_sha256": "2d3f15ee0b6ccc93182ad764d5528060fe18498fe64b51d7c2dd4c5af97455c9",
+        "zh_sha256": "3c99b8cb04bbd5d1a2c7aa1f66795876bc0f76f91fbbb6d73f7cf16d4634cd6f"
+      }
+    ]
+  },
+  {
+    "jp": "甚五郎",
+    "cn": "甚五郎",
+    "en_variants": {
+      "Jingorou": 30
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 30,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:12cd4",
+        "ja_sha256": "4a72d4d93071143a5fc017fa07db534767377b0b2fc2ab7fdeb07688742f93be",
+        "en_sha256": "4e0fcfb1dd59205135a6d0e4fa081b6f6d6f2d7657161c991b4e41019c9e2085",
+        "zh_sha256": "ebfd2741d9982b55c01df532f55b4f0568520ec4c1f7266eb80c9a1189778864"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:74278644:12db8",
+        "ja_sha256": "7bb05590f2b8069140af8eb575b21c5c08bac597b166708293b7ea8d498f36aa",
+        "en_sha256": "3fe905e6d8cef1156dafd6c993c799e9d7f5f57c77e04a75a5f3968771c267bf",
+        "zh_sha256": "35c803c051f05886f070063856476c31cfe76430b534a8ceaf4508eb376213b8"
+      }
+    ]
+  },
+  {
+    "jp": "イヌ",
+    "cn": "狗",
+    "en_variants": {
+      "Dog": 5
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 5,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:783a7526:3b73",
+        "ja_sha256": "ea4a6a7e46bdd4119772ac2b3dda0d56a5c7bd718bbb41f4af5ca104e3d64d3c",
+        "en_sha256": "8901935703c5b144015f150ecc3cdd74d2fc1c3182bce545817450246d4c2963",
+        "zh_sha256": "a3bb63a36370251312c163e810b8cdd5b02f435a8d2c96e77a2464fd626ebd1c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:783a7526:42fd",
+        "ja_sha256": "ea4a6a7e46bdd4119772ac2b3dda0d56a5c7bd718bbb41f4af5ca104e3d64d3c",
+        "en_sha256": "8901935703c5b144015f150ecc3cdd74d2fc1c3182bce545817450246d4c2963",
+        "zh_sha256": "a3bb63a36370251312c163e810b8cdd5b02f435a8d2c96e77a2464fd626ebd1c"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・冥夜",
+    "cn": "千鹤、冥夜",
+    "en_variants": {
+      "Chizuru & Meiya": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7a2c2d0e:24ef",
+        "ja_sha256": "c1c6d5b0bb2fe62e058374e6489d98eb431350a95d781bde082eba25ebca9c7c",
+        "en_sha256": "f8fe7ce644da3d32f9d27a820eba9a6a38e4485695852e826f32f6697495e646",
+        "zh_sha256": "c000beaba18cc3794c2275f6d3f419eca9e321c63d71f5172a7a06916309bf5c"
+      }
+    ]
+  },
+  {
+    "jp": "看護婦",
+    "cn": "护士",
+    "en_variants": {
+      "Nurse": 19
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 19,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7c412d18:f502",
+        "ja_sha256": "50ac76a357881fef6ced304a95feef154513948bdd5f3eb475df31b20ec832c7",
+        "en_sha256": "14142d47948496ceee56afa1df082c1906798bcd5860e9b683f695612c8362d7",
+        "zh_sha256": "9025dc19faad4c6d3669b646c5374c5d622c159b56d92a0eac29b9743072b405"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7c412d18:f6bc",
+        "ja_sha256": "87c690d1cee3d357e7df29fc55a121cf3795892ba06e56dba543f9b28e09f779",
+        "en_sha256": "629a0a43ac70820366be1fd3651bffeb5cc3d074224add87e78330c2b8557396",
+        "zh_sha256": "bc1f2f48de93b85a50ed75a82ed71c52b6d18db2482e71c2ea6ed7bb9270b05b"
+      }
+    ]
+  },
+  {
+    "jp": "医者",
+    "cn": "医生",
+    "en_variants": {
+      "Doctor": 6
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 6,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7c412d18:11642",
+        "ja_sha256": "72e85e4d50cb3022f04ff37ce92f9699779fd67f273704fbd1869ef7b7097b1d",
+        "en_sha256": "8be1f5dd8fd1023e3140f1b16e79de7672a396b6557a4f618e1981c39857f693",
+        "zh_sha256": "9efe3dab041fa3b8138f043a2fa51dfe427826b6fa60e0595dd83c29477e4494"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7deaec88:10267",
+        "ja_sha256": "15c1ded3c35d984784cca77787c6f9907c05bb6f053e40a9e8cccc1d494f3aaf",
+        "en_sha256": "da252acce8ba2de9c2d487aa5766d2964f8b94606c5dc61de61de10f8ddd2e1a",
+        "zh_sha256": "3e08c27bda9557fed66a217a4bb4517718d879b23f2ed33692e0f5c8a8314b58"
+      }
+    ]
+  },
+  {
+    "jp": "沙霧",
+    "cn": "沙雾",
+    "en_variants": {
+      "Sagiri": 192
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 192,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7c412d18:11724",
+        "ja_sha256": "96401371547b486d8ff49f9b4dca38bfe42e1afa1219877bbf20d025d6b82440",
+        "en_sha256": "847a430c395d922437d7d4d5e09cc06995964a5ccfbb22c4dfdfd4f3333f2ae0",
+        "zh_sha256": "966dce8903409d29102b36763b0b2d0590707fe235c75a4984845d160d40d4c7"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7c412d18:1181b",
+        "ja_sha256": "05a0eb365ea894d4286f6458c9a84d0605ed8129b8af8305a583b52b356e0df7",
+        "en_sha256": "21305dc151430001a89ca31ff11f4e927cced10b9155b08d6e6017ec4bf39996",
+        "zh_sha256": "e1f2b5fd1a8fc583e142317f4182c5b2c712584cda3b450e5cbd0b961839eaf3"
+      }
+    ]
+  },
+  {
+    "jp": "純夏・慧",
+    "cn": "纯夏、慧",
+    "en_variants": {
+      "Sumika & Kei": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7d414018:903e",
+        "ja_sha256": "8da35ab227459a6c7e86b22bf677ac56b3a62654bae63a34fbfd57e59f88f45e",
+        "en_sha256": "a371474ee49a5a692a10aaef8ef3082d7ecbfc8dc6b5fb2675f62aa0b66176bf",
+        "zh_sha256": "50eaa58720e7fcff824e82c1759ed2968d064f8278770c5f4494dd9f6fdfb6b3"
+      }
+    ]
+  },
+  {
+    "jp": "クラスのみんな",
+    "cn": "同学们",
+    "en_variants": {
+      "The Whole Class": 6
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 6,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7deaec88:2ad6",
+        "ja_sha256": "cddb4cbfe512e23c096e918ce71c1e6d3ce3d1c7abcb180bb52d129a6065a23c",
+        "en_sha256": "07b962875b0808dba345527932b4d8283040e8804c60874f2c8820c529b78c2f",
+        "zh_sha256": "175e779db872182b5c49cfe997a851b5c8052d64fe77a9270266c93e7800d5af"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:312a",
+        "ja_sha256": "cddb4cbfe512e23c096e918ce71c1e6d3ce3d1c7abcb180bb52d129a6065a23c",
+        "en_sha256": "07b962875b0808dba345527932b4d8283040e8804c60874f2c8820c529b78c2f",
+        "zh_sha256": "175e779db872182b5c49cfe997a851b5c8052d64fe77a9270266c93e7800d5af"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの女子1",
+    "cn": "同班女生1",
+    "en_variants": {
+      "Female Classmate 1": 12
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 12,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7deaec88:6754",
+        "ja_sha256": "3ac6bed4ac67a446d972b6b5892764b7d9a0da14c5fe614d3983ac134b78703d",
+        "en_sha256": "d7b0c5e151e310df5d8c7e895b15bd7188a83d09ae013dcd2f9280d15b4eab4b",
+        "zh_sha256": "12a1791df1c5f12c7d2f170a441fd72c8206c712632ec4424c2a2721c8b96daf"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7deaec88:69e0",
+        "ja_sha256": "5c202cfe8a267ee5d9ad69044a1e17205113174f59520e0637e713bd31f967ea",
+        "en_sha256": "1703b1cae414353e3063a07cb810ca67dff0840b87fd70a01671c3ba319262f4",
+        "zh_sha256": "c363e1aeb689e25b84eb545db87a2279360dc9fc826faf383c7951e11e734d6c"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの女子2",
+    "cn": "同班女生2",
+    "en_variants": {
+      "Female Classmate 2": 9
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 9,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7deaec88:67ff",
+        "ja_sha256": "bba8551e284e0222313bfaccd14e7605ec3856f4b410464bb69695bfaf5ab3d9",
+        "en_sha256": "19b6ae747abef891460b54fccb8f658a1e9f91afec8d29d406f93e4d81fe19d3",
+        "zh_sha256": "92206b8e466c286613d28c1b4a6c860f9554414be355f66cbcb71c407020f4ac"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7deaec88:6d28",
+        "ja_sha256": "87ce862064eca50bca1e7eddf9dbdde82bade271681e82992e705ecaf4574a28",
+        "en_sha256": "db53f55705a9f628fd235028f4bee3950707b2b47432de56f54a71d46f0cc640",
+        "zh_sha256": "3a1017b065154d60b6bf460b84190c1aa0ac64e203e0ec1cf92ba97b6f07ca42"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの女子3",
+    "cn": "同班女生3",
+    "en_variants": {
+      "Female Classmate 3": 9
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 9,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:863c",
+        "ja_sha256": "f52ab6019b58d426733872a847a4874a396bf2cbb9b4c68f4f24758c6e8fad9b",
+        "en_sha256": "a75c66419f1f93988fbff81bca676de9d16fcf6e92eb6e47c7ea779f2360bc24",
+        "zh_sha256": "870e4a3041388e980f681f0e43499e4abcf4a273244c5a1463232a847c6a3476"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:87b3",
+        "ja_sha256": "089eba95ad50fbbc7b24a23b3547216c5488b3d6723f9eebe0a2b9cd4a4b32cb",
+        "en_sha256": "bc9932086eaed43f20e8e8f0340c5e285c52f0270d33c7a879319eed6ebbf87d",
+        "zh_sha256": "59745a64e714ad2d2c4a56aa44f2e17c6a0a8a522b2ddfcaeb5b48f7de39341e"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの女子4",
+    "cn": "同班女生4",
+    "en_variants": {
+      "Female Classmate 4": 7
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 7,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:86f1",
+        "ja_sha256": "be760a0a842f545c0081b75058fbef07c932d376765516ae67f4875e7f161b08",
+        "en_sha256": "13808929c997d1582a5ee77473820eb650dfed72c8fad613a7c3afbd87dfa3aa",
+        "zh_sha256": "29fda5db27e51549ec5382b57032f4605140e5a47e9be807c45bedff9696376b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:87f1",
+        "ja_sha256": "c5dfa17d3179464332a2a3937696f1f11f94c7f9c6c74ad9900efebd69401220",
+        "en_sha256": "5d26fb984708394e16b913ce8a5f8aff8d41f3419153a26f6bc8decb24759d2f",
+        "zh_sha256": "0662618dfe31140c30b0e23ae2df79b4ea90e121963fcb39514b2aa4ca5484ed"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴の母",
+    "cn": "千鹤的母亲",
+    "en_variants": {
+      "Chizuru's Mom": 121
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 121,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:129e2",
+        "ja_sha256": "290f4a9f4f36d00ba87a69f00b37a042663ad3b24684ec8146d114be724fa1b0",
+        "en_sha256": "90b38385fe3ee3515695539a55d30d1f6ac206766019369c60dbae586a1f3ed6",
+        "zh_sha256": "7d3653ea45572d9e0f74090677e005ae5c510a95410ab5c605daf73e6eea76ad"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e439f88:12a89",
+        "ja_sha256": "0132a07ade8cb199fc59bce865161b158f5976fe43c956e41f9fe902a560883e",
+        "en_sha256": "da341a079e0fac2324ea37816ddf64d09414d6b19428d1e1c3665b8868824b81",
+        "zh_sha256": "c61b5d1e73642d9ae4250f8dd4c98282ef5d83603b0a48fa5e07bd7fe9bf2fbf"
+      }
+    ]
+  },
+  {
+    "jp": "神代・巴・武",
+    "cn": "神代、巴、武",
+    "en_variants": {
+      "Kamiyo & Tomoe & Ebisu": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e68fb2e:a6b9",
+        "ja_sha256": "c418d99d35fba978ff2bc96a9a8eeb54d2ea15474ba9b7d0cc20696834a2a4f8",
+        "en_sha256": "9ef8981ffd74f2ccb3dc1d7f8a945de8f4dacb4e4ac27d6663908710e68f06c8",
+        "zh_sha256": "3f4c7379e249428c4185e8f0ec7816ad449adcc4499f1379b73436aad23edb3a"
+      }
+    ]
+  },
+  {
+    "jp": "神代・巴",
+    "cn": "神代、巴",
+    "en_variants": {
+      "Kamiyo & Tomoe": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e68fb2e:a90c",
+        "ja_sha256": "dcd1a628e91d2d163a050108eb7ed76ae0a0c2968541f461a5be6a1c488b86ca",
+        "en_sha256": "32678076ae0be76124b8112f8d44c1a63cf4f66d5c01ef4017374f7e3eaa4096",
+        "zh_sha256": "46eea251de17a0d342fd27a3375754a63edbde5ab9d7ce9d9a01d05a9daaaf9c"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio:7e68fb2e:ab9c",
+        "ja_sha256": "692b6dadc9c25b4c39228bf2c7b5b8d5da2132cedbc457e321613346fc81599f",
+        "en_sha256": "f37c6000f7bcde49c390246c98bcf06a907e81c739380b8de14a655e286c5750",
+        "zh_sha256": "d0530b2dc23926096e56b43cb911a68f478859106fa04ff528c3cee9ddb5b799"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・美琴",
+    "cn": "千鹤、美琴",
+    "en_variants": {
+      "Chizuru & Mikoto": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:3d4c",
+        "ja_sha256": "12f2a6bd22afb9447a632c2a06975ea328b71d54a3feb9aa09a5fcf6d6a2e2f6",
+        "en_sha256": "4477d0ae3316e801553ba7d85d82e261a8340ba7bf6fb2276ed2e2a703640734",
+        "zh_sha256": "7bdac492f20b7b4e5a3d4e50e67a20f6a6998a4e172dc1290082a88998fb23ce"
+      }
+    ]
+  },
+  {
+    "jp": "衛士1",
+    "cn": "卫士1",
+    "en_variants": {
+      "Surface Pilot 1": 33
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 33,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:5356",
+        "ja_sha256": "e1b84b44e53d748060aa115b04eeffef5be78a302658be08d2f84ef8561ca779",
+        "en_sha256": "4fb7f92ca3450bae4bcf857882919864604577b9086e59a3e000bff2f9676d68",
+        "zh_sha256": "9450ec89e300e685ca447eec8b2365dc8aec83796826ff2d41143be645f6df75"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:55ec",
+        "ja_sha256": "73abaaa86cc705a475e18e864f90faa5e070679d2d74377337839795fd6dd864",
+        "en_sha256": "dc36f8da67f8c48062e9803f2025bd9d5924be72cb86df56548bc800b3240deb",
+        "zh_sha256": "9ed36d1e5bb9dd4b617dc7bc9810f90806f6684053d6cb9318bd606b851f3ae8"
+      }
+    ]
+  },
+  {
+    "jp": "衛士2",
+    "cn": "卫士2",
+    "en_variants": {
+      "Surface Pilot 2": 20
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 20,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:5537",
+        "ja_sha256": "c386db6460dc0a374bbadce468df2149ba694b59a7785dd0335b390aa7eca93c",
+        "en_sha256": "d3692f8389ed6f38f2d9965e11694b070e0618694ce22b670221b41131a8157a",
+        "zh_sha256": "d5867bfa439c58d6b14bc45e53cea1792c2753cb3378b650f5937d8d2bc5787b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:8a2960:56d6",
+        "ja_sha256": "c37edbc5c665a825e730c76552d98cfbc7a8a377451e8847e240ff6a6ee38148",
+        "en_sha256": "27abeae7f7fb0fef5621be678b7638b919f20bfce0e8a645fafb0f0dd3d1bbba",
+        "zh_sha256": "afbf3788cae9ee5f2853336c5c5ed995303e47f280bee5705b0df5c38bc089a5"
+      }
+    ]
+  },
+  {
+    "jp": "武・冥夜",
+    "cn": "武、冥夜",
+    "en_variants": {
+      "Takeru & Meiya": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:185a",
+        "ja_sha256": "636e74e1a76fce8b50c67aad6ac3ce5dbb779321abf404f1eb1f695d706891ee",
+        "en_sha256": "b4360cd896d36200ac2187bf7f23c5d49640315f86b4107dabc08546a619dcfc",
+        "zh_sha256": "6cc1be1c84ee16e3504a9f2fd116672923fddd7af4810a4ec9aee717ac681029"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2901a17e:4648",
+        "ja_sha256": "9d8974ad0027bbfebad6d3deb6aaa7d5697a280702307517b13f89ff8e95eb21",
+        "en_sha256": "297db40b3d560011c294b97b8f2fa0d9419499850c7b932227d3d70e0f595086",
+        "zh_sha256": "e789e8ff20b02a767d2612c3249a8a8f0bf9e041ae3969e3970149454c793427"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・冥夜・美琴",
+    "cn": "千鹤、冥夜、美琴",
+    "en_variants": {
+      "Chizuru & Meiya & Mikoto": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:70b8",
+        "ja_sha256": "299bd834348929a43f0090e66259d20e7789a2aac99aa3d41594145b6181dddd",
+        "en_sha256": "51a641583b5fd3b5be89ead819df327e2bda67bb623f10f96bd8801fddba3b89",
+        "zh_sha256": "cce676663948b02c3b8d071913ec2574d364c20feef717cd43163fe4f01fc02b"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:71f0",
+        "ja_sha256": "46b152b852d4ba5d46ecea97d57d642976db8cc55f932c5fa5ce564e70738cce",
+        "en_sha256": "046827a4454b23167849f1b22b3ac7b5040a6c35a483e4c15186bf081f47d13d",
+        "zh_sha256": "b80055a06faf56e03f75efca88309d6a502b15e3204aa653e8b17396b0437bf0"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜・壬姫・美琴",
+    "cn": "冥夜、壬姬、美琴",
+    "en_variants": {
+      "Meiya & Miki & Mikoto": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:10e37",
+        "ja_sha256": "b72deae93b48de13b6e63546d31eaf76017ff128929c4c976951fb1f0d09dd22",
+        "en_sha256": "5004a75044788a97e2761e6d5f411c3c1d7b3ea18d9bd31ac58174947701aeda",
+        "zh_sha256": "6223f6a8088f99656ee0dacd885500d3f384d92f58d89ec303b1ed8df989e461"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:acd9734:7ada",
+        "ja_sha256": "3ce27209da0f6602d11da755846d881764061af6419a9a3c840e7f437a8d3ce2",
+        "en_sha256": "ac312aa6cf7b849a58c9c1811310f0af807f3573e0c6f704107254283a0e11b8",
+        "zh_sha256": "a0e1287f0239c7b8de2ada3f6ee291ad2d8a2b173028a39d51235cbc877dd38d"
+      }
+    ]
+  },
+  {
+    "jp": "武・冥夜・壬姫・慧・美琴",
+    "cn": "武、冥夜、壬姬、慧、美琴",
+    "en_variants": {
+      "Everyone": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:1125c",
+        "ja_sha256": "5fdf4bd4afedf7bbf6fe308384f6959be1a48d6e2357ab1a43cff4909e2b2d6c",
+        "en_sha256": "24e147af148b5d2d9f8d3ae80e93af169a1aba733abebf8a4eaf79ddf912db15",
+        "zh_sha256": "50faf49865e231f6abe3e8e147ab46e0e0a391b4ac1df4c5faa8a7bccd4f7c25"
+      }
+    ]
+  },
+  {
+    "jp": "武・冥夜・壬姫",
+    "cn": "武、冥夜、壬姬",
+    "en_variants": {
+      "Takeru & Meiya & Miki": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:13ab0",
+        "ja_sha256": "e1a5c305e94235b44a587b7790fd0ae217e6142d0b49b8d9a73adf35b2dc59ef",
+        "en_sha256": "cf9e29a7b4778e4343c3913205149e47da16959884d21d4ebeadd69d10fa27dc",
+        "zh_sha256": "30bf44595e123040e237a34c47014bb1dce72af12dfea523a47a2751d2c85bb7"
+      }
+    ]
+  },
+  {
+    "jp": "珠瀬事務次官",
+    "cn": "珠濑副秘书长",
+    "en_variants": {
+      "Undersecretary Tamase": 50
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 50,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:13bc3",
+        "ja_sha256": "a6ef57e21038c5aabc2b0ef994e0e76de2c4c05111858fd481617e63ab37dc62",
+        "en_sha256": "af305c28105be27277e0cdd792501aee48a4ee8a0443ad2e1b0d38d5fe5cd17a",
+        "zh_sha256": "e40d778cbf95872a6d37c3915978f16654579110a174a9e4a4206c782a395a08"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:13e47",
+        "ja_sha256": "891ece8ba71366367552682da232411c1cc80f4cca3a25bd65ea61db9c02e9e6",
+        "en_sha256": "09ebc9bb2170e41e704063c013daf4acddb1d6b6b5f25a0d24d00bf8324a07c2",
+        "zh_sha256": "b4fd4d1b3528bd2b2bdd05a55295018cd9fa8b7095599bd899928a89047b9755"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・慧・美琴",
+    "cn": "千鹤、慧、美琴",
+    "en_variants": {
+      "Chizuru & Kei & Mikoto": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:14f54",
+        "ja_sha256": "ea48e598fee2e57edd49e604d2dd7824c3ee89f7d2d398de3ec40bb5435592a8",
+        "en_sha256": "32b7e4dbced1bd5e55dd5ee00c477912d95ba88f4a288a7da7cc5df2ac70c5a4",
+        "zh_sha256": "4a7cbb2a0c5f0bc6391f93ad38366f946ddacce5ed52cc835de6c2ab92545fb2"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:1513b",
+        "ja_sha256": "d81f05234f92c3477b34cc15fd3fce8898ace1b128c3bf3fd2f78ff2b2717af9",
+        "en_sha256": "696437b1da70d01c35fd1c6dc1070ba3a2611d4811b9e4fbd1c0b927b41d96a5",
+        "zh_sha256": "12915ef4d5b24fdaeca89392203fc378589e4dbe692559ec520eb86c6f0fb303"
+      }
+    ]
+  },
+  {
+    "jp": "アナウンス",
+    "cn": "广播",
+    "en_variants": {
+      "Announcer": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:19577",
+        "ja_sha256": "bba05dc74329c965ab8185eaf11bb21e752f8cf71578125b6280b648493a73d7",
+        "en_sha256": "5af45055c2c7baf1788d4ad8fc5a6e786d99d71a451814246add66b582ed404b",
+        "zh_sha256": "65b929868121184709807a956b2dba2fdef766439d5c2d8438b9db012a54ea36"
+      }
+    ]
+  },
+  {
+    "jp": "壬姫・慧・美琴",
+    "cn": "壬姬、慧、美琴",
+    "en_variants": {
+      "Miki & Kei & Mikoto": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:1da34",
+        "ja_sha256": "5cae672543100fe4dce140396728c471b292db328c77bc17bd6ae5d9849e9c6c",
+        "en_sha256": "3e360f17c9a7afe4f0b1918cc0b3fed6789cbe98e183da7ab1cdc18c898a2749",
+        "zh_sha256": "dc817f72cd343c5e7f750ac31566a487cb07e5c15b5fefbd722b8ecfe2293d17"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:75116",
+        "ja_sha256": "c752db8a51d63f1c47086a98e308bf969a6d6c76d99183218bb82140b23cbda2",
+        "en_sha256": "551b680c2b9f690baddae52de4ceaf24a97edda863c6f8b950cdd0b28183112a",
+        "zh_sha256": "482237cf4c1fa99d5f7098d53a8b90d3df7e7b9bd7ea42218f40c6c3d84f6dea"
+      }
+    ]
+  },
+  {
+    "jp": "オペレーター",
+    "cn": "作战管制官",
+    "en_variants": {
+      "Operator": 17
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 17,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:24238",
+        "ja_sha256": "1f7cb41d84ab01fe40eff648ec5d65157f7d41e38a59e181a42ada431b18fb15",
+        "en_sha256": "a10bfda198b1124152c7bf2c3a74ae1dfd232c700609b9ab6ae91a14f0bfdda3",
+        "zh_sha256": "eef86714d8ead9003b9165990016d71fa36b7a29d2cd1d398ee97eec7fd93f9d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:24bf0",
+        "ja_sha256": "746bd56c3483b2b46e6338ae05a6fcc955c835d5bb626d9231aa27e1a962de02",
+        "en_sha256": "a56808a4b47c5c69bb2b5511477e9d106ef8fdf8a93aad1e70616155cd820ff0",
+        "zh_sha256": "ad1c0b230b8bf28c51b77f072a083acccc57fd2f33ca96602542754cda8f48e2"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜・慧・美琴",
+    "cn": "冥夜、慧、美琴",
+    "en_variants": {
+      "Meiya & Kei & Mikoto": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:2c6f1",
+        "ja_sha256": "90cd10704fd3856004805c65e12517894e114840f8f03d5c2da08906bc66fa94",
+        "en_sha256": "26039e64b7c34d5e366cad2fcd10b98abbbf2345477a5a8e034ce50b3e0fc5d2",
+        "zh_sha256": "b0d79b645476e8c729fdbc2a690b13df200ba5de49e51bc5f451ce36919a2f8d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:45f0a20:2c8b0",
+        "ja_sha256": "90cd10704fd3856004805c65e12517894e114840f8f03d5c2da08906bc66fa94",
+        "en_sha256": "26039e64b7c34d5e366cad2fcd10b98abbbf2345477a5a8e034ce50b3e0fc5d2",
+        "zh_sha256": "b0d79b645476e8c729fdbc2a690b13df200ba5de49e51bc5f451ce36919a2f8d"
+      }
+    ]
+  },
+  {
+    "jp": "武・まりも",
+    "cn": "武、麻理茉",
+    "en_variants": {
+      "Takeru & Marimo": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:63c7412:28b4",
+        "ja_sha256": "01298d50d741cf7730b8eeeae068604f926e8f600c97e7bd6890bec64db48be1",
+        "en_sha256": "c1cc4e7b07f6f241e2a9352631056ab546fc0237b574802afdd9e8ac54335e90",
+        "zh_sha256": "85b7838c67ea8dc467a7db3dfa610e4fe232fdee60d4879faf214ed11443c04f"
+      }
+    ]
+  },
+  {
+    "jp": "壬姫・美琴",
+    "cn": "壬姬、美琴",
+    "en_variants": {
+      "Miki & Mikoto": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:acd9734:6afc",
+        "ja_sha256": "2c65a7ee4a540a6fa05833219fb74dd1d5ca47e3f204331c47917631b81f9340",
+        "en_sha256": "93bd2a9e041d6bb7368a41591b6b12a7870cf749447739a255643ccf7ca86741",
+        "zh_sha256": "d1eab3ba7424523b857b9e64c1251129dfa9ee0dd3c1504851d907d9973850f2"
+      }
+    ]
+  },
+  {
+    "jp": "ガキ",
+    "cn": "小孩",
+    "en_variants": {
+      "Little Kid": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:cc15b76:75b",
+        "ja_sha256": "444242f68301706d86da9bb54dd550ffb732acaca09e68fe3b3c97f26f3e1063",
+        "en_sha256": "c9521a8533671ba4903c266aa8ffa2080e3079800a848c3dbe3f8b14c3c7761e",
+        "zh_sha256": "7ee2dbd48aaf965f601c5aee897c50411a104d702cbe7c3a1309482d0a768d0f"
+      }
+    ]
+  },
+  {
+    "jp": "犬",
+    "cn": "狗",
+    "en_variants": {
+      "Dog": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:f4d675a:8e7",
+        "ja_sha256": "ba1b68b2bbcc91ebebfa1013f4721878c4059c8ebefd6787760eb12daa0e88f9",
+        "en_sha256": "5509260a9cc48bbce3870f49818d8c0b4ae2cc0342ae7699e087772b3d0e3f87",
+        "zh_sha256": "f6962ec20c36782f0c583debe51dcd50d6ca5ee7fbb7d139144df4e8afa36bc5"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:f4d675a:c43",
+        "ja_sha256": "be5cab57637cb3aeea5ad8fc1c2ad6d090abf818c0012df25daa78b4ff0570d1",
+        "en_sha256": "96457a16b9e5b7b4ed77fbf7221909d1c480210afc48c9c6c647dc0257c1d920",
+        "zh_sha256": "bb5b2f849ac0d768e32b88e627400ad319f4454251f9f6d73c14685cc109361d"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの女子",
+    "cn": "女生们",
+    "en_variants": {
+      "Female Classmates": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:fc0f6a0:31b1",
+        "ja_sha256": "69b11f7d9e8a3d766ef6242b01c551c68d3b98b76e42c41e235868248a6a9af0",
+        "en_sha256": "6d6d7916c6674d8590dd875d58c88a7ee882f1ad2fcaeab50862aeae11eca192",
+        "zh_sha256": "7a47474fa8cd8f959f0f6d14d66c5ac4cd8b089045f993e98fa09cc41d41b308"
+      }
+    ]
+  },
+  {
+    "jp": "クラスの男子",
+    "cn": "男生们",
+    "en_variants": {
+      "Male Classmates": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:fc0f6a0:3223",
+        "ja_sha256": "f8feb84b98b433f7255e0bc41f6a52a3d3d02bdc5e0e321ecf4bc2ad72d99978",
+        "en_sha256": "46305ba943a7106021d1397acef6774b9f35414e063b394f3d069c20387752ea",
+        "zh_sha256": "6dbe2f5977dc9851251b890bec21f9c4442bedc4304314ae092453a91c116e0f"
+      }
+    ]
+  },
+  {
+    "jp": "ナンパ男",
+    "cn": "搭讪男",
+    "en_variants": {
+      "Skirt Chaser": 17
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 17,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:fc0f6a0:79c9",
+        "ja_sha256": "82251477ec19085ea21faf6d49916acd6d69e8c91ae41490be46417a917e0fd0",
+        "en_sha256": "c7b48994dd6666f029478c38537fc9b7c1a11beb531fd5bd025cccfb6ed15adf",
+        "zh_sha256": "534f27dda4a05ef75bd87b95ed653fdfaf36fac03f13c618667de39bd243e65d"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:fc0f6a0:7a45",
+        "ja_sha256": "83cc26d121f4ae120cac24e444f751ec5e1202726dee99d533bcd080d3142b52",
+        "en_sha256": "61b4cbe2ae194481998568a0d8bb5dd1e2de2408178a67e60aebcd1247eee176",
+        "zh_sha256": "72f4cdb204fc784f0730d063480b36101ac426a9e4c6747f173cc2ef1e032aa8"
+      }
+    ]
+  },
+  {
+    "jp": "川副",
+    "cn": "川副",
+    "en_variants": {
+      "Kawazoe": 93
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 93,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:144c5af4:4253",
+        "ja_sha256": "49fd93d3fc6a0ad7746d16909b11558297e00e409ea3f0762782ba2d7672fb61",
+        "en_sha256": "9403df8d8e14e8715b566c77f6acb94eeb12d1e65e595350d0f5381aed832f0f",
+        "zh_sha256": "092df8821028d46c27467889295178fc8b5321bd56ad34675bcca7897923b492"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:144c5af4:43c3",
+        "ja_sha256": "cb34f8f966dcd1162376bcfb3ddddd6d5b6f46e5bfcd19e013df38e082b65237",
+        "en_sha256": "c662dae302a93fb01c9b2dc31c5149807822d8001dbe87dafd2544941672fea9",
+        "zh_sha256": "d92ae0d9444c802e711d41f8829c59d869f9547ab359889bc1d5caf3a83ea533"
+      }
+    ]
+  },
+  {
+    "jp": "師岡",
+    "cn": "师冈",
+    "en_variants": {
+      "Morooka": 117,
+      "Moro'oka": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 118,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:144c5af4:433f",
+        "ja_sha256": "3de9f070217796fee155a9e8af9161caa869ee08d1e7f832f71c679261bedb70",
+        "en_sha256": "0cef3ae1873b616b4c77c21a0a0d95f2329bb4c5ad41ca5ea943198eb6f07e3e",
+        "zh_sha256": "5535bd0a83437103347170d27908c6a8b1b5b579ea2b43775fe883aaf81ff6d9"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:144c5af4:45fe",
+        "ja_sha256": "519d3a5250dda800dff0296768889d4d387a3934b5ffd322dfe260684102d2bc",
+        "en_sha256": "397ecf728c036a868ce3f31380e2b93126e964a6079c7e14f38f479448af539c",
+        "zh_sha256": "1aa1aa1cf9ceae29e463e23ab75138f5e3729079463f1010bfd968a58423d5ec"
+      }
+    ]
+  },
+  {
+    "jp": "師岡・川副",
+    "cn": "师冈、川副",
+    "en_variants": {
+      "Morooka & Kawazoe": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:144c5af4:13905",
+        "ja_sha256": "d42f36406bf70bc754e079fe5bc1d8c0d2d5df9f0bdbf886d201a16f8fcc1133",
+        "en_sha256": "957b5618194e9d1595258ce56d652de491e011df5255aecedcced3e2ce511c55",
+        "zh_sha256": "ee718dcf5d17d3e80c2c80c28700356b4e614ce5f3a048f1790661098bd8f9b1"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:144c5af4:13ca7",
+        "ja_sha256": "a9e245de661378a2f1c17a1215be972f8350be31ecae26d6bcebaa90b338f058",
+        "en_sha256": "8579bb31eb49891c49bfecaea26c250a4e712b0c766660927ef16da45e952a8a",
+        "zh_sha256": "5b6b2594a9c0ff0851366d782634fc335eaaf1b7a30581cef099ceabfd461906"
+      }
+    ]
+  },
+  {
+    "jp": "支配人",
+    "cn": "经理",
+    "en_variants": {
+      "Waiter": 17
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 17,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:14ee30aa:62a1",
+        "ja_sha256": "26562be81901b075b16a099ad1add03512882a86b6d34f93bf249639cba92ca0",
+        "en_sha256": "3424af84f9cdc6609f368718fd24bcc877cb7f25f443d9743ff9cbc3de0476bd",
+        "zh_sha256": "05c747c139dd3096bf7e1e28f3fb33c3f878e8833bfd6eace2207eb8839d413e"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:14ee30aa:63dd",
+        "ja_sha256": "a5a3479669cdf34843c712a3af596b87ebb78c40acedf154ebc34ee6bd7f1303",
+        "en_sha256": "ba0bad338fc1f0236e81cd9e939fe3030650334ff766fe7cec7dd6016cadd1b9",
+        "zh_sha256": "7ee1c279ef80dd8a8876c308d2da31833abb81417b716c596b9c1065abb90436"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・慧",
+    "cn": "千鹤、慧",
+    "en_variants": {
+      "Chizuru & Kei": 11
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 11,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:15483658:17716",
+        "ja_sha256": "c45c874740ca965f99d708fd5c50cf29da5acc91ce039b9054e443150eccf719",
+        "en_sha256": "f69d8d3d70552f001513d604bfd916ea536ee5f32a073c98a1d46272988f27e4",
+        "zh_sha256": "21c11a3cc5d5d36ccb0aacca80b8cdaecc77ea32c19e7b235642a6bbd3cb8185"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:18a84ea2:13cc1",
+        "ja_sha256": "0e3fab83aabae167344cec19ee740ac9bf5155ecf30154c7caa4369a9c671136",
+        "en_sha256": "52b0036d28480543dfde1d4a40652f5566490cb095bec622b64885c724107267",
+        "zh_sha256": "983ab41e939a19cfc2f9361bd6fe40e959d827d5c41f9887e2d1f2f46eb9bc72"
+      }
+    ]
+  },
+  {
+    "jp": "玄丞斎・甚五郎",
+    "cn": "玄丞斋、甚五郎",
+    "en_variants": {
+      "Genjousai & Jingorou": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:159b2310:35ec",
+        "ja_sha256": "64ef9add83ca138d2902304decaa90c95dcb33f2875dbbf9395cdf33c79b35f9",
+        "en_sha256": "6a9cf6050cd8bfb86abb0843531d5ef712b5125bf103cda4b7bbdeb9d7d34b80",
+        "zh_sha256": "525f0bcef83f346d87b3dab95457c9424a10796bc257b00da2fca832e26c7b68"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・武",
+    "cn": "千鹤、武",
+    "en_variants": {
+      "Chizuru & Takeru": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:18a84ea2:118bb",
+        "ja_sha256": "17edaa1c7df411998b0eb45579461539376f4ac5ce59b62a2ab3fed35f84f1ee",
+        "en_sha256": "b264a0fe4442841cc582fd863e1de1c786f29a1b65ce0572959f7e5dac5b57fd",
+        "zh_sha256": "b615460491e96ecb4d0c00129d7274f62403070daf4b2b1681f02c432a037a0f"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・慧・武",
+    "cn": "千鹤、慧、武",
+    "en_variants": {
+      "Chizuru & Kei & Takeru": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:18a84ea2:12e03",
+        "ja_sha256": "9375c76e04c4b1a38c039d3be286a7e4124790a255456c1f9827d70d5b89af53",
+        "en_sha256": "88bda892388a81b24a0dc9a7687f98176094acce5fa4f93c7ec62d327eb6ec2e",
+        "zh_sha256": "8e54ac36d1871c0fc6aed2d9810f45611b18b7740fc0c4c67533598bf896b08d"
+      }
+    ]
+  },
+  {
+    "jp": "おじさん",
+    "cn": "叔叔",
+    "en_variants": {
+      "Old Man": 38
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 38,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1ab1fbe0:aad",
+        "ja_sha256": "24ed27b726ecbd18496ed2455e1c29029a44cb15452b94e33f0ee47056ee1319",
+        "en_sha256": "9756ee1a2b8a107466b25f8855c02422f4141b1f3d986aed7169497f678eb6a7",
+        "zh_sha256": "bd5e7166c25233e92272e1450bdc55d10b3f8fef0c5e3801f83c6b626834ec43"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1ab1fbe0:ba5",
+        "ja_sha256": "f705b4242b70fae922b41beb3d593bfc8b60647a466231e9f98da2fff5aba0ce",
+        "en_sha256": "d6c5dfa76c48055d91c2206b1505ad74026ec2e2d75e503905b96ed768ea823f",
+        "zh_sha256": "080541045b36ae371387be8a9528bd0be71db622182c4837dbb76ccb0e695cd1"
+      }
+    ]
+  },
+  {
+    "jp": "おばさん",
+    "cn": "阿姨",
+    "en_variants": {
+      "Old Woman": 27
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 27,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1ab1fbe0:b29",
+        "ja_sha256": "1413d1af999d5c367b71c4e4fad5e7aa6f01bc3c29d94efcb52349dd6acac69b",
+        "en_sha256": "8706ee27c2ad53fbfb621b2b3068b363cf2dfc0e59ee4842a298938943e2d7bb",
+        "zh_sha256": "39565d890c9b9d87e672bf7cb5ae3afaec07fa1781043c679674dc32aa6c03b6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1ab1fbe0:be3",
+        "ja_sha256": "564d8d0239187fb1c703c9059951008ff1e91dd41d6e6467a891701b7a496dba",
+        "en_sha256": "cb45da5320de3f591a77facf5a69d3e7bf21e1177f268591819ffb5a63f99702",
+        "zh_sha256": "e21f7f73497e572226dad4ccce736df24e06947482066cfba4386d9650932fdb"
+      }
+    ]
+  },
+  {
+    "jp": "お婆さん",
+    "cn": "老婆婆",
+    "en_variants": {
+      "Old Woman": 89
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 89,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1e2c1d58:4902",
+        "ja_sha256": "f95300e564c2db6fb3affa06f08993bb5f0971447658d8fb5d64f583ea8e2434",
+        "en_sha256": "068bf70f32341f5fd2778ed82925b6af58934edb17343991fb1b812e1a0021a6",
+        "zh_sha256": "f13651a8e51c3e6709b86936857205c460c38ef5aa77b2b44109c1ee86927507"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:1e2c1d58:49f8",
+        "ja_sha256": "8fd96b683c415866412fe8480a56040324ec822df42370320113627f9d698992",
+        "en_sha256": "5818baad72af432f167f234985a76d65ddd26a834aac19daf643d2a1298b3fd9",
+        "zh_sha256": "c5be8aa1a5ad76e2e0a6cdbe4c7d2b9147c1fe3a94e925eb42ae07ad49b9124c"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・壬姫・慧・美琴",
+    "cn": "千鹤、壬姬、慧、美琴",
+    "en_variants": {
+      "Girls": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:29897e1c:1d2c",
+        "ja_sha256": "b2696648f04d8271bc89a3205716ddc1bd63d0c631b248c996b5800d5772a989",
+        "en_sha256": "fc5e3ff8fb9820a643a20fa2902a0e5eba256d694c2fd6a4e336930c3b062d05",
+        "zh_sha256": "3c91f2de0cf04d75565cc993082ffdc5abb67d5584500a7290efad61d2dc9f9d"
+      }
+    ]
+  },
+  {
+    "jp": "たける",
+    "cn": "武",
+    "en_variants": {
+      "Takeru": 78
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 78,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2affca28:3fb",
+        "ja_sha256": "f28f616a2cc7e3091b396b04a3676cd98838b49a18de5ddb2cb11d20053ab183",
+        "en_sha256": "65f821d8e0cf83e95f81614c7b41e50bfafbd5040a7e40236d8b97619343a533",
+        "zh_sha256": "7a3a69115ad1b75b5a14dc9d1b56e2925afff4a9ae2261e5d6837dac46759026"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2affca28:47f",
+        "ja_sha256": "965bbec840791f8e9720285bdc5fa8452d8773198ac4c50ffbea136320ca23eb",
+        "en_sha256": "fb107d18265f22b0ffd439a4d57b5e53fd916948c9270bf099ad7c112d31809a",
+        "zh_sha256": "e7c23daf8388db7edfb6455040b37010d6c19e937f99b18dcc81bf198f3cb092"
+      }
+    ]
+  },
+  {
+    "jp": "おんなのこ",
+    "cn": "女孩子",
+    "en_variants": {
+      "Girl": 8
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 8,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2affca28:441",
+        "ja_sha256": "9f4f73b7229d3029af1e947080e1bf06537c731815c6cd0ba43f14e8b1fc5093",
+        "en_sha256": "98ac7cd2e6ebc36959d10cca0d2c4261efc058297e91559473160369ccd89ade",
+        "zh_sha256": "29a7b4588500da19fb408b728ac2dd17e0f69d88453b1ecfa28cb31f89a42019"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2affca28:4bd",
+        "ja_sha256": "586df9855b3c283ae02e3810faa227afd14ca1055cacb3fb882a54335dfe40c2",
+        "en_sha256": "dd0d5bfccf6d9138c386e207c69a00e8a4f1176ae744370a6f7b4134021ab6bb",
+        "zh_sha256": "2bebc447fc92323bc8d71542c16d70272d1dce40270a1c0de873057515407aef"
+      }
+    ]
+  },
+  {
+    "jp": "めいや",
+    "cn": "冥夜",
+    "en_variants": {
+      "Meiya": 62
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 62,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2affca28:9d0",
+        "ja_sha256": "0852350efe0068f3125a5dc46fecd06a0de9be109f10e44b18804a5bc18d127f",
+        "en_sha256": "388c10fbfc553b15f126f56222083b0c096d3f05342df616809cd330242f5a7f",
+        "zh_sha256": "f1ca8523be4ebeb35afe834ddfbb949afae1833ba811cdb896c058fb949b0bc6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2affca28:a4c",
+        "ja_sha256": "44aa033de20910cf6d9f93ddfeb8822efe541b03cc2a1470e00581f709e9c52e",
+        "en_sha256": "a8cdf0a539d3e2aaa3cf4f90ffd8b29e9315f59d0f050fb705154d0936870ca9",
+        "zh_sha256": "7f04b1813e5ed8c4b9c9f30ff8cc63e7e6da00dea225dd60c23da5dc213aae85"
+      }
+    ]
+  },
+  {
+    "jp": "鷹嘴・月詠",
+    "cn": "鹰嘴、月咏",
+    "en_variants": {
+      "Takahashi & Tsukuyomi": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2bf91a06:35af",
+        "ja_sha256": "33c7794e2ddf886ea1b6ee91e48b6c88b4dcd4b0be9bce278d3d94e467b6c21f",
+        "en_sha256": "356278f0bf7c9adf1aac7694aaa458bc06140172d236147c4ea9323f3e4719e2",
+        "zh_sha256": "c84e44c592872fdef6d670ba9284d1a7d68f1c416df6e011fe6f0d0a658b3401"
+      }
+    ]
+  },
+  {
+    "jp": "警備アナウンス",
+    "cn": "警备广播",
+    "en_variants": {
+      "Security Announcer": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2bf91a06:6273",
+        "ja_sha256": "445bbccd25cc253ca00ec1aba51bcf702ed2626404f1915c06d9f93917859302",
+        "en_sha256": "edb506e0f099654aabb93874a3ddcd8dc04015ec9b5d07a710b2b1eee1614a89",
+        "zh_sha256": "7f5357e1e2c6fb03fe1bf5dbbdcf797d77740392afb4c41b5fb84fd61813fe26"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2bf91a06:644d",
+        "ja_sha256": "c4d69acfb3b013b1608271ec3dacdec4efc86477fae927c36896df472843f093",
+        "en_sha256": "f3db0e570e787f950c4f9675885e6fee06aa4d80baf5de75d257d750f0fcc140",
+        "zh_sha256": "091f39a102290e4dd66c80e879845599b294c6f08c4e6af505dc94e6b7288535"
+      }
+    ]
+  },
+  {
+    "jp": "神官",
+    "cn": "神官",
+    "en_variants": {
+      "Priest": 10
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 10,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2bf91a06:a758",
+        "ja_sha256": "58d4955c16179d2e7221f703ab2e516fe07674520a3cc79e13cfa8628bf9d58e",
+        "en_sha256": "8174e8b3af7f81746cce96602c623c217c03b69d4964518ad2f41a1c392d67f3",
+        "zh_sha256": "bd5ade82aab4cc1602633768c273400ffedfe06b791958cabd80825366a6b0bf"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2bf91a06:acba",
+        "ja_sha256": "4c6f92b454c6017a67ea8788f2ff3d4443a9c4422917dbcc8700acff8ee03e7d",
+        "en_sha256": "aa918c2daac38c43ddea998dcd2e730e745cee61179f64fad67a087d7381254a",
+        "zh_sha256": "c9cab53c49f29457d0c88f2e20fea37996cac42f852d7c4e8d81f7f849814506"
+      }
+    ]
+  },
+  {
+    "jp": "衛兵たち",
+    "cn": "卫兵们",
+    "en_variants": {
+      "Palace Guards": 4
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 4,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2bf91a06:a8f9",
+        "ja_sha256": "a86ad92aee95d4e93f48ace947d5b8963e3cdfbd5fcceed039855c93c9275c1b",
+        "en_sha256": "710c5acfe29ae311734529cac6c20e57c986a7ef8e494b32674660604e40587b",
+        "zh_sha256": "4e59225deede5ecd135f5ac438c55cc8902a79727dddd13f9434fa0286325937"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:2bf91a06:ad35",
+        "ja_sha256": "9739b293168aff12e653efd9801bc344786e0994a80368df51e2fabd333bd8e0",
+        "en_sha256": "b66d8efe045d0b3bd6a421e5da4a62a6426200287db549024efefb725b3a7a79",
+        "zh_sha256": "ec7211997014abe8a01a03341feebafd208ce26888d5d84c08dcc46f7c168f6f"
+      }
+    ]
+  },
+  {
+    "jp": "武・慧",
+    "cn": "武、慧",
+    "en_variants": {
+      "Takeru & Kei": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:5399d",
+        "ja_sha256": "04330a50bf1d959216c606beeea6232aa498cfbb9c293f53d89811d4634c4b79",
+        "en_sha256": "76fcccaee42a9a75df0562a31cd9eaab41296bb2f0f0fef8ae7b79e8d50df6c0",
+        "zh_sha256": "2da15924b547dc58fc5fcc865126dbe09805d3d7faf6327c0a5140b3951bc1bf"
+      }
+    ]
+  },
+  {
+    "jp": "武・美琴",
+    "cn": "武、美琴",
+    "en_variants": {
+      "Takeru & Mikoto": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:731ed",
+        "ja_sha256": "03450fc6821c67d7eaa6b1f95823dcd20ea49d43ed4d3146d1e52c887c790097",
+        "en_sha256": "cdab8db31d30e1b66340b7f342080cb37abf81d589bb1edf676a74f29507b510",
+        "zh_sha256": "d77d833a901961aa0791ce81bdddc27e0144e13a9460624488f2cbf7acfd18b3"
+      }
+    ]
+  },
+  {
+    "jp": "基地司令",
+    "cn": "基地司令",
+    "en_variants": {
+      "Base CO": 26
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 26,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:73f6e",
+        "ja_sha256": "4022ddf5ef5e71cc1a060e363da542f80efcb642467719a77b8a99e905204a20",
+        "en_sha256": "cac06478e74e823bc09bb9fa1d3bbe92e18e115dec804770fec2b78ecaa55a27",
+        "zh_sha256": "8ee8d1f317e20eaf878ac85e58615c914187caca898f5577645c8593445a007e"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:30afcaea:740b4",
+        "ja_sha256": "0915ee2354116571df393db56aac47e23b11b8b98283efc1c28363972dc0c2bc",
+        "en_sha256": "f8f13e8fd59c6770b839552bd4aba60d1ccae1ba6e27e378a875c7cd67636deb",
+        "zh_sha256": "447e095d2edc5ed4a9d4c8aea9bd814d4e4053e866fdbef5c8a7fddb44256cbf"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜・壬姫・慧",
+    "cn": "冥夜、壬姬、慧",
+    "en_variants": {
+      "Meiya & Tama & Kei": 2
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 2,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:45a28",
+        "ja_sha256": "01132c1b146fdce62687b727c792a87f3c3223207177c972a8ec43b5055d2b01",
+        "en_sha256": "bf57e88792e28dc89e0cc2d994b0f8bba2ff3265c6387ad08b9055c4f65c2f28",
+        "zh_sha256": "5edc2936711a21d8d3172c181e6f09bcd315b6ea190de5f4633987830cb565a6"
+      },
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:4d13f",
+        "ja_sha256": "01132c1b146fdce62687b727c792a87f3c3223207177c972a8ec43b5055d2b01",
+        "en_sha256": "bf57e88792e28dc89e0cc2d994b0f8bba2ff3265c6387ad08b9055c4f65c2f28",
+        "zh_sha256": "5edc2936711a21d8d3172c181e6f09bcd315b6ea190de5f4633987830cb565a6"
+      }
+    ]
+  },
+  {
+    "jp": "千鶴・美琴・慧",
+    "cn": "千鹤、美琴、慧",
+    "en_variants": {
+      "Chizuru & Mikoto & Kei": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:47a39",
+        "ja_sha256": "0b633dca42874ab3b454016d1682708bf914ada489a3defa5b36a731d0740247",
+        "en_sha256": "ccee9a0b62b62c1bc7bec176cb52bba15d1d401c79c4d315bf7764f96a3c1de4",
+        "zh_sha256": "53e42592f8181bfb70254ebc799c4aa4e7ed4190c00a8607f38d9d1746dde801"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜・千鶴・壬姫",
+    "cn": "冥夜、千鹤、壬姬",
+    "en_variants": {
+      "Meiya & Chizuru & Miki": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:4981a",
+        "ja_sha256": "955c1ed1060df11db33a4d0f9cde7a6e41dd2f235a6436e4ecfb212f78e2e095",
+        "en_sha256": "0be844408ae79d7ca30356bc1c60e5feda912be44b67e18a42274b99e0367837",
+        "zh_sha256": "00523bdbf3cc80bc0908b9ea9bb82c087f69b40237316093863a40c3bbbb58a7"
+      }
+    ]
+  },
+  {
+    "jp": "冥夜・千鶴・慧",
+    "cn": "冥夜、千鹤、慧",
+    "en_variants": {
+      "Meiya & Chizuru & Kei": 1
+    },
+    "status": "observed_label_not_prose_rule",
+    "occurrences": 1,
+    "automatic_replacement_authorized": false,
+    "evidence": [
+      {
+        "source_id": "ml-cn:muvluv16_chn.rio.002:33f4ef96:4b49a",
+        "ja_sha256": "06adbd7ef0cd6b6c1a5bfc70527963bfe7bb02b7f754a92b7906a2611a77eec1",
+        "en_sha256": "3a86183f4fbd61eec4f0cb1112b069755eede0d2fc89583727bed3c456d640cf",
+        "zh_sha256": "40c69e93cd02db2cc63b3e13037a918b0753352f9b802c0fd61502c9aab9000b"
+      }
+    ]
+  }
+]
