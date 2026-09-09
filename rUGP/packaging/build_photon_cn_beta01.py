@@ -291,7 +291,7 @@ def artifact(path: Path, relative_to: Path) -> dict[str, Any]:
 
 def merge_range(ranges: list[list[int]], start: int, end: int) -> None:
     if ranges and start - ranges[-1][1] <= MERGE_GAP:
-        ranges[-1][1] = end
+        ranges[-1][1] = max(ranges[-1][1], end)
     else:
         ranges.append([start, end])
 
@@ -341,9 +341,16 @@ def copy_range(source: BinaryIO, destination: BinaryIO, length: int, digest: has
         remaining -= len(block)
 
 
-def make_patch(before: Path, after: Path, patch_path: Path, label: str) -> dict[str, Any]:
+def make_patch(before: Path, after: Path, patch_path: Path, label: str, *, additional_bases: tuple[Path, ...] = ()) -> dict[str, Any]:
     print(f"Scanning clean -> final delta: {label}", flush=True)
     ranges = scan_changed_ranges(before, after, label)
+    if additional_bases:
+        all_ranges = list(ranges)
+        for base in additional_bases:
+            all_ranges.extend(scan_changed_ranges(base, after, label + " upgrade"))
+        ranges = []
+        for start, end in sorted(all_ranges):
+            merge_range(ranges, start, end)
     patch_path.parent.mkdir(parents=True, exist_ok=True)
     segments: list[dict[str, Any]] = []
     patch_digest = hashlib.sha256()

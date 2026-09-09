@@ -1,5 +1,35 @@
 # Photon packaging
 
+## 2026.09.10 player installer candidate
+
+`build_photon_player.py` consumes a separately assembled and verified PF/PM
+snapshot, builds the union of changes needed by stock and known previous bases,
+and verifies the complete virtual result from every admitted base. It emits one
+game per directory. It does not select, translate, or approve input artwork.
+
+`windows/PhotonInstaller.cs` embeds one such directory as `payload.zip` in a
+Windows executable. The player selects the detected game directory and clicks
+Install. Windows PowerShell and .NET are used internally; Python and a separate
+verification step are not required on the player's computer.
+
+`windows/Install-PhotonCN.ps1` backs up the actual changed archive ranges, fixed
+files and prior asset directory, verifies the installed result, supports repeat
+installation and exact rollback, and recovers recorded interrupted writes.
+Both Steam language fields are parsed automatically; unknown game versions or
+corrupt payloads are rejected before game writes. Backups are retained.
+
+Run synthetic transaction checks on Windows with a new output directory:
+
+```powershell
+python -m rUGP.packaging.verify_player_installer --output "X:\verification\player-installer"
+```
+
+The final combination still requires game-level QA. Installer verification and
+historical scene acceptance are not a claim that every scene in a new build has
+been played. See the [Beta0.1 follow-up audit](../docs/postmortems/beta01-followup-20260910.md).
+
+## Historical Beta0.1 builder
+
 `build_photon_cn_beta01.py` produces separate PF and PM full-patch ZIPs from explicitly supplied, hash-locked roots. It never discovers an installed game through a developer-specific path.
 
 Required inputs are a sealed clean archive root, sealed runtime inputs, stock fixed-file root, and independently approved final PF/PM roots. The builder verifies exact archive/fixed-file identities, creates block deltas, binds every member in a manifest, rejects absolute paths, fixes ZIP timestamps, and refuses unexpected content.
