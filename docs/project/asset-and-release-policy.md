@@ -28,7 +28,13 @@ Absolute workstation paths are not provenance. Use logical game IDs, relative re
 
 Do not commit bulk official-language images merely to make comparison convenient. For a localized image, retain the smallest useful public set: a stable resource locator, input hash, output hash, dimensions/mode, translation copy, method, review status, and—when redistribution is justified—the final localized result or a release-bundle entry.
 
-The Photon V6 image evidence follows this model: Git stores the manifest and verification records, while the approved image bundle is a separate release asset. Some entries are represented by a native encoded record rather than a preview PNG; the manifest identifies the actual packaging authority.
+The Photon V6 image evidence stores manifests and verification records in Git,
+with a historical image bundle on Releases. That historical bundle is still
+`pending-remediation`: 19 PNGs match official source bytes and must be removed
+or reconstructed from legal local inputs before a future distributable bundle.
+Technical identity verification is not distribution approval. Some entries are
+represented by a native encoded record rather than a preview PNG; the manifest
+identifies the packaging authority. See the [Photon image evidence](../../rUGP/evidence/photon/images/README.md).
 
 ## Release gate
 

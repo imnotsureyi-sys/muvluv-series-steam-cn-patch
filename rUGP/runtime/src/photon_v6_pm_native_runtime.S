@@ -189,3 +189,57 @@ _photon_v6_pm_hook_crip008_decode_end:
 
 _photon_v6_pm_forward_crip008_decode:
     jmp dword ptr [_photon_v6_pm_real_crip008_decode_raw]
+
+    /* Exact ABI mirror of both PM CRip008 unscaled/direct decoder callsites
+       at RVAs 0x00179218 and 0x001792F1.  ECX carries the compressed payload
+       and EDX carries its byte count.  The caller owns five stack arguments:
+       flags-table, pixel-zero,
+       decoder-pitch, target-left/top and target-right/bottom. */
+    .globl _photon_v6_pm_hook_crip008_direct_decode_abi
+_photon_v6_pm_hook_crip008_direct_decode_abi:
+    lock inc dword ptr [_photon_v6_pm_hook_inflight]
+    .globl _photon_v6_pm_hook_crip008_direct_decode_counted
+_photon_v6_pm_hook_crip008_direct_decode_counted:
+    push ebp
+    mov ebp, esp
+    sub esp, 24
+    mov dword ptr [ebp - 4], ecx
+    mov dword ptr [ebp - 8], edx
+
+    push dword ptr [ebp + 24]
+    push dword ptr [ebp + 20]
+    push dword ptr [ebp + 16]
+    push dword ptr [ebp + 12]
+    push dword ptr [ebp + 8]
+    push dword ptr [ebp - 8]
+    push dword ptr [ebp - 4]
+    call _photon_v6_pm_crip008_direct_decode_prepare
+    add esp, 28
+    mov dword ptr [ebp - 20], eax
+
+    push dword ptr [ebp + 24]
+    push dword ptr [ebp + 20]
+    push dword ptr [ebp + 16]
+    push dword ptr [ebp + 12]
+    push dword ptr [ebp + 8]
+    mov edx, dword ptr [ebp - 8]
+    mov ecx, dword ptr [ebp - 4]
+    call _photon_v6_pm_forward_crip008_direct_decode
+    add esp, 20
+    mov dword ptr [ebp - 12], eax
+    mov dword ptr [ebp - 16], edx
+
+    push dword ptr [ebp - 20]
+    call _photon_v6_pm_crip008_decode_commit
+    add esp, 4
+    lock dec dword ptr [_photon_v6_pm_hook_inflight]
+    mov eax, dword ptr [ebp - 12]
+    mov edx, dword ptr [ebp - 16]
+    mov esp, ebp
+    pop ebp
+    ret
+    .globl _photon_v6_pm_hook_crip008_direct_decode_end
+_photon_v6_pm_hook_crip008_direct_decode_end:
+
+_photon_v6_pm_forward_crip008_direct_decode:
+    jmp dword ptr [_photon_v6_pm_real_crip008_direct_decode_raw]

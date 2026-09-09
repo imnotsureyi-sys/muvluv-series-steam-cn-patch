@@ -1,0 +1,239 @@
+{
+  "schema": "photon-static-review-state-matrix-v1",
+  "source_manifest_sha256": "8F7463C306A929B89040CE0AEB6D9EF0FE29551201B269187DE11300F117773B",
+  "scope": "Resource states, not a claim of in-game unlock conditions or current live installation acceptance.",
+  "characters": {
+    "冥夜": {
+      "green_unframed": [
+        1079
+      ],
+      "green_white_rim": [
+        1098
+      ],
+      "pink_yellow_rim": [
+        1120
+      ],
+      "green_disabled": []
+    },
+    "悠阳": {
+      "green_unframed": [
+        1080
+      ],
+      "green_white_rim": [
+        1099
+      ],
+      "pink_yellow_rim": [
+        1121
+      ],
+      "green_disabled": []
+    },
+    "千鹤": {
+      "green_unframed": [
+        1081
+      ],
+      "green_white_rim": [
+        1100
+      ],
+      "pink_yellow_rim": [
+        1122
+      ],
+      "green_disabled": []
+    },
+    "茜": {
+      "green_unframed": [
+        1082
+      ],
+      "green_white_rim": [
+        1101
+      ],
+      "pink_yellow_rim": [
+        1123
+      ],
+      "green_disabled": []
+    },
+    "美琴": {
+      "green_unframed": [
+        1083
+      ],
+      "green_white_rim": [
+        1102
+      ],
+      "pink_yellow_rim": [
+        1124
+      ],
+      "green_disabled": []
+    },
+    "王姬": {
+      "green_unframed": [
+        1084
+      ],
+      "green_white_rim": [
+        1103
+      ],
+      "pink_yellow_rim": [
+        1125
+      ],
+      "green_disabled": []
+    },
+    "麻里茉": {
+      "green_unframed": [
+        1085
+      ],
+      "green_white_rim": [
+        1104
+      ],
+      "pink_yellow_rim": [
+        1126
+      ],
+      "green_disabled": []
+    },
+    "皮亚蒂芙": {
+      "green_unframed": [
+        1086
+      ],
+      "green_white_rim": [
+        1105
+      ],
+      "pink_yellow_rim": [
+        1127
+      ],
+      "green_disabled": []
+    },
+    "伊尔玛": {
+      "green_unframed": [
+        1087
+      ],
+      "green_white_rim": [
+        1106
+      ],
+      "pink_yellow_rim": [
+        1128
+      ],
+      "green_disabled": []
+    },
+    "沃肯": {
+      "green_unframed": [
+        1088
+      ],
+      "green_white_rim": [
+        1107
+      ],
+      "pink_yellow_rim": [
+        1129
+      ],
+      "green_disabled": []
+    },
+    "武": {
+      "green_unframed": [
+        1089
+      ],
+      "green_white_rim": [
+        1108
+      ],
+      "pink_yellow_rim": [
+        1130
+      ],
+      "green_disabled": []
+    },
+    "彩峰": {
+      "green_unframed": [
+        1090
+      ],
+      "green_white_rim": [
+        1109
+      ],
+      "pink_yellow_rim": [
+        1131
+      ],
+      "green_disabled": [
+        1110
+      ]
+    },
+    "柏木": {
+      "green_unframed": [
+        1091
+      ],
+      "green_white_rim": [
+        1112
+      ],
+      "pink_yellow_rim": [
+        1132
+      ],
+      "green_disabled": [
+        1111
+      ]
+    },
+    "纯夏": {
+      "green_unframed": [
+        1092
+      ],
+      "green_white_rim": [
+        1113
+      ],
+      "pink_yellow_rim": [
+        1133
+      ],
+      "green_disabled": [
+        1114
+      ]
+    },
+    "霞": {
+      "green_unframed": [
+        1093
+      ],
+      "green_white_rim": [
+        1115
+      ],
+      "pink_yellow_rim": [
+        1134
+      ],
+      "green_disabled": [
+        1116
+      ]
+    },
+    "遥": {
+      "green_unframed": [
+        1094
+      ],
+      "green_white_rim": [
+        1117
+      ],
+      "pink_yellow_rim": [
+        1135
+      ],
+      "green_disabled": []
+    },
+    "水月": {
+      "green_unframed": [
+        1095
+      ],
+      "green_white_rim": [
+        1118
+      ],
+      "pink_yellow_rim": [
+        1136
+      ],
+      "green_disabled": []
+    },
+    "筑地": {
+      "green_unframed": [
+        1096
+      ],
+      "green_white_rim": [
+        1119
+      ],
+      "pink_yellow_rim": [
+        1137
+      ],
+      "green_disabled": []
+    }
+  },
+  "counts": {
+    "characters": 18,
+    "named_states": 58,
+    "unframed": 18,
+    "white_rim": 18,
+    "yellow_rim": 18,
+    "disabled": 4
+  }
+}
