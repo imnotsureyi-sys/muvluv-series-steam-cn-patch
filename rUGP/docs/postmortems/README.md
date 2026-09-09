@@ -6,6 +6,7 @@ These notes preserve the experiments behind the current Photon Flowers / Photon 
 
 | Case | Question answered | Reproducible evidence | Remaining boundary |
 | --- | --- | --- | --- |
+| [Offline hook audit](offline-hook-audit-20260909.md) | What can be completed before another game session? | 188 further binding replays, actual EXE preconditions, synthetic assembly forwarding, trace reconciliation and both diagnostic builds | Live owner graphs, actual caller extents and untriggered routes remain separate |
 | [49-binding CRip008 replay](crip008-batch-replay-20260909.md) | How can the added bindings be checked without viewing every image? | Real archive/installed-sidecar replay, 2,352 C transaction cases and per-binding results | 40 artificial padded extents remain unsupported; retail arguments, ABI and initialization were not executed |
 | [PM album selector](pm-album-selector-20260909.md) | Why did Extra → Album terminate inside the patch? | Local crash-dump field shape, old/new synthetic selector replay, repaired build and user retest | Album-entry confirmation does not prove every image route |
 | [PF festival presentation](pf-festival-presentation-20260909.md) | Why was the thumbnail translated while the animation retained Japanese signs? | Live extent/rectangle trace, exact archive/sidecar transaction replay and user retest | The observed partial rectangle is supported; other partial formats remain unproven |

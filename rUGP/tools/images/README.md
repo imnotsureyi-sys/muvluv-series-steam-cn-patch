@@ -54,6 +54,42 @@ Runtime initialization, assembly wrappers, original decoders and actual caller
 arguments are outside this fixture. See the [49-binding result and remaining
 checks](../../docs/postmortems/crip008-batch-replay-20260909.md).
 
+### Remaining offline checks and later capture preparation
+
+```powershell
+python -m rUGP.tools.images.replay_cr6ti_routes --manifest "X:\private\manifest.json" --pf-root "X:\games\PF" --pm-root "X:\games\PM" --zig "X:\zig\zig.exe" --output "X:\checks\new-cr6ti-replay"
+python -m rUGP.tools.images.verify_native_sites --pf-exe "X:\games\PF\Muv-Luv_PF.exe" --pm-exe "X:\games\PM\Muv-Luv_PM.exe" --zig "X:\zig\zig.exe" --output "X:\checks\new-native-sites"
+python -m rUGP.tools.images.prepare_native_diagnostics --zig "X:\zig\zig.exe" --output "X:\checks\new-diagnostics"
+python -m rUGP.tools.images.reconcile_native_trace --manifest "X:\private\manifest.json" --trace "X:\capture\session.ndjson" --game PF --capture-build-sha256 <captured-DLL-SHA256> --output "X:\checks\new-trace-report"
+```
+
+These commands never install DLLs or launch games. Cr6Ti replay authenticates
+payloads and installed sidecars, tests both C decoder entry families, active-scope
+and decoder-member recovery, copy and blend modes, stride directions and row
+padding. Owner objects and original decoder writes are synthetic. Five standard
+records and four inline parents lack predeclared whole-record hashes; payload
+SHA-256/FNV and parsed geometry remain required. Newly measured record hashes
+are labelled accordingly. Keep output payloads and binaries local and ignored.
+
+The site fixture maps EXE bytes as non-executable data and invokes actual native
+and selector preconditions with one-byte negative controls. Four assembly decoder
+wrappers run with a synthetic decoder and disabled write gate, checking registers,
+return values, stack arguments and in-flight balance. This does not execute the
+original decoder or test a live selector owner graph.
+
+Diagnostic preparation builds each game twice using existing instrumentation;
+output DLLs are diagnostic-only and remain local. The trace stops at 8,192 events
+per process. Before a future capture, select the game/session, record its DLL
+identity, and preserve/restore the normal installed file. A capped or untriggered
+capture cannot establish full coverage. Only prepare failures and commit outcomes
+are logged, so successful prepare is inferred from a verified commit.
+
+Reconciliation requires one identified capture, matches exact identities (plus
+labelled CRip008 zero-padding candidates), and credits a commit only with
+successful write/readback fields. Identical repeated events are not double-counted;
+contradictory sessions are rejected. Unseen, ambiguous and failed bindings remain
+separate. See the [completed offline audit](../../docs/postmortems/offline-hook-audit-20260909.md).
+
 ### Other tools
 
 - [`decode_record.py`](decode_record.py) is the read-only first-step tool: combine an exact ICI-catalogued volume/offset/extent with the matching supported codec and create a review PNG plus portable JSON evidence.

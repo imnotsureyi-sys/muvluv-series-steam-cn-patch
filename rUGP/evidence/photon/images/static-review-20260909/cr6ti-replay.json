@@ -1,0 +1,6240 @@
+{
+  "schema": "photon-cr6ti-route-replay-v1",
+  "source_manifest_sha256": "3D412E4C469105959C2973BC6965E3AD991E9402BFD3D6D42B2A924A06EE9E3E",
+  "runtime_sources": {
+    "src/photon_combined_proxy.c": "D3ACD4ACF9B63762F89E09B381559D15DCB22C3DC077AB648FDC0DE03EA417F9",
+    "src/photon_font_policy.c": "18444B3B46DCDDA665D3AF5D851382E0A53D7084713CE88E7F13CAA43893890F",
+    "src/photon_optional_runtime_bridge.c": "21913C6AB3F68BEC7BBC48E5ACDF1D88EFE1681839275EBF3C43254938BC7CB6",
+    "src/photon_pf_decoder_surface_view.c": "E0ECDBD5A95844EFF8D9DC63092558634FCC277152ECD12B6EEC4382A0C0F006",
+    "src/photon_speaker_policy.c": "77952541217F85ABD50006DADEFA56C02E8635EC3112C725183F2B08C17E02F2",
+    "src/photon_v6_cpu_surface_rgba.c": "5EBC5D8165DE6B153A292F997285EF66687D200E387D87635CD6CF127DDF7DD1",
+    "src/photon_v6_exact_overlay_core.c": "E8BA19109A96369F67AC3210B8E4A53FF8E9794C707E65297677BAE1B86ACC1D",
+    "src/photon_v6_exact_rgba_sidecar_loader.c": "27589F45FCCE1C11FB9BDFD1A2F81455F2A3C3C3D7C184C761E9C524B3AA05E5",
+    "src/photon_v6_internal_route_gate.c": "F098047039CE2383B0CCD1E264927B6DA8F01E665255E3CE9ABBF3C8D4DE1F88",
+    "src/photon_v6_pf_native_runtime.c": "14F472B6F0366BDFE4396B639F402DF3203CD4E0A889AB6EA0931E3141A354EE",
+    "src/photon_v6_pf_native_runtime.S": "4E4CDD3BA711EEDFA71D9BF771A9B158099098509B917480AA346B7D72CF9302",
+    "src/photon_v6_pf_selector_adapter.c": "F5095BB6C7023A1884B0DAA0E0D02A4147610CD2E663677DA91C1BD8F838792D",
+    "src/photon_v6_pm_native_runtime.c": "65BF720B2625E07727B0F46A208F669F4E6881978F5E308C6C631922649A1E45",
+    "src/photon_v6_pm_native_runtime.S": "86A7BE44ED27F221DCFA8DF8A0EBB4937370B1D17C1973952D1DACF0810CE636",
+    "src/photon_v6_pm_selector_adapter.c": "11AA015BDA0BF575981AD7DD90E05C0A7B20BB24058BE0C84E353E88D001B7AF",
+    "src/photon_v6_runtime_production.c": "B6D6A1AF3C255C2B1A1D00D08DA69E6FFB387EB4067FC8121F08DCF160E6C3A0",
+    "src/photon_v6_special57_sidecar_loader.c": "C2B364B89BC26BC329203C2545F7CB9FE3E9D755BA1B5FC1403CF174A4A524D5",
+    "src/photon_v6_surface_transaction.c": "3E100FDA2C25C35A44B59E0C2E6A1FA9529AB10FCEC47C74B4DE8126C189F958",
+    "include/Ages3ResT.def": "0E9741A0441C71C4644DBE26259F5A6FD98BEC8021F3D5AB96B06B650917A2DE",
+    "include/photon_font_policy.h": "26CAEDAC33188107FEAEBE30D67F3D38275A8C2A9BA631BA6D0DE20087018332",
+    "include/photon_optional_runtime_bridge.h": "561817672BD7986D2E31C46A0559BF68E3B7AC1E79F164FDD4B871D19B8E6245",
+    "include/photon_pf_decoder_surface_view.h": "E0E7DBAA81DA333D94030644CC9D8193F93A2D40BA6D05B2D96D5ABF3BFD9CC9",
+    "include/photon_pm_ruo_base_fix.h": "205AF3908AAD613E17E9ECD1571D7EAD4F12827FDA2DF8279D59BB381E4FDEAF",
+    "include/photon_speaker_aliases.h": "2DE64793BF379D35A6E55F559E083E20D6FFCFAA5E6A7177093AA21E5EF756B7",
+    "include/photon_speaker_policy.h": "C868543B7116C16ECCF30199519290809F33A9063547DCB0722CAE78A9D7EF42",
+    "include/photon_v6_cpu_surface_rgba.h": "B4F25D2AD6ECD5F684BC89CA14348AAE9DE9241FB9DE7F00E1F25B36D8EA15EA",
+    "include/photon_v6_exact_overlay_core.h": "273A0AE00BC3900F6FAEC38DFCE13F6E67815F7F7ADDE53D508E5A3419484BDA",
+    "include/photon_v6_exact_rgba_sidecar_loader.h": "7116677E012E8956A776B1DF1CF6C1A3CF2EEECABA913B90AA26AEDBFD3FE668",
+    "include/photon_v6_internal_route_gate.h": "9806092181104E899AFDF83AB5E94987FDD2D43A39F15F65AB11A84AD4FF0723",
+    "include/photon_v6_pf_native_runtime.h": "C4B8EBF11DA9D2D365357E51603434809638EC3B70D09DD44EDCA36EAABBA61A",
+    "include/photon_v6_pf_selector_adapter.h": "9CB79035B83E2BBD4054FE7B479C6DE64AC95450FDF4A9AACAB6C0CAA8CDD924",
+    "include/photon_v6_pm_native_runtime.h": "82F3BA7AD35D3B56EE60ABCFB82E8D57E4CFCD86E9867DFD3DBAE3CFC8DA4F5E",
+    "include/photon_v6_runtime_api.h": "1A62FCF976488EA2452713240D82E663A67648A478B05A9640F040B0AEADD7BD",
+    "include/photon_v6_special57_sidecar_loader.h": "C0F883D714EB076EE8D61063CF99B018C1518A5E0C19A8C16A134C193A02B6F3",
+    "include/photon_v6_surface_transaction.h": "B85CF1773CC8109B7F10D80A32E6CB0DE8A21D4FBAAC8FF788E17820EA398128",
+    "generated/photon_combined_pf.generated.h": "9E6BCD1603FA42AADDD52A76C7485B8EBF2C4BB206D24E580735707C3D6C33E9",
+    "generated/photon_combined_pm.generated.h": "1D60AFC1DC1580324EDE35BB8344808145EB7D2B36381AC904AF22A1EA25BF15",
+    "generated/photon_v6_pf_exact_rgba_table.generated.h": "6A4199E2E4F86FB720899F0FBBDA07B84FF3E73E859981DE00944157A920484A",
+    "generated/photon_v6_pm_exact_rgba_table.generated.h": "A398BD0A2EDC6EFA1BD3E5696115E8349F42DBF5C6B8D4D7C97A9A1E2A40DF1E",
+    "generated/photon_v6_pm_special40_table.generated.h": "096BF1E01EBC341A2DC227A4B9AFA774856E19AAF85E5F57F7B453AE5B6ADAFD",
+    "generated/photon_v6_special57_table.generated.h": "525A8DC1528DE1555E4B1FC6CE31D1769C3B7C2513D70D2615D11BE3F4A95197",
+    "generated/provenance.json": "AEBF839CAAE1B4E9CDC3FFBC9420D0C2941A9EE69E666927BCA0B1F03D509030",
+    "generated/README.md": "BADDB116AEEAD9CAD22DC6B90ADBA22D067B336BD9BE9DD0C2FDB6713F54314E"
+  },
+  "installed_dll_sha256": {
+    "PF": "3FB861871A69183BD22D256D3FFB3CDD732294E7D103090CD3BDB46A365FED97",
+    "PM": "2DF51AD1D19C7485EDEB75729CAF626B49A55FD7C92FBA07059D97C7D959C408"
+  },
+  "selected_bindings": 188,
+  "case_count": 6016,
+  "required_failures": 0,
+  "compiler_sha256": "086CE9D47BA42F33A514E1A6E04EB1D4A8FA1D75E0868E0213CAAD447C91E864",
+  "fixture_sha256": "7F2E9CE8834D996C52AE80BAB6194979D2EE60254641A9BCE3C13F77F9899628",
+  "game_started": false,
+  "game_files_modified": false,
+  "runtime_initialization_exercised": false,
+  "assembly_wrapper_executed": false,
+  "proprietary_decoder_executed": false,
+  "owner_object_synthetic": true,
+  "decoder_writes_simulated": true,
+  "full_report_sha256": "B1B3A7AD6799AC9740C634028F00357602808F2A0C5E80797DAD8C42325CB5DE",
+  "rows": [
+    {
+      "game": "PF",
+      "group_id": 1660,
+      "refs": [
+        "pf:rio000:0x0052ef48"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 904,
+        "draw_width": 1280,
+        "draw_height": 904,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 339070,
+        "payload_sha256": "AD299D71107DDE47ECF01FDA1FBB1952B0D34AB8628E4CCC99AE43045137E210",
+        "payload_fnv1a64": "FFCD85FE53750AAB"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 904
+      },
+      "archive": {
+        "record_sha256": "A7DF7D4A614A17ADC0948119A4835F41E2742E22EB1D1B82B115F13E8FAEDA07",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "6B47BFFD7BDCA391B1B10BEC28EADE15686A4CCD0A026EA9132EEEE796DDB66A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1660,
+      "refs": [
+        "pm:rio000:0x0cddceb8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 904,
+        "draw_width": 1280,
+        "draw_height": 904,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 339070,
+        "payload_sha256": "AD299D71107DDE47ECF01FDA1FBB1952B0D34AB8628E4CCC99AE43045137E210",
+        "payload_fnv1a64": "FFCD85FE53750AAB"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 904
+      },
+      "archive": {
+        "record_sha256": "A7DF7D4A614A17ADC0948119A4835F41E2742E22EB1D1B82B115F13E8FAEDA07",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "6B47BFFD7BDCA391B1B10BEC28EADE15686A4CCD0A026EA9132EEEE796DDB66A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1661,
+      "refs": [
+        "pf:rio000:0x00581c00"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 504606,
+        "payload_sha256": "4BA2BF54C2D04403D1A6B41CADD3158D8E39F2D8CB75B6D19F28E71DAD613CC7",
+        "payload_fnv1a64": "0C904AF560F3B8AD"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "C1C239EFB3F062A8ED3D52D47B2380FAEAB02D574585F622B7ADC70E29338B9F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "49BE525E770CDB4382EB2E902E8606629E2BAFA9F8C4E84E1E21FB380B3D41DE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1661,
+      "refs": [
+        "pm:rio000:0x0ce2fb70"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 504606,
+        "payload_sha256": "4BA2BF54C2D04403D1A6B41CADD3158D8E39F2D8CB75B6D19F28E71DAD613CC7",
+        "payload_fnv1a64": "0C904AF560F3B8AD"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "C1C239EFB3F062A8ED3D52D47B2380FAEAB02D574585F622B7ADC70E29338B9F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "49BE525E770CDB4382EB2E902E8606629E2BAFA9F8C4E84E1E21FB380B3D41DE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1662,
+      "refs": [
+        "pf:rio000:0x005fcf4c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 634224,
+        "payload_sha256": "2D0B73C6D616CA437F8F9FA2505C1AD77D80198B3719DBE98DE9E926FECA15B5",
+        "payload_fnv1a64": "E62D9D8C028056B5"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "CA1AD208CA1DB02F6C8865583BF7CF9B966F6F74B9FA9AA1A192AB04C46184DB",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D8A6FFF2E1B4CFB1211DACD328FE72F34453394BBA2C373E065E5283088E58DD",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1662,
+      "refs": [
+        "pm:rio000:0x0ceaaebc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 634224,
+        "payload_sha256": "2D0B73C6D616CA437F8F9FA2505C1AD77D80198B3719DBE98DE9E926FECA15B5",
+        "payload_fnv1a64": "E62D9D8C028056B5"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "CA1AD208CA1DB02F6C8865583BF7CF9B966F6F74B9FA9AA1A192AB04C46184DB",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D8A6FFF2E1B4CFB1211DACD328FE72F34453394BBA2C373E065E5283088E58DD",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1663,
+      "refs": [
+        "pf:rio000:0x00697cec"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 22084,
+        "payload_sha256": "E6D9032F4DE69D5B57142FC734910456D766218634AF5B1E28DA1933D4AD8B12",
+        "payload_fnv1a64": "C79469170350F6B5"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "853B45A02B01C1AEF4E745A4F24A464B4EE8E5D04D9F26C81366ABAFEC0DC856",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "93CFB8A319B80A279B94683DB0EB02689FD1E0EFC3075F059D640ABD23A25779",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1663,
+      "refs": [
+        "pm:rio000:0x0cf45c5c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 22084,
+        "payload_sha256": "E6D9032F4DE69D5B57142FC734910456D766218634AF5B1E28DA1933D4AD8B12",
+        "payload_fnv1a64": "C79469170350F6B5"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "853B45A02B01C1AEF4E745A4F24A464B4EE8E5D04D9F26C81366ABAFEC0DC856",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "93CFB8A319B80A279B94683DB0EB02689FD1E0EFC3075F059D640ABD23A25779",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1664,
+      "refs": [
+        "pf:rio000:0x0069d364"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 38142,
+        "payload_sha256": "91EA2B4C41C995C2D060A3F8F85613C35AA34468BFC607A9E742C9BA060F65BC",
+        "payload_fnv1a64": "9DC824EF8F2DFCD6"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "B09A9C1EE252EF20BD631CC45A9B061F78D8462AFEE270F92649ACACD94814D0",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "4A197665F27DBF0301378090684E013A84BD5E4F912BE3A4A6F3E444891771B1",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1664,
+      "refs": [
+        "pm:rio000:0x0cf4b2d4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 38142,
+        "payload_sha256": "91EA2B4C41C995C2D060A3F8F85613C35AA34468BFC607A9E742C9BA060F65BC",
+        "payload_fnv1a64": "9DC824EF8F2DFCD6"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "B09A9C1EE252EF20BD631CC45A9B061F78D8462AFEE270F92649ACACD94814D0",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "4A197665F27DBF0301378090684E013A84BD5E4F912BE3A4A6F3E444891771B1",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1665,
+      "refs": [
+        "pf:rio000:0x006a6890"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 40700,
+        "payload_sha256": "07B7792B44EA9FC9780E43EDAB66C946E86BC6C0E5F0FE326CD1791088087EB5",
+        "payload_fnv1a64": "05296E6EF8FCAE7E"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "763ABCED064DE21A0E71ECB3F44A6E5A0BF6A4BD47B7259102394CAD5CC8665B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D22C919E1356D90E22D1B9691527749DAFF827AF2BCE14509796A2066AC0BE9B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1665,
+      "refs": [
+        "pm:rio000:0x0cf54800"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 40700,
+        "payload_sha256": "07B7792B44EA9FC9780E43EDAB66C946E86BC6C0E5F0FE326CD1791088087EB5",
+        "payload_fnv1a64": "05296E6EF8FCAE7E"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "763ABCED064DE21A0E71ECB3F44A6E5A0BF6A4BD47B7259102394CAD5CC8665B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D22C919E1356D90E22D1B9691527749DAFF827AF2BCE14509796A2066AC0BE9B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1666,
+      "refs": [
+        "pf:rio000:0x006b07bc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 570,
+        "height": 130,
+        "draw_width": 570,
+        "draw_height": 130,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 33598,
+        "payload_sha256": "BDA41DA76E6B010CF0A059EF5BA60D7E6BE6E27E3D7524239C76EACD0905433C",
+        "payload_fnv1a64": "AAA3E8911F8EF7AE"
+      },
+      "geometry": {
+        "width": 570,
+        "height": 130
+      },
+      "archive": {
+        "record_sha256": "A68650D10F911B5094B0EA8F80874A22D17C63649F55F8A1FEA9BB83F40A2898",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8EDFA9DC4377BFA30167243662CB429E0D02BCDCFADB3475D5467B4778A6B432",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1666,
+      "refs": [
+        "pm:rio000:0x0cf5e72c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 570,
+        "height": 130,
+        "draw_width": 570,
+        "draw_height": 130,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 33598,
+        "payload_sha256": "BDA41DA76E6B010CF0A059EF5BA60D7E6BE6E27E3D7524239C76EACD0905433C",
+        "payload_fnv1a64": "AAA3E8911F8EF7AE"
+      },
+      "geometry": {
+        "width": 570,
+        "height": 130
+      },
+      "archive": {
+        "record_sha256": "A68650D10F911B5094B0EA8F80874A22D17C63649F55F8A1FEA9BB83F40A2898",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8EDFA9DC4377BFA30167243662CB429E0D02BCDCFADB3475D5467B4778A6B432",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1667,
+      "refs": [
+        "pf:rio000:0x006b8b2c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 360,
+        "height": 540,
+        "draw_width": 360,
+        "draw_height": 540,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 104090,
+        "payload_sha256": "B94A80A8E854EAB40E7D9C7A0393107B1FDB55C6C77CE24186661BB220AC30F9",
+        "payload_fnv1a64": "F4EF3EAC01609EA7"
+      },
+      "geometry": {
+        "width": 360,
+        "height": 540
+      },
+      "archive": {
+        "record_sha256": "0532F87670A8ADFE6DA1E8F41E037D20308BE1359F49ADF30FA7E99AA33A9122",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "5C2365B39E609C60D52B815C2EE34B85F8F04E8A1084E1238DD04702BDE23404",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1667,
+      "refs": [
+        "pm:rio000:0x0cf66a9c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 360,
+        "height": 540,
+        "draw_width": 360,
+        "draw_height": 540,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 104090,
+        "payload_sha256": "B94A80A8E854EAB40E7D9C7A0393107B1FDB55C6C77CE24186661BB220AC30F9",
+        "payload_fnv1a64": "F4EF3EAC01609EA7"
+      },
+      "geometry": {
+        "width": 360,
+        "height": 540
+      },
+      "archive": {
+        "record_sha256": "0532F87670A8ADFE6DA1E8F41E037D20308BE1359F49ADF30FA7E99AA33A9122",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "5C2365B39E609C60D52B815C2EE34B85F8F04E8A1084E1238DD04702BDE23404",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1669,
+      "refs": [
+        "pf:rio000:0x0074aef0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 768,
+        "draw_width": 1024,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 285300,
+        "payload_sha256": "D28A43378A2A659FBACD5CDE41DB47D39AC5E9A0B3AFD44672534A2156EC44C7",
+        "payload_fnv1a64": "7F5A4A50DC1EB755"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "C879C2FD8877B727FEF7877FBAD46F435BB5CE6C76BDB93B04B924238C5F6838",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "CB6A701D44ED1D01C285BE18013DF6609762BC83007A1A1E41DE087F0A5B04D1",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1669,
+      "refs": [
+        "pm:rio000:0x01403068"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 768,
+        "draw_width": 1024,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 285300,
+        "payload_sha256": "D28A43378A2A659FBACD5CDE41DB47D39AC5E9A0B3AFD44672534A2156EC44C7",
+        "payload_fnv1a64": "7F5A4A50DC1EB755"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "C879C2FD8877B727FEF7877FBAD46F435BB5CE6C76BDB93B04B924238C5F6838",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "CB6A701D44ED1D01C285BE18013DF6609762BC83007A1A1E41DE087F0A5B04D1",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1670,
+      "refs": [
+        "pf:rio000:0x00790998"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 768,
+        "draw_width": 1024,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 380668,
+        "payload_sha256": "8F46556505D129BEABCB4B8F63CA45542833E34503F363678D58912FC0F23602",
+        "payload_fnv1a64": "975990CE3F6CABEF"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "7E5AB06251FEC7C6733A2FE28B2C71AD3931E3F28FBCBDD7EE606AEC811D1C54",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F76209417F5C86D5973C775D6B46ACBD9678C410F90C2C4A1F6CF15B0058000A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1670,
+      "refs": [
+        "pm:rio000:0x01448b10"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 768,
+        "draw_width": 1024,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 380668,
+        "payload_sha256": "8F46556505D129BEABCB4B8F63CA45542833E34503F363678D58912FC0F23602",
+        "payload_fnv1a64": "975990CE3F6CABEF"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "7E5AB06251FEC7C6733A2FE28B2C71AD3931E3F28FBCBDD7EE606AEC811D1C54",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F76209417F5C86D5973C775D6B46ACBD9678C410F90C2C4A1F6CF15B0058000A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1671,
+      "refs": [
+        "pf:rio000:0x007ed8c4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1088,
+        "height": 768,
+        "draw_width": 1088,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 275468,
+        "payload_sha256": "3E53480FD0106152C1C5CBE90B908729C623FD1835BBE247E6F09FB05A60C426",
+        "payload_fnv1a64": "09E0C74FE9BA6C89"
+      },
+      "geometry": {
+        "width": 1088,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "B3308A6DD68481AF21211C3B8A6156FD7094272047B2A301E2B3A13A699540C8",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "C6E35A9B6ACB17725EED26D325050F264F4C50DD363EFBCBBA4A5AD6957BBB7A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1671,
+      "refs": [
+        "pm:rio000:0x014a5a3c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1088,
+        "height": 768,
+        "draw_width": 1088,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 275468,
+        "payload_sha256": "3E53480FD0106152C1C5CBE90B908729C623FD1835BBE247E6F09FB05A60C426",
+        "payload_fnv1a64": "09E0C74FE9BA6C89"
+      },
+      "geometry": {
+        "width": 1088,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "B3308A6DD68481AF21211C3B8A6156FD7094272047B2A301E2B3A13A699540C8",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "C6E35A9B6ACB17725EED26D325050F264F4C50DD363EFBCBBA4A5AD6957BBB7A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1672,
+      "refs": [
+        "pf:rio000:0x00afcca8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1200,
+        "height": 700,
+        "draw_width": 1200,
+        "draw_height": 700,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 338268,
+        "payload_sha256": "C303D4487FFFE9744E26205CED01E2D5B31FAC4BA8A891E806DA84B5B44D05BF",
+        "payload_fnv1a64": "155E5B47A8F15E53"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 700
+      },
+      "archive": {
+        "record_sha256": "F3B59603998D1506B9C00B744EB865520BFED669EFC3111C350A787FC0B96CA7",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "CD104BC9FF8E6F8394F3C3669056A9824105CF7382B1C6FDD7D14FCE9028DD5D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1672,
+      "refs": [
+        "pm:rio000:0x0c68bc34"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1200,
+        "height": 700,
+        "draw_width": 1200,
+        "draw_height": 700,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 338268,
+        "payload_sha256": "C303D4487FFFE9744E26205CED01E2D5B31FAC4BA8A891E806DA84B5B44D05BF",
+        "payload_fnv1a64": "155E5B47A8F15E53"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 700
+      },
+      "archive": {
+        "record_sha256": "F3B59603998D1506B9C00B744EB865520BFED669EFC3111C350A787FC0B96CA7",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "CD104BC9FF8E6F8394F3C3669056A9824105CF7382B1C6FDD7D14FCE9028DD5D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1673,
+      "refs": [
+        "pf:rio000:0x00b4f63c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1200,
+        "height": 700,
+        "draw_width": 1200,
+        "draw_height": 700,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 338604,
+        "payload_sha256": "A09BE9C6FC39166A43A3B3B9106E7514D85F744C1C5B0D4DEF03D71F5048B316",
+        "payload_fnv1a64": "70E77FB8B27A73FC"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 700
+      },
+      "archive": {
+        "record_sha256": "B6D2F577F8841CE959F306A03F2C496B03BC82424325AE8E08B3441F5B6F6B55",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E4EDD038F4E22C05A18570C4869019C5BD1320A01D69BF019E97CC67F53C975B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1673,
+      "refs": [
+        "pm:rio000:0x0c6de5c8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1200,
+        "height": 700,
+        "draw_width": 1200,
+        "draw_height": 700,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 338604,
+        "payload_sha256": "A09BE9C6FC39166A43A3B3B9106E7514D85F744C1C5B0D4DEF03D71F5048B316",
+        "payload_fnv1a64": "70E77FB8B27A73FC"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 700
+      },
+      "archive": {
+        "record_sha256": "B6D2F577F8841CE959F306A03F2C496B03BC82424325AE8E08B3441F5B6F6B55",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E4EDD038F4E22C05A18570C4869019C5BD1320A01D69BF019E97CC67F53C975B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1674,
+      "refs": [
+        "pf:rio000:0x00ba2118"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1200,
+        "height": 700,
+        "draw_width": 1200,
+        "draw_height": 700,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 338044,
+        "payload_sha256": "7BB6277527018AC7DCBEF5B9F4298BB91132188B620909159BED5D267472BC56",
+        "payload_fnv1a64": "1253A060C2C6D1A2"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 700
+      },
+      "archive": {
+        "record_sha256": "2A525A65D7E1EF267061C55343BC7C28CA0273A95D54B8A56B12037EF57A4EE4",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F8A7027ADA40A1E1824CEDD3335D2E60326BEBAD00EB39608E7E4DE6ADFA31B3",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1674,
+      "refs": [
+        "pm:rio000:0x0c7310a4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1200,
+        "height": 700,
+        "draw_width": 1200,
+        "draw_height": 700,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 338044,
+        "payload_sha256": "7BB6277527018AC7DCBEF5B9F4298BB91132188B620909159BED5D267472BC56",
+        "payload_fnv1a64": "1253A060C2C6D1A2"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 700
+      },
+      "archive": {
+        "record_sha256": "2A525A65D7E1EF267061C55343BC7C28CA0273A95D54B8A56B12037EF57A4EE4",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F8A7027ADA40A1E1824CEDD3335D2E60326BEBAD00EB39608E7E4DE6ADFA31B3",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1675,
+      "refs": [
+        "pf:rio000:0x00bf7ef0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 99050,
+        "payload_sha256": "92C3600D941F715468F5CFB2E40B82500B299092E5079E6A0A2B5556CD8BBD76",
+        "payload_fnv1a64": "23297F71E57D72D1"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "F227B852FE10067C43D4E52B3AACA4BB5D74CA1622AD0471041F0070F7B3F345",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1DCDC0079160D191711DA0371673B008F96A116E9AE9BFDFB77B1C798DA77FBF",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1675,
+      "refs": [
+        "pm:rio000:0x0c786e7c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 99050,
+        "payload_sha256": "92C3600D941F715468F5CFB2E40B82500B299092E5079E6A0A2B5556CD8BBD76",
+        "payload_fnv1a64": "23297F71E57D72D1"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "F227B852FE10067C43D4E52B3AACA4BB5D74CA1622AD0471041F0070F7B3F345",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1DCDC0079160D191711DA0371673B008F96A116E9AE9BFDFB77B1C798DA77FBF",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1676,
+      "refs": [
+        "pf:rio000:0x00c10208"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 103430,
+        "payload_sha256": "12051E23530804E2E2FC230996832470B556FBC2C6D3BC058A9D1FE9C29C9105",
+        "payload_fnv1a64": "8C6D686A2D8B5AC5"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "CBC03CA6CA7A3D4813C3978E107E6ACF374DC428103422674C828BFEA9CA5C15",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1A6931C8A64BDDCA85C52980833D45770A68C1ACE84BE12BDF07BA9F0A3B3E0E",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1676,
+      "refs": [
+        "pm:rio000:0x0c79f194"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 103430,
+        "payload_sha256": "12051E23530804E2E2FC230996832470B556FBC2C6D3BC058A9D1FE9C29C9105",
+        "payload_fnv1a64": "8C6D686A2D8B5AC5"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "CBC03CA6CA7A3D4813C3978E107E6ACF374DC428103422674C828BFEA9CA5C15",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1A6931C8A64BDDCA85C52980833D45770A68C1ACE84BE12BDF07BA9F0A3B3E0E",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1677,
+      "refs": [
+        "pf:rio000:0x00c2963c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 98838,
+        "payload_sha256": "74D9E0EE83A176387F7ACB68CE69E84DCBEFE2696D2ED7825C7ED93959227698",
+        "payload_fnv1a64": "6EBB25ACC88D290D"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "C751C34DAF17406EBF2038966EBEDD19398E680D06CF816D2C74AF1CB8471E50",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D719796EF4E954322269AA287C2FE32868EBF2E4680E4D80BE4724E3E48C7882",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1677,
+      "refs": [
+        "pm:rio000:0x0c7b85c8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 98838,
+        "payload_sha256": "74D9E0EE83A176387F7ACB68CE69E84DCBEFE2696D2ED7825C7ED93959227698",
+        "payload_fnv1a64": "6EBB25ACC88D290D"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "C751C34DAF17406EBF2038966EBEDD19398E680D06CF816D2C74AF1CB8471E50",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D719796EF4E954322269AA287C2FE32868EBF2E4680E4D80BE4724E3E48C7882",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1678,
+      "refs": [
+        "pf:rio000:0x00c41880"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 96106,
+        "payload_sha256": "3E07DB5AEA1B8F8811878696D2CA5FBB0B46736DF5BB7351FC795F9E2356E3F4",
+        "payload_fnv1a64": "FDB4B96F24F36F05"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "0FE6E0F439A593E4B788D37A6F32C8F0261F9D6E3ED4DB1386C064B5D63F6038",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2C9B510277A31156FF7A167EB68D0ECC2BEFB6040CB8775C86D50251209470C9",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1678,
+      "refs": [
+        "pm:rio000:0x0c7d080c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 96106,
+        "payload_sha256": "3E07DB5AEA1B8F8811878696D2CA5FBB0B46736DF5BB7351FC795F9E2356E3F4",
+        "payload_fnv1a64": "FDB4B96F24F36F05"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "0FE6E0F439A593E4B788D37A6F32C8F0261F9D6E3ED4DB1386C064B5D63F6038",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2C9B510277A31156FF7A167EB68D0ECC2BEFB6040CB8775C86D50251209470C9",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1679,
+      "refs": [
+        "pf:rio000:0x00c59018"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 96744,
+        "payload_sha256": "7AA2C00A2A7CC5644701119D9DAD9EE034C3664B978C572E4A9EBB243525F88D",
+        "payload_fnv1a64": "9271FA598DF5C16C"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "5F1333E69A196B601C875A98A314876B6CAEDE8ECF024C28445E7AF118CAB96F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "34AA0281336D7DEF5D664B68267C1F600175DA2E167E6EFF5E4ED34580016AB8",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1679,
+      "refs": [
+        "pm:rio000:0x0c7e7fa4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 96744,
+        "payload_sha256": "7AA2C00A2A7CC5644701119D9DAD9EE034C3664B978C572E4A9EBB243525F88D",
+        "payload_fnv1a64": "9271FA598DF5C16C"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "5F1333E69A196B601C875A98A314876B6CAEDE8ECF024C28445E7AF118CAB96F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "34AA0281336D7DEF5D664B68267C1F600175DA2E167E6EFF5E4ED34580016AB8",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1680,
+      "refs": [
+        "pf:rio000:0x00c70a30"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 94916,
+        "payload_sha256": "63EDD00BF1EBC446B8E30A53C746EBD1B39058E9FDAE0BE427FED094FF6F434A",
+        "payload_fnv1a64": "DDDF188635346314"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "9ACD21C20F8BEBE32089DC4D89951E4DD63818FA116BFF9E9CCC34144630E356",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "FAE4727964DCBE5511B1CF3EAFA37A4F35C60D90BE8E31CEEA13198C9079D975",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1680,
+      "refs": [
+        "pm:rio000:0x0c7ff9bc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 94916,
+        "payload_sha256": "63EDD00BF1EBC446B8E30A53C746EBD1B39058E9FDAE0BE427FED094FF6F434A",
+        "payload_fnv1a64": "DDDF188635346314"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "9ACD21C20F8BEBE32089DC4D89951E4DD63818FA116BFF9E9CCC34144630E356",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "FAE4727964DCBE5511B1CF3EAFA37A4F35C60D90BE8E31CEEA13198C9079D975",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1681,
+      "refs": [
+        "pf:rio000:0x00c87d24"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 95084,
+        "payload_sha256": "2EE23E460E6731AEAE946D69350019971A3776DC818DFE73983CDD71B424922B",
+        "payload_fnv1a64": "49C7464D9B37A925"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "AA249DA258B2AF182F0DE26179D2F81487849F17D31C95B71A339E2E350E42CA",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "EC1E6A83620904C02E0948A8DE95C942758510FB83EC0A4CD8DE53D4A49DDA14",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1681,
+      "refs": [
+        "pm:rio000:0x0c816cb0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 95084,
+        "payload_sha256": "2EE23E460E6731AEAE946D69350019971A3776DC818DFE73983CDD71B424922B",
+        "payload_fnv1a64": "49C7464D9B37A925"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "AA249DA258B2AF182F0DE26179D2F81487849F17D31C95B71A339E2E350E42CA",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "EC1E6A83620904C02E0948A8DE95C942758510FB83EC0A4CD8DE53D4A49DDA14",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1682,
+      "refs": [
+        "pf:rio000:0x00c9f0c0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 97022,
+        "payload_sha256": "E7564F37786A84CA199CCC49844755AD390F5AA464B005A46D5B5E0BFE702248",
+        "payload_fnv1a64": "626969D53CC70E47"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "E8AE8B0567F816B140DB361D1C976DAA694E7F76B5C62F227AF1CA011C5D6043",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "3E1662B6434FBF4DC88835555194BF3CB8DE99D43D82A8374A1715B59F9855D5",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1682,
+      "refs": [
+        "pm:rio000:0x0c82e04c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 97022,
+        "payload_sha256": "E7564F37786A84CA199CCC49844755AD390F5AA464B005A46D5B5E0BFE702248",
+        "payload_fnv1a64": "626969D53CC70E47"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "E8AE8B0567F816B140DB361D1C976DAA694E7F76B5C62F227AF1CA011C5D6043",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "3E1662B6434FBF4DC88835555194BF3CB8DE99D43D82A8374A1715B59F9855D5",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1683,
+      "refs": [
+        "pf:rio000:0x00cb6bec"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 102210,
+        "payload_sha256": "18FC2770F7B0355CA3A49720634E135261FC6DA9F30FF22DACD86A1C5DE45549",
+        "payload_fnv1a64": "509CBBAE2D4BD498"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "135558F997E1DA3BE931A0AB307ECF2BFD8F2530AF75BCFA152DBB3E3ED683C2",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "EBF41AD18089A7AEC5E6E3958D86B3743A57D60BA54E8839CDFB19F54452276B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1683,
+      "refs": [
+        "pm:rio000:0x0c845b78"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 102210,
+        "payload_sha256": "18FC2770F7B0355CA3A49720634E135261FC6DA9F30FF22DACD86A1C5DE45549",
+        "payload_fnv1a64": "509CBBAE2D4BD498"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "135558F997E1DA3BE931A0AB307ECF2BFD8F2530AF75BCFA152DBB3E3ED683C2",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "EBF41AD18089A7AEC5E6E3958D86B3743A57D60BA54E8839CDFB19F54452276B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1684,
+      "refs": [
+        "pf:rio000:0x00ccfb5c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 97912,
+        "payload_sha256": "A6EDFA2B88C145062ECE1F1D77E2F705AC171F64DBFD65FA2C68FBBB8920ED12",
+        "payload_fnv1a64": "3F44FE5F6588C1C4"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "4FE1F495946D07F06D333F6CA9F0089901413F3AA6FA600E907ABD1D5743250B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F04C1E7F2AA16E6A9E6E5DAB4381BBB4EC5FB23EC0CAF1F08E482C47AD2CC292",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1684,
+      "refs": [
+        "pm:rio000:0x0c85eae8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 97912,
+        "payload_sha256": "A6EDFA2B88C145062ECE1F1D77E2F705AC171F64DBFD65FA2C68FBBB8920ED12",
+        "payload_fnv1a64": "3F44FE5F6588C1C4"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "4FE1F495946D07F06D333F6CA9F0089901413F3AA6FA600E907ABD1D5743250B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F04C1E7F2AA16E6A9E6E5DAB4381BBB4EC5FB23EC0CAF1F08E482C47AD2CC292",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1685,
+      "refs": [
+        "pf:rio000:0x00ce7a04"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 96542,
+        "payload_sha256": "779FC6EB45BF3CECF80C0E8512E418E1EEFBADB8AD9F0EA0A03F826C92D95827",
+        "payload_fnv1a64": "603CC5BD842E0BD7"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "9EB191FDA93D58F286F32EFB5EA19C5950D2EC136C9306C83B37435E2F6CB7B0",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "3450F9284D16B7F127166AB3BC93343016B1B379F64FE89380BFE45ED0097DC2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1685,
+      "refs": [
+        "pm:rio000:0x0c876990"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 96542,
+        "payload_sha256": "779FC6EB45BF3CECF80C0E8512E418E1EEFBADB8AD9F0EA0A03F826C92D95827",
+        "payload_fnv1a64": "603CC5BD842E0BD7"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "9EB191FDA93D58F286F32EFB5EA19C5950D2EC136C9306C83B37435E2F6CB7B0",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "3450F9284D16B7F127166AB3BC93343016B1B379F64FE89380BFE45ED0097DC2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1686,
+      "refs": [
+        "pf:rio000:0x00cff350"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 93448,
+        "payload_sha256": "D1E24049137F2080B1B3926C0F13B6AC436322ADCF5BC2E32F976D6A66F3D1C9",
+        "payload_fnv1a64": "4B861A187673207E"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "02D521C16F19EA3AC83D19928B239A3F2BB7535908A17C8E3DD59202C8957499",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "C0846A1FAD4AE3AC4343084BDCC7F1D837D338649F5C8268B2EBF643391C85FE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1686,
+      "refs": [
+        "pm:rio000:0x0c88e2dc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 93448,
+        "payload_sha256": "D1E24049137F2080B1B3926C0F13B6AC436322ADCF5BC2E32F976D6A66F3D1C9",
+        "payload_fnv1a64": "4B861A187673207E"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "02D521C16F19EA3AC83D19928B239A3F2BB7535908A17C8E3DD59202C8957499",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "C0846A1FAD4AE3AC4343084BDCC7F1D837D338649F5C8268B2EBF643391C85FE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1687,
+      "refs": [
+        "pf:rio000:0x00d16088"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 91952,
+        "payload_sha256": "196BB9AF6444E3EB339D634FDA5BDBF95A58FEF4B3D33A73A0008968EE8E1060",
+        "payload_fnv1a64": "77A3E4C48F0F1679"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "3CCB85A7195F82D98312190B8E423DB5AD2C57C89FAEC3A1E1A1F20914515375",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2F58CB915FAFDA796EE136CE3C603B021883A222D53F351511FAAFE6A8AB3E92",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1687,
+      "refs": [
+        "pm:rio000:0x0c8a5014"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 91952,
+        "payload_sha256": "196BB9AF6444E3EB339D634FDA5BDBF95A58FEF4B3D33A73A0008968EE8E1060",
+        "payload_fnv1a64": "77A3E4C48F0F1679"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "3CCB85A7195F82D98312190B8E423DB5AD2C57C89FAEC3A1E1A1F20914515375",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2F58CB915FAFDA796EE136CE3C603B021883A222D53F351511FAAFE6A8AB3E92",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1688,
+      "refs": [
+        "pf:rio000:0x00d2c7e8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 86276,
+        "payload_sha256": "FF041CBCABFD089E01587D6C7D2129F24ECDEECF284F35AFC69CE00B42843647",
+        "payload_fnv1a64": "CEF7B98B3C4FA6C7"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "9E7FC20068C3F29E750AD0A14D7229593471F69B3D2350A4ED19D7C85ACAD542",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "AE356BCBD3EFCB07C9D3A304686322CFF9B9F2E499E6F1A485613C2E3EEC576F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1688,
+      "refs": [
+        "pm:rio000:0x0c8bb774"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 86276,
+        "payload_sha256": "FF041CBCABFD089E01587D6C7D2129F24ECDEECF284F35AFC69CE00B42843647",
+        "payload_fnv1a64": "CEF7B98B3C4FA6C7"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "9E7FC20068C3F29E750AD0A14D7229593471F69B3D2350A4ED19D7C85ACAD542",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "AE356BCBD3EFCB07C9D3A304686322CFF9B9F2E499E6F1A485613C2E3EEC576F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1689,
+      "refs": [
+        "pf:rio000:0x00d4191c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 82982,
+        "payload_sha256": "931CA83AAD52D16FAD67DD066BBD4592284D0D14D52D4AE4096A5C0B557C9E24",
+        "payload_fnv1a64": "AAB0936D1C2C2FC8"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "4963D2AD94486BAC0DFAD45555532669CBE791C838A0E02424A27A28EF40D31F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "58A5E6B155656569270342FE043CC175FA94534AB958346BBB3A5ABA3BABCBE4",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1689,
+      "refs": [
+        "pm:rio000:0x0c8d08a8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 82982,
+        "payload_sha256": "931CA83AAD52D16FAD67DD066BBD4592284D0D14D52D4AE4096A5C0B557C9E24",
+        "payload_fnv1a64": "AAB0936D1C2C2FC8"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "4963D2AD94486BAC0DFAD45555532669CBE791C838A0E02424A27A28EF40D31F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "58A5E6B155656569270342FE043CC175FA94534AB958346BBB3A5ABA3BABCBE4",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1690,
+      "refs": [
+        "pf:rio000:0x00d55d70"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 79988,
+        "payload_sha256": "148A4BE4C72E499295C80A1EBCB9BDD7D88CE6D066BCB5CFF25633AE87B407DE",
+        "payload_fnv1a64": "B1F56A9D0E05B24A"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "6D6A16DD24C5C4CD8B283FA66E4121AA25FE2E36D421CB0591C5A63E68829582",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D49E47C693880517C7785ACD064FE22B099FB30ECE584F804F4BDA3345993167",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1690,
+      "refs": [
+        "pm:rio000:0x0c8e4cfc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 79988,
+        "payload_sha256": "148A4BE4C72E499295C80A1EBCB9BDD7D88CE6D066BCB5CFF25633AE87B407DE",
+        "payload_fnv1a64": "B1F56A9D0E05B24A"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "6D6A16DD24C5C4CD8B283FA66E4121AA25FE2E36D421CB0591C5A63E68829582",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D49E47C693880517C7785ACD064FE22B099FB30ECE584F804F4BDA3345993167",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1691,
+      "refs": [
+        "pf:rio000:0x00d69614"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 72086,
+        "payload_sha256": "E49842907FC8BECD0028A1BD9B8D82F9EBC6F93AEE8492DE98865661629BF42C",
+        "payload_fnv1a64": "F50F738AC21DE23E"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "189B85FDE18876A09E41530D18F123A2EB4514953828F9272C076FE8C94F1C9F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "4D9D01F54A69C974171A0A9D0DD08CCF9F31A0FCC7B49742B943FB18B7F03D7C",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1691,
+      "refs": [
+        "pm:rio000:0x0c8f85a0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 72086,
+        "payload_sha256": "E49842907FC8BECD0028A1BD9B8D82F9EBC6F93AEE8492DE98865661629BF42C",
+        "payload_fnv1a64": "F50F738AC21DE23E"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "189B85FDE18876A09E41530D18F123A2EB4514953828F9272C076FE8C94F1C9F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "4D9D01F54A69C974171A0A9D0DD08CCF9F31A0FCC7B49742B943FB18B7F03D7C",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1692,
+      "refs": [
+        "pf:rio000:0x00d7afd8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 768,
+        "draw_width": 1024,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 358884,
+        "payload_sha256": "F0ED9312CC28DCC8D600BEDBD15DDD884ACE1F7E36ECB0C5E5A5CF18824B81CB",
+        "payload_fnv1a64": "25AA565A8E09696F"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "F9ECF4156ACFD91E93FCCB0A924FCBCAB645F81EF94925E77044AE4EA568E917",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E5A72411A8575403AD31C9A99CE0083EDA56C96AE2AD5A71994289887ED7D39B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1692,
+      "refs": [
+        "pm:rio000:0x013366f8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 768,
+        "draw_width": 1024,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 358884,
+        "payload_sha256": "F0ED9312CC28DCC8D600BEDBD15DDD884ACE1F7E36ECB0C5E5A5CF18824B81CB",
+        "payload_fnv1a64": "25AA565A8E09696F"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "F9ECF4156ACFD91E93FCCB0A924FCBCAB645F81EF94925E77044AE4EA568E917",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E5A72411A8575403AD31C9A99CE0083EDA56C96AE2AD5A71994289887ED7D39B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1752,
+      "refs": [
+        "pf:rio000:0x1b8ecc78"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 476,
+        "height": 44,
+        "draw_width": 476,
+        "draw_height": 44,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 5434,
+        "payload_sha256": "D23C1010D390524B83F0AC1816DDCBA5414177DA44B761F50EC46540FAA53E0A",
+        "payload_fnv1a64": "B87D8045C5EAA0FE"
+      },
+      "geometry": {
+        "width": 476,
+        "height": 44
+      },
+      "archive": {
+        "record_sha256": "F4B083EE8B14988CC5F63DE857214275B23B5A4012E166077F1F10ED2DDF8495",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "60BB601CF8F4A15BDA22884191B192B0DF15B0794EBD02392226A7CA996306A9",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1753,
+      "refs": [
+        "pf:rio000:0x1b8ef748"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 476,
+        "height": 44,
+        "draw_width": 476,
+        "draw_height": 44,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 5434,
+        "payload_sha256": "5A8729F7D1E6A847BAFEAE5932F36C8D482C36453CF25FB521485B2AF8C7CD26",
+        "payload_fnv1a64": "F92EFE0C4C326309"
+      },
+      "geometry": {
+        "width": 476,
+        "height": 44
+      },
+      "archive": {
+        "record_sha256": "18D5346BDAB974762910CABE7F78B3517FC9E62163E930BCA0DC68DAA68245DE",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "3CBEA65739FE4848DC627ED1B43975BF1300CBE4A2EB154E3C6E3D591AED7A9E",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1891,
+      "refs": [
+        "pf:rio000:0x1c517acc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 585010,
+        "payload_sha256": "879430455B3AFC38127E98247D80BA4CCAE25E7CC015A228748583E6DB6423A8",
+        "payload_fnv1a64": "8799B37BEF634A6C"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "D0C288BF43C870F102A07B33454BA9EF1DA73F93E8FFB9020A1FC774A9ED67E8",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F9B4DE03D01397AF18CF85FAA077FEBDDB44D1A1FFF822E5FE71A7E61A0AB4C5",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1961,
+      "refs": [
+        "pf:rio000:0x1db21f48"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 985,
+        "draw_width": 1280,
+        "draw_height": 985,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 850230,
+        "payload_sha256": "BD36B95A100F39F1B6A4CAE2B2A43636360954A2A07A045385925B58ECCDE8E4",
+        "payload_fnv1a64": "261E7F126C482F95"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 985
+      },
+      "archive": {
+        "record_sha256": "46A60A629AE5C27A55442414CB2ABB5660917A61D0BD2FDAC400780A137B56D2",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2C5F080819B2B5B11BBDAF260566A110EBA0C6329A4D22FDBE45A52F6CE790F1",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 1972,
+      "refs": [
+        "pf:rio000:0x1e2f3c94"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 996,
+        "draw_width": 1280,
+        "draw_height": 996,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 542978,
+        "payload_sha256": "B9BE3223DCFB5CFFB610D25AA0593E98CBA2E421CC00F201A10B99FBBBF313A5",
+        "payload_fnv1a64": "D7C49CDF8EC53C9A"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 996
+      },
+      "archive": {
+        "record_sha256": "679BA7C08C587B9D43EDB3CC11ED9B994EF36B8589131F387507673450DB0E4F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2AD05D12E0EC9C1D8ECD47F7535EB766179D32B6DDC1331322F570DC60EF2E3D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2024,
+      "refs": [
+        "pf:rio000:0x1fd681a4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 271448,
+        "payload_sha256": "B4564B79788233B744C0368CA37C0BD232067BFACE6D08F2C7F358A6B30370AB",
+        "payload_fnv1a64": "065264ECA8A8EBE8"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "64B321F2557C0462CEE30A3D647DF1E1BD4960A48ED7D40B51A3B14547FB963D",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "0417AD76D0C296AA7AE5290272011EA5866C10ADA7876585E0E565C48E278410",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2025,
+      "refs": [
+        "pf:rio000:0x1fdaa62c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 271256,
+        "payload_sha256": "AFDB2423F743EC2BADD0E4B9A896C5799562C124B5745BA9850CEB94ADDBD1B0",
+        "payload_fnv1a64": "05554D42C9C504C9"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "3E1A8FD15B952AE060D12FC36B57F0857A969FC464A9620FB081B11EB2CF4041",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F5B2EA3EE8F5D03CA9B2B73C611B366A0924D95E2629906642F426E48BEEABCC",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2026,
+      "refs": [
+        "pf:rio000:0x1fdec9f4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 422990,
+        "payload_sha256": "1D6A5BA84114FC26BBF6705380801342E2EF416E79E9C7A6FBE924157BE445E4",
+        "payload_fnv1a64": "81557AC48A7918CF"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "CBCD6D963E1963144573F054DC541E76F23F7CEC5371A816E60A67DF9A3B5648",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "34A3CBD590DA8F5B1333989819130D308BB221D0C5DA50856985C2299B6E66FA",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2027,
+      "refs": [
+        "pf:rio000:0x1fe53e70"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 960,
+        "draw_width": 1280,
+        "draw_height": 960,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 422978,
+        "payload_sha256": "A35298E4620B3972BD55B54ABA1F790D94B2E557B46DE735F7C0DB0E046E43EE",
+        "payload_fnv1a64": "E47D4991670EE0F3"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 960
+      },
+      "archive": {
+        "record_sha256": "76D877C89249C46FDA8806DAA2D8E7B776D4493B25047E7C5794E6975350F242",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "5E0C30CBF12E7927D7E5A9798326BA38C5B0F8022F22ED63CD23B21F5B5DE0C2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2039,
+      "refs": [
+        "pf:rio000:0x202983c4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 904,
+        "draw_width": 1280,
+        "draw_height": 904,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 878196,
+        "payload_sha256": "D2B90A11C8C5D49828A5C68E92BCD0B53FE578BB29315C56CC4B1D926316AA6C",
+        "payload_fnv1a64": "CA741D64E0520B17"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 904
+      },
+      "archive": {
+        "record_sha256": "DAE2F0167B3270EB8EC26B93F8F2398CCC0BE4BF60B77C2BB4E22A7EF644B91F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "29DDCB46CA60004C5AFB6303FCAF5998CE0E0422186E10AEC1A569613371E759",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2166,
+      "refs": [
+        "pf:rio000:0x237c6188"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 904,
+        "draw_width": 1280,
+        "draw_height": 904,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 166774,
+        "payload_sha256": "8D21776459FB6315064013476CF2AC4225F25F357BA0F49E1825C62619FA97C6",
+        "payload_fnv1a64": "E644A23A31D76870"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 904
+      },
+      "archive": {
+        "record_sha256": "1D0842088B16DF5EB7AD3EF24E92E30474806F81125D2FB99722F7349901572D",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F1F4259968F86615D1CE18E6BB73BD7FCDA5152F6606F741CF51A8649A7FC6D3",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2366,
+      "refs": [
+        "pf:rio002:0x1752d668"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 980,
+        "height": 692,
+        "draw_width": 980,
+        "draw_height": 692,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 947100,
+        "payload_sha256": "CE51D9EC6DA6A25AB1C0FB01D3F62E34E2CE52A7056AE97A541D4787FABB254B",
+        "payload_fnv1a64": "5A074208B0DD29FC"
+      },
+      "geometry": {
+        "width": 980,
+        "height": 692
+      },
+      "archive": {
+        "record_sha256": "8A5A7814ED7CD24599725C3C2EA2807B732FE0908770CDA7B7A45A0BD1A020B7",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "ADABAA2E47EBAA383F377ECD08431D6FB24304734C2FD8DCCB1270C62E08B013",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2498,
+      "refs": [
+        "pf:rio002:0x21caf7c4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 38508,
+        "payload_sha256": "9110CD01EDDAC1F816A8E738F2C7BFFC6F647B216577DFC48AB1A594B58A425F",
+        "payload_fnv1a64": "C4FBE73D92E79127"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "FF1D559A792099AA0567C2C3C79FFB78E5B8C2B7FE2976FE345F1CB8DDF67A3F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "A2CA4B46D44B40EFC3F30CB366711B7C6270557C144464C008CF171B50EEEFE5",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2506,
+      "refs": [
+        "pf:rio002:0x21cd9c78"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 31640,
+        "payload_sha256": "E1C9B4DDED0898831DF526A96595C8E1FB19FC58DEB56932D9790EE96CD3865C",
+        "payload_fnv1a64": "595971DA436026DE"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "1DBAFBCAC3D5C59E0CB059B51733B9E9692B3908DD55E9F8E869BAD572683DB4",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "489769814DA2744D13D2A0606028F8113417495FD731118BB34A543FABBF381F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2555,
+      "refs": [
+        "pf:rio002:0x21e00fa8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 8572,
+        "payload_sha256": "99F18D9695A36A64AFF0411F5EA9AF2D93EAB4098E50204BFDD3E9A9AC6861E9",
+        "payload_fnv1a64": "B103264E0D8479E0"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "A8C575288210EDBC891380DD27D73E68347538F1921FE496AEEC598C1170BB89",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "BFB027D9B11440CC67976B26F0E56072477346197DF816D0F0F67B568DEC0068",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2571,
+      "refs": [
+        "pf:rio002:0x2b07f998"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 480,
+        "height": 120,
+        "draw_width": 480,
+        "draw_height": 120,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 7080,
+        "payload_sha256": "4CD6FEB5DE4BD4E74949728F01E039E8A194F7E38E87D0A307A682A7F3383E8E",
+        "payload_fnv1a64": "92BC1E2FCB1272BB"
+      },
+      "geometry": {
+        "width": 480,
+        "height": 120
+      },
+      "archive": {
+        "record_sha256": "FAA70DF4C51BCD9411C3E639ABBC71A66EAA76FC001E11B7239409EAC631F1E3",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "7BC7F57653B7177C42C5079AAEEA14F5099AD51AB1F155C952F719540AA75735",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2571,
+      "refs": [
+        "pm:rio004:0x6894e854"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 480,
+        "height": 120,
+        "draw_width": 480,
+        "draw_height": 120,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 7080,
+        "payload_sha256": "4CD6FEB5DE4BD4E74949728F01E039E8A194F7E38E87D0A307A682A7F3383E8E",
+        "payload_fnv1a64": "92BC1E2FCB1272BB"
+      },
+      "geometry": {
+        "width": 480,
+        "height": 120
+      },
+      "archive": {
+        "record_sha256": "FAA70DF4C51BCD9411C3E639ABBC71A66EAA76FC001E11B7239409EAC631F1E3",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "7BC7F57653B7177C42C5079AAEEA14F5099AD51AB1F155C952F719540AA75735",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2573,
+      "refs": [
+        "pf:rio002:0x2b081910"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 185,
+        "height": 19,
+        "draw_width": 185,
+        "draw_height": 19,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 2806,
+        "payload_sha256": "202F32F92F3CAFF9CA37852FC459CD0CDD64F78A5095EF9470B35EAE575C2474",
+        "payload_fnv1a64": "0D6201D8AAF4305D"
+      },
+      "geometry": {
+        "width": 185,
+        "height": 19
+      },
+      "archive": {
+        "record_sha256": "FEAD182B35C010BD07935CA03E130763E839575FB843E334191AE5A734EA4F17",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "6062C822C91A2086A79F00E74DAD5610556AC46F089695FD2EBD7998D31AB767",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2573,
+      "refs": [
+        "pm:rio004:0x6896941c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 185,
+        "height": 19,
+        "draw_width": 185,
+        "draw_height": 19,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 2806,
+        "payload_sha256": "202F32F92F3CAFF9CA37852FC459CD0CDD64F78A5095EF9470B35EAE575C2474",
+        "payload_fnv1a64": "0D6201D8AAF4305D"
+      },
+      "geometry": {
+        "width": 185,
+        "height": 19
+      },
+      "archive": {
+        "record_sha256": "FEAD182B35C010BD07935CA03E130763E839575FB843E334191AE5A734EA4F17",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "6062C822C91A2086A79F00E74DAD5610556AC46F089695FD2EBD7998D31AB767",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2593,
+      "refs": [
+        "pf:rio002:0x2d81be10"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 105254,
+        "payload_sha256": "B2245E28FE615AC15E7F58312060ABE900564722828B5F789587F856CB1BB26A",
+        "payload_fnv1a64": "B34F516E771579CD"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "770BA0B7108BB6EEB07D89F896A3FBA27383B56B23AF48F9DAB1CDB40F2C64B7",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "FDF3EE0C0D17DFC7951133DDD85D4455583356D77AB0662A7A0A3EE88B26983D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2594,
+      "refs": [
+        "pf:rio002:0x2d835964"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 2170,
+        "height": 1532,
+        "draw_width": 2170,
+        "draw_height": 1532,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 1750702,
+        "payload_sha256": "B1295164EAE0796E2C7E1F011A6B98AA4E125E8DBBA9CD791A9EFE5B5E7CD8CB",
+        "payload_fnv1a64": "620EED4502711A20"
+      },
+      "geometry": {
+        "width": 2170,
+        "height": 1532
+      },
+      "archive": {
+        "record_sha256": "ACC133527DC432AD12A97B725FB27B52BA65522D75C0138C1B77AC9258561476",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "090BB8B2D5A2A6F361EBA9EDA9493BB0C718EE626A543472D083C145AF87D131",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2613,
+      "refs": [
+        "pf:rio002:0x2f4aeb8c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 480,
+        "height": 120,
+        "draw_width": 480,
+        "draw_height": 120,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 6868,
+        "payload_sha256": "3DF3F34500F758EA9B1A5BF5AC7FB19ED6749C44263177F7BFA0D4CFE3920639",
+        "payload_fnv1a64": "7391FD776527B185"
+      },
+      "geometry": {
+        "width": 480,
+        "height": 120
+      },
+      "archive": {
+        "record_sha256": "B831E271836594ABE437C4A87C33A89936D44B63204E6E09215A507DA1B89F4B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8FC8688E8E200BF7AA54D7E8E223EDF925FBFA49990CA79B201A62AC4CD40237",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2613,
+      "refs": [
+        "pm:rio004:0x08eda57c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 480,
+        "height": 120,
+        "draw_width": 480,
+        "draw_height": 120,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 6868,
+        "payload_sha256": "3DF3F34500F758EA9B1A5BF5AC7FB19ED6749C44263177F7BFA0D4CFE3920639",
+        "payload_fnv1a64": "7391FD776527B185"
+      },
+      "geometry": {
+        "width": 480,
+        "height": 120
+      },
+      "archive": {
+        "record_sha256": "B831E271836594ABE437C4A87C33A89936D44B63204E6E09215A507DA1B89F4B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8FC8688E8E200BF7AA54D7E8E223EDF925FBFA49990CA79B201A62AC4CD40237",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2617,
+      "refs": [
+        "pf:rio002:0x2f4b0d00"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 185,
+        "height": 19,
+        "draw_width": 185,
+        "draw_height": 19,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 2806,
+        "payload_sha256": "D9661FC97FFF83C3B034E1D99555B59D8421AAA96828B06F7BCFA025950B2E94",
+        "payload_fnv1a64": "5A29995F43137A45"
+      },
+      "geometry": {
+        "width": 185,
+        "height": 19
+      },
+      "archive": {
+        "record_sha256": "E6AED2E8D0850B877560CB1089C742DAAEF76E5A26722FECBC68C2A20B33B690",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "40ED64AFC7252F892DD78952480570AA7E18CADBBEB93D3D7379301024047614",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2617,
+      "refs": [
+        "pm:rio004:0x08efa704"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 185,
+        "height": 19,
+        "draw_width": 185,
+        "draw_height": 19,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 2806,
+        "payload_sha256": "D9661FC97FFF83C3B034E1D99555B59D8421AAA96828B06F7BCFA025950B2E94",
+        "payload_fnv1a64": "5A29995F43137A45"
+      },
+      "geometry": {
+        "width": 185,
+        "height": 19
+      },
+      "archive": {
+        "record_sha256": "E6AED2E8D0850B877560CB1089C742DAAEF76E5A26722FECBC68C2A20B33B690",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "40ED64AFC7252F892DD78952480570AA7E18CADBBEB93D3D7379301024047614",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2647,
+      "refs": [
+        "pf:rio002:0x350a9664"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1088,
+        "height": 768,
+        "draw_width": 1088,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 144490,
+        "payload_sha256": "70F82F31005FA1B07BA5D2488522A61F4A12EC0C0D6939790C4CB80464B0C959",
+        "payload_fnv1a64": "C2F500E513C37ACE"
+      },
+      "geometry": {
+        "width": 1088,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "F9B08FB6DE17038FA602D88540C0A829087816B2AFD8FAC8A2D8AEC69F1E50F7",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2AE6C2FCD340313618C28F72B986390E139B6694DB58B18CBAA4FA7E2338698D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2685,
+      "refs": [
+        "pf:rio002:0x3b89454c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 134,
+        "height": 124,
+        "draw_width": 134,
+        "draw_height": 124,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 7974,
+        "payload_sha256": "888A21D90B9B4E0AD4DD8F8011C8772C0A647572DAA3A0CD5CA881A19CFFE78C",
+        "payload_fnv1a64": "4B12D8D5B7C6EB1B"
+      },
+      "geometry": {
+        "width": 134,
+        "height": 124
+      },
+      "archive": {
+        "record_sha256": "8058D92575526CCE22463B640ACCEA6300920EA721A30CF0DBEAD8304ADF5CE2",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "74A78938819933B15164BAB62F02A18DB737BDBA85FEA91A6E7F2259AC3AC6C5",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2721,
+      "refs": [
+        "pf:rio002:0x4b28f43c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 140,
+        "draw_width": 1280,
+        "draw_height": 140,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 43566,
+        "payload_sha256": "7E445A8E2CBAD63D712CE592A50ADE9B180F82BFFA6914009E7F83A8D8538DB6",
+        "payload_fnv1a64": "FEFEFE05304D4233"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 140
+      },
+      "archive": {
+        "record_sha256": "82FB47CADBF2DADDB0A785516F1F5201D7416DA6486968D52FCD19F521E1852B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "3AD2D20A0EA10EC2EA4722EBC872DC63D04F677ECE5C0C94A4520DC66CCF0B64",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2722,
+      "refs": [
+        "pf:rio002:0x4b2a44f0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 140,
+        "draw_width": 1280,
+        "draw_height": 140,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 61342,
+        "payload_sha256": "AFDF93208DBEDE62AA16A81BD4C1692D33C26F435FFE4A33E9E2425DDC6869F3",
+        "payload_fnv1a64": "3F8DF6D3E784AA1D"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 140
+      },
+      "archive": {
+        "record_sha256": "8901CC8E7B20253CBB6A8878E7D896E77D951669E79968EAAAAF86217B5C6F25",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8F39F2F07F3A1BB29BEB7BAF846167D631D6AE330E260D343573C508D50EDC56",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2732,
+      "refs": [
+        "pf:rio002:0x4fa87e84"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 110,
+        "draw_width": 1280,
+        "draw_height": 110,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 19464,
+        "payload_sha256": "AF9C5DF510C25071BCFE69E01A4F0C2F50070A2E434772B4C8CC93F3843FB93A",
+        "payload_fnv1a64": "90812680C1084A78"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 110
+      },
+      "archive": {
+        "record_sha256": "96AE1A1804249C1B2B797B15E66DA17D90DD32F1F05F6B07AB8ED31490DD742F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "A5BB2F3472564EAFA4D932E6C2CF53A33128FC4166C410E9E5E094B122595AE2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2733,
+      "refs": [
+        "pf:rio002:0x4fbc37e4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 110,
+        "draw_width": 1280,
+        "draw_height": 110,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 32694,
+        "payload_sha256": "F0EF6A6FCFD93B3548AA098313CED546C9A7159D8D6DB508D09D746E3CC70B7D",
+        "payload_fnv1a64": "93F42C62D733D059"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 110
+      },
+      "archive": {
+        "record_sha256": "1CC96B639E5FEA11820CC3431DA7614C9BD3CC0DA444A1C309BB3E202D5CD6DA",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "FD5A201BB37E41C86900559A725351669BB3331D2492F5C2F0C324FC09C80A82",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2735,
+      "refs": [
+        "pf:rio002:0x4ffcf680"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 110,
+        "draw_width": 1280,
+        "draw_height": 110,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 19934,
+        "payload_sha256": "881837482E15E3ABB71190616F22341E395C3633A629AEE9E90E8C76FC68B05E",
+        "payload_fnv1a64": "D8BDF3AD7BC2A466"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 110
+      },
+      "archive": {
+        "record_sha256": "2E34E70F02FD4FDC30F8EE2E4AE5B064E72B7CB95411361950721A42EE014509",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1D6FB798A2630C7374C6B5D204B772E91EB0D597336DBE5643DF23CC6C7E39AF",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2736,
+      "refs": [
+        "pf:rio002:0x4ffeeb7c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 110,
+        "draw_width": 1280,
+        "draw_height": 110,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 29518,
+        "payload_sha256": "F2E1BAA06C8DA23465E17F5DC3AF9BAD34E9699CBB7EBE5435E1F1FA4DD13345",
+        "payload_fnv1a64": "A58F6E1E5A95BAEE"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 110
+      },
+      "archive": {
+        "record_sha256": "0A630AE51909F0D599C257A6A16F02846196ABF48866D21D63F9E6852B64795A",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "14899BAE7521788215A0CFF05C2CE7D2037E7AB809DE19F8E7334A42F89C7FE9",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2737,
+      "refs": [
+        "pf:rio002:0x500051b8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 110,
+        "draw_width": 1280,
+        "draw_height": 110,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 28152,
+        "payload_sha256": "6C64D738253E3E8AB1E15569FBD509A2F9C9551A2923D50732F6AE5CB73E8E82",
+        "payload_fnv1a64": "84CF4FBDF2867EAF"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 110
+      },
+      "archive": {
+        "record_sha256": "0A7E38C4217B8B3640F9A6A7930552B847DD6875B5A1CBC236FE52D8815C496E",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "BDA9DE0C046C669A9A5D4A516AA73A4A3E09DE23CC5560118A482BDB58E21C58",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2738,
+      "refs": [
+        "pf:rio002:0x5001135c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 110,
+        "draw_width": 1280,
+        "draw_height": 110,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 22786,
+        "payload_sha256": "C349FB9B885A4EDE7839C11C10E9B039BEFC3A1C61EEBC8DD9D64FF5DCB037DD",
+        "payload_fnv1a64": "5727C7E72E45C2B1"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 110
+      },
+      "archive": {
+        "record_sha256": "2E3A59AB1299D865CCE52D33553B13F06D5468BEC8A8FCB69FCAF5288E6850F9",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E8FD3A07C8BAF70C19E179A5D38394F1CE1836C38538366A89FB87B7C61B33DB",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2756,
+      "refs": [
+        "pf:rio002:0x557507f8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1100,
+        "height": 645,
+        "draw_width": 1100,
+        "draw_height": 645,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 246192,
+        "payload_sha256": "32FCDCA9F1C0150909D227951DBACCB8D6E57DE0AED05B85BBBA0C86F2821CF1",
+        "payload_fnv1a64": "4D618E26C49EB134"
+      },
+      "geometry": {
+        "width": 1100,
+        "height": 645
+      },
+      "archive": {
+        "record_sha256": "F8DFC09FFE58107581BD96AAF604E84597317AF68F96843F9E552D5F0ED3C401",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "B36170C20BAF3C68ED1F82CDB2B1DAD55C934886DE6DF02A2BD5261516421FB2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2757,
+      "refs": [
+        "pf:rio002:0x5578c9d8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1100,
+        "height": 645,
+        "draw_width": 1100,
+        "draw_height": 645,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 300118,
+        "payload_sha256": "E3238FBEE388F68B97AE15F46A912B14F252A6CD2B894A8C9C878FB180D22714",
+        "payload_fnv1a64": "DED494B6CAEE4816"
+      },
+      "geometry": {
+        "width": 1100,
+        "height": 645
+      },
+      "archive": {
+        "record_sha256": "C4AB80D8B4313E72D68524E97C6EA0131873C654B06CC697EFFBB4E113C2DE55",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "66CD9B3F89E427DF6796F6FAAAD1141CE90FDB59D1B31013DE16EC069CE832A2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2794,
+      "refs": [
+        "pf:rio002:0x6090d750"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 5162,
+        "payload_sha256": "4704B359F4739DF27CC252E9957220ABB63076436B1D717C9AC56335FF49073A",
+        "payload_fnv1a64": "4CDE2D128BB3FB13"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "B8F192F9689F9CD6919C218C4046CC252D269E2683C61177FE1C05E5643AD98F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E548AE56BC3DC8D50B267B20E6BF1D1F168B158B0D403290AB22BC1DA675E6F7",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2805,
+      "refs": [
+        "pf:rio002:0x623c9e80"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 18924,
+        "payload_sha256": "333D85889CBC6E6C9771CD2A272898F01E3308AA6B467E21EC752E82F4FD81C8",
+        "payload_fnv1a64": "D3E50B937F825A14"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "EC92C4506F935029F58BD0BBD29D191FE1755B3B56A04D42B3BFED057ADE6988",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2FB4C9D30DC6D079BA0EFCC57507758BEB6D89BF08EEDF344B811A77D9237596",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2806,
+      "refs": [
+        "pf:rio002:0x623ce89c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 26322,
+        "payload_sha256": "4124990D93B5DDDAAE22D86CAA6BD47EE10320AFB43FDC3B1F41B991BC83F927",
+        "payload_fnv1a64": "D46D8028ABED1B07"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "5151AA8C1120DC230207824C14626DA09A8850B79BF8E5CF882B0FCDDEA2C336",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "574634ED7B640A442CB24AB944F4D60981B5E90D0708E557ECFFC1152CBB1912",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2807,
+      "refs": [
+        "pf:rio002:0x623d4f9c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 34094,
+        "payload_sha256": "17E97552F5255A0B57421C8D398CC9A2CE622DFCCE06B46DEB3A2F353D123117",
+        "payload_fnv1a64": "9E43E6C78E40AC01"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "E227050E993B3363BA84364D5881A7EB146BF4F4C2DD0F813A6ED0D5D1EDBD2E",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "80629711AE3232B44C9E4F85D71D054687D2EEC49A6318C3F1A2DA26CFC79BB3",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2808,
+      "refs": [
+        "pf:rio002:0x623dd4f8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 43092,
+        "payload_sha256": "D0B3A96D3B8D4A0770A1185C8809A24FAD64CE81CD8223491641981494FD145B",
+        "payload_fnv1a64": "0DBE1D33D0BE5090"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "1F9E8B913840B3174E2DB545D65B48FC334B9DFFEB7A4B937E69CEE25A9D84D2",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "640D98A5AA702D888E4898779228944A26DE6D1DD53C917E8A25962E726347CE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2809,
+      "refs": [
+        "pf:rio002:0x623e7d7c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 29074,
+        "payload_sha256": "B426532A7B24AAD8CCA5BD49CB783B98B8C3C0F3BD2E821AD0A7266B13A8D634",
+        "payload_fnv1a64": "F16D56B3DD34883F"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "94EB03E1000C39AA450EE8717A9124182230A6C2721A89AAC6F1B63CA197182C",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1EE86C903D9BD47D996C78F10CA634CDC85300CCF4ACF36FFE1CD7981BCF0B9F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2810,
+      "refs": [
+        "pf:rio002:0x623eef3c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 49458,
+        "payload_sha256": "5072735B4AAB0950753FC7D81B1BB60DEA4211281169FC473E6D9AE56C67B194",
+        "payload_fnv1a64": "50092082C424B8AF"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "80CCE36157179A679A918867078900BA1B7AA6E1BBF40AD1402E7B7F7C30B1DA",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "730CB68A5AFDCE0F4C8AC88FB85168B589278F053E27BC0421DFCAD1F04B18B2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2811,
+      "refs": [
+        "pf:rio002:0x623fb09c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 39298,
+        "payload_sha256": "EE77866B6185A63057979F3A5C2E50B4E6408FF78D468125C4F16AD459FBCEE8",
+        "payload_fnv1a64": "3BEC8695BB178F27"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "552D87D945AA5E3B4413740B23A4B59C77EBB01352916EC454CABA8213877FBD",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D4FC3D490094B0B3B6DC0051265AC3B94378B598FCBA96EAAFA9A59CE14F3F25",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2812,
+      "refs": [
+        "pf:rio002:0x62404a4c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 40562,
+        "payload_sha256": "29892BC943C3EB1A3B066D75EF8E89F94AB7ADC22C84951707C7D97C8582DEF7",
+        "payload_fnv1a64": "F86E2B188B5A895E"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "F5B300AF804DE2F21E1A9937DCFE75A66D2E093A602268D4C46FC0AAA743A803",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "12973D751A44FC609EE2C75693ED75195477E63F16839F5F06FE25A2B8DCB5E1",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2813,
+      "refs": [
+        "pf:rio002:0x6240e8ec"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 25396,
+        "payload_sha256": "FDB61B5E4F934BA47EA6D35930408D62D9AC13F207711E07C6934716054FBCFF",
+        "payload_fnv1a64": "903378C90EFE8879"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "6396C391C5E220E492A3A3BC52EAFC23372053E9BFCE6A916BA575BB88368464",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "295C469BEB6D71B1AA5592DFCF1B75514680DAC9D25F928B00C6E760EEEBA776",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2814,
+      "refs": [
+        "pf:rio002:0x62414c50"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 22622,
+        "payload_sha256": "152E2544D71AC42F37A56B8F9BC4CEABE997E94654190BD6CD7FCEB72119CF6B",
+        "payload_fnv1a64": "8F4540FB56A82D23"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "82E9CD95198F314FF950BBA37BD1E8DBB7FA24ABEB872FF04897B6EA571FEEA5",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "574B0D237D5E06D9CC7FCDBB8CFF03810C3EF354CE5DD027DAF2BF3E26C78EE2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2815,
+      "refs": [
+        "pf:rio002:0x6241a4dc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 18156,
+        "payload_sha256": "DAB8F390FF188BAA2F5B515C413745AC986967CE17E273BA931D467496B7B1C4",
+        "payload_fnv1a64": "4FC088FCDFD5F822"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "DCC412EA3A8B7C34BE7A9D8D6F9E4FA332CA92C12A4AEE7CDD5BF7A1D434422C",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "FB33464BD555E28BBDAFF4C59B1474244C04E0740012642ED841A4F2E3A69CC6",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2816,
+      "refs": [
+        "pf:rio002:0x6241ebf8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 26266,
+        "payload_sha256": "39067599678B5085AD5FEC5306B5A3C4C40B4B5E93D31338BDA44E58A3870DCA",
+        "payload_fnv1a64": "1CCE08826134799E"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "5B048C4A369419934098F4477650C6231CB6058E7C69A673441A18025B760634",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D9DECCBB921A6AFDADD2E13DC0977204CCB71018F1E847D660372B616E140A5C",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2817,
+      "refs": [
+        "pf:rio002:0x624252c0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 22544,
+        "payload_sha256": "EFCF0F43D2B720CB9BA2F32F5C392EAC7E1099DAE51382CA82AA210E3F85153F",
+        "payload_fnv1a64": "F43C724B818541D2"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "CD870FBAA686A55383FB87DE8653F55DB0FE5A5A157E3361FF1AAA842943E094",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8BDFC619D69AD52B0D8B222CFA848E586D5216A27134D9A5FB9E8CF1EC703845",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2818,
+      "refs": [
+        "pf:rio002:0x6242ab00"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 30522,
+        "payload_sha256": "7B87CFEE8F5B11141C2C1F7A159408DE9C2AA79075848600B15ADE4347241EF5",
+        "payload_fnv1a64": "CF67DC4C3833BC8C"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "529CDC30621D05318BC17C10C72CFFF38834EA44B02E8319FF03CB44DBF60EFD",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "28B99438FF8BF32734E250498D5D46F187BB972759EC346C28D0043642274B9A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2819,
+      "refs": [
+        "pf:rio002:0x62432268"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 35546,
+        "payload_sha256": "D51C24941452F2FE1C7C2D5459839BA7C59B5D00CD9ECA883E68E1A1B04B3A38",
+        "payload_fnv1a64": "B380004CB11420FA"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "6B951FE412D1C683E95A14A4BE784F0ACD5B0A862A4BB68E864DD6C02D9522C5",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2C336E10E731A9E8DDA3197E17D27F919B1D3062A397CEBB59C129D77BB27491",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2820,
+      "refs": [
+        "pf:rio002:0x6243ad70"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 24220,
+        "payload_sha256": "2A96BA68223A9F6B573D4C5DF4B723BD07837BE2EDB2DAB0DA22D3089989A55D",
+        "payload_fnv1a64": "81FED8BCB8F587DB"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "E20AA33083D660109650F721482AA147671B3FB95F73B7BA6276149F3EE36835",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F353F43501E5DF77F0C569CD7EC2CB9FDE241FDC08198C44653F0E0A0457792C",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2821,
+      "refs": [
+        "pf:rio002:0x62440c3c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 11956,
+        "payload_sha256": "ADC7688FF6680E8AE778CE497614442955C384B534EAD394063EFACB00089E03",
+        "payload_fnv1a64": "2F73F45E15C26E4D"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "D0C379E56732C514957C02C68AA52A94ADC642BF3C7A081B2291140ACD766418",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D1B92F11D045FF55F9E72822821913BDDA5D5722A1B4EED2BC297797255716CC",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2822,
+      "refs": [
+        "pf:rio002:0x62443b20"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 27996,
+        "payload_sha256": "95D6933A924239817BFE65E3C441B82281C27F05D243C24760800302C9AADA49",
+        "payload_fnv1a64": "9A85082EE88EEED8"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "5833357152E72DC3F7C9CBFBC07F89569EF16390F62D50A5EAE9CEAF91F9671B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "52EE7DE9AEE1C97EAAF5274F71C5C92845351B423213363ABE06BF4528E3918C",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PF",
+      "group_id": 2823,
+      "refs": [
+        "pf:rio002:0x6244a8ac"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 150,
+        "draw_width": 1280,
+        "draw_height": 150,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 21344,
+        "payload_sha256": "14B167C0F21D182653F6B2947667B98969C88CA65665B1A77130963EEF530750",
+        "payload_fnv1a64": "C7D93727137E58C4"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 150
+      },
+      "archive": {
+        "record_sha256": "AEA95A1AE027DDEC10730151BE35973CCF01C97A26D521E18828A0241510ED7A",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "876B56026C33025484B99C75B98EA2D73F7D2E218C9881C2486D9952B075004A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2983,
+      "refs": [
+        "pm:rio000:0x0044a9d8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 2390,
+        "height": 919,
+        "draw_width": 2390,
+        "draw_height": 919,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 421072,
+        "payload_sha256": "56F02A5743E27FFC6C7D057DE23858F9ED4877A554CFEE5855C5F29821DF676B",
+        "payload_fnv1a64": "2366E28268E1B5EF"
+      },
+      "geometry": {
+        "width": 2390,
+        "height": 919
+      },
+      "archive": {
+        "record_sha256": "832CF96B310927AF6EC0DCA9B9FBDD0AB87DE1DB2F935880DD63AF99618C09FF",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "37FDD05F1635662C250A33F0EA86F1B57D90370855D75AEE7DA9FC42D5852A31",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2984,
+      "refs": [
+        "pm:rio000:0x004b16e4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 2604,
+        "height": 1838,
+        "draw_width": 2604,
+        "draw_height": 1838,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 613062,
+        "payload_sha256": "D4A75E9C0B256D0748E1C0705C5F4173B5FCC2722F2D2DFD8B0D59F7CC6DAB39",
+        "payload_fnv1a64": "7178CDBA17687C2B"
+      },
+      "geometry": {
+        "width": 2604,
+        "height": 1838
+      },
+      "archive": {
+        "record_sha256": "A1B3371682B266684F7CA6A28563C125131DB0762E6B17D9F265B41ECC682307",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F4D05B5CB06F1028FD2035037201F25A262297D4FE25F4DD5DC19D31EA65AD5D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2985,
+      "refs": [
+        "pm:rio000:0x005471dc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1088,
+        "height": 768,
+        "draw_width": 1088,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 244996,
+        "payload_sha256": "26F5E9EC4AD6AB13F76999E59F58792B45F69D15FBC7E154B26CD2A14CDDC127",
+        "payload_fnv1a64": "941C891BCF19533D"
+      },
+      "geometry": {
+        "width": 1088,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "3DB0118A7EA39E3ED33748BDED7BE5ED9E11C9862FF9983421179B34E1D273E9",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "0C7134F8EF546220D3D99B02991466CE1D986D17F4E14CFEEB972D0DD345F46E",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2986,
+      "refs": [
+        "pm:rio000:0x00582f14"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1088,
+        "height": 768,
+        "draw_width": 1088,
+        "draw_height": 768,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 238764,
+        "payload_sha256": "85B3AB47F20021C2CA8E84B242AFFC1EC1E639862979E4842471FDB502DB6505",
+        "payload_fnv1a64": "22D488C4455D9188"
+      },
+      "geometry": {
+        "width": 1088,
+        "height": 768
+      },
+      "archive": {
+        "record_sha256": "A9B3EAE2B4D6D94C240226B893B0FC629F33A24447DB5C2BBC358E171517986C",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "C02122FA2DA61197D5849B82D9D66994A3E0FBCDE0E3044CE4EA7AC9BB5ADF0E",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2987,
+      "refs": [
+        "pm:rio000:0x006954c8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 254010,
+        "payload_sha256": "810A98161F530C87673745E59D77F17105BA40818C2834799FBFC4D49507AF25",
+        "payload_fnv1a64": "15F50D4311A7CAA9"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "95EE42B19EDE4D9B350D9660781BF7EAEF0A658F9A602C117B1445E1C44019CE",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "2D7BC3237723613257B5DF76287FF722B5C753728DEB8A3370E4188D38F8726C",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2988,
+      "refs": [
+        "pm:rio000:0x006d3538"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 251620,
+        "payload_sha256": "F35D05A92AEDBFEA21836F999F556265256C031CC6A2CBE1C74A8D9920D1E597",
+        "payload_fnv1a64": "99BD1AADAE175168"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "454B2133B1C945F2024C7A22421CA4F83B03F98ABAE6FE4F10F5A670BB7581B6",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "192FD60B2803719E198C9044BD9EA09797CF57D316DB1B1B054842D6367D26C0",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2989,
+      "refs": [
+        "pm:rio000:0x00710c4c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 250766,
+        "payload_sha256": "93ACA20985C10B8061A089812BA1870272F6DEC497FBF4486A1717D4D2069315",
+        "payload_fnv1a64": "F6C3F7F707396701"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "79D8BA281C06EE5F0BDC721C7F3688B10CC7BE8D31309FB82A8284E39BDF6770",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "73B3AC15371C2E1D301E765B5288115149DEDF943B5FC931205C555C5FF2E5B2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3001,
+      "refs": [
+        "pm:rio000:0x00ae113c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 284242,
+        "payload_sha256": "5EA91F07BC44775FC5FD9D283A64EF1AB09A044C084DDAA1E57E1B57B7E420EC",
+        "payload_fnv1a64": "31BD03BF7C0D0806"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "6D660AE87D8C7631735EB81120C6528D8493487602624A34A5C57458F7FF8507",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "0A8DE7FF619DA336E467F531D4CDE8E05329F71465BA157B5DD53A70420B345B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3002,
+      "refs": [
+        "pm:rio000:0x0129171c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 2170,
+        "height": 1532,
+        "draw_width": 2170,
+        "draw_height": 1532,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 675758,
+        "payload_sha256": "2BC4A3B25B8A181A1C927445F6C3872DF8488796A5E75216E6BF2B71DCAAA2B6",
+        "payload_fnv1a64": "B1FF83611990934A"
+      },
+      "geometry": {
+        "width": 2170,
+        "height": 1532
+      },
+      "archive": {
+        "record_sha256": "A0EF87A690136AAD19CB008EA56DD35EC7C832A924E0300C454D30B23CB49DE3",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "B805A09D2E07C6588B236A2147D96BF56F124D28F4B26D92831048B8122B1739",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3004,
+      "refs": [
+        "pm:rio000:0x4f65832c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 282016,
+        "payload_sha256": "E50CF82B977E3CA952D5AE1851E68C6CB1A3716685DE191640CFA8A49E1BBEB5",
+        "payload_fnv1a64": "B5BFD03C6965EBAB"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "DAADA9801F3CC2383417543A1B9B19E838F1067B70BEA54CDD7940D6320BFD5A",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "0E4A42A01C86F1C414E1B6AB39C3A0172E602747DE6310CB5C45AC085E4FB92D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3056,
+      "refs": [
+        "pm:rio002:0x478666fc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 476,
+        "height": 44,
+        "draw_width": 476,
+        "draw_height": 44,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 5432,
+        "payload_sha256": "3A5FF2D43D6DB5745CCA2961D73EE438D849FF8B9A92B6A1C440D6B4ABEC529F",
+        "payload_fnv1a64": "7F70569733A71187"
+      },
+      "geometry": {
+        "width": 476,
+        "height": 44
+      },
+      "archive": {
+        "record_sha256": "4402466E42F429CED26A82773218CACB3E15471D44D240645800EB23F3AF092E",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E59A29BE2498B520AB225547218537C8FD8D7E099BB9813BA631E97CF4A386E1",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3057,
+      "refs": [
+        "pm:rio002:0x478691cc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 476,
+        "height": 44,
+        "draw_width": 476,
+        "draw_height": 44,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 5434,
+        "payload_sha256": "470EB74FF2DDDE9E9E4A300DF9A9C961EBC62A4BDB19901C98D647F706F33673",
+        "payload_fnv1a64": "9BA8191A9ADA4D32"
+      },
+      "geometry": {
+        "width": 476,
+        "height": 44
+      },
+      "archive": {
+        "record_sha256": "C2B451A29DE276870354264795AF6C2DC580122DF52AE3109859A18472316EC8",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "A1600CD069CE74A0336D2FCD79B2C1BFF5D2755C701E9D2F0D78073A29466F8B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3072,
+      "refs": [
+        "pm:rio002:0x47885334"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 1690,
+        "payload_sha256": "4C10AD41BE77A2C8003F5A0E5314A951392C90C3483F2A9D4D656FFD2761D36D",
+        "payload_fnv1a64": "05E2DFDEB5932675"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "206659BBA33F3FC071FCFD6FF2D48A039DFCA42AF298D8D746C5A6AC0866049A",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "D19E7D5B63794D3E7664FADA92120B4E4CCA721F0B7CAB3B6C7369255CD406F7",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3074,
+      "refs": [
+        "pm:rio002:0x478860d8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 1616,
+        "payload_sha256": "C528FEF2024D0289702393B11F6A73D75C7B731CE9011E387CB2AD9E55E615A0",
+        "payload_fnv1a64": "0602F6D919472D4B"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "747ECC7C61EECAA3B47F075E04A5D53606D180F725AF8233114AA695AD53BE99",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "113DB9EFA6887346CC75BD3134BCCFA47AE88CD1061BF2E6F54284A6FABFDD08",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3076,
+      "refs": [
+        "pm:rio002:0x47886e10"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 1814,
+        "payload_sha256": "DA0E6AD33F4BA0CCC89F9A620EC30DC0A239AAE7E332673837D19C030E5ED0A3",
+        "payload_fnv1a64": "31FD58747C006CFE"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "0C29CEE88EC7D7ADC57330F390CB8564C7C441549F841B20B518BFBDF486763F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "9A260A33A208DBE3BAD0A2AE730FB519C7AD58C3AB293139D094FBB1ED97DE08",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3078,
+      "refs": [
+        "pm:rio002:0x47887bc8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 1718,
+        "payload_sha256": "EB03BBDDF81A124010D0A804CF30CBDAFEAE5FD0814EF4174D8B186CB6A5D63A",
+        "payload_fnv1a64": "FE30D856864A8897"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "566B2E6161176F6B7C7B5A519BC12EFCCC49A6921B3BC69A9FA3DAA4C4CCC834",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "A9E168CEA8FB6A1CE8ECC6D61CCB2D3D153A6CA6C513F7F6F21B5947553682A5",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3118,
+      "refs": [
+        "pm:rio002:0x4833bc30"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 896,
+        "payload_sha256": "75C8AA87CAC56ACE5A9F6B15FBF205FAB0E92EABA75A3E9812C402AC160B8546",
+        "payload_fnv1a64": "B355CCC434794D1E"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "A0F26984B7F9ABF9749F93136BAF7F6AFA4D40F67F4001CD8403BA69C8F2D033",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "9BCB18272F147D0FCB4493D5FF182551139A91EA1970286DC2DD2A6BCA36192F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3120,
+      "refs": [
+        "pm:rio002:0x4833c408"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 932,
+        "payload_sha256": "85F45B69915A103123566E19F8915728FFF81F12FF30C80BD8DBD5D26D24E863",
+        "payload_fnv1a64": "B6B0ED175F428B26"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "8D7AC5D347D4D810D08EB741367F52F4BD399B17632EBD5B2751D864182DA50F",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "21FEE74D906A96BDA959EB996952E483DE8235A66E79FDF485525F915D76C06F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3122,
+      "refs": [
+        "pm:rio002:0x4833cb94"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 998,
+        "payload_sha256": "DC038A7B6FB30E6F73BD444BA2B1CA2F129EC73ED27421911A90484AB7E617D5",
+        "payload_fnv1a64": "08D96D05694F172C"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "69723601F2683536FCC50DF7C2A80267E260FB31B878AF4E87CADDAD74A364A8",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "25E41FE5E073BFEAA8C35B67225071DEF1548D4B140A402E6E70F64640B7ABF9",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3124,
+      "refs": [
+        "pm:rio002:0x4833d37c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 268,
+        "height": 38,
+        "draw_width": 268,
+        "draw_height": 38,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 1042,
+        "payload_sha256": "65787EB6E08FF02AD39A7236A1B26BEBF156C70D7CF349C64BCF68F5FA7E448F",
+        "payload_fnv1a64": "B42EB3D5CF7EB945"
+      },
+      "geometry": {
+        "width": 268,
+        "height": 38
+      },
+      "archive": {
+        "record_sha256": "9F4597138DAC13C41B3962C0D4FB71D15E6CB70CA87176C91FA9391A6E7992B3",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1D4DB277F61165DFFC63E607E9A95C6AC067076D70E04FBCFEA5D6EECDE637DB",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3341,
+      "refs": [
+        "pm:rio000:0x4f8ef6e4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 903,
+        "draw_width": 1280,
+        "draw_height": 903,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 261850,
+        "payload_sha256": "89DD8947CD0FB6250AE9091B50C6FBE7E36E23112F1577A5BD9380E319D78D07",
+        "payload_fnv1a64": "6BF7F541F9C81779"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 903
+      },
+      "archive": {
+        "record_sha256": "7DC9ED14898DFA038D5592A57916BE6DE3102C8D483265150B963ED7EAB946C3",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "51859D1CBA63DBB7054DCDE9D7365EB458B9438873C337C325F66164DE6FA31F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3448,
+      "refs": [
+        "pm:rio002:0x6883439c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 150558,
+        "payload_sha256": "F4EB62A96DA63E26807B38191992E49C8FBF3036680A50E4B9EFFF6851508E38",
+        "payload_fnv1a64": "09767FD3DAE25046"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "1E85935CEF66826C23587F4155EED84B52E9417EED3E99A1F38497BFC5983A3E",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "6CE1D35FD73EC0503227450A507332FFF2F4024217532690D09D653F17DA35D0",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3449,
+      "refs": [
+        "pm:rio002:0x68858fec"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 167622,
+        "payload_sha256": "4A30132449E77F63E4B863D49D1606FF11973471F689C52BAF76EDF892097CCD",
+        "payload_fnv1a64": "2E01B31AE258EACE"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "5451DA5592B45788C142CAC1058BBF33A75A5EFECF081751692624E540E71E35",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "1A1E536F48D4144EABFF87B50FF41CB8C6C57B91692AEB6C921913B75A75F70C",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3450,
+      "refs": [
+        "pm:rio002:0x68881ee0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 196576,
+        "payload_sha256": "5661E8A8531CF7A0852B29339181997048E5EBC17FA8D525191AED9F994F17A9",
+        "payload_fnv1a64": "F472961A64E0F72D"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "F8D07D37C8CE9A100C584D361211B85E829709E596FF0D809D758ACE808ADDCF",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8511C6A4B5F695B0D279D56528DF802A0A48CF786E5F1FF5B4794970721C31D2",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3451,
+      "refs": [
+        "pm:rio002:0x688b1ef0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 230918,
+        "payload_sha256": "0F3AB7462A1FB3CC9CB143805C40405176BD8107AD094DA12344744E95443E37",
+        "payload_fnv1a64": "114E14970C30EBFC"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "76846C8BC7D0D3F5AC5375EEC0C8C6EE9D05BF1FFF96382CA5EB8B650B7D3494",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "EBDC2A90D514FED3201B0392F5957DC786D983735D6500B662524BC26699CCB3",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3452,
+      "refs": [
+        "pm:rio002:0x688ea524"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 292994,
+        "payload_sha256": "6C0B429FE378F8EEDA0E8C5FCBC13DF12DA329220C6D16539659791477B5C560",
+        "payload_fnv1a64": "E257E9AA20032D68"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "45D4C9637F7567FAFA29E5143BC6D2DD9BAD1D9D0584687ED1AFF434F2CF1C92",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "4CA9E69CF5E8CF611DDA2D63EBEE86A0E1AD9769F929858F25DDB1CA2865CA01",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3453,
+      "refs": [
+        "pm:rio002:0x68931dd4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 181256,
+        "payload_sha256": "83A5FA65930A38967AFA119F784C62A7EFFE409F240088F2BB787C4B8C00D3D1",
+        "payload_fnv1a64": "572654B310D53BF0"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "C95E048D7FD248693E2E4F70CCD3BF6F2187A65C157D5D50EB4A404BD5B200C1",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "8FDC16A8CBCFF3CFC1009BEEE1736E93C1E7FD19D96F2417EFD3A3BFF931ACDE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3454,
+      "refs": [
+        "pm:rio000:0x4f92f5f0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 904,
+        "draw_width": 1280,
+        "draw_height": 904,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 364418,
+        "payload_sha256": "C6C3BA20FDBE7AF7E1618B061260FC6CE2523C5B9B6E05AEB405E8E7811E38A0",
+        "payload_fnv1a64": "893B93E51E156AED"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 904
+      },
+      "archive": {
+        "record_sha256": "2965506DA9FA605FEA0CA85C5363894443E2EE7851262E57615D00E7833367EB",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "412FBCB6611F7B14DA18EC6F999599837107FE443EBA1185D2E37E7C09905F9F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3455,
+      "refs": [
+        "pm:rio000:0x4f9885a0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 904,
+        "draw_width": 1280,
+        "draw_height": 904,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 294482,
+        "payload_sha256": "8387B6FF46970B3020AE94F20C3A094B68D0E4B6D998CB8E102F16F85B813C8C",
+        "payload_fnv1a64": "1EED556D18751A81"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 904
+      },
+      "archive": {
+        "record_sha256": "C6EC9A4C5C0346F1C6A3C501B9C07E18C0F260631245C0F06BBF81CFE83F09D8",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "9030E069B86C8D1A1CB79F8A26B2C49CEFB65426B8A777D36B445E8AAEE8A272",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3459,
+      "refs": [
+        "pm:rio002:0x68adb8cc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 904,
+        "draw_width": 1280,
+        "draw_height": 904,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 263078,
+        "payload_sha256": "8A2539821E84EEE6055B5FCB7AA26A15B80E2F535B119BBB68207E6C00207C19",
+        "payload_fnv1a64": "7A3452F9CD48952E"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 904
+      },
+      "archive": {
+        "record_sha256": "63581BB2FD01539FB300BC06996DE0A309561710A35AAA2D26CAD5F63A81A6B1",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "9E9EDFA07A1ACD51899AEC6F2123C55B2DD9C425383896DCD6BA2C20B021EAE5",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3608,
+      "refs": [
+        "pm:rio000:0x4fae240c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 387642,
+        "payload_sha256": "95C74C80F07C1EF8E5B1F9839593722AD7119A3D25958F07EFF89732FD1DD69F",
+        "payload_fnv1a64": "8D60996580467D5F"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "1AF7F0AF014372BFF8CE6404818AA9E71842482BD132C4886FA557F1CBA8AD7A",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "9DE88D0DBCCCB839C7AEA20D4A69AB424A441A079343AE1BC7F8792C0C77DDEE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3609,
+      "refs": [
+        "pm:rio000:0x4fb40e74"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 389090,
+        "payload_sha256": "2626AB9C48F7237012B4FF2B41F24D9ED9B0B718BF94785B4E9B51FBC8303EED",
+        "payload_fnv1a64": "A4EA83B1EA58590F"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "A0EFAC432B6516B60722534DF0F253B2590B661CA3372020161DAE10A2B491DF",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "AAB834DDC71986F8AA7C5E80F96A8E72DC5D938C8AA00FF761A9E1F51C5C8F94",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3610,
+      "refs": [
+        "pm:rio000:0x4fb9fe84"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 392820,
+        "payload_sha256": "77559208E32B0261651DFF36755139C4EF62E24DA27CD1C1454192AD7448167A",
+        "payload_fnv1a64": "8DC33D14828A1004"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "1AD1F9B767803F47228B172E363F2A53866AB91B4B285F10F4E0738125AD2BC5",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "7529FEC777DE022C5F14468E6F3663522C88788ACC18A92E7FE08ADF604DCDE0",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3699,
+      "refs": [
+        "pm:rio000:0x4f9f0f94"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 109700,
+        "payload_sha256": "EE54C449B61113450694FEE4D26CED377F05A2FC12ACEAA6B9C71A39B2DBAC61",
+        "payload_fnv1a64": "F342C260A1D6C4A8"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "65E53B9C009FFA1289677663E7012CC5B090E3FDAD6927E3C5760987E25394B7",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "7DF301B888C9ED1D85F59C7F613E024ECB0997EA87813366906095FC187CE316",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3700,
+      "refs": [
+        "pm:rio000:0x4fa0bc48"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 203050,
+        "payload_sha256": "33322CCDBCDAF69B58DF6125FCA00DD38CF563FEF4B6C8EC66DD29BA1EDA8059",
+        "payload_fnv1a64": "C2CE50340776410B"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "156D0394B41B2626445D419A312733A70C1181068DDF115000052F930DC215BE",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "B102C77AE704FC68496DA368020F73539BE8D8B6C361DCFB235DE3D9673EA974",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3710,
+      "refs": [
+        "pm:rio000:0x4fa3d5a0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 110130,
+        "payload_sha256": "B421F92C7F810CD0839E89154DA8CC4228C4E2EF8DC8ADD5F6EF75B04AAA43CB",
+        "payload_fnv1a64": "A488BD8AC17F1560"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "EA5584935047AD2EFBAA9D4384CC449AB5C7462E8B09D8FD7A20DC514A22E03B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "C43CE38ABA6F4335F1227520DB4A47AC727565E2DFB6EE877B77D35169DC3913",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3722,
+      "refs": [
+        "pm:rio000:0x4fa58400"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 206322,
+        "payload_sha256": "BA54F53A960A06BB0DE729C0D2F9C20A7134F77B016FC27505ECA08C4E9436BA",
+        "payload_fnv1a64": "74710F231A06D779"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "1B69DDA6BF3268C39761460EB4DD9C5FAC935F539A14EC37AD5BA01161690C6B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "577D2E3B0EFA6E926034C3CF85AF5942E982890034EBC6EF5B02B7A428C90E50",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3723,
+      "refs": [
+        "pm:rio000:0x4fa8aa20"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 91706,
+        "payload_sha256": "C3D1B84F4C1908DD26BDBC132C739F4BEDC8C20799DAE5B84CC99545101810AF",
+        "payload_fnv1a64": "9C0C9F577F4AF2F0"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "6085D4E6299C04FDB7A9D175B710702923DE49C9972341F7F91B69F1C307B1AA",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "02DCA700BB315085C38DB35282B6599A3E050843D5A1A595F950B199F69BF373",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3724,
+      "refs": [
+        "pm:rio000:0x4faa1088"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 91168,
+        "payload_sha256": "78D082CE4CBF2A33DE71141002BE5E2A77CCB13DC57E82EA3F0E4C880916F9A5",
+        "payload_fnv1a64": "C8F52897C642F279"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "92064C42C5B08B72EB0189BC78BB47B49189141EF90613FBBFBF38CA7D0413BC",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "25FA30E08026B2B494721BB8A8C857329A54DCFD7DAC2E3FA5F5003DE04B6E7F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3944,
+      "refs": [
+        "pm:rio003:0x3e4d682c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 2176,
+        "height": 1536,
+        "draw_width": 2176,
+        "draw_height": 1536,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 479950,
+        "payload_sha256": "823937FA7D9EC0FBC3D08F60216194B3C5C5AA4138011CB4031C0EC104620194",
+        "payload_fnv1a64": "9A1666408C009133"
+      },
+      "geometry": {
+        "width": 2176,
+        "height": 1536
+      },
+      "archive": {
+        "record_sha256": "BDE624656B4375484E7346C0621B2BB35ABFFFA6114433F4C90D5214DD288397",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "84C3B58AA89159B62CEDB4050D79B4DCA7CE9177A0E8549700F62BDCCC526C10",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4006,
+      "refs": [
+        "pm:rio000:0x4f8d3bf8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 26092,
+        "payload_sha256": "2835CB7545F00113AD5280A7760DE3EF248B8C95CB6AC30B27067FDA4498D64C",
+        "payload_fnv1a64": "CBA448F843D6445D"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "270E80AD366F900F032F8F30DE3E35893AC5C8F00D0A3C75DEF7011A9E102C5C",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "282A38002721D07BEF0615834B4273B814E739CA971DB8A1B1F26E918F751A2D",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4065,
+      "refs": [
+        "pm:rio003:0x41aae2a8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 12550,
+        "payload_sha256": "9AD90978D52888548A09F223459184F945D848BEFC74ED21AF53782B5BB75F0A",
+        "payload_fnv1a64": "6DBEFB29BFECB9CB"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "4166170DED3F3143E3C11B6E3BDC6CCD3981B54488C599513DF0D9DEB5FF2E37",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "638334D000B257CD183F715E25251CC515B67CBF0D2506287C331442551BBEA6",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4066,
+      "refs": [
+        "pm:rio000:0x4f8da21c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 13936,
+        "payload_sha256": "19867A9E7183881746EE1FC31B843ECB3CEDF6D71AED8B81FC086D0A71756C7B",
+        "payload_fnv1a64": "6EB628F09B777B0F"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "A395878AAB471E984A6D29822AE6E1AC5E9960D0EFBD5C07F92C1DD289697BEA",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "6D07ED6A7D8D80F2286006520DAFE6C8976BC712943A543630EAC3E7FC80F36F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4067,
+      "refs": [
+        "pm:rio000:0x4f8dd8bc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 19048,
+        "payload_sha256": "DF236640543459A6E88D576883A363AD128B4A72248B10318EC4487387B944B2",
+        "payload_fnv1a64": "9F4DF596532192E9"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "4B68E20485733013CA33C1ACD45678B8DF9C273061EFB846CA8D391EF7F811E3",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E6F18123457261E11054D73B58083052DCE5902353D4E67CE85A7E533AE7C258",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4071,
+      "refs": [
+        "pm:rio003:0x41ac5ec0"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 20008,
+        "payload_sha256": "43ECB76A323C4B7E6AEFC7BB74D452A3E3D00284923C5E1EEF4DF9356CB93674",
+        "payload_fnv1a64": "AA3EEF6879DEA0A1"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "C29A315F0C3B281248EB7E514D07C17AC204B93D9BD13649DC2726518A0A5D5B",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "EE44032E6A358F1383D2D3185FE84785B7A1060AE5A3703AD7D3FCE3C4A76EDC",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4139,
+      "refs": [
+        "pm:rio000:0x4f8e48e4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 7748,
+        "payload_sha256": "42CB8E49B5A4EF962863741D33968C9D1971D1654BCCCB71AD6EFB4FBC32EB8D",
+        "payload_fnv1a64": "697D3CA08FA75D19"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "90D9E0F5D96536ABDD87819C81DFFDBE52F090AF068570490B216FDD96CA71A8",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E538997EBD66784B27CA520FE4C0EB4E81326D09B7052562A989B561F8E51542",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4140,
+      "refs": [
+        "pm:rio000:0x4f8e6758"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 16394,
+        "payload_sha256": "9815DA9E6B86D425A40E3B539CFD8A82EEDBE59F71061E80E0720488ADF9303B",
+        "payload_fnv1a64": "889853C2EA89D4EF"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "6DACDF8DDED2EA5054CF64E4AA6CA86966649F6D7495AFE77EA5F6F78F99E23C",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "53A4344CEA3CA6B8FDA284A7E47DF7383710DC8F59CCC18D6F4E82EDFD4FDB79",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4146,
+      "refs": [
+        "pm:rio000:0x4f8ea790"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 7140,
+        "payload_sha256": "B4EC3F88813E1B6A6AB02E0B88ECC6A480382BE317D6D770573700A69A9C8B69",
+        "payload_fnv1a64": "2117BE6243CF55B4"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "0F0EE5B5E145F4697F41E1D58C7F75582EEBA4BBE91EB52509D730C561906ED1",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "A89E40B24B7133501378C9D1BD3FDE936BD787B21F8ECCC6BDC76AAD9A54507B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4375,
+      "refs": [
+        "pm:rio004:0x06bf22a4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 520258,
+        "payload_sha256": "F5BE504981670092FC2A1A8D724004B357F942205C619EC11B102267DA33C08D",
+        "payload_fnv1a64": "A7F3EA274677CC46"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "FBE9181046F626A5201BD4369791E341ECE537019BD75F9D0185879605885226",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E1C6431EB33797BACA30BCD52D34CFD74C22D0CCD4BD78AB1CC38E180D68EF65",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4376,
+      "refs": [
+        "pm:rio004:0x06c71314"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 582328,
+        "payload_sha256": "8524571591978DCA5C5C0EB761E3457E9E210B21CEB5D25EEA2DDDC386F50AFE",
+        "payload_fnv1a64": "5E1D3EA356262248"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "39825B7622604ED48C578BCF3458CC0DE9709DFB036447470222F9DA65C1D79D",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "69F81CB2C5120BEF374B2DCAD39EDB2EA743DD2301152522BCBEB58846987504",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4377,
+      "refs": [
+        "pm:rio004:0x08eea820"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 221,
+        "height": 321,
+        "draw_width": 221,
+        "draw_height": 321,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 64272,
+        "payload_sha256": "B50B4F4CE7EB402B5F8BC368ADC5F22F266102F17596827440D4039A545BAC22",
+        "payload_fnv1a64": "6B42BD8FE1B829F4"
+      },
+      "geometry": {
+        "width": 221,
+        "height": 321
+      },
+      "archive": {
+        "record_sha256": "C0EB868C17C52C0E9CC5E963A26ACF99B0D5E3BEFDE59F280B126101C6DEB26C",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "7F5BE82864B585FE1A14DAD4EE85F26E9A587CEA05E33CA998F5C65C9257F63B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4566,
+      "refs": [
+        "pm:rio004:0x4dbab7c4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 315982,
+        "payload_sha256": "74AD4BBA143EF49897CA40C3D7CA364EF2EF3C906E008733E68738F3CCD301F0",
+        "payload_fnv1a64": "08C9190465598DDE"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "D8F8115738C6F825651623F06DCBF1F9B368993CB0A957A92D646F6B311F1944",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "4105AC3E961BE21075D65D6C26943D7063B37572C0F0DDCD3FD0C32A1083ED8B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4590,
+      "refs": [
+        "pm:rio004:0x55af990c"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 459744,
+        "payload_sha256": "81DF9381B1890251384701D7D110F44550F0D3427FA499882AEC32B06F644621",
+        "payload_fnv1a64": "10A2B723F53C444A"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "6D1CCDE37EC794329D147363FA9019F4BF47244477A5EB775A706BBCFE567B22",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "B21F46AD8A8AD1AB0CD5B8EEED145C6500762AD0BC222BF7FF4075D8512F3F6B",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4591,
+      "refs": [
+        "pm:rio004:0x55b6d540"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1024,
+        "height": 600,
+        "draw_width": 1024,
+        "draw_height": 600,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 266224,
+        "payload_sha256": "DFA7A099B71EEE0220565F39498A3B175957DF58CF7652F08685CDBB640DFAC2",
+        "payload_fnv1a64": "8165C67690D457A7"
+      },
+      "geometry": {
+        "width": 1024,
+        "height": 600
+      },
+      "archive": {
+        "record_sha256": "586B028879B6BD9CDF47A9DCD09E8A98D30BCCDE0271F9AE441706FE9DE432E7",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "720C05751A50B1F40426281E21134C19433566F08E20A35DFEE6FB1197FBDD5F",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4620,
+      "refs": [
+        "pm:rio004:0x6895e518"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 480,
+        "height": 85,
+        "draw_width": 480,
+        "draw_height": 85,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 34526,
+        "payload_sha256": "1666FDEE37135A3737B55BE2C37A519F1C800D93EC13768897ACF6EA876A014E",
+        "payload_fnv1a64": "715B9A4344E324FB"
+      },
+      "geometry": {
+        "width": 480,
+        "height": 85
+      },
+      "archive": {
+        "record_sha256": "53ECA288ED4F53C484441A44C2008F99F17445ABB4A2AD25BEDDBBE44661F3E5",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "F5A3DD4FA0F4D29458D18574B9F820E8928901BA3F74D10D94D574A5BFFF6084",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4622,
+      "refs": [
+        "pm:rio004:0x68967590"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 300,
+        "height": 33,
+        "draw_width": 300,
+        "draw_height": 33,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 2412,
+        "payload_sha256": "EB65EB50E177C992190F9C2807B59EFE06B213B23B49D8D68AC612E3E4983680",
+        "payload_fnv1a64": "21AA2C4662A990B6"
+      },
+      "geometry": {
+        "width": 300,
+        "height": 33
+      },
+      "archive": {
+        "record_sha256": "83D7193909D7B5FFA5A29A31E2AC67016A145B8467FC45B0A03F4CEAD4039D33",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "E62D9C594257147D575F3FEA9F2CB1077FA7277BA0EF68CCAE41C1E664EEEE32",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4624,
+      "refs": [
+        "pm:rio004:0x689688bc"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 300,
+        "height": 33,
+        "draw_width": 300,
+        "draw_height": 33,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 1938,
+        "payload_sha256": "7761F5399DB4EA84B2D5A2580CF1A8B81EB9F38A257F83AB5694A6796BFA1903",
+        "payload_fnv1a64": "44FF6EA0A52E10F5"
+      },
+      "geometry": {
+        "width": 300,
+        "height": 33
+      },
+      "archive": {
+        "record_sha256": "B0804999656553614715AC02E1BA85982E52D46C15AEF8E2D08909E4C023ECC0",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "C6B069F21CDA4002951EA5F6A4482F3AD8CB612A49F5015037EDA27C419129EB",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4656,
+      "refs": [
+        "pm:rio004:0x6e1690a8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 273,
+        "height": 325,
+        "draw_width": 273,
+        "draw_height": 325,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 67644,
+        "payload_sha256": "A4D40FE65E85E9D12348F7AFED3B8E692843CA02D8A561EBB2F4C76E8E5A5FCB",
+        "payload_fnv1a64": "DA986894158E60F5"
+      },
+      "geometry": {
+        "width": 273,
+        "height": 325
+      },
+      "archive": {
+        "record_sha256": "753F9116591CD4ACC94340DF19AE1C22AEE4DC9AF7E8604DBD68E6C2AEC23F15",
+        "payload_offset": 44,
+        "record_sha_predeclared": true
+      },
+      "installed_png_sha256": "665CF7CEE616A4BC509EB385F33C77A808148667B4D452C536505598AAF95728",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2826,
+      "refs": [
+        "pm:rio000:0x0013daee:cbg2d/cr6ti"
+      ],
+      "identity": {
+        "payload_bytes": 960508,
+        "payload_fnv1a64": "F572F579DCF19719",
+        "payload_sha256": "7F7D22FAF39E2DC29D6C8C126842FF62E0F8FD0BA95E6D3627743437207C4E91",
+        "codec": "CBg2d/Cr6Ti"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 1200
+      },
+      "archive": {
+        "record_sha256": "C935B65A05BA1C8C5F726A08B96B28C779DC7C426432F03709BA41B935655482",
+        "payload_offset": 40,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "7C989FB821EF7074F92D9A1BE09A31F3B1513888DF977784EF505464C44873D3",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2827,
+      "refs": [
+        "pm:rio000:0x0022836a:cbg2d/cr6ti"
+      ],
+      "identity": {
+        "payload_bytes": 983288,
+        "payload_fnv1a64": "ED303B343B7E47AA",
+        "payload_sha256": "1431D67D2977CEFE42AFDB96639D5F22C973CC4A8978D1FA816F769C8CDE99ED",
+        "codec": "CBg2d/Cr6Ti"
+      },
+      "geometry": {
+        "width": 1200,
+        "height": 1200
+      },
+      "archive": {
+        "record_sha256": "7CD648317DB7133D7808DC78967FC20A55C29B5F822BD057C7F015CDAD1AECD2",
+        "payload_offset": 40,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "501EAF81E03E92ADC1CF485BC21FB8BC458F5CC536E3B2589E2BA8B98EF710CE",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2828,
+      "refs": [
+        "pm:rio000:0x003184e2:cbg2d/cr6ti"
+      ],
+      "identity": {
+        "payload_bytes": 623574,
+        "payload_fnv1a64": "EB127BFE5C1698F0",
+        "payload_sha256": "4BDAC91275E57701C41622FE7AB7744BC937F61A53D6C7FA5455A5A9C5EE7D35",
+        "codec": "CBg2d/Cr6Ti"
+      },
+      "geometry": {
+        "width": 1440,
+        "height": 1200
+      },
+      "archive": {
+        "record_sha256": "6D286D3A3DEFB0716760B8909FF968CD54FBEE1B6F3B26E119F800934EE15932",
+        "payload_offset": 40,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "5F9DDFF5D7DFDFDF2E60F353BE34011D6CB5EF76A8D05A659D14A05B8AB11E46",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 2829,
+      "refs": [
+        "pm:rio000:0x003b093a:cbg2d/cr6ti"
+      ],
+      "identity": {
+        "payload_bytes": 618872,
+        "payload_fnv1a64": "55C51261B9FE0930",
+        "payload_sha256": "093B138EF375175E291DE3E3CAC793FC18B1D8327E9E98355F55DBA83384EBBB",
+        "codec": "CBg2d/Cr6Ti"
+      },
+      "geometry": {
+        "width": 1440,
+        "height": 1200
+      },
+      "archive": {
+        "record_sha256": "6AFA48B9325F6A67C60AEEFB2A3E9CC3E0623F3DF1411C7322B6B2A8ED981ACB",
+        "payload_offset": 40,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "D59C741C21557101C1B0789BD7697F45428DB693921C86C8897338CD5EEFA99A",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 1439,
+      "refs": [
+        "pm:rio000:0x0008da10"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 750,
+        "draw_width": 1280,
+        "draw_height": 750,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 57528,
+        "payload_sha256": "EFCA68E01C1C93F7E8DD6A7607C82A1EAD894436FEFF87772577214713792006",
+        "payload_fnv1a64": "CDCF78675F721F70"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 750
+      },
+      "archive": {
+        "record_sha256": "328995C7C1C46DE3DFCC3FB3187BF45D0C35155B00E4A35D22425F9930611B81",
+        "payload_offset": 44,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "6E48862F03A16EB869A6A6D16E331CF17995930A193A0239FEB725A7ED9F3761",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4138,
+      "refs": [
+        "pm:rio000:0x4f8e2354"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 9568,
+        "payload_sha256": "C5EA8513B90A833D88E2E7D147ED3C2A9D2BB72A79B9F31EB95130350006C3F9",
+        "payload_fnv1a64": "BEA94F08C9D5D04E"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "274B2D5F6B05801166151453EFD03DC375433457514209CEF9E5EFB6FC5262E7",
+        "payload_offset": 44,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "8E1871EDB8E58EC2946CE7AFF97C0C7589D54E488758C3A401F4EBC1ED456607",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 4147,
+      "refs": [
+        "pm:rio000:0x4f8ec3a4"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 210,
+        "height": 123,
+        "draw_width": 210,
+        "draw_height": 123,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 3,
+        "payload_offset": 44,
+        "payload_bytes": 13050,
+        "payload_sha256": "8CA7B0AE598859E5045278AB6CC2638AC430A4EB218B07DB459D9BBF844C146F",
+        "payload_fnv1a64": "FB1141C17DA5BB8F"
+      },
+      "geometry": {
+        "width": 210,
+        "height": 123
+      },
+      "archive": {
+        "record_sha256": "384520A77BB62F0A5EEDD85A9457769D8608432A84913F878F93AF4EAAAEF228",
+        "payload_offset": 44,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "A410203E01EB0EF02455ECCB09595A4819039C045A6EE1727703CE91CC35A070",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3698,
+      "refs": [
+        "pm:rio000:0x4f9d0420"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 133956,
+        "payload_sha256": "30524ABE0EFD885D488511843DAFDDD5394F6A30E235C7D18C4FC0DCF067AEC0",
+        "payload_fnv1a64": "022B45CCCA3ED0EA"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "620B22528836079C236BE4FFCB6FFCBEE763FA1A5060B9B826C0DF41E59F26EF",
+        "payload_offset": 44,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "253BB3FAA3684B987518ACA31C7B7A83B4A5756F978352B057AEAD210A4647BB",
+      "required_failures": 0,
+      "case_count": 32
+    },
+    {
+      "game": "PM",
+      "group_id": 3725,
+      "refs": [
+        "pm:rio000:0x4fab74d8"
+      ],
+      "identity": {
+        "codec": "Cr6Ti",
+        "width": 1280,
+        "height": 786,
+        "draw_width": 1280,
+        "draw_height": 786,
+        "x_offset": 0,
+        "y_offset": 0,
+        "kind": 2,
+        "payload_offset": 44,
+        "payload_bytes": 175878,
+        "payload_sha256": "72D0795AB7551767E2BE68A181D87A103AC01A6659146F576030EAF1087B60CB",
+        "payload_fnv1a64": "EBD0E8283D35B2F3"
+      },
+      "geometry": {
+        "width": 1280,
+        "height": 786
+      },
+      "archive": {
+        "record_sha256": "1EE2A3899DCA48263DC031FE0A4171EE71EAAFDC0372D7414C4687097B5EEC33",
+        "payload_offset": 44,
+        "record_sha_predeclared": false
+      },
+      "installed_png_sha256": "DD6A0B898BEC9510E8DD1E87FE0E39328FA4D34291A02B2CDF3EE40561E16DF3",
+      "required_failures": 0,
+      "case_count": 32
+    }
+  ]
+}

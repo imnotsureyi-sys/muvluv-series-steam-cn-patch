@@ -1,0 +1,322 @@
+{
+  "schema": "photon-native-trace-reconciliation-v1",
+  "game": "PF",
+  "capture_dll_sha256": "ECD4C5DBC9A49AC56F641CC1DE3A87D9C24DEDE50345106B3A95642182529D4B",
+  "trace_sha256": "F28AC9C9A8A40733A786BC82A64A7BBBE7610983735A95DE026542E2DDF89D8E",
+  "source_manifest_sha256": "3D412E4C469105959C2973BC6965E3AD991E9402BFD3D6D42B2A924A06EE9E3E",
+  "game_started": false,
+  "game_files_modified": false,
+  "expected_bindings": 1197,
+  "statuses": {
+    "commit_readback_observed": 13,
+    "not_observed": 1182,
+    "observed_failure": 2
+  },
+  "unique_events": 388,
+  "duplicate_events_ignored": 0,
+  "unmatched_events": 340,
+  "ambiguous_events": 0,
+  "capture_cap_reached": false,
+  "successful_prepare_inferred_only_from_commit": true,
+  "capture_exhaustive": false,
+  "current_build_runtime_verified": false,
+  "rows": [
+    {
+      "group_id": 1263,
+      "refs": [
+        "pf:rio000:0x1d48f42c"
+      ],
+      "payload_bytes": 854,
+      "payload_fnv1a64": "92C576BF92FC2B50",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        854
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 1256,
+      "refs": [
+        "pf:rio000:0x1c964a0c"
+      ],
+      "payload_bytes": 3430,
+      "payload_fnv1a64": "06FD598F5BEA316E",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        3430
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 465,
+      "refs": [
+        "pf:rio000:0x1d460654"
+      ],
+      "payload_bytes": 4336,
+      "payload_fnv1a64": "80A2A830FB4897A8",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        4336
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 362,
+      "refs": [
+        "pf:rio000:0x1c966954"
+      ],
+      "payload_bytes": 5158,
+      "payload_fnv1a64": "553E21437BEF2656",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        5158
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 1262,
+      "refs": [
+        "pf:rio000:0x1d45ec5c"
+      ],
+      "payload_bytes": 9600,
+      "payload_fnv1a64": "8366DAA349621FB9",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        9600
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 470,
+      "refs": [
+        "pf:rio000:0x1d532048"
+      ],
+      "payload_bytes": 13074,
+      "payload_fnv1a64": "A81C1456F1A3B619",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        13074
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 364,
+      "refs": [
+        "pf:rio000:0x1c972008"
+      ],
+      "payload_bytes": 16266,
+      "payload_fnv1a64": "93BFF6A66C221015",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        16266
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 363,
+      "refs": [
+        "pf:rio000:0x1c9688a8"
+      ],
+      "payload_bytes": 16390,
+      "payload_fnv1a64": "05886167ADB84E9D",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        16390
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 365,
+      "refs": [
+        "pf:rio000:0x1c9c0658"
+      ],
+      "payload_bytes": 17442,
+      "payload_fnv1a64": "7FE87C7505186BA4",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 2,
+        "decode_ordinary_composited_commit": 2
+      },
+      "observed_extents": [
+        17442
+      ],
+      "commits": 2,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 366,
+      "refs": [
+        "pf:rio000:0x1c9ca184"
+      ],
+      "payload_bytes": 17706,
+      "payload_fnv1a64": "8C1ACD0EEC2FA6E8",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        17706
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 466,
+      "refs": [
+        "pf:rio000:0x1d462434"
+      ],
+      "payload_bytes": 91762,
+      "payload_fnv1a64": "DB120CA7CD4666F6",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        91762
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 1141,
+      "refs": [
+        "pf:rio000:0x00e5817c"
+      ],
+      "payload_bytes": 101980,
+      "payload_fnv1a64": "CA269F5FA246F17A",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 1,
+        "surface_method_enter": 1,
+        "decode_ordinary_composited_commit": 1
+      },
+      "observed_extents": [
+        101980
+      ],
+      "commits": 1,
+      "failures": 0,
+      "zero_padding_matches": 0
+    },
+    {
+      "group_id": 2018,
+      "refs": [
+        "pf:rio000:0x1fa3b718"
+      ],
+      "payload_bytes": 698581,
+      "payload_fnv1a64": "F65147B1D6AFBA5A",
+      "status": "observed_failure",
+      "events": {
+        "crip008_ordinary_identity_not_targeted": 3
+      },
+      "observed_extents": [
+        698584
+      ],
+      "commits": 0,
+      "failures": 3,
+      "zero_padding_matches": 3
+    },
+    {
+      "group_id": 2019,
+      "refs": [
+        "pf:rio000:0x1fbdfe74"
+      ],
+      "payload_bytes": 88785,
+      "payload_fnv1a64": "A3CEF04B988F1823",
+      "status": "observed_failure",
+      "events": {
+        "crip008_surface_rejected": 1
+      },
+      "observed_extents": [
+        88788
+      ],
+      "commits": 0,
+      "failures": 1,
+      "zero_padding_matches": 1
+    },
+    {
+      "group_id": 2498,
+      "refs": [
+        "pf:rio002:0x21caf7c4"
+      ],
+      "payload_bytes": 38508,
+      "payload_fnv1a64": "C4FBE73D92E79127",
+      "status": "commit_readback_observed",
+      "events": {
+        "load": 2,
+        "surface_method_enter": 2,
+        "decode_ordinary_composited_commit": 2
+      },
+      "observed_extents": [
+        38508
+      ],
+      "commits": 2,
+      "failures": 0,
+      "zero_padding_matches": 0
+    }
+  ],
+  "rows_projection": "observed only; missing rows remain included in not_observed count"
+}

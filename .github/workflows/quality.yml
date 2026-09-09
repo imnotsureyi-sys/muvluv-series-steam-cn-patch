@@ -73,3 +73,8 @@ jobs:
             $actual = (Get-FileHash -LiteralPath $binary -Algorithm SHA256).Hash
             if ($actual -ne $authority.games.$game.installed_dll_sha256) { throw "Installed profile identity changed: $game" }
           }
+      - name: Build both diagnostic variants without installing them
+        shell: pwsh
+        run: |
+          $zig = (Get-Command zig).Source
+          python -m rUGP.tools.images.prepare_native_diagnostics --zig $zig --output "$env:RUNNER_TEMP/diagnostics-ready"

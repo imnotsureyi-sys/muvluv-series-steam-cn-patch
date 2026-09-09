@@ -51,7 +51,8 @@ def validate_replay(replay: dict, returncode: int) -> None:
             raise ValueError(f'Unsupported replay coverage claim: {field}')
 
 
-def compile_fixture(zig: Path, game: str, output: Path) -> Path:
+def compile_fixture(zig: Path, game: str, output: Path,
+                    fixture: str = 'crip008_route_replay.c') -> Path:
     selector = f'PHOTON_V6_{game}_SELECTOR'
     names = [f'photon_v6_{game.lower()}_native_runtime.S',
              f'photon_v6_{game.lower()}_selector_adapter.c',
@@ -59,15 +60,18 @@ def compile_fixture(zig: Path, game: str, output: Path) -> Path:
              'photon_pf_decoder_surface_view.c', 'photon_v6_surface_transaction.c',
              'photon_v6_internal_route_gate.c', 'photon_v6_exact_overlay_core.c',
              'photon_v6_special57_sidecar_loader.c']
+    if fixture == 'native_sites_offline.c':
+        names[1] = '../../tests/runtime/selector_sites_offline.c'
     exe = output / f'replay-{game.lower()}.exe'
     command = [str(zig), 'cc', '-target', 'x86-windows-gnu', '-std=c11', '-O2',
                '-Wall', '-Wextra', '-Werror', '-municode', f'-DPHOTON_BUILD_{game}=1',
                '-DPHOTON_V6_NATIVE_TEST_HOOKS=1', f'-DPHOTON_V6_PRODUCTION_{game}=1',
                f'-D{selector}_ADAPTER=1', f'-D{selector}_TEST_HOOKS=1',
                '-I', str(RUNTIME / 'generated'), '-I', str(RUNTIME / 'include'),
-               str(ROOT / 'rUGP/tests/runtime/crip008_route_replay.c'),
+               str(ROOT / 'rUGP/tests/runtime' / fixture),
                *[str(RUNTIME / 'src' / name) for name in names],
-               '-o', str(exe), '-ladvapi32', '-luser32', '-lgdi32', '-lwindowscodecs', '-lole32']
+               '-o', str(exe), '-Wl,--image-base,0x10000000',
+               '-ladvapi32', '-luser32', '-lgdi32', '-lwindowscodecs', '-lole32']
     compiled = subprocess.run(command, capture_output=True, text=True, timeout=180)
     (output / f'compile-{game.lower()}.log').write_text(compiled.stdout + compiled.stderr, 'utf-8')
     if compiled.returncode:

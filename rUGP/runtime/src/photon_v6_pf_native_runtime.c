@@ -1521,7 +1521,7 @@ static int selector_translation_language_exact(
 static int selector_decision_allows_special(
     const ObjectBinding *binding,
     const PhotonV6PfSelectorDecision *decision) {
-#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE)
+#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE) && defined(PHOTON_V6_PRODUCTION_PF)
 #define SELECTOR_GATE_EXACT(condition,code) do { \
     if (!(condition)) { \
         photon_v6_pf_selector_adapter_diagnostic_native_gate(code); \
@@ -2010,7 +2010,7 @@ void *__attribute__((cdecl)) photon_v6_pf_decode_prepare(
          * ordinary exact-payload gate. */
         if (selector_allowed != 1 ||
             !selector_decision_allows_special(&binding,&selector_decision)) {
-#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE)
+#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE) && defined(PHOTON_V6_PRODUCTION_PF)
             if (selector_allowed != 1)
                 photon_v6_pf_selector_adapter_diagnostic_native_gate(34);
 #endif
