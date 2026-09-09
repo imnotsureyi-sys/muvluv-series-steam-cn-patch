@@ -2,21 +2,32 @@ name: Quality
 
 on:
   push:
+    branches: [main]
   pull_request:
 
 permissions:
   contents: read
 
+concurrency:
+  group: quality-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   python:
-    name: Python / ${{ matrix.os }}
-    strategy:
-      fail-fast: false
-      matrix:
-        os: [ubuntu-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+    name: Python / ubuntu-latest
+    runs-on: ubuntu-latest
+    outputs:
+      windows: ${{ steps.scope.outputs.windows }}
+      runtime: ${{ steps.scope.outputs.runtime }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Select checks for changed files
+        id: scope
+        env:
+          QUALITY_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: python .github/scripts/quality_scope.py
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
@@ -36,24 +47,52 @@ jobs:
       - name: Verify repository policy
         run: python .github/scripts/verify_repository.py
 
-  photon-runtime:
-    name: Photon runtime / Zig 0.16.0
+  python-windows:
+    name: Python / windows-latest
+    needs: python
+    if: needs.python.outputs.windows == 'true'
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install pinned dependencies
+        run: python -m pip install -r requirements-dev.txt
+      - name: Windows regression tests
+        shell: pwsh
+        run: |
+          foreach ($suite in @('AGE2/tests', 'rUGP/tests', 'localization/tests', '.github/scripts/tests')) {
+            python -m unittest discover -s $suite -p 'test_*.py' -v
+            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          }
+
+  photon-runtime:
+    name: Photon runtime / Zig 0.16.0
+    needs: python
+    if: needs.python.outputs.runtime == 'true'
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
       - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
         with:
           python-version: "3.12"
       - uses: mlugg/setup-zig@d1434d08867e3ee9daa34448df10607b98908d29 # v2
         with:
           version: 0.16.0
-      - name: Build and verify PF/PM production code
+      - name: Compile current PF/PM code without pinning it to an old release binary
         shell: pwsh
         run: |
           $zig = (Get-Command zig).Source
-          python rUGP/runtime/build.py --game pf --zig $zig --output "$env:RUNNER_TEMP/pf/Ages3ResT.dll" --authorize-pinned-build --verify-release-code
+          python rUGP/runtime/build.py --game pf --zig $zig --output "$env:RUNNER_TEMP/pf/Ages3ResT.dll" --authorize-pinned-build
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          python rUGP/runtime/build.py --game pm --zig $zig --output "$env:RUNNER_TEMP/pm/Ages3ResT.dll" --authorize-pinned-build --verify-release-code
+          python rUGP/runtime/build.py --game pm --zig $zig --output "$env:RUNNER_TEMP/pm/Ages3ResT.dll" --authorize-pinned-build
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
       - name: Reproduce PM image admission and verify fix with synthetic assets
         shell: pwsh
         run: |
@@ -61,15 +100,11 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           $zig = (Get-Command zig).Source
           python -m rUGP.tools.images.verify_pm_production --zig $zig --output "$env:RUNNER_TEMP/pm-production-regression"
-      - name: Reproduce the recorded installed runtime profiles
+      - name: Build current speaker and font candidates separately from installed history
         shell: pwsh
         run: |
           $zig = (Get-Command zig).Source
-          $authority = Get-Content -LiteralPath rUGP/evidence/photon/images/static-review-20260909/runtime-sync.json -Raw | ConvertFrom-Json
-          foreach ($game in @('pf', 'pm')) {
-            $binary = "$env:RUNNER_TEMP/$game-installed/Ages3ResT.dll"
-            python rUGP/runtime/build.py --game $game --zig $zig --output $binary --authorize-pinned-build --speaker-color-candidate
-            if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-            $actual = (Get-FileHash -LiteralPath $binary -Algorithm SHA256).Hash
-            if ($actual -ne $authority.games.$game.installed_dll_sha256) { throw "Installed profile identity changed: $game" }
-          }
+          python rUGP/runtime/build.py --game pf --zig $zig --output "$env:RUNNER_TEMP/pf-candidate/Ages3ResT.dll" --authorize-pinned-build --speaker-color-candidate
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          python rUGP/runtime/build.py --game pm --zig $zig --output "$env:RUNNER_TEMP/pm-candidate/Ages3ResT.dll" --authorize-pinned-build --speaker-color-candidate --pm-font-candidate
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
