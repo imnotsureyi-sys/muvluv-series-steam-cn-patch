@@ -79,6 +79,13 @@ def inline_category(field: dict, command: dict, game: str) -> str:
     text, role = field["text"], field["role"]
     if not text:
         return "empty_inline_field"
+    # These CImgAreaBox setup callees pass argument 1 to the engine's action
+    # registry. Translating the identifier disconnects the backlog close button.
+    if (role == "call.argument.1" and command.get("name") == "CVmCall"
+            and command["fields"]["script"].get("key") ==
+            {"pf": 2845294969, "pm": 3156550485}.get(game)
+            and text.startswith("\\A")):
+        return "engine_action_identifier"
     if (role == "call.argument.2" and command.get("name") == "CVmCall"
             and command["fields"]["script"].get("key") in WEAPON_CALLEES[game]):
         return "excluded_weapon_parameter"

@@ -16,6 +16,15 @@ from rUGP.tests.catalog.test_rio_inventory import class_ref
 
 
 class NativeAuditClassificationTests(unittest.TestCase):
+    def test_backlog_action_is_not_translatable_display_text(self) -> None:
+        for game, callee in (("pf", 2845294969), ("pm", 3156550485)):
+            command = dict(name="CVmCall", fields=dict(script=dict(key=callee)))
+            for text in (r"\Aバックログを閉じる", r"\A关闭回看"):
+                field = dict(text=text, role="call.argument.1")
+                self.assertEqual("engine_action_identifier", inline_category(field, command, game))
+            command["fields"]["script"]["key"] = 0
+            self.assertNotEqual("engine_action_identifier", inline_category(field, command, game))
+
     def test_public_schema_and_glossary_hash_contracts_match_committed_bytes(self) -> None:
         root = Path(__file__).resolve().parents[3]
         digest = lambda path: hashlib.sha256(path.read_bytes()).hexdigest().upper()

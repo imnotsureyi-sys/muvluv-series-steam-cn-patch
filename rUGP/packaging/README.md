@@ -1,5 +1,14 @@
 # Photon packaging
 
+## BETA 0.1 release
+
+The public player packages use uppercase **BETA 0.1** as an ordinary release;
+the internal build is `2026.09.10-r3` (accepted R2 plus the
+[backlog button action correction](../docs/postmortems/backlog-return-action-20260910.md)).
+PF and PM remain separate ZIPs, each containing one executable and a short
+player guide. Game payloads other than the two control records are unchanged.
+`build_photon_player.py` rejects translated or rebound backlog action arguments.
+
 ## 2026.09.10 player installer candidate
 
 `build_photon_player.py` consumes a separately assembled and verified PF/PM

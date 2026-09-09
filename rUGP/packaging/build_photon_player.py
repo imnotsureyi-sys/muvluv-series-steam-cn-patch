@@ -9,6 +9,30 @@ from rUGP.packaging.build_photon_cn_beta01 import (
     GAMES,make_patch,sha256,sha256_range,hash_virtual_apply,artifact,
     build_deterministic_zip,assert_no_absolute_paths,verify_file,
 )
+from rUGP.formats.rio.crsa import read_crsa_record
+from rUGP.formats.rio.crsa_vm_stream import parse_crsa_vm_stream
+
+
+BACKLOG_ACTION = r'\Aバックログを閉じる'
+BACKLOG_SITES = {
+    'pf': ('photonflowers11.rio', 374496, (7, 11), 2845294969),
+    'pm': ('photonmelodies11.rio', 637744, (6,), 3156550485),
+}
+
+
+def verify_backlog_actions(plaintext: bytes, game: str) -> None:
+    """The button's action identifier is resolved by the native EXE, not drawn."""
+    _, _, orders, callee = BACKLOG_SITES[game]
+    parsed = parse_crsa_vm_stream(plaintext, game)
+    calls = [c for c in parsed['commands'] if c['order'] in orders]
+    if len(calls) != len(orders):
+        raise ValueError('missing backlog action call')
+    for call in calls:
+        fields = call['fields']
+        if (call['name'] != 'CVmCall' or fields.get('script', {}).get('key') != callee
+                or len(fields.get('arguments', [])) != 9
+                or fields['arguments'][1].get('text') != BACKLOG_ACTION):
+            raise ValueError('backlog engine action was translated or its binding changed')
 
 def write_json(path,value):
     path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
@@ -17,6 +41,8 @@ def build(assembled:Path,clean:Path,steam:Path,output:Path,legacy_pm:Path|None=N
     frozen=json.loads((assembled/'archive-final.json').read_text(encoding='utf8'))
     for game in ('pf','pm'):
         meta=GAMES[game.upper()];live=steam/meta['title'];final=assembled/game
+        volume, offset, _, _ = BACKLOG_SITES[game]
+        verify_backlog_actions(read_crsa_record(final/volume, offset).plaintext, game)
         legacy=legacy_pf if game=='pf' else legacy_pm
         package=output/game;package.mkdir(parents=True,exist_ok=False)
         archives=[]
