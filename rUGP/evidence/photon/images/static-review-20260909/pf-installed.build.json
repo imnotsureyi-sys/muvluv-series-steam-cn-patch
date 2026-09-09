@@ -1,7 +1,7 @@
 {
   "approved_release": {
     "normalized_code_verified": false,
-    "normalized_sha256": "82BA9A7D9B49A8CB9414BBE7CC2BA05329AF75B9B99CDE827D0B57F68907665F"
+    "normalized_sha256": "9CCD76162F20316AF3E6BFA4FE6CC2F3590596D7A7D6AB78B0E8F2CC22909B8E"
   },
   "authorization_compiled": true,
   "compile": {
@@ -159,10 +159,10 @@
       "sha256": "C2B364B89BC26BC329203C2545F7CB9FE3E9D755BA1B5FC1403CF174A4A524D5"
     },
     {
-      "bytes": 152964,
+      "bytes": 154811,
       "kind": "command_source",
       "path": "src/photon_v6_pf_native_runtime.c",
-      "sha256": "BB7BF9F87F4194E6B50AD03262787151B66710D9010E92D2C964187812E01B4E"
+      "sha256": "14F472B6F0366BDFE4396B639F402DF3203CD4E0A889AB6EA0931E3141A354EE"
     },
     {
       "bytes": 7894,
@@ -322,9 +322,9 @@
     }
   ],
   "output": {
-    "bytes": 639488,
+    "bytes": 640000,
     "path": "Ages3ResT.dll",
-    "sha256": "B3C43B2000BE0C286B140D900C081B3AECC771BEF7F7F69A79DE624ACC3875B0"
+    "sha256": "3FB861871A69183BD22D256D3FFB3CDD732294E7D103090CD3BDB46A365FED97"
   },
   "schema": "photon-runtime-build-v2",
   "sources_complete": true,

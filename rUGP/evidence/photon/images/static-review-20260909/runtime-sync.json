@@ -2,28 +2,28 @@
   "schema": "photon-installed-runtime-sync-v1",
   "games": {
     "pf": {
-      "installed_dll_sha256": "B3C43B2000BE0C286B140D900C081B3AECC771BEF7F7F69A79DE624ACC3875B0",
-      "installed_dll_bytes": 639488,
+      "installed_dll_sha256": "3FB861871A69183BD22D256D3FFB3CDD732294E7D103090CD3BDB46A365FED97",
+      "installed_dll_bytes": 640000,
       "reproduced_byte_exact": true,
       "installed_profile": [
         "--authorize-pinned-build",
         "--speaker-color-candidate"
       ],
-      "default_dll_sha256": "82BA9A7D9B49A8CB9414BBE7CC2BA05329AF75B9B99CDE827D0B57F68907665F",
+      "default_dll_sha256": "9CCD76162F20316AF3E6BFA4FE6CC2F3590596D7A7D6AB78B0E8F2CC22909B8E",
       "default_profile": [
         "--authorize-pinned-build",
         "--verify-release-code"
       ]
     },
     "pm": {
-      "installed_dll_sha256": "2259884FF2CC52C3A94D917BCC5508D5951340FF8461612D89C270CE3FFC525E",
-      "installed_dll_bytes": 612864,
+      "installed_dll_sha256": "2DF51AD1D19C7485EDEB75729CAF626B49A55FD7C92FBA07059D97C7D959C408",
+      "installed_dll_bytes": 613888,
       "reproduced_byte_exact": true,
       "installed_profile": [
         "--authorize-pinned-build",
         "--speaker-color-candidate"
       ],
-      "default_dll_sha256": "59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E",
+      "default_dll_sha256": "F4AF72BA6DFC87D8B3478F63135A44A281C8DCA464070B9C69ED4402620DE666",
       "default_profile": [
         "--authorize-pinned-build",
         "--verify-release-code"
@@ -61,7 +61,7 @@
     "game_files_modified": false
   },
   "game_started": false,
-  "game_files_modified": false,
+  "game_files_modified": true,
   "public_image_payloads": false,
   "package_release_approved": false,
   "timer_sidecars": [
@@ -295,5 +295,71 @@
       "installed_png_sha256": "14E2330B18400F3A3520019801D9A7C588085C35E7B45CF5B935042F5A9BCAD2",
       "installed_rgba_sha256": "F0D6023E3E307A10ADC9F566EB61F2A0F2FD4EBA85584B7F14A2330E802C0D8F"
     }
-  ]
+  ],
+  "pm_album_fix": {
+    "previous_source_commit": "6c0b79073325f5c2e180b6079a40aeb795e93509",
+    "previous_runtime": {
+      "installed_dll_sha256": "2259884FF2CC52C3A94D917BCC5508D5951340FF8461612D89C270CE3FFC525E",
+      "installed_dll_bytes": 612864,
+      "reproduced_byte_exact": true,
+      "installed_profile": [
+        "--authorize-pinned-build",
+        "--speaker-color-candidate"
+      ],
+      "default_dll_sha256": "59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E",
+      "default_profile": [
+        "--authorize-pinned-build",
+        "--verify-release-code"
+      ]
+    },
+    "exception_code": "0xC0000602",
+    "fault_rva": "0x0000CEB0",
+    "observed_cint_type": "0x16000001",
+    "old_fixture_failed_at_identity_drift": true,
+    "fixed_fixture_passed": true,
+    "installed_readback_matched": true,
+    "backup_readback_matched": true,
+    "changed_game_files": [
+      "PM/Ages3ResT.dll"
+    ],
+    "game_started_by_agent": false,
+    "user_retest_passed": true,
+    "user_retest_status": "User confirmed album-entry crash is fixed after installing the repaired DLL; this is not full gallery-image coverage."
+  },
+  "pf_festival_fix": {
+    "previous_source_commit": "6c0b79073325f5c2e180b6079a40aeb795e93509",
+    "previous_runtime": {
+      "installed_dll_sha256": "B3C43B2000BE0C286B140D900C081B3AECC771BEF7F7F69A79DE624ACC3875B0",
+      "installed_dll_bytes": 639488,
+      "reproduced_byte_exact": true,
+      "installed_profile": [
+        "--authorize-pinned-build",
+        "--speaker-color-candidate"
+      ],
+      "default_dll_sha256": "82BA9A7D9B49A8CB9414BBE7CC2BA05329AF75B9B99CDE827D0B57F68907665F",
+      "default_profile": [
+        "--authorize-pinned-build",
+        "--verify-release-code"
+      ]
+    },
+    "changed_game_files": [
+      "PF/Ages3ResT.dll"
+    ],
+    "installed_readback_matched": true,
+    "backup_readback_matched": true,
+    "diagnostic_runtime_restored_to_normal": true,
+    "game_started_by_agent": false,
+    "user_retest_passed": true,
+    "user_retest_status": "User confirmed full background and partial animated signs are now correct.",
+    "private_input_regression": {
+      "passed": true,
+      "full_and_partial": true,
+      "padding_0_2_3": true,
+      "both_pitch_signs": true,
+      "outside_unchanged": true,
+      "unknown_identity_rejected": true,
+      "proprietary_decoder_executed": false
+    },
+    "pm_binary_unchanged_by_pf_fix": true
+  }
 }

@@ -35,8 +35,8 @@ The reviewed historical-to-normalized Beta0.1 identities are:
 
 Applying the normalization to either historical raw DLL produces its listed
 historical normalized identity. The currently approved reproducible outputs are
-PF `82BA9A7D9B49A8CB9414BBE7CC2BA05329AF75B9B99CDE827D0B57F68907665F`
-and PM `59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E`.
+PF `9CCD76162F20316AF3E6BFA4FE6CC2F3590596D7A7D6AB78B0E8F2CC22909B8E`
+and PM `F4AF72BA6DFC87D8B3478F63135A44A281C8DCA464070B9C69ED4402620DE666`.
 PM includes the tutorial-timer and selector repair plus the CRip008 direct
 image hooks, matching nine-hook production admission, and the exact-host RUO
 base repair. Both games include the installed image-table snapshots. The
