@@ -14,6 +14,7 @@ import argparse
 import hashlib
 import json
 import os
+import re
 from pathlib import Path
 import shutil
 import struct
@@ -64,7 +65,7 @@ GAMES = {
             "01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA"
         ),
         "approved_normalized_sha256": (
-            "82BA9A7D9B49A8CB9414BBE7CC2BA05329AF75B9B99CDE827D0B57F68907665F"
+            "9CCD76162F20316AF3E6BFA4FE6CC2F3590596D7A7D6AB78B0E8F2CC22909B8E"
         ),
     },
     "pm": {
@@ -85,7 +86,7 @@ GAMES = {
             "73F5EC68A374042096CB4C900210F22537E5706E49B7EA9A8F249C583039E2CD"
         ),
         "approved_normalized_sha256": (
-            "59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E"
+            "F4AF72BA6DFC87D8B3478F63135A44A281C8DCA464070B9C69ED4402620DE666"
         ),
     },
 }
@@ -212,10 +213,31 @@ def require_files(paths: Iterable[Path]) -> None:
         raise BuildError(f"missing runtime sources: {', '.join(missing)}")
 
 
+def validate_exact_rgba_tables(generated: Path) -> None:
+    """The production loader binary-searches strictly ordered unique keys."""
+    for game in ("pf", "pm"):
+        path = generated / f"photon_v6_{game}_exact_rgba_table.generated.h"
+        text = path.read_text(encoding="utf-8-sig")
+        # Historical PM headers select an installed snapshot per build game.
+        # Validate both of those existing branches, including their own counts.
+        for branch in (1, 2):
+            selected = re.sub(
+                r"#if defined\(PHOTON_BUILD_PM\)\s*\n(.*?)#else\s*\n(.*?)#endif /\* installed snapshot selection \*/",
+                lambda match: match[branch], text, flags=re.S)
+            keys = [(int(size), int(fnv, 16)) for size, fnv in re.findall(
+                r"UINT32_C\((\d+)\),\s*UINT64_C\(0x([0-9A-Fa-f]+)\)", selected)]
+            count = re.search(rf"photon_v6_{game}_exact_rgba_count\s*=\s*UINT32_C\((\d+)\)", selected)
+            if not keys or count is None or int(count[1]) != len(keys):
+                raise BuildError(f"exact RGBA table count mismatch: {path.name}")
+            if any(left >= right for left, right in zip(keys, keys[1:])):
+                raise BuildError(f"exact RGBA table must be strictly sorted with unique keys: {path.name}")
+
+
 def prepare_generated(destination: Path, authorized: bool, pm_font_candidate: bool = False) -> None:
     if pm_font_candidate and not authorized:
         raise BuildError('PM font candidate requires pinned authorization')
     shutil.copytree(GENERATED, destination)
+    validate_exact_rgba_tables(destination)
     for game in ("pf", "pm"):
         path = destination / f"photon_combined_{game}.generated.h"
         data = path.read_bytes()

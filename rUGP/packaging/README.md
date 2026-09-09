@@ -1,5 +1,60 @@
 # Photon packaging
 
+## BETA 0.1 release
+
+The public player packages use uppercase **BETA 0.1** as an ordinary release;
+the internal build is `2026.09.10-r3` (accepted R2 plus the
+[backlog button action correction](../docs/postmortems/backlog-return-action-20260910.md)).
+PF and PM remain separate ZIPs, each containing one executable and a short
+player guide. Game payloads other than the two control records are unchanged.
+`build_photon_player.py` rejects translated or rebound backlog action arguments.
+
+## 2026.09.10 player installer candidate
+
+`build_photon_player.py` consumes a separately assembled and verified PF/PM
+snapshot, builds the union of changes needed by stock and known previous bases,
+and verifies the complete virtual result from every admitted base. It emits one
+game per directory. It does not select, translate, or approve input artwork.
+
+`windows/PhotonInstaller.cs` embeds one such directory as `payload.zip` in a
+Windows executable. The player selects the detected game directory and clicks
+Install. Windows PowerShell and .NET are used internally; Python and a separate
+verification step are not required on the player's computer.
+
+`windows/Install-PhotonCN.ps1` writes the changed ranges and package files directly,
+without backups, rollback sessions or an uninstall button, as requested by the
+maintainer. An interrupted or failed write requires Steam reinstallation; the
+error message makes this explicit. Both Steam language fields are parsed
+automatically, and unknown game versions or corrupt payloads are rejected before
+game writes. Reinstalling the same completed version does not write again.
+Unreferenced existing files are left alone; they cannot bypass the runtime's
+sealed image identities. The installer does not clean historical developer data.
+
+Normal GUI runs extract into a fresh process-owned temporary directory and
+remove only the files they created when the window closes. They create no
+persistent extraction cache or backup tree. Force-killing the process can leave
+that temporary directory behind. The private `--inspect` / `--extract` verification
+options intentionally retain their extraction for inspection. Steam directory
+junctions are resolved before presenting the physical game path.
+
+Runtime builds now reject image lookup tables with unordered or duplicate keys.
+When supplying delivery-specific generated headers, replay
+`tests/runtime/exact_rgba_table_replay.c` against that exact include root and its
+package sidecars. Passing the repository tables alone does not validate newly
+generated delivery tables. See the [image-index regression](../docs/postmortems/player-image-index-20260910.md).
+
+Run synthetic transaction checks on Windows with a new output directory:
+
+```powershell
+python -m rUGP.packaging.verify_player_installer --output "X:\verification\player-installer"
+```
+
+The final combination still requires game-level QA. Installer verification and
+historical scene acceptance are not a claim that every scene in a new build has
+been played. See the [Beta0.1 follow-up audit](../docs/postmortems/beta01-followup-20260910.md).
+
+## Historical Beta0.1 builder
+
 `build_photon_cn_beta01.py` produces separate PF and PM full-patch ZIPs from explicitly supplied, hash-locked roots. It never discovers an installed game through a developer-specific path.
 
 Required inputs are a sealed clean archive root, sealed runtime inputs, stock fixed-file root, and independently approved final PF/PM roots. The builder verifies exact archive/fixed-file identities, creates block deltas, binds every member in a manifest, rejects absolute paths, fixes ZIP timestamps, and refuses unexpected content.
@@ -72,4 +127,5 @@ their distinct routing policies have not been promoted into this component.
 The historical packages were not retrofitted with this gate, and the current
 Photon source tree is not a player release. Any future one-click Photon
 installer must internalize the same checks without requiring end users to
-install Python, then perform transaction/rollback validation separately.
+install Python. The current player installer's deliberate no-backup policy and
+failure checks are described above; historical rollback tooling is unchanged.

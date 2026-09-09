@@ -22,5 +22,13 @@
     "passed": true,
     "scenarios": 8,
     "game_started": false
+  },
+  "selector_lifecycle": {
+    "passed": true,
+    "album_identity_drift": true,
+    "unknown_denies_translation": true,
+    "exact_rebind": true,
+    "failed_store_rejected": true,
+    "owned_lease_rejected": true
   }
 }

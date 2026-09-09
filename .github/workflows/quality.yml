@@ -69,6 +69,24 @@ jobs:
             python -m unittest discover -s $suite -p 'test_*.py' -v
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           }
+      - name: Exercise the player installer with synthetic game files
+        shell: pwsh
+        run: python -m rUGP.packaging.verify_player_installer --output "$env:RUNNER_TEMP/photon-player-installer"
+      - name: Compile the standalone player interface
+        shell: pwsh
+        run: |
+          $compiler = Join-Path $env:WINDIR 'Microsoft.NET/Framework/v4.0.30319/csc.exe'
+          $response = Join-Path $env:RUNNER_TEMP 'photon-interface.rsp'
+          @(
+            '/nologo', '/target:winexe', '/platform:anycpu',
+            '/r:System.Windows.Forms.dll', '/r:System.Drawing.dll',
+            '/r:System.Web.Extensions.dll', '/r:System.IO.Compression.dll',
+            '/r:System.IO.Compression.FileSystem.dll',
+            ('/out:"' + (Join-Path $env:RUNNER_TEMP 'PhotonInstaller.exe') + '"'),
+            ('"' + (Join-Path $env:GITHUB_WORKSPACE 'rUGP/packaging/windows/PhotonInstaller.cs') + '"')
+          ) | Set-Content -LiteralPath $response -Encoding utf8BOM
+          & $compiler ("@" + $response)
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
   photon-runtime:
     name: Photon runtime / Zig 0.16.0
@@ -108,3 +126,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python rUGP/runtime/build.py --game pm --zig $zig --output "$env:RUNNER_TEMP/pm-candidate/Ages3ResT.dll" --authorize-pinned-build --speaker-color-candidate --pm-font-candidate
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Build both diagnostic variants without installing them
+        shell: pwsh
+        run: |
+          $zig = (Get-Command zig).Source
+          python -m rUGP.tools.images.prepare_native_diagnostics --zig $zig --output "$env:RUNNER_TEMP/diagnostics-ready"

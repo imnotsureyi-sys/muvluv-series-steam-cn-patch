@@ -2,6 +2,9 @@
 
 [返回 rUGP 证据](../README.md) · [PF 项目](../../games/photonflowers/) · [PM 项目](../../games/photonmelodies/)
 
+[CRmt／CRmti／CRimp 专项](crmt/README.md)另行整理当前 49 组图片、日英对应、全层身份和分级验证结果；
+不将它与历史 V6 图片数量相加，不分发官方或完整汉化图片。
+
 ```text
 photon/
 ├─ text/

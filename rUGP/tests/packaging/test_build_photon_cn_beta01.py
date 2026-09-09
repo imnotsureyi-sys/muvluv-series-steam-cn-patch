@@ -14,6 +14,25 @@ from rUGP.runtime import build as runtime_builder
 
 
 class PhotonPackageBuilderTests(unittest.TestCase):
+    def test_merge_range_does_not_shrink_a_containing_range(self) -> None:
+        ranges = [[0, 400000]]
+        builder.merge_range(ranges, 65536, 131072)
+        self.assertEqual(ranges, [[0, 400000]])
+
+    def test_multi_base_patch_also_reverts_old_changes_to_stock_bytes(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            clean = root / 'clean'; old = root / 'old'; final = root / 'final'
+            clean.write_bytes(bytes(400000))
+            previous = bytearray(clean.read_bytes()); previous[200000] = 8
+            old.write_bytes(previous)
+            target = bytearray(clean.read_bytes()); target[10] = 9
+            final.write_bytes(target)
+            patch = root / 'patch'
+            result = builder.make_patch(clean, final, patch, 'multi-base', additional_bases=(old,))
+            for base in (clean, old):
+                self.assertEqual(builder.hash_virtual_apply(base, patch, result['segments'], len(target)), builder.sha256(final))
+
     def test_source_date_epoch_is_explicit_and_strict(self) -> None:
         self.assertEqual(builder.parse_source_date_epoch("0"), 0)
         self.assertEqual(builder.parse_source_date_epoch("1788220800"), 1788220800)

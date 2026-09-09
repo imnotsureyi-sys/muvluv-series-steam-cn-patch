@@ -28,10 +28,16 @@
 | TDA02 | 历史测试版 beta0.1 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda02-beta0.1/MuvLuv_TDA02_CN_Patch_beta0.1.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1) |
 | TDA03 | 历史测试版 beta0.1.6 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/tda03-beta0.1.6/MuvLuv_TDA03_CN_Patch_beta0.1.6_full_achievement_fix.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda03-beta0.1.6) |
 | 帝都燃烧篇 | 历史测试版 beta0.1 | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/imperial-capital-burns-beta0.1/MuvLuv_Imperial_Capital_Burns_CN_Patch_beta0.1.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1) |
-| photonflowers | 制作中 | 暂无玩家安装包 |
-| photonmelodies | 制作中 | 暂无玩家安装包 |
+| photonflowers（PF） | **BETA 0.1** | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1/MuvLuv_PF_CN_Patch_BETA_0.1.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1) |
+| photonmelodies（PM） | **BETA 0.1** | **[下载补丁 ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1/MuvLuv_PM_CN_Patch_BETA_0.1.zip)** · [发布说明](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1) |
 
-### 安装、卸载和注意事项
+### PF / PM 安装
+
+Steam 语言设为 **English（英语）**，等待下载完成并退出游戏。解压对应 ZIP，双击 EXE，点击“安装汉化”。无需先安装旧补丁。
+
+PF、PM 均不创建备份、不附卸载器。恢复原版时保留存档，通过 Steam 卸载、清除对应游戏目录的汉化残留，再重新下载；不要清空整个 Steam 目录。详见[玩家指南](docs/player/README.md)。
+
+### AGE2 历史包安装、卸载和注意事项
 
 1. 确认 Steam 已安装对应游戏，至少启动过一次，然后完全退出游戏。
 2. 下载上表中对应游戏的补丁 ZIP，完整解压，阅读包内说明和玩家指南。
@@ -45,8 +51,7 @@
 
 - **TDA00—03、帝都燃烧篇：**已有上述历史测试包，正在整理可维护文本、版本校验、字体和
   安全回滚，为后续更新做准备。
-- **photonflowers、photonmelodies：**文本、图片和运行时仍在制作与验证，目前没有可供普通
-  玩家安装的补丁。Release 中的 Photon 图片研究资产不是游戏安装包。
+- **photonflowers、photonmelodies：**已正式公开发布 **BETA 0.1**，PF、PM 各有独立安装包。旧 Photon 图片研究资产仍不是游戏安装包。
 
 ### 问题反馈
 

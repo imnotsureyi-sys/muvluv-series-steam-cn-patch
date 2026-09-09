@@ -25,7 +25,7 @@ cracks, complete original assets, or an original Steam `pack.bin`.
 | Scope | Player status | Public production/research material |
 | --- | --- | --- |
 | TDA00–03 and The Imperial Capital Burns | Historical AGE2 test packages are preserved; version, font-license, official-fallback, and rollback remediation remains | Maintained text, inventories for 730 historical WebP paths, Imperial image copy, FPD/EGPACK tools, and loose-overlay findings |
-| photonflowers and photonmelodies | No player installer yet | Maintained text, a 1,490-image PF/PM authority and route map, ICI/RIO/CRsa/RUO/Cr6Ti/CRip tools, guarded runtime components, and postmortems |
+| photonflowers and photonmelodies | **BETA 0.1** ordinary releases, separate installers; see the [player guide](player-guide.md) | Maintained text, a 1,490-image PF/PM authority and route map, ICI/RIO/CRsa/RUO/Cr6Ti/CRip tools, guarded runtime components, and postmortems |
 
 The historical packages are identifiable and installable, but they are not
 marked recommended until the present release gate is satisfied. Follow the

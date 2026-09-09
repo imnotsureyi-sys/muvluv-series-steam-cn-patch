@@ -1,6 +1,6 @@
 binding_id,kind,translated_text,cn_annotations,review_scope,jp_utf8_sha256,en_utf8_sha256
-pf:cstring:photonflowers11.rio:374496:518,cstring,\A关闭回看,[],,4a3c51621f4facff5427f7d7d0fc401ae05cfc92c8113087125e2db3218c5faa,
-pf:cstring:photonflowers11.rio:374496:848,cstring,\A关闭回看,[],,4a3c51621f4facff5427f7d7d0fc401ae05cfc92c8113087125e2db3218c5faa,
+pf:cstring:photonflowers11.rio:374496:518,cstring,\Aバックログを閉じる,[],,4a3c51621f4facff5427f7d7d0fc401ae05cfc92c8113087125e2db3218c5faa,
+pf:cstring:photonflowers11.rio:374496:848,cstring,\Aバックログを閉じる,[],,4a3c51621f4facff5427f7d7d0fc401ae05cfc92c8113087125e2db3218c5faa,
 pf:cstring:photonflowers11.rio:14809024:3479,cstring,返回标题菜单,[],,aad8b191d7878fc19580d7855384448c274ad8f4440624c3babff46a726ac6bb,
 pf:cstring:photonflowers11.rio:14922468:415,cstring,樱花盛开之前,[],,ab81097ab0342c031a05bb4653e143ae728a1c780569a026ab940803b5398932,77f03f677438ebc00f5460034a9c227f523424803d751c10eb104c124935f0f6
 pf:cstring:photonflowers11.rio:14922468:523,cstring,和小武在一起！,[],,3396be9c718d8a4b9cd7d2407e39d3419f3cd35151ef544b1be7ab362b300097,ea684da2bd9caff263f37a76a58d4ea3b008d0241c33f09adceab0d3300b17cb

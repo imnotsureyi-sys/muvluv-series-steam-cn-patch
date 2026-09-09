@@ -475,6 +475,29 @@ static uintptr_t relevant_setter_failure(uint32_t previous) {
     return (uintptr_t)previous;
 }
 
+static int revoke_language_binding(void) {
+    int revoked = 0;
+    AcquireSRWLockExclusive(&state_lock);
+    if (InterlockedCompareExchange(&language_transition_inflight, 0, 0) == 1 &&
+        InterlockedCompareExchange(&language_transition_owner_tid, 0, 0) ==
+            (LONG)GetCurrentThreadId() && lease_census_exact_locked() &&
+        InterlockedCompareExchange(&translation_write_leases, 0, 0) == 0 &&
+        active_surface_count_locked() == 0) {
+        clear_runtime_identity_locked();
+        InterlockedExchangePointer((void *volatile *)&language_cint_this, NULL);
+        InterlockedExchangePointer((void *volatile *)&language_cint_owner, NULL);
+        InterlockedExchange(&language_state,
+            PHOTON_V6_PF_SELECTOR_LANGUAGE_UNKNOWN);
+        InterlockedIncrement(&language_state_sequence);
+        InterlockedExchange(&language_transition_owner_tid, 0);
+        MemoryBarrier();
+        InterlockedExchange(&language_transition_inflight, 0);
+        revoked = 1;
+    }
+    ReleaseSRWLockExclusive(&state_lock);
+    return revoked;
+}
+
 static uintptr_t __attribute__((cdecl,noinline,used))
 hook_cint_setter_dispatch(void *self, uint32_t value, uintptr_t vm_this) {
     uint32_t vm_vtable, vm_command, vm_source, vm_target, vm_exec;
@@ -551,6 +574,15 @@ hook_cint_setter_dispatch(void *self, uint32_t value, uintptr_t vm_this) {
     if ((bootstrap_candidate || action_bind_candidate || action_candidate ||
          known_anomaly) &&
         !transition_started) return relevant_setter_failure(previous);
+    if (known_anomaly) {
+        /* PM's album entry can reach the remembered address with different
+         * CInt metadata (observed 0x16000001). An address is not a lifetime
+         * identity. Drain/revoke old translation leases before forwarding the
+         * engine's store, then require an exact action or payload witness to
+         * establish language again. Never authorize this mismatched call. */
+        if (!revoke_language_binding()) return relevant_setter_failure(previous);
+        return real_cint_setter(self, value);
+    }
     result = real_cint_setter(self, value);
     stored = safe_u32(self, 0x10);
     if (action_same_value) {

@@ -40,7 +40,7 @@ FORBIDDEN_TOP_LEVEL = (
     "workspace_full_copy_",
 )
 TEXT_SUFFIXES = {
-    ".c", ".csv", ".def", ".h", ".json", ".md", ".ps1", ".py", ".s",
+    ".c", ".cs", ".csv", ".def", ".h", ".json", ".md", ".ps1", ".py", ".s",
     ".toml", ".tsv", ".txt", ".yaml", ".yml",
 }
 ALLOWED_EXTENSIONLESS = {".gitattributes", ".gitignore", "LICENSE"}

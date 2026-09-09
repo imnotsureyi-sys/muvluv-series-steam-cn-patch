@@ -4,6 +4,8 @@ import struct
 import json
 import hashlib
 import os
+import re
+import shutil
 from pathlib import Path
 import subprocess
 import tempfile
@@ -23,6 +25,7 @@ from rUGP.runtime.build import (
     require_new_artifacts,
     sha256_file,
     write_new_file,
+    validate_exact_rgba_tables,
 )
 
 
@@ -59,6 +62,30 @@ def synthetic_pe() -> bytes:
 
 
 class RuntimeBuildTests(unittest.TestCase):
+    def test_build_rejects_unsearchable_generated_image_tables(self):
+        # Mutate real sealed tables: the packaging regression retained every
+        # image/hash but emitted manifest order instead of binary-search order.
+        with tempfile.TemporaryDirectory() as temporary:
+            source = Path(temporary) / "source"
+            shutil.copytree(GENERATED, source)
+            validate_exact_rgba_tables(source)
+            for game in ("pf", "pm"):
+                path = source / f"photon_v6_{game}_exact_rgba_table.generated.h"
+                original = path.read_text(encoding="utf-8")
+                entries = list(re.finditer(r"\{\s*UINT32_C\(\d+\),\s*UINT64_C\(0x[0-9A-Fa-f]+\).*?\n    \},", original, re.S))
+                self.assertGreater(len(entries), 2)
+                first, second = entries[:2]
+                for kind, replacement in (("unsorted", second[0] + original[first.end():second.start()] + first[0]),
+                                          ("duplicate", first[0] + original[first.end():second.start()] + first[0])):
+                    path.write_text(original[:first.start()] + replacement + original[second.end():], encoding="utf-8")
+                    with patch("rUGP.runtime.build.GENERATED", source):
+                        with self.assertRaisesRegex(BuildError, "strictly sorted with unique keys"):
+                            prepare_generated(Path(temporary) / (game + kind), authorized=True)
+                path.write_text(re.sub(rf"(photon_v6_{game}_exact_rgba_count\s*=).*", r"\1 UINT32_C(1);", original, flags=re.S), encoding="utf-8")
+                with self.assertRaisesRegex(BuildError, "count mismatch"):
+                    validate_exact_rgba_tables(source)
+                path.write_text(original, encoding="utf-8")
+
     def test_pm_font_candidate_is_opt_in_and_preserves_sealed_headers(self):
         from rUGP.runtime.build import PM_FONT_CANDIDATE_SHA256
         evidence = json.loads((ROOT.parent/'evidence/photon/text/pm-font-er-20260909.json').read_text(encoding='utf-8'))

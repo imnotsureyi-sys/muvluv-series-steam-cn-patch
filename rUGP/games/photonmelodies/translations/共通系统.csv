@@ -1,5 +1,5 @@
 binding_id,kind,translated_text,cn_annotations,review_scope,jp_utf8_sha256,en_utf8_sha256
-pm:cstring:photonmelodies11.rio:637744:444,cstring,\A关闭回看,[],,4a3c51621f4facff5427f7d7d0fc401ae05cfc92c8113087125e2db3218c5faa,
+pm:cstring:photonmelodies11.rio:637744:444,cstring,\Aバックログを閉じる,[],,4a3c51621f4facff5427f7d7d0fc401ae05cfc92c8113087125e2db3218c5faa,
 pm:cstring:photonmelodies11.rio:1339066040:3415,cstring,Muv-Luv photonmelodies,[],,1408a2dfbc04cd96e179e231229bea632bc5aa4da0cd24f84813f2c13f649ac4,
 pm:cstring:photonmelodies11.rio:1339066040:3500,cstring,返回至游戏标题菜单界面,[],,aad8b191d7878fc19580d7855384448c274ad8f4440624c3babff46a726ac6bb,
 pm:cstring:photonmelodies11.rio:1339179508:415,cstring,樱花盛开之前,[],,ab81097ab0342c031a05bb4653e143ae728a1c780569a026ab940803b5398932,77f03f677438ebc00f5460034a9c227f523424803d751c10eb104c124935f0f6

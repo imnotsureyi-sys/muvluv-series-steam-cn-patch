@@ -27,6 +27,7 @@ SCRIPT_COMMANDS = (
 )
 
 MODULE_COMMANDS = (
+    "rUGP.examples.crmt_review_fixture",
     "localization.tools.font_coverage",
     "localization.tools.images.build_deterministic_textless_background",
     "localization.tools.images.render_deterministic_localized_text",
@@ -37,6 +38,14 @@ MODULE_COMMANDS = (
     "rUGP.packaging.steam_locale_preflight",
     "rUGP.tools.catalog.rio_inventory",
     "rUGP.tools.images.decode_record",
+    "rUGP.tools.images.decode_crmti",
+    "rUGP.tools.images.export_crmt_layers",
+    "rUGP.tools.images.inspect_crimp",
+    "rUGP.tools.images.check_localized_image",
+    "rUGP.tools.images.replace_crmt",
+    "rUGP.tools.provenance.export_crmt_review_catalog",
+    "rUGP.tools.provenance.export_crmt_localization_evidence",
+    "rUGP.tools.provenance.export_crmt_structure_trigger_evidence",
     "rUGP.tools.text.export_reviewed_translation",
     "rUGP.tools.text.split_reviewed_translation",
     "rUGP.tools.text.extract_crsa_text",

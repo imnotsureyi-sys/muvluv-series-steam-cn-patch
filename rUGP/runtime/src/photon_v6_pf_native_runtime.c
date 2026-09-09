@@ -1521,7 +1521,7 @@ static int selector_translation_language_exact(
 static int selector_decision_allows_special(
     const ObjectBinding *binding,
     const PhotonV6PfSelectorDecision *decision) {
-#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE)
+#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE) && defined(PHOTON_V6_PRODUCTION_PF)
 #define SELECTOR_GATE_EXACT(condition,code) do { \
     if (!(condition)) { \
         photon_v6_pf_selector_adapter_diagnostic_native_gate(code); \
@@ -2010,7 +2010,7 @@ void *__attribute__((cdecl)) photon_v6_pf_decode_prepare(
          * ordinary exact-payload gate. */
         if (selector_allowed != 1 ||
             !selector_decision_allows_special(&binding,&selector_decision)) {
-#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE)
+#if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE) && defined(PHOTON_V6_PRODUCTION_PF)
             if (selector_allowed != 1)
                 photon_v6_pf_selector_adapter_diagnostic_native_gate(34);
 #endif
@@ -2273,8 +2273,10 @@ typedef struct PhotonV6PfCrip008OrdinaryPrepared {
  *
  * Keep the full caller extent in PhotonV6PfCrip008OrdinaryPrepared so commit
  * can still detect any post-prepare mutation.  For the sidecar lookup only,
- * retry the narrowly proven 800x600 date-card shape after removing exactly
- * two or three trailing extent bytes.  A retry is accepted only when the
+ * retry the proven 800x600 canvas shape after removing exactly two or three
+ * trailing extent bytes. Festival captures independently reproduce three
+ * padding bytes on both the full background and its partial frame. A retry
+ * is accepted only when the
  * resulting length/FNV pair is already present in the sealed ordinary table;
  * there is no prefix, fuzzy, filename, or visual matching fallback.
  */
@@ -2291,7 +2293,8 @@ static PhotonV6ExactOverlayStatus pf_crip008_prepare_archive_identity(
     status = photon_v6_exact_overlay_prepare(request, prepared, report);
     if (status != PHOTON_V6_EXACT_OVERLAY_IDENTITY_NOT_TARGETED ||
         rect_width != 800U || rect_height != 600U ||
-        payload_bytes < 120002U || payload_bytes > 130003U)
+        (PHOTON_NATIVE_ROUTE_GAME != PHOTON_V6_ROUTE_GAME_PF &&
+         (payload_bytes < 120002U || payload_bytes > 130003U)))
         return status;
     for (trim_bytes = 2U; trim_bytes <= 3U; ++trim_bytes) {
         uint32_t candidate_bytes;
@@ -2358,6 +2361,33 @@ static int pf_crip008_surface_general(
     return 1;
 }
 
+static int pf_crip008_festival_partial_exact(
+    const BYTE *payload, uint32_t bytes, uint32_t left_top,
+    uint32_t right_bottom, uint32_t clip_left_top, uint32_t clip_right_bottom) {
+    /* G2019: archive geometry and the live direct-decoder rectangle agree.
+     * Do not generalize destination origins for unobserved partial formats. */
+    return PHOTON_NATIVE_ROUTE_GAME == PHOTON_V6_ROUTE_GAME_PF &&
+        bytes >= 88785U && bytes <= 88788U && bytes != 88786U &&
+        left_top == UINT32_C(0x0072004A) &&
+        right_bottom == UINT32_C(0x016F0132) &&
+        clip_left_top == left_top && clip_right_bottom == right_bottom &&
+        fnv1a64(payload, 88785U) == UINT64_C(0xA3CEF04B988F1823);
+}
+
+static void pf_crip008_crop_festival_prepared(PhotonV6ExactOverlayPrepared *p) {
+    uint32_t y;
+    /* Full PNG identity/geometry was authenticated first. Only the native
+     * rectangle is written; transparent pixels outside it stay untouched. */
+    for (y = 0; y < 253U; ++y)
+        memmove(p->source_rgba + y * 232U * 4U,
+            p->source_rgba + ((y + 114U) * 800U + 74U) * 4U, 232U * 4U);
+    p->rect_x = 74U;
+    p->rect_y = 114U;
+    p->width = 232U;
+    p->height = 253U;
+    p->rgba_bytes = 232U * 253U * 4U;
+}
+
 void *__attribute__((cdecl)) photon_v6_pf_crip008_decode_prepare(
     const BYTE *payload, uint32_t payload_bytes, const void *flags_table,
     BYTE *destination, int32_t stride,
@@ -2369,6 +2399,7 @@ void *__attribute__((cdecl)) photon_v6_pf_crip008_decode_prepare(
     PhotonV6ExactOverlayStatus overlay_status;
     uint32_t rect_x, rect_y, rect_width, rect_height;
     uint64_t payload_hash;
+    int festival_partial;
 #if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE)
     ObjectBinding diagnostic_binding;
 #endif
@@ -2380,6 +2411,9 @@ void *__attribute__((cdecl)) photon_v6_pf_crip008_decode_prepare(
         !range_readable(payload, payload_bytes))
         return NULL;
     payload_hash = fnv1a64(payload, payload_bytes);
+    festival_partial = pf_crip008_festival_partial_exact(
+        payload, payload_bytes, target_left_top, target_right_bottom,
+        clip_left_top, clip_right_bottom);
 #if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE)
     memset(&diagnostic_binding, 0, sizeof(diagnostic_binding));
     diagnostic_binding.payload = (void *)payload;
@@ -2388,8 +2422,11 @@ void *__attribute__((cdecl)) photon_v6_pf_crip008_decode_prepare(
     diagnostic_binding.active = 1;
 #endif
     if (!pf_crip008_surface_general(
-            destination, stride, target_left_top, target_right_bottom,
-            clip_left_top, clip_right_bottom, &surface,
+            destination, stride,
+            festival_partial ? 0U : target_left_top,
+            festival_partial ? UINT32_C(0x02580320) : target_right_bottom,
+            festival_partial ? 0U : clip_left_top,
+            festival_partial ? UINT32_C(0x02580320) : clip_right_bottom, &surface,
             &rect_x, &rect_y, &rect_width, &rect_height)) {
 #if defined(PHOTON_V6_NATIVE_DIAGNOSTIC_TRACE)
         diagnostic_trace_event(
@@ -2463,6 +2500,7 @@ void *__attribute__((cdecl)) photon_v6_pf_crip008_decode_prepare(
 #endif
     switch (overlay_status) {
     case PHOTON_V6_EXACT_OVERLAY_OK:
+        if (festival_partial) pf_crip008_crop_festival_prepared(&prepared->ordinary);
         telemetry_increment(&exact_payload_loads);
         return prepared;
     case PHOTON_V6_EXACT_OVERLAY_IDENTITY_NOT_TARGETED:
