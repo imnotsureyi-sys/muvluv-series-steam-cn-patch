@@ -31,16 +31,20 @@ Co-authored-by: Codex <codex@openai.com>
 
 ## 最初的汉化思路
 
-> **致谢“主任保护协会”提供了 AGES 引擎的汉化思路，并感谢他让我们开始了汉化补丁制作之路。**
+我们从“主任保护协会”公开的
+[Steam 版 Muv-Luv Alternative Total Eclipse 汉化实践](https://www.moyu.moe/patch/5461/resource)
+中了解到 **AGE2 可以通过松散文件结构覆盖游戏资源**。感谢对方分享这一方法，
+为我们开始制作系列补丁提供了起点。
 
-本项目发起者最初在研究 TDA 汉化时参考了主任保护协会公开发布的
-[Steam 版 Muv-Luv Alternative Total Eclipse 汉化补丁](https://www.moyu.moe/patch/5461/resource)。
-这份补丁让我们第一次看见 AGES 游戏可以怎样走向中文化，也由此开启了后来 TDA、帝都
-燃烧篇与 Photon 系列的制作和研究。感谢对方分享这条起点，并在沟通中允许我们发布独立
-完成的 TDA 汉化成果。
+在这一思路启发下，本项目自行开展后续资源提取、文本翻译、工具实现与补丁制作。
+对其他工具、代码和技术资料的使用或参考，按具体范围列在下文。
 
-为尊重原发布者的劳动和发布条款，本仓库只说明所受启发并链接原始发布页，不把对方的
-补丁文件、译文、字体、图片或代码当作可拆解、二次修改或移植的素材。
+## 文本提供与校对
+
+感谢 **“红桃皇后假说”** 为 **《樱花盛开之前》提供部分文本**。
+TDA 部分文本已经人工校对，感谢 ScRemilia、Tsubaki-G、X1AOFEI 及其他参与者；
+具体采用记录见[ParaTranz 校对同步说明](../../localization/paratranz/README.md)。
+部分文本经过校对不代表全篇完成日中人工校对，也不表示所有修改已进入历史下载包。
 
 ## rUGP／AGES 技术前人
 
@@ -95,6 +99,6 @@ shared/common 端点和 PF/PM 1,490 图闭环均由本项目针对自己的样�
 Yi Shen (`imnotsureyi-sys`) is the human maintainer and final reviewer. Material
 OpenAI Codex work is disclosed with the GitHub-recognized
 `Co-authored-by: Codex <codex@openai.com>` trailer. The project warmly thanks
-主任保护协会 for the AGES localization approach that began this patch-making
+主任保护协会 for the AGE2 loose-file overlay approach that began this patch-making
 journey, and credits the listed upstream tools for their narrowly described
 technical precedents.
