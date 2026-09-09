@@ -64,18 +64,27 @@
 随后独立进行第二轮日文对照复核，记录保留、修改和待确认项，解决疑点、统一术语，
 最后进行资源写回、技术检查和实机验证。AI 复核与人工校对分别记录，不能互相替代。
 
-**我本人也持续参与审核和问题处理。** 从译文措辞、人物称谓和术语取舍，到文本缺漏、
-换行排版、图片文字和游戏内显示问题，我会结合原文依据、校对意见与实际反馈逐项检查，
-提出修改要求、确认采用方案，并反复跟进修正结果。AI 协助分析与执行，具体取舍和最终
-发布仍由我负责。部分过程可见[术语审定与修正记录](localization/reviews/main-al-alignment-20260909.md)
-和[人工校对同步记录](localization/paratranz/README.md)。
+**玩家目前下载到的补丁，已经包含我在相应版本发布前参与审核、确认并落实的修改。**
+从译文措辞、人物称谓和术语取舍，到文本缺漏、换行排版、图片文字和游戏内显示问题，
+我在制作和测试过程中结合原文依据、校对意见与实际反馈检查问题，提出修改要求、确认
+采用方案，并跟进修正结果，再将修改纳入对应发布包。AI 协助分析与执行，具体取舍和
+最终发布由我负责；发布后也会继续收集反馈、修正问题。
+
+这些修改已有发布记录：
+[TDA01 beta0.2.2](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda01-beta0.2.2)
+已收录实机游玩反馈修复；
+[TDA02 beta0.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda02-beta0.1)
+已包含说话人军衔、台词错位、术语及部分语序修正；
+[TDA00 beta0.1](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/tda00-beta0.1)
+的下载包已更新说话人中文名称。
 
 详细步骤见 **[按顺序阅读的翻译规范](localization/standards/README.md)** 和
 [完整工作流](localization/workflow.md)。这些是制作流程，不代表每个历史测试包都已完成
 全文人工校对或全路线验证，译文仍可能存在错误。
 
-TDA 的部分文本已经过人工校对；后续校对会继续同步到可维护文本中，具体是否进入下载包
-以各次发布说明为准。感谢 ScRemilia、Tsubaki-G、X1AOFEI 及其他参与校对的朋友。
+TDA 的部分文本已经过人工校对。已发布版本包含上述审核与修正；此后新增的校对和修改
+会继续同步到可维护文本中，是否进入某个下载包以对应发布说明为准。
+感谢 ScRemilia、Tsubaki-G、X1AOFEI 及其他参与校对的朋友。
 **《樱花盛开之前》的部分文本由“红桃皇后假说”提供，在此诚挚致谢。**
 
 ### 欢迎加入 ParaTranz 校对
