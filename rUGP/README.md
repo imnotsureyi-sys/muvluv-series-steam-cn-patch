@@ -29,6 +29,9 @@ ICI 只告诉我们对象在哪里、是什么类型；找到 RIO 中的对象�
 | [Photon Flowers](games/photonflowers/) | [13,025 条章节文本](games/photonflowers/translations/) | [69 行历史合同](games/photonflowers/text-data/runtime/zh-Hans.csv) | [636 项](games/photonflowers/images/) | 尚未发布 |
 | [Photon Melodies](games/photonmelodies/) | [44,698 条章节文本](games/photonmelodies/translations/) | [151 行历史合同](games/photonmelodies/text-data/runtime/zh-Hans.csv) | [854 项](games/photonmelodies/images/) | 尚未发布 |
 
+上表图片数为 V6 历史集合。另见[当前 1,791 项静态审核选集](evidence/photon/images/static-review-20260909/README.md)
+及[审核页／长图工具](tools/images/README.md)：保留最新人工稿与待安装修订，不能与历史数相加。
+
 图片的稳定身份、源/成品哈希、格式、尺寸与路由统一保存在
 [`evidence/photon/`](evidence/photon/README.md)；编解码器在 [`formats/images/`](formats/images/)。
 图片二进制位于单独的历史研究资产 Release，当前仍有 19 张与官方来源字节相同的项目

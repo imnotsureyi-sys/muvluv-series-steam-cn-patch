@@ -18,6 +18,12 @@ These notes preserve the experiments behind the current Photon Flowers / Photon 
 | [ICI resize metadata](ici-resize-metadata.md) | Why could a statically decodable resized ICI still lead to a white screen? | Clean/candidate differential, duplicate-size and bitmap checks, plus independent static decoding | The corrected run had zero AGES launches and remains runtime-pending, not a released general ICI writer |
 | [Image transport/runtime](image-transport-runtime.md) | Why did correct localized bitmaps blank, tear, recolour, revert or leave English/Japanese visible? | Locale/parent route census, capacity differential, controlled single-record probes, and the PM tutorial timer identity/setter trace | All 1,490 baseline semantic routes are known; the PM tutorial addendum adds 12 composite-frame routes, and complete visual coverage remains a release gate |
 
+## PM image admission follow-up
+
+[PM CRip008 production admission](pm-image-admission-20260909.md) explains why
+nine installed hooks were rejected by a seven-hook gate, with a synthetic
+regression and explicit separation between public builds and local installations.
+
 ## How to read a postmortem
 
 Each record should distinguish four layers:

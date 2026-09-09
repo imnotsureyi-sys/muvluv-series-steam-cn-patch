@@ -29,6 +29,9 @@
 
 #include "photon_font_policy.h"
 #include "photon_optional_runtime_bridge.h"
+#if defined(PHOTON_BUILD_PM)
+#include "photon_pm_ruo_base_fix.h"
+#endif
 #if defined(PHOTON_SPEAKER_COLOR_CANDIDATE)
 #include "photon_speaker_policy.h"
 #endif
@@ -48,7 +51,8 @@ enum GuardStatus {
     GUARD_EXPORT_RESOLVE_FAILED = 7,
     GUARD_THREAD_START_FAILED = 8,
     GUARD_FONT_HOOK_FAILED = 9,
-    GUARD_STATUS_WRITE_FAILED = 10
+    GUARD_STATUS_WRITE_FAILED = 10,
+    GUARD_RUO_BASE_FIX_FAILED = 11
 };
 
 static HMODULE g_self;
@@ -509,6 +513,17 @@ static int initialize_guard(void) {
     if (!GetModuleFileNameW(NULL, host_path, MAX_PATH) ||
         !verify_sha256(host_path, PHOTON_GAME_EXE_SHA256))
         return GUARD_BAD_HOST;
+#if defined(PHOTON_BUILD_PM)
+    /* Keep the existing exact host identity check; patch before native archive
+     * initialization, once, without changing the executable on disk. */
+    {
+        BYTE *host = (BYTE *)GetModuleHandleW(NULL);
+        IMAGE_DOS_HEADER *dos = (IMAGE_DOS_HEADER *)host;
+        IMAGE_NT_HEADERS32 *nt = (IMAGE_NT_HEADERS32 *)(host + dos->e_lfanew);
+        if (!photon_pm_fix_ruo_base(host, nt->OptionalHeader.SizeOfImage))
+            return GUARD_RUO_BASE_FIX_FAILED;
+    }
+#endif
     if (!module_directory(private_path) ||
         !append_text(private_path, MAX_PATH, PRIVATE_NAME) ||
         !verify_sha256(private_path, PHOTON_PRIVATE_DLL_SHA256))

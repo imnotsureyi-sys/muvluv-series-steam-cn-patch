@@ -18,16 +18,30 @@
       "sealed_source_manifest_sha256": null
     },
     "photon_v6_pf_exact_rgba_table.generated.h": {
-      "bytes": 502705,
-      "sha256": "37ABF817897F6D4575051F92A2045BF2F4130164052BAD96D333D9F3F769581E",
+      "bytes": 556132,
+      "sha256": "6A4199E2E4F86FB720899F0FBBDA07B84FF3E73E859981DE00944157A920484A",
       "role": "PF exact-RGBA sidecar identity and geometry table; contains no image bytes",
-      "sealed_source_manifest_sha256": "81A2A9BB9B0469D961557410664673DF461522621074BF37AB6F8544459711DC"
+      "sealed_source_manifest_sha256": "19037C042AAA5CF74C208E1B5DA977AB8B540DBADAA924504153856A27EBA3BE",
+      "game_source_headers": {
+        "pf": "0294CB2A107A7FCD52BE3C61FDDDABE529A0580578CC4912E0A8D1492B99F19E",
+        "pm": "0294CB2A107A7FCD52BE3C61FDDDABE529A0580578CC4912E0A8D1492B99F19E"
+      },
+      "selection": "PHOTON_BUILD_PM selects the PM installed snapshot; otherwise the PF installed snapshot. PF and special57 contents are identical in both snapshots."
     },
     "photon_v6_pm_exact_rgba_table.generated.h": {
-      "bytes": 685061,
-      "sha256": "714778A2556D0319563C68C9D07738E407EC828D7EEA3C0AD2ADA25F070B0011",
+      "bytes": 744449,
+      "sha256": "A398BD0A2EDC6EFA1BD3E5696115E8349F42DBF5C6B8D4D7C97A9A1E2A40DF1E",
       "role": "PM exact-RGBA sidecar identity and geometry table; contains no image bytes",
-      "sealed_source_manifest_sha256": "81A2A9BB9B0469D961557410664673DF461522621074BF37AB6F8544459711DC"
+      "sealed_source_manifest_sha256": null,
+      "game_source_headers": {
+        "pf": "FF4DDC99EFCA35EA4E8A41190F8F4A809DEF6D5A2B73F9E5F10449ED4529159B",
+        "pm": "1202C02C7FF9DA89297F5EC1FB08FFE3F313F478824A5AA1F6F492A3F9CB88FF"
+      },
+      "selection": "PHOTON_BUILD_PM selects the PM installed snapshot; otherwise the PF installed snapshot. PF and special57 contents are identical in both snapshots.",
+      "game_source_manifests": {
+        "pf": "19037C042AAA5CF74C208E1B5DA977AB8B540DBADAA924504153856A27EBA3BE",
+        "pm": "3D412E4C469105959C2973BC6965E3AD991E9402BFD3D6D42B2A924A06EE9E3E"
+      }
     },
     "photon_v6_pm_special40_table.generated.h": {
       "bytes": 18919,
@@ -37,9 +51,14 @@
     },
     "photon_v6_special57_table.generated.h": {
       "bytes": 46157,
-      "sha256": "B8E0FFD3204C5244430B9BA559AC3C7720F400E0977C4BD236A7864799FC4772",
+      "sha256": "525A8DC1528DE1555E4B1FC6CE31D1769C3B7C2513D70D2615D11BE3F4A95197",
       "role": "PF/PM special sidecar route identity and geometry table; contains no image bytes",
-      "sealed_source_manifest_sha256": null
+      "sealed_source_manifest_sha256": null,
+      "game_source_headers": {
+        "pf": "1A4A5A5203A20A81FC84BD1F917355B6B5CB59FE8AEF13822BCAB5D79FA43D96",
+        "pm": "1A4A5A5203A20A81FC84BD1F917355B6B5CB59FE8AEF13822BCAB5D79FA43D96"
+      },
+      "selection": "PHOTON_BUILD_PM selects the PM installed snapshot; otherwise the PF installed snapshot. PF and special57 contents are identical in both snapshots."
     }
   },
   "known_gaps": [
