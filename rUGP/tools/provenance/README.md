@@ -6,6 +6,20 @@ into Git. They are fail-closed, never overwrite an existing output, hash their
 inputs, redact workstation paths and verify that source files do not change
 during a run.
 
+## CRmt review publication
+
+For CRmt specifically, [`export_crmt_review_catalog.py`](export_crmt_review_catalog.py) projects the current
+expanded review into [public locale/object/layer identities](../../evidence/photon/crmt/README.md).
+It checks artifact hashes, rejects stale artwork/runtime associations and omits local paths and pixels.
+Inputs are the documented review/expanded/catalog/volume-index JSONs; `--runtime` accepts the bounded
+own-key diagnostic result profile, not arbitrary successful logs. Run the module with `--help` for arguments.
+This adapter republishes a completed local audit; it does not independently discover all game objects.
+
+[`export_crmt_localization_evidence.py`](export_crmt_localization_evidence.py) and
+[`export_crmt_structure_trigger_evidence.py`](export_crmt_structure_trigger_evidence.py) retain the earlier
+bounded publication adapters. Their historical 56-target input schemas are not the current 49-group catalog;
+do not replace current counts or status with those historical projections.
+
 ## Verify the published V6 image authority
 
 Download the Photon V6 image ZIP from its GitHub Release, install

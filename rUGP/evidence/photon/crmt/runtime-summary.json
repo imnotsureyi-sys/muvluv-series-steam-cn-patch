@@ -1,0 +1,90 @@
+{
+  "schema": "photon-crmt-runtime-summary/1",
+  "scope": "Historical test observations, not an installable release or a fresh run",
+  "input_sha256": {
+    "native-acceptance107.v1": "AC568F2A867426D7E3452AF6EE484CAE0CF9D5534A83DF432803AE978A77ED24",
+    "dll-fix110.v1": "B26141048F5C0B4CCE5C9374FC23CBDC5A690FE735095DE11252277C05E359D1",
+    "formal-pm112.v1": "E561D67031E66717FA42529FA19685DE92FCB9D12709F0016B7A0AA7A4A3E0AD"
+  },
+  "diagnostic_batch": {
+    "status": "ALL_PENDING_BATCH_NATIVE_CONTROLLED_DISPLAY_PASSED",
+    "logical_assets": 17,
+    "physical_records": 18,
+    "mips_verified": 91
+  },
+  "fixed_pm_runtime": {
+    "status": "PASS_ISOLATED_CURRENT_RUNTIME_WITH_MINIMAL_DLL_FIX_NOT_DEPLOYED",
+    "passed_physical": 7,
+    "logical_assets": 6,
+    "passed_mips": 37,
+    "cold_starts": 2
+  },
+  "formal_pm_smoke": {
+    "status": "DEPLOYED_FORMAL_STEAM_SMOKE_PASS",
+    "files": [
+      {
+        "name": "Ages3ResT.dll",
+        "bytes": 612352,
+        "sha256": "93A755108399920CD80909BD471D8AEE0F8D911123D590EA2F2106861D64AF64"
+      },
+      {
+        "name": "photonmelodies11.rio.ruo1",
+        "bytes": 9072356,
+        "sha256": "A89B9D309072C91FBCD963726765A7AE8EC5FDD9D5623B579AAF0FAB1E6C8FAC"
+      }
+    ],
+    "approved_physical_records": [
+      {
+        "asset_id": "I47501",
+        "object_id": "CRmt:V5:74E3B06C",
+        "record_sha256": "58EC791C9DB07E135CDD06511804C7052F76908AF625A59453C5861183402FD7"
+      },
+      {
+        "asset_id": "I58516",
+        "object_id": "CRmt:V6:4DBF8A40",
+        "record_sha256": "D7AFD50DE187ACE08C3509E63151CD696CE24FAAA00A638DE3C63275266CDD10"
+      },
+      {
+        "asset_id": "I58522",
+        "object_id": "CRmt:V6:4DBFD1C8",
+        "record_sha256": "AD5CE5EC57A79A685228E49DE698391ED49AA4ACA55DB20C59AF2DDCA17EA558"
+      },
+      {
+        "asset_id": "I59189",
+        "object_id": "CRmt:V6:55BB4914",
+        "record_sha256": "5B015F969A7A7C71687C78D21421A3C73FF9ED29DE21761328B78B2881995C69"
+      },
+      {
+        "asset_id": "I59195",
+        "object_id": "CRmt:V6:55BBBFCC",
+        "record_sha256": "E3733BB9AD8DA9F894FC4C63A5AF6E50904108892863BF5F34202239F64F2CFB"
+      },
+      {
+        "asset_id": "U0478",
+        "object_id": "CRmt:V3:005C94B0",
+        "record_sha256": "4B9CAE9B750B68637E167C0C5D6291C421B8FC5B1E80683C009CB04EA3A22937"
+      },
+      {
+        "asset_id": "U0478",
+        "object_id": "CRmt:V3:0075A0C4",
+        "record_sha256": "EAA0379555AB0CA73E667F6E26C55A00EB8415AA8AEB578235936539381DB3D3"
+      }
+    ],
+    "checks": {
+      "chinese_dialogue_visible": true,
+      "dialogue_advanced": true,
+      "menu_visible": true,
+      "no_831_observed": true,
+      "exit_code": 0,
+      "native_ruo_base": 8589934592
+    },
+    "qa_script_present": false
+  },
+  "limits": [
+    "The 17-group diagnostic batch and the later seven-record current-runtime check are different environments.",
+    "Two cold starts are two test suites, not two complete passes per image.",
+    "Formal Steam startup and normal REBIRTH Chinese dialogue do not certify all seven original-story image scenes.",
+    "No executable, DLL, RUO, game screenshot or injection tool is included in this source PR.",
+    "These observations describe their hash-locked test builds; they do not certify the current public source runtime or all user machines."
+  ]
+}

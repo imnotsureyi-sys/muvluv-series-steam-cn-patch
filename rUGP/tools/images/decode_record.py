@@ -14,6 +14,7 @@ import tempfile
 from typing import Mapping, Sequence
 
 from rUGP.formats.images.cr6ti_decode import decode_standard_cr6ti_record, png_rgba_bytes
+from rUGP.formats.images.crmti_decode import decode_crmt
 from rUGP.formats.images.crip007_encode import decode_record_rgba
 from rUGP.formats.images.crip008_decode import (
     decode_crip008_kind2_native,
@@ -86,6 +87,20 @@ def decode_record(record: bytes, codec: str) -> tuple[int, int, bytes, dict[str,
             raise ImageExtractError(f"unsupported CRip008 kind: {header.kind}")
         rgba = bytes(native_crip008_to_rgba(native))
         return header.width, header.height, rgba, asdict(header)
+    if codec == "crmt":
+        levels, trailer = decode_crmt(record)
+        top = levels[0]
+        return (
+            top.level.width,
+            top.level.height,
+            top.rgba,
+            {
+                "level_count": len(levels),
+                "top_meta_hex": f"0x{top.level.meta:08X}",
+                "top_active_row_count": top.level.active_row_count,
+                "trailer_bytes": len(trailer),
+            },
+        )
     raise ImageExtractError(f"unsupported codec: {codec}")
 
 
@@ -174,7 +189,9 @@ def main(argv: Sequence[str] | None = None) -> int:
     parser.add_argument("--source", required=True, type=Path)
     parser.add_argument("--offset", required=True, type=_integer)
     parser.add_argument("--extent", required=True, type=_integer)
-    parser.add_argument("--codec", required=True, choices=("cr6ti", "crip007", "crip008"))
+    parser.add_argument(
+        "--codec", required=True, choices=("cr6ti", "crip007", "crip008", "crmt")
+    )
     parser.add_argument("--output", required=True, type=Path)
     parser.add_argument("--report", type=Path)
     args = parser.parse_args(argv)

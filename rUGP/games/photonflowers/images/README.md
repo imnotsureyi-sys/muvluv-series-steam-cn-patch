@@ -1,5 +1,8 @@
 # Photon Flowers 图片
 
+CRmt 演出图片另见[家族指南](../../../docs/crmt-family.md)和[日英／汉化逐对象清单](../../../evidence/photon/crmt/README.md)。
+PF 与 PM 相同像素的不同物理目标仍分别记录，不以 PM 通过代替 PF 验证。
+
 [返回 Photon Flowers](../README.md) · [1,490 图共用清单](../../../evidence/photon/images/manifest.json) · [路由闭环](../../../evidence/photon/routes/routes.json) · [研究资产 Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/photon-images-1490-20260824-v6)
 
 共用 Photon V6 清单中，`game = "PF"` 的项目有 **636 项**。每项保存稳定资源 ID、

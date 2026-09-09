@@ -6,6 +6,8 @@ from pathlib import Path
 import tempfile
 import unittest
 
+from rUGP.formats.images.crmti_decode import CRMT_CHILD_WRAPPER
+from rUGP.formats.images.crmti_encode import encode_crmt
 from rUGP.formats.images.crip008_kind3_encode import encode_native_pixels
 from rUGP.tools.images.decode_record import (
     ImageExtractError,
@@ -40,6 +42,19 @@ def crip008_header(
     return bytes(data)
 
 
+def crmt_template(width: int, height: int, meta: int = 0x0707070F) -> bytes:
+    parent = bytearray(0x41)
+    parent[:4] = bytes.fromhex("80 04 02 05")
+    parent[0x40] = 1
+    header = bytearray(18)
+    header[0:2] = width.to_bytes(2, "little")
+    header[2:4] = height.to_bytes(2, "little")
+    header[4:8] = meta.to_bytes(4, "little")
+    header[8:12] = (2).to_bytes(4, "little")
+    header[12:16] = (width * height * 4).to_bytes(4, "little")
+    return bytes(parent) + CRMT_CHILD_WRAPPER + bytes(header) + b"\0\0PARENT"
+
+
 class DecodeImageRecordTests(unittest.TestCase):
     def make_source(self, root: Path) -> Path:
         width, height = 2, 1
@@ -68,6 +83,28 @@ class DecodeImageRecordTests(unittest.TestCase):
         self.assertEqual(report["source_file"], "sample.rio")
         self.assertNotIn(str(root), json.dumps(report))
         self.assertFalse(report["input_modified"])
+
+    def test_crmt_exact_extent_exports_top_mip_and_parent_metadata(self) -> None:
+        with tempfile.TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            width, height = 5, 3
+            template = crmt_template(width, height)
+            rgba = bytes((42, 100, 198, 255)) * (width * height)
+            record, expected, _ = encode_crmt(template, [rgba])
+            source = root / "sample.rio"
+            source.write_bytes(b"prefix" + record + b"tail")
+            png, report = build_outputs(
+                source, len(b"prefix"), len(record), "crmt", "review.png"
+            )
+
+        self.assertTrue(png.startswith(b"\x89PNG\r\n\x1a\n"))
+        self.assertEqual(report["codec"], "crmt")
+        self.assertEqual(report["header"]["level_count"], 1)
+        self.assertEqual(report["header"]["top_meta_hex"], "0x0707070F")
+        self.assertEqual(report["header"]["trailer_bytes"], len(b"PARENT"))
+        decoded_width, decoded_height, decoded_rgba, _ = decode_record(record, "crmt")
+        self.assertEqual((decoded_width, decoded_height), (width, height))
+        self.assertEqual(decoded_rgba, expected[0])
 
     def test_declared_length_mismatch_and_out_of_range_fail(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:

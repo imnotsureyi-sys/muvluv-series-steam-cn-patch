@@ -20,6 +20,10 @@ These notes preserve the experiments behind the current Photon Flowers / Photon 
 
 ## How to read a postmortem
 
+The [CRmt family guide](../crmt-family.md) consolidates the later parent/mip/CRimp distinction,
+tagged-integer correction, native capacity failure, cross-locale geometry and diagnostic-versus-formal-runtime boundaries.
+Its [current evidence](../../evidence/photon/crmt/README.md) is separate from historical V6 image coverage.
+
 Each record should distinguish four layers:
 
 1. **Symptom** — the exact failure observed, including game/build and runtime route when known.
