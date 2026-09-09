@@ -1,0 +1,22 @@
+{
+  "project_id": 19505,
+  "basis": "Recorded translation-edit contributors on retained rows, not a claim of sole authorship. Counts can overlap.",
+  "contributors": {
+    "ScRemilia": {
+      "history_rows": 226,
+      "changed_from_github": 224
+    },
+    "imnotsureyi-sys": {
+      "history_rows": 48,
+      "changed_from_github": 18
+    },
+    "Tsubaki-G": {
+      "history_rows": 23,
+      "changed_from_github": 23
+    },
+    "X1AOFEI": {
+      "history_rows": 14,
+      "changed_from_github": 13
+    }
+  }
+}

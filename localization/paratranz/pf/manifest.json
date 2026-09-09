@@ -1,0 +1,87 @@
+{
+  "schema": "series-paratranz/v1",
+  "project_id": 20660,
+  "slug": "pf",
+  "bootstrap_git_commit": "b2c7aae",
+  "rows": 13025,
+  "files": [
+    {
+      "id": 3387924,
+      "name": "共通系统.json",
+      "rows": 69,
+      "baseline": "baseline/3387924.json"
+    },
+    {
+      "id": 3387925,
+      "name": "其名为武.json",
+      "rows": 622,
+      "baseline": "baseline/3387925.json"
+    },
+    {
+      "id": 3387934,
+      "name": "告白.json",
+      "rows": 3797,
+      "baseline": "baseline/3387934.json"
+    },
+    {
+      "id": 3387927,
+      "name": "和小武在一起！.json",
+      "rows": 273,
+      "baseline": "baseline/3387927.json"
+    },
+    {
+      "id": 3387928,
+      "name": "小武哥的尾巴.json",
+      "rows": 363,
+      "baseline": "baseline/3387928.json"
+    },
+    {
+      "id": 3387936,
+      "name": "小鸡潜降兵.json",
+      "rows": 260,
+      "baseline": "baseline/3387936.json"
+    },
+    {
+      "id": 3387931,
+      "name": "我名为冥夜.json",
+      "rows": 857,
+      "baseline": "baseline/3387931.json"
+    },
+    {
+      "id": 3387926,
+      "name": "樱花盛开之前.json",
+      "rows": 4037,
+      "baseline": "baseline/3387926.json"
+    },
+    {
+      "id": 3387930,
+      "name": "白银……在吃吗？.json",
+      "rows": 464,
+      "baseline": "baseline/3387930.json"
+    },
+    {
+      "id": 3387929,
+      "name": "白银同学，等一下！！.json",
+      "rows": 308,
+      "baseline": "baseline/3387929.json"
+    },
+    {
+      "id": 3387935,
+      "name": "继承.json",
+      "rows": 515,
+      "baseline": "baseline/3387935.json"
+    },
+    {
+      "id": 3387932,
+      "name": "赎罪.json",
+      "rows": 1014,
+      "baseline": "baseline/3387932.json"
+    },
+    {
+      "id": 3387933,
+      "name": "雨舞者.json",
+      "rows": 446,
+      "baseline": "baseline/3387933.json"
+    }
+  ]
+}

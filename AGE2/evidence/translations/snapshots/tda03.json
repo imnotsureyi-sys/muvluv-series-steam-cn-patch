@@ -1,6 +1,6 @@
 {
   "bulk_official_dialogue_included": false,
-  "output_bytes": 1729119,
+  "output_bytes": 1729011,
   "output_columns": [
     "call_order",
     "id",
@@ -11,7 +11,7 @@
     "record_kind",
     "cn_text"
   ],
-  "output_sha256": "5C44BF384D5BBCD0B036E5DBC2FE6D09D8F9D7E26684A3BA20EC99807C3174E3",
+  "output_sha256": "C9CF489F1E242D07CBD6BE20E1A6BB97C83BEDB735A582B31BA65865EA6BB38D",
   "record_kinds": {
     "structural_empty": 1,
     "text": 6912

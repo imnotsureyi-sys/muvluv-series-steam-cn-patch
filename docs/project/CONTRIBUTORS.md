@@ -84,6 +84,12 @@ shared/common 端点和 PF/PM 1,490 图闭环均由本项目针对自己的样�
 如果希望被列出、修改署名或匿名，请在 Issue/PR 中说明显示名称、链接和贡献范围；不要
 未经本人同意公开私人账号或聊天截图。
 
+## TDA ParaTranz 校对贡献
+
+此次带入此前确认的人工优先改文，感谢 ScRemilia、Tsubaki-G、X1AOFEI 及维护者参与校对。
+逐项采用记录见 `localization/paratranz/tda/first-merge-decisions.json`，计数及署名依据见
+`localization/paratranz/tda/contributors.json`。计数可以重叠，不表示独占作者权或全篇已审核。
+
 ## English summary
 
 Yi Shen (`imnotsureyi-sys`) is the human maintainer and final reviewer. Material

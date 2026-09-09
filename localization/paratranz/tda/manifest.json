@@ -1,0 +1,81 @@
+{
+  "schema": "series-paratranz/v1",
+  "project_id": 19505,
+  "slug": "tda",
+  "bootstrap_git_commit": "b2c7aae",
+  "rows": 26696,
+  "files": [
+    {
+      "id": 3388057,
+      "name": "TDA00/共通系统/姓名.json",
+      "rows": 21,
+      "baseline": "baseline/3388057.json"
+    },
+    {
+      "id": 3388058,
+      "name": "TDA00/共通系统/界面.json",
+      "rows": 81,
+      "baseline": "baseline/3388058.json"
+    },
+    {
+      "id": 3131310,
+      "name": "TDA00/正文/全文.csv",
+      "rows": 3713,
+      "baseline": "baseline/3131310.json"
+    },
+    {
+      "id": 3388059,
+      "name": "TDA01/共通系统/姓名.json",
+      "rows": 82,
+      "baseline": "baseline/3388059.json"
+    },
+    {
+      "id": 3388060,
+      "name": "TDA01/共通系统/界面.json",
+      "rows": 89,
+      "baseline": "baseline/3388060.json"
+    },
+    {
+      "id": 3131311,
+      "name": "TDA01/正文/全文.csv",
+      "rows": 8565,
+      "baseline": "baseline/3131311.json"
+    },
+    {
+      "id": 3388061,
+      "name": "TDA02/共通系统/姓名.json",
+      "rows": 111,
+      "baseline": "baseline/3388061.json"
+    },
+    {
+      "id": 3388062,
+      "name": "TDA02/共通系统/界面.json",
+      "rows": 204,
+      "baseline": "baseline/3388062.json"
+    },
+    {
+      "id": 3131312,
+      "name": "TDA02/正文/全文.csv",
+      "rows": 6589,
+      "baseline": "baseline/3131312.json"
+    },
+    {
+      "id": 3388063,
+      "name": "TDA03/共通系统/姓名.json",
+      "rows": 133,
+      "baseline": "baseline/3388063.json"
+    },
+    {
+      "id": 3388064,
+      "name": "TDA03/共通系统/界面.json",
+      "rows": 195,
+      "baseline": "baseline/3388064.json"
+    },
+    {
+      "id": 3131313,
+      "name": "TDA03/正文/全文.csv",
+      "rows": 6913,
+      "baseline": "baseline/3131313.json"
+    }
+  ]
+}
