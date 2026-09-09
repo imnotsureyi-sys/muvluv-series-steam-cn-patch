@@ -1,0 +1,85 @@
+name: ParaTranz PF PM TDA
+
+on:
+  workflow_dispatch:
+    inputs:
+      project:
+        description: '选择项目：pf / pm / tda（TDA00–03 共用项目）'
+        type: choice
+        options: [pf, pm, tda]
+        required: true
+      dry_run:
+        description: '仅预检；取消勾选后创建校对 PR'
+        type: boolean
+        default: true
+
+permissions:
+  contents: read
+
+concurrency:
+  group: paratranz-${{ inputs.project }}
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    if: github.repository == 'imnotsureyi-sys/muvluv-series-steam-cn-patch' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      SYNC_PROJECT: ${{ inputs.project }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Check project and avoid duplicate pending PRs
+        id: pending
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          case "$SYNC_PROJECT" in pf|pm|tda) ;; *) exit 1;; esac
+          pending=$(gh pr list --state open --limit 100 --json headRefName --jq "any(.[]; .headRefName | startswith(\"codex/paratranz-${SYNC_PROJECT}-sync-\"))")
+          echo "exists=$pending" >> "$GITHUB_OUTPUT"
+          if [ "$pending" = true ]; then
+            echo '同项目已有同步 PR 待处理，本次跳过。' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Test synchronization boundaries
+        if: steps.pending.outputs.exists != 'true'
+        run: python -m unittest localization.tests.test_sync_icb_paratranz localization.tests.test_sync_series_paratranz -v
+      - name: Pull only the selected project
+        if: steps.pending.outputs.exists != 'true'
+        env:
+          # Reuse the existing encrypted token. Its name reflects the first ICB pilot.
+          PARATRANZ_TOKEN: ${{ secrets.PARATRANZ_ICB_TOKEN }}
+        run: |
+          python -m localization.tools.sync_series_paratranz --project "$SYNC_PROJECT" --apply --report "$RUNNER_TEMP/report.md" --paths "$RUNNER_TEMP/paths"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Validate text and public boundaries
+        if: steps.pending.outputs.exists != 'true'
+        run: |
+          git diff --check
+          python -m unittest discover -s AGE2/tests/games -p 'test_translation_tables.py' -v
+          python .github/scripts/verify_repository.py
+      - name: Create a review PR
+        if: steps.pending.outputs.exists != 'true' && !inputs.dry_run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet; then
+            echo '没有需要同步的变化。' >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          branch="codex/paratranz-${SYNC_PROJECT}-sync-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          git switch -c "$branch"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git --literal-pathspecs add --pathspec-from-file="$RUNNER_TEMP/paths" --pathspec-file-nul
+          git commit --author='Yi Shen <239485544+imnotsureyi-sys@users.noreply.github.com>' -m "sync(${SYNC_PROJECT}): import ParaTranz proofreading" -m 'Co-authored-by: Codex <codex@openai.com>'
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "[ParaTranz] ${SYNC_PROJECT^^} 校对同步" --body-file "$RUNNER_TEMP/report.md"
+      - name: Dry-run summary
+        if: inputs.dry_run
+        run: echo '仅预检：未推送、未创建同步 PR、未写回 ParaTranz。' >> "$GITHUB_STEP_SUMMARY"

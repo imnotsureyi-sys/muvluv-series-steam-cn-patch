@@ -82,14 +82,14 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
         raise ValueError('ParaTranz redirect refused; token was not forwarded')
 
 
-def fetch_snapshot(token):
+def fetch_snapshot(token, project=PROJECT):
     if not token or not token.strip():
         raise ValueError('PARATRANZ_ICB_TOKEN is not configured')
     opener = urllib.request.build_opener(NoRedirect)
 
     def get(path):
         for attempt in range(3):
-            request = urllib.request.Request(f'https://paratranz.cn/api/projects/{PROJECT}{path}',
+            request = urllib.request.Request(f'https://paratranz.cn/api/projects/{project}{path}',
                 headers={'Authorization': f'Bearer {token.strip()}', 'Accept': 'application/json'})
             try:
                 with opener.open(request, timeout=40) as response:
@@ -111,11 +111,11 @@ def fetch_snapshot(token):
     return result
 
 
-def remote_index(snapshot):
+def remote_index(snapshot, project=PROJECT, allow_empty_original=False):
     result, files, ids = {}, {}, set()
     for entry in snapshot:
         file = entry['file']
-        if file['project'] != PROJECT or file['id'] in files:
+        if file['project'] != project or file['id'] in files:
             raise ValueError('Wrong project or duplicate file')
         files[file['id']] = file['name']
         if not isinstance(entry['rows'], list) or file['total'] != len(entry['rows']):
@@ -123,7 +123,7 @@ def remote_index(snapshot):
         for row in entry['rows']:
             if row['key'] in result or row['id'] in ids:
                 raise ValueError('Duplicate remote key/ID')
-            if not isinstance(row['original'], str) or not row['original']:
+            if not isinstance(row['original'], str) or (not row['original'] and not allow_empty_original):
                 raise ValueError('Missing original')
             if not isinstance(row['translation'], str) or type(row['stage']) is not int:
                 raise ValueError('Invalid translation or stage')
