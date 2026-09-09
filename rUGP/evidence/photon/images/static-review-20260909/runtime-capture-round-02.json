@@ -1592,7 +1592,7 @@
     }
   ],
   "visual_issue": {
-    "status": "hud_visible_english_runtime_route_unresolved",
+    "status": "english_hud_observed_asset_mapping_unverified",
     "labels": [
       "36mm chain gun",
       "120mm cannon",
@@ -1615,14 +1615,30 @@
       2606
     ],
     "root_cause_confirmed": false,
-    "fix_installed": false
+    "fix_installed": false,
+    "hook_failure_confirmed": false,
+    "earlier_definite_replacement_failure_claim_withdrawn": true,
+    "user_japanese_mode_followup": {
+      "image_language_selected": "Japanese",
+      "text_language_selected": "Japanese",
+      "hud_labels_still_english": true,
+      "image_language_selection_evidence": "user-provided settings screenshot",
+      "unmodified_game_baseline_verified": false,
+      "screenshots_sha256": [
+        "98CC19B1262D8485438931244DC9C252AF249C146F78A333BA7D876A5533BFD7",
+        "4DE104F3F6D60C423B6CEBED361584A61676CBC675E185073105DCD8500C6B1B"
+      ]
+    },
+    "initial_capture_image_language_at_hud": "not_independently_verified"
   },
   "limits": [
     "Matching commits prove only the listed bindings and captured session, not the visible HUD labels.",
     "The 16 CRip008 events do not match pending PF identities, including the established two/three-zero padding candidates.",
     "Three decode_rect_rejected events are unmatched by the ordinary binding manifest; they are not assigned as this HUD issue's cause.",
     "Existing OM_TWF_SetArm script parameter evidence is a separate possible path, not a proven explanation of the English pixels.",
-    "No new game replay requested. Normal DLL restored; unresolved HUD issue remains in integration follow-up."
+    "Normal DLL restored after capture. English text in Japanese image mode is not evidence of a failed Chinese hook; the exact artwork-to-screen relationship remains unverified.",
+    "G2278/G2280/G2600 and variants are script-related candidate artwork. They have not been proven to be the source of these screen pixels. Neither a hook failure nor a successful HUD replacement is established.",
+    "Chinese dialogue in the first HUD screenshot does not establish the independent image-language setting. If images were set to Japanese, preserving the original English HUD is expected, not a failed replacement."
   ],
   "game_started_by_agent": false,
   "computer_use": false,
