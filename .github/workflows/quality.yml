@@ -108,3 +108,8 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           python rUGP/runtime/build.py --game pm --zig $zig --output "$env:RUNNER_TEMP/pm-candidate/Ages3ResT.dll" --authorize-pinned-build --speaker-color-candidate --pm-font-candidate
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Build both diagnostic variants without installing them
+        shell: pwsh
+        run: |
+          $zig = (Get-Command zig).Source
+          python -m rUGP.tools.images.prepare_native_diagnostics --zig $zig --output "$env:RUNNER_TEMP/diagnostics-ready"

@@ -23,7 +23,10 @@ class StaticReviewCatalogTests(unittest.TestCase):
                 self.assertTrue(build["authorization_compiled"])
                 self.assertTrue(build["deterministic_double_compile_after_pe_normalization"])
         self.assertFalse(report["game_started"])
-        self.assertFalse(report["game_files_modified"])
+        self.assertTrue(report["game_files_modified"])
+        self.assertEqual(report["pm_album_fix"]["changed_game_files"], ["PM/Ages3ResT.dll"])
+        self.assertTrue(report["pm_album_fix"]["installed_readback_matched"])
+        self.assertTrue(report["pm_album_fix"]["backup_readback_matched"])
 
     def test_snapshot_counts_identities_and_states_are_consistent(self):
         catalog = json.loads((EVIDENCE / "catalog.json").read_text("utf-8"))

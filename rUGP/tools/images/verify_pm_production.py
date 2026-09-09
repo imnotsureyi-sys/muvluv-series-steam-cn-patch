@@ -106,6 +106,22 @@ def run(zig: Path, output: Path) -> dict:
                   production_ready=True, game_started=False, native_status_mocked=False,
                   selector_bypassed=False)
     report["ruo_base"] = json.loads(checked.stdout)
+    lifecycle_exe = output / "selector-lifecycle.exe"
+    lifecycle_build = subprocess.run([
+        str(zig), "cc", "-target", "x86-windows-gnu", "-std=c11", "-O2",
+        "-Wall", "-Wextra", "-Werror", "-DPHOTON_V6_PRODUCTION_PM=1",
+        "-DPHOTON_V6_PM_SELECTOR_ADAPTER=1", "-DPHOTON_V6_PM_SELECTOR_TEST_HOOKS=1",
+        "-I", str(RUNTIME / "include"), "-I", str(RUNTIME / "generated"),
+        str(ROOT / "rUGP/tests/runtime/pm_selector_lifecycle.c"),
+        "-o", str(lifecycle_exe), "-ladvapi32", "-luser32"],
+        capture_output=True, text=True, encoding="utf-8", timeout=180)
+    if lifecycle_build.returncode:
+        raise RuntimeError(f"Selector lifecycle build failed: {lifecycle_build.stderr[-2000:]}")
+    lifecycle = subprocess.run([str(lifecycle_exe)], capture_output=True,
+                               text=True, encoding="utf-8", timeout=30)
+    if lifecycle.returncode:
+        raise RuntimeError(f"Selector lifecycle failed: {lifecycle.stderr}")
+    report["selector_lifecycle"] = json.loads(lifecycle.stdout)
     (output / "verification.json").write_text(json.dumps(report, indent=2) + "\n", "utf-8")
     return report
 

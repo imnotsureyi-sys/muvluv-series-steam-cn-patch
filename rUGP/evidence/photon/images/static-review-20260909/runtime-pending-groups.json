@@ -1,0 +1,328 @@
+{
+  "schema": "photon-runtime-pending-groups-v1",
+  "binding_count": 40,
+  "group_count": 10,
+  "groups": [
+    {
+      "game": "PF",
+      "collection": "PF / PM · 篇章Logo独立图层",
+      "width": 245,
+      "height": 64,
+      "bindings": [
+        {
+          "group_id": 1668,
+          "title": "樱花盛开之前 · 彩色 · PF图层",
+          "payload_bytes": 15742,
+          "payload_fnv1a64": "26EF11E826B4B095"
+        }
+      ]
+    },
+    {
+      "game": "PF",
+      "collection": "PF · 军事HUD与装备标识",
+      "width": 278,
+      "height": 60,
+      "bindings": [
+        {
+          "group_id": 2278,
+          "title": "36mm突击机炮",
+          "payload_bytes": 16039,
+          "payload_fnv1a64": "3AE98B0793DC8809"
+        },
+        {
+          "group_id": 2288,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 15786,
+          "payload_fnv1a64": "58A9CCAE369F9184"
+        },
+        {
+          "group_id": 2597,
+          "title": "36mm突击机炮",
+          "payload_bytes": 4750,
+          "payload_fnv1a64": "0D33204B69661ABD"
+        },
+        {
+          "group_id": 2598,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 4650,
+          "payload_fnv1a64": "D0EC08964F317979"
+        },
+        {
+          "group_id": 2599,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 4837,
+          "payload_fnv1a64": "32AED24D9C940983"
+        },
+        {
+          "group_id": 2603,
+          "title": "36mm突击机炮",
+          "payload_bytes": 4762,
+          "payload_fnv1a64": "B012498F3D8DA561"
+        },
+        {
+          "group_id": 2604,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 4668,
+          "payload_fnv1a64": "588807F289D2A9B8"
+        },
+        {
+          "group_id": 2605,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 4842,
+          "payload_fnv1a64": "F4F5E76C2D4E3530"
+        },
+        {
+          "group_id": 2650,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 17077,
+          "payload_fnv1a64": "78317D0FEA871B03"
+        },
+        {
+          "group_id": 2651,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 15559,
+          "payload_fnv1a64": "473189D2AEF2DDED"
+        },
+        {
+          "group_id": 2652,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 16748,
+          "payload_fnv1a64": "DF077E2699746224"
+        },
+        {
+          "group_id": 2751,
+          "title": "36mm突击机炮",
+          "payload_bytes": 15848,
+          "payload_fnv1a64": "342F43C9B6FB862D"
+        }
+      ]
+    },
+    {
+      "game": "PF",
+      "collection": "PF · 军事HUD与装备标识",
+      "width": 280,
+      "height": 61,
+      "bindings": [
+        {
+          "group_id": 2280,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 9333,
+          "payload_fnv1a64": "AB98F6147415CECA"
+        },
+        {
+          "group_id": 2596,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 3436,
+          "payload_fnv1a64": "3372EAF069A6124A"
+        },
+        {
+          "group_id": 2602,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 3497,
+          "payload_fnv1a64": "C260C56FC5CA24FE"
+        },
+        {
+          "group_id": 2752,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 9371,
+          "payload_fnv1a64": "BA7074AAE39E76D6"
+        }
+      ]
+    },
+    {
+      "game": "PF",
+      "collection": "PF · 军事HUD与装备标识",
+      "width": 162,
+      "height": 124,
+      "bindings": [
+        {
+          "group_id": 2600,
+          "title": "选择兵装",
+          "payload_bytes": 3685,
+          "payload_fnv1a64": "9E865B966C85281A"
+        },
+        {
+          "group_id": 2606,
+          "title": "选择兵装",
+          "payload_bytes": 3788,
+          "payload_fnv1a64": "6D30EE509AE0C407"
+        }
+      ]
+    },
+    {
+      "game": "PF",
+      "collection": "PF · 校园与毕业典礼场景",
+      "width": 900,
+      "height": 700,
+      "bindings": [
+        {
+          "group_id": 2787,
+          "title": "毕业礼堂横幅 · 证书颁发式",
+          "payload_bytes": 335997,
+          "payload_fnv1a64": "D27E1DBF162B8E85"
+        }
+      ]
+    },
+    {
+      "game": "PF",
+      "collection": "PF · 校园与毕业典礼场景",
+      "width": 933,
+      "height": 718,
+      "bindings": [
+        {
+          "group_id": 2803,
+          "title": "校门与毕业布幅 · 简体校名",
+          "payload_bytes": 529246,
+          "payload_fnv1a64": "6218650A2C30DFF4"
+        }
+      ]
+    },
+    {
+      "game": "PM",
+      "collection": "PF / PM · 篇章Logo独立图层",
+      "width": 245,
+      "height": 64,
+      "bindings": [
+        {
+          "group_id": 3003,
+          "title": "樱花盛开之前 · 彩色 · PM图层",
+          "payload_bytes": 15742,
+          "payload_fnv1a64": "26EF11E826B4B095"
+        }
+      ]
+    },
+    {
+      "game": "PM",
+      "collection": "PM · 军事HUD与装备标识",
+      "width": 278,
+      "height": 60,
+      "bindings": [
+        {
+          "group_id": 4294,
+          "title": "36mm突击机炮",
+          "payload_bytes": 16039,
+          "payload_fnv1a64": "3AE98B0793DC8809"
+        },
+        {
+          "group_id": 4296,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 15786,
+          "payload_fnv1a64": "58A9CCAE369F9184"
+        },
+        {
+          "group_id": 4297,
+          "title": "36mm突击机炮",
+          "payload_bytes": 15848,
+          "payload_fnv1a64": "342F43C9B6FB862D"
+        },
+        {
+          "group_id": 4299,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 15559,
+          "payload_fnv1a64": "473189D2AEF2DDED"
+        },
+        {
+          "group_id": 4324,
+          "title": "36mm突击机炮",
+          "payload_bytes": 4750,
+          "payload_fnv1a64": "0D33204B69661ABD"
+        },
+        {
+          "group_id": 4325,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 4650,
+          "payload_fnv1a64": "D0EC08964F317979"
+        },
+        {
+          "group_id": 4326,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 4837,
+          "payload_fnv1a64": "32AED24D9C940983"
+        },
+        {
+          "group_id": 4329,
+          "title": "36mm突击机炮",
+          "payload_bytes": 4762,
+          "payload_fnv1a64": "B012498F3D8DA561"
+        },
+        {
+          "group_id": 4330,
+          "title": "74式近接战斗长刀",
+          "payload_bytes": 4668,
+          "payload_fnv1a64": "588807F289D2A9B8"
+        },
+        {
+          "group_id": 4331,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 4842,
+          "payload_fnv1a64": "F4F5E76C2D4E3530"
+        },
+        {
+          "group_id": 4366,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 17077,
+          "payload_fnv1a64": "78317D0FEA871B03"
+        },
+        {
+          "group_id": 4367,
+          "title": "65式近接战斗短刀",
+          "payload_bytes": 16748,
+          "payload_fnv1a64": "DF077E2699746224"
+        }
+      ]
+    },
+    {
+      "game": "PM",
+      "collection": "PM · 军事HUD与装备标识",
+      "width": 280,
+      "height": 61,
+      "bindings": [
+        {
+          "group_id": 4295,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 9333,
+          "payload_fnv1a64": "AB98F6147415CECA"
+        },
+        {
+          "group_id": 4298,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 9371,
+          "payload_fnv1a64": "BA7074AAE39E76D6"
+        },
+        {
+          "group_id": 4323,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 3436,
+          "payload_fnv1a64": "3372EAF069A6124A"
+        },
+        {
+          "group_id": 4328,
+          "title": "120mm滑膛炮",
+          "payload_bytes": 3497,
+          "payload_fnv1a64": "C260C56FC5CA24FE"
+        }
+      ]
+    },
+    {
+      "game": "PM",
+      "collection": "PM · 军事HUD与装备标识",
+      "width": 162,
+      "height": 124,
+      "bindings": [
+        {
+          "group_id": 4327,
+          "title": "选择兵装",
+          "payload_bytes": 3685,
+          "payload_fnv1a64": "9E865B966C85281A"
+        },
+        {
+          "group_id": 4332,
+          "title": "选择兵装",
+          "payload_bytes": 3788,
+          "payload_fnv1a64": "6D30EE509AE0C407"
+        }
+      ]
+    }
+  ],
+  "group_representative_does_not_cover_unseen_members": true
+}
