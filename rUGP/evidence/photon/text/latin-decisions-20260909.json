@@ -1,0 +1,1018 @@
+{
+  "schema": "photon-latin-user-decisions/v1",
+  "date": "2026-09-09",
+  "approved_decisions": [
+    1,
+    2,
+    4,
+    13,
+    26,
+    35,
+    36,
+    38,
+    40,
+    41,
+    42
+  ],
+  "protected_file": "rUGP/games/photonflowers/translations/樱花盛开之前.csv",
+  "protected_sha256": "b14b5e17598154868096f863a0a79b3789c91dee7a59153b036765c3818903d0",
+  "scope": "Only the approved Chinese expressions. Japanese/English hashes, annotations and control sequence unchanged. Historical baselines unchanged.",
+  "speaker_aliases": [
+    {
+      "game": "photonflowers",
+      "source": "アクイラ１",
+      "target": "大鹫1",
+      "previous": "Aquila 1"
+    },
+    {
+      "game": "photonflowers",
+      "source": "アクイラ２",
+      "target": "大鹫2",
+      "previous": "Aquila 2"
+    },
+    {
+      "game": "photonflowers",
+      "source": "アクイラ３",
+      "target": "大鹫3",
+      "previous": "Aquila 3"
+    },
+    {
+      "game": "photonflowers",
+      "source": "アクイラ４",
+      "target": "大鹫4",
+      "previous": "Aquila 4"
+    },
+    {
+      "game": "photonflowers",
+      "source": "アクイラ５",
+      "target": "大鹫5",
+      "previous": "Aquila 5"
+    },
+    {
+      "game": "photonflowers",
+      "source": "アクイラス",
+      "target": "大鹫队",
+      "previous": "Aquilas"
+    },
+    {
+      "game": "photonflowers",
+      "source": "ライトニング２",
+      "target": "闪电2",
+      "previous": "Lightning 2"
+    },
+    {
+      "game": "photonflowers",
+      "source": "ライトニング３",
+      "target": "闪电3",
+      "previous": "Lightning 3"
+    },
+    {
+      "game": "photonflowers",
+      "source": "ライトニング４",
+      "target": "闪电4",
+      "previous": "Lightning 4"
+    },
+    {
+      "game": "photonflowers",
+      "source": "ライトニングス全員",
+      "target": "闪电全员",
+      "previous": "Lightning全员"
+    },
+    {
+      "game": "photonflowers",
+      "source": "ゴースト１",
+      "target": "幽灵1",
+      "previous": "Ghost1"
+    }
+  ],
+  "edits": [
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00150016:00176",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        1,
+        36
+      ],
+      "before": "【Aquila 1】「减速度0.5，维持对地速度Mach 15<0A>——姿态控制处于容许范围内！」<01>",
+      "after": "【大鹫1】「减速度0.5，维持对地速度15马赫<0A>——姿态控制处于容许范围内！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:812258960:00070724:00408",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/20_拜访与选择.csv",
+      "decisions": [
+        2
+      ],
+      "before": "【武】「…………可以的话，<0A>你们能把它从记忆里也DELETE掉，<0A>我会更高兴的」<01>",
+      "after": "【武】「…………可以的话，<0A>你们能把它从记忆里也删除掉，<0A>我会更高兴的」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:812258960:00072424:00418",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/20_拜访与选择.csv",
+      "decisions": [
+        2
+      ],
+      "before": "【冥夜】「对了，武，关于刚才说的DELETE」<01>",
+      "after": "【冥夜】「对了，武，关于刚才说的删除」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1796299128:00004308:00016",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        4
+      ],
+      "before": "【伦佐】「Amen……」<01>",
+      "after": "【伦佐】「阿门……」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1796299128:00045468:00072",
+      "file": "rUGP/games/photonmelodies/translations/再诞.csv",
+      "decisions": [
+        4
+      ],
+      "before": "【伦佐】「……已经没事了。愿你安息……Amen」<01>",
+      "after": "【伦佐】「……已经没事了。愿你安息……阿门」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:812258960:00069820:00403",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/20_拜访与选择.csv",
+      "decisions": [
+        13
+      ],
+      "before": "【武】「拜托了，PLEASE…………」<01>",
+      "after": "【武】「拜托了，求你了…………」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488271272:00001908:00015",
+      "file": "rUGP/games/photonflowers/translations/雨舞者.csv",
+      "decisions": [
+        26
+      ],
+      "before": "1994年 Euro Fightas成功试制技术验证机ESFP<01>",
+      "after": "1994年 尤罗法伊塔斯公司成功试制技术验证机ESFP<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488271272:00052384:00147",
+      "file": "rUGP/games/photonflowers/translations/雨舞者.csv",
+      "decisions": [
+        26
+      ],
+      "before": "Euro Fightas引以为傲的技术验证机实战运用部队——<0A>雨舞中队，此刻正要全机出击。<01>",
+      "after": "尤罗法伊塔斯公司引以为傲的技术验证机实战运用部队——<0A>雨舞中队，此刻正要全机出击。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488271272:00257432:00273",
+      "file": "rUGP/games/photonflowers/translations/雨舞者.csv",
+      "decisions": [
+        26
+      ],
+      "before": "【休】「我是Euro Fightas联合国派遣部队的<0A>休·温斯顿上尉。——不过，这种任务早已是家常便饭。」<01>",
+      "after": "【休】「我是尤罗法伊塔斯公司联合国派遣部队的<0A>休·温斯顿上尉。——不过，这种任务早已是家常便饭。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1269734756:00239936:01329",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/34_柏木的来访.csv",
+      "decisions": [
+        35
+      ],
+      "before": "【老人】「好像…………叫什么HIVE来着…………」<01>",
+      "after": "【老人】「好像…………叫什么HIVE（巢穴）来着…………」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.004:1269734756:00240192:01334",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/34_柏木的来访.csv",
+      "decisions": [
+        35
+      ],
+      "before": "【老人】「不过，<0A>最后那栋叫什么HIVE的公寓似乎还是建起来了…………」<01>",
+      "after": "【老人】「不过，<0A>最后那栋叫什么HIVE（巢穴）的公寓似乎还是建起来了…………」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00022352:00009",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「真是的，就算新兵也不会吓成这样吧……」<01>",
+      "after": "【大鹫1】「真是的，就算新兵也不会吓成这样吧……」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00022496:00012",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「我们是获选的四人，<0A>身经两战的老兵——差不多就是这样吧」<01>",
+      "after": "【大鹫1】「我们是获选的四人，<0A>身经两战的老兵——差不多就是这样吧」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00026320:00017",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「呼……」<01>",
+      "after": "【大鹫1】「呼……」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00028704:00026",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】（啧，你这混蛋有完没完，<0A>给我集中精神应付眼前的作战）<01>",
+      "after": "【大鹫1】（啧，你这混蛋有完没完，<0A>给我集中精神应付眼前的作战）<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00042900:00034",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「眼下，我们的工作顶多也就是扯一扯脐带……」<01>",
+      "after": "【大鹫1】「眼下，我们的工作顶多也就是扯一扯脐带……」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00043088:00038",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「大幅减速下的姿态控制，<0A>是吧……我可不想死了还得干这活……」<01>",
+      "after": "【大鹫1】「大幅减速下的姿态控制，<0A>是吧……我可不想死了还得干这活……」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00047376:00043",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「…………」<01>",
+      "after": "【大鹫1】「…………」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00052148:00045",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「已经第几次了……？<0A>真像个初次出击的新任少尉大人……」<01>",
+      "after": "【大鹫1】「已经第几次了……？<0A>真像个初次出击的新任少尉大人……」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00052780:00047",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「熬过长夜了，吗……」<01>",
+      "after": "【大鹫1】「熬过长夜了，吗……」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00053208:00050",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「…………」<01>",
+      "after": "【大鹫1】「…………」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00053988:00054",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「真的，只剩我一个人了啊…………」<01>",
+      "after": "【大鹫1】「真的，只剩我一个人了啊…………」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00055268:00061",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「……是啊，这景色根本没有价值。<0A>那种东西，我早就已经失去了」<01>",
+      "after": "【大鹫1】「……是啊，这景色根本没有价值。<0A>那种东西，我早就已经失去了」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00071072:00073",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「——来了！」<01>",
+      "after": "【大鹫1】「——来了！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00076308:00084",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【鹅妈妈1】「——鹅妈妈呼叫Aquilas，<0A>你们都听到了。有问题吗？」<01>",
+      "after": "【鹅妈妈1】「——鹅妈妈呼叫大鹫队，<0A>你们都听到了。有问题吗？」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00076468:00085",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「Aquila 1，所有状态正常。<0A>全部装备固定完毕，No More AKJ」<01>",
+      "after": "【大鹫1】「大鹫1，所有状态正常。<0A>全部装备固定完毕，No More AKJ」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00077668:00086",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——Aquila 2，至少外表看起来没问题。<0A>全部装备固定完毕。再不快点，我就要尿出来了，妈妈」<01>",
+      "after": "【大鹫2】「——大鹫2，至少外表看起来没问题。<0A>全部装备固定完毕。再不快点，我就要尿出来了，妈妈」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00078184:00087",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【鹅妈妈1】「——Mama呼叫Aquila 2，<0A>尽管往强化装备里尿个够！量再大也能安心」<01>",
+      "after": "【鹅妈妈1】「——Mama呼叫大鹫2，<0A>尽管往强化装备里尿个够！量再大也能安心」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00078300:00089",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "背负着我们Aquila 1、2的驱逐舰，鹅妈妈1。<0A>对轨道降下兵而言，<0A>它是唯一能毫无通信延迟、正常交谈的对象。<01>",
+      "after": "背负着我们大鹫1、2的驱逐舰，鹅妈妈1。<0A>对轨道降下兵而言，<0A>它是唯一能毫无通信延迟、正常交谈的对象。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00078732:00090",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——你已经完全听不懂荤段子了啊，<0A>妈妈。我好寂寞」<01>",
+      "after": "【大鹫2】「——你已经完全听不懂荤段子了啊，<0A>妈妈。我好寂寞」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00083960:00100",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「说得可真轻松啊，莉娜」<01>",
+      "after": "【大鹫1】「说得可真轻松啊，莉娜」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00084016:00101",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【鹅妈妈1】「——我说啊，亨利……啊不，Aquila 1」<01>",
+      "after": "【鹅妈妈1】「——我说啊，亨利……啊不，大鹫1」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00084260:00106",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「是是，妈妈，既然您老人家下令，<0A>小的就轻轻松松办给您看」<01>",
+      "after": "【大鹫1】「是是，妈妈，既然您老人家下令，<0A>小的就轻轻松松办给您看」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00084692:00107",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——蓬松酥脆，炸鸡就交给我们吧，妈妈」<01>",
+      "after": "【大鹫2】「——蓬松酥脆，炸鸡就交给我们吧，妈妈」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00089204:00113",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「————！」<01>",
+      "after": "【大鹫1】「————！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00091008:00117",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「Aquila 1呼叫鹅妈妈1，<0A>所有系统切换确认，已做好接收再入货舱操纵权的准备」<01>",
+      "after": "【大鹫1】「大鹫1呼叫鹅妈妈1，<0A>所有系统切换确认，已做好接收再入货舱操纵权的准备」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00091064:00118",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【鹅妈妈1】「——收到，连接分离完成，<0A>货舱控制切换完毕。Aquila 1，现移交货舱操纵权」<01>",
+      "after": "【鹅妈妈1】「——收到，连接分离完成，<0A>货舱控制切换完毕。大鹫1，现移交货舱操纵权」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00098448:00119",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「Aquila 1，确认接收货舱操纵权」<01>",
+      "after": "【大鹫1】「大鹫1，确认接收货舱操纵权」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00098492:00120",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "装有两具装甲舱、承载我们两名Aquila的棺材——<0A>再入货舱，是让最小战斗单位也能突入的返回式舱系统。<01>",
+      "after": "装有两具装甲舱、承载我们两名大鹫的棺材——<0A>再入货舱，是让最小战斗单位也能突入的返回式舱系统。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00099676:00123",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「Aquila 1，确认分离。所有状态正常」<01>",
+      "after": "【大鹫1】「大鹫1，确认分离。所有状态正常」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00099732:00124",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「Aquila 2，连接器已分离。所有状态正常」<01>",
+      "after": "【大鹫2】「大鹫2，连接器已分离。所有状态正常」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00100380:00127",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "……拜托你们了，Aquilas」<01>",
+      "after": "……拜托你们了，大鹫队」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00102532:00134",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「该回应她的时候，就是现在吗」<01>",
+      "after": "【大鹫1】「该回应她的时候，就是现在吗」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00104124:00136",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「收到，轨道脱离喷射待命。<0A>不用你说，妈妈」<01>",
+      "after": "【大鹫1】「收到，轨道脱离喷射待命。<0A>不用你说，妈妈」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00108744:00137",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——轨道脱离喷射待命。<0A>妈妈，等着吧，我会从海滩寄明信片给你！」<01>",
+      "after": "【大鹫2】「——轨道脱离喷射待命。<0A>妈妈，等着吧，我会从海滩寄明信片给你！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00109784:00139",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「管它什么佐渡岛，这一次一定要——！」<01>",
+      "after": "【大鹫1】「管它什么佐渡岛，这一次一定要——！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00118780:00149",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「上吧，低等生物们——！」<01>",
+      "after": "【大鹫1】「上吧，低等生物们——！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00122988:00150",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「确认返回式舱分离，<0A>货舱姿态稳定——手艺还是那么漂亮啊，莉娜」<01>",
+      "after": "【大鹫1】「确认返回式舱分离，<0A>货舱姿态稳定——手艺还是那么漂亮啊，莉娜」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00123784:00151",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——那还用说！向我们的妈妈敬礼！」<01>",
+      "after": "【大鹫2】「——那还用说！向我们的妈妈敬礼！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00130448:00153",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——好了，西伯利亚上空……<0A>高度八十公里，差不多要来了！」<01>",
+      "after": "【大鹫2】「——好了，西伯利亚上空……<0A>高度八十公里，差不多要来了！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00130492:00154",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "Aquila 2脸上同样带着笑，却还是难掩几分紧张。<0A>没错，差不多——。<01>",
+      "after": "大鹫2脸上同样带着笑，却还是难掩几分紧张。<0A>没错，差不多——。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00131604:00155",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「…………！」<01>",
+      "after": "【大鹫1】「…………！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00131920:00157",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「…………」<01>",
+      "after": "【大鹫1】「…………」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00133584:00160",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——还是老样子，那些家伙的思维和小虫子没区别。<0A>它们不想帮助邻居，倒是帮了我们大忙」<01>",
+      "after": "【大鹫2】「——还是老样子，那些家伙的思维和小虫子没区别。<0A>它们不想帮助邻居，倒是帮了我们大忙」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00133640:00161",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「是啊，不过，被那些小虫子狠狠干趴的人类，<0A>不就是一群只剩脑子的垃圾虫吗？」<01>",
+      "after": "【大鹫1】「是啊，不过，被那些小虫子狠狠干趴的人类，<0A>不就是一群只剩脑子的垃圾虫吗？」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00133696:00162",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——咔哈哈！垃圾虫，这个好！<0A>就是虫子之间互殴！」<01>",
+      "after": "【大鹫2】「——咔哈哈！垃圾虫，这个好！<0A>就是虫子之间互殴！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00134180:00163",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「呀呀，说得太对了！<0A>往那些家伙头顶上狠狠拉一大泡屎！！」<01>",
+      "after": "【大鹫1】「呀呀，说得太对了！<0A>往那些家伙头顶上狠狠拉一大泡屎！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00134236:00164",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——Sir, yes sir！拉到屁股裂开也得多来点！！」<01>",
+      "after": "【大鹫2】「——Sir, yes sir！拉到屁股裂开也得多来点！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00138816:00167",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「——！距离降下地点一千，减速度0.8G，<0A>货舱火箭准备点火——确认强化装备抗G功能」<01>",
+      "after": "【大鹫1】「——！距离降下地点一千，减速度0.8G，<0A>货舱火箭准备点火——确认强化装备抗G功能」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00138896:00168",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——确认强化装备抗G功能，<0A>货舱火箭点火准备完毕」<01>",
+      "after": "【大鹫2】「——确认强化装备抗G功能，<0A>货舱火箭点火准备完毕」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00139580:00172",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「所有系统无异常——给我轰下去！！」<01>",
+      "after": "【大鹫1】「所有系统无异常——给我轰下去！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00145884:00173",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「——呃哦哦哦哦！！」<01>",
+      "after": "【大鹫1】「——呃哦哦哦哦！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00150072:00177",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——拜托了，队长！<0A>在西伯利亚上空炸得金黄酥脆，可是个烂透的笑话！」<01>",
+      "after": "【大鹫2】「——拜托了，队长！<0A>在西伯利亚上空炸得金黄酥脆，可是个烂透的笑话！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00150128:00178",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「你这张嘴非得等到咬断舌头才肯闭上吗？<0A>给我咬紧牙关！！」<01>",
+      "after": "【大鹫1】「你这张嘴非得等到咬断舌头才肯闭上吗？<0A>给我咬紧牙关！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00154516:00184",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "不过，从Aquila 2还能耍嘴皮就看得出来，<0A>到了第三次，我们也确实已经习惯。<0A>真正的问题，其实从现在才开始。<01>",
+      "after": "不过，从大鹫2还能耍嘴皮就看得出来，<0A>到了第三次，我们也确实已经习惯。<0A>真正的问题，其实从现在才开始。<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00155108:00188",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「高度四万！准备释放装甲舱！」<01>",
+      "after": "【大鹫1】「高度四万！准备释放装甲舱！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00155164:00189",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——收到！队长，下次聊天就在蓝天下吧！！」<01>",
+      "after": "【大鹫2】「——收到！队长，下次聊天就在蓝天下吧！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00156600:00196",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「要来了，8G减速——！！」<01>",
+      "after": "【大鹫1】「要来了，8G减速——！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00160592:00197",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「……！」<01>",
+      "after": "【大鹫1】「……！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00163040:00202",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「…………！」<01>",
+      "after": "【大鹫1】「…………！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00163780:00206",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「呃啊啊啊啊啊…………！」<01>",
+      "after": "【大鹫1】「呃啊啊啊啊啊…………！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00164644:00209",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「我再也——不会从你们身上移开视线——！！」<01>",
+      "after": "【大鹫1】「我再也——不会从你们身上移开视线——！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00172344:00210",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「减速完成——规定高度两千，数据链恢复」",
+      "after": "【大鹫1】「减速完成——规定高度两千，数据链恢复」"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00173084:00213",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「Aquila 1呼叫Aquila 2——<0A>棺材时间结束了，你在附近吗？」<01>",
+      "after": "【大鹫1】「大鹫1呼叫大鹫2——<0A>棺材时间结束了，你在附近吗？」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00173904:00214",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——Aquila 2呼叫Aquila 1，传感器恢复，<0A>大概在你后方两百。不愧是老兵胆小鬼，<0A>说到抱团，我们可不让人！」<01>",
+      "after": "【大鹫2】「——大鹫2呼叫大鹫1，传感器恢复，<0A>大概在你后方两百。不愧是老兵胆小鬼，<0A>说到抱团，我们可不让人！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00174372:00217",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「好——听这堆废话，确定是你没错！……<0A>将降下地点设为B4点，接近会合并进行最终降下。<0A>活着去看看海滩吧」<01>",
+      "after": "【大鹫1】「好——听这堆废话，确定是你没错！……<0A>将降下地点设为B4点，接近会合并进行最终降下。<0A>活着去看看海滩吧」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00174428:00218",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——Aquila 2收到，<0A>开始展开减速板……即将雷达失联」<01>",
+      "after": "【大鹫2】「——大鹫2收到，<0A>开始展开减速板……即将雷达失联」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00175444:00221",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「看来光线级……没能全部消灭」<01>",
+      "after": "【大鹫1】「看来光线级……没能全部消灭」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00175544:00223",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「在到达云底前减速到跨音速区——<0A>最后十米反向喷射。和平时一样，冷静点，亨利——」<01>",
+      "after": "【大鹫1】「在到达云底前减速到跨音速区——<0A>最后十米反向喷射。和平时一样，冷静点，亨利——」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00182360:00227",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「重金属浓度下降——要穿出去了……！」<01>",
+      "after": "【大鹫1】「重金属浓度下降——要穿出去了……！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00184768:00232",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「好久不见啊，混账——！！」<01>",
+      "after": "【大鹫1】「好久不见啊，混账——！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00185828:00235",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「All Aquilas——Call in！」<01>",
+      "after": "【大鹫1】「All 大鹫队——Call in！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00187068:00237",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 2】「——Aquila 2，就在你后面」<01>",
+      "after": "【大鹫2】「——大鹫2，就在你后面」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00189068:00238",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 3】「——Aquila 3，待命」<01>",
+      "after": "【大鹫3】「——大鹫3，待命」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00191660:00239",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 4】「——Aquila 4，突入准备完毕」<01>",
+      "after": "【大鹫4】「——大鹫4，突入准备完毕」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00193808:00240",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 5】「——Aquila 5，随时都可以——！」<01>",
+      "after": "【大鹫5】「——大鹫5，随时都可以——！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00194424:00242",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「——Aquila 1呼叫ＨＱ，<0A>第6轨道降下兵团Aquila中队全十二机均已完成轨道降下。<0A>开始突击！」<01>",
+      "after": "【大鹫1】「——大鹫1呼叫ＨＱ，<0A>第6轨道降下兵团大鹫中队全十二机均已完成轨道降下。<0A>开始突击！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00195124:00243",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「开工了，大鹫们，全机健在，真有你们的！」",
+      "after": "【大鹫1】「开工了，大鹫们，全机健在，真有你们的！」"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00196112:00245",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「去BETA的洞窟里痛痛快快玩上一场！」<01>",
+      "after": "【大鹫1】「去BETA的洞窟里痛痛快快玩上一场！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00196168:00246",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「我队按预定从NW34门突入巢穴，<0A>前往第2层A大队集结地点！」<01>",
+      "after": "【大鹫1】「我队按预定从NW34门突入巢穴，<0A>前往第2层A大队集结地点！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00202844:00253",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquila 1】「全机连续喷射跳跃至入口——跟上！」",
+      "after": "【大鹫1】「全机连续喷射跳跃至入口——跟上！」"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00203036:00255",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        36
+      ],
+      "before": "【Aquilas】「——收到！」",
+      "after": "【大鹫队】「——收到！」"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00081256:00441",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        38
+      ],
+      "before": "【Lightning 2】「——终于要开始了。<0A>真是的——都快等得不耐烦了！」<01>",
+      "after": "【闪电2】「——终于要开始了。<0A>真是的——都快等得不耐烦了！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00081312:00442",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        38
+      ],
+      "before": "【Lightning 3】「——那个碍眼的甲20号目标，<0A>再过几小时就会成为人类排除的第五座巢穴了」<01>",
+      "after": "【闪电3】「——那个碍眼的甲20号目标，<0A>再过几小时就会成为人类排除的第五座巢穴了」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00081368:00443",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        38
+      ],
+      "before": "【Lightning 4】「——是啊，<0A>这下终于能发泄甲1号目标被联合国那帮人抢走的怨气了」<01>",
+      "after": "【闪电4】「——是啊，<0A>这下终于能发泄甲1号目标被联合国那帮人抢走的怨气了」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00081480:00445",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        38
+      ],
+      "before": "【Lightning全员】「——收到！」<01>",
+      "after": "【闪电全员】「——收到！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00082736:00457",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        38
+      ],
+      "before": "【晶】「——Lightning 1收到！！」<01>",
+      "after": "【晶】「——闪电1收到！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00086208:00461",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        38
+      ],
+      "before": "【晶】「——出发，Lightning！——全机跟上！！」<01>",
+      "after": "【晶】「——出发，闪电！——全机跟上！！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio.002:501633640:00086264:00462",
+      "file": "rUGP/games/photonflowers/translations/继承.csv",
+      "decisions": [
+        38
+      ],
+      "before": "【Lightning全员】「——收到！」<01>",
+      "after": "【闪电全员】「——收到！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488271272:00077756:00171",
+      "file": "rUGP/games/photonflowers/translations/雨舞者.csv",
+      "decisions": [
+        40
+      ],
+      "before": "【娜迪亚】「Dancer 09已发射全部弹药，这是最后一轮！」<01>",
+      "after": "【娜迪亚】「舞者09已发射全部弹药，这是最后一轮！」<01>"
+    },
+    {
+      "binding_id": "pf:vm:photonflowers11.rio:488838928:00207656:00265",
+      "file": "rUGP/games/photonflowers/translations/小鸡潜降兵.csv",
+      "decisions": [
+        41
+      ],
+      "before": "【Ghost1】「——只能这么解释！它们是一边挖掘一边前进！」<01>",
+      "after": "【幽灵1】「——只能这么解释！它们是一边挖掘一边前进！」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1808201404:00097460:00236",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/07_行动之后.csv",
+      "decisions": [
+        42
+      ],
+      "before": "【扎乌伯】「代号是『Hunter 1』。<0A>擅长潜入工作的顶级潜伏特工。」<01>",
+      "after": "【扎乌伯】「代号是『猎人1』。<0A>擅长潜入工作的顶级潜伏特工。」<01>"
+    },
+    {
+      "binding_id": "pm:vm:photonmelodies11.rio.003:1808201404:00104656:00292",
+      "file": "rUGP/games/photonmelodies/translations/时空的欠片/07_行动之后.csv",
+      "decisions": [
+        42
+      ],
+      "before": "【扎乌伯】「Hunter 1，还不知道我们已经开始行动。<0A>要放任他活动，让他收集情报。」<01>",
+      "after": "【扎乌伯】「猎人1，还不知道我们已经开始行动。<0A>要放任他活动，让他收集情报。」<01>"
+    }
+  ]
+}

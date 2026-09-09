@@ -1,0 +1,50 @@
+{
+  "schema": "photon-pm-font-increment-review/v1",
+  "status": "isolated_candidate_verified_not_installed",
+  "installed_base_sha256": "7D555D9B2905A56A8E97D0C2CFF4CC12559013DD8BCBFF41DC254D5C74ACE8E2",
+  "repaired_base_sha256": "16D36CD744E146B8303AECB65DCBFE01FCA58AE701B46226411BBB8F7F99AB6E",
+  "donor_sha256": "763146584CF0710223441356B4395E279021B0806C196614377A7A0174AE074A",
+  "donor_family": "Noto Sans SC",
+  "donor_weight": 400,
+  "fonttools_version": "4.63.0",
+  "license": "OFL-1.1",
+  "license_url": "https://github.com/google/fonts/blob/main/ofl/notosanssc/OFL.txt",
+  "candidate_font_sha256": "3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B",
+  "candidate_pm_runtime_sha256": "5AF8449F473AED8D95F73407BB6C08DF29FA6179BC9BB35885783F91B51E2FB7",
+  "runtime_flags": ["--authorize-pinned-build", "--speaker-color-candidate", "--pm-font-candidate"],
+  "repair": {
+    "old_glyph_count": 4942,
+    "existing_vertical_metrics": 4715,
+    "new_vertical_metrics": 227,
+    "range": "U+E100..U+E1E2",
+    "policy": "Explicit new PUA metrics: advance height 1000; top bearing 880 minus glyph yMax. Not claimed to recover historical values.",
+    "original_vertical_metric_bytes_preserved": true,
+    "other_tables_byte_identical_except_head_checksum": true
+  },
+  "increment": {
+    "added_codepoint": "U+73E5",
+    "new_glyph_count": 4943,
+    "horizontal_metrics": [1000, 34],
+    "all_4942_existing_outlines_horizontal_metrics_and_cmap_preserved": true,
+    "repaired_vertical_metrics_and_shaping_preserved": true,
+    "PUA_raster_comparisons": 681,
+    "PUA_raster_sizes_px": [24, 32, 48],
+    "PUA_raster_failures": 0
+  },
+  "width_checks": {
+    "scale_px": 24,
+    "charsets": [0, 1, 128, 134],
+    "weights": [400, 700],
+    "PM_changed_rows": 56,
+    "PM_max_width_by_weight": [707, 739],
+    "PF_semantic_rows": 3,
+    "PF_max_width_by_weight": [613, 639],
+    "budget_by_weight": [724, 754],
+    "selected_PM_font_hash_verified_in_all_contexts": true,
+    "over_budget_rows": 0,
+    "limitation": "Diagnostic GDI measurement, not live AGES layout acceptance. Specimen was rendered separately with FreeType."
+  },
+  "game_files_changed": false,
+  "default_runtime_font_pin_changed": false,
+  "required_followup": "Assemble matching text/font/runtime candidate under the packaging contract, then user live samples before release."
+}

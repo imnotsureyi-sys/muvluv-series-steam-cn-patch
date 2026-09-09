@@ -1,0 +1,13 @@
+{
+  "schema": "photon-speaker-alignment/v1",
+  "basis": "2026-09-09 approved CN spelling changes; source prefixes checked against local native JP bindings",
+  "photonflowers": [],
+  "photonmelodies": [
+    ["京冢", "京塚"],
+    ["伊露玛", "イルマ"],
+    ["伊露玛、皮亚蒂芙", "イルマ・ピアティフ"],
+    ["伊露玛、皮亚蒂芙、沃肯", "イルマ・ピアティフ・ウォーケン"],
+    ["皮亚蒂芙、伊露玛", "ピアティフ・イルマ"],
+    ["铠衣科长", "鎧衣課長"]
+  ]
+}

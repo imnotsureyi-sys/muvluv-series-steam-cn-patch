@@ -20,6 +20,14 @@ python rUGP/runtime/build.py --game pm --zig "X:\zig\zig.exe" `
 
 Without `--authorize-pinned-build`, the binary is intentionally unable to install production routes. Authorization only enables checked-in identities; it does not make an arbitrary game version compatible.
 
+For the reviewed PM U+73E5 font candidate only, add `--pm-font-candidate`
+alongside `--authorize-pinned-build` and, for the Latin-name review,
+`--speaker-color-candidate`. This pins the isolated build to font hash
+`3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B`.
+It is PM-only, cannot be combined with `--verify-release-code`, and does not
+modify sealed headers or default release identities. See the
+[font repair contract](../../localization/fonts/pm-er-20260909.md).
+
 The builder compiles twice and normalizes only non-runtime PE/PDB provenance:
 the PE file-header timestamp, every debug-directory timestamp, and the single
 CodeView `RSDS` GUID. The CodeView signature, PDB age/path, executable code, and
