@@ -114,6 +114,10 @@ RUO 应合并进同一现有补丁映射，逐条检查未修改目标的旧映�
 
 ## 测试和发布边界
 
+审核发布适配器的四个输入格式、配对闭合规则和无需游戏素材的可运行示例，见
+[审核导出输入契约](crmt-review-inputs.md)。导出时会重解码中文记录并逐层比较实际 RGBA，
+不只验证清单自报的 PNG 哈希。
+
 ```powershell
 python -m unittest discover -s rUGP/tests/formats/images -p "test_*.py" -v
 python -m unittest discover -s rUGP/tests/tools/images -p "test_*.py" -v

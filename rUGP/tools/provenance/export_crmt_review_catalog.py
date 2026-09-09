@@ -12,6 +12,9 @@ import hashlib
 import json
 from pathlib import Path
 
+from PIL import Image
+
+from rUGP.formats.images.crmti_decode import decode_crmt
 from rUGP.tools.provenance.export_crmt_localization_evidence import assert_portable_document
 
 
@@ -30,10 +33,99 @@ def checked_file(value):
         raise ValueError("artifact SHA-256 mismatch")
 
 
+def checked_pixels(value):
+    checked_file(value)
+    with Image.open(value["path"]) as im:
+        if im.size != (value["width"], value["height"]):
+            raise ValueError("PNG dimensions mismatch")
+        return im.convert("RGBA").tobytes()
+
+
+def unique_index(rows, key, label):
+    result = {key(r): r for r in rows}
+    if len(result) != len(rows):
+        raise ValueError("duplicate " + label)
+    return result
+
+
+def expected_branches(parent, catalog, assets):
+    """Bind frozen review images to the census, not to expanded display labels."""
+    uses = {}
+    image_ids = {}
+    for role in ("japanese", "english"):
+        picture = parent["official_" + role]
+        if picture is None:
+            uses[role] = set()
+            image_ids[role] = None
+            continue
+        asset = assets[picture["image_id"]]
+        if (picture["width"], picture["height"], picture["sha256"]) != (
+                asset["width"], asset["height"], asset["png_sha256"]):
+            raise ValueError("review image identity mismatch")
+        checked_pixels(picture)
+        image_ids[role] = picture["image_id"]
+        uses[role] = {(p["game"], p["crmt_id"]) for p in asset["physical_uses"] if p["role"] == "inline_top"}
+    pairs = [p for p in catalog["language_pairs"] if p["legacy_asset_id"] == parent["id"]
+             or uses["japanese"] & {(p["game"], p["japanese_crmt_id"]), (p["game"], p["english_crmt_id"])}
+             or uses["english"] & {(p["game"], p["japanese_crmt_id"]), (p["game"], p["english_crmt_id"])}]
+    expected = set()
+    if image_ids["english"] is not None:
+        if parent["relationship"] != "有英文本地化":
+            raise ValueError("review language relationship mismatch")
+        for p in pairs:
+            if (p["legacy_asset_id"] != parent["id"] or p["relation"] != "confirmed_static_ja_en"
+                    or image_ids["japanese"] not in p["japanese_image_ids"]
+                    or image_ids["english"] not in p["english_image_ids"]):
+                raise ValueError("canonical language pair mismatch")
+            identity = (p["game"], p["japanese_crmt_id"], p["english_crmt_id"])
+            if identity in expected:
+                raise ValueError("duplicate canonical language pair")
+            expected.add(identity)
+        if ({(g, j) for g, j, e in expected} != uses["japanese"]
+                or {(g, e) for g, j, e in expected} != uses["english"]):
+            raise ValueError("language pairs do not cover physical uses")
+    else:
+        if pairs or parent["relationship"] != "无英文本地化":
+            raise ValueError("shared image conflicts with canonical language pairs")
+        expected = {(g, j, None) for g, j in uses["japanese"]}
+    if not expected or {g for g, j, e in expected} != set(parent["games"]):
+        raise ValueError("incomplete review game coverage")
+    return expected
+
+
+def chinese_layers(zh, parent, japanese, kept):
+    """Read actual encoded bytes; a self-consistent PNG ledger is insufficient."""
+    checked_pixels(parent["chinese"])
+    if kept:
+        if zh.get("record") or zh.get("record_sha256"):
+            raise ValueError("retained official image must not claim an encoded replacement")
+        if parent["chinese"]["sha256"] != parent["official_japanese"]["sha256"]:
+            raise ValueError("retained artwork differs from official Japanese")
+        expected = [(p["level"], p["width"], p["height"], checked_pixels(p)) for p in japanese["levels"]]
+    else:
+        raw = Path(zh["record"]).read_bytes()
+        if (hashlib.sha256(raw).hexdigest().upper() != zh["record_sha256"]
+                or zh["approved_png_sha256"] != parent["chinese"]["sha256"]):
+            raise ValueError("stale Chinese record or artwork")
+        decoded, _ = decode_crmt(raw)
+        expected = [(d.level.index, d.level.width, d.level.height, d.rgba) for d in decoded]
+    if len(zh["levels"]) != len(expected) or not expected:
+        raise ValueError("incomplete Chinese layer list")
+    result = []
+    for index, (p, (level, width, height, rgba)) in enumerate(zip(zh["levels"], expected, strict=True)):
+        if (p["level"], p["width"], p["height"]) != (level, width, height) or level != index:
+            raise ValueError("Chinese layer order or dimensions mismatch")
+        if checked_pixels(p) != rgba:
+            raise ValueError("Chinese layer pixels differ from decoded record or retained official")
+        result.append({"level": level, "width": width, "height": height,
+                       "png_sha256": p["sha256"], "rgba_sha256": hashlib.sha256(rgba).hexdigest().upper()})
+    return result
+
+
 def project(review, expanded, catalog, volumes, runtime_reports=()):
-    originals = {(o["game"], o["crmt_id"]): o for o in catalog["objects"]}
+    originals = unique_index(catalog["objects"], lambda o: (o["game"], o["crmt_id"]), "official objects")
     logical = {r["id"]: r for r in review["rows"]}
-    if len(logical) != len(review["rows"]) or set(logical) != {r["id"] for r in expanded["items"]}:
+    if len(logical) != len(review["rows"]) or len(logical) != len(expanded["items"]) or set(logical) != {r["id"] for r in expanded["items"]}:
         raise ValueError("duplicate or mismatched logical IDs")
     runtime = {}
     for report in runtime_reports:
@@ -44,13 +136,25 @@ def project(review, expanded, catalog, volumes, runtime_reports=()):
                 raise ValueError("runtime row is not an own-key display pass")
             for field in ("candidate", "encoded_record", "screenshot", "payload_probe"):
                 checked_file(r[field])
-            runtime[r["asset_id"], r["game"], r["object_id"]] = r
+            key = (r["asset_id"], r["game"], r["object_id"])
+            if key in runtime:
+                raise ValueError("duplicate runtime target")
+            runtime[key] = r
+    assets = unique_index(catalog["assets"], lambda a: a["image_id"], "image IDs")
     public_objects = {}
     items = []
     used_targets = set()
     used_runtime = set()
     for row in expanded["items"]:
         parent = logical[row["id"]]
+        for field in ("treatment", "category", "category_label"):
+            if row[field] != parent[field]:
+                raise ValueError("expanded review decision mismatch")
+        expected = expected_branches(parent, catalog, assets)
+        actual = [(b["game"], b["japanese"]["object_id"], b["english"]["object_id"] if b["english"] else None)
+                  for b in row["branches"]]
+        if len(actual) != len(set(actual)) or set(actual) != expected:
+            raise ValueError("expanded branches differ from canonical language pairs/physical uses")
         branches = []
         for branch in row["branches"]:
             roles = {}
@@ -60,6 +164,8 @@ def project(review, expanded, catalog, volumes, runtime_reports=()):
                     roles[role] = None
                     continue
                 key = (branch["game"], obj["object_id"])
+                if obj["game"] != branch["game"]:
+                    raise ValueError("official object game mismatch")
                 original = originals[key]
                 if original["external_image"] or original["related_crmt_ids"]:
                     raise ValueError("this projection requires separate handling of external/dependent images")
@@ -70,7 +176,8 @@ def project(review, expanded, catalog, volumes, runtime_reports=()):
                 for p, q in zip(obj["levels"], original["inline_levels"], strict=True):
                     if (p["level"], p["width"], p["height"], p["sha256"]) != (q["level"], q["width"], q["height"], q["png_sha256"]):
                         raise ValueError("original layer identity mismatch")
-                    checked_file(p)
+                    if hashlib.sha256(checked_pixels(p)).hexdigest().upper() != q["rgba_sha256"]:
+                        raise ValueError("original layer RGBA mismatch")
                     levels.append({"level": p["level"], "width": p["width"], "height": p["height"],
                                    "png_sha256": p["sha256"], "rgba_sha256": q["rgba_sha256"]})
                 identity = {"game": branch["game"], "object_id": obj["object_id"], "volume": v["volume"],
@@ -81,17 +188,13 @@ def project(review, expanded, catalog, volumes, runtime_reports=()):
                 roles[role] = obj["object_id"]
             zh = branch["chinese"]
             target = roles["english"] or roles["japanese"]
+            if (zh["game"], zh["object_id"]) != (branch["game"], target):
+                raise ValueError("Chinese target identity mismatch")
             if (branch["game"], target) in used_targets:
                 raise ValueError("duplicate physical target")
             used_targets.add((branch["game"], target))
             kept = row["treatment"] == "保留官方日文"
-            zhlevels = []
-            for p in zh["levels"]:
-                checked_file(p)
-                zhlevels.append({"level": p["level"], "width": p["width"], "height": p["height"], "png_sha256": p["sha256"]})
-            if not kept:
-                if sha(Path(zh["record"])) != zh["record_sha256"] or zh["approved_png_sha256"] != parent["chinese"]["sha256"]:
-                    raise ValueError("stale Chinese record or artwork")
+            zhlevels = chinese_layers(zh, parent, branch["japanese"], kept)
             evidence = {"controlled_display": "not_imported_in_this_snapshot", "original_story": "not_certified_by_this_snapshot"}
             rk = (row["id"], branch["game"], target)
             if rk in runtime:

@@ -27,6 +27,7 @@ SCRIPT_COMMANDS = (
 )
 
 MODULE_COMMANDS = (
+    "rUGP.examples.crmt_review_fixture",
     "localization.tools.font_coverage",
     "localization.tools.images.build_deterministic_textless_background",
     "localization.tools.images.render_deterministic_localized_text",
