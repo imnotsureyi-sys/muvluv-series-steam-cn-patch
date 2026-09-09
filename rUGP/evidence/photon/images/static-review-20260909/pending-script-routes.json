@@ -2,7 +2,7 @@
   "schema": "photon-pending-script-routes-v1",
   "date": "2026-09-09",
   "input_hashes": {
-    "tool": "5D3E0D9EA957C4AA4380C9E1CB883623FB5F16696A5342179689E7308217D394",
+    "tool": "BAC023469C569B240A0850FDEAD300EEDBAEB25ECE5E1F03A0CF1907B33F0FA5",
     "catalog": "B19965F9465E26F61E4678B4FD6A153F95B338F8BD6E45B0A92F73261FFF4086",
     "pending_groups": "C40298B54A64F8FA655EF179EDE44B517D6DF867BBE2A1A2505FF2C6F16E0FEA",
     "reference_census": "6CFA5C2AE74DD60C8A8B004DFC07EEFD8FA4590537A062A8868C12765085957B",
@@ -3356,6 +3356,56 @@
       ],
       "translation_file_sha256": "22F6EE016F0902A0C52F5DA953BBC20C2FD63DFAACC198945333F3634B13D36F",
       "scope": "Static resource references and helper registrations, not proof that all members draw in one playthrough."
+    }
+  ],
+  "chapter_start_shortcuts": [
+    {
+      "game": "pf",
+      "chapter": "小鸡潜降兵",
+      "dispatcher_record_offset": 479266448,
+      "dispatcher_record_sha256": "528B4ACB8BA59409CF0D48A793A496D6304F25326B94AC1E782F7CB1AF899350",
+      "dispatcher_plaintext_sha256": "F32D3D7F3BBAA8B2D88F8F61D743C0E21CA12DBC8628090641E5A3075D7AD059",
+      "selector_case_value": 105,
+      "guard_order": 35,
+      "jump_order": 36,
+      "chapter_owner": "pf:photonflowers11.rio:0x1d231710",
+      "early_helper_call_orders": [
+        270,
+        271,
+        272,
+        273,
+        274,
+        277,
+        278,
+        279,
+        280,
+        281
+      ],
+      "primary_message_orders_before_hud": [
+        5
+      ],
+      "next_primary_message_order": 316,
+      "direct_image_group_ids": [
+        2278,
+        2280,
+        2288
+      ],
+      "including_helper_registration_group_ids": [
+        2278,
+        2280,
+        2288,
+        2596,
+        2597,
+        2598,
+        2599,
+        2600,
+        2602,
+        2603,
+        2604,
+        2605,
+        2606
+      ],
+      "scope": "Chapter beginning candidate; no mid-script jump or save edit. Helper calls, waits and native state still require live observation; no elapsed-time or 13-draw guarantee."
     }
   ],
   "limitations": [

@@ -1,5 +1,8 @@
 """Read-only, bounded follow-up to the first PF/PM runtime capture.
 
+Checks 13 resource-owning scripts plus the PF chapter dispatcher used by the
+no-save opening capture candidate. Does not execute the game or alter saves.
+
 The caller supplies the private reference-census directory. Published output contains
 only identities, hashes, command coordinates, and existing Chinese review cues.
 """
@@ -146,10 +149,36 @@ assert unlock[0]['fields']['a']['text']=='PM_WPOPEN_'
 assert unlock[6]['fields']['operation']['name']=='OM_AccessGetValue'
 assert unlock[7]['fields']['operation']==66
 assert unlock[19]['fields']['arguments'][1]['text']=='1'
+# A chapter beginning is a useful no-save capture candidate. Verify the
+# dispatcher jump separately instead of fabricating a mid-script entry.
+start_key=('pf','photonflowers11.rio',488838939)
+dispatcher_record_offset=479266448
+dispatcher=read_crsa_record(Path(sources['pf','photonflowers11.rio']['path']),dispatcher_record_offset)
+assert sha(dispatcher.record)==records['pf','photonflowers11.rio',dispatcher_record_offset+11]['record_sha256'].upper()
+dispatch_vm=parse_crsa_vm_stream(dispatcher.plaintext,'pf')
+guard=dispatch_vm['commands'][34];jump=dispatch_vm['commands'][35]
+assert guard['name']=='CVmFlagOp' and guard['fields']['operation']==66 and guard['fields']['a']['integer']==105
+assert jump['name']=='CVmJump' and decode_extent_offset(jump['fields']['target']['key'],4)==start_key[2]-11
+start_id=owner_id(start_key);start_vm=vms[start_key]
+assert chapter[start_key]=='小鸡潜降兵.csv'
+assert [cmd['order']for cmd in start_vm['commands']if cmd['order']<316 and cmd['name']=='CVmMsg3']==[5]
+early_calls=[edge for edge in edges if edge['caller']==start_id and 270<=edge['command_order']<=281]
+assert len(early_calls)==10 and len({edge['callee']for edge in early_calls})==2
+registered_owners={start_id}|{edge['callee']for edge in early_calls}
+shortcut_groups=sorted(gid for game,gid in pending if game=='pf' and any(
+ h['owner']in registered_owners and (h['owner']!=start_id or 270<=h['command_order']<=281)for h in hits[gid]))
+assert shortcut_groups==[2278,2280,2288,2596,2597,2598,2599,2600,2602,2603,2604,2605,2606]
+shortcut=dict(game='pf',chapter='小鸡潜降兵',dispatcher_record_offset=dispatcher_record_offset,
+ dispatcher_record_sha256=sha(dispatcher.record),dispatcher_plaintext_sha256=sha(dispatcher.plaintext),
+ selector_case_value=105,guard_order=35,jump_order=36,chapter_owner=start_id,
+ early_helper_call_orders=[edge['command_order']for edge in early_calls],
+ primary_message_orders_before_hud=[5],next_primary_message_order=316,
+ direct_image_group_ids=[2278,2280,2288],including_helper_registration_group_ids=shortcut_groups,
+ scope='Chapter beginning candidate; no mid-script jump or save edit. Helper calls, waits and native state still require live observation; no elapsed-time or 13-draw guarantee.')
 result=dict(schema='photon-pending-script-routes-v1',date='2026-09-09',
  input_hashes={'tool':sha(Path(__file__).read_bytes()),'catalog':sha((E/'catalog.json').read_bytes()),'pending_groups':sha((E/'runtime-pending-groups.json').read_bytes()),'reference_census':sha((O/'program_reference_census.json').read_bytes()),'full_crsa_census':sha((O/c['full_crsa_census']['evidence']).read_bytes()),'mapping_report':sha((O/'official_reference_mapping_replay.json').read_bytes()),'chapter_indexes':chapter_hashes},
  scope=dict(pending_crip008_bindings=40,pm_load_only_bindings=4,archive_verified_script_owners=len(proofs),known_crsa_census_records=len(full['rows']),script_referenced_crip008=38,mapping_only_crip008=2,prefetch_only_pm=3,guarded_unlock_pm=1),
- owners=proofs,verified_owner_calls=edges,mapping_checks=map_proofs,rows=rows,story_scenarios=scenarios,
+ owners=proofs,verified_owner_calls=edges,mapping_checks=map_proofs,rows=rows,story_scenarios=scenarios,chapter_start_shortcuts=[shortcut],
  limitations=['Source-archive script analysis; does not execute the VM or game and does not validate installed script overlay branch equivalence.',
  'A reference, argument or registration is not a successful decode or draw. All 44 retain unverified runtime status.',
  'The CRsa census excludes other script/container formats. Missing direct references do not prove unused resources.',
