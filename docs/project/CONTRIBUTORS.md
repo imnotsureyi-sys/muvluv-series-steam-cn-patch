@@ -33,11 +33,13 @@ Co-authored-by: Codex <codex@openai.com>
 
 我们从“主任保护协会”公开的
 [Steam 版 Muv-Luv Alternative Total Eclipse 汉化实践](https://www.moyu.moe/patch/5461/resource)
-中了解到 **AGE2 可以通过松散文件结构覆盖游戏资源**。感谢对方分享这一方法，
-为我们开始制作系列补丁提供了起点。
+中学到了 **通过松散文件结构覆盖游戏资源的方法**。
+正是这份启发，让我们迈出了汉化的第一步，对此我们由衷感谢。
 
-在这一思路启发下，本项目自行开展后续资源提取、文本翻译、工具实现与补丁制作。
+后续资源提取、翻译、工具开发与补丁制作由本项目自行完成。
 对其他工具、代码和技术资料的使用或参考，按具体范围列在下文。
+历史上另有对该补丁成品 EGPACK 的只读结构对照，见
+[EGPACK 兼容性记录](../../AGE2/tools/egpack/README.md#兼容性)；该记录不代表使用了对方的译文或实现。
 
 ## 文本提供与校对
 
@@ -51,8 +53,14 @@ TDA 部分文本已经人工校对，感谢 ScRemilia、Tsubaki-G、X1AOFEI 及�
 | 项目 | 本项目具体受益 |
 | --- | --- |
 | [GARbro](https://github.com/morkt/GARbro) | 提供 RIO/ICI 目录读取先例；本项目的 Python 目录读取器明确移植其 MIT 许可的 `ArcRIO.cs` 思路并保留完整版权声明。GARbro 负责“找到对象”，不是 Photon 万能重封工具。 |
-| [AFHook](https://github.com/eplightning/afhook) | 提供“补丁制作工具与实机运行时分离”的 AGES/rUGP Hook 架构先例；PF/PM 的版本门、字体和图片运行时由本项目按自身目标重新实现。 |
+| [AFHook／AFEditor](https://github.com/eplightning/afhook) | 提供“补丁制作工具与实机运行时分离”的 AGES/rUGP Hook 架构先例，以及 Cr6Ti C++ 解码与 C# 编解码行为参考；PF/PM 的版本门、字体和图片运行时由本项目按自身目标重新实现。 |
 | [rugptools](https://github.com/osmium76/rugptools) | 提供历史 rUGP、alterdec 与对象行为术语参考；因仓库整体许可证边界不够明确，本项目不复制其源码。 |
+| alterdec | 早期 rUGP 对象与图片行为资料；Cr6Ti 编码器和独立回读器明确记录了其 C++ 解码行为与状态机参考。 |
+| RioX | 研究索引记录的早期 rUGP 对象与图片行为资料。现有记录未固定具体版本与原始来源链接，仅作为历史参考致谢，不列作当前构建依赖。 |
+
+上述参考的仓库证据见[研究参考](../research/references.md)、
+[Cr6Ti 编码器说明](../../rUGP/formats/images/cr6ti_encode.py)和
+[独立回读器说明](../../rUGP/formats/images/cr6ti_reference.py)。
 
 CRsa/CVM 边界、8311、RUO 使用限制、Cr6Ti/CRip007/CRip008 编码、42 个
 shared/common 端点和 PF/PM 1,490 图闭环均由本项目针对自己的样本继续实验、测试和实机

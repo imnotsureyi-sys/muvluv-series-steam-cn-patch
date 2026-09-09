@@ -14,8 +14,14 @@
 | [GARbro](https://github.com/morkt/GARbro) | 首页先给下载和 GUI 操作；`ArcFormats/` 与界面分层；RIO/ICI 目录读取和具体资源解码分开 | GARbro 不是 Photon 万能重封器。本项目把 PF/PM 目录读取移植来源隔离并保留 MIT 声明，再增加严格 extent、卷、父引用、稳定身份、清单和合成测试 |
 | [AFHook](https://github.com/eplightning/afhook) | `editor/` 与 `plugin/` 直接体现“制作端”和“游戏运行端”是两件事 | 上游文档很少且不覆盖当前 PF/PM 版本。本项目补上准确构建哈希、失败关闭、字体/图片路由、可复现构建、遥测和逐问题复盘 |
 | [rugptools](https://github.com/osmium76/rugptools) | GUI 与 `.rio` 访问库分层，并诚实声明只支持特定 MLA DVD 版本、对象反序列化仍不完整 | 历史 alterdec 转录部分的许可证边界需谨慎，因此只研究行为，不复制不清楚的源码；当前实现以独立样本、测试和来源说明重新建立 |
-| alterdec／RioX 历史资料 | 保存了早期 rUGP 对象和图片行为的关键术语与先例 | 它们不是现代 PF/PM 的完整制作、测试和发布链；本项目明确区分历史线索、独立验证和当前可发布能力 |
+| AFEditor（AFHook 制作端） | Cr6Ti 的 C# 编解码行为参考，与 AFHook C++ 解码器对照 | 具体采用范围记载于本项目的 Cr6Ti 编码器；不代表直接使用了整套编辑器 |
+| alterdec 历史资料 | 早期 rUGP 对象和图片行为，以及 Cr6Ti C++ 解码状态机参考 | 本项目的编码器与独立回读器明确记录这一参考；历史资料的具体版本与许可证仍需逐项固定 |
+| RioX 历史资料 | 早期 rUGP 对象和图片行为的术语与先例 | 现有研究记录未固定具体版本与原始来源链接；按历史参考致谢，不宣称它是当前 PF/PM 工具链的依赖或已验证方案 |
 | [FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager) | 小而聚焦的 FPD v2 `pack.bin` 提取/实验性重封实现，格式字段和 `Scrambler.cs` 易于追踪 | 上游几乎没有玩家/研究文档，源码全铺在根目录。本项目把严格读取、筛选提取和测试放入 `AGE2/tools/fpd/`，并诚实声明当前发布路线是 LocalAppData 松散覆盖，不冒充通用 `pack.bin` 重封 |
+
+Cr6Ti 参考范围的直接证据见
+[`cr6ti_encode.py`](../../rUGP/formats/images/cr6ti_encode.py)的模块说明及
+[`cr6ti_reference.py`](../../rUGP/formats/images/cr6ti_reference.py)的独立解码说明。
 
 ## 成熟补丁与翻译仓库
 

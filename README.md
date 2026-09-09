@@ -76,6 +76,8 @@ TDA 的部分文本已经过人工校对；后续校对会继续同步到可维�
 
 如果你看得懂日语，愿意对照原文校对、修改译文或讨论术语，诚挚欢迎加入以下项目。
 可以从熟悉的一句台词或一个场景开始，不必一次承担整章。
+即使不懂日语，也欢迎反馈错字、语句不通顺、显示异常或游玩中遇到的问题；
+可以加入 **QQ 群：273626767**，和我们交流、帮助补丁逐步完善。
 
 | 校对范围 | 在线项目 |
 | --- | --- |
@@ -136,10 +138,11 @@ are reusable components; they do not yet provide a universal one-command finishe
 ## 贡献者与致谢
 
 项目由 [imnotsureyi-sys](https://github.com/imnotsureyi-sys)／Yi Shen 发起和维护。
-感谢“主任保护协会”的汉化实践，让我们了解到 AGE2 可以通过松散文件结构覆盖游戏资源。
-本项目在这一思路启发下，自行开展后续提取、翻译、工具实现与补丁制作；其他技术参考分别列明。
-感谢 GARbro、AFHook、
-rugptools、FatePackageManager 及其他成熟补丁项目提供公开技术先例。OpenAI Codex 和图像模型
+我们从“主任保护协会”那里学到了 **通过松散文件结构覆盖游戏资源的方法**。
+正是这份启发，让我们迈出了汉化的第一步，对此我们由衷感谢。
+后续资源提取、翻译、工具开发与补丁制作由本项目自行完成；具体技术参考与历史对照记录另行列明。
+感谢 GARbro、AFHook／AFEditor、rugptools、alterdec、RioX、FatePackageManager
+及其他成熟补丁项目提供公开技术先例。OpenAI Codex 和图像模型
 在维护者指挥与审核下参与了部分代码、文档、分析、检查和图片工作。
 
 完整贡献范围、责任边界与参考项目见 **[贡献者与致谢](docs/project/CONTRIBUTORS.md)** 和
