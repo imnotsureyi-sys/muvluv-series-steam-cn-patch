@@ -17,5 +17,10 @@
   "production_ready": true,
   "game_started": false,
   "native_status_mocked": false,
-  "selector_bypassed": false
+  "selector_bypassed": false,
+  "ruo_base": {
+    "passed": true,
+    "scenarios": 8,
+    "game_started": false
+  }
 }

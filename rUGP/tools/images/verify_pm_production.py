@@ -89,10 +89,23 @@ def run(zig: Path, output: Path) -> dict:
         raise RuntimeError("The previous production rejection was not reproduced")
     if results["fixed"]["exit_code"] or not json.loads(results["fixed"]["stdout"])["passed"]:
         raise RuntimeError("Current production/sidecar transaction check failed")
+    ruo_exe = output / "ruo-base.exe"
+    compiled = subprocess.run([str(zig), "cc", "-target", "x86-windows-gnu",
+                               "-std=c11", "-O2", "-Wall", "-Wextra", "-Werror",
+                               "-I", str(RUNTIME / "include"),
+                               str(ROOT / "rUGP/tests/runtime/pm_ruo_base.c"), "-o", str(ruo_exe)],
+                              capture_output=True, text=True, encoding="utf-8", timeout=180)
+    if compiled.returncode:
+        raise RuntimeError(f"RUO fixture compilation failed: {compiled.stderr[-2000:]}")
+    checked = subprocess.run([str(ruo_exe)], capture_output=True, text=True,
+                             encoding="utf-8", timeout=30)
+    if checked.returncode:
+        raise RuntimeError(f"RUO fixture failed: {checked.stderr}")
     report = dict(schema="photon-pm-production-regression-v1", results=results,
                   synthetic_art=True, proprietary_decoder_executed=False,
                   production_ready=True, game_started=False, native_status_mocked=False,
                   selector_bypassed=False)
+    report["ruo_base"] = json.loads(checked.stdout)
     (output / "verification.json").write_text(json.dumps(report, indent=2) + "\n", "utf-8")
     return report
 

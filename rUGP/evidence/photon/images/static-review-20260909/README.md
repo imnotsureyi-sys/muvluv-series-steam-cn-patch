@@ -24,8 +24,8 @@
 - 当前审核稿含 54 项新的术语修订，尚未安装；不得把 `candidate` 当作已发布载荷。
 - 四组返回按钮为 PF 粉色 G488/G490、青色 G489/G491，PM 橙色 G1003/G1005、
   绿色 G1004/G1006；本地修订统一字形和位置，保留状态颜色差异。
-- PM 启动署名在本地绑定到 G1281 对应资源。当前公开源码修复图片 hook 准入，
-  并未把整套最新本地图片表、RUO 修复和其他并行工作复制为一个玩家发布包。
+- PM 启动署名在本地绑定到 G1281 对应资源。公开源码现已同步图片 hook 准入、
+  RUO 基址修复及实机图片绑定表；图片文件与玩家发布包仍留在 Git 之外。
 - 椭圆角色卡已核对 18 个角色的无圈、白圈、黄圈，共 54 态；原资源另有
   彩峰、柏木、纯夏、霞四个暗态（G1110、G1111、G1114、G1116），合计 58 态。
   不能据此为其余角色臆造暗态；暗态实际解锁条件未在本次确认。
@@ -60,15 +60,24 @@ surface 提交及正负 pitch。它不执行游戏私有解码器，不等于所
 ## 版本与其他 PR
 
 这份审核选集逐项匹配最新六张人工采用稿和 54 项术语新稿的 SHA-256，没有用
-V6 或较早人工预览替代。运行时源码只纳入本 PR 明确测试的 PM 图片准入修复；
-当前机器安装版包含其他本地修复，不能用本 PR 构建物直接覆盖它。
+V6 或较早人工预览替代。五处未同步项现已补齐；
+[`runtime-sync.json`](runtime-sync.json) 记录两款安装 DLL 的精确重建、普通表来源核对
+和本机图片回读。2,791 项普通图及 68 项特殊图的 PNG、RGBA 和尺寸全部匹配；
+另外四个保留的 PM 身份未读取图片。游戏未启动，安装目录未修改。
 
-逐文件对照人工稿采用时的本地源码，仍有五处明确差异：PF、PM 普通 exact 表和
-special57 表共三份 generated 配置尚未同步；PM RUO 基址修复的
-`include/photon_pm_ruo_base_fix.h` 及 `src/photon_combined_proxy.c` 调用尚未纳入。
-其余该本地源码快照中的 C／汇编／头文件与公开版本一致（忽略换行差异）。
-因此本 PR 不是最新实机版本的完整源码快照；上述差异需独立核对原生记录与安装
-基线后再集成，不能只替换生成表或把本次构建 hash 标成实机版本。
+默认构建与当前安装构建分开记录。当前安装使用已有的 `--speaker-color-candidate`
+选项，重建 DLL 与本机文件逐字节相同：
+
+| 游戏 | 默认构建证据 | 实机配置重建证据 |
+| --- | --- | --- |
+| PF | [pf-default.build.json](pf-default.build.json) | [pf-installed.build.json](pf-installed.build.json) |
+| PM | [pm-default.build.json](pm-default.build.json) | [pm-installed.build.json](pm-installed.build.json) |
+
+PF 安装时实际使用的 `headers` 与其 `source/generated` 副本不同，本次采用前者。
+两款 DLL 均编入了跨游戏身份，因此 PM 表保留按编译游戏选择的封存视图：PF 版保留
+1,594 个 PM 身份，PM 版为 1,598 个。不能把一个目录里较新的所有文件一并当作
+另一款游戏的安装基线。完整源码与封存配置现可重建这两款运行时 DLL；这仍不包含
+游戏本体、图片包或独立 PR 的未安装候选，也不自动成为可分发玩家补丁。
 
 文本／字体候选在 [PR #14](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/14)，
 术语来源在 [PR #15](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/pull/15)，

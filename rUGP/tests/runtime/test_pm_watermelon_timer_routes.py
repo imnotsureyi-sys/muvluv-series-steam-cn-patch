@@ -31,8 +31,10 @@ PM_NATIVE = RUGP_ROOT / "runtime" / "src" / "photon_v6_pm_native_runtime.c"
 SEALED_PM_TARGET_PREFIX_SHA256 = (
     "3345E0C73D10690BA769D6F006FCF0A4027B385A1AD0CD042D0E8A1740431372"
 )
-SEALED_SPECIAL_SIDECAR_PREFIX_SHA256 = (
-    "DF8C9AB54F5404FFEC30A2547AF5B3D490EBA7B998C57CA62BE0A9C0FD826E5F"
+# The original 57 routes retain their identities, with later installed image
+# revisions audited in static-review-20260909/runtime-sync.json.
+INSTALLED_SPECIAL_SIDECAR_PREFIX_SHA256 = (
+    "13B5B789A0AF137B9B5C9D22D1AF4F3FB830079BE89034D8C751889C6FCE5D10"
 )
 
 
@@ -133,6 +135,8 @@ class PmWatermelonTimerRouteTests(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.evidence = json.loads(EVIDENCE.read_text(encoding="utf-8"))
         cls.routes = cls.evidence["routes"]
+        sync = json.loads((EVIDENCE.parent / "static-review-20260909/runtime-sync.json").read_text("utf-8"))
+        cls.installed_sidecars = {row["source_asset_id"]: row for row in sync["timer_sidecars"]}
         cls.dynamic = [
             route for route in cls.routes if route["kind"] == "dynamic_timer_layer"
         ]
@@ -222,14 +226,23 @@ class PmWatermelonTimerRouteTests(unittest.TestCase):
                 self.assertTrue(authority["route_authority"]["semantic_peer_proven"])
 
                 self.assertEqual(len(route["ordinary_table_indices"]), 1)
-                table = self.pm_exact[route["ordinary_table_indices"][0]]
+                # The recorded ordinal belongs to the historical table. New
+                # routes change sort positions; payload identity stays stable.
+                matches = [row for row in self.pm_exact if
+                           row["payload_bytes"] == route["payload_bytes"] and
+                           row["payload_fnv1a64"] == route["payload_fnv1a64"]]
+                self.assertEqual(len(matches), 1)
+                table = matches[0]
+                installed = self.installed_sidecars[route["source_asset_id"]]
+                self.assertEqual(installed["historical_png_sha256"], route["sidecar_png_sha256"])
+                self.assertEqual(installed["historical_rgba_sha256"], route["sidecar_rgba_sha256"])
                 expected = {
                     "payload_bytes": route["payload_bytes"],
                     "payload_fnv1a64": route["payload_fnv1a64"],
                     "width": route["size"][0],
                     "height": route["size"][1],
-                    "png_sha256": route["sidecar_png_sha256"],
-                    "rgba_sha256": route["sidecar_rgba_sha256"],
+                    "png_sha256": installed["installed_png_sha256"],
+                    "rgba_sha256": installed["installed_rgba_sha256"],
                 }
                 for key, value in expected.items():
                     self.assertEqual(table[key], value, key)
@@ -313,7 +326,7 @@ class PmWatermelonTimerRouteTests(unittest.TestCase):
         )
         self.assertEqual(
             _canonical_sha256(self.special_sidecars[:57]),
-            SEALED_SPECIAL_SIDECAR_PREFIX_SHA256,
+            INSTALLED_SPECIAL_SIDECAR_PREFIX_SHA256,
         )
         appended = self.special_sidecars[57:]
         header = SPECIAL_SIDECARS.read_text(encoding="utf-8")
@@ -330,6 +343,9 @@ class PmWatermelonTimerRouteTests(unittest.TestCase):
         self.assertEqual(len(appended), len(unique_embedded))
         for sidecar, route in zip(appended, unique_embedded, strict=True):
             with self.subTest(source=route["source_asset_id"]):
+                installed = self.installed_sidecars[route["source_asset_id"]]
+                self.assertEqual(installed["historical_png_sha256"], route["sidecar_png_sha256"])
+                self.assertEqual(installed["historical_rgba_sha256"], route["sidecar_rgba_sha256"])
                 expected = {
                     "source_asset_id": route["source_asset_id"],
                     "context_identity_key": route["context_identity_key"],
@@ -339,8 +355,8 @@ class PmWatermelonTimerRouteTests(unittest.TestCase):
                     "payload_fnv1a64": route["payload_fnv1a64"],
                     "width": route["size"][0],
                     "height": route["size"][1],
-                    "png_sha256": route["sidecar_png_sha256"],
-                    "rgba_sha256": route["sidecar_rgba_sha256"],
+                    "png_sha256": installed["installed_png_sha256"],
+                    "rgba_sha256": installed["installed_rgba_sha256"],
                     "owner_route": 1,
                     "context_route": 1,
                     "offline_exact_owner_route": 1,

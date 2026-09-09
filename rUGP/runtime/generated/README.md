@@ -1,5 +1,30 @@
 # Sealed generated runtime configuration
 
+## Installed snapshots synchronized on 2026-09-09
+
+The ordinary tables now contain 1,197 PF routes and 1,598 PM routes in the PM
+build; the PF build retains its installed companion PM table of 1,594 entries.
+Both binaries contain cross-game identities, even when a game does not use
+those routes, so the PM table uses explicit `PHOTON_BUILD_PM` conditionals to
+preserve each installed binary's inputs. The special table contains 68 entries
+(17 PF / 51 PM, including PM-only tutorial entries).
+
+The authority audit used the PF follow-up build's actual **headers** directory,
+not its stale `source/generated` copy, and the later PM manual-adoption build's
+generated directory. Their raw source hashes are recorded per game in
+`provenance.json`; header bytes in Git use LF. All 2,795 selected ordinary rows
+match their sealed manifests, and local readback verified 2,791 eligible
+ordinary PNG/RGBA identities plus 68 special identities. Four reserved PM
+identities were retained without probing their images.
+
+The [synchronization evidence](../../evidence/photon/images/static-review-20260909/runtime-sync.json)
+and paired build manifests prove byte-for-byte reproduction of both installed
+DLLs with the existing speaker-color candidate flag. No image payload or
+private generator input has been added to Git. Uninstalled review drafts are
+not promoted into these tables.
+
+## Regeneration boundary
+
 These six headers are reviewed, hash-locked runtime configuration inputs. They
 contain identities, sizes, geometry and routing metadata, but no game image
 payloads. [`provenance.json`](provenance.json) records each file's exact bytes,

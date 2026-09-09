@@ -35,20 +35,26 @@ The reviewed historical-to-normalized Beta0.1 identities are:
 
 Applying the normalization to either historical raw DLL produces its listed
 historical normalized identity. The currently approved reproducible outputs are
-PF `01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA`
-and PM `21EE2D8E9BE693FF59BE37C2AC977ADCB3628228C06BE018B2172C01A5AB071A`.
+PF `82BA9A7D9B49A8CB9414BBE7CC2BA05329AF75B9B99CDE827D0B57F68907665F`
+and PM `59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E`.
 PM includes the tutorial-timer and selector repair plus the CRip008 direct
-image hooks and matching nine-hook production admission. The
+image hooks, matching nine-hook production admission, and the exact-host RUO
+base repair. Both games include the installed image-table snapshots. The
 packaging assembler accepts only its named hash-locked identities and records
 which one it copied. This does not turn the runtime builder into a complete
 source-to-player-release pipeline; packaging still requires the other sealed
 and approved authorities described in `../packaging/README.md`.
 
-The Beta0.1 assembler's allowlist is unchanged: it rejects this new PM identity
-until a separate release review approves it. Current local installations and
-image drafts are not the same artifact as this public build. The checked-in
-tables are still frozen configuration, not a snapshot of every latest local
-image. See [current review status](../evidence/photon/images/static-review-20260909/README.md)
+The Beta0.1 assembler's allowlist is unchanged: it rejects both new default
+identities until a separate release review approves them. The 2026-09-09 local
+installations use the existing `--speaker-color-candidate` profile. Building
+with `--authorize-pinned-build --speaker-color-candidate` (without
+`--verify-release-code`) reproduces both installed DLLs byte for byte:
+PF `B3C43B2000BE0C286B140D900C081B3AECC771BEF7F7F69A79DE624ACC3875B0`,
+PM `2259884FF2CC52C3A94D917BCC5508D5951340FF8461612D89C270CE3FFC525E`.
+This preserves the profile's candidate status, not an automatic player release.
+Portable build manifests and readback evidence are linked from
+[current review status](../evidence/photon/images/static-review-20260909/README.md)
 and the [PM admission regression](../docs/postmortems/pm-image-admission-20260909.md).
 
 Generated headers are [sealed reviewed configuration](generated/README.md),

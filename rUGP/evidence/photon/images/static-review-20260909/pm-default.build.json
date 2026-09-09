@@ -1,0 +1,331 @@
+{
+  "approved_release": {
+    "normalized_code_verified": true,
+    "normalized_sha256": "59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E"
+  },
+  "authorization_compiled": true,
+  "compile": {
+    "defines": [
+      "PHOTON_BUILD_PM=1",
+      "PHOTON_V6_PRODUCTION_PM=1",
+      "PHOTON_V6_PM_SELECTOR_ADAPTER=1",
+      "PHOTON_V6_PRODUCTION_AUTHORIZED=1"
+    ],
+    "flags": [
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-shared"
+    ],
+    "include_roots": [
+      "<authorized-generated>",
+      "include"
+    ],
+    "link_libraries": [
+      "advapi32",
+      "user32",
+      "gdi32",
+      "windowscodecs",
+      "ole32"
+    ],
+    "portable_command": [
+      "zig",
+      "cc",
+      "-target",
+      "x86-windows-gnu",
+      "-std=c11",
+      "-O2",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-I",
+      "<authorized-generated>",
+      "-I",
+      "include",
+      "-DPHOTON_BUILD_PM=1",
+      "-DPHOTON_V6_PRODUCTION_PM=1",
+      "-DPHOTON_V6_PM_SELECTOR_ADAPTER=1",
+      "-DPHOTON_V6_PRODUCTION_AUTHORIZED=1",
+      "-shared",
+      "-o",
+      "<output>/Ages3ResT.dll",
+      "src/photon_combined_proxy.c",
+      "src/photon_font_policy.c",
+      "src/photon_optional_runtime_bridge.c",
+      "src/photon_v6_runtime_production.c",
+      "src/photon_v6_cpu_surface_rgba.c",
+      "src/photon_v6_exact_rgba_sidecar_loader.c",
+      "src/photon_pf_decoder_surface_view.c",
+      "src/photon_v6_surface_transaction.c",
+      "src/photon_v6_internal_route_gate.c",
+      "src/photon_v6_exact_overlay_core.c",
+      "src/photon_v6_special57_sidecar_loader.c",
+      "src/photon_v6_pm_native_runtime.c",
+      "src/photon_v6_pm_native_runtime.S",
+      "src/photon_v6_pm_selector_adapter.c",
+      "include/Ages3ResT.def",
+      "-ladvapi32",
+      "-luser32",
+      "-lgdi32",
+      "-lwindowscodecs",
+      "-lole32"
+    ],
+    "target": "x86-windows-gnu",
+    "working_directory": "rUGP/runtime"
+  },
+  "compiler": {
+    "executable_bytes": 177108480,
+    "executable_sha256": "086CE9D47BA42F33A514E1A6E04EB1D4A8FA1D75E0868E0213CAAD447C91E864",
+    "name": "zig",
+    "version": "0.16.0"
+  },
+  "deterministic_double_compile_after_pe_normalization": true,
+  "game": "pm",
+  "historical_release": {
+    "normalized_code_verified": false,
+    "normalized_sha256": "73F5EC68A374042096CB4C900210F22537E5706E49B7EA9A8F249C583039E2CD",
+    "raw_sha256": "84C20D878CD440950D55585A5B6D9575138CD043F157DC46D7A19F548AAE2C40"
+  },
+  "inputs": [
+    {
+      "bytes": 27777,
+      "kind": "command_source",
+      "path": "src/photon_combined_proxy.c",
+      "sha256": "D3ACD4ACF9B63762F89E09B381559D15DCB22C3DC077AB648FDC0DE03EA417F9"
+    },
+    {
+      "bytes": 476,
+      "kind": "command_source",
+      "path": "src/photon_font_policy.c",
+      "sha256": "18444B3B46DCDDA665D3AF5D851382E0A53D7084713CE88E7F13CAA43893890F"
+    },
+    {
+      "bytes": 1007,
+      "kind": "command_source",
+      "path": "src/photon_optional_runtime_bridge.c",
+      "sha256": "21913C6AB3F68BEC7BBC48E5ACDF1D88EFE1681839275EBF3C43254938BC7CB6"
+    },
+    {
+      "bytes": 19245,
+      "kind": "command_source",
+      "path": "src/photon_v6_runtime_production.c",
+      "sha256": "B6D6A1AF3C255C2B1A1D00D08DA69E6FFB387EB4067FC8121F08DCF160E6C3A0"
+    },
+    {
+      "bytes": 13420,
+      "kind": "command_source",
+      "path": "src/photon_v6_cpu_surface_rgba.c",
+      "sha256": "5EBC5D8165DE6B153A292F997285EF66687D200E387D87635CD6CF127DDF7DD1"
+    },
+    {
+      "bytes": 19443,
+      "kind": "command_source",
+      "path": "src/photon_v6_exact_rgba_sidecar_loader.c",
+      "sha256": "27589F45FCCE1C11FB9BDFD1A2F81455F2A3C3C3D7C184C761E9C524B3AA05E5"
+    },
+    {
+      "bytes": 3826,
+      "kind": "command_source",
+      "path": "src/photon_pf_decoder_surface_view.c",
+      "sha256": "E0ECDBD5A95844EFF8D9DC63092558634FCC277152ECD12B6EEC4382A0C0F006"
+    },
+    {
+      "bytes": 7576,
+      "kind": "command_source",
+      "path": "src/photon_v6_surface_transaction.c",
+      "sha256": "3E100FDA2C25C35A44B59E0C2E6A1FA9529AB10FCEC47C74B4DE8126C189F958"
+    },
+    {
+      "bytes": 4234,
+      "kind": "command_source",
+      "path": "src/photon_v6_internal_route_gate.c",
+      "sha256": "F098047039CE2383B0CCD1E264927B6DA8F01E665255E3CE9ABBF3C8D4DE1F88"
+    },
+    {
+      "bytes": 18850,
+      "kind": "command_source",
+      "path": "src/photon_v6_exact_overlay_core.c",
+      "sha256": "E8BA19109A96369F67AC3210B8E4A53FF8E9794C707E65297677BAE1B86ACC1D"
+    },
+    {
+      "bytes": 18198,
+      "kind": "command_source",
+      "path": "src/photon_v6_special57_sidecar_loader.c",
+      "sha256": "C2B364B89BC26BC329203C2545F7CB9FE3E9D755BA1B5FC1403CF174A4A524D5"
+    },
+    {
+      "bytes": 5921,
+      "kind": "command_source",
+      "path": "src/photon_v6_pm_native_runtime.c",
+      "sha256": "65BF720B2625E07727B0F46A208F669F4E6881978F5E308C6C631922649A1E45"
+    },
+    {
+      "bytes": 8101,
+      "kind": "command_source",
+      "path": "src/photon_v6_pm_native_runtime.S",
+      "sha256": "86A7BE44ED27F221DCFA8DF8A0EBB4937370B1D17C1973952D1DACF0810CE636"
+    },
+    {
+      "bytes": 60643,
+      "kind": "command_source",
+      "path": "src/photon_v6_pm_selector_adapter.c",
+      "sha256": "562B6199F65F672381649C9CC94421998C16B4B534B07C93D64DA10A2BE655BE"
+    },
+    {
+      "bytes": 152964,
+      "kind": "included_source",
+      "path": "src/photon_v6_pf_native_runtime.c",
+      "sha256": "BB7BF9F87F4194E6B50AD03262787151B66710D9010E92D2C964187812E01B4E"
+    },
+    {
+      "bytes": 85,
+      "kind": "module_definition",
+      "path": "include/Ages3ResT.def",
+      "sha256": "0E9741A0441C71C4644DBE26259F5A6FD98BEC8021F3D5AB96B06B650917A2DE"
+    },
+    {
+      "bytes": 530,
+      "kind": "header",
+      "path": "include/photon_font_policy.h",
+      "sha256": "26CAEDAC33188107FEAEBE30D67F3D38275A8C2A9BA631BA6D0DE20087018332"
+    },
+    {
+      "bytes": 674,
+      "kind": "header",
+      "path": "include/photon_optional_runtime_bridge.h",
+      "sha256": "561817672BD7986D2E31C46A0559BF68E3B7AC1E79F164FDD4B871D19B8E6245"
+    },
+    {
+      "bytes": 2058,
+      "kind": "header",
+      "path": "include/photon_pf_decoder_surface_view.h",
+      "sha256": "E0E7DBAA81DA333D94030644CC9D8193F93A2D40BA6D05B2D96D5ABF3BFD9CC9"
+    },
+    {
+      "bytes": 1655,
+      "kind": "header",
+      "path": "include/photon_pm_ruo_base_fix.h",
+      "sha256": "205AF3908AAD613E17E9ECD1571D7EAD4F12827FDA2DF8279D59BB381E4FDEAF"
+    },
+    {
+      "bytes": 4089,
+      "kind": "header",
+      "path": "include/photon_speaker_aliases.h",
+      "sha256": "2DE64793BF379D35A6E55F559E083E20D6FFCFAA5E6A7177093AA21E5EF756B7"
+    },
+    {
+      "bytes": 388,
+      "kind": "header",
+      "path": "include/photon_speaker_policy.h",
+      "sha256": "C868543B7116C16ECCF30199519290809F33A9063547DCB0722CAE78A9D7EF42"
+    },
+    {
+      "bytes": 2285,
+      "kind": "header",
+      "path": "include/photon_v6_cpu_surface_rgba.h",
+      "sha256": "B4F25D2AD6ECD5F684BC89CA14348AAE9DE9241FB9DE7F00E1F25B36D8EA15EA"
+    },
+    {
+      "bytes": 4705,
+      "kind": "header",
+      "path": "include/photon_v6_exact_overlay_core.h",
+      "sha256": "273A0AE00BC3900F6FAEC38DFCE13F6E67815F7F7ADDE53D508E5A3419484BDA"
+    },
+    {
+      "bytes": 2047,
+      "kind": "header",
+      "path": "include/photon_v6_exact_rgba_sidecar_loader.h",
+      "sha256": "7116677E012E8956A776B1DF1CF6C1A3CF2EEECABA913B90AA26AEDBFD3FE668"
+    },
+    {
+      "bytes": 2881,
+      "kind": "header",
+      "path": "include/photon_v6_internal_route_gate.h",
+      "sha256": "9806092181104E899AFDF83AB5E94987FDD2D43A39F15F65AB11A84AD4FF0723"
+    },
+    {
+      "bytes": 4529,
+      "kind": "header",
+      "path": "include/photon_v6_pf_native_runtime.h",
+      "sha256": "C4B8EBF11DA9D2D365357E51603434809638EC3B70D09DD44EDCA36EAABBA61A"
+    },
+    {
+      "bytes": 12130,
+      "kind": "header",
+      "path": "include/photon_v6_pf_selector_adapter.h",
+      "sha256": "9CB79035B83E2BBD4054FE7B479C6DE64AC95450FDF4A9AACAB6C0CAA8CDD924"
+    },
+    {
+      "bytes": 681,
+      "kind": "header",
+      "path": "include/photon_v6_pm_native_runtime.h",
+      "sha256": "82F3BA7AD35D3B56EE60ABCFB82E8D57E4CFCD86E9867DFD3DBAE3CFC8DA4F5E"
+    },
+    {
+      "bytes": 4082,
+      "kind": "header",
+      "path": "include/photon_v6_runtime_api.h",
+      "sha256": "1A62FCF976488EA2452713240D82E663A67648A478B05A9640F040B0AEADD7BD"
+    },
+    {
+      "bytes": 2159,
+      "kind": "header",
+      "path": "include/photon_v6_special57_sidecar_loader.h",
+      "sha256": "C0F883D714EB076EE8D61063CF99B018C1518A5E0C19A8C16A134C193A02B6F3"
+    },
+    {
+      "bytes": 2704,
+      "kind": "header",
+      "path": "include/photon_v6_surface_transaction.h",
+      "sha256": "B85CF1773CC8109B7F10D80A32E6CB0DE8A21D4FBAAC8FF788E17820EA398128"
+    },
+    {
+      "bytes": 895,
+      "kind": "generated_header",
+      "path": "generated/photon_combined_pf.generated.h",
+      "sha256": "E4F1051A0B4C88FF853ADA853DF8404E0A3FD9C0EBD6DFD84A87A412133DA762"
+    },
+    {
+      "bytes": 895,
+      "kind": "generated_header",
+      "path": "generated/photon_combined_pm.generated.h",
+      "sha256": "DC5E99A5B96B4B873B8E76907B75038125CAED5328B703D0B301D9B245D1F736"
+    },
+    {
+      "bytes": 556132,
+      "kind": "generated_header",
+      "path": "generated/photon_v6_pf_exact_rgba_table.generated.h",
+      "sha256": "6A4199E2E4F86FB720899F0FBBDA07B84FF3E73E859981DE00944157A920484A"
+    },
+    {
+      "bytes": 744449,
+      "kind": "generated_header",
+      "path": "generated/photon_v6_pm_exact_rgba_table.generated.h",
+      "sha256": "A398BD0A2EDC6EFA1BD3E5696115E8349F42DBF5C6B8D4D7C97A9A1E2A40DF1E"
+    },
+    {
+      "bytes": 18919,
+      "kind": "generated_header",
+      "path": "generated/photon_v6_pm_special40_table.generated.h",
+      "sha256": "096BF1E01EBC341A2DC227A4B9AFA774856E19AAF85E5F57F7B453AE5B6ADAFD"
+    },
+    {
+      "bytes": 46157,
+      "kind": "generated_header",
+      "path": "generated/photon_v6_special57_table.generated.h",
+      "sha256": "525A8DC1528DE1555E4B1FC6CE31D1769C3B7C2513D70D2615D11BE3F4A95197"
+    }
+  ],
+  "output": {
+    "bytes": 611328,
+    "path": "Ages3ResT.dll",
+    "sha256": "59B39661218C7B7E01382AEBC6E09718EEF2F52A6F4913852EB9CEFBF804615E"
+  },
+  "schema": "photon-runtime-build-v2",
+  "sources_complete": true,
+  "speaker_color_candidate": false,
+  "target": "x86-windows-gnu",
+  "zig_version": "0.16.0"
+}
