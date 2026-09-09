@@ -39,7 +39,7 @@ def load_game(game: str, root: Path = ROOT) -> dict[str, dict[str, str]]:
     manifest = tomllib.loads((folder / "project.toml").read_text(encoding="utf-8"))
     expected = {
         "terminology_common_authority": root / "localization/glossaries/muv-luv.ja-zh-Hans.csv",
-        "terminology_authority": folder / "terminology/ja-zh-Hans.csv",
+        "terminology_authority": root / "localization/glossaries" / f"{game}.ja-zh-Hans.csv",
     }
     result = {}
     for key, correct_path in expected.items():

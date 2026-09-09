@@ -13,7 +13,7 @@ translation_authorities = [
   "translations/choices.ja-zh-Hans.csv",
   "translations/ui-strings.ja-zh-Hans.tsv",
 ]
-terminology_authority = "terminology/ja-zh-Hans.csv"
+terminology_authority = "../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv"
 terminology_baseline = "terminology/baseline.ja-zh-Hans.csv"
 image_authority = "images/release-inventory.json"
 image_copy_authority = "images/copy/source-image-lock.v2.json"

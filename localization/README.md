@@ -32,7 +32,8 @@
 
 ## 目录
 
-- [`glossaries/`](glossaries/)：跨游戏共用术语。
+- [`glossaries/`](glossaries/)：系列通用表与七作现行术语表，按作品命名、集中维护。
+- [术语查证与历史记录](terminology-history/README.md)：旧表、来源证据与审计记录。
 - [`fonts/`](fonts/)：字体来源、许可证、覆盖与发布规则。
 - [`standards/`](standards/README.md)：按 01—06 编号的规范、使用顺序与冲突判断原则。
 - [`tools/`](tools/)：新语言表、字体覆盖、图片制作与校验工具。

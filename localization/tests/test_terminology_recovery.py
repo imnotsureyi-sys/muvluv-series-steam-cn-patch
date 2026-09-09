@@ -16,7 +16,7 @@ def sha(value):
 class RecoveryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.manifest=json.loads((ROOT/'localization/glossaries/recovery-20260908.json').read_text(encoding='utf-8'))
+        cls.manifest=json.loads((ROOT/'localization/terminology-history/recovery-20260908.json').read_text(encoding='utf-8'))
         cls.baselines={}
         for game,engine in GAMES.items():
             with (ROOT/engine/'games'/game/'terminology/baseline.ja-zh-Hans.csv').open(encoding='utf-8',newline='') as stream:
@@ -43,7 +43,7 @@ class RecoveryTests(unittest.TestCase):
             if game in later:
                 self.assertEqual(later[game]['before'],expected_terms)
                 expected_terms=later[game]['after']
-            self.assertEqual(len(read_table(folder/'terminology/ja-zh-Hans.csv')),expected_terms)
+            self.assertEqual(len(read_table(ROOT/'localization/glossaries'/f'{game}.ja-zh-Hans.csv')),expected_terms)
             for row in rows:
                 self.assertIn(row['source'],{s['name'] for s in self.manifest['sources']})
                 self.assertEqual(set(row),set(COLS))

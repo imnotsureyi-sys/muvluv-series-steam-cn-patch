@@ -1,6 +1,6 @@
 # The Imperial Capital Burns／帝都燃烧篇
 
-[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [正文与 UI](translations/) · [术语](terminology/ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1)
+[返回 AGE2 游戏](../README.md) · [项目清单](project.toml) · [正文与 UI](translations/) · [术语](../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv) · [图片](images/) · [历史补丁](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/imperial-capital-burns-beta0.1)
 
 - Steam App ID：`2630300`
 - 容器：FPD v2 `obb/pack.bin`
@@ -16,7 +16,7 @@
   [`choices.ja-zh-Hans.csv`](translations/choices.ja-zh-Hans.csv) 与
   [`ui-strings.ja-zh-Hans.tsv`](translations/ui-strings.ja-zh-Hans.tsv)：说话人、选项和系统
   UI 权威。
-- [`terminology/ja-zh-Hans.csv`](terminology/ja-zh-Hans.csv)：本作专用术语。
+- [帝都燃烧篇现行术语表](../../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv)：本作专用术语，集中维护于 `localization/glossaries/`。
 - [`images/copy/`](images/copy/)：启动提示、常用 UI、角色名、telop、日期/地点卡的中文
   文案、排版和源图锁。
 - [`images/release-inventory.json`](images/release-inventory.json)：历史 beta0.1 中 315 个

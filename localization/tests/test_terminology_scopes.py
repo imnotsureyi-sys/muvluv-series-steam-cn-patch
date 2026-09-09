@@ -13,7 +13,7 @@ class TerminologyScopeTests(unittest.TestCase):
     def test_seven_games_explicitly_load_only_common_and_own_table(self):
         common = read_table(ROOT / "localization/glossaries/muv-luv.ja-zh-Hans.csv")
         for game, engine in GAMES.items():
-            own = read_table(ROOT / engine / "games" / game / "terminology/ja-zh-Hans.csv")
+            own = read_table(ROOT / "localization/glossaries" / f"{game}.ja-zh-Hans.csv")
             effective = load_game(game)
             self.assertEqual(set(effective), set(common) | set(own))
             self.assertNotIn("ァァ", effective)
@@ -39,7 +39,7 @@ class TerminologyScopeTests(unittest.TestCase):
         self.assertEqual(candidate_terms("anything", {}), [])
 
     def test_every_input_row_has_one_disposition_and_old_bytes_are_preserved(self):
-        audit = json.loads((ROOT / "localization/glossaries/scope-audit-20260908.json").read_text(encoding="utf-8"))
+        audit = json.loads((ROOT / "localization/terminology-history/scope-audit-20260908.json").read_text(encoding="utf-8"))
         for source in audit["sources"]:
             entries = [r for r in audit["records"] if r["source"] == source["name"]]
             self.assertEqual(len(entries), source["rows"])
@@ -51,7 +51,7 @@ class TerminologyScopeTests(unittest.TestCase):
         self.assertEqual(audit['status'], 'withdrawn-incomplete-source-inventory')
         self.assertEqual(audit['superseded_by'], 'recovery-20260908.json')
         for source, filename in [("mixed", "mixed-20260908.csv"), ("imperial", "imperial-20260908.csv")]:
-            raw = (ROOT / "localization/glossaries/history" / filename).read_bytes()
+            raw = (ROOT / "localization/terminology-history" / filename).read_bytes()
             expected = next(s for s in audit["sources"] if s["name"] == source)
             self.assertEqual(hashlib.sha256(raw).hexdigest(), expected["sha256"])
             records = list(csv.DictReader(raw.decode("utf-8-sig").splitlines()))

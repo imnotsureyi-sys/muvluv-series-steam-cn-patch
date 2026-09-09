@@ -40,7 +40,7 @@ SHA-256；制作者从自己合法拥有的游戏重新提取日文/源图，在
 共用系列术语放在
 [`localization/glossaries/muv-luv.ja-zh-Hans.csv`](../../localization/glossaries/muv-luv.ja-zh-Hans.csv)；
 只在单作成立的术语跟随游戏，例如
-[帝都燃烧篇术语](../../AGE2/games/imperial-capital-burns/terminology/ja-zh-Hans.csv)。
+[帝都燃烧篇术语](../../localization/glossaries/imperial-capital-burns.ja-zh-Hans.csv)。
 
 ## 当前公开图片资料
 
