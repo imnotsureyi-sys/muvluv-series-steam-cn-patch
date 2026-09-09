@@ -11,7 +11,7 @@
 关闭 dry_run 后，仅 main 分支运行可创建 `[ParaTranz] 帝都燃烧校对同步` PR，仍须人工合并。
 已有同步 PR 待处理时不重复创建。试点无定时任务，不会自动合并、审核或发布补丁。
 Bot 创建的 PR 如显示工作流待批准，维护者须点击 Approve and run；等待必需检查通过后再合并。
-安装分支的 push 只触发预检，不能发布同步 PR。
+安装试跑已结束，移除安装分支触发器；只接受手动 main 分支运行。
 
 `PARATRANZ_ICB_TOKEN` 保存于仓库 Actions Secret，不写入文件或日志。工作流固定 API
 项目编号，所有 ParaTranz 请求均为 GET；拒绝重定向，避免凭据被转发。原文只在 runner

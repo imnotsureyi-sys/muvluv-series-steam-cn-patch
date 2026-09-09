@@ -7,13 +7,6 @@ on:
         description: '仅预检；关闭后创建校对 PR，不自动合并'
         type: boolean
         default: true
-  push:
-    branches: [codex/icb-paratranz-action-20260909]
-    paths:
-      - '.github/workflows/paratranz-icb.yml'
-      - 'localization/tools/sync_icb_paratranz.py'
-      - 'localization/tests/test_sync_icb_paratranz.py'
-      - 'localization/paratranz/imperial-capital-burns/**'
 
 permissions:
   contents: read
@@ -26,7 +19,7 @@ jobs:
   pull:
     if: >-
       github.repository == 'imnotsureyi-sys/muvluv-series-steam-cn-patch' &&
-      (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/codex/icb-paratranz-action-20260909')
+      github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     permissions:
