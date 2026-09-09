@@ -831,10 +831,11 @@ static int prepare_hooks(void) {
 #endif
 #if PHOTON_NATIVE_HAS_CRIP008_DIRECT_EXACT_OVERLAY
     {
-        static const BYTE direct_expected[2][5] = {
-            {0xE8,0x13,0x15,0x00,0x00},
-            {0xE8,0x3A,0x14,0x00,0x00},
-        };
+#ifndef PHOTON_NATIVE_CRIP008_DIRECT_EXPECTED_BYTES
+#define PHOTON_NATIVE_CRIP008_DIRECT_EXPECTED_BYTES {{0xE8,0x13,0x15,0x00,0x00},{0xE8,0x3A,0x14,0x00,0x00}}
+#endif
+        static const BYTE direct_expected[2][5] =
+            PHOTON_NATIVE_CRIP008_DIRECT_EXPECTED_BYTES;
         static const DWORD direct_sites[2] = {
             PHOTON_NATIVE_CRIP008_DIRECT_DECODE_CALLSITE0_RVA,
             PHOTON_NATIVE_CRIP008_DIRECT_DECODE_CALLSITE1_RVA,

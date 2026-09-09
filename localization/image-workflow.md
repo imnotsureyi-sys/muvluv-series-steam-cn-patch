@@ -213,3 +213,22 @@ comparison galleries remain local. Approved localized image bytes may be
 published as a separately hashed Release asset when the project has explicitly
 reviewed that redistribution; a manifest alone must not pretend those bytes are
 available from a clean clone.
+
+## Current Photon review convention
+
+The [2026-09-09 static catalog](../rUGP/evidence/photon/images/static-review-20260909/README.md)
+uses confirmed official Japanese, official English, and current Chinese review
+candidate columns. “Official standalone” is not a language: retain an unknown
+language explicitly, show confirmed shared pixels once, and do not interpret a
+missing peer as proof that no other locale exists.
+
+Record manual completion, dimension checks, runtime binding, local installation,
+and in-game acceptance separately. The current review includes uninstalled term
+revisions. For multi-state UI, enumerate the source states first: the oval cards
+have 18 sets of three ring states plus four existing dark states, not 18 sets of
+four states. Do not manufacture missing variants from an assumed uniform grid.
+
+Rebuild the local categorized HTML/PNG overview with the
+[static review tool](../rUGP/tools/images/README.md). Hash and dimension checks
+establish input identity; they do not establish visual quality or actual game
+reachability. Keep the generated image overview outside Git.

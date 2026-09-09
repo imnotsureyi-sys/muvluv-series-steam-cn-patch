@@ -1,0 +1,21 @@
+{
+  "schema": "photon-pm-production-regression-v1",
+  "results": {
+    "previous": {
+      "exit_code": 70,
+      "stdout": "",
+      "stderr": "production result=-4 native=9 expected=9 selector=1 gate_disabled=1"
+    },
+    "fixed": {
+      "exit_code": 0,
+      "stdout": "{\"passed\":true,\"direct_and_indexed\":true,\"positive_and_negative_pitch\":true}",
+      "stderr": ""
+    }
+  },
+  "synthetic_art": true,
+  "proprietary_decoder_executed": false,
+  "production_ready": true,
+  "game_started": false,
+  "native_status_mocked": false,
+  "selector_bypassed": false
+}

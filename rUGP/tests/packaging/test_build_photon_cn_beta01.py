@@ -37,7 +37,7 @@ class PhotonPackageBuilderTests(unittest.TestCase):
         self.assertTrue(all(identity.values()))
         builder.assert_no_absolute_paths(identity)
 
-    def test_runtime_dll_policy_matches_runtime_builder_authorities(self) -> None:
+    def test_historical_runtime_dll_policy_matches_builder_authorities(self) -> None:
         for package_game, runtime_game in (("PF", "pf"), ("PM", "pm")):
             identities = builder.RUNTIME_DLL_IDENTITIES[package_game]
             self.assertEqual(
@@ -56,8 +56,20 @@ class PhotonPackageBuilderTests(unittest.TestCase):
             builder.RUNTIME_DLL_IDENTITIES["PM"]["timer_route_fix_normalized"][
                 "sha256"
             ],
-            runtime_builder.GAMES["pm"]["approved_normalized_sha256"],
+            "D92DBE093421A2E898A6E6915EC2C527F945C2FF1DD1B95C151AE55BB58941F7",
         )
+
+    def test_current_pm_build_is_not_implicitly_approved_for_beta01(self) -> None:
+        current = runtime_builder.GAMES["pm"]["approved_normalized_sha256"]
+        self.assertNotIn(current, {
+            identity["sha256"] for identity in builder.RUNTIME_DLL_IDENTITIES["PM"].values()
+        })
+        with tempfile.TemporaryDirectory() as temporary:
+            source = Path(temporary) / "Ages3ResT.dll"
+            source.write_bytes(bytes(builder.RUNTIME_DLL_IDENTITIES["PM"]["timer_route_fix_normalized"]["bytes"]))
+            with mock.patch.object(builder, "sha256", return_value=current):
+                with self.assertRaisesRegex(builder.BuildError, "unapproved runtime DLL identity"):
+                    builder.select_runtime_dll_identity(source, "PM")
 
     def test_runtime_dll_accepts_only_the_named_controlled_identities(self) -> None:
         historical = b"historical-runtime"

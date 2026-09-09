@@ -27,6 +27,9 @@ SCRIPT_COMMANDS = (
 )
 
 MODULE_COMMANDS = (
+    "rUGP.tools.images.verify_pm_production",
+    "rUGP.tools.images.build_static_review",
+    "rUGP.tools.provenance.export_static_review",
     "localization.tools.font_coverage",
     "localization.tools.images.build_deterministic_textless_background",
     "localization.tools.images.render_deterministic_localized_text",

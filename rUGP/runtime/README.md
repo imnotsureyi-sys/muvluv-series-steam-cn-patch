@@ -36,13 +36,20 @@ The reviewed historical-to-normalized Beta0.1 identities are:
 Applying the normalization to either historical raw DLL produces its listed
 historical normalized identity. The currently approved reproducible outputs are
 PF `01399562654A81C0458E269B143A9AB39B5F6892DE5B295DD0854B8A116AB1FA`
-and PM `D92DBE093421A2E898A6E6915EC2C527F945C2FF1DD1B95C151AE55BB58941F7`.
-The latter is the reviewed PM tutorial-timer route, closed zero-second cue,
-and selector repair. The
+and PM `21EE2D8E9BE693FF59BE37C2AC977ADCB3628228C06BE018B2172C01A5AB071A`.
+PM includes the tutorial-timer and selector repair plus the CRip008 direct
+image hooks and matching nine-hook production admission. The
 packaging assembler accepts only its named hash-locked identities and records
 which one it copied. This does not turn the runtime builder into a complete
 source-to-player-release pipeline; packaging still requires the other sealed
 and approved authorities described in `../packaging/README.md`.
+
+The Beta0.1 assembler's allowlist is unchanged: it rejects this new PM identity
+until a separate release review approves it. Current local installations and
+image drafts are not the same artifact as this public build. The checked-in
+tables are still frozen configuration, not a snapshot of every latest local
+image. See [current review status](../evidence/photon/images/static-review-20260909/README.md)
+and the [PM admission regression](../docs/postmortems/pm-image-admission-20260909.md).
 
 Generated headers are [sealed reviewed configuration](generated/README.md),
 not publicly regenerable source. Updating their identities requires repeating
