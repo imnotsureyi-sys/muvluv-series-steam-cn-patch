@@ -13,6 +13,8 @@
 <游戏>.rio[.002…]     保存真正对象数据的一个或多个 RIO 卷
         ├─ CRsa                    文本或 VM 对象
         ├─ Cr6Ti/CRip007/CRip008  图片对象
+        ├─ CRmt → CRmti           图片父对象、内嵌缩放层及可选外部图片
+        ├─ CRmt ImageMP → CRimp   有类型的图片属性，不是像素
         └─ 父对象/CodeArcRef       偏移、长度与关系
 
 替换路线
@@ -21,6 +23,9 @@
 ```
 
 ICI 只告诉我们对象在哪里、是什么类型；找到 RIO 中的对象以后，还必须交给对应 CRsa 或图片解码器。能读取一个对象也不等于能安全写回，编码器还要保持头部、尺寸、透明度、预测状态、父引用和运行时约束。
+
+CRmt 家族的结构、日英对应、全层导出和替换验证请从[专项指南](docs/crmt-family.md)开始。
+当前[49 组审核清单](evidence/photon/crmt/README.md)与下方历史 1,490 项图片权威分开记账，不能直接相加。
 
 ## 游戏与核心汉化资产
 
@@ -42,7 +47,7 @@ ICI 只告诉我们对象在哪里、是什么类型；找到 RIO 中的对象�
 ## 目录职责
 
 - [`games/`](games/)：按游戏保存台词表与精确绑定表。
-- [`formats/images/`](formats/images/)：Cr6Ti、CRip007、CRip008 的严格解码/编码实现。
+- [`formats/images/`](formats/images/)：Cr6Ti、CRip007、CRip008、CRmt／CRmti 编解码及 CRimp 类型属性。
 - [`formats/rio/`](formats/rio/)：RIO 加密、引用、RUO、CRsa 和 VM 字符串池。
 - [`tools/`](tools/)：ICI/RIO 目录、只读 CRsa 提取、图片检查、文本导出与来源验证。
 - [`runtime/`](runtime/)：PF/PM 分开构建、遇到未知 EXE/DLL 哈希即拒绝运行的 x86 代理。

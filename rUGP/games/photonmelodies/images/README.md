@@ -1,5 +1,8 @@
 # Photon Melodies 图片
 
+CRmt 演出图片另见[家族指南](../../../docs/crmt-family.md)和[日英／汉化逐对象清单](../../../evidence/photon/crmt/README.md)。
+原始键专用入口、修正运行时的冷启动和正式剧情启动证据分开记录，不等同于全场景发布验收。
+
 [返回 Photon Melodies](../README.md) · [1,490 图共用清单](../../../evidence/photon/images/manifest.json) · [路由闭环](../../../evidence/photon/routes/routes.json) · [研究资产 Release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/photon-images-1490-20260824-v6)
 
 共用 Photon V6 清单中，`game = "PM"` 的项目有 **854 项**。每项保存稳定资源 ID、
