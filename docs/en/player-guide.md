@@ -4,16 +4,18 @@
 
 ## Player downloads
 
-### PF / PM — BETA 0.1
+### PF / PM
 
 The Simplified Chinese Windows / Steam patches are published as ordinary releases, in separate packages:
 
 | Game | Version | Download |
 | --- | --- | --- |
 | Muv-Luv photonflowers | **BETA 0.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1/MuvLuv_PF_CN_Patch_BETA_0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1) |
-| Muv-Luv photonmelodies | **BETA 0.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1/MuvLuv_PM_CN_Patch_BETA_0.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1) |
+| Muv-Luv photonmelodies | **BETA 0.1.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1.1/MuvLuv_PM_CN_Patch_BETA_0.1.1.zip) · [release](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.1) |
 
 Set the Steam game language to **English**, wait for downloads to finish, and close the game. Extract the ZIP, run its EXE, and click Install. No earlier patch or manual verification script is required.
+
+PM **BETA 0.1.1** fixes malformed display directives in 297 special-text entries, using the ordinary font to prevent Japanese leakage, duplicate text, and missing glyphs. Install directly over PM BETA 0.1; no uninstall is needed. PF remains BETA 0.1.
 
 These packages retain R2 content and fix the backlog Return to Game button. They create **no backups** and include no uninstaller or rollback. To recover from an interrupted install or restore the original game, preserve saves, uninstall through Steam, remove patch leftovers from that specific game folder, and download the game again. Do not clear the Steam root, steamapps/common, userdata, or save folders. File verification alone may leave added patch files behind.
 

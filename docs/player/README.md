@@ -4,16 +4,18 @@
 
 ## 玩家下载
 
-### PF / PM — BETA 0.1
+### PF / PM
 
 PF、PM 已正式公开发布，各自下载、安装，不混用。以下是 Windows / Steam 的完整简体中文补丁：
 
 | 游戏 | 版本 | 下载 |
 | --- | --- | --- |
 | Muv-Luv photonflowers | **BETA 0.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pf-BETA-0.1/MuvLuv_PF_CN_Patch_BETA_0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1) |
-| Muv-Luv photonmelodies | **BETA 0.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1/MuvLuv_PM_CN_Patch_BETA_0.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1) |
+| Muv-Luv photonmelodies | **BETA 0.1.1** | [ZIP](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/download/pm-BETA-0.1.1/MuvLuv_PM_CN_Patch_BETA_0.1.1.zip) · [发布页](https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.1) |
 
 Steam 语言设为 **English（英语）**，等待下载完成并退出游戏；解压 ZIP，双击 EXE，点击“安装汉化”。无需安装旧版，也无需手动运行校验脚本。安装器自动定位游戏目录，未找到时选择对应文件夹。
+
+PM **BETA 0.1.1** 修复 297 条特殊文本指令，解决部分独白显示日文、重复文字或缺字的问题。已安装 PM BETA 0.1 的玩家可直接覆盖安装，无需先卸载。PF 保持 BETA 0.1。
 
 采用 R2 内容，并修复回看“返回游戏”按钮。**完全不备份，不附卸载器或回滚程序。** 安装失败、中断或恢复原版时，保留存档，通过 Steam 卸载对应游戏，清除该游戏安装目录中的汉化残留，再重新下载。只处理对应游戏文件夹，不要清空 Steam 根目录、steamapps/common、userdata 或个人存档目录。仅验证完整性不能保证清除额外汉化文件。
 
