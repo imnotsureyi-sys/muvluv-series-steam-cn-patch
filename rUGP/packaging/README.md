@@ -2,11 +2,15 @@
 
 ## BETA 0.1 release
 
-The public player packages use uppercase **BETA 0.1** as an ordinary release;
-the internal build is `2026.09.10-r3` (accepted R2 plus the
+The public player packages use uppercase **BETA** as ordinary releases.
+PF remains **BETA 0.1**, internal build `2026.09.10-r3` (accepted R2 plus the
 [backlog button action correction](../docs/postmortems/backlog-return-action-20260910.md)).
 PF and PM remain separate ZIPs, each containing one executable and a short
-player guide. Game payloads other than the two control records are unchanged.
+player guide. PM **BETA 0.1.1**, internal build `2026.09.11-r4`, additionally
+replaces seven CRsa records to render 297 affected text entries in the ordinary
+font. All other r3 game payloads are unchanged; the old public PM r3 archive
+identities are admitted for direct upgrades. See the
+[special-text correction](../docs/postmortems/pm-special-text-20260911.md).
 `build_photon_player.py` rejects translated or rebound backlog action arguments.
 
 ## 2026.09.10 player installer candidate
