@@ -1,0 +1,125 @@
+{
+  "publication_note": "Historical read-only audit, 2026-09-12. Local absolute paths are replaced by local-record identifiers; these identifiers are not public file links. Game binaries and private conversations are not included.",
+  "result": [
+    {
+      "game": "pf",
+      "file": "Ages3ResT.dll",
+      "bytes": 640512,
+      "sha256": "80F311F3AC8FAEA4612C779CAF718E238FE0ACAADB8CB739A4917D8C44AFB684",
+      "original_exists": true,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pf",
+      "file": "Ages3ResT.PhotonR2.private.dll",
+      "bytes": 15360,
+      "sha256": "022079515CB9856B8A2ED452535C939EE410DABF805A5B505D18A0E711AEFB7D",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pf",
+      "file": "ages_screenSv.dll",
+      "bytes": 137216,
+      "sha256": "6BF8300B5EAC07B39F67BF5C1F32D337935E5606CE2EAD3BF1C2B001929DF0C6",
+      "original_exists": true,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pf",
+      "file": "Muv-Luv_PF.exe",
+      "bytes": 3172352,
+      "sha256": "7AD7399624AA9C35CED57B39D68A02F8BD20B188BA4649F43FF9419845DA5B08",
+      "original_exists": true,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pf",
+      "file": "photonflowers11.rio.ruo1",
+      "bytes": 2547388,
+      "sha256": "21C762FDF08FB7B0825EB9BA6B5D20B93B1B524ECF0B913C8BD80811601DDFC6",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pf",
+      "file": "PhotonR2-OFL.txt",
+      "bytes": 4538,
+      "sha256": "064FC5AC196B84AAC8DB9F9AA37C370660A07231F6B2D112E8B37AFDD8256DDC",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pf",
+      "file": "PhotonR2-Regular.ttf",
+      "bytes": 1406624,
+      "sha256": "AADF895003AE6452E1FBDCA1B64206B77D6F9A6EEBE226C31D46D1247AD4830B",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "Ages3ResT.dll",
+      "bytes": 613888,
+      "sha256": "F3EEEA147CFC746EB57DB51B9370E8051AAFFEAE5044237342F5035A780217B3",
+      "original_exists": true,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "Ages3ResT.PhotonR2.official.dll",
+      "bytes": 15360,
+      "sha256": "022079515CB9856B8A2ED452535C939EE410DABF805A5B505D18A0E711AEFB7D",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "Ages3ResT.PhotonR2.private.dll",
+      "bytes": 244224,
+      "sha256": "5991C0170B7AB71CFB661D53D15CD5A1CB616BB62695DBC02E97756BB961A4AE",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "ages_screenSv.dll",
+      "bytes": 137216,
+      "sha256": "6BF8300B5EAC07B39F67BF5C1F32D337935E5606CE2EAD3BF1C2B001929DF0C6",
+      "original_exists": true,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "Muv-Luv_PM.exe",
+      "bytes": 3198464,
+      "sha256": "8E442F263FEED7B79E5CCB83C3F26B12CC12E1953FB4A262B4BB74017D6E26B8",
+      "original_exists": true,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "photonmelodies11.rio.ruo1",
+      "bytes": 4475684,
+      "sha256": "DC54624CE621259BD4928A7B25E2DB0C41EB148953A2EF738A44972A3BADFF66",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "PhotonR2-OFL.txt",
+      "bytes": 4538,
+      "sha256": "064FC5AC196B84AAC8DB9F9AA37C370660A07231F6B2D112E8B37AFDD8256DDC",
+      "original_exists": false,
+      "matches_manifest_original": false
+    },
+    {
+      "game": "pm",
+      "file": "PhotonR2-Regular.ttf",
+      "bytes": 1460112,
+      "sha256": "3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B",
+      "original_exists": false,
+      "matches_manifest_original": false
+    }
+  ]
+}

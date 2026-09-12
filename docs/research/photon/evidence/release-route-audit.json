@@ -1,0 +1,1521 @@
+{
+  "publication_note": "Historical read-only audit, 2026-09-12. Local absolute paths are replaced by local-record identifiers; these identifiers are not public file links. Game binaries and private conversations are not included.",
+  "result": {
+    "scope": "Read-only inspection of release package manifests, actual RUO payloads and assembly records. No game launched or installed.",
+    "packages": {
+      "pf": {
+        "manifest": "local-record/local-internal/player-patches-20260910/beta01-final/packages/pf/package_manifest.20260910.json",
+        "manifest_sha256": "F1B0C4B5C5244A0A3D7ED36465F91F693FDA3B024B30CF2B0F4E35C46D436083",
+        "version": "BETA 0.1",
+        "build_id": "2026.09.10-r3",
+        "counts": {
+          "package_payload_files": 1224,
+          "final_files": 1221,
+          "patch_bytes": 32739476,
+          "asset_files": 1214
+        },
+        "archive_changes": [
+          {
+            "target": "photonflowers11.rio",
+            "before": {
+              "bytes": 2147465920,
+              "sha256": "277D2956EA7075AC0EF069E7201B30F77FCFAD66BA33BB53DCD282412E0407CA"
+            },
+            "after": {
+              "bytes": 2147465920,
+              "sha256": "3CB2EDF4FA097E4BBD302776DE810F6EA5A7F179AD55B9064C49973C7E033ADA"
+            },
+            "growth_bytes": 0,
+            "segments": 10,
+            "patch_bytes": 3014656
+          },
+          {
+            "target": "photonflowers11.rio.002",
+            "before": {
+              "bytes": 1661470956,
+              "sha256": "6EB65A055CC880374F7EFD549A70439F957F3A75E283E0B06E86B39601227AC3"
+            },
+            "after": {
+              "bytes": 1684696824,
+              "sha256": "96097B26EB692379237302E197721A491662169DDFCAF9F4415BA6F31486F26C"
+            },
+            "growth_bytes": 23225868,
+            "segments": 37,
+            "patch_bytes": 29713932
+          },
+          {
+            "target": "photonflowers11.rio.ici",
+            "before": {
+              "bytes": 10888,
+              "sha256": "EB234685AAA065288BE98BE65867C032D6384306EB3B1228707A2EAB24A8E3CE"
+            },
+            "after": {
+              "bytes": 10888,
+              "sha256": "BB2C69AAFD4FAB3105FEAA6A76913208B87284CCD531578D11C1E2ABDA164A94"
+            },
+            "growth_bytes": 0,
+            "segments": 1,
+            "patch_bytes": 10888
+          }
+        ],
+        "asset_extensions": {
+          ".png": 1214
+        },
+        "asset_roots": {
+          "PhotonR2Assets/v6/payload": 17,
+          "PhotonR2Assets/v6/sidecars": 1197
+        },
+        "fixed": [
+          {
+            "target": "Ages3ResT.dll",
+            "payload": {
+              "path": "files/Ages3ResT.dll",
+              "bytes": 640512,
+              "sha256": "80F311F3AC8FAEA4612C779CAF718E238FE0ACAADB8CB739A4917D8C44AFB684"
+            }
+          },
+          {
+            "target": "Ages3ResT.PhotonR2.private.dll",
+            "payload": {
+              "path": "files/Ages3ResT.PhotonR2.private.dll",
+              "bytes": 15360,
+              "sha256": "022079515CB9856B8A2ED452535C939EE410DABF805A5B505D18A0E711AEFB7D"
+            }
+          },
+          {
+            "target": "ages_screenSv.dll",
+            "payload": {
+              "path": "files/ages_screenSv.dll",
+              "bytes": 137216,
+              "sha256": "6BF8300B5EAC07B39F67BF5C1F32D337935E5606CE2EAD3BF1C2B001929DF0C6"
+            }
+          },
+          {
+            "target": "Muv-Luv_PF.exe",
+            "payload": {
+              "path": "files/Muv-Luv_PF.exe",
+              "bytes": 3172352,
+              "sha256": "7AD7399624AA9C35CED57B39D68A02F8BD20B188BA4649F43FF9419845DA5B08"
+            }
+          },
+          {
+            "target": "photonflowers11.rio.ruo1",
+            "payload": {
+              "path": "files/photonflowers11.rio.ruo1",
+              "bytes": 2547388,
+              "sha256": "21C762FDF08FB7B0825EB9BA6B5D20B93B1B524ECF0B913C8BD80811601DDFC6"
+            }
+          },
+          {
+            "target": "PhotonR2-OFL.txt",
+            "payload": {
+              "path": "files/PhotonR2-OFL.txt",
+              "bytes": 4538,
+              "sha256": "064FC5AC196B84AAC8DB9F9AA37C370660A07231F6B2D112E8B37AFDD8256DDC"
+            }
+          },
+          {
+            "target": "PhotonR2-Regular.ttf",
+            "payload": {
+              "path": "files/PhotonR2-Regular.ttf",
+              "bytes": 1406624,
+              "sha256": "AADF895003AE6452E1FBDCA1B64206B77D6F9A6EEBE226C31D46D1247AD4830B"
+            }
+          }
+        ],
+        "ruo": {
+          "path": "local-record/local-internal/player-patches-20260910/beta01-final/packages/pf/files/photonflowers11.rio.ruo1",
+          "sha256": "21C762FDF08FB7B0825EB9BA6B5D20B93B1B524ECF0B913C8BD80811601DDFC6",
+          "route_count": 21,
+          "types": {
+            "Cr6Ti kind2 (strictly parsed and decoded)": 1,
+            "CRmt (exact handoff record hash)": 20
+          },
+          "routes": [
+            {
+              "source_raw_offset": 2737138805,
+              "offset": 0,
+              "bytes": 111236,
+              "sha256": "1DF3596940FE485CD48D21ED202B0B20FA4B90350F567BF707687CFC7022686B",
+              "header_hex": "0004450000000004580200000000000458020206810007070707000800040000",
+              "type": "Cr6Ti kind2 (strictly parsed and decoded)",
+              "handoff_id": null,
+              "target": null,
+              "width": 1024,
+              "height": 600,
+              "rgba_sha256": "9211B75682667E1F82493223D875F823F3D96DBD7CA226662C592ABDC33EEF32"
+            },
+            {
+              "source_raw_offset": 2737175701,
+              "offset": 111236,
+              "bytes": 99736,
+              "sha256": "FB2629B56DF6E0C488407076115F6EC852DA5E0F6D2E0C9D47689A1B8B22A019",
+              "header_hex": "80040205ffff0400033ca1e508c17d6a26a338dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0001",
+              "target": {
+                "volume": "photonflowers11.rio",
+                "volume_sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+                "offset": 11159312,
+                "extent": 112526,
+                "original_record_sha256": "D7C2C56E24E873AE467B4276CDB470729E588146488B0429F82A2DED340B186B",
+                "global_offset": 11159312,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2737175701
+              }
+            },
+            {
+              "source_raw_offset": 2737203853,
+              "offset": 210972,
+              "bytes": 20120,
+              "sha256": "8C0C35344343F24FE780651E441897EDE3BEDCF19A1AACB952BD678924EA21F5",
+              "header_hex": "80040205ffff0400033ca1e508c1c09826a338dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0002",
+              "target": {
+                "volume": "photonflowers11.rio",
+                "volume_sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+                "offset": 11271920,
+                "extent": 47304,
+                "original_record_sha256": "6A90FC208FD66E008471CFF87CD0BA901244AACD86A5D39584069396E07ED3AE",
+                "global_offset": 11271920,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2737203853
+              }
+            },
+            {
+              "source_raw_offset": 2737215696,
+              "offset": 231092,
+              "bytes": 18278,
+              "sha256": "FD33F18239399D47F220B89017EE12F3C90982F4A7A6A08748DB89FF69567E19",
+              "header_hex": "80040205ffff0400033ca1e508c1cbbc26a338dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0003",
+              "target": {
+                "volume": "photonflowers11.rio",
+                "volume_sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+                "offset": 11319292,
+                "extent": 36840,
+                "original_record_sha256": "E11DE139ED8DC35B49DC456836A7FFC2ACF8801C6E726194C656AA0E8D469583",
+                "global_offset": 11319292,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2737215696
+              }
+            },
+            {
+              "source_raw_offset": 2737224923,
+              "offset": 249372,
+              "bytes": 20756,
+              "sha256": "B09FD5120EC2FFAA17431F39D192C1FA2557CB07C12F8182F5386156D3ACE2B8",
+              "header_hex": "80040205ffff0400033ca1e508c128e826a338dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0004",
+              "target": {
+                "volume": "photonflowers11.rio",
+                "volume_sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+                "offset": 11356200,
+                "extent": 44336,
+                "original_record_sha256": "38282375B343205D12FE66BEC018F2C7C973264A20868007905B78C91B76BD55",
+                "global_offset": 11356200,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2737224923
+              }
+            },
+            {
+              "source_raw_offset": 2737236024,
+              "offset": 270128,
+              "bytes": 47946,
+              "sha256": "D419A919D83482E2E6229F423B5DF32A57DA8DD2330F52B1154A4E6FA52B55D5",
+              "header_hex": "80040205ffff0400033ca1e508c1382c27a338dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0005",
+              "target": {
+                "volume": "photonflowers11.rio",
+                "volume_sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+                "offset": 11400604,
+                "extent": 69626,
+                "original_record_sha256": "412F28010EB35A3E72ABCA46A3C20BE013F4D8A0DEA083B1C13C2CAEDB5B9C17",
+                "global_offset": 11400604,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2737236024
+              }
+            },
+            {
+              "source_raw_offset": 2737253448,
+              "offset": 318076,
+              "bytes": 35182,
+              "sha256": "630A532A7B36BEE8690F66C8ECE78E975C5590BA1845C64AE3F448D5842D7ED3",
+              "header_hex": "80040205ffff0400033ca1e508c1eb5d27a338dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0006",
+              "target": {
+                "volume": "photonflowers11.rio",
+                "volume_sha256": "78C8621AD61BDCC939EC1C404DBA6B3BCE7D3411F89A0A1EC4A7FBECBB863A0F",
+                "offset": 11470300,
+                "extent": 50822,
+                "original_record_sha256": "8F8F91ABE8453B14CEE5108D5487E4BDFC71AC06A824F56332CEA5DC025EDC08",
+                "global_offset": 11470300,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2737253448
+              }
+            },
+            {
+              "source_raw_offset": 3299041248,
+              "offset": 2448120,
+              "bytes": 99012,
+              "sha256": "FD26717F5688306BA4E6E0D336D68A925D0CE327137771164D76801D9C3A0C4C",
+              "header_hex": "80040205ffff0400033ca1e508c149e8d8aa433abfe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I03206",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 111155580,
+                "extent": 63878,
+                "original_record_sha256": "2DCF940E3C4316C029B9FDA9F9800839031EE14E24AE05C92A4C007B2606AFE2",
+                "global_offset": 2258621500,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3299041248
+              }
+            },
+            {
+              "source_raw_offset": 3363164264,
+              "offset": 1998388,
+              "bytes": 108570,
+              "sha256": "658A2050E5CC60B2E11010711B39CB1D9A3270FAAA576C5029F6E0A6BAF140AD",
+              "header_hex": "80040205ffff0400033ca1e508c1852b76c838dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I05667",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 367647644,
+                "extent": 93298,
+                "original_record_sha256": "30AAABFE3813258549C5B9A9C4319E291E671D59B2B38C388EE944B5652BC7D7",
+                "global_offset": 2515113564,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3363164264
+              }
+            },
+            {
+              "source_raw_offset": 3363187605,
+              "offset": 2106960,
+              "bytes": 143196,
+              "sha256": "1700AADF078A4F8090DE04293E1FD63521E8541AB808C2EF5AFE9B0457AD2C32",
+              "header_hex": "80040205ffff0400033ca1e508c1852b76c838dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I05671",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 367741008,
+                "extent": 122824,
+                "original_record_sha256": "8A3A8C9A4DCD4A8E48A81B5FC4CCAA5E846E10507383919EC073A5FF791A579C",
+                "global_offset": 2515206928,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3363187605
+              }
+            },
+            {
+              "source_raw_offset": 3363229176,
+              "offset": 353260,
+              "bytes": 199460,
+              "sha256": "3BE9F546300B85C4D5A00A4E27FC0DA9449164BF583E1079137DFDDF099CD301",
+              "header_hex": "80040205ffff0400033ca1e508c158d075c838dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0215",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 367907292,
+                "extent": 118586,
+                "original_record_sha256": "00E219688524F9560BD5186A59A50EC05402461752C233FCB9928E7D7DB04043",
+                "global_offset": 2515373212,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3363229176
+              }
+            },
+            {
+              "source_raw_offset": 3562555656,
+              "offset": 2250156,
+              "bytes": 31418,
+              "sha256": "159384103235542590869C77C6481EF3F8A4B349312AB61D7FD70079417E286C",
+              "header_hex": "80040205ffff0400033ca1e508c1026158d438dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I23549",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1165213212,
+                "extent": 24542,
+                "original_record_sha256": "6A4E0BE646D3DD32EE4AD0BF782F7FA10DD0C0A82A3DD6E7D1EBA6739E10B0DE",
+                "global_offset": 3312679132,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3562555656
+              }
+            },
+            {
+              "source_raw_offset": 3562561810,
+              "offset": 2281576,
+              "bytes": 21928,
+              "sha256": "3026534F22CEB063A3A7222A10BCA53518CA41582C59B1206118ED8CC9461302",
+              "header_hex": "80040205ffff0400033ca1e508c1026158d438dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I23555",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1165237828,
+                "extent": 16632,
+                "original_record_sha256": "97A24FBF8FB412BFE4F313D050E1153BCB6DB68552D5425DA598CD92A98ADD0A",
+                "global_offset": 3312703748,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3562561810
+              }
+            },
+            {
+              "source_raw_offset": 3562565968,
+              "offset": 2411404,
+              "bytes": 36714,
+              "sha256": "0507E611397CD01266CE75441B3C5ADD24A907F01CC0129E001C4D14FEF9018C",
+              "header_hex": "80040205ffff0400033ca1e508c1026158d438dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I23561",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1165254460,
+                "extent": 20370,
+                "original_record_sha256": "763416386F2730ADF1CB1CD3562331954AB9BE65D8866F6C07A2F38085FD9BC6",
+                "global_offset": 3312720380,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3562565968
+              }
+            },
+            {
+              "source_raw_offset": 3633145487,
+              "offset": 2357064,
+              "bytes": 54340,
+              "sha256": "F33036CAB1FFF5810213EA0C83010B93EF5164CE17D5AE3B49746031AF316594",
+              "header_hex": "80040205ffff0400033ca1e508c1f98c8dd838dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I26579",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1447572536,
+                "extent": 39334,
+                "original_record_sha256": "3E460274D4CC857102BF2C5C9C0C0A5042AB167AC83B821A3353B1611A2E84FE",
+                "global_offset": 3595038456,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3633145487
+              }
+            },
+            {
+              "source_raw_offset": 3633159629,
+              "offset": 552720,
+              "bytes": 480900,
+              "sha256": "1579F1469370F65E26995F25435ED3FB3FCE083F16CE2564942D405C2465DC7B",
+              "header_hex": "80040205ffff0400033ca1e508c14ca0e4d738dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I26591",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1447629104,
+                "extent": 374152,
+                "original_record_sha256": "D35EFD562E2A093AF3CD656574B1E8DCC906497559E9B9B4DCB32618F30A3092",
+                "global_offset": 3595095024,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3633159629
+              }
+            },
+            {
+              "source_raw_offset": 3633253167,
+              "offset": 2303504,
+              "bytes": 7194,
+              "sha256": "624848109B5D3B9C1F0044C57EC104D5233A0E715B3D1B7BF2DB412BA2363BBF",
+              "header_hex": "80040205ffff0400033ca1e508c1f98c8dd838dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I26595",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1448003256,
+                "extent": 8488,
+                "original_record_sha256": "7C3866BE0857B85925B8ED3C5BB4B3F8FD166FF088B3B56A6FD3F7A2848592DC",
+                "global_offset": 3595469176,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3633253167
+              }
+            },
+            {
+              "source_raw_offset": 3633290025,
+              "offset": 2310700,
+              "bytes": 6718,
+              "sha256": "D8A594C66654FEA11F17CC9A2DEBB76AA19545FB4E9E1B7B70661BCE42C7C17E",
+              "header_hex": "80040205ffff0400033ca1e508c1f98c8dd838dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I26599",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1448150688,
+                "extent": 7316,
+                "original_record_sha256": "E24511A480187B05FCCAD2A45712FDA227D5EA454352FE084CA1319D733A43B6",
+                "global_offset": 3595616608,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3633290025
+              }
+            },
+            {
+              "source_raw_offset": 3633301401,
+              "offset": 2317420,
+              "bytes": 39642,
+              "sha256": "14481C11A0A062CB4DDE1A4AF1073C54856A9C70A640A025C49F1E5137E6E16F",
+              "header_hex": "80040205ffff0400033ca1e508c157de8fd8433abfe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I26619",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1448196192,
+                "extent": 23282,
+                "original_record_sha256": "CB3403F7114FF05BE7450CE776D1D52B1ADBB10852E50DCDE58CB3FA34978C6E",
+                "global_offset": 3595662112,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3633301401
+              }
+            },
+            {
+              "source_raw_offset": 3633339993,
+              "offset": 1033620,
+              "bytes": 480762,
+              "sha256": "53DE1E67CDC7E0AAEDADEF000A8030B7392F8FDC9A858685FDE72EDEAF7112E0",
+              "header_hex": "80040205ffff0400033ca1e508c14ca0e4d738dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I26647",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1448350560,
+                "extent": 373964,
+                "original_record_sha256": "0E7AD28DD5DA3E011A6838F68673D7FE2F41D41489D7CB5C45D8231786D1DDEE",
+                "global_offset": 3595816480,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3633339993
+              }
+            },
+            {
+              "source_raw_offset": 3633435110,
+              "offset": 1514384,
+              "bytes": 484004,
+              "sha256": "B763CB6D8A48E2DD621EBED3537B0CEFE62EEA935C4F8E16504FF316A99639B4",
+              "header_hex": "80040205ffff0400033ca1e508c14ca0e4d738dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I26655",
+              "target": {
+                "volume": "photonflowers11.rio.002",
+                "volume_sha256": "C6C005A9CB8F3A03886CE1E86840FBC62539ADE0C6589AB43341E70F5202FE22",
+                "offset": 1448731028,
+                "extent": 377134,
+                "original_record_sha256": "B68C147EB5DD1EDE939128980E41426FF616C773EFAFE4E2DBD6B1B87F8920EE",
+                "global_offset": 3596196948,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 3633435110
+              }
+            }
+          ]
+        },
+        "tail_proof": {
+          "source": "Reconstructed solely from actual final package delta segments; all tail bytes covered",
+          "historical_manifest": "local-record/outputs/photon_patch_rootfix_v2/staging/packaging/authority_v6_final_partition_install_inputs_20260827_v2_fixed_ici/image_install_inputs_manifest.v1.json",
+          "historical_records": 506,
+          "historical_append_bytes": 23225868,
+          "historical_append_sha256": "97C59B22EA63857BA458643EE5526DCEE467D0FE253E0DD8DE38D242B50078B1",
+          "historical_prefix_matches": true,
+          "final_tail_bytes": 23225868,
+          "later_extra_bytes": 0
+        },
+        "historical_official_backing": {
+          "manifest": "local-record/outputs/photon_patch_rootfix_v2/staging/packaging/pf_official_backing_repair_core_20260828_v2_titlefix/package_manifest.v1.json",
+          "sha256": "A05DA49F7DAD55F24EDFBA749E271AAD9BA4F6A4ED010823C77DD149BAFBAAF1",
+          "created_utc": "2026-08-28T03:28:07.755313+00:00",
+          "status": "PASS_DETACHED_PF_OFFICIAL_BACKING_CORE_RELEASE_FALSE",
+          "routing": {
+            "PF_assets": 636,
+            "context_special57": 17,
+            "official_translation_target": 579,
+            "restored_official_parent_reference_sites": 393,
+            "retained_encrypted_reference_sites": 34,
+            "retained_exception_custom_record": 40,
+            "retained_exception_source_ids": [
+              "pf:rio000:0x00e5817c",
+              "pf:rio000:0x1ad68448",
+              "pf:rio000:0x1ad7919c",
+              "pf:rio000:0x1ad7c020",
+              "pf:rio000:0x1ad7f044",
+              "pf:rio000:0x1ad80770",
+              "pf:rio000:0x1b1391d0",
+              "pf:rio000:0x1b9485ec",
+              "pf:rio000:0x1b9494d4",
+              "pf:rio000:0x1b94a2f0",
+              "pf:rio000:0x1b94b458",
+              "pf:rio000:0x1b9680a0",
+              "pf:rio000:0x1b968f88",
+              "pf:rio000:0x1b969da4",
+              "pf:rio000:0x1b96af0c",
+              "pf:rio000:0x1b96bf98",
+              "pf:rio000:0x1b96ce80",
+              "pf:rio000:0x1b96dc9c",
+              "pf:rio000:0x1b96ee04",
+              "pf:rio000:0x1b96fe90",
+              "pf:rio000:0x1b970d78",
+              "pf:rio000:0x1b971b94",
+              "pf:rio000:0x1c1fe128",
+              "pf:rio000:0x1c1feae4",
+              "pf:rio000:0x1c1ff36c",
+              "pf:rio000:0x1c1fff8c",
+              "pf:rio000:0x1c215910",
+              "pf:rio000:0x1c2162cc",
+              "pf:rio000:0x1c216b54",
+              "pf:rio000:0x1c217774",
+              "pf:rio000:0x1c218228",
+              "pf:rio000:0x1c218be4",
+              "pf:rio000:0x1c21946c",
+              "pf:rio000:0x1c21a08c",
+              "pf:rio000:0x1c21ab40",
+              "pf:rio000:0x1c21bd8c",
+              "pf:rio000:0x1d293790",
+              "pf:rio000:0x1d45ec5c",
+              "pf:rio000:0x1d48f42c",
+              "pf:rio000:0x1d525580"
+            ],
+            "retained_raw_reference_sites": 11,
+            "static_image_scatter_writes": 0
+          }
+        }
+      },
+      "pm": {
+        "manifest": "local-record/local-internal/recheck-20260911/pm-beta011/package/package_manifest.20260910.json",
+        "manifest_sha256": "584FE3005B2FD89E76898C48886C8F7AF50036418C5BF7EE7E81EF9977A34A95",
+        "version": "BETA 0.1.1",
+        "build_id": "2026.09.11-r4",
+        "counts": {
+          "package_payload_files": 1660,
+          "final_files": 1655,
+          "patch_bytes": 60370880,
+          "asset_files": 1647
+        },
+        "archive_changes": [
+          {
+            "target": "photonmelodies11.rio",
+            "before": {
+              "bytes": 1913545000,
+              "sha256": "1EC6D01E0393D72BB5E36D5246B282C2280CDA122F90AE7627DE51D3C556694E"
+            },
+            "after": {
+              "bytes": 1913545000,
+              "sha256": "66FFB957D0747424A648E19049DDAFA26EA1ED268B353769663CAE2B341DCFF6"
+            },
+            "growth_bytes": 0,
+            "segments": 5,
+            "patch_bytes": 917504
+          },
+          {
+            "target": "photonmelodies11.rio.002",
+            "before": {
+              "bytes": 1903007556,
+              "sha256": "284B9DF442735BD1EEB0BC37C9FFFDE17E8C447E1252B46EBB7CAF63D021EDA7"
+            },
+            "after": {
+              "bytes": 1903007556,
+              "sha256": "6BA8B234E92AD3FD622A305A8469C292259E4D9BD26888B415294CC7893BE51D"
+            },
+            "growth_bytes": 0,
+            "segments": 8,
+            "patch_bytes": 1900544
+          },
+          {
+            "target": "photonmelodies11.rio.003",
+            "before": {
+              "bytes": 2121421700,
+              "sha256": "4FC4A5699D3A0D44863D7D001EF1B9420DD9C19D89CC6896F922F2B735587D64"
+            },
+            "after": {
+              "bytes": 2121421700,
+              "sha256": "BA9750500D0348F2899C84DAF1754843DAD6AF80314DE319AB21256AB3625F89"
+            },
+            "growth_bytes": 0,
+            "segments": 18,
+            "patch_bytes": 5111808
+          },
+          {
+            "target": "photonmelodies11.rio.004",
+            "before": {
+              "bytes": 1848048356,
+              "sha256": "94CBE4F5BDF1CE22E83CC194F5CB0C644EAA2D2E91B68BC4C7BC00B69CB6A2B6"
+            },
+            "after": {
+              "bytes": 1883168284,
+              "sha256": "55580CEC1D0A6CF9B706A57C9B60BD30C8BF3A22D5920DDB3E3E943301175DA2"
+            },
+            "growth_bytes": 35119928,
+            "segments": 78,
+            "patch_bytes": 52421432
+          },
+          {
+            "target": "photonmelodies11.rio.ici",
+            "before": {
+              "bytes": 19592,
+              "sha256": "B8E12995826857DC124290D8335134095F5FA6D0486C18AFEA62BC28EC7EEBFE"
+            },
+            "after": {
+              "bytes": 19592,
+              "sha256": "6EC04A1DD6C493A0C14985722241A17DFE876D957C75B31986ECA5E5EE4DF2A6"
+            },
+            "growth_bytes": 0,
+            "segments": 1,
+            "patch_bytes": 19592
+          }
+        ],
+        "asset_extensions": {
+          ".png": 1647
+        },
+        "asset_roots": {
+          "PhotonR2Assets/v6/payload": 51,
+          "PhotonR2Assets/v6/sidecars": 1596
+        },
+        "fixed": [
+          {
+            "target": "Ages3ResT.dll",
+            "payload": {
+              "path": "files/Ages3ResT.dll",
+              "bytes": 613888,
+              "sha256": "F3EEEA147CFC746EB57DB51B9370E8051AAFFEAE5044237342F5035A780217B3"
+            }
+          },
+          {
+            "target": "Ages3ResT.PhotonR2.official.dll",
+            "payload": {
+              "path": "files/Ages3ResT.PhotonR2.official.dll",
+              "bytes": 15360,
+              "sha256": "022079515CB9856B8A2ED452535C939EE410DABF805A5B505D18A0E711AEFB7D"
+            }
+          },
+          {
+            "target": "Ages3ResT.PhotonR2.private.dll",
+            "payload": {
+              "path": "files/Ages3ResT.PhotonR2.private.dll",
+              "bytes": 244224,
+              "sha256": "5991C0170B7AB71CFB661D53D15CD5A1CB616BB62695DBC02E97756BB961A4AE"
+            }
+          },
+          {
+            "target": "ages_screenSv.dll",
+            "payload": {
+              "path": "files/ages_screenSv.dll",
+              "bytes": 137216,
+              "sha256": "6BF8300B5EAC07B39F67BF5C1F32D337935E5606CE2EAD3BF1C2B001929DF0C6"
+            }
+          },
+          {
+            "target": "Muv-Luv_PM.exe",
+            "payload": {
+              "path": "files/Muv-Luv_PM.exe",
+              "bytes": 3198464,
+              "sha256": "8E442F263FEED7B79E5CCB83C3F26B12CC12E1953FB4A262B4BB74017D6E26B8"
+            }
+          },
+          {
+            "target": "photonmelodies11.rio.ruo1",
+            "payload": {
+              "path": "files/photonmelodies11.rio.ruo1",
+              "bytes": 4475684,
+              "sha256": "DC54624CE621259BD4928A7B25E2DB0C41EB148953A2EF738A44972A3BADFF66"
+            }
+          },
+          {
+            "target": "PhotonR2-OFL.txt",
+            "payload": {
+              "path": "files/PhotonR2-OFL.txt",
+              "bytes": 4538,
+              "sha256": "064FC5AC196B84AAC8DB9F9AA37C370660A07231F6B2D112E8B37AFDD8256DDC"
+            }
+          },
+          {
+            "target": "PhotonR2-Regular.ttf",
+            "payload": {
+              "path": "files/PhotonR2-Regular.ttf",
+              "bytes": 1460112,
+              "sha256": "3D1CDF9B8C3CA71D09ECBF5A380FA7F6E9D2F2EE4BB020805711B42FA4322F3B"
+            }
+          }
+        ],
+        "ruo": {
+          "path": "local-record/local-internal/recheck-20260911/pm-beta011/package/files/photonmelodies11.rio.ruo1",
+          "sha256": "DC54624CE621259BD4928A7B25E2DB0C41EB148953A2EF738A44972A3BADFF66",
+          "route_count": 30,
+          "types": {
+            "CRmt (exact handoff record hash)": 30
+          },
+          "routes": [
+            {
+              "source_raw_offset": 2735890382,
+              "offset": 799016,
+              "bytes": 70078,
+              "sha256": "51F39DC16FC9EBC8221424BF4DA7C0EA936959464064BD38C5FAB80D1352E9C1",
+              "header_hex": "80040205ffff0400033ca1e508c1f18f12a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0477",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 6018036,
+                "extent": 49280,
+                "original_record_sha256": "0AE1615D2FDD5BE13203CD046ABC20B5311B472D09A55DA42E073A65792E4CFF",
+                "global_offset": 6018036,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2735890382
+              }
+            },
+            {
+              "source_raw_offset": 2735902717,
+              "offset": 939176,
+              "bytes": 52024,
+              "sha256": "4B9CAE9B750B68637E167C0C5D6291C421B8FC5B1E80683C009CB04EA3A22937",
+              "header_hex": "80040205ffff0400033ca1e508c185073abc38dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0478",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 6067376,
+                "extent": 40938,
+                "original_record_sha256": "C3D4BFE3FE11783AE8239941326E9F52F9B50E67F33F253255A9905FF639CA67",
+                "global_offset": 6067376,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2735902717
+              }
+            },
+            {
+              "source_raw_offset": 2735912964,
+              "offset": 1043224,
+              "bytes": 100230,
+              "sha256": "D069C96719AE65CA3EF7F804AD0EE42D9FA2D5CD47BB5DBE760BC0176F66AA87",
+              "header_hex": "80040205ffff0400033ca1e508c1e0f112a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0479",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 6108364,
+                "extent": 59238,
+                "original_record_sha256": "47662F6B09F39EC6CB6499218DC7BB0F217E65E5F6319929A80A47E9C24290C9",
+                "global_offset": 6108364,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2735912964
+              }
+            },
+            {
+              "source_raw_offset": 2736300755,
+              "offset": 869096,
+              "bytes": 70078,
+              "sha256": "77D259651BB164E5F1FE8C7C74714F35B99DF5916A30ED8778B2B0E2A3FC1A23",
+              "header_hex": "80040205ffff0400033ca1e508c1f6d218a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0477",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 7659528,
+                "extent": 49280,
+                "original_record_sha256": "0EBC3095B1D9E5B30FCB955A32D1AE9AB5CE5D4D842F3C62860CA9262772AC79",
+                "global_offset": 7659528,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2736300755
+              }
+            },
+            {
+              "source_raw_offset": 2736313090,
+              "offset": 991200,
+              "bytes": 52024,
+              "sha256": "EAA0379555AB0CA73E667F6E26C55A00EB8415AA8AEB578235936539381DB3D3",
+              "header_hex": "80040205ffff0400033ca1e508c1666940bc38dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0478",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 7708868,
+                "extent": 40938,
+                "original_record_sha256": "4C22C9D963F8A3D6B85FD6CF55702A0B42D1D9627994236C33A27760C6508029",
+                "global_offset": 7708868,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2736313090
+              }
+            },
+            {
+              "source_raw_offset": 2736323337,
+              "offset": 285060,
+              "bytes": 259530,
+              "sha256": "3B65F2D999255C9B54F6D2609DB67EB32F3B301CDD54A25C5BB6FEBF43E86A8C",
+              "header_hex": "80040205ffff0400033ca1e508c12fc119a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0480",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 7749856,
+                "extent": 202898,
+                "original_record_sha256": "C806B3A1BE41F18365A90F37EDDC3740988C288EF6029E92A028FE4744851F1C",
+                "global_offset": 7749856,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2736323337
+              }
+            },
+            {
+              "source_raw_offset": 2736374087,
+              "offset": 544592,
+              "bytes": 254422,
+              "sha256": "DA5B16F772BB057A6B01BAD58A583B1B18969A22B732E78F8AAA2377920FF802",
+              "header_hex": "80040205ffff0400033ca1e508c13bc119a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0481",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 7952856,
+                "extent": 201452,
+                "original_record_sha256": "6C05DF46E1104D6990E1032D86172DA95B860E776036F0D640F8D4EAFF38EC5F",
+                "global_offset": 7952856,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2736374087
+              }
+            },
+            {
+              "source_raw_offset": 2740477872,
+              "offset": 1143456,
+              "bytes": 596062,
+              "sha256": "90841F9DFAF533DF86FB5A8F11F5236EAE0C59BB2C9B69AD89FA17F1DD60339B",
+              "header_hex": "80040205ffff0400033ca1e508c143ff62a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0482",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 24367996,
+                "extent": 531508,
+                "original_record_sha256": "A9596BF0043AA6E8EBE2FDC3FE65DE67AC18FB75A128BFB39F5BE8F49DC941D9",
+                "global_offset": 24367996,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2740477872
+              }
+            },
+            {
+              "source_raw_offset": 2740610750,
+              "offset": 1739520,
+              "bytes": 681440,
+              "sha256": "EA6D4DA4EF04E96E944CF7735736CA9009DEB6EF7E3082F5BC692A1E0DC46434",
+              "header_hex": "80040205ffff0400033ca1e508c143ff62a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0483",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 24899508,
+                "extent": 609114,
+                "original_record_sha256": "82E4CEB44C12F0EB05CEF5EC49408002A65DAB2A9CEB6FD50B673220F223F679",
+                "global_offset": 24899508,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2740610750
+              }
+            },
+            {
+              "source_raw_offset": 2740763029,
+              "offset": 2420960,
+              "bytes": 645650,
+              "sha256": "531CD5CC4431597D3EBBFF12777F1EC4C854C9A23174E055B05599C34A2AB639",
+              "header_hex": "80040205ffff0400033ca1e508c143ff62a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0484",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 25508624,
+                "extent": 575836,
+                "original_record_sha256": "16017D373EEA5E5BA3B4A7B7AEA87CA6AEE71019D37CE2C6841AAF482CBD6354",
+                "global_offset": 25508624,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2740763029
+              }
+            },
+            {
+              "source_raw_offset": 2740906988,
+              "offset": 3066612,
+              "bytes": 605354,
+              "sha256": "85D93E870EB43F9F3886CD96CE20C5C3B80D708501F562C7FE46976AB93FC5F4",
+              "header_hex": "80040205ffff0400033ca1e508c143ff62a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0485",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 26084460,
+                "extent": 533528,
+                "original_record_sha256": "9D9661A26C9431925752886BF8041AC46BFCEA283A2E3D287E38121EFEF60278",
+                "global_offset": 26084460,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2740906988
+              }
+            },
+            {
+              "source_raw_offset": 2741040370,
+              "offset": 3671968,
+              "bytes": 610930,
+              "sha256": "7A40896F6BAEBCEB242A4A0BB2D346F5D54778A88200721320657DC0CDED5701",
+              "header_hex": "80040205ffff0400033ca1e508c143ff62a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0486",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 26617988,
+                "extent": 534852,
+                "original_record_sha256": "0B81436FB49CF39F29B0BB228D30438C95BC926DF8E9F3AC49DEEF9E95CA709B",
+                "global_offset": 26617988,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741040370
+              }
+            },
+            {
+              "source_raw_offset": 2741217588,
+              "offset": 242024,
+              "bytes": 7702,
+              "sha256": "0FD8ECA2C9E865AB4BC0FE9FAF9AAC5CFD63512519E4A3ECE53C1CB737628006",
+              "header_hex": "80040205ffff0400033ca1e508c12fbc63a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0487",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 27326860,
+                "extent": 19426,
+                "original_record_sha256": "0FFA222E37E38FF7E2D5D00B158A04E41F71C14971A6775F538C22821AD17718",
+                "global_offset": 27326860,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741217588
+              }
+            },
+            {
+              "source_raw_offset": 2741222459,
+              "offset": 249728,
+              "bytes": 6896,
+              "sha256": "AF25930CF3298F3922AD59F9A04AD2862919024F6626AFAF97AA51AB6A543418",
+              "header_hex": "80040205ffff0400033ca1e508c1bec963a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0488",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 27346344,
+                "extent": 13830,
+                "original_record_sha256": "92BFF1BD6252422588F79A1AC578FBD0474C0DFCD531DE480B9F2AB53FB68531",
+                "global_offset": 27346344,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741222459
+              }
+            },
+            {
+              "source_raw_offset": 2741225930,
+              "offset": 256624,
+              "bytes": 9836,
+              "sha256": "13A1F92CD20ABCE4B316AD8F1B1A6686F87130617D62347345D64AC916ED9EDE",
+              "header_hex": "80040205ffff0400033ca1e508c13ade63a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0489",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 27360228,
+                "extent": 20922,
+                "original_record_sha256": "F18A0B41C97686CE8DF409779B3C0631CA32478B61C73CF12FA843F699F75DCB",
+                "global_offset": 27360228,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741225930
+              }
+            },
+            {
+              "source_raw_offset": 2741231174,
+              "offset": 266460,
+              "bytes": 4964,
+              "sha256": "A673CC1E25287B376837519AE94F31E837DDA8D0C71EB6C47B07A204C6E7FC6E",
+              "header_hex": "80040205ffff0400033ca1e508c132ea63a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0490",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 27381204,
+                "extent": 12204,
+                "original_record_sha256": "F25E59D2F48378D494A08EFCE7BE2DF8E62957A150533187B3AD5331FDF60616",
+                "global_offset": 27381204,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741231174
+              }
+            },
+            {
+              "source_raw_offset": 2741234238,
+              "offset": 271424,
+              "bytes": 13636,
+              "sha256": "267FE4B10B7F4C98B60F4E874AE913A10F331C1809D2C6F07EC278290DE84CCD",
+              "header_hex": "80040205ffff0400033ca1e508c1b50264a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0491",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 27393460,
+                "extent": 25048,
+                "original_record_sha256": "2E5C92DF16143EE2D5722BD1366D5EA5CACCA694545ED228E96A27400F38F760",
+                "global_offset": 27393460,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741234238
+              }
+            },
+            {
+              "source_raw_offset": 2741240513,
+              "offset": 4306968,
+              "bytes": 30938,
+              "sha256": "E4EA54A596193A007FFB2E856FD4B28A7B265D2389260F43C2C0EBF14411D6A5",
+              "header_hex": "80040205ffff0400033ca1e508c1174c64a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0492",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 27418560,
+                "extent": 40302,
+                "original_record_sha256": "B598CD5A7BB840E91B70BBBA3655F068A64264F82D548697B051535A73018946",
+                "global_offset": 27418560,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741240513
+              }
+            },
+            {
+              "source_raw_offset": 2741250590,
+              "offset": 4337908,
+              "bytes": 29504,
+              "sha256": "EF056ADE550BC8185D6BB17927E57FBDAA71799B4C959DB7AC9D5BBDBB64187D",
+              "header_hex": "80040205ffff0400033ca1e508c1174c64a328dabbe704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0493",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 27458868,
+                "extent": 34788,
+                "original_record_sha256": "89C22DBF7CEC8CF878E269F13228C24ED96BE59E7756E55106CBC5B7FB84BEE5",
+                "global_offset": 27458868,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2741250590
+              }
+            },
+            {
+              "source_raw_offset": 2786343032,
+              "offset": 0,
+              "bytes": 99736,
+              "sha256": "48A31B1A9D9731D30617A7B780728C590B7A183AC6A01A4DD7D46300AC469004",
+              "header_hex": "80040205ffff0400033ca1e508c160a614a638dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0001",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 207828636,
+                "extent": 112526,
+                "original_record_sha256": "65136E20CAD768213C3FC09A3658D252721303A2EC11A8289C308A2A8EF8ACFB",
+                "global_offset": 207828636,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2786343032
+              }
+            },
+            {
+              "source_raw_offset": 2786371184,
+              "offset": 99736,
+              "bytes": 20120,
+              "sha256": "2C6CC7D3E9EC7BD1FD8837785CC4CAD1608EA3CE4CDC52FBD4CD990FA1143136",
+              "header_hex": "80040205ffff0400033ca1e508c1a3d414a638dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0002",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 207941244,
+                "extent": 47304,
+                "original_record_sha256": "73D9CF60A129299CB72F977245153A5CCB2B3CB48D0BC11AC935CC5730320B39",
+                "global_offset": 207941244,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2786371184
+              }
+            },
+            {
+              "source_raw_offset": 2786383027,
+              "offset": 119856,
+              "bytes": 18278,
+              "sha256": "863FE5EF135427547C5C77806E5B425DD3D6D71A29D1A269028E332FEE9BBE4C",
+              "header_hex": "80040205ffff0400033ca1e508c1aef814a638dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0003",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 207988616,
+                "extent": 36840,
+                "original_record_sha256": "D70DD1995851BF2E9537226FBB4D205EF8D5BD6E6832CC02CAB6226C98A12F6F",
+                "global_offset": 207988616,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2786383027
+              }
+            },
+            {
+              "source_raw_offset": 2786392254,
+              "offset": 138136,
+              "bytes": 20756,
+              "sha256": "6B2C51B1511838202FAC89A1914F92FF2902C71AD0A1C48E444731202A8432D8",
+              "header_hex": "80040205ffff0400033ca1e508c10b2415a638dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0004",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 208025524,
+                "extent": 44336,
+                "original_record_sha256": "658B92647861A57C33CC4009E82854F8B57E87CB55CE20CDE7C135CE94987A0B",
+                "global_offset": 208025524,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2786392254
+              }
+            },
+            {
+              "source_raw_offset": 2786403355,
+              "offset": 158892,
+              "bytes": 47946,
+              "sha256": "B57AB76DB75EDCB3D5106A56849303C1270D4EACDA8641B15A3EB88179B78079",
+              "header_hex": "80040205ffff0400033ca1e508c11b6815a638dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0005",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 208069928,
+                "extent": 69626,
+                "original_record_sha256": "CF93209C22372635E1D54CBA5EEB260410FDCBDCDA4158CC845474A1AC490476",
+                "global_offset": 208069928,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2786403355
+              }
+            },
+            {
+              "source_raw_offset": 2786420779,
+              "offset": 206840,
+              "bytes": 35182,
+              "sha256": "536B629C25440D7389BD243823D811C76B1ADDE940F1AEE35791E6A931B4CE28",
+              "header_hex": "80040205ffff0400033ca1e508c1ce9915a638dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "U0006",
+              "target": {
+                "volume": "photonmelodies11.rio",
+                "volume_sha256": "23367361DA990FF951DC165B6693C13A888A7209B4672187AD8E66DAFBFF69F3",
+                "offset": 208139624,
+                "extent": 50822,
+                "original_record_sha256": "0AA90857415BE1E431CB68DAE58B7FF97B51FFBA02D1AD73C7C8388CA457DF31",
+                "global_offset": 208139624,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 2786420779
+              }
+            },
+            {
+              "source_raw_offset": 4178793735,
+              "offset": 4282900,
+              "bytes": 24068,
+              "sha256": "58EC791C9DB07E135CDD06511804C7052F76908AF625A59453C5861183402FD7",
+              "header_hex": "80040205ffff0400033ca1e508c1436c13f938dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I47501",
+              "target": {
+                "volume": "photonmelodies11.rio.003",
+                "volume_sha256": "D75F15E0AE1ECF310AE42E1D8D6E48BCDA15E2D440C923A7F19622E52A394B78",
+                "offset": 1961078892,
+                "extent": 23786,
+                "original_record_sha256": "BC2CF4C61312E39111F476952668A1AEB51FE12D87B721FC4328962B1EA91617",
+                "global_offset": 5777631448,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 4178793735
+              }
+            },
+            {
+              "source_raw_offset": 250011741,
+              "offset": 4367412,
+              "bytes": 24214,
+              "sha256": "D7AFD50DE187ACE08C3509E63151CD696CE24FAAA00A638DE3C63275266CDD10",
+              "header_hex": "80040205ffff0400033ca1e508c12ff2e60e38dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I58516",
+              "target": {
+                "volume": "photonmelodies11.rio.004",
+                "volume_sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74",
+                "offset": 1304398400,
+                "extent": 18242,
+                "original_record_sha256": "7BD708F96080E63AE1A4859535F7979C76CC5B5D8454D5F6342D06E0C4018503",
+                "global_offset": 7242372656,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 250011741
+              }
+            },
+            {
+              "source_raw_offset": 250016319,
+              "offset": 4391628,
+              "bytes": 24710,
+              "sha256": "AD5CE5EC57A79A685228E49DE698391ED49AA4ACA55DB20C59AF2DDCA17EA558",
+              "header_hex": "80040205ffff0400033ca1e508c12ff2e60e38dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I58522",
+              "target": {
+                "volume": "photonmelodies11.rio.004",
+                "volume_sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74",
+                "offset": 1304416712,
+                "extent": 19106,
+                "original_record_sha256": "496677766B94D4A13711FA96F783B228002B91E42FA67244349B8BF425DDB516",
+                "global_offset": 7242390968,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 250016319
+              }
+            },
+            {
+              "source_raw_offset": 283496466,
+              "offset": 4416340,
+              "bytes": 32594,
+              "sha256": "5B015F969A7A7C71687C78D21421A3C73FF9ED29DE21761328B78B2881995C69",
+              "header_hex": "80040205ffff0400033ca1e508c12ff2e60e38dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I59189",
+              "target": {
+                "volume": "photonmelodies11.rio.004",
+                "volume_sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74",
+                "offset": 1438337300,
+                "extent": 24884,
+                "original_record_sha256": "6F7BA779F7F3E9E8569B768E7F5E084890C5A91B497903840D5DD78E76EF1742",
+                "global_offset": 7376311556,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 283496466
+              }
+            },
+            {
+              "source_raw_offset": 283504064,
+              "offset": 4448936,
+              "bytes": 26382,
+              "sha256": "E3733BB9AD8DA9F894FC4C63A5AF6E50904108892863BF5F34202239F64F2CFB",
+              "header_hex": "80040205ffff0400033ca1e508c12ff2e60e38dabde704000000000100040004",
+              "type": "CRmt (exact handoff record hash)",
+              "handoff_id": "I59195",
+              "target": {
+                "volume": "photonmelodies11.rio.004",
+                "volume_sha256": "4C58442241705492F8B4F12BD188708AC7A3FE9E6C767B21AAE6BC276EA37E74",
+                "offset": 1438367692,
+                "extent": 19954,
+                "original_record_sha256": "153E48BBCA7223D18FCBA2E072569611A7121E746129BCADFAFEC7FF46CE2F93",
+                "global_offset": 7376341948,
+                "ruo_offset_unit": 4,
+                "source_raw_offset": 283504064
+              }
+            }
+          ]
+        },
+        "tail_proof": {
+          "source": "Reconstructed solely from actual final package delta segments; all tail bytes covered",
+          "historical_manifest": "local-record/outputs/photon_patch_rootfix_v2/staging/packaging/authority_v6_final_partition_install_inputs_20260827_v2_fixed_ici/image_install_inputs_manifest.v1.json",
+          "historical_records": 715,
+          "historical_append_bytes": 35079788,
+          "historical_append_sha256": "BDC58453546CB3E4968551C3B218C4EEFF47B5DB3DFABAB988FC134F204B2FAD",
+          "historical_prefix_matches": true,
+          "final_tail_bytes": 35119928,
+          "later_extra_bytes": 40140
+        },
+        "historical_official_backing": {
+          "manifest": "local-record/outputs/photon_patch_rootfix_v2/staging/packaging/pm_official_backing_runtime_observed_repair_core_20260830_v3/package_manifest.v1.json",
+          "sha256": "33D8FDFEFFAE40396D2DF4DF097980222A5800176AC4B11D48557C8290D2E3A6",
+          "created_utc": "2026-08-30T02:31:43.551961+00:00",
+          "status": "PASS_DETACHED_PM_OFFICIAL_BACKING_RUNTIME_OBSERVED_CORE_RELEASE_FALSE",
+          "routing": {
+            "PM_assets": 854,
+            "context_special40": 40,
+            "official_context_overlap": 2,
+            "official_context_overlap_source_ids": [
+              "pm:rio000:0x65524b40",
+              "pm:rio000:0x65526374"
+            ],
+            "official_translation_target": 769,
+            "restored_official_or_context_parent_reference_sites": 568,
+            "retained_encrypted_reference_sites": 40,
+            "retained_exception_custom_record": 47,
+            "retained_exception_source_ids": [
+              "pm:rio000:0x4fd40e9c",
+              "pm:rio000:0x64a752a4",
+              "pm:rio000:0x65527a04",
+              "pm:rio000:0x6556dbf8",
+              "pm:rio000:0x655f47dc",
+              "pm:rio000:0x6567c838",
+              "pm:rio000:0x656fec80",
+              "pm:rio000:0x65782540",
+              "pm:rio000:0x657fb6e0",
+              "pm:rio000:0x65870cf8",
+              "pm:rio000:0x658d5f4c",
+              "pm:rio000:0x65d6d30c",
+              "pm:rio000:0x65d70190",
+              "pm:rio000:0x65d731b4",
+              "pm:rio000:0x65d748e0",
+              "pm:rio000:0x6612d340",
+              "pm:rio000:0x71ebb860",
+              "pm:rio002:0x478c1b38",
+              "pm:rio002:0x478c29f8",
+              "pm:rio002:0x478c37f0",
+              "pm:rio002:0x478c4938",
+              "pm:rio002:0x478e0e14",
+              "pm:rio002:0x478e1cd4",
+              "pm:rio002:0x478e2acc",
+              "pm:rio002:0x478e3c14",
+              "pm:rio002:0x478e4c70",
+              "pm:rio002:0x478e5b30",
+              "pm:rio002:0x478e6928",
+              "pm:rio002:0x478e7a70",
+              "pm:rio002:0x478e8acc",
+              "pm:rio002:0x478e998c",
+              "pm:rio002:0x478ea7f8",
+              "pm:rio002:0x48345df4",
+              "pm:rio002:0x48346628",
+              "pm:rio002:0x48346ec0",
+              "pm:rio002:0x48347914",
+              "pm:rio002:0x4835b4cc",
+              "pm:rio002:0x4835bd00",
+              "pm:rio002:0x4835c598",
+              "pm:rio002:0x4835cfec",
+              "pm:rio002:0x4835daa8",
+              "pm:rio002:0x4835e2dc",
+              "pm:rio002:0x4835eb74",
+              "pm:rio002:0x4835f5c8",
+              "pm:rio002:0x48360084",
+              "pm:rio002:0x48361184",
+              "pm:rio002:0x63758300"
+            ],
+            "retained_raw_reference_sites": 14,
+            "static_image_scatter_writes": 0
+          }
+        }
+      }
+    },
+    "github_releases": {
+      "pf": {
+        "tag": "pf-BETA-0.1",
+        "published_at": "2026-09-09T17:36:54Z",
+        "url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pf-BETA-0.1",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "MuvLuv_PF_CN_Patch_BETA_0.1.zip",
+            "size": 112873626,
+            "digest": "sha256:e8933fab8d3e4285a82269653b3f58d738ba6b2803bc2c96b956d5d148efccc3"
+          },
+          {
+            "name": "MuvLuv_PF_CN_Patch_BETA_0.1_SHA256SUMS.txt",
+            "size": 99,
+            "digest": "sha256:933fd4c42d1ad86f104a1dffe5eb9815ee903588bd75b631c91e5f43a9435485"
+          }
+        ]
+      },
+      "pm": {
+        "tag": "pm-BETA-0.1.1",
+        "published_at": "2026-09-11T06:47:22Z",
+        "url": "https://github.com/imnotsureyi-sys/muvluv-series-steam-cn-patch/releases/tag/pm-BETA-0.1.1",
+        "prerelease": false,
+        "assets": [
+          {
+            "name": "MuvLuv_PM_CN_Patch_BETA_0.1.1.zip",
+            "size": 152585277,
+            "digest": "sha256:85d9d023494570abc7025f10f924517706e706b722b86515c43ad5d34c5d9baf"
+          },
+          {
+            "name": "MuvLuv_PM_CN_Patch_BETA_0.1.1_SHA256SUMS.txt",
+            "size": 101,
+            "digest": "sha256:100b70f975761deadd3a68f4d214f8caed8207505602b8e3fe0e7d85ae06a484"
+          }
+        ]
+      }
+    },
+    "text_record_manifest": {
+      "path": "local-record/local-internal/player-patches-20260910/text-records-verified/records.json",
+      "sha256": "45F89987320BFE023DC3991A07D9D329118E470E2EC0666EBB0177C8E1018151",
+      "count": 164,
+      "rows": 57723,
+      "by_game": {
+        "pf": {
+          "records": 56,
+          "rows": 13025,
+          "volumes": {
+            "photonflowers11.rio": 20,
+            "photonflowers11.rio.002": 36
+          }
+        },
+        "pm": {
+          "records": 108,
+          "rows": 44698,
+          "volumes": {
+            "photonmelodies11.rio.002": 9,
+            "photonmelodies11.rio.003": 18,
+            "photonmelodies11.rio.004": 75,
+            "photonmelodies11.rio": 6
+          }
+        }
+      },
+      "all_fixed_extent": true
+    },
+    "evidence_files": [
+      {
+        "path": "local-record/local-internal/player-patches-20260910/assemble_archives.py",
+        "sha256": "44C1311DBE497AD10EC60D54648D4CE041F96D51BC60562746EEF68AB69F9CF4"
+      },
+      {
+        "path": "local-record/local-internal/player-patches-20260910/apply_staged_text.py",
+        "sha256": "97EDEBFD48C438B0B1CB9B0417DC41C360C12A05519DF19B2D07D302E387E3B1"
+      },
+      {
+        "path": "local-record/local-internal/player-patches-20260910/final-text-verification.json",
+        "sha256": "455B15B5E4123ACD28D15A6E9615FDED1A88A59C49FD6C4AB33C7208EE02C41E"
+      },
+      {
+        "path": "local-record/local-internal/player-patches-20260910/payload-verification.json",
+        "sha256": "43B621A225068EDB4417F9AC8E6460B6659066128692C6737E3EE942CED3BB97"
+      },
+      {
+        "path": "local-record/rUGP/docs/postmortems/crsa-native-increment-20260904.md",
+        "sha256": "E6D75F7DC9AA4A74801C5AC65B27B62D8E8B1EB8BD502625F1C5E23BCB981BF4"
+      },
+      {
+        "path": "local-record/rUGP/docs/postmortems/ici-resize-metadata.md",
+        "sha256": "B9135ADB13C40651737FD34CD78B239D04AFEB90B35CFECAFF73CCEA7F0782AB"
+      },
+      {
+        "path": "local-record/outputs/rio_rebuild_research_20260810/RUO_MINIMAL_WRITER_FINDINGS.md",
+        "sha256": "A6F74E573CD2851D7D3BE8A5895DFCDF8C49E89FF963F1C5C6F034293273470A"
+      },
+      {
+        "path": "local-record/outputs/rio_rebuild_research_20260810/pf_quicksave_relocated_poc/rio_relocation_manifest.json",
+        "sha256": "0CE0EA335FDA3015816909B6409736A95EDD84988C0A05DCA6A8950B7011B9F1"
+      },
+      {
+        "path": "local-record/outputs/photon_complete_patch_v1/release/manifests/release_manifest.json",
+        "sha256": "94EDC2C80F2D0D634C13C67CA7C93BB6388D15610C001B600454F7F78C22AE67"
+      }
+    ]
+  }
+}
