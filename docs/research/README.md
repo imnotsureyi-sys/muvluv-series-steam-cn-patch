@@ -14,6 +14,7 @@
 | 研究 Photon 的 ICI、RIO、CRsa、RUO、Cr6Ti、CRip 与 Hook | [rUGP](../../rUGP/README.md) |
 | 了解 8311、字体、图片异色/撕裂/回退等问题怎样攻克 | [rUGP 复盘索引](../../rUGP/docs/postmortems/README.md) |
 | 查看我们从前人项目学了什么、又改进了什么 | [参考项目比较](references.md) |
+| 查看 PF／PM 直接移植、参考适配、自行实现的详细分类，以及七阶段完整路线 | [PF／PM 技术来源分类与完整蓝图](photon/README.md) |
 
 ## 哪些来自前人，哪些是本项目完成的
 

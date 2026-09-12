@@ -11,15 +11,15 @@
 | --- | --- | --- |
 | [GARbro](https://github.com/morkt/GARbro/tree/b09ee4570ccb1daf6ac56710ee8934dc0b8baeb0) | MIT | `rUGP/tools/catalog/rio_inventory.py` 是 [`ArcFormats/rUGP/ArcRIO.cs`](https://github.com/morkt/GARbro/blob/b09ee4570ccb1daf6ac56710ee8934dc0b8baeb0/ArcFormats/rUGP/ArcRIO.cs) 的维护型 Python 移植；上游文件 SHA-256 为 `DEF71FDDD334C6DC2BD03671600A3F4C3987355CE9C2E579C32EF1F73FDB4AB5`，完整 morkt/MIT 声明保留在源码中。未附带 GARbro 二进制或游戏资源。 |
 | [AFHook](https://github.com/eplightning/afhook/tree/3f613a097c07d3d9fb9969a130ea6d859b544f8a) | MIT | 提供 AGES/rUGP 制作端与游戏运行时分离的架构先例；Photon 运行时代码由本项目针对 PF/PM 独立实现并严格锁定版本。 |
-| [rugptools](https://github.com/osmium76/rugptools/tree/3ff587416e41eeeee7122fb122c90f7a36c409dd) | README 对原始部分提及 GPL；未观察到清晰的全仓许可证文件 | 仅用于历史 rUGP/alterdec 行为和术语参考。因许可证边界不够明确，不复制源码。 |
+| [rugptools](https://github.com/osmium76/rugptools/tree/3ff587416e41eeeee7122fb122c90f7a36c409dd) | README 对原始部分提及 GPL；未观察到清晰的全仓许可证文件 | 用于 rUGP/alterdec 行为研究，包括 CRmti 探索所参考的 Cr6Ti 预测基础。因许可证边界不够明确，不复制源码。 |
 | [FatePackageManager](https://github.com/DaZombieKiller/FatePackageManager/tree/080c2cac36391e2d2de473f8f8a841b08cf752dc) | MIT | AGE2 FPD v2 提取/实验性重封及 `Scrambler.cs` 密钥调度的主要参考。观察到的 `Scrambler.cs` SHA-256 为 `5AA8BCEFB9F2F1D14917FE11027B32FFFFD0A8C8C3F25C3AE8D690827EEAE33E`；本项目要求用户显式提供该上游文件，不复制第二份密钥表。 |
 
 alterdec 与 RioX 也在[历史研究参考](../research/references.md)中留有记录。
 其中 AFEditor 与 alterdec 的 Cr6Ti 编解码行为参考，明确记载于
 [`cr6ti_encode.py`](../../rUGP/formats/images/cr6ti_encode.py)及
 [`cr6ti_reference.py`](../../rUGP/formats/images/cr6ti_reference.py)的说明。
-历史资料尚未逐一固定原始链接、版本及许可证，不能据此视为已经取得源码再分发许可，
-也不将 RioX 列为当前构建依赖。
+实际参考的 alterdec 副本提交及 RioX **1.2.143.810** 的文件身份、用途，已补充至
+[PF／PM 技术来源分类](../research/photon/provenance.md)。RioX 原始下载渠道及部分历史资料的许可证边界仍未闭合；版本核实不代表取得源码或程序再分发许可，也不将 RioX 列为当前构建依赖。
 
 ## 汉化思路来源
 

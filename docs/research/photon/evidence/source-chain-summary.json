@@ -1,0 +1,54 @@
+{
+  "publication_note": "Historical read-only audit, 2026-09-12. Local absolute paths are replaced by local-record identifiers; these identifiers are not public file links. Game binaries and private conversations are not included.",
+  "result": {
+    "scope": "2026-09-12 RioX binary and saved instruction-span hash verification; selected fields from the local source-chain audit.",
+    "riox_validation": {
+      "expected_binary_hash": "B19FB4D4A43BF79C158F7AB251FA48135CA1E2ADA44686A6D8A6E8E32403F78F",
+      "actual_binary_hash": "B19FB4D4A43BF79C158F7AB251FA48135CA1E2ADA44686A6D8A6E8E32403F78F",
+      "spans": [
+        {
+          "label": "CRmti header fields passed unchanged",
+          "start_va": "0x0040900C",
+          "end_exclusive_va": "0x00409098",
+          "sha256": "437C0BA7E07BE66AAB4537AA475FC073B09741ACD90C09424E00580DBC92D011",
+          "matches_saved_binary": true
+        },
+        {
+          "label": "metadata bit 0x08 selects transparent predictor policy",
+          "start_va": "0x0041DA3A",
+          "end_exclusive_va": "0x0041DA5F",
+          "sha256": "915867B63C6917F884F42399BE09738ABB81933AE6172A04CF217ACB44F725AD",
+          "matches_saved_binary": true
+        },
+        {
+          "label": "transparent-run branch chooses retain or clear",
+          "start_va": "0x0041DDB7",
+          "end_exclusive_va": "0x0041DDC2",
+          "sha256": "B27F0945BA4A08ED3AB9F3E73A172BA4AD912E59E277434FECE8B8FAFFC87E5A",
+          "matches_saved_binary": true
+        },
+        {
+          "label": "bit-8 clear branch zeros three predictor dwords per pixel",
+          "start_va": "0x0041DEA4",
+          "end_exclusive_va": "0x0041DF61",
+          "sha256": "B56157F34813F7264D6105A8AC8F3D9857813D58BED8D314D87B9E3C8C252563",
+          "matches_saved_binary": true
+        },
+        {
+          "label": "zero RGB constructor",
+          "start_va": "0x0042B9E8",
+          "end_exclusive_va": "0x0042BA01",
+          "sha256": "7BD19A1DE2B3147BF0F54338AAE3FE178117FB7EC3853F48D4087857727055E6",
+          "matches_saved_binary": true
+        },
+        {
+          "label": "native quantized color arithmetic",
+          "start_va": "0x0041D3F4",
+          "end_exclusive_va": "0x0041D5D2",
+          "sha256": "4583C7FFB374DB752A8889C276DC88424E16CE4AF74BBA349A02B623E3FAC645",
+          "matches_saved_binary": true
+        }
+      ]
+    }
+  }
+}

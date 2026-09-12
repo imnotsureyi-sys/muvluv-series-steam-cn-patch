@@ -56,7 +56,9 @@ TDA 部分文本已经人工校对，感谢 ScRemilia、Tsubaki-G、X1AOFEI 及�
 | [AFHook／AFEditor](https://github.com/eplightning/afhook) | 提供“补丁制作工具与实机运行时分离”的 AGES/rUGP Hook 架构先例，以及 Cr6Ti C++ 解码与 C# 编解码行为参考；PF/PM 的版本门、字体和图片运行时由本项目按自身目标重新实现。 |
 | [rugptools](https://github.com/osmium76/rugptools) | 提供历史 rUGP、alterdec 与对象行为术语参考；因仓库整体许可证边界不够明确，本项目不复制其源码。 |
 | alterdec | 早期 rUGP 对象与图片行为资料；Cr6Ti 编码器和独立回读器明确记录了其 C++ 解码行为与状态机参考。 |
-| RioX | 研究索引记录的早期 rUGP 对象与图片行为资料。现有记录未固定具体版本与原始来源链接，仅作为历史参考致谢，不列作当前构建依赖。 |
+| RioX／muzhi | 已核实实际参考版本 **1.2.143.810**（随包 readme 日期 2013-10-08）；反汇编用于 CRmti 位流、整数、行范围、透明段及颜色预测规则。原始下载渠道未查实；不列作当前构建依赖。 |
+
+PF／PM 各组件的直接移植、参考适配和本项目实现，详细请见[技术来源分类与完整蓝图](../research/photon/README.md)，其中列出实际版本、哈希、七阶段路线及正式包构成。
 
 上述参考的仓库证据见[研究参考](../research/references.md)、
 [Cr6Ti 编码器说明](../../rUGP/formats/images/cr6ti_encode.py)和

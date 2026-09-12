@@ -1,0 +1,30 @@
+{
+  "publication_note": "Historical read-only audit, 2026-09-12. Local absolute paths are replaced by local-record identifiers; these identifiers are not public file links. Game binaries and private conversations are not included.",
+  "result": {
+    "source_file": "local-record/photonflowers11.rio",
+    "offset": "0x1AD8246C",
+    "record_sha256": "96c70b17d7a01f8335c42255e651aebba8a47c6d6a429b88e53fb5e745d8cfa1",
+    "dimensions": [
+      800,
+      600
+    ],
+    "q": 3,
+    "pred_flag": 1,
+    "channel_bits": [
+      6,
+      6,
+      6
+    ],
+    "fixed_rgba_sha256": "b97add760ed8f0092e139267c1b332365c01ad20e7dd9df84abac03956934aa2",
+    "fixed_matches_historical_canonical": true,
+    "old_code": "local-record/tools/rio/photon_r6ti_extract.py",
+    "fixed_code": "local-record/rUGP/formats/images/crip007_decode.py",
+    "scope": "Read-only offline comparison of historical project decoder and current project decoder; not execution of upstream C# or retail game.",
+    "old_result": {
+      "rgb_changed_pixels": 255533,
+      "total_pixels": 480000,
+      "max_rgb_absolute_error": 255,
+      "first_changed_row": 75
+    }
+  }
+}
